@@ -1,0 +1,170 @@
+/* Kotodama design foundations. Component styles consume semantic tokens. */
+:root {
+  color-scheme: light;
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-serif: var(--font-display);
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-jp: 'Noto Sans JP', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-size-2xs: 0.625rem;
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-display: clamp(2.75rem, 4.8vw, 4.5rem);
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+
+  /* Spacing: multiples of four preserve rhythm across all screens. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Shape and layout */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 0.875rem;
+  --radius-2xl: 1rem;
+  --radius-pill: 9999px;
+  --page-gutter: 1.5rem;
+  --page-gutter-compact: 1rem;
+  --content-width-reading: 52.5rem;
+  --content-width-default: 70rem;
+  --content-width-wide: 75rem;
+
+  /* Raw palette */
+  --neutral-950: #09090f;
+  --neutral-925: #0d0d15;
+  --neutral-900: #111119;
+  --neutral-875: #13131c;
+  --neutral-850: #171722;
+  --neutral-800: #1e1e2c;
+  --neutral-100: #eaeae0;
+  --white: #ffffff;
+  --rose-500: #ff4d6d;
+  --rose-400: #ff6b85;
+  --rose-300: #ff7d9d;
+  --rose-200: #ff9ab0;
+  --blue-500: #4d8bff;
+  --blue-400: #72a1ff;
+  --blue-300: #9ec0ff;
+  --blue-200: #c8dcff;
+  --violet-500: #a855f7;
+  --violet-400: #b970f8;
+  --orange-500: #f97316;
+  --orange-400: #fb923c;
+  --emerald-500: #10b981;
+  --emerald-400: #34d399;
+  --amber-400: #fbbf24;
+
+  /* Semantic colour tokens */
+  /* Default to the same warm paper palette used by the navigation. The
+     settings page can still replace these semantic tokens at runtime. */
+  --color-bg-canvas: #fffdf8;
+  --color-bg: var(--color-bg-canvas);
+  --color-bg-subtle: #f7f1e7;
+  --color-bg-surface: #fffaf2;
+  --color-bg-elevated: #ffffff;
+  --color-bg-hover: #f2e8d8;
+  --color-bg-overlay: rgb(255 253 248 / 92%);
+  --color-bg-selected: rgb(28 27 32 / 7%);
+  --color-text: #1c1b20;
+  --color-text-secondary: rgb(28 27 32 / 72%);
+  --color-text-muted: rgb(28 27 32 / 58%);
+  --color-text-disabled: rgb(28 27 32 / 38%);
+  --color-text-inverse: var(--white);
+  --color-border: rgb(28 27 32 / 12%);
+  --color-border-subtle: rgb(28 27 32 / 8%);
+  --color-border-strong: rgb(28 27 32 / 20%);
+  --color-border-hover: rgb(28 27 32 / 16%);
+  --color-focus-ring: rgb(255 77 109 / 55%);
+  --color-accent: var(--rose-500);
+  --color-accent-hover: var(--rose-400);
+  --color-accent-subtle: rgb(255 77 109 / 15%);
+  --color-accent-glow: rgb(255 77 109 / 30%);
+  --color-success: var(--emerald-500);
+  --color-warning: var(--amber-400);
+  --color-danger: var(--rose-500);
+  --color-info: var(--blue-500);
+  --color-language-jp: var(--rose-500);
+  --color-language-en: var(--blue-500);
+  --color-language-fr: var(--violet-500);
+  --color-language-ko: var(--orange-500);
+  --color-language-zh: var(--emerald-500);
+
+  /* Elevation, motion, and layers */
+  --shadow-xs: 0 1px 2px rgb(0 0 0 / 24%);
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 40%), 0 4px 16px rgb(0 0 0 / 30%);
+  --shadow-md: 0 8px 32px rgb(0 0 0 / 40%);
+  --shadow-lg: 0 12px 40px rgb(0 0 0 / 50%);
+  --shadow-accent: 0 4px 16px rgb(255 77 109 / 35%);
+  --blur-navigation: 20px;
+  --duration-fast: 120ms;
+  --duration-normal: 180ms;
+  --duration-slow: 300ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --z-base: 0;
+  --z-sticky: 100;
+  --z-floating: 200;
+  --z-modal: 300;
+
+  /* Visual QA breakpoints. */
+  --breakpoint-mobile: 390px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-desktop: 1440px;
+
+  /* Compatibility aliases retained while Phase 2 migrates components. */
+  --color-base: var(--color-bg-canvas);
+  --color-surface: var(--color-bg-surface);
+  --color-card: var(--color-bg-surface);
+  --color-card-solid: var(--color-bg-elevated);
+  --color-card-hover: var(--color-bg-hover);
+  --color-overlay: var(--color-bg-overlay);
+  --color-border-mid: var(--color-border-hover);
+  --color-text-sec: var(--color-text-secondary);
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-lg);
+  --shadow-glow-jp: 0 0 24px rgb(255 77 109 / 25%);
+  --shadow-glow-en: 0 0 24px rgb(77 139 255 / 25%);
+  --color-jp: var(--color-language-jp);
+  --color-en: var(--color-language-en);
+  --color-fr: var(--color-language-fr);
+  --color-ko: var(--color-language-ko);
+  --color-zh: var(--color-language-zh);
+  --color-jp-dim: rgb(255 77 109 / 12%);
+  --color-en-dim: rgb(77 139 255 / 12%);
+  --color-fr-dim: rgb(168 85 247 / 12%);
+  --color-ko-dim: rgb(249 115 22 / 12%);
+  --color-zh-dim: rgb(16 185 129 / 12%);
+  --radius-card: var(--radius-xl);
+}
+
+@media (max-width: 800px) {
+  :root {
+    --page-gutter: var(--page-gutter-compact);
+  }
+}

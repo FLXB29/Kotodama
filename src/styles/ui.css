@@ -1,0 +1,341 @@
+/* Reusable UI primitives. Page-specific composition stays outside this file. */
+.ui-page-shell {
+  min-height: calc(100vh - 4rem);
+  width: min(100%, var(--content-width-default));
+  margin: 0 auto;
+  padding: var(--space-16) var(--page-gutter) var(--space-24);
+}
+.ui-page-shell--reading {
+  width: min(100%, var(--content-width-reading));
+}
+.ui-page-shell--wide {
+  width: min(100%, var(--content-width-wide));
+}
+
+.ui-card {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition:
+    border-color var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    transform var(--duration-normal) var(--ease-standard);
+}
+.ui-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+}
+.ui-card--none {
+  padding: 0;
+}
+.ui-card--sm {
+  padding: var(--space-4);
+}
+.ui-card--md {
+  padding: var(--space-6);
+}
+.ui-card--lg {
+  padding: var(--space-8);
+}
+
+.ui-button,
+.ui-icon-button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  transition:
+    background var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
+}
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+}
+.ui-button--sm {
+  min-height: 2.125rem;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+}
+.ui-button--md {
+  min-height: 2.625rem;
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--font-size-md);
+}
+.ui-button--lg {
+  min-height: 3rem;
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--font-size-base);
+}
+.ui-button--full {
+  width: 100%;
+}
+.ui-button--primary {
+  color: var(--color-text-inverse);
+  background: var(--color-accent);
+}
+.ui-button--primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+  box-shadow: var(--shadow-accent);
+  transform: translateY(-1px);
+}
+.ui-button--secondary {
+  color: var(--color-text);
+  background: rgb(255 255 255 / 7%);
+  border-color: var(--color-border);
+}
+.ui-button--secondary:hover:not(:disabled) {
+  background: rgb(255 255 255 / 11%);
+  border-color: var(--color-border-hover);
+}
+.ui-button--ghost {
+  color: var(--color-text-secondary);
+  background: transparent;
+}
+.ui-button--ghost:hover:not(:disabled) {
+  color: var(--color-text);
+  background: rgb(255 255 255 / 6%);
+}
+.ui-button--danger {
+  color: var(--rose-200);
+  background: rgb(255 77 109 / 12%);
+  border-color: rgb(255 77 109 / 28%);
+}
+.ui-button:disabled,
+.ui-icon-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+.ui-icon-button {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  background: rgb(255 255 255 / 6%);
+  border-color: var(--color-border);
+}
+.ui-icon-button:hover:not(:disabled) {
+  color: var(--color-text);
+  background: rgb(255 255 255 / 10%);
+}
+
+.ui-field {
+  display: block;
+  margin-bottom: var(--space-5);
+}
+.ui-field__label {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+.ui-field__description {
+  display: block;
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+.ui-field__control {
+  display: block;
+  margin-top: var(--space-2);
+}
+.ui-field__error {
+  display: block;
+  margin-top: var(--space-2);
+  color: var(--rose-200);
+  font-size: var(--font-size-sm);
+}
+
+.ui-input,
+.ui-textarea,
+.ui-select {
+  width: 100%;
+  color: var(--color-text);
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+}
+.ui-input {
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+}
+.ui-textarea {
+  min-height: 6.5rem;
+  padding: var(--space-3);
+  resize: vertical;
+}
+.ui-select {
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+  padding-right: 2.5rem;
+  color-scheme: dark;
+  appearance: none;
+  background-color: var(--color-bg-elevated);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-secondary) 50%),
+    linear-gradient(135deg, var(--color-text-secondary) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1rem) 1.15rem,
+    calc(100% - 0.7rem) 1.15rem;
+  background-repeat: no-repeat;
+  background-size:
+    0.35rem 0.35rem,
+    0.35rem 0.35rem;
+  cursor: pointer;
+}
+.ui-select option {
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+}
+.ui-input::placeholder,
+.ui-textarea::placeholder {
+  color: var(--color-text-disabled);
+}
+.ui-input:hover,
+.ui-textarea:hover,
+.ui-select:hover {
+  border-color: var(--color-border-hover);
+}
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-select:focus {
+  border-color: var(--color-focus-ring);
+  box-shadow: 0 0 0 3px var(--color-accent-subtle);
+}
+
+.ui-switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 2.875rem;
+  height: 1.625rem;
+  padding: 0.1875rem;
+  border: 0;
+  border-radius: var(--radius-pill);
+  color: var(--color-text-inverse);
+  background: rgb(255 255 255 / 13%);
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease-standard);
+}
+.ui-switch.is-checked {
+  background: var(--color-accent);
+}
+.ui-switch__thumb {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--duration-fast) var(--ease-standard);
+}
+.ui-switch.is-checked .ui-switch__thumb {
+  transform: translateX(1.25rem);
+}
+
+.ui-empty-state {
+  display: grid;
+  min-height: 14rem;
+  place-content: center;
+  padding: var(--space-8);
+  text-align: center;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  color: var(--color-text-secondary);
+}
+.ui-empty-state h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: var(--font-size-xl);
+}
+.ui-empty-state p {
+  max-width: 34rem;
+  margin: var(--space-2) 0 0;
+  line-height: var(--line-height-relaxed);
+}
+.ui-empty-state__action {
+  margin-top: var(--space-5);
+}
+
+.ui-tabs {
+  display: inline-flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 4%);
+}
+.ui-tabs__tab {
+  min-height: 2.25rem;
+  padding: 0 var(--space-3);
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ui-tabs__tab.is-active {
+  color: var(--color-text);
+  background: var(--color-bg-selected);
+}
+
+.ui-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  background: rgb(0 0 0 / 65%);
+  backdrop-filter: blur(0.3125rem);
+}
+.ui-modal {
+  width: min(100%, 32rem);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-elevated);
+  box-shadow: var(--shadow-lg);
+}
+.ui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.ui-modal__header h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: var(--font-size-2xl);
+}
+
+@media (max-width: 800px) {
+  .ui-page-shell {
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-16);
+  }
+  .ui-card--lg {
+    padding: var(--space-6);
+  }
+}

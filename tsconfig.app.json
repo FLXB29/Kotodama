@@ -18,6 +18,14 @@
 
     /* Linting */
     "erasableSyntaxOnly": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "useUnknownInCatchVariables": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"]

@@ -1,0 +1,43 @@
+name: Release verification
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-verify-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  package:
+    name: Verify and package release candidate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Run full quality gate
+        run: npm run quality
+
+      - name: Upload verified web build
+        uses: actions/upload-artifact@v4
+        with:
+          name: kotodama-web-${{ github.ref_name }}
+          path: dist
+          if-no-files-found: error
+          retention-days: 14
