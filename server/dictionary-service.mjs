@@ -1,7 +1,15 @@
 import { existsSync, readFileSync, readdirSync, mkdirSync } from 'node:fs'
 import path from 'node:path'
-import { DatabaseSync } from 'node:sqlite'
 import { log, logError } from './logger.mjs'
+
+let DatabaseSync = null
+try {
+  const sqlite = await import('node:sqlite')
+  DatabaseSync = sqlite.DatabaseSync
+} catch (error) {
+  log('warn', 'dictionary.sqlite-unavailable', { message: error.message })
+}
+
 
 const romajiMap = {
   kya: 'きゃ',
@@ -585,6 +593,7 @@ function cleanKanjiMeaning(meaningsRaw, char) {
 
 // Caching DB for high quality Mazii & Vietnamese definitions
 function getCacheDb() {
+  if (!DatabaseSync) return null
   const cacheDir = path.resolve('data')
   if (!existsSync(cacheDir)) mkdirSync(cacheDir, { recursive: true })
   const db = new DatabaseSync(path.join(cacheDir, 'mazii_cache.db'))
@@ -670,6 +679,15 @@ function resolveFuriganaReading(word, stmtMasterExact, stmtExact) {
 }
 
 export function createDictionaryService(dbPath) {
+  if (!DatabaseSync) {
+    log('warn', 'dictionary.sqlite-unavailable', { dbPath })
+    return {
+      available: false,
+      search: () => [],
+      getWordDetail: () => null,
+      getKanjiDetail: () => null,
+    }
+  }
   if (!dbPath || !existsSync(dbPath)) {
     log('warn', 'dictionary.database-missing', { dbPath })
     return {

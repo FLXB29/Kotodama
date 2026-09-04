@@ -8,6 +8,7 @@
     "npm": ">=10"
   },
   "scripts": {
+    "start": "node --experimental-sqlite server/index.mjs",
     "dev": "vite",
     "dev:local": "node --env-file-if-exists=.env scripts/dev-local.mjs",
     "typecheck": "tsc -b --pretty false",

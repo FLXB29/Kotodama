@@ -1,7 +1,13 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { DatabaseSync } from 'node:sqlite'
+let DatabaseSync = null
+try {
+  const sqlite = await import('node:sqlite')
+  DatabaseSync = sqlite.DatabaseSync
+} catch (error) {
+  console.warn('[CurriculumService] node:sqlite is not available:', error.message)
+}
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -23,7 +29,7 @@ export class CurriculumService {
   init() {
     // 1. Connect to nihongo.db if available
     try {
-      if (fs.existsSync(this.nihongoDbPath)) {
+      if (DatabaseSync && fs.existsSync(this.nihongoDbPath)) {
         this.nihongoDb = new DatabaseSync(this.nihongoDbPath, { readOnly: true })
         console.log(`[CurriculumService] Connected to external SQLite: ${this.nihongoDbPath}`)
       }
