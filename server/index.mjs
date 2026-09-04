@@ -547,6 +547,12 @@ async function route(request, response) {
       return json(response, 503, { data: { status: 'not_ready' } }, cors)
     }
   }
+  if (!path.startsWith('/api/')) {
+    const served = await tryServeStatic(request, response, path)
+    if (served) return
+    return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
+  }
+
   if (
     !path.startsWith('/api/v1/auth/') &&
     !path.startsWith('/api/v1/admin/') &&
@@ -1427,10 +1433,6 @@ async function route(request, response) {
   if (request.method === 'GET' && path === '/api/v1/admin/audit') {
     if (!(await requireAdmin(request, response))) return
     return respond({ items: await authStore.listAudit(100) })
-  }
-  if (!path.startsWith('/api/')) {
-    const served = await tryServeStatic(request, response, path)
-    if (served) return
   }
   return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
 }
