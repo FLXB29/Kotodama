@@ -1126,11 +1126,8 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
 
       {/* Main Exam Section Layout with Question Palette */}
       <div
+        className="jlpt-exam-taking-layout"
         style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 300px',
-          gap: '1.5rem',
-          alignItems: 'start',
           marginTop: isSubmitted ? '2rem' : '1.5rem',
         }}
       >
@@ -1691,20 +1688,7 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
         </div>
 
         {/* Right Column: Question Navigation Palette (Styled matching Image 1) */}
-        <div
-          style={{
-            position: 'sticky',
-            top: '5.5rem',
-            background: 'var(--color-bg-surface, #ffffff)',
-            borderRadius: '1.25rem',
-            border: '1px solid var(--color-border, #cbd5e1)',
-            boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
-            display: 'flex',
-            flexDirection: 'column',
-            maxHeight: 'calc(100vh - 7rem)',
-            overflow: 'hidden',
-          }}
-        >
+        <div className="jlpt-exam-sidebar">
           {/* Header Banner matching Image 1 */}
           <div
             style={{
@@ -1775,7 +1759,7 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                   <div
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(6, 1fr)',
+                      gridTemplateColumns: 'repeat(auto-fill, minmax(36px, 1fr))',
                       gap: '0.375rem',
                     }}
                   >

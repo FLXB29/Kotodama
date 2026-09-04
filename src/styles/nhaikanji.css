@@ -130,13 +130,21 @@
 /* Kanji Grid */
 .kanji-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.875rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .kanji-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .kanji-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.25rem;
   }
 }
 
@@ -674,3 +682,37 @@
   border-color: #334155;
   color: #f8fafc;
 }
+
+/* JLPT Exam Taking Layout & Responsive Sidebar */
+.jlpt-exam-taking-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .jlpt-exam-taking-layout {
+    grid-template-columns: 1fr 300px;
+  }
+}
+
+.jlpt-exam-sidebar {
+  position: static;
+  background: var(--color-bg-surface, #ffffff);
+  border-radius: 1.25rem;
+  border: 1px solid var(--color-border, #cbd5e1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .jlpt-exam-sidebar {
+    position: sticky;
+    top: 5.5rem;
+    max-height: calc(100vh - 7rem);
+  }
+}
+

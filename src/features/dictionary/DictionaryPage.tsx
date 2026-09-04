@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Badge, Button, Card, EmptyState, Input } from '../../components/ui'
 import {
   ArrowRight,
@@ -21,7 +21,6 @@ import { KanjiCanvas } from '../nhaikanji/KanjiCanvas'
 import { KanjiDetailModal } from '../nhaikanji/KanjiDetailModal'
 import { srsApi } from '../srs/srsApi'
 import { useAuth } from '../auth/authContext'
-import { useQueryClient } from '@tanstack/react-query'
 
 const POPULAR_SEARCHES = ['学校', '先生', '勉強', '食べる', '感じ', '日本語', '桜', '時間', '犬', '雨']
 const JLPT_LEVELS = ['ALL', 'N5', 'N4', 'N3', 'N2', 'N1'] as const

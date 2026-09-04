@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
+import { useQuery, useQueryClient } from '@tanstack/react-query'
 import {
   BookOpen,
   Calendar,
@@ -19,7 +19,6 @@ import { srsApi } from './srsApi'
 import type { SrsCard, SrsCardType, SrsHeatmapDay, SrsRating } from './srsTypes'
 import { FlashcardStudyModal } from './FlashcardStudyModal'
 import { useAuth } from '../auth/authContext'
-import { useQueryClient } from '@tanstack/react-query'
 
 const QUICK_SUGGESTIONS = ['食べる', '育つ', '必ず', '愛', '成長', '学校', '勉強', '難しい']
 const JLPT_LEVELS = ['ALL', 'N5', 'N4', 'N3', 'N2', 'N1'] as const
