@@ -112,5 +112,10 @@ export function readConfig(env = process.env) {
       ytdlpPath: env.YTDLP_PATH?.trim() || 'yt-dlp',
       timeoutMs: youtubeTimeoutMs,
     },
+    dictionary: {
+      dbPath:
+        env.VNJPDICT_DB_PATH?.trim() ||
+        'D:/VKU/data/drive-download-20260828T102340Z-1-002/vnjpdict_scraper/vnjpdict.db',
+    },
   }
 }
