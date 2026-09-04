@@ -69,6 +69,7 @@ async function tryServeStatic(request, response, requestPath) {
       fileStat = await stat(filePath).catch(() => null)
     }
     if (!fileStat?.isFile()) {
+      if (extname(cleanPath)) return false
       filePath = join(distDir, 'index.html')
       fileStat = await stat(filePath).catch(() => null)
     }
@@ -501,8 +502,22 @@ async function bootstrapAdmin() {
 }
 
 async function route(request, response) {
+  const host = request.headers.host || 'localhost'
+  const url = new URL(request.url, `http://${host}`)
+  const path = url.pathname
+
+  // Serve static assets and SPA routes without CORS restrictions
+  if (!path.startsWith('/api/') && path !== '/health' && path !== '/ready') {
+    const served = await tryServeStatic(request, response, path)
+    if (served) return
+    return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
+  }
+
   const origin = request.headers.origin
-  if (origin && !allowedOrigins.includes(origin)) return fail(response, 403, 'Origin không được phép.', 'CORS_DENIED')
+  const isSameOrigin = origin && (origin === `http://${host}` || origin === `https://${host}`)
+  const isAllowed = !origin || allowedOrigins.includes('*') || allowedOrigins.includes(origin) || isSameOrigin
+  if (!isAllowed) return fail(response, 403, 'Origin không được phép.', 'CORS_DENIED')
+
   const cors = origin
     ? {
         'access-control-allow-origin': origin,
@@ -517,8 +532,7 @@ async function route(request, response) {
     response.writeHead(204, cors)
     return response.end()
   }
-  const url = new URL(request.url, `http://${request.headers.host}`)
-  const path = url.pathname
+
   if (request.method === 'GET' && path === '/health') {
     try {
       const persistence = await databaseHealth(database)
@@ -546,11 +560,6 @@ async function route(request, response) {
       logError('readiness.failed', error)
       return json(response, 503, { data: { status: 'not_ready' } }, cors)
     }
-  }
-  if (!path.startsWith('/api/')) {
-    const served = await tryServeStatic(request, response, path)
-    if (served) return
-    return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
   }
 
   if (
