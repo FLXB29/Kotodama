@@ -36,10 +36,64 @@ import {
   transcribeJapaneseAudioChunk,
 } from './transcription-provider.mjs'
 import { tmpdir } from 'node:os'
-import { join } from 'node:path'
+import { extname, join, resolve } from 'node:path'
+
+const distDir = resolve('dist')
+const mimeTypes = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.mjs': 'application/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.gif': 'image/gif',
+  '.svg': 'image/svg+xml',
+  '.ico': 'image/x-icon',
+  '.mp3': 'audio/mpeg',
+  '.wav': 'audio/wav',
+  '.woff': 'font/woff',
+  '.woff2': 'font/woff2',
+  '.ttf': 'font/ttf',
+}
+
+async function tryServeStatic(request, response, requestPath) {
+  if (request.method !== 'GET' && request.method !== 'HEAD') return false
+  const cleanPath = requestPath.split('?')[0].replace(/\.\./g, '')
+  let filePath = join(distDir, cleanPath)
+  try {
+    let fileStat = await stat(filePath).catch(() => null)
+    if (fileStat?.isDirectory()) {
+      filePath = join(filePath, 'index.html')
+      fileStat = await stat(filePath).catch(() => null)
+    }
+    if (!fileStat?.isFile()) {
+      filePath = join(distDir, 'index.html')
+      fileStat = await stat(filePath).catch(() => null)
+    }
+    if (!fileStat?.isFile()) return false
+
+    const ext = extname(filePath).toLowerCase()
+    const contentType = mimeTypes[ext] ?? 'application/octet-stream'
+    response.writeHead(200, {
+      'content-type': contentType,
+      'content-length': fileStat.size,
+      ...(ext === '.html' ? { 'cache-control': 'no-cache' } : { 'cache-control': 'public, max-age=31536000, immutable' }),
+    })
+    if (request.method === 'HEAD') {
+      response.end()
+      return true
+    }
+    createReadStream(filePath).pipe(response)
+    return true
+  } catch {
+    return false
+  }
+}
 
 const config = readConfig()
-const port = Number(process.env.API_PORT ?? 8787)
+const port = Number(process.env.PORT ?? process.env.API_PORT ?? 8787)
 const database = createDatabasePool(config.databaseUrl)
 if (config.production && !database) throw new Error('DATABASE_URL is required in production.')
 const authStore = createAuthStore(database)
@@ -1374,6 +1428,10 @@ async function route(request, response) {
     if (!(await requireAdmin(request, response))) return
     return respond({ items: await authStore.listAudit(100) })
   }
+  if (!path.startsWith('/api/')) {
+    const served = await tryServeStatic(request, response, path)
+    if (served) return
+  }
   return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
 }
 
@@ -1395,7 +1453,8 @@ const server = http.createServer((request, response) => {
     fail(response, 500, 'Máy chủ đang gặp sự cố. Vui lòng thử lại sau.', 'INTERNAL_ERROR')
   })
 })
-server.listen(port, '127.0.0.1', () => log('info', 'server.started', { port, persistence: authStore.mode }))
+const host = process.env.HOST ?? '0.0.0.0'
+server.listen(port, host, () => log('info', 'server.started', { port, host, persistence: authStore.mode }))
 
 async function shutdown() {
   clearInterval(cleanupInterval)
