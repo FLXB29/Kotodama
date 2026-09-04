@@ -111,7 +111,7 @@ const configuredOrigins = process.env.CORS_ORIGINS?.split(',')
 const allowedOrigins = configuredOrigins?.length
   ? configuredOrigins
   : production
-    ? []
+    ? (Boolean(process.env.RENDER || process.env.RENDER_EXTERNAL_URL) ? ['*'] : [])
     : [
         'http://127.0.0.1:5173',
         'http://127.0.0.1:5174',
