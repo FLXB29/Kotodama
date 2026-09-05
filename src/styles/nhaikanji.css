@@ -716,3 +716,28 @@
   }
 }
 
+/* JLPT Option Card - Text Selection & Copy Support */
+.jlpt-option-card {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  transition: all 0.15s ease;
+}
+
+.jlpt-option-card:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+.jlpt-option-text {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+}
+
+.jlpt-option-number {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+}

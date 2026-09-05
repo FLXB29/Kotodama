@@ -27,13 +27,7 @@ interface JlptExamTakingPageProps {
 }
 
 // Dedicated Standalone Audio Player Component for Mondai & Question
-function QuestionAudioPlayer({
-  url,
-  label = 'Nghe âm thanh',
-}: {
-  url: string
-  label?: string
-}) {
+function QuestionAudioPlayer({ url, label = 'Nghe âm thanh' }: { url: string; label?: string }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -142,7 +136,9 @@ function QuestionAudioPlayer({
           onChange={handleSeek}
           style={{ width: '100%', height: '4px', cursor: 'pointer', accentColor: '#4f46e5' }}
         />
-        <span style={{ fontSize: '0.6875rem', color: '#64748b', fontFamily: 'var(--font-mono, monospace)', flexShrink: 0 }}>
+        <span
+          style={{ fontSize: '0.6875rem', color: '#64748b', fontFamily: 'var(--font-mono, monospace)', flexShrink: 0 }}
+        >
           {formatTime(currentTime)} / {formatTime(duration)}
         </span>
       </div>
@@ -229,13 +225,24 @@ function JlptCertificate({
   const wrongCount = result.totalQuestions - correctCount
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%', maxWidth: '900px', margin: '0 auto' }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '1.5rem',
+        width: '100%',
+        maxWidth: '900px',
+        margin: '0 auto',
+      }}
+    >
       <div
         style={{
           background: '#ffffff',
           borderRadius: '1.5rem',
           border: `2px solid ${isPassed ? '#10b981' : '#f43f5e'}`,
-          boxShadow: isPassed ? '0 10px 25px -5px rgba(16, 185, 129, 0.15)' : '0 10px 25px -5px rgba(244, 63, 94, 0.15)',
+          boxShadow: isPassed
+            ? '0 10px 25px -5px rgba(16, 185, 129, 0.15)'
+            : '0 10px 25px -5px rgba(244, 63, 94, 0.15)',
           padding: '2rem',
           position: 'relative',
           overflow: 'hidden',
@@ -519,28 +526,20 @@ function JlptCertificate({
                 gap: '0.5rem',
               }}
             >
-              <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#dc2626', lineHeight: 1 }}>
-                {totalScore}
-              </div>
-              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#64748b' }}>
-                180
-              </div>
+              <div style={{ fontSize: '2.5rem', fontWeight: 900, color: '#dc2626', lineHeight: 1 }}>{totalScore}</div>
+              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#64748b' }}>180</div>
               <div style={{ fontSize: '0.75rem', color: '#475569', fontWeight: 600, marginTop: '0.5rem' }}>
                 • Điểm đỗ: {passScore}/180
               </div>
               <div style={{ fontSize: '0.8125rem', marginTop: '0.25rem' }}>
                 <span style={{ color: '#64748b' }}>Mức CEFR: </span>
-                <span style={{ fontWeight: 800, color: isPassed ? '#4f46e5' : '#94a3b8' }}>
-                  {cefr}
-                </span>
+                <span style={{ fontWeight: 800, color: isPassed ? '#4f46e5' : '#94a3b8' }}>{cefr}</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div style={{ marginTop: '1.5rem', fontSize: '0.75rem', color: '#94a3b8', fontWeight: 500 }}>
-          {today}
-        </div>
+        <div style={{ marginTop: '1.5rem', fontSize: '0.75rem', color: '#94a3b8', fontWeight: 500 }}>{today}</div>
       </div>
 
       <div
@@ -611,7 +610,9 @@ function JlptCertificate({
         {result.resultMessage || (isPassed ? 'CHÚC MỪNG! BẠN ĐÃ ĐỖ KỲ THI' : 'CHƯA ĐẠT! HÃY CỐ GẮNG HƠN')}
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem' }}>
+      <div
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem' }}
+      >
         <Button variant="secondary" onClick={onRetake}>
           <RotateCcw size={16} /> Làm lại bài thi
         </Button>
@@ -795,7 +796,9 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
       ]
     }
 
-    const sec1Parts = exam.parts.filter((p) => p.sectionType === 1 || p.title?.includes('Từ vựng') || p.titleJP?.includes('文字・語彙'))
+    const sec1Parts = exam.parts.filter(
+      (p) => p.sectionType === 1 || p.title?.includes('Từ vựng') || p.titleJP?.includes('文字・語彙')
+    )
     const sec2Parts = exam.parts.filter(
       (p) =>
         p.sectionType === 2 ||
@@ -805,7 +808,9 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
         p.titleJP?.includes('文法') ||
         p.titleJP?.includes('読解')
     )
-    const sec3Parts = exam.parts.filter((p) => p.sectionType === 4 || p.title?.includes('Nghe hiểu') || p.titleJP?.includes('聴解'))
+    const sec3Parts = exam.parts.filter(
+      (p) => p.sectionType === 4 || p.title?.includes('Nghe hiểu') || p.titleJP?.includes('聴解')
+    )
 
     const sec1Count = sec1Parts.reduce((acc, p) => acc + (p.questions?.length || 0), 0)
     const sec2Count = sec2Parts.reduce((acc, p) => acc + (p.questions?.length || 0), 0)
@@ -1002,9 +1007,7 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                   <div style={{ fontSize: '0.875rem', fontWeight: 800, color: isActive ? '#3730a3' : '#1e293b' }}>
                     {sec.title}
                   </div>
-                  <div style={{ fontSize: '0.6875rem', color: '#64748b', marginTop: '0.125rem' }}>
-                    {sec.titleJP}
-                  </div>
+                  <div style={{ fontSize: '0.6875rem', color: '#64748b', marginTop: '0.125rem' }}>{sec.titleJP}</div>
                 </div>
 
                 <div style={{ textAlign: 'right' }}>
@@ -1115,12 +1118,7 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
       {/* Official Certificate Result View on Submission */}
       {isSubmitted && result && (
         <div style={{ marginTop: '1.5rem' }}>
-          <JlptCertificate
-            result={result}
-            examTitle={exam.title}
-            onRetake={handleRetake}
-            onBack={onBack}
-          />
+          <JlptCertificate result={result} examTitle={exam.title} onRetake={handleRetake} onBack={onBack} />
         </div>
       )}
 
@@ -1152,8 +1150,24 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                   }}
                 >
                   {/* Part Header */}
-                  <div style={{ borderBottom: '1px solid #f1f5f9', paddingBottom: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      borderBottom: '1px solid #f1f5f9',
+                      paddingBottom: '0.75rem',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.75rem',
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        flexWrap: 'wrap',
+                        gap: '0.5rem',
+                      }}
+                    >
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                         <span
                           style={{
@@ -1190,13 +1204,23 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                   {/* Reading Comprehension Passage at Part level */}
                   {part.passage && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.375rem', fontSize: '0.75rem', fontWeight: 800, color: '#4338ca', background: '#e0e7ff', padding: '0.2rem 0.6rem', borderRadius: '0.375rem', width: 'fit-content' }}>
+                      <div
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.375rem',
+                          fontSize: '0.75rem',
+                          fontWeight: 800,
+                          color: '#4338ca',
+                          background: '#e0e7ff',
+                          padding: '0.2rem 0.6rem',
+                          borderRadius: '0.375rem',
+                          width: 'fit-content',
+                        }}
+                      >
                         <span>📄 ĐOẠN VĂN / BÀI ĐỌC</span>
                       </div>
-                      <div
-                        className="jlpt-reading-passage"
-                        dangerouslySetInnerHTML={{ __html: part.passage }}
-                      />
+                      <div className="jlpt-reading-passage" dangerouslySetInnerHTML={{ __html: part.passage }} />
                     </div>
                   )}
 
@@ -1214,7 +1238,8 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                         return text.length > 12
                       })
 
-                      const isListeningPart = part.sectionType === 4 || activeSectionIdx === 2 || part.title?.includes('Nghe')
+                      const isListeningPart =
+                        part.sectionType === 4 || activeSectionIdx === 2 || part.title?.includes('Nghe')
 
                       return (
                         <div
@@ -1242,14 +1267,31 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                         >
                           {/* Reading Passage attached to Question */}
                           {q.passage && (
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.375rem', fontSize: '0.75rem', fontWeight: 800, color: '#4338ca', background: '#e0e7ff', padding: '0.2rem 0.6rem', borderRadius: '0.375rem', width: 'fit-content' }}>
+                            <div
+                              style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '0.5rem',
+                                marginBottom: '0.5rem',
+                              }}
+                            >
+                              <div
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '0.375rem',
+                                  fontSize: '0.75rem',
+                                  fontWeight: 800,
+                                  color: '#4338ca',
+                                  background: '#e0e7ff',
+                                  padding: '0.2rem 0.6rem',
+                                  borderRadius: '0.375rem',
+                                  width: 'fit-content',
+                                }}
+                              >
                                 <span>📄 ĐOẠN VĂN / BÀI ĐỌC</span>
                               </div>
-                              <div
-                                className="jlpt-reading-passage"
-                                dangerouslySetInnerHTML={{ __html: q.passage }}
-                              />
+                              <div className="jlpt-reading-passage" dangerouslySetInnerHTML={{ __html: q.passage }} />
                             </div>
                           )}
 
@@ -1314,9 +1356,14 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                       className={`jlpt-seek-btn${isPlayingThisQ ? ' is-playing' : ''}`}
                                       title="Nhảy trình phát audio đến câu này"
                                     >
-                                      {isPlayingThisQ ? <Headphones size={13} /> : <Play size={12} fill="currentColor" />}
+                                      {isPlayingThisQ ? (
+                                        <Headphones size={13} />
+                                      ) : (
+                                        <Play size={12} fill="currentColor" />
+                                      )}
                                       <span>
-                                        {isPlayingThisQ ? 'Đang phát' : 'Nghe câu này'} ({formatAudioTime(q.audioStart)})
+                                        {isPlayingThisQ ? 'Đang phát' : 'Nghe câu này'} ({formatAudioTime(q.audioStart)}
+                                        )
                                       </span>
                                     </button>
                                   )
@@ -1326,7 +1373,8 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                 <div>
                                   {qResult.isCorrect ? (
                                     <Badge variant="outline" className="text-emerald-600 border-emerald-300 font-bold">
-                                      <CheckCircle2 size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> Đúng
+                                      <CheckCircle2 size={14} style={{ display: 'inline', marginRight: '0.25rem' }} />{' '}
+                                      Đúng
                                     </Badge>
                                   ) : (
                                     <Badge variant="outline" className="text-rose-600 border-rose-300 font-bold">
@@ -1385,11 +1433,24 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                 isSubmitted && String(q.correctAnswer ?? q.answer ?? 1) === String(optNumber)
 
                               return (
-                                <button
+                                <div
                                   key={optIdx}
-                                  type="button"
-                                  disabled={isSubmitted}
-                                  onClick={() => handleSelectOption(qKey, optNumber)}
+                                  role="button"
+                                  tabIndex={isSubmitted ? -1 : 0}
+                                  aria-pressed={isSelected}
+                                  className={`jlpt-option-card${isSelected ? ' is-selected' : ''}${isCorrectOption ? ' is-correct' : ''}`}
+                                  onClick={() => {
+                                    if (isSubmitted) return
+                                    const selection = window.getSelection()?.toString()
+                                    if (selection && selection.trim().length > 0) return
+                                    handleSelectOption(qKey, optNumber)
+                                  }}
+                                  onKeyDown={(e) => {
+                                    if (!isSubmitted && (e.key === 'Enter' || e.key === ' ')) {
+                                      e.preventDefault()
+                                      handleSelectOption(qKey, optNumber)
+                                    }
+                                  }}
                                   style={{
                                     padding: isLongOptions ? '0.875rem 1.25rem' : '0.75rem 1rem',
                                     borderRadius: '0.75rem',
@@ -1397,11 +1458,13 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                     fontSize: isLongOptions ? '1rem' : '0.9375rem',
                                     lineHeight: 1.7,
                                     fontWeight: isSelected || isCorrectOption ? 700 : 500,
-                                    cursor: isSubmitted ? 'default' : 'pointer',
+                                    cursor: isSubmitted ? 'text' : 'pointer',
                                     display: 'flex',
                                     alignItems: 'center',
                                     gap: '1rem',
                                     border: '1px solid',
+                                    userSelect: 'text',
+                                    WebkitUserSelect: 'text',
                                     borderColor: isCorrectOption
                                       ? '#4ade80'
                                       : isSelected
@@ -1422,6 +1485,7 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                   }}
                                 >
                                   <span
+                                    className="jlpt-option-number"
                                     style={{
                                       width: '1.75rem',
                                       height: '1.75rem',
@@ -1432,6 +1496,8 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                       alignItems: 'center',
                                       justifyContent: 'center',
                                       flexShrink: 0,
+                                      userSelect: 'none',
+                                      WebkitUserSelect: 'none',
                                       background: isSelected ? '#ffffff' : 'var(--color-bg-subtle, #f1f5f9)',
                                       color: isSelected ? '#4f46e5' : '#64748b',
                                       border: isSelected ? 'none' : '1px solid var(--color-border, #cbd5e1)',
@@ -1439,10 +1505,19 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                   >
                                     {optNumber}
                                   </span>
-                                  <span style={{ fontFamily: 'var(--font-serif, "Fraunces", serif)', flex: 1 }}>
+                                  <span
+                                    className="jlpt-option-text"
+                                    style={{
+                                      fontFamily: 'var(--font-serif, "Fraunces", serif)',
+                                      flex: 1,
+                                      userSelect: 'text',
+                                      WebkitUserSelect: 'text',
+                                      cursor: isSubmitted ? 'text' : 'pointer',
+                                    }}
+                                  >
                                     {optText}
                                   </span>
-                                </button>
+                                </div>
                               )
                             })}
                           </div>
@@ -1461,7 +1536,16 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
                                 gap: '0.5rem',
                               }}
                             >
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem', color: '#b45309', fontWeight: 800, fontSize: '0.875rem' }}>
+                              <div
+                                style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '0.375rem',
+                                  color: '#b45309',
+                                  fontWeight: 800,
+                                  fontSize: '0.875rem',
+                                }}
+                              >
                                 <Lightbulb size={16} />
                                 <span>Giải thích chi tiết & Dịch nghĩa</span>
                               </div>
@@ -1661,7 +1745,8 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
             </Button>
 
             <div style={{ fontSize: '0.8125rem', fontWeight: 700, color: '#475569' }}>
-              Phần {activeSectionIdx + 1}/{sections.length} • {currentSectionAnsweredCount}/{currentSectionQuestionsCount} câu
+              Phần {activeSectionIdx + 1}/{sections.length} • {currentSectionAnsweredCount}/
+              {currentSectionQuestionsCount} câu
             </div>
 
             {activeSectionIdx < sections.length - 1 ? (
@@ -1700,7 +1785,9 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
               justifyContent: 'space-between',
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 800, fontSize: '0.9375rem' }}>
+            <div
+              style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 800, fontSize: '0.9375rem' }}
+            >
               <span
                 style={{
                   background: 'rgba(255,255,255,0.2)',
@@ -1715,11 +1802,18 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
               >
                 {activeSectionIdx + 1}
               </span>
-              <span>{(currentSection?.title || 'Phần thi').replace(/^\d+\.\s*/, '').split('(')[0]?.trim() || 'Phần thi'}</span>
+              <span>
+                {(currentSection?.title || 'Phần thi')
+                  .replace(/^\d+\.\s*/, '')
+                  .split('(')[0]
+                  ?.trim() || 'Phần thi'}
+              </span>
             </div>
 
             <span style={{ fontSize: '0.75rem', fontWeight: 600, opacity: 0.9 }}>
-              {currentSectionAnsweredCount === currentSectionQuestionsCount ? 'Xong' : `${currentSectionAnsweredCount}/${currentSectionQuestionsCount}`}
+              {currentSectionAnsweredCount === currentSectionQuestionsCount
+                ? 'Xong'
+                : `${currentSectionAnsweredCount}/${currentSectionQuestionsCount}`}
             </span>
           </div>
 
@@ -1837,12 +1931,22 @@ export function JlptExamTakingPage({ examId, onBack }: JlptExamTakingPageProps) 
               <span>Đã chọn</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
-              <span style={{ width: '0.625rem', height: '0.625rem', borderRadius: '0.2rem', background: '#f0f4f9', border: '1px solid #cbd5e1' }} />
+              <span
+                style={{
+                  width: '0.625rem',
+                  height: '0.625rem',
+                  borderRadius: '0.2rem',
+                  background: '#f0f4f9',
+                  border: '1px solid #cbd5e1',
+                }}
+              />
               <span>Chưa làm</span>
             </div>
             {isSubmitted && (
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.375rem' }}>
-                <span style={{ width: '0.625rem', height: '0.625rem', borderRadius: '0.2rem', background: '#dcfce7' }} />
+                <span
+                  style={{ width: '0.625rem', height: '0.625rem', borderRadius: '0.2rem', background: '#dcfce7' }}
+                />
                 <span>Đúng</span>
               </div>
             )}
