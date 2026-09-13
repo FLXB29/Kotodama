@@ -18,6 +18,7 @@ import {
   verifyPassword,
 } from './security.mjs'
 import { createDatabasePool, databaseHealth } from './db/pool.mjs'
+import { autoMigrateAndSeed } from './db/auto-migrate-and-seed.mjs'
 import { createAuthStore } from './auth-store.mjs'
 import { readConfig } from './config.mjs'
 import { createEmailService } from './email.mjs'
@@ -681,11 +682,7 @@ async function route(request, response) {
         return fail(response, err.status, err.message, err.code)
       }
       logError('curriculum.catalog.failed', err)
-      let dbHost = 'none'
-      try {
-        if (config.databaseUrl) dbHost = new URL(config.databaseUrl).host
-      } catch {}
-      return fail(response, 500, `${err?.message || 'Lỗi hệ thống khi tải danh mục giáo trình.'} [db: ${dbHost}] [code: ${err?.code || 'N/A'}] [detail: ${err?.detail || 'N/A'}]`, 'SERVER_ERROR')
+      return fail(response, 500, err?.message ? `Lỗi hệ thống khi tải danh mục giáo trình: ${err.message}` : 'Lỗi hệ thống khi tải danh mục giáo trình.', 'SERVER_ERROR')
     }
   }
 
@@ -1783,6 +1780,13 @@ const isMain = Boolean(
 )
 
 if (isMain) {
+  if (database) {
+    try {
+      await autoMigrateAndSeed(database)
+    } catch (err) {
+      console.error('[Startup] autoMigrateAndSeed error:', err.message)
+    }
+  }
   server.listen(port, host, () =>
     log('info', 'server.started', {
       port,

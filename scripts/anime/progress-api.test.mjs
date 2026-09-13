@@ -5,14 +5,12 @@ import { DatabaseSync } from 'node:sqlite'
 import {
   AnimeCatalogService,
   AnimeApiError,
-  sanitizeEpisodeId,
   sanitizeWordId,
 } from '../../server/anime-catalog-service.mjs'
 import { SrsStore, SQLITE_SRS_DDL } from '../../server/srs-store.mjs'
 import { SrsService } from '../../server/srs-service.mjs'
 import { applyAnimeSchemaSQLite } from '../../server/db/anime-persistence.mjs'
 
-const REAL_SQLITE_PATH = path.resolve('tmp/anime/anime.db')
 const REAL_DICT_DIR = path.resolve('D:/Project/data/aanime_scraper/dictionary/shards')
 
 /**
