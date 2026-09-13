@@ -56,7 +56,8 @@ async function migrate() {
 
     for (const name of migrationFiles) {
       if (applied.has(name)) continue
-      const sql = await readFile(join(migrationsDirectory, name), 'utf8')
+      const rawSql = await readFile(join(migrationsDirectory, name), 'utf8')
+      const sql = rawSql.replace(/^\uFEFF/, '')
       await client.query('begin')
       try {
         await client.query(sql)
