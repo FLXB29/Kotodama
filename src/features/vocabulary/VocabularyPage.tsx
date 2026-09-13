@@ -257,7 +257,12 @@ export function VocabularyPage({ onGoToSrs }: { onGoToSrs?: () => void }) {
         meaning: Array.isArray(t.meanings) ? t.meanings.join(', ') : String(t.meanings),
         jlptLevel: courseDetailData?.course.level || 'N5',
         partOfSpeech: '',
-        examples: (t.examples || []).map((ex) => ({ jp: ex.ja, vi: ex.vi })),
+        examples: (t.examples || []).map((ex) => ({
+          jp: ex.ja || ex.jp || '',
+          vi: ex.vi || '',
+          audio: ex.audio || undefined,
+        })),
+        audioUrl: (t.examples && t.examples[0] && t.examples[0].audio) || undefined,
       }
     })
   }, [termsData?.items, unitPage, selectedCourseCode, selectedUnitKey, currentUnitInfo, courseDetailData?.course.level])
@@ -1028,13 +1033,14 @@ export function VocabularyPage({ onGoToSrs }: { onGoToSrs?: () => void }) {
                   const isSaved = isCurriculumTermSaved(item)
                   return (
                     <div key={item.id || idx} className="curriculum-term-row">
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1 }}>
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', flex: 1 }}>
                         <span
                           style={{
                             fontSize: '0.8rem',
                             fontWeight: 700,
                             color: 'var(--color-text-muted)',
                             minWidth: '28px',
+                            marginTop: '4px',
                           }}
                         >
                           #{globalIdx}
@@ -1059,10 +1065,45 @@ export function VocabularyPage({ onGoToSrs }: { onGoToSrs?: () => void }) {
                           <div style={{ fontSize: '0.92rem', color: 'var(--color-text-secondary)', marginTop: '2px' }}>
                             {item.meaning}
                           </div>
+
+                          {/* Example Sentences & Translations */}
+                          {item.examples && item.examples.length > 0 && (
+                            <div className="curriculum-term-examples">
+                              {item.examples.map((ex, exIdx) => {
+                                const hasAudio = Boolean(ex.audio)
+                                return (
+                                  <div key={exIdx} className="curriculum-example-item">
+                                    <div className="curriculum-example-jp">
+                                      <span>{ex.jp}</span>
+                                      {hasAudio && (
+                                        <button
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.stopPropagation()
+                                            playAudio(ex.audio, ex.jp)
+                                          }}
+                                          className="curriculum-example-audio-btn"
+                                          title="Phát âm câu ví dụ"
+                                          aria-label={`Phát âm câu ví dụ: ${ex.jp}`}
+                                        >
+                                          <Volume2 size={13} />
+                                        </button>
+                                      )}
+                                    </div>
+                                    {ex.vi && (
+                                      <div className="curriculum-example-vi">
+                                        {ex.vi}
+                                      </div>
+                                    )}
+                                  </div>
+                                )
+                              })}
+                            </div>
+                          )}
                         </div>
                       </div>
 
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap', alignSelf: 'flex-start', marginTop: '4px' }}>
                         <button
                           type="button"
                           onClick={() => playAudio(item.audioUrl, item.word)}

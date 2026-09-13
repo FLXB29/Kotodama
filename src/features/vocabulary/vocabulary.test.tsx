@@ -395,6 +395,8 @@ describe('VocabularyPage Suite (Task T05 & T06)', () => {
     expect(screen.getByText('【わたし】')).toBeTruthy()
     expect(screen.getByText('(TƯ)')).toBeTruthy()
     expect(screen.getByText('tôi, bản thân')).toBeTruthy()
+    expect(screen.getByText('私は学生です。')).toBeTruthy()
+    expect(screen.getByText('Tôi là học sinh.')).toBeTruthy()
 
     expect(screen.getByText('本')).toBeTruthy()
     expect(screen.getByText('【ほん】')).toBeTruthy()

@@ -26,6 +26,8 @@ export interface CanonicalUnit {
 export interface ExampleSentence {
   ja: string
   vi: string
+  jp?: string | undefined
+  audio?: string | undefined
 }
 
 export interface RawSourceReference {

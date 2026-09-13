@@ -88,8 +88,8 @@ export interface CurriculumWord {
   meaning: string
   jlptLevel: string
   partOfSpeech: string
-  examples: Array<{ jp: string; vi: string }>
-  audioUrl?: string
+  examples: Array<{ jp: string; vi: string; audio?: string | undefined }>
+  audioUrl?: string | undefined
 }
 
 export interface GrammarUsageGroup {
