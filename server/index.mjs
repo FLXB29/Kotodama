@@ -681,7 +681,11 @@ async function route(request, response) {
         return fail(response, err.status, err.message, err.code)
       }
       logError('curriculum.catalog.failed', err)
-      return fail(response, 500, 'Lỗi hệ thống khi tải danh mục giáo trình.', 'SERVER_ERROR')
+      let dbHost = 'none'
+      try {
+        if (config.databaseUrl) dbHost = new URL(config.databaseUrl).host
+      } catch {}
+      return fail(response, 500, `${err?.message || 'Lỗi hệ thống khi tải danh mục giáo trình.'} [db: ${dbHost}] [code: ${err?.code || 'N/A'}] [detail: ${err?.detail || 'N/A'}]`, 'SERVER_ERROR')
     }
   }
 
