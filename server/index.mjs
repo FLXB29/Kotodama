@@ -106,18 +106,21 @@ const emailService = createEmailService(config)
 const mediaStorage = createMediaStorage(config)
 const dictionaryService = createDictionaryService(config.dictionary?.dbPath)
 const curriculumService = new CurriculumService()
-const rawCurriculumStorage = process.env.CURRICULUM_STORAGE || 'sqlite'
+const isCloudOrRender = Boolean(process.env.RENDER || process.env.RENDER_EXTERNAL_URL || config.production)
+const defaultCurriculumStorage = isCloudOrRender && database ? 'postgres' : 'sqlite'
+const rawCurriculumStorage = process.env.CURRICULUM_STORAGE || defaultCurriculumStorage
 const curriculumStorage = rawCurriculumStorage.trim().toLowerCase()
 const curriculumCatalogService = new CurriculumCatalogService({
   storage: curriculumStorage,
-  pool: curriculumStorage === 'postgres' || curriculumStorage === 'postgresql' ? database : null,
+  pool: database,
   sqlitePath: process.env.CURRICULUM_SQLITE_PATH || resolve(projectRoot, 'tmp/curriculum/curriculum.db'),
 })
-const rawAnimeStorage = process.env.ANIME_STORAGE || 'sqlite'
+const defaultAnimeStorage = isCloudOrRender && database ? 'postgres' : 'sqlite'
+const rawAnimeStorage = process.env.ANIME_STORAGE || defaultAnimeStorage
 const animeStorage = rawAnimeStorage.trim().toLowerCase()
 const animeCatalogService = new AnimeCatalogService({
   storage: animeStorage,
-  pool: animeStorage === 'postgres' || animeStorage === 'postgresql' ? database : null,
+  pool: database,
   sqlitePath: process.env.ANIME_SQLITE_PATH || resolve(projectRoot, 'tmp/anime/anime.db'),
   dictionaryDir: process.env.ANIME_DICTIONARY_DIR || resolve('D:/Project/data/aanime_scraper/dictionary/shards'),
 })

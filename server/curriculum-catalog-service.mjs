@@ -133,7 +133,7 @@ export class CurriculumCatalogService {
       }
     } else if (normalizedStorage === 'sqlite') {
       this.storage = 'sqlite'
-      this.pool = null
+      this.pool = options.pool || null
       this.sqlitePath = options.sqlitePath || process.env.CURRICULUM_SQLITE_PATH || path.resolve('tmp/curriculum/curriculum.db')
 
       if (options.db) {
@@ -189,6 +189,10 @@ export class CurriculumCatalogService {
   async queryAll(sqlSQLite, sqlPostgres, params = []) {
     if (this.storage === 'sqlite') {
       if (!this.db) {
+        if (this.pool) {
+          const res = await this.pool.query(sqlPostgres, params)
+          return res.rows
+        }
         throw new CatalogApiError(
           503,
           'CURRICULUM_STORAGE_UNAVAILABLE',
@@ -572,7 +576,7 @@ export class CurriculumCatalogService {
         LOWER(t.display_reading) LIKE $${p2} OR
         LOWER(t.normalized_key) LIKE $${p3} OR
         LOWER(COALESCE(t.han_viet, '')) LIKE $${p4} OR
-        LOWER(t.meanings) LIKE $${p5}
+        LOWER(t.meanings::text) LIKE $${p5}
       )`)
       conditionsSqlite.push(`(
         LOWER(t.display_word) LIKE ? OR
