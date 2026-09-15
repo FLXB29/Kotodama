@@ -22,15 +22,17 @@ function validHttpOrigin(value) {
 
 export function readConfig(env = process.env) {
   const isRender = Boolean(env.RENDER || env.RENDER_EXTERNAL_URL)
-  const production = env.NODE_ENV === 'production'
+  const production = env.NODE_ENV === 'production' || isRender
   const missing = []
   const databaseUrl = env.DATABASE_URL?.trim() ?? ''
   const jwtSecret = env.AUTH_JWT_SECRET?.trim() ?? ''
   const renderOrigin = env.RENDER_EXTERNAL_URL ? validHttpOrigin(env.RENDER_EXTERNAL_URL) : null
-  const appOriginValue = env.APP_ORIGIN?.trim() ?? (production ? (renderOrigin ?? (isRender ? 'https://kotodama.onrender.com' : '')) : 'http://127.0.0.1:5173')
+  const appOriginValue =
+    env.APP_ORIGIN?.trim() ??
+    (production ? (renderOrigin ?? (isRender ? 'https://kotodama.onrender.com' : '')) : 'http://127.0.0.1:5173')
   const appOrigin = validHttpOrigin(appOriginValue)
-  const smtpHost = env.SMTP_HOST?.trim() ?? (isRender ? 'smtp.example.com' : '')
-  const smtpFrom = env.SMTP_FROM?.trim() ?? (isRender ? 'Kotodama <no-reply@example.com>' : '')
+  const smtpHost = env.SMTP_HOST?.trim() ?? ''
+  const smtpFrom = env.SMTP_FROM?.trim() ?? ''
   const mediaStoragePathValue = env.MEDIA_STORAGE_PATH?.trim() ?? (isRender ? './var/media' : '')
   const mediaStoragePath = resolve(mediaStoragePathValue || join(process.cwd(), 'var', 'media'))
   const mediaMaxUploadBytes = boundedInteger(env.MEDIA_MAX_UPLOAD_BYTES, 2 * 1024 ** 3, {
@@ -81,7 +83,7 @@ export function readConfig(env = process.env) {
     databaseUrl: databaseUrl || undefined,
     jwtSecret: jwtSecret || 'development-only-secret-change-before-production',
     appOrigin: appOrigin ?? 'http://127.0.0.1:5173',
-    trustProxy: env.TRUST_PROXY === 'true',
+    trustProxy: env.TRUST_PROXY === 'true' || (isRender && env.TRUST_PROXY !== 'false'),
     smtp: {
       enabled: Boolean(smtpHost && smtpFrom),
       host: smtpHost || undefined,
@@ -95,6 +97,7 @@ export function readConfig(env = process.env) {
       storagePath: mediaStoragePath,
       maxUploadBytes: mediaMaxUploadBytes,
       workerPollMs: mediaWorkerPollMs,
+      workerEnabled: env.MEDIA_WORKER_ENABLED === 'true' || (production && env.MEDIA_WORKER_ENABLED !== 'false'),
     },
     transcription: {
       enabled: transcriptionProvider === 'local_whisper' ? Boolean(localAsrUrl) : Boolean(transcriptionApiKey),
@@ -117,9 +120,7 @@ export function readConfig(env = process.env) {
       timeoutMs: youtubeTimeoutMs,
     },
     dictionary: {
-      dbPath:
-        env.VNJPDICT_DB_PATH?.trim() ||
-        'D:/VKU/data/drive-download-20260828T102340Z-1-002/vnjpdict_scraper/vnjpdict.db',
+      dbPath: env.VNJPDICT_DB_PATH?.trim() || resolve('data/master_dictionary.db'),
     },
   }
 }

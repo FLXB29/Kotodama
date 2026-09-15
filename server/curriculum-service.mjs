@@ -15,9 +15,10 @@ const rootDir = path.resolve(__dirname, '..')
 
 export class CurriculumService {
   constructor(options = {}) {
-    this.nihongoDbPath = options.nihongoDbPath || 'd:/Tieng_Nhat/web/server/data/nihongo.db'
+    this.nihongoDbPath =
+      options.nihongoDbPath || process.env.NIHONGO_DB_PATH || path.join(rootDir, 'data', 'nihongo.db')
     this.mimiGrammarJsonPath = options.mimiGrammarJsonPath || path.join(rootDir, 'data', 'mimi_kara_n3_grammar.json')
-    this.bunpoJsonPath = options.bunpoJsonPath || path.join(rootDir, 'bunpo_data.json')
+    this.bunpoJsonPath = options.bunpoJsonPath || path.join(__dirname, 'fixtures', 'nhaikanji', 'bunpo_data.json')
 
     this.nihongoDb = null
     this.mimiGrammarList = []

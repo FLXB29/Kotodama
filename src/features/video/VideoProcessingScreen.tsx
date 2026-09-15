@@ -3,6 +3,7 @@ import { Button, Card, PageShell } from '../../components/ui'
 import { getMediaAsset, getMediaJobs, getTranscript, retryMediaProcessing } from './videoApi'
 import type { MediaAsset, MediaProcessingJob, TranscriptVersion } from './videoTypes'
 import { ArrowLeft, CircleAlert, CircleCheck, LoaderCircle, Play, RotateCcw } from 'lucide-react'
+import VideoPreview from './VideoPreview'
 
 export default function VideoProcessingScreen({
   video,
@@ -18,6 +19,8 @@ export default function VideoProcessingScreen({
   const [transcript, setTranscript] = useState<TranscriptVersion | null>(null)
   const [retrying, setRetrying] = useState(false)
   const [retryError, setRetryError] = useState<string | null>(null)
+  const [preview, setPreview] = useState(false)
+  const [refreshError, setRefreshError] = useState<string | null>(null)
 
   useEffect(() => {
     let mounted = true
@@ -27,6 +30,7 @@ export default function VideoProcessingScreen({
         if (!mounted) return
         setAsset(nextAsset)
         setJobs(nextJobs.items)
+        setRefreshError(null)
         if (
           nextAsset.processingStatus === 'ready' ||
           nextJobs.items.some((job) => job.jobType === 'transcribe' && job.status === 'succeeded')
@@ -35,7 +39,7 @@ export default function VideoProcessingScreen({
           if (mounted) setTranscript(nextTranscript)
         }
       } catch {
-        /* The asset remains visible while a transient status refresh fails. */
+        if (mounted) setRefreshError('Chưa cập nhật được trạng thái video. Hệ thống đang thử kết nối lại.')
       }
     }
     void refresh()
@@ -75,7 +79,7 @@ export default function VideoProcessingScreen({
     : processingFailed
       ? failedJob?.errorMessage || asset.errorMessage || 'Tác vụ xử lý video đã gặp lỗi.'
       : transcriptUnavailable
-        ? 'Video đã xác minh xong. Transcript sẽ bắt đầu khi dịch vụ nhận diện giọng nói được cấu hình.'
+        ? 'Video đã xác minh xong và có thể xem. Máy chủ cần được cấu hình dịch vụ nhận diện giọng nói để tạo phụ đề AI.'
         : activeJob?.jobType === 'youtube_download'
           ? 'Worker đang tải video từ YouTube và kiểm tra tệp trước khi chuẩn bị transcript.'
           : activeJob?.jobType === 'transcribe'
@@ -110,6 +114,13 @@ export default function VideoProcessingScreen({
           <LoaderCircle aria-hidden="true" className="video-processing-spinner" size={32} />
         )}
         <p aria-live="polite">Trạng thái: {statusLabel}</p>
+        {refreshError ? <p role="status">{refreshError}</p> : null}
+        {verified && !processingFailed && !transcriptReady ? (
+          <Button fullWidth onClick={() => setPreview(true)}>
+            <Play aria-hidden="true" size={16} /> Xem video
+          </Button>
+        ) : null}
+        {preview ? <VideoPreview assetId={asset.id} /> : null}
         {transcriptUnavailable ? (
           <p className="video-processing-note">Video không bị đứng. Máy chủ chưa có khóa dịch vụ tạo transcript.</p>
         ) : null}

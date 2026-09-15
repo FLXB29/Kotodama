@@ -24,6 +24,8 @@ import { readConfig } from './config.mjs'
 import { createEmailService } from './email.mjs'
 import { log, logError } from './logger.mjs'
 import { createMediaStorage, MediaStorageError } from './media-storage.mjs'
+import { startMediaWorker } from './media-worker.mjs'
+import { parseRange } from './media-range.mjs'
 import { normalizeYouTubeUrl } from './youtube-provider.mjs'
 import { createDictionaryService } from './dictionary-service.mjs'
 import { nhaiKanjiService } from './nhaikanji-service.mjs'
@@ -58,6 +60,10 @@ const mimeTypes = {
   '.ico': 'image/x-icon',
   '.mp3': 'audio/mpeg',
   '.wav': 'audio/wav',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
+  '.ogg': 'audio/ogg',
+  '.ogv': 'video/ogg',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
@@ -82,16 +88,33 @@ async function tryServeStatic(request, response, requestPath) {
 
     const ext = extname(filePath).toLowerCase()
     const contentType = mimeTypes[ext] ?? 'application/octet-stream'
-    response.writeHead(200, {
+    const isMedia = /^(audio|video)\//.test(contentType)
+    const range =
+      isMedia && request.method === 'GET' && request.headers.range
+        ? parseRange(request.headers.range, fileStat.size)
+        : null
+    if (isMedia && request.method === 'GET' && request.headers.range && !range) {
+      response.writeHead(416, { 'content-range': `bytes */${fileStat.size}` })
+      response.end()
+      return true
+    }
+    response.writeHead(range ? 206 : 200, {
       'content-type': contentType,
-      'content-length': fileStat.size,
-      ...(ext === '.html' ? { 'cache-control': 'no-cache' } : { 'cache-control': 'public, max-age=31536000, immutable' }),
+      'content-length': range ? range.end - range.start + 1 : fileStat.size,
+      ...(isMedia ? { 'accept-ranges': 'bytes' } : {}),
+      ...(range ? { 'content-range': `bytes ${range.start}-${range.end}/${fileStat.size}` } : {}),
+      ...(ext === '.html'
+        ? { 'cache-control': 'no-cache' }
+        : { 'cache-control': 'public, max-age=31536000, immutable' }),
     })
     if (request.method === 'HEAD') {
       response.end()
       return true
     }
-    createReadStream(filePath).pipe(response)
+    const stream = createReadStream(filePath, range ?? undefined)
+    stream.on('error', () => response.destroy())
+    response.once('close', () => stream.destroy())
+    stream.pipe(response)
     return true
   } catch {
     return false
@@ -102,6 +125,15 @@ const config = readConfig()
 const port = Number(process.env.PORT ?? process.env.API_PORT ?? 8787)
 const database = createDatabasePool(config.databaseUrl)
 if (config.production && !database) throw new Error('DATABASE_URL is required in production.')
+const isMain = Boolean(process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url))
+// Initialize the schema before bootstrapAdmin/cleanupExpiredData can query it.
+if (isMain && database) {
+  await autoMigrateAndSeed(database, {
+    seedCurriculum: ['postgres', 'postgresql'].includes(
+      (process.env.CURRICULUM_STORAGE || (config.production ? 'postgres' : 'sqlite')).trim().toLowerCase()
+    ),
+  })
+}
 const authStore = createAuthStore(database)
 const emailService = createEmailService(config)
 const mediaStorage = createMediaStorage(config)
@@ -123,7 +155,7 @@ const animeCatalogService = new AnimeCatalogService({
   storage: animeStorage,
   pool: database,
   sqlitePath: process.env.ANIME_SQLITE_PATH || resolve(projectRoot, 'tmp/anime/anime.db'),
-  dictionaryDir: process.env.ANIME_DICTIONARY_DIR || resolve('D:/Project/data/aanime_scraper/dictionary/shards'),
+  dictionaryDir: process.env.ANIME_DICTIONARY_DIR || resolve(projectRoot, 'data/anime/dictionary/shards'),
 })
 const srsStore = database ? new SrsStore(database) : null
 const srsService = srsStore ? new SrsService(srsStore) : null
@@ -135,7 +167,7 @@ const configuredOrigins = process.env.CORS_ORIGINS?.split(',')
 const allowedOrigins = configuredOrigins?.length
   ? configuredOrigins
   : production
-    ? (process.env.RENDER || process.env.RENDER_EXTERNAL_URL ? ['*'] : [])
+    ? [config.appOrigin]
     : [
         'http://127.0.0.1:5173',
         'http://127.0.0.1:5174',
@@ -252,21 +284,6 @@ async function requireAdmin(request, response) {
     return null
   }
   return user
-}
-
-function parseRange(header, byteSize) {
-  const match = /^bytes=(\d*)-(\d*)$/i.exec(String(header ?? ''))
-  if (!match) return null
-  const start = match[1] ? Number(match[1]) : undefined
-  const end = match[2] ? Number(match[2]) : undefined
-  if (
-    (start !== undefined && (!Number.isInteger(start) || start < 0)) ||
-    (end !== undefined && (!Number.isInteger(end) || end < 0))
-  )
-    return null
-  const safeEnd = Math.min(end ?? byteSize - 1, byteSize - 1)
-  const safeStart = start ?? Math.max(0, byteSize - (end ?? 0))
-  return safeStart <= safeEnd && safeStart < byteSize ? { start: safeStart, end: safeEnd } : null
 }
 
 async function streamMediaContent(request, response, asset) {
@@ -572,7 +589,6 @@ async function route(request, response) {
   if (request.method === 'GET' && path === '/ready') {
     try {
       const persistence = await databaseHealth(database)
-      if (production && !emailService.enabled) throw new Error('SMTP is not configured.')
       return json(
         response,
         200,
@@ -682,7 +698,14 @@ async function route(request, response) {
         return fail(response, err.status, err.message, err.code)
       }
       logError('curriculum.catalog.failed', err)
-      return fail(response, 500, err?.message ? `Lỗi hệ thống khi tải danh mục giáo trình: ${err.message}` : 'Lỗi hệ thống khi tải danh mục giáo trình.', 'SERVER_ERROR')
+      return fail(
+        response,
+        500,
+        err?.message
+          ? `Lỗi hệ thống khi tải danh mục giáo trình: ${err.message}`
+          : 'Lỗi hệ thống khi tải danh mục giáo trình.',
+        'SERVER_ERROR'
+      )
     }
   }
 
@@ -912,11 +935,9 @@ async function route(request, response) {
 
     try {
       const isLocalLoopback = isRequestLocalLoopback(request)
-      const result = await animeCatalogService.saveProgress(
-        { episodeId, position, duration },
-        user.id,
-        { isLocalLoopback }
-      )
+      const result = await animeCatalogService.saveProgress({ episodeId, position, duration }, user.id, {
+        isLocalLoopback,
+      })
       return respond(result)
     } catch (err) {
       if (err instanceof AnimeApiError) {
@@ -987,7 +1008,8 @@ async function route(request, response) {
   if (request.method === 'GET' && path === '/api/v1/srs/deck') {
     const user = await requireUser(request, response)
     if (!user) return
-    if (!srsService) return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
+    if (!srsService)
+      return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
     const type = url.searchParams.get('type') || 'all'
     const status = url.searchParams.get('status') || 'all'
     const level = url.searchParams.get('level') || 'ALL'
@@ -1005,7 +1027,8 @@ async function route(request, response) {
   if (request.method === 'GET' && path === '/api/v1/srs/stats') {
     const user = await requireUser(request, response)
     if (!user) return
-    if (!srsService) return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
+    if (!srsService)
+      return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
     const type = url.searchParams.get('type') || 'all'
     try {
       const stats = await srsService.getStats(user.id, { type })
@@ -1018,7 +1041,8 @@ async function route(request, response) {
   if (request.method === 'POST' && path === '/api/v1/srs/review') {
     const user = await requireUser(request, response)
     if (!user) return
-    if (!srsService) return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
+    if (!srsService)
+      return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
     const { cardId, rating } = body
     if (!cardId || !rating) return fail(response, 400, 'Thiếu cardId hoặc rating.', 'MISSING_PARAMS')
     if (!['again', 'hard', 'good', 'easy'].includes(rating)) {
@@ -1036,7 +1060,8 @@ async function route(request, response) {
   if (request.method === 'POST' && path === '/api/v1/srs/add') {
     const user = await requireUser(request, response)
     if (!user) return
-    if (!srsService) return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
+    if (!srsService)
+      return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
     const cardData = body
     if (!cardData || (!cardData.term && !cardData.word)) {
       return fail(response, 400, 'Thiếu dữ liệu từ vựng/Hán tự/ngữ pháp.', 'MISSING_TERM')
@@ -1052,7 +1077,8 @@ async function route(request, response) {
   if (request.method === 'GET' && path === '/api/v1/srs/saved-terms') {
     const user = await requireUser(request, response)
     if (!user) return
-    if (!srsService) return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
+    if (!srsService)
+      return fail(response, 503, 'Dịch vụ SRS hiện không khả dụng (yêu cầu Database).', 'SERVICE_UNAVAILABLE')
     try {
       const terms = await srsService.getSavedTerms(user.id)
       return respond(terms)
@@ -1266,6 +1292,13 @@ async function route(request, response) {
     const learningPlan = await authStore.saveLearningPlan(user.id, plan)
     await audit('account.learning-plan-updated', user.id, request, { level: plan.level })
     return respond(learningPlan)
+  }
+  if (request.method === 'GET' && path === '/api/v1/video/capabilities') {
+    return respond({
+      youtubeImportEnabled: config.youtube.enabled,
+      transcriptionEnabled: config.transcription.enabled,
+      maxUploadBytes: config.media.maxUploadBytes,
+    })
   }
   if (request.method === 'GET' && path === '/api/v1/video/assets') {
     const user = await requireUser(request, response)
@@ -1773,19 +1806,10 @@ const server = http.createServer((request, response) => {
 })
 const host = process.env.HOST ?? '0.0.0.0'
 
-const isMain = Boolean(
-  process.argv[1] &&
-    (resolve(process.argv[1]) === fileURLToPath(import.meta.url) ||
-      resolve(process.argv[1]) === resolve('server/index.mjs'))
-)
-
+let mediaWorker
 if (isMain) {
-  if (database) {
-    try {
-      await autoMigrateAndSeed(database)
-    } catch (err) {
-      console.error('[Startup] autoMigrateAndSeed error:', err.message)
-    }
+  if (config.media.workerEnabled) {
+    mediaWorker = startMediaWorker({ store: authStore, storage: mediaStorage, config, dictionary: dictionaryService })
   }
   server.listen(port, host, () =>
     log('info', 'server.started', {
@@ -1800,7 +1824,7 @@ if (isMain) {
 
 async function shutdown() {
   clearInterval(cleanupInterval)
-  server.close()
+  await Promise.all([new Promise((done) => server.close(done)), mediaWorker?.stop()])
   if (database) await database.end()
 }
 

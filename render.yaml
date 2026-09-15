@@ -1,0 +1,33 @@
+# Review the paid compute/disk selection before applying this Blueprint.
+# Existing services can keep their current database URL and JWT secret.
+services:
+  - type: web
+    name: kotodama
+    runtime: docker
+    plan: 1c-2g
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    maxShutdownDelaySeconds: 300
+    disk:
+      name: media
+      mountPath: /var/data
+      sizeGB: 10
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: AUTH_JWT_SECRET
+        sync: false
+      - key: CURRICULUM_STORAGE
+        value: postgres
+      - key: ANIME_STORAGE
+        value: postgres
+      - key: MEDIA_STORAGE_PATH
+        value: /var/data/media
+      - key: MEDIA_WORKER_ENABLED
+        value: 'true'
+      - key: TRUST_PROXY
+        value: 'true'
+      - key: YOUTUBE_IMPORT_ENABLED
+        value: 'false'

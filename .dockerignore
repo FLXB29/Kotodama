@@ -1,0 +1,16 @@
+.git
+.env
+.env.*
+node_modules
+dist
+coverage
+.venv
+**/.venv
+**/__pycache__
+tmp
+scratch
+var
+tools
+ml
+data/n3_scripts
+*.log

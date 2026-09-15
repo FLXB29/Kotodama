@@ -68,17 +68,42 @@ test('NhaiKanjiService loads canonical repo fixtures with N5/N4 isolation and de
   // 1. N5 Kanji list contains 土 and 日, excludes N4 kanji
   const n5 = service.getKanjiList({ level: 'N5', limit: 5 })
   assert.ok(n5.items.length > 0, 'N5 list must have items')
-  assert.ok(n5.items.some((k) => k.kanji === '土'), 'N5 list must contain 土')
-  assert.ok(n5.items.some((k) => k.kanji === '日'), 'N5 list must contain 日')
-  assert.equal(n5.items.some((k) => k.kanji === '語'), false, 'N5 list must not contain N4 kanji 語')
-  assert.equal(n5.items.every((k) => k.jlpt_level === 'N5'), true, 'All N5 items must have level N5')
+  assert.ok(
+    n5.items.some((k) => k.kanji === '土'),
+    'N5 list must contain 土'
+  )
+  assert.ok(
+    n5.items.some((k) => k.kanji === '日'),
+    'N5 list must contain 日'
+  )
+  assert.equal(
+    n5.items.some((k) => k.kanji === '語'),
+    false,
+    'N5 list must not contain N4 kanji 語'
+  )
+  assert.equal(
+    n5.items.every((k) => k.jlpt_level === 'N5'),
+    true,
+    'All N5 items must have level N5'
+  )
 
   // 2. N4 Kanji list contains 語, excludes N5 kanji
   const n4 = service.getKanjiList({ level: 'N4', limit: 5 })
   assert.ok(n4.items.length > 0, 'N4 list must have items')
-  assert.ok(n4.items.some((k) => k.kanji === '語'), 'N4 list must contain 語')
-  assert.equal(n4.items.some((k) => k.kanji === '土'), false, 'N4 list must not contain N5 kanji 土')
-  assert.equal(n4.items.every((k) => k.jlpt_level === 'N4'), true, 'All N4 items must have level N4')
+  assert.ok(
+    n4.items.some((k) => k.kanji === '語'),
+    'N4 list must contain 語'
+  )
+  assert.equal(
+    n4.items.some((k) => k.kanji === '土'),
+    false,
+    'N4 list must not contain N5 kanji 土'
+  )
+  assert.equal(
+    n4.items.every((k) => k.jlpt_level === 'N4'),
+    true,
+    'All N4 items must have level N4'
+  )
 
   // 3. Kanji Detail for 土
   const detailTho = service.getKanjiDetail('土')
@@ -97,33 +122,47 @@ test('NhaiKanjiService loads canonical repo fixtures with N5/N4 isolation and de
   // 5. Bunpo list N4 contains んです and isolates from N5
   const bunpoN4 = service.getBunpoList({ level: 'N4', limit: 5 })
   assert.ok(bunpoN4.items.length > 0, 'N4 Bunpo must have items')
-  assert.ok(bunpoN4.items.some((b) => b.pattern.includes('んです')), 'N4 Bunpo must contain んです')
-  assert.equal(bunpoN4.items.some((b) => b.level === 'N5'), false, 'N4 Bunpo must not contain N5 items')
+  assert.ok(
+    bunpoN4.items.some((b) => b.pattern.includes('んです')),
+    'N4 Bunpo must contain んです'
+  )
+  assert.equal(
+    bunpoN4.items.some((b) => b.level === 'N5'),
+    false,
+    'N4 Bunpo must not contain N5 items'
+  )
 
   // 6. Bunpo list N5 contains です and isolates from N4
   const bunpoN5 = service.getBunpoList({ level: 'N5', limit: 5 })
   assert.ok(bunpoN5.items.length > 0, 'N5 Bunpo must have items')
-  assert.ok(bunpoN5.items.some((b) => b.pattern.includes('です')), 'N5 Bunpo must contain です')
-  assert.equal(bunpoN5.items.some((b) => b.level === 'N4'), false, 'N5 Bunpo must not contain N4 items')
+  assert.ok(
+    bunpoN5.items.some((b) => b.pattern.includes('です')),
+    'N5 Bunpo must contain です'
+  )
+  assert.equal(
+    bunpoN5.items.some((b) => b.level === 'N4'),
+    false,
+    'N5 Bunpo must not contain N4 items'
+  )
 
   // 7. JLPT Exams returns array
   const exams = service.getJlptExams({ level: 'N4' })
   assert.ok(Array.isArray(exams.exams), 'Exams must be an array')
 })
 
-test('NhaiKanjiService does not crash and does not fabricate data when data source is omitted', () => {
+test('NhaiKanjiService loads bundled learning data without machine-specific configuration', () => {
   const prevEnv = process.env.NHAIKANJI_DATA_PATH
   delete process.env.NHAIKANJI_DATA_PATH
   try {
     const service = new NhaiKanjiService()
     const n5 = service.getKanjiList({ level: 'N5', limit: 5 })
-    assert.deepEqual(n5.items, [], 'Must return empty items without data source')
-    assert.equal(n5.total, 0, 'Total must be 0')
-    assert.equal(service.getKanjiDetail('土'), null, 'Must return null for detail without data source')
+    assert.ok(n5.items.length > 0)
+    assert.ok(n5.total > 0)
+    assert.equal(service.getKanjiDetail('土').detail.kanjiInfo.hanzi, 'THỔ')
 
     const bunpoN4 = service.getBunpoList({ level: 'N4', limit: 5 })
-    assert.deepEqual(bunpoN4.items, [], 'Must return empty bunpo items without data source')
-    assert.equal(bunpoN4.total, 0, 'Bunpo total must be 0')
+    assert.ok(bunpoN4.items.length > 0)
+    assert.ok(bunpoN4.total > 0)
   } finally {
     if (prevEnv !== undefined) {
       process.env.NHAIKANJI_DATA_PATH = prevEnv

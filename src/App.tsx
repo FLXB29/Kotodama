@@ -104,12 +104,7 @@ function AppContent() {
   if (!page)
     return (
       <div className="app-shell">
-        <TopNav
-          page="home"
-          navigate={goTo}
-          isAuthenticated={isAuthenticated}
-          userName={user?.name}
-        />
+        <TopNav page="home" navigate={goTo} isAuthenticated={isAuthenticated} userName={user?.name} />
         <main id="main-content" tabIndex={-1}>
           <NotFoundPage onNavigate={goTo} />
         </main>
@@ -137,12 +132,7 @@ function AppContent() {
 
   return (
     <div className="app-shell">
-      <TopNav
-        page={page}
-        navigate={goTo}
-        isAuthenticated={isAuthenticated}
-        userName={user?.name}
-      />
+      <TopNav page={page} navigate={goTo} isAuthenticated={isAuthenticated} userName={user?.name} />
       <main id="main-content" tabIndex={-1}>
         <p className="route-announcer" aria-live="polite">
           {getRoute(page).title}
@@ -162,6 +152,7 @@ function AppContent() {
               <CoursesPage
                 canManageCourses={hasPermission(user, 'course:manage')}
                 onManage={() => goTo('courseAdmin')}
+                onReview={() => goTo('review')}
               />
             )}
             {page === 'learning' && <CourseLearningPage onBack={() => goTo('courses')} />}

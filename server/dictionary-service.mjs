@@ -11,7 +11,6 @@ try {
   log('warn', 'dictionary.sqlite-unavailable', { message: error.message })
 }
 
-
 const romajiMap = {
   kya: 'きゃ',
   kyu: 'きゅ',
@@ -685,7 +684,15 @@ export function createDictionaryService(dbPath) {
     return {
       available: false,
       search: () => [],
-      analyzeSentence: (text) => ({ input: String(text || ''), translation: null, translationSource: 'unavailable', tokens: [], results: [], suggestions: [], grammarHints: [] }),
+      analyzeSentence: (text) => ({
+        input: String(text || ''),
+        translation: null,
+        translationSource: 'unavailable',
+        tokens: [],
+        results: [],
+        suggestions: [],
+        grammarHints: [],
+      }),
       getWordDetail: () => null,
       getKanjiDetail: () => null,
     }
@@ -695,22 +702,58 @@ export function createDictionaryService(dbPath) {
     return {
       available: false,
       search: () => [],
-      analyzeSentence: (text) => ({ input: String(text || ''), translation: null, translationSource: 'unavailable', tokens: [], results: [], suggestions: [], grammarHints: [] }),
+      analyzeSentence: (text) => ({
+        input: String(text || ''),
+        translation: null,
+        translationSource: 'unavailable',
+        tokens: [],
+        results: [],
+        suggestions: [],
+        grammarHints: [],
+      }),
       getWordDetail: () => null,
       getKanjiDetail: () => null,
     }
   }
 
   let db
+  let usesMasterSchema = false
   try {
     db = new DatabaseSync(dbPath, { readOnly: true })
+    usesMasterSchema =
+      Boolean(db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'words'").get()) &&
+      !db.prepare("SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'tuvung'").get()
+    if (usesMasterSchema) {
+      // The bundled dictionary is self-contained. TEMP objects adapt the legacy
+      // lookups without modifying the read-only database or requiring vnjpdict.db.
+      db.exec(`
+        CREATE TEMP VIEW tuvung AS
+          SELECT id, word, reading, NULL AS romaji, han_viet, jlpt AS jlpt_level,
+                 pos AS part_of_speech,
+                 (SELECT group_concat('- ' || value, char(10)) FROM json_each(words.meanings)) AS meaning
+          FROM words;
+        CREATE TEMP TABLE hantu (
+          id INTEGER, character TEXT, han_viet TEXT, onyomi TEXT, kunyomi TEXT,
+          jlpt_level TEXT, stroke_count INTEGER, radical TEXT, meaning TEXT
+        );
+        CREATE TEMP TABLE maucau (sentence_jp TEXT, furigana TEXT, sentence_vi TEXT);
+      `)
+    }
     log('info', 'dictionary.connected', { dbPath })
   } catch (error) {
     logError('dictionary.connection-failed', error, { dbPath })
     return {
       available: false,
       search: () => [],
-      analyzeSentence: (text) => ({ input: String(text || ''), translation: null, translationSource: 'unavailable', tokens: [], results: [], suggestions: [], grammarHints: [] }),
+      analyzeSentence: (text) => ({
+        input: String(text || ''),
+        translation: null,
+        translationSource: 'unavailable',
+        tokens: [],
+        results: [],
+        suggestions: [],
+        grammarHints: [],
+      }),
       getWordDetail: () => null,
       getKanjiDetail: () => null,
     }
@@ -738,9 +781,9 @@ export function createDictionaryService(dbPath) {
   let stmtMasterRelated = null
   let stmtMasterVietnamese = null
   try {
-    const masterPath = path.resolve('data/master_dictionary.db')
+    const masterPath = usesMasterSchema ? dbPath : path.resolve('data/master_dictionary.db')
     if (existsSync(masterPath)) {
-      masterDb = new DatabaseSync(masterPath, { readOnly: true })
+      masterDb = usesMasterSchema ? db : new DatabaseSync(masterPath, { readOnly: true })
       stmtMasterExact = masterDb.prepare(`
         SELECT word, reading, han_viet, jlpt, pos, meanings, examples
         FROM words
@@ -1071,7 +1114,12 @@ export function createDictionaryService(dbPath) {
       word: row.word,
       reading: readings[0] || null,
       readingVariants: readings.slice(1, 8),
-      romaji: row.romaji && !/[\u3040-\u30ff\s]/.test(row.romaji) ? row.romaji : readings[0] ? kanaToRomaji(readings[0]) : null,
+      romaji:
+        row.romaji && !/[\u3040-\u30ff\s]/.test(row.romaji)
+          ? row.romaji
+          : readings[0]
+            ? kanaToRomaji(readings[0])
+            : null,
       hanViet: hanViet || null,
       jlpt: jlpt || null,
       partOfSpeech: row.part_of_speech || 'Danh từ chung',
@@ -1171,22 +1219,22 @@ export function createDictionaryService(dbPath) {
                 .map((item) => item.trim())
                 .filter((item, index, list) => item && list.indexOf(item) === index)
               return {
-              id: 2000000 + idx,
-              word: r.word,
-              reading: readings[0] || null,
-              readingVariants: readings.slice(1, 8),
-              romaji: readings[0] ? kanaToRomaji(readings[0]) : null,
-              hanViet: r.han_viet || null,
-              jlpt: r.jlpt || null,
-              partOfSpeech: r.pos || 'Danh từ',
-              meanings: dedupMeanings(JSON.parse(r.meanings || '[]')),
-              kanjis: enrichKanji(r.word),
-              relatedWords: getRelatedWords(r.word),
-              examples: JSON.parse(r.examples || '[]').map((e) => ({
-                sentenceJp: e.jp,
-                furigana: e.furigana || null,
-                sentenceVi: e.vi,
-              })),
+                id: 2000000 + idx,
+                word: r.word,
+                reading: readings[0] || null,
+                readingVariants: readings.slice(1, 8),
+                romaji: readings[0] ? kanaToRomaji(readings[0]) : null,
+                hanViet: r.han_viet || null,
+                jlpt: r.jlpt || null,
+                partOfSpeech: r.pos || 'Danh từ',
+                meanings: dedupMeanings(JSON.parse(r.meanings || '[]')),
+                kanjis: enrichKanji(r.word),
+                relatedWords: getRelatedWords(r.word),
+                examples: JSON.parse(r.examples || '[]').map((e) => ({
+                  sentenceJp: e.jp,
+                  furigana: e.furigana || null,
+                  sentenceVi: e.vi,
+                })),
               }
             })
           }
@@ -1344,7 +1392,9 @@ export function createDictionaryService(dbPath) {
     },
 
     async analyzeSentence(text, { translate = false } = {}) {
-      const input = String(text ?? '').trim().slice(0, 240)
+      const input = String(text ?? '')
+        .trim()
+        .slice(0, 240)
       const exactSentence = stmtSentenceExact.get(input) || null
       let translation = exactSentence?.sentence_vi || null
       let translationSource = translation ? 'dictionary' : 'not-requested'
@@ -1359,14 +1409,50 @@ export function createDictionaryService(dbPath) {
       }
       const segmenter = typeof Intl?.Segmenter === 'function' ? new Intl.Segmenter('ja', { granularity: 'word' }) : null
       const segments = segmenter
-        ? Array.from(segmenter.segment(input)).map((item) => String(item.segment)).filter(Boolean)
+        ? Array.from(segmenter.segment(input))
+            .map((item) => String(item.segment))
+            .filter(Boolean)
         : input.match(/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]+/gu) || []
-      const particles = new Set(['は', 'が', 'を', 'に', 'で', 'と', 'の', 'も', 'へ', 'や', 'か', 'ね', 'よ', 'ぞ', 'さ'])
-      const auxiliaryTokens = new Set(['し', 'ます', 'た', 'ない', 'です', 'だ', 'て', 'れる', 'られる', 'せる', 'させる'])
+      const particles = new Set([
+        'は',
+        'が',
+        'を',
+        'に',
+        'で',
+        'と',
+        'の',
+        'も',
+        'へ',
+        'や',
+        'か',
+        'ね',
+        'よ',
+        'ぞ',
+        'さ',
+      ])
+      const auxiliaryTokens = new Set([
+        'し',
+        'ます',
+        'た',
+        'ない',
+        'です',
+        'だ',
+        'て',
+        'れる',
+        'られる',
+        'せる',
+        'させる',
+      ])
       const candidates = new Map()
       const addCandidate = (value, indexes) => {
         const word = String(value || '').trim()
-        if (!word || particles.has(word) || auxiliaryTokens.has(word) || !/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(word)) return
+        if (
+          !word ||
+          particles.has(word) ||
+          auxiliaryTokens.has(word) ||
+          !/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(word)
+        )
+          return
         if (!candidates.has(word)) candidates.set(word, indexes)
       }
 
@@ -1375,9 +1461,16 @@ export function createDictionaryService(dbPath) {
         for (let width = 1; width <= 3 && index + width <= segments.length; width += 1) {
           const chunk = segments.slice(index, index + width)
           if (chunk.some((part) => /^[、。！？!?]$/.test(part) || particles.has(part))) break
-          addCandidate(chunk.join(''), Array.from({ length: width }, (_, offset) => index + offset))
+          addCandidate(
+            chunk.join(''),
+            Array.from({ length: width }, (_, offset) => index + offset)
+          )
         }
-        if (segments[index + 1] === 'を' && segments[index + 2] === 'し' && /^ま(す|した|せん)$/.test(segments[index + 3] || '')) {
+        if (
+          segments[index + 1] === 'を' &&
+          segments[index + 2] === 'し' &&
+          /^ま(す|した|せん)$/.test(segments[index + 3] || '')
+        ) {
           addCandidate(`${segments[index]}する`, [index, index + 1, index + 2, index + 3])
         }
       }
@@ -1395,7 +1488,13 @@ export function createDictionaryService(dbPath) {
       }
 
       const unknown = segments.filter((segment, index) => {
-        if (covered.has(index) || particles.has(segment) || auxiliaryTokens.has(segment) || /^[、。！？!?]$/.test(segment)) return false
+        if (
+          covered.has(index) ||
+          particles.has(segment) ||
+          auxiliaryTokens.has(segment) ||
+          /^[、。！？!?]$/.test(segment)
+        )
+          return false
         return /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(segment)
       })
       const distance = (left, right) => {
@@ -1424,15 +1523,23 @@ export function createDictionaryService(dbPath) {
           suggestions.push({ input: token, suggestion: candidate.word, reading: candidate.reading || null })
         }
       }
-      const lastWord = [...segments].reverse().find((segment) => /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(segment))
-      const grammarHints = lastWord && particles.has(lastWord) ? [`Câu đang kết thúc bằng trợ từ “${lastWord}”; có thể đang thiếu vị ngữ phía sau.`] : []
+      const lastWord = [...segments]
+        .reverse()
+        .find((segment) => /[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(segment))
+      const grammarHints =
+        lastWord && particles.has(lastWord)
+          ? [`Câu đang kết thúc bằng trợ từ “${lastWord}”; có thể đang thiếu vị ngữ phía sau.`]
+          : []
 
       return {
         input,
         translation,
         translationSource,
         reading: exactSentence?.furigana || null,
-        tokens: segments.map((text, index) => ({ text, known: covered.has(index) || particles.has(text) || auxiliaryTokens.has(text) })),
+        tokens: segments.map((text, index) => ({
+          text,
+          known: covered.has(index) || particles.has(text) || auxiliaryTokens.has(text),
+        })),
         results: found.slice(0, 12),
         suggestions,
         grammarHints,

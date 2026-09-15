@@ -91,15 +91,15 @@ export default function HomePage({
         <section className="showcase-section">
           <SectionHeader
             title="Khóa học"
-            description="Nội dung khóa học được kết nối từ hệ thống dữ liệu khi backend sẵn sàng."
+            description="Học từ vựng theo giáo trình và ôn tập bằng thẻ nhớ."
             action="Mở khóa học"
             onClick={() => setPage('courses')}
           />
           <div className="showcase-empty-course">
             <Sparkles aria-hidden="true" size={22} />
             <div>
-              <h2>Danh sách khóa học đang chờ dữ liệu</h2>
-              <p>Khung giao diện đã sẵn sàng; chưa có khóa học minh họa hoặc dữ liệu giả được thêm vào.</p>
+              <h2>Khám phá kho giáo trình từ vựng</h2>
+              <p>Chọn cấp độ, mở từng bài học và lưu những từ bạn muốn ôn tập.</p>
             </div>
             <Button variant="secondary" onClick={() => setPage('courses')}>
               Xem khóa học <ArrowRight aria-hidden="true" size={16} />

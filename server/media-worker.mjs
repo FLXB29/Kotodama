@@ -1,6 +1,7 @@
 import { createAuthStore } from './auth-store.mjs'
 import { readConfig } from './config.mjs'
 import { createDatabasePool } from './db/pool.mjs'
+import { setTimeout as delay } from 'node:timers/promises'
 import { createDictionaryService } from './dictionary-service.mjs'
 import { log, logError } from './logger.mjs'
 import { createMediaStorage, MediaStorageError } from './media-storage.mjs'
@@ -160,6 +161,33 @@ export async function processNextMediaJob({ store, storage, config, transcriptio
   return true
 }
 
+export function startMediaWorker({ store, storage, config, dictionary }) {
+  const controller = new AbortController()
+  const done = (async () => {
+    log('info', 'media-worker.started')
+    while (!controller.signal.aborted) {
+      let worked = false
+      try {
+        worked = await processNextMediaJob({ store, storage, config, dictionary })
+      } catch (error) {
+        logError('media-worker.poll-failed', error)
+      }
+      if (!worked && !controller.signal.aborted) {
+        await delay(config.media.workerPollMs, undefined, { signal: controller.signal }).catch((error) => {
+          if (error.name !== 'AbortError') throw error
+        })
+      }
+    }
+    log('info', 'media-worker.stopped')
+  })()
+  return {
+    async stop() {
+      controller.abort()
+      await done
+    },
+  }
+}
+
 async function run() {
   const config = readConfig()
   const database = createDatabasePool(config.databaseUrl)
@@ -167,22 +195,13 @@ async function run() {
   const store = createAuthStore(database)
   const storage = createMediaStorage(config)
   const dictionary = createDictionaryService(config.dictionary?.dbPath)
-  let stopping = false
-  const stop = () => {
-    stopping = true
+  const worker = startMediaWorker({ store, storage, config, dictionary })
+  const stop = async () => {
+    await worker.stop()
+    await database.end()
   }
   process.once('SIGTERM', stop)
   process.once('SIGINT', stop)
-  log('info', 'media-worker.started', { storagePath: config.media.storagePath })
-  try {
-    while (!stopping) {
-      const worked = await processNextMediaJob({ store, storage, config, dictionary })
-      if (!worked) await new Promise((resolve) => setTimeout(resolve, config.media.workerPollMs))
-    }
-  } finally {
-    await database.end()
-    log('info', 'media-worker.stopped')
-  }
 }
 
 if (process.argv[1]?.endsWith('media-worker.mjs')) await run()

@@ -12,6 +12,7 @@ export async function runMigrations(pool) {
   if (!pool) return
   const client = await pool.connect()
   try {
+    await client.query("SELECT pg_advisory_lock(hashtext('kotodama_schema_migrations'))")
     await client.query(`
       CREATE TABLE IF NOT EXISTS schema_migrations (
         name text PRIMARY KEY,
@@ -19,15 +20,9 @@ export async function runMigrations(pool) {
       )
     `)
 
-    let migrationFiles = []
-    try {
-      migrationFiles = (await readdir(migrationsDirectory))
-        .filter((name) => /^\d+_[a-z0-9_]+\.sql$/.test(name))
-        .sort()
-    } catch (err) {
-      console.warn('[AutoMigrate] Cannot read migrations directory:', err.message)
-      return
-    }
+    const migrationFiles = (await readdir(migrationsDirectory))
+      .filter((name) => /^\d+_[a-z0-9_]+\.sql$/.test(name))
+      .sort()
 
     const appliedRows = await client.query('SELECT name FROM schema_migrations')
     const applied = new Set(appliedRows.rows.map((r) => r.name))
@@ -49,6 +44,7 @@ export async function runMigrations(pool) {
       }
     }
   } finally {
+    await client.query("SELECT pg_advisory_unlock(hashtext('kotodama_schema_migrations'))").catch(() => {})
     client.release()
   }
 }
@@ -62,6 +58,7 @@ export async function seedCurriculumIfEmpty(pool) {
 
   const client = await pool.connect()
   try {
+    await client.query("SELECT pg_advisory_lock(hashtext('kotodama_curriculum_seed'))")
     const countRes = await client.query('SELECT COUNT(*)::int as count FROM curriculum_courses')
     const count = countRes.rows[0]?.count ?? 0
     if (count > 0) {
@@ -119,7 +116,9 @@ export async function seedCurriculumIfEmpty(pool) {
           typeof t.meanings === 'string' ? t.meanings : JSON.stringify(t.meanings || []),
           t.han_viet || null,
           typeof t.examples === 'string' ? t.examples : JSON.stringify(t.examples || []),
-          typeof t.raw_source_references === 'string' ? t.raw_source_references : JSON.stringify(t.raw_source_references || []),
+          typeof t.raw_source_references === 'string'
+            ? t.raw_source_references
+            : JSON.stringify(t.raw_source_references || []),
           t.is_curated || false
         )
       })
@@ -176,16 +175,13 @@ export async function seedCurriculumIfEmpty(pool) {
     console.error('[AutoSeed] Error seeding curriculum:', err.message)
     throw err
   } finally {
+    await client.query("SELECT pg_advisory_unlock(hashtext('kotodama_curriculum_seed'))").catch(() => {})
     client.release()
   }
 }
 
-export async function autoMigrateAndSeed(pool) {
+export async function autoMigrateAndSeed(pool, { seedCurriculum = true } = {}) {
   if (!pool) return
-  try {
-    await runMigrations(pool)
-    await seedCurriculumIfEmpty(pool)
-  } catch (err) {
-    console.error('[AutoMigrateAndSeed] Initialization encountered error:', err.message)
-  }
+  await runMigrations(pool)
+  if (seedCurriculum) await seedCurriculumIfEmpty(pool)
 }

@@ -1,5 +1,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { gunzipSync } from 'node:zlib'
+
+const bundledDataPath = fileURLToPath(new URL('../data/nhaikanji', import.meta.url))
 
 // Helper to remove Vietnamese diacritics for flexible search
 function removeVietnameseTones(str) {
@@ -107,7 +111,12 @@ function normalizeMazziKanji(item) {
 export class NhaiKanjiService {
   constructor(options = {}) {
     this.mazziDataPath = options.mazziDataPath || process.env.MAZII_CRAWLER_DATA_PATH || ''
-    this.dataPath = options.dataPath || process.env.NHAIKANJI_DATA_PATH || ''
+    this.dataPath =
+      options.dataPath ||
+      process.env.NHAIKANJI_DATA_PATH ||
+      (fs.existsSync(bundledDataPath)
+        ? bundledDataPath
+        : fileURLToPath(new URL('./fixtures/nhaikanji', import.meta.url)))
 
     this.kanjiSummaryList = []
     this.kanjiMap = new Map() // kanji char -> summary object
@@ -259,6 +268,8 @@ export class NhaiKanjiService {
       if (fs.existsSync(fullFile)) {
         const raw = fs.readFileSync(fullFile, 'utf8')
         this.fullKanjiData = JSON.parse(raw)
+      } else if (fs.existsSync(`${fullFile}.gz`)) {
+        this.fullKanjiData = JSON.parse(gunzipSync(fs.readFileSync(`${fullFile}.gz`)).toString('utf8'))
       } else {
         this.fullKanjiData = {}
       }
@@ -500,10 +511,42 @@ export class NhaiKanjiService {
 
     // Phân nhóm câu hỏi theo từng kỹ năng chuẩn JLPT
     const sectionGroups = {
-      vocab: { name: 'Từ vựng (文字・語彙)', total: 0, correct: 0, weightedTotal: 0, weightedCorrect: 0, maxScore: 60, minPass: 19 },
-      grammar: { name: 'Ngữ pháp (文法)', total: 0, correct: 0, weightedTotal: 0, weightedCorrect: 0, maxScore: 60, minPass: 19 },
-      reading: { name: 'Đọc hiểu (読解)', total: 0, correct: 0, weightedTotal: 0, weightedCorrect: 0, maxScore: 60, minPass: 19 },
-      listening: { name: 'Nghe hiểu (聴解)', total: 0, correct: 0, weightedTotal: 0, weightedCorrect: 0, maxScore: 60, minPass: 19 },
+      vocab: {
+        name: 'Từ vựng (文字・語彙)',
+        total: 0,
+        correct: 0,
+        weightedTotal: 0,
+        weightedCorrect: 0,
+        maxScore: 60,
+        minPass: 19,
+      },
+      grammar: {
+        name: 'Ngữ pháp (文法)',
+        total: 0,
+        correct: 0,
+        weightedTotal: 0,
+        weightedCorrect: 0,
+        maxScore: 60,
+        minPass: 19,
+      },
+      reading: {
+        name: 'Đọc hiểu (読解)',
+        total: 0,
+        correct: 0,
+        weightedTotal: 0,
+        weightedCorrect: 0,
+        maxScore: 60,
+        minPass: 19,
+      },
+      listening: {
+        name: 'Nghe hiểu (聴解)',
+        total: 0,
+        correct: 0,
+        weightedTotal: 0,
+        weightedCorrect: 0,
+        maxScore: 60,
+        minPass: 19,
+      },
     }
 
     if (Array.isArray(exam.parts)) {
@@ -640,11 +683,11 @@ export class NhaiKanjiService {
     let cefrLevel = 'Chưa đạt'
     if (passed) {
       if (level === 'N1') {
-        cefrLevel = scaledTotalScore >= 142 ? 'C1' : (scaledTotalScore >= 100 ? 'B2' : 'Chưa đạt')
+        cefrLevel = scaledTotalScore >= 142 ? 'C1' : scaledTotalScore >= 100 ? 'B2' : 'Chưa đạt'
       } else if (level === 'N2') {
-        cefrLevel = scaledTotalScore >= 112 ? 'B2' : (scaledTotalScore >= 90 ? 'B1' : 'Chưa đạt')
+        cefrLevel = scaledTotalScore >= 112 ? 'B2' : scaledTotalScore >= 90 ? 'B1' : 'Chưa đạt'
       } else if (level === 'N3') {
-        cefrLevel = scaledTotalScore >= 104 ? 'B1' : (scaledTotalScore >= 95 ? 'A2' : 'Chưa đạt')
+        cefrLevel = scaledTotalScore >= 104 ? 'B1' : scaledTotalScore >= 95 ? 'A2' : 'Chưa đạt'
       } else if (level === 'N4') {
         cefrLevel = scaledTotalScore >= 90 ? 'A2' : 'Chưa đạt'
       } else if (level === 'N5') {

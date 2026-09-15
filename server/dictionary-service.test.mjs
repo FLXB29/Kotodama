@@ -11,12 +11,10 @@ test('romajiToHiragana converts Japanese romanization correctly', () => {
 })
 
 test('dictionaryService connects and queries vocabulary, kanji and examples', async () => {
-  const config = readConfig()
+  const config = readConfig({})
   const dict = createDictionaryService(config.dictionary.dbPath)
 
-  if (!dict.available) {
-    return
-  }
+  assert.equal(dict.available, true, 'The bundled dictionary must work without an external Windows database')
 
   // 1. Search by Kanji
   const kanjiResults = await dict.search('学校', { limit: 5 })

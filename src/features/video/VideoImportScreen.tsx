@@ -2,18 +2,21 @@ import { useRef, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Button, Card } from '../../components/ui'
 import { getApiErrorMessage } from '../../lib/apiClient'
-import { importYouTubeVideo, listMediaAssets, uploadLocalVideo } from './videoApi'
+import { getVideoCapabilities, importYouTubeVideo, listMediaAssets, uploadLocalVideo } from './videoApi'
 import type { MediaAsset, UploadProgress } from './videoTypes'
 import { ArrowUpFromLine, CheckCircle2, Clock, Film, FolderOpen, Link2, Loader2, Play, Zap } from 'lucide-react'
 
 export default function VideoImportScreen({ onImport }: { onImport: (video: MediaAsset) => void }) {
-  const [tab, setTab] = useState<'url' | 'file'>('url')
+  const [tab, setTab] = useState<'url' | 'file'>('file')
   const [url, setUrl] = useState('')
   const [error, setError] = useState('')
   const [dragging, setDragging] = useState(false)
   const [uploading, setUploading] = useState(false)
   const [progress, setProgress] = useState<UploadProgress | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const { data: capabilities } = useQuery({ queryKey: ['video-capabilities'], queryFn: getVideoCapabilities })
+  const youtubeEnabled = capabilities?.youtubeImportEnabled === true
+  const maxUploadBytes = capabilities?.maxUploadBytes ?? 2 * 1024 ** 3
 
   const { data: assetsData, isLoading: isLoadingAssets } = useQuery({
     queryKey: ['video-assets'],
@@ -28,7 +31,8 @@ export default function VideoImportScreen({ onImport }: { onImport: (video: Medi
     if (!file) return
     if (!file.type.startsWith('video/') && !/\.(mp4|webm|mov|ogv)$/i.test(file.name))
       return setError('Vui lòng chọn tệp video MP4, WebM, MOV hoặc OGV.')
-    if (file.size > 2 * 1024 ** 3) return setError('Tệp vượt quá giới hạn 2 GB.')
+    if (file.size > maxUploadBytes)
+      return setError(`Tệp vượt quá giới hạn ${Math.round(maxUploadBytes / 1024 ** 2)} MB.`)
     setError('')
     setProgress({ loaded: 0, total: file.size, percent: 0 })
     setUploading(true)
@@ -95,7 +99,7 @@ export default function VideoImportScreen({ onImport }: { onImport: (video: Medi
           aria-selected={tab === 'url'}
           className={tab === 'url' ? 'is-active' : ''}
           onClick={() => setTab('url')}
-          disabled={uploading}
+          disabled={uploading || !youtubeEnabled}
         >
           <Link2 aria-hidden="true" size={18} /> <span>YouTube / URL</span>
         </button>
@@ -110,6 +114,16 @@ export default function VideoImportScreen({ onImport }: { onImport: (video: Medi
           <FolderOpen aria-hidden="true" size={18} /> <span>Tệp cục bộ</span>
         </button>
       </div>
+      {capabilities && !youtubeEnabled ? (
+        <p className="video-import-showcase__hint">
+          Nhập YouTube chưa khả dụng trên máy chủ này. Hãy chọn tệp video để học.
+        </p>
+      ) : null}
+      {capabilities && !capabilities.transcriptionEnabled ? (
+        <p className="video-import-showcase__hint">
+          Bạn có thể tải lên và xem video. Phụ đề AI chưa được cấu hình trên máy chủ.
+        </p>
+      ) : null}
 
       {tab === 'url' ? (
         <div className="video-import-showcase__panel">
@@ -159,7 +173,11 @@ export default function VideoImportScreen({ onImport }: { onImport: (video: Medi
           />
           <ArrowUpFromLine aria-hidden="true" size={36} />
           <strong>{uploading ? `Đang tải lên ${progress?.percent ?? 0}%` : 'Kéo thả hoặc chọn video'}</strong>
-          <small>{uploading ? 'Không đóng trang cho đến khi tải xong.' : 'MP4, WebM, MOV, OGV · tối đa 2 GB'}</small>
+          <small>
+            {uploading
+              ? 'Không đóng trang cho đến khi tải xong.'
+              : `MP4, WebM, MOV, OGV · tối đa ${Math.round(maxUploadBytes / 1024 ** 2)} MB`}
+          </small>
         </button>
       )}
       {error && (

@@ -2,6 +2,23 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readConfig } from './config.mjs'
 
+test('Render defaults use its own origin, real SMTP settings and the embedded video worker', () => {
+  const config = readConfig({
+    RENDER: 'true',
+    RENDER_EXTERNAL_URL: 'https://kotodama-nsnm.onrender.com',
+    DATABASE_URL: 'postgresql://user:password@localhost:5432/kotodama',
+    AUTH_JWT_SECRET: 'a-secret-with-at-least-thirty-two-characters',
+    YOUTUBE_IMPORT_ENABLED: 'true',
+  })
+  assert.equal(config.production, true)
+  assert.equal(config.appOrigin, 'https://kotodama-nsnm.onrender.com')
+  assert.equal(config.trustProxy, true)
+  assert.equal(config.smtp.enabled, false)
+  assert.equal(config.media.workerEnabled, true)
+  assert.equal(config.youtube.enabled, false)
+  assert.match(config.dictionary.dbPath, /data[\\/]master_dictionary\.db$/)
+})
+
 test('production configuration requires database, email and browser security settings', () => {
   assert.throws(() => readConfig({ NODE_ENV: 'production' }), /DATABASE_URL/)
   assert.throws(

@@ -17,6 +17,7 @@ phiên đăng nhập, token một lần và nhật ký quản trị. File `.env`
 ### Kho giáo trình từ vựng (Curriculum Library)
 
 Kho giáo trình từ vựng chuẩn hỗ trợ lưu trữ phân tách qua biến môi trường `CURRICULUM_STORAGE`:
+
 - **Ở local dev (mặc định)**: Sử dụng SQLite tại `CURRICULUM_SQLITE_PATH` (mặc định: `tmp/curriculum/curriculum.db`). Chạy `npm run curriculum:ingest` để ingest dữ liệu canonical vào SQLite. **Tuyệt đối không chạy migration hoặc ingest vào Neon/PostgreSQL production khi chưa thẩm định quyền sử dụng.**
 - **PostgreSQL**: Chỉ kích hoạt khi được cấu hình tường minh `CURRICULUM_STORAGE=postgres` (khi DB đích đã được áp dụng migration `008_curriculum_tables.sql`).
 - Hệ thống áp dụng nguyên tắc cách ly nguồn dữ liệu rõ ràng, **không tự động fallback âm thầm** giữa SQLite và PostgreSQL.
@@ -32,6 +33,13 @@ Lệnh này chạy format, strict typecheck, lint, coverage, test frontend/serve
 ## Chuẩn bị public
 
 Xem [PUBLIC_LAUNCH.md](PUBLIC_LAUNCH.md) để cấu hình API, static hosting, security headers và checklist trước khi mở public.
+
+### Deploy trên Render
+
+Xem [deploy/RENDER.md](deploy/RENDER.md) để cập nhật service hiện có hoặc dùng Dockerfile/Blueprint.
+API production tự áp migration trước khi đọc database, chạy worker xử lý video cùng tiến trình,
+và sử dụng từ điển/Hán tự/ngữ pháp đóng gói trong repository. Video tải lên cần persistent disk;
+phụ đề AI cần thêm nhà cung cấp nhận diện giọng nói.
 
 ## Scripts
 

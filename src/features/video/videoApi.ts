@@ -18,6 +18,15 @@ type UploadSession = {
 
 type UploadResult = { asset: MediaAsset; job: MediaProcessingJob }
 export type PlaybackSession = { contentUrl: string; expiresInSeconds: number }
+export type VideoCapabilities = {
+  youtubeImportEnabled: boolean
+  transcriptionEnabled: boolean
+  maxUploadBytes: number
+}
+
+export function getVideoCapabilities() {
+  return requestApi<VideoCapabilities>({ method: 'GET', url: '/api/v1/video/capabilities' })
+}
 
 export function importYouTubeVideo(sourceUrl: string) {
   return requestApi<UploadResult>({ method: 'POST', url: apiPaths.video.youtubeImports, data: { sourceUrl } })
