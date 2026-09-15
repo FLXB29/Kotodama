@@ -1719,10 +1719,6 @@ function createPostgresStore(pool) {
         }
         const nextId = nextSession.id ?? randomUUID()
         await client.query(
-          'update refresh_sessions set revoked_at = now(), replaced_by_session_id = $2 where id = $1',
-          [current.id, nextId]
-        )
-        await client.query(
           `insert into refresh_sessions
             (id, user_id, token_hash, csrf_hash, family_id, expires_at, ip_address, user_agent)
            values ($1, $2, $3, $4, $5, $6, $7, $8)`,
@@ -1736,6 +1732,11 @@ function createPostgresStore(pool) {
             normalizedIp(nextSession.ip),
             nextSession.userAgent?.slice(0, 500) || null,
           ]
+        )
+        // The replacement must exist before the old session references it.
+        await client.query(
+          'update refresh_sessions set revoked_at = now(), replaced_by_session_id = $2 where id = $1',
+          [current.id, nextId]
         )
         await client.query('commit')
         return { status: 'rotated', session: { ...nextSession, id: nextId, familyId: current.family_id } }

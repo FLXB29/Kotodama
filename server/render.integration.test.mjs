@@ -120,6 +120,10 @@ test(
       const email = `render-${randomUUID()}@kotodama.test`
       const password = 'render-test-password-12345'
       setSession(await call('/api/v1/auth/register', 'POST', { name: 'Render test', email, password }, 201))
+      const originalSessionHeaders = { ...headers }
+      setSession(await call('/api/v1/auth/refresh', 'POST', {}))
+      assert.notEqual(headers.cookie, originalSessionHeaders.cookie)
+      setSession(await call('/api/v1/auth/refresh', 'POST', {}))
       const asset = (
         await call(
           '/api/v1/video/assets',
@@ -185,6 +189,13 @@ test(
       assert.equal(content.status, 200)
       assert.deepEqual(Buffer.from(await content.arrayBuffer()), video)
       assert.equal((await call('/api/v1/curriculum/catalog')).data.items.length, 7)
+      const previousHeaders = { ...headers }
+      setSession(await call('/api/v1/auth/refresh', 'POST', {}))
+      const replacementHeaders = { ...headers }
+      headers = previousHeaders
+      await call('/api/v1/auth/refresh', 'POST', {}, 401)
+      headers = replacementHeaders
+      await call('/api/v1/auth/refresh', 'POST', {}, 401)
     } finally {
       await stop()
       await pool.query(`DROP SCHEMA ${schema} CASCADE`)
