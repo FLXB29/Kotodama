@@ -628,6 +628,7 @@ export class NhaiKanjiService {
 
   getJlptExams({ level, section }) {
     this.ensureLoaded()
+    this.reloadFullMaster()
     let exams = []
 
     // 1. Nạp từ kho đề thi trọn gói ToanSensei (30 đề Full Mock Exam N3 từ 2010 đến 2025)
@@ -715,6 +716,7 @@ export class NhaiKanjiService {
 
   getJlptExamDetail(examId) {
     this.ensureLoaded()
+    this.reloadFullMaster()
 
     const attachLocalListeningImages = (exam) => {
       if (!Array.isArray(exam.parts) || !this.listeningImageAssets) return exam

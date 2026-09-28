@@ -1423,7 +1423,7 @@ export function JlptExamTakingPage({ examId, onBack, mode = 'exam', attemptId }:
                           }}
                         >
                           {/* Reading Passage attached to Question */}
-                          {q.passage && (
+                          {q.passage && (!part.passage || !part.passage.includes(q.passage.replace(/<[^>]*>/g, '').trim().slice(0, 20))) && (
                             <div
                               style={{
                                 display: 'flex',
