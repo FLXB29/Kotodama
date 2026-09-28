@@ -501,16 +501,14 @@ function createMemoryStore() {
     },
     async listMediaAssets(userId, limit) {
       return [...mediaAssetsById.values()]
-        .filter((asset) => (asset.ownerUserId === userId || asset.processingStatus === 'ready') && !asset.deletedAt)
+        .filter((asset) => asset.ownerUserId === userId && !asset.deletedAt)
         .sort((left, right) => right.createdAt.localeCompare(left.createdAt))
         .slice(0, limit)
         .map(mediaAssetFromMemory)
     },
     async findMediaAssetForUser(id, userId) {
       const asset = mediaAssetsById.get(id)
-      return asset && (asset.ownerUserId === userId || asset.processingStatus === 'ready') && !asset.deletedAt
-        ? mediaAssetFromMemory(asset)
-        : null
+      return asset && asset.ownerUserId === userId && !asset.deletedAt ? mediaAssetFromMemory(asset) : null
     },
     async markMediaAssetUploading(id, userId) {
       const asset = mediaAssetsById.get(id)
@@ -602,7 +600,7 @@ function createMemoryStore() {
     },
     async listMediaProcessingJobsForAsset(assetId, userId) {
       const asset = mediaAssetsById.get(assetId)
-      if (!asset || (asset.ownerUserId !== userId && asset.processingStatus !== 'ready') || asset.deletedAt) return null
+      if (!asset || asset.ownerUserId !== userId || asset.deletedAt) return null
       return [...mediaJobsById.values()]
         .filter((job) => job.mediaAssetId === assetId)
         .sort((left, right) => right.createdAt.localeCompare(left.createdAt))
@@ -626,6 +624,45 @@ function createMemoryStore() {
       asset.errorMessage = null
       asset.updatedAt = job.updatedAt
       return { asset: mediaAssetFromMemory(asset), job: mediaProcessingJobFromMemory(job) }
+    },
+    async recoverStaleMediaProcessingJobs({ staleAfterMs, maxAttempts = 10, now = Date.now() }) {
+      const cutoff = now - staleAfterMs
+      let requeued = 0
+      let failed = 0
+      for (const job of mediaJobsById.values()) {
+        const startedAt = new Date(job.startedAt ?? 0).getTime()
+        if (job.status !== 'running' || !Number.isFinite(startedAt) || startedAt > cutoff) continue
+        const asset = mediaAssetsById.get(job.mediaAssetId)
+        if (job.attemptCount >= maxAttempts) {
+          job.status = 'failed'
+          job.errorCode = 'MEDIA_JOB_MAX_ATTEMPTS_EXCEEDED'
+          job.errorMessage = 'Tác vụ đã quá số lần thử sau khi worker bị gián đoạn.'
+          job.finishedAt = new Date(now).toISOString()
+          job.updatedAt = job.finishedAt
+          if (asset && asset.processingStatus !== 'ready') {
+            asset.processingStatus = 'failed'
+            asset.errorCode = job.errorCode
+            asset.errorMessage = job.errorMessage
+            asset.updatedAt = job.updatedAt
+          }
+          failed += 1
+        } else {
+          job.status = 'queued'
+          job.errorCode = 'MEDIA_JOB_LEASE_EXPIRED'
+          job.errorMessage = 'Worker bị gián đoạn; tác vụ được xếp hàng lại.'
+          job.startedAt = null
+          job.finishedAt = null
+          job.updatedAt = new Date(now).toISOString()
+          if (asset && asset.processingStatus !== 'ready') {
+            asset.processingStatus = 'queued'
+            asset.errorCode = null
+            asset.errorMessage = null
+            asset.updatedAt = job.updatedAt
+          }
+          requeued += 1
+        }
+      }
+      return { requeued, failed }
     },
     async claimNextMediaProcessingJob() {
       const job = [...mediaJobsById.values()]
@@ -715,7 +752,7 @@ function createMemoryStore() {
     },
     async findCurrentTranscript(mediaAssetId, userId) {
       const asset = mediaAssetsById.get(mediaAssetId)
-      if (!asset || (asset.ownerUserId !== userId && asset.processingStatus !== 'ready') || asset.deletedAt) return null
+      if (!asset || asset.ownerUserId !== userId || asset.deletedAt) return null
       const transcript = [...transcriptsById.values()].find(
         (item) => item.mediaAssetId === mediaAssetId && item.status === 'ready'
       )
@@ -735,12 +772,13 @@ function createMemoryStore() {
       const transcript = transcriptVersionId
         ? transcriptsById.get(transcriptVersionId)
         : [...transcriptsById.values()].find((item) => item.mediaAssetId === mediaAssetId && item.status === 'ready')
+      if (!transcript || transcript.mediaAssetId !== mediaAssetId || transcript.status !== 'ready') return null
       const now = new Date().toISOString()
       const session = {
         id: randomUUID(),
         userId,
         mediaAssetId,
-        transcriptVersionId: transcript?.id ?? null,
+        transcriptVersionId: transcript.id,
         mode,
         selectedSpeakerLabel: selectedSpeakerLabel ?? null,
         status: 'active',
@@ -752,8 +790,26 @@ function createMemoryStore() {
       return shadowingSessionFromMemory(
         session,
         asset,
-        transcript ? transcriptFromMemory(transcript, transcriptSegmentsByTranscriptId.get(transcript.id) ?? []) : null
+        transcriptFromMemory(transcript, transcriptSegmentsByTranscriptId.get(transcript.id) ?? [])
       )
+    },
+    async resolveShadowingAttemptTarget(sessionId, userId, transcriptSegmentId) {
+      const session = shadowingSessionsById.get(sessionId)
+      if (!session || session.userId !== userId || !session.transcriptVersionId) return null
+      const asset = mediaAssetsById.get(session.mediaAssetId)
+      if (!asset || asset.ownerUserId !== userId || asset.deletedAt) return null
+      const transcript = transcriptsById.get(session.transcriptVersionId)
+      if (!transcript || transcript.mediaAssetId !== asset.id || transcript.status !== 'ready') return null
+      const segment = (transcriptSegmentsByTranscriptId.get(transcript.id) ?? []).find(
+        (item) => item.id === transcriptSegmentId
+      )
+      if (!segment) return null
+      return {
+        mediaAssetId: asset.id,
+        transcriptVersionId: transcript.id,
+        storageKey: asset.storageKey ?? null,
+        segment: { ...segment },
+      }
     },
     async findShadowingSession(sessionId, userId) {
       const session = shadowingSessionsById.get(sessionId)
@@ -785,7 +841,6 @@ function createMemoryStore() {
     async saveShadowingAttempt({
       sessionId,
       transcriptSegmentId,
-      attemptNo,
       audioStorageKey = null,
       durationMs = null,
       recognizedText = null,
@@ -797,12 +852,19 @@ function createMemoryStore() {
       const session = shadowingSessionsById.get(sessionId)
       if (!session) return null
       const now = new Date().toISOString()
+      const resolvedAttemptNo =
+        Math.max(
+          0,
+          ...[...shadowingAttemptsById.values()]
+            .filter((attempt) => attempt.sessionId === sessionId && attempt.transcriptSegmentId === transcriptSegmentId)
+            .map((attempt) => attempt.attemptNo)
+        ) + 1
       const attemptId = randomUUID()
       const attempt = {
         id: attemptId,
         sessionId,
         transcriptSegmentId,
-        attemptNo,
+        attemptNo: resolvedAttemptNo,
         audioStorageKey,
         durationMs,
         recognizedText,
@@ -1177,7 +1239,7 @@ function createPostgresStore(pool) {
     async listMediaAssets(userId, limit) {
       const result = await pool.query(
         `select * from media_assets
-         where (owner_user_id = $1 or processing_status = 'ready') and deleted_at is null
+          where owner_user_id = $1 and deleted_at is null
          order by created_at desc limit $2`,
         [userId, limit]
       )
@@ -1186,7 +1248,7 @@ function createPostgresStore(pool) {
     async findMediaAssetForUser(id, userId) {
       const result = await pool.query(
         `select * from media_assets
-         where id = $1 and (owner_user_id = $2 or processing_status = 'ready') and deleted_at is null`,
+          where id = $1 and owner_user_id = $2 and deleted_at is null`,
         [id, userId]
       )
       return result.rows[0] ? mediaAssetFromRow(result.rows[0]) : null
@@ -1274,7 +1336,7 @@ function createPostgresStore(pool) {
       const result = await pool.query(
         `select jobs.* from media_processing_jobs jobs
          join media_assets assets on assets.id = jobs.media_asset_id
-         where jobs.media_asset_id = $1 and (assets.owner_user_id = $2 or assets.processing_status = 'ready') and assets.deleted_at is null
+          where jobs.media_asset_id = $1 and assets.owner_user_id = $2 and assets.deleted_at is null
          order by jobs.created_at desc`,
         [assetId, userId]
       )
@@ -1317,6 +1379,62 @@ function createPostgresStore(pool) {
         )
         await client.query('commit')
         return { asset: mediaAssetFromRow(retriedAsset.rows[0]), job: mediaProcessingJobFromRow(retriedJob.rows[0]) }
+      } catch (error) {
+        await client.query('rollback')
+        throw error
+      } finally {
+        client.release()
+      }
+    },
+    async recoverStaleMediaProcessingJobs({ staleAfterMs, maxAttempts = 10 }) {
+      const client = await pool.connect()
+      try {
+        await client.query('begin')
+        const staleResult = await client.query(
+          `select * from media_processing_jobs
+           where status = 'running' and started_at < now() - ($1::bigint * interval '1 millisecond')
+           order by started_at asc
+           for update skip locked
+           limit 100`,
+          [staleAfterMs]
+        )
+        let requeued = 0
+        let failed = 0
+        for (const job of staleResult.rows) {
+          if (job.attempt_count >= maxAttempts) {
+            const errorCode = 'MEDIA_JOB_MAX_ATTEMPTS_EXCEEDED'
+            const errorMessage = 'Tác vụ đã quá số lần thử sau khi worker bị gián đoạn.'
+            await client.query(
+              `update media_processing_jobs set
+                 status = 'failed', error_code = $1, error_message = $2, finished_at = now(), updated_at = now()
+               where id = $3`,
+              [errorCode, errorMessage, job.id]
+            )
+            await client.query(
+              `update media_assets set processing_status = 'failed', error_code = $1, error_message = $2, updated_at = now()
+               where id = $3 and processing_status <> 'ready'`,
+              [errorCode, errorMessage, job.media_asset_id]
+            )
+            failed += 1
+          } else {
+            await client.query(
+              `update media_processing_jobs set
+                 status = 'queued', error_code = 'MEDIA_JOB_LEASE_EXPIRED',
+                 error_message = 'Worker bị gián đoạn; tác vụ được xếp hàng lại.',
+                 started_at = null, finished_at = null, updated_at = now()
+               where id = $1`,
+              [job.id]
+            )
+            await client.query(
+              `update media_assets set processing_status = 'queued', error_code = null, error_message = null, updated_at = now()
+               where id = $1 and processing_status <> 'ready'`,
+              [job.media_asset_id]
+            )
+            requeued += 1
+          }
+        }
+        await client.query('commit')
+        return { requeued, failed }
       } catch (error) {
         await client.query('rollback')
         throw error
@@ -1483,7 +1601,7 @@ function createPostgresStore(pool) {
         `select versions.* from transcript_versions versions
           join media_assets assets on assets.id = versions.media_asset_id
           where versions.media_asset_id = $1 and versions.status = 'ready'
-            and (assets.owner_user_id = $2 or assets.processing_status = 'ready') and assets.deleted_at is null
+            and assets.owner_user_id = $2 and assets.deleted_at is null
           order by versions.version desc limit 1`,
         [mediaAssetId, userId]
       )
@@ -1509,14 +1627,22 @@ function createPostgresStore(pool) {
       mode = 'sequential',
       selectedSpeakerLabel = null,
     }) {
-      let resolvedTranscriptId = transcriptVersionId
-      if (!resolvedTranscriptId) {
-        const transcriptRes = await pool.query(
-          `select id from transcript_versions where media_asset_id = $1 and status = 'ready' order by version desc limit 1`,
-          [mediaAssetId]
-        )
-        resolvedTranscriptId = transcriptRes.rows[0]?.id ?? null
-      }
+      const assetRes = await pool.query(
+        `select id from media_assets where id = $1 and owner_user_id = $2 and deleted_at is null`,
+        [mediaAssetId, userId]
+      )
+      if (!assetRes.rows[0]) return null
+      const transcriptRes = transcriptVersionId
+        ? await pool.query(
+            `select id from transcript_versions where id = $1 and media_asset_id = $2 and status = 'ready'`,
+            [transcriptVersionId, mediaAssetId]
+          )
+        : await pool.query(
+            `select id from transcript_versions where media_asset_id = $1 and status = 'ready' order by version desc limit 1`,
+            [mediaAssetId]
+          )
+      const resolvedTranscriptId = transcriptRes.rows[0]?.id
+      if (!resolvedTranscriptId) return null
       const id = randomUUID()
       const result = await pool.query(
         `insert into shadowing_sessions
@@ -1526,6 +1652,46 @@ function createPostgresStore(pool) {
         [id, userId, mediaAssetId, resolvedTranscriptId, mode, selectedSpeakerLabel]
       )
       return shadowingSessionFromRow(result.rows[0])
+    },
+    async resolveShadowingAttemptTarget(sessionId, userId, transcriptSegmentId) {
+      const result = await pool.query(
+        `select sessions.media_asset_id, assets.storage_key,
+                versions.id as transcript_version_id,
+                segments.id as segment_id, segments.sequence_no as segment_sequence_no,
+                segments.start_ms as segment_start_ms, segments.end_ms as segment_end_ms,
+                segments.text_ja as segment_text_ja, segments.text_furigana as segment_text_furigana,
+                segments.text_vi as segment_text_vi, segments.confidence as segment_confidence,
+                segments.speaker_label as segment_speaker_label,
+                segments.speaker_confidence as segment_speaker_confidence
+         from shadowing_sessions sessions
+         join media_assets assets on assets.id = sessions.media_asset_id
+         join transcript_versions versions on versions.id = sessions.transcript_version_id
+           and versions.media_asset_id = assets.id and versions.status = 'ready'
+         join transcript_segments segments on segments.transcript_version_id = versions.id
+         where sessions.id = $1 and sessions.user_id = $2 and assets.owner_user_id = $2
+           and assets.deleted_at is null and segments.id = $3`,
+        [sessionId, userId, transcriptSegmentId]
+      )
+      const row = result.rows[0]
+      if (!row) return null
+      return {
+        mediaAssetId: row.media_asset_id,
+        transcriptVersionId: row.transcript_version_id,
+        storageKey: row.storage_key,
+        segment: {
+          id: row.segment_id,
+          sequenceNo: row.segment_sequence_no,
+          speakerLabel: row.segment_speaker_label,
+          speakerConfidence: row.segment_speaker_confidence === null ? null : Number(row.segment_speaker_confidence),
+          startMs: row.segment_start_ms,
+          endMs: row.segment_end_ms,
+          textJa: row.segment_text_ja,
+          textFurigana: row.segment_text_furigana,
+          textVi: row.segment_text_vi,
+          confidence: row.segment_confidence === null ? null : Number(row.segment_confidence),
+          tokens: [],
+        },
+      }
     },
     async findShadowingSession(sessionId, userId) {
       const result = await pool.query(`select * from shadowing_sessions where id = $1 and user_id = $2`, [
@@ -1548,7 +1714,6 @@ function createPostgresStore(pool) {
     async saveShadowingAttempt({
       sessionId,
       transcriptSegmentId,
-      attemptNo,
       audioStorageKey = null,
       durationMs = null,
       recognizedText = null,
@@ -1559,17 +1724,22 @@ function createPostgresStore(pool) {
     }) {
       const client = await pool.connect()
       try {
-        // Validate segment ID BEFORE starting transaction (to avoid aborting the txn on check failure)
-        let validSegmentId = transcriptSegmentId ?? null
-        if (validSegmentId) {
-          try {
-            const segCheck = await client.query('select id from transcript_segments where id = $1', [validSegmentId])
-            if (!segCheck.rows[0]) validSegmentId = null
-          } catch {
-            validSegmentId = null
-          }
-        }
         await client.query('begin')
+        // Lock the session row so concurrent requests receive distinct numbers.
+        // Target ownership was already verified by resolveShadowingAttemptTarget.
+        const sessionResult = await client.query('select id from shadowing_sessions where id = $1 for update', [
+          sessionId,
+        ])
+        if (!sessionResult.rows[0]) {
+          await client.query('rollback')
+          return null
+        }
+        const nextResult = await client.query(
+          `select coalesce(max(attempt_no), 0) + 1 as next_attempt_no
+           from shadowing_attempts where session_id = $1 and transcript_segment_id = $2`,
+          [sessionId, transcriptSegmentId]
+        )
+        const resolvedAttemptNo = Number(nextResult.rows[0]?.next_attempt_no ?? 1)
         const attemptId = randomUUID()
         const attemptResult = await client.query(
           `insert into shadowing_attempts
@@ -1579,8 +1749,8 @@ function createPostgresStore(pool) {
           [
             attemptId,
             sessionId,
-            validSegmentId,
-            attemptNo,
+            transcriptSegmentId,
+            resolvedAttemptNo,
             audioStorageKey,
             durationMs,
             recognizedText,

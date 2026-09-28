@@ -49,6 +49,37 @@ export async function convertAudioToPcmWav({ inputPath, outputPath, ffmpegPath =
   return outputPath
 }
 
+/**
+ * Read duration from a RIFF/WAV file produced by `convertAudioToPcmWav`.
+ * The browser-reported recording duration is only a UI hint; this is the
+ * server-side measurement used for scoring and persistence.
+ */
+export async function readWavDurationMs(filePath) {
+  const wav = await readFile(filePath)
+  if (wav.length < 44 || wav.toString('ascii', 0, 4) !== 'RIFF' || wav.toString('ascii', 8, 12) !== 'WAVE') {
+    throw new TranscriptionProviderError('INVALID_WAV', 'Expected a RIFF/WAV audio file.')
+  }
+
+  let byteRate = 0
+  let dataSize = 0
+  for (let offset = 12; offset + 8 <= wav.length;) {
+    const chunkId = wav.toString('ascii', offset, offset + 4)
+    const chunkSize = wav.readUInt32LE(offset + 4)
+    const contentStart = offset + 8
+    const contentEnd = contentStart + chunkSize
+    if (contentEnd > wav.length) break
+    if (chunkId === 'fmt ' && chunkSize >= 16) byteRate = wav.readUInt32LE(contentStart + 8)
+    if (chunkId === 'data') {
+      dataSize = chunkSize
+      break
+    }
+    offset = contentEnd + (chunkSize % 2)
+  }
+
+  if (!byteRate || !dataSize) throw new TranscriptionProviderError('INVALID_WAV', 'WAV file has no usable PCM data.')
+  return Math.max(1, Math.round((dataSize / byteRate) * 1_000))
+}
+
 export async function extractAudioSnippet({ sourcePath, startMs, endMs, outputPath, ffmpegPath = 'ffmpeg' }) {
   const startSeconds = Math.max(0, startMs / 1000).toFixed(3)
   const durationSeconds = Math.max(0.1, (endMs - startMs) / 1000).toFixed(3)

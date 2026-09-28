@@ -2,8 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowLeft, Captions, CircleAlert, Ear, FileText, LoaderCircle, Mic, Sparkles } from 'lucide-react'
 import { Badge, Button, Card, PageShell } from '../../components/ui'
 import { API_BASE_URL, getApiErrorMessage } from '../../lib/apiClient'
-import { createPlaybackSession } from './videoApi'
-import type { MediaAsset, TranscriptSegment, TranscriptVersion } from './videoTypes'
+import { createPlaybackSession, getVideoLearningContent } from './videoApi'
+import type { MediaAsset, TranscriptSegment, TranscriptVersion, VideoLearningContent } from './videoTypes'
 import { DictionaryLookupModal } from '../dictionary/DictionaryLookupModal'
 import FuriganaSubtitleBar from './FuriganaSubtitleBar'
 import ShadowingPracticePanel from './ShadowingPracticePanel'
@@ -111,6 +111,8 @@ export default function VideoStudyPlayer({
   const videoRef = useRef<HTMLVideoElement>(null)
   const [playbackUrl, setPlaybackUrl] = useState<string | null>(null)
   const [playbackError, setPlaybackError] = useState<string | null>(null)
+  const [learningContent, setLearningContent] = useState<VideoLearningContent | null>(null)
+  const [learningContentError, setLearningContentError] = useState<string | null>(null)
   const [currentTimeMs, setCurrentTimeMs] = useState(0)
   const [speaker, setSpeaker] = useState('all')
   const [mediaDurationMs, setMediaDurationMs] = useState(video?.durationMs ?? 0)
@@ -164,6 +166,22 @@ export default function VideoStudyPlayer({
       mounted = false
     }
   }, [video.id])
+
+  useEffect(() => {
+    let mounted = true
+    setLearningContent(null)
+    setLearningContentError(null)
+    void getVideoLearningContent(video.id)
+      .then((content) => {
+        if (mounted && content.transcriptVersionId === transcript.id) setLearningContent(content)
+      })
+      .catch(() => {
+        if (mounted) setLearningContentError('Chưa thể tải từ vựng đã đối chiếu từ điển.')
+      })
+    return () => {
+      mounted = false
+    }
+  }, [transcript.id, video.id])
 
   useEffect(() => {
     window.scrollTo({ left: 0 })
@@ -222,12 +240,6 @@ export default function VideoStudyPlayer({
     }
   }
 
-  const generateAiSummary = () => {
-    const summaryHeader = `\n\n### 💡 Tóm tắt AI bài học (${video.title}):\n`
-    const generated = `- Điểm chính: Video bài học hội thoại tiếng Nhật thực tế.\n- Ngữ pháp trọng tâm: 〜へ行く (N5), 〜けど〜 (N4), 〜すれば〜 (N3).\n- Từ vựng tiêu biểu: 学校 (trường học), 先生 (thầy cô), 授業 (tiết học), 難しい (khó).\n`
-    setPersonalNote((prev) => prev.trim() + summaryHeader + generated)
-  }
-
   const toggleSaveItem = (id: string, ja: string, vi?: string | null | undefined) => {
     setSavedItems((prev) => {
       const next = new Map(prev)
@@ -237,61 +249,28 @@ export default function VideoStudyPlayer({
     })
   }
 
-  // Pre-extracted vocabulary from video content
-  const videoVocabList = useMemo(
-    () => [
-      { word: '学校', reading: 'がっこう', meaning: 'trường học', level: 'N5', pos: 'DANH TỪ', mastery: 80 },
-      { word: '先生', reading: 'せんせい', meaning: 'giáo viên', level: 'N5', pos: 'DANH TỪ', mastery: 90 },
-      { word: '授業', reading: 'じゅぎょう', meaning: 'buổi học, tiết học', level: 'N4', pos: 'DANH TỪ', mastery: 55 },
-      { word: '難しい', reading: 'むずかしい', meaning: 'khó, phức tạp', level: 'N5', pos: 'TÍNH TỪ', mastery: 70 },
-      { word: '勉強', reading: 'べんきょう', meaning: 'học tập', level: 'N5', pos: 'DANH TỪ', mastery: 80 },
-      { word: '食べる', reading: 'たべる', meaning: 'ăn', level: 'N5', pos: 'ĐỘNG TỪ', mastery: 95 },
-      { word: '練習', reading: 'れんしゅう', meaning: 'luyện tập', level: 'N4', pos: 'DANH TỪ', mastery: 68 },
-      { word: '必ず', reading: 'かならず', meaning: 'chắc chắn', level: 'N3', pos: 'DANH TỪ', mastery: 30 },
-      { word: '諦める', reading: 'あきらめる', meaning: 'từ bỏ', level: 'N3', pos: 'ĐỘNG TỪ', mastery: 20 },
-      { word: '面白い', reading: 'おもしろい', meaning: 'thú vị', level: 'N5', pos: 'TÍNH TỪ', mastery: 85 },
-    ],
-    []
-  )
+  // Vocabulary is server-built from this exact transcript and exact dictionary
+  // hits. Items not found in the dictionary are not presented as facts.
+  const videoVocabList = useMemo(() => {
+    return (learningContent?.vocabulary ?? []).map((item) => ({
+      word: item.word,
+      reading: item.reading,
+      meaning: item.meanings.join('; ') || null,
+      level: item.jlpt,
+      pos: item.partOfSpeech,
+      occurrences: item.occurrenceCount,
+    }))
+  }, [learningContent])
 
   const filteredVideoVocab = useMemo(() => {
     if (vocabFilter === 'ALL') return videoVocabList
-    if (['N5', 'N4', 'N3', 'N2', 'N1'].includes(vocabFilter)) {
-      return videoVocabList.filter((w) => w.level === vocabFilter)
-    }
-    if (vocabFilter === 'ĐỘNG TỪ') return videoVocabList.filter((w) => w.pos === 'ĐỘNG TỪ')
-    if (vocabFilter === 'DANH TỪ') return videoVocabList.filter((w) => w.pos === 'DANH TỪ')
-    if (vocabFilter === 'TÍNH TỪ') return videoVocabList.filter((w) => w.pos === 'TÍNH TỪ')
-    return videoVocabList
+    return videoVocabList.filter((word) => word.pos === vocabFilter)
   }, [vocabFilter, videoVocabList])
 
-  // Pre-extracted grammar from video content
-  const videoGrammarList = useMemo(
-    () => [
-      {
-        pattern: '〜へ行く',
-        level: 'N5',
-        meaning: 'Đi đến [địa điểm]',
-        usage: 'Trợ từ chỉ hướng へ + động từ di chuyển',
-        example: '学校へ行きました。',
-      },
-      {
-        pattern: '〜けど〜',
-        level: 'N4',
-        meaning: 'Mặc dù, nhưng mà (nhẹ hơn でも)',
-        usage: 'Nối hai mệnh đề tương phản, sắc thái lịch sự',
-        example: '日本語は難しいけど、面白いと思います。',
-      },
-      {
-        pattern: '〜すれば〜',
-        level: 'N3',
-        meaning: 'Điều kiện: nếu [A] thì [B]',
-        usage: 'Thân động từ + thể điều kiện ば',
-        example: '練習すれば、必ず上手くなれるよ。',
-      },
-    ],
+  // Grammar annotations are not generated until a transcript-grounded backend
+  // stage exists. An empty state is more honest than patterns from another lesson.
+  const videoGrammarList: Array<{ pattern: string; level: string; meaning: string; usage: string; example: string }> =
     []
-  )
 
   // Batch / Page-Flip Auto-scroll: When active sentence hits the bottom of the container, scroll it to the TOP!
   useEffect(() => {
@@ -753,7 +732,12 @@ export default function VideoStudyPlayer({
                 >
                   {/* Filter Pills */}
                   <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap', marginBottom: '0.85rem' }}>
-                    {['ALL', 'N5', 'N4', 'N3', 'ĐỘNG TỪ', 'DANH TỪ', 'TÍNH TỪ'].map((f) => (
+                    {[
+                      'ALL',
+                      ...Array.from(
+                        new Set(videoVocabList.map((word) => word.pos).filter((pos): pos is string => Boolean(pos)))
+                      ),
+                    ].map((f) => (
                       <button
                         key={f}
                         type="button"
@@ -776,109 +760,111 @@ export default function VideoStudyPlayer({
 
                   {/* Vocabulary Cards List */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                    {filteredVideoVocab.map((w) => {
-                      const mastery = w.mastery || 80
-                      const barColor = mastery >= 80 ? '#10b981' : mastery >= 50 ? '#f59e0b' : '#3b82f6'
-                      const isSaved = savedItems.has(`vocab_${w.word}`)
+                    {filteredVideoVocab.length === 0 ? (
+                      <p style={{ margin: 0, color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+                        {learningContentError ??
+                          (learningContent
+                            ? 'Chưa tìm thấy từ nào trong transcript có mục từ điển khớp chính xác.'
+                            : 'Đang đối chiếu từ vựng với từ điển…')}
+                      </p>
+                    ) : (
+                      filteredVideoVocab.map((w) => {
+                        const isSaved = savedItems.has(`vocab_${w.word}`)
 
-                      return (
-                        <div
-                          key={w.word}
-                          style={{
-                            background: 'rgba(255, 255, 255, 0.03)',
-                            border: '1px solid var(--color-border)',
-                            borderRadius: '8px',
-                            padding: '0.75rem',
-                          }}
-                        >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                            <div>
-                              <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
-                                <span
+                        return (
+                          <div
+                            key={w.word}
+                            style={{
+                              background: 'rgba(255, 255, 255, 0.03)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: '8px',
+                              padding: '0.75rem',
+                            }}
+                          >
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                              <div>
+                                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.4rem' }}>
+                                  <button
+                                    type="button"
+                                    onClick={() => setLookupKeyword(w.word)}
+                                    title={`Tra từ điển: ${w.word}`}
+                                    style={{
+                                      fontFamily: 'var(--font-jp)',
+                                      fontSize: '1.15rem',
+                                      fontWeight: 800,
+                                      color: 'var(--color-text)',
+                                      padding: 0,
+                                      border: 'none',
+                                      background: 'transparent',
+                                      cursor: 'pointer',
+                                      textAlign: 'left',
+                                    }}
+                                  >
+                                    {w.word}
+                                  </button>
+                                  <span
+                                    style={{
+                                      fontFamily: 'var(--font-jp)',
+                                      fontSize: '0.85rem',
+                                      color: 'var(--color-text-muted)',
+                                    }}
+                                  >
+                                    {w.reading || 'Chưa có cách đọc'}
+                                  </span>
+                                </div>
+                                <div
                                   style={{
-                                    fontFamily: 'var(--font-jp)',
-                                    fontSize: '1.15rem',
-                                    fontWeight: 800,
-                                    color: 'var(--color-text)',
-                                  }}
-                                >
-                                  {w.word}
-                                </span>
-                                <span
-                                  style={{
-                                    fontFamily: 'var(--font-jp)',
                                     fontSize: '0.85rem',
-                                    color: 'var(--color-text-muted)',
+                                    color: 'var(--color-text-secondary)',
+                                    marginTop: '2px',
                                   }}
                                 >
-                                  {w.reading}
+                                  {w.meaning || 'Mục từ điển này chưa có nghĩa tiếng Việt.'}
+                                </div>
+                              </div>
+
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                                <Badge variant="primary" className="text-xs">
+                                  {w.pos || w.level || 'Từ điển'}
+                                </Badge>
+                                <button
+                                  type="button"
+                                  onClick={() => toggleSaveItem(`vocab_${w.word}`, w.word, w.meaning)}
+                                  style={{
+                                    fontSize: '0.72rem',
+                                    padding: '2px 6px',
+                                    borderRadius: '4px',
+                                    border: '1px solid var(--color-border)',
+                                    background: isSaved ? 'rgba(16, 185, 129, 0.15)' : 'transparent',
+                                    color: isSaved ? '#10b981' : 'var(--color-text-muted)',
+                                    cursor: 'pointer',
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  {isSaved ? 'Đã lưu' : '+Lưu'}
+                                </button>
+                              </div>
+                            </div>
+
+                            <div style={{ marginTop: '0.6rem' }}>
+                              <div
+                                style={{
+                                  display: 'flex',
+                                  justifyContent: 'space-between',
+                                  fontSize: '0.7rem',
+                                  marginBottom: '3px',
+                                }}
+                              >
+                                <span style={{ color: 'var(--color-text-muted)', fontWeight: 600 }}>
+                                  XUẤT HIỆN TRONG VIDEO
                                 </span>
-                              </div>
-                              <div
-                                style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary)', marginTop: '2px' }}
-                              >
-                                {w.meaning}
+                                <span style={{ color: '#64748b', fontWeight: 700 }}>{w.occurrences} lần</span>
                               </div>
                             </div>
-
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                              <Badge variant="primary" className="text-xs">
-                                {w.level}
-                              </Badge>
-                              <button
-                                type="button"
-                                onClick={() => toggleSaveItem(`vocab_${w.word}`, w.word, w.meaning)}
-                                style={{
-                                  fontSize: '0.72rem',
-                                  padding: '2px 6px',
-                                  borderRadius: '4px',
-                                  border: '1px solid var(--color-border)',
-                                  background: isSaved ? 'rgba(16, 185, 129, 0.15)' : 'transparent',
-                                  color: isSaved ? '#10b981' : 'var(--color-text-muted)',
-                                  cursor: 'pointer',
-                                  fontWeight: 600,
-                                }}
-                              >
-                                {isSaved ? 'Đã lưu' : '+Lưu'}
-                              </button>
-                            </div>
                           </div>
-
-                          {/* Thành thạo progress bar */}
-                          <div style={{ marginTop: '0.6rem' }}>
-                            <div
-                              style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                fontSize: '0.7rem',
-                                marginBottom: '3px',
-                              }}
-                            >
-                              <span style={{ color: 'var(--color-text-muted)', fontWeight: 600 }}>THÀNH THẠO</span>
-                              <span style={{ color: barColor, fontWeight: 700 }}>{mastery}%</span>
-                            </div>
-                            <div
-                              style={{
-                                height: '4px',
-                                width: '100%',
-                                background: 'rgba(255, 255, 255, 0.08)',
-                                borderRadius: '2px',
-                                overflow: 'hidden',
-                              }}
-                            >
-                              <div
-                                style={{
-                                  height: '100%',
-                                  width: `${mastery}%`,
-                                  background: barColor,
-                                  borderRadius: '2px',
-                                }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      )
-                    })}
+                        )
+                      })
+                    )}
                   </div>
                 </div>
               )}
@@ -895,67 +881,73 @@ export default function VideoStudyPlayer({
                     padding: '0.85rem',
                   }}
                 >
-                  {videoGrammarList.map((g) => (
-                    <div
-                      key={g.pattern}
-                      style={{
-                        background: 'rgba(255, 255, 255, 0.03)',
-                        border: '1px solid var(--color-border)',
-                        borderRadius: '8px',
-                        padding: '0.85rem',
-                      }}
-                    >
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span
-                          style={{
-                            fontFamily: 'var(--font-jp)',
-                            fontSize: '1.15rem',
-                            fontWeight: 800,
-                            color: '#ec4899',
-                          }}
-                        >
-                          {g.pattern}
-                        </span>
-                        <Badge variant="primary" className="text-xs font-bold">
-                          {g.level}
-                        </Badge>
-                      </div>
-
+                  {videoGrammarList.length === 0 ? (
+                    <p style={{ margin: 0, color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
+                      Chưa có phân tích ngữ pháp đã được gắn với transcript này.
+                    </p>
+                  ) : (
+                    videoGrammarList.map((g) => (
                       <div
-                        style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--color-text)', marginTop: '4px' }}
-                      >
-                        {g.meaning}
-                      </div>
-
-                      <div
+                        key={g.pattern}
                         style={{
-                          fontSize: '0.8rem',
-                          color: 'var(--color-text-muted)',
-                          marginTop: '2px',
-                          lineHeight: 1.4,
+                          background: 'rgba(255, 255, 255, 0.03)',
+                          border: '1px solid var(--color-border)',
+                          borderRadius: '8px',
+                          padding: '0.85rem',
                         }}
                       >
-                        {g.usage}
-                      </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <span
+                            style={{
+                              fontFamily: 'var(--font-jp)',
+                              fontSize: '1.15rem',
+                              fontWeight: 800,
+                              color: '#ec4899',
+                            }}
+                          >
+                            {g.pattern}
+                          </span>
+                          <Badge variant="primary" className="text-xs font-bold">
+                            {g.level}
+                          </Badge>
+                        </div>
 
-                      {g.example && (
+                        <div
+                          style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--color-text)', marginTop: '4px' }}
+                        >
+                          {g.meaning}
+                        </div>
+
                         <div
                           style={{
-                            marginTop: '0.5rem',
-                            padding: '0.5rem 0.65rem',
-                            background: 'rgba(255, 255, 255, 0.03)',
-                            borderRadius: '6px',
-                            border: '1px solid rgba(255, 255, 255, 0.06)',
-                            fontSize: '0.85rem',
-                            fontFamily: 'var(--font-jp)',
-                            color: 'var(--color-text)',
+                            fontSize: '0.8rem',
+                            color: 'var(--color-text-muted)',
+                            marginTop: '2px',
+                            lineHeight: 1.4,
                           }}
                         >
-                          {g.example}
+                          {g.usage}
                         </div>
-                      )}
-                    </div>
-                  ))}
+
+                        {g.example && (
+                          <div
+                            style={{
+                              marginTop: '0.5rem',
+                              padding: '0.5rem 0.65rem',
+                              background: 'rgba(255, 255, 255, 0.03)',
+                              borderRadius: '6px',
+                              border: '1px solid rgba(255, 255, 255, 0.06)',
+                              fontSize: '0.85rem',
+                              fontFamily: 'var(--font-jp)',
+                              color: 'var(--color-text)',
+                            }}
+                          >
+                            {g.example}
+                          </div>
+                        )}
+                      </div>
+                    ))
+                  )}
                 </div>
               )}
 
@@ -996,7 +988,7 @@ export default function VideoStudyPlayer({
                       variant="primary"
                       onClick={savePersonalNote}
                       style={{
-                        flex: 1,
+                        width: '100%',
                         background: '#f43f5e',
                         color: '#ffffff',
                         fontWeight: 700,
@@ -1006,21 +998,10 @@ export default function VideoStudyPlayer({
                     >
                       {noteSavedStatus ? '✓ Đã lưu' : 'Lưu ghi chú'}
                     </Button>
-                    <Button
-                      variant="secondary"
-                      onClick={generateAiSummary}
-                      style={{
-                        height: '40px',
-                        borderRadius: '8px',
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '4px',
-                        fontSize: '0.85rem',
-                      }}
-                    >
-                      <Sparkles size={15} /> Tóm tắt AI
-                    </Button>
                   </div>
+                  <p style={{ margin: 0, color: 'var(--color-text-muted)', fontSize: '0.78rem', lineHeight: 1.4 }}>
+                    Tóm tắt AI chỉ được bật khi backend đã tạo nội dung có dẫn chiếu tới transcript.
+                  </p>
                 </div>
               )}
 

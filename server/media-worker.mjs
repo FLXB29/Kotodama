@@ -165,9 +165,21 @@ export function startMediaWorker({ store, storage, config, dictionary }) {
   const controller = new AbortController()
   const done = (async () => {
     log('info', 'media-worker.started')
+    let lastRecoveryAt = 0
     while (!controller.signal.aborted) {
       let worked = false
       try {
+        const now = Date.now()
+        if (
+          typeof store.recoverStaleMediaProcessingJobs === 'function' &&
+          now - lastRecoveryAt >= (config.media.jobRecoveryIntervalMs ?? 60_000)
+        ) {
+          const recovered = await store.recoverStaleMediaProcessingJobs({
+            staleAfterMs: config.media.jobStaleAfterMs ?? 15 * 60_000,
+          })
+          lastRecoveryAt = now
+          if (recovered.requeued || recovered.failed) log('info', 'media-worker.stale-jobs-recovered', recovered)
+        }
         worked = await processNextMediaJob({ store, storage, config, dictionary })
       } catch (error) {
         logError('media-worker.poll-failed', error)

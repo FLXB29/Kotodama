@@ -51,6 +51,19 @@ test('local Whisper ASR needs only its local service URL, not a cloud API key', 
   assert.equal(config.transcription.localAsrUrl, 'http://127.0.0.1:8788')
 })
 
+test('Azure pronunciation baseline is enabled only with a valid key and region', () => {
+  assert.equal(readConfig({ AZURE_SPEECH_KEY: 'test-key' }).pronunciation.azure.enabled, false)
+  const config = readConfig({
+    AZURE_SPEECH_KEY: 'test-key',
+    AZURE_SPEECH_REGION: 'JapanEast',
+    AZURE_PRONUNCIATION_TIMEOUT_MS: '4000',
+  })
+  assert.equal(config.pronunciation.azure.enabled, true)
+  assert.equal(config.pronunciation.azure.region, 'japaneast')
+  assert.equal(config.pronunciation.azure.timeoutMs, 4000)
+  assert.throws(() => readConfig({ AZURE_SPEECH_REGION: 'japan east' }), /AZURE_SPEECH_REGION/)
+})
+
 test('production configuration accepts an explicit SMTP and trusted-proxy policy', () => {
   const config = readConfig({
     NODE_ENV: 'production',

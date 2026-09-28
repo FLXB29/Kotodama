@@ -40,7 +40,7 @@ async function waitForServer() {
   throw new Error('Shadowing test server did not start.')
 }
 
-test('shadowing API creates session, evaluates attempt and advances progress', async () => {
+test('shadowing API refuses a session until the owner has a ready transcript', async () => {
   const server = spawn(process.execPath, ['server/index.mjs'], {
     cwd: process.cwd(),
     env: { ...process.env, DATABASE_URL: '', API_PORT: String(port) },
@@ -78,59 +78,15 @@ test('shadowing API creates session, evaluates attempt and advances progress', a
     const assetPayload = await createAsset.json()
     const asset = assetPayload.data
 
-    // 3. Create Shadowing Session
+    // 3. A draft video cannot be shadowed: the target must come from a ready, canonical transcript.
     const createSession = await request('/api/v1/shadowing/sessions', {
       method: 'POST',
       headers: authHeaders,
       body: { mediaAssetId: asset.id, mode: 'sequential' },
     })
-    assert.equal(createSession.status, 201)
+    assert.equal(createSession.status, 409)
     const sessionPayload = await createSession.json()
-    const session = sessionPayload.data.session
-    assert.equal(session.mediaAssetId, asset.id)
-    assert.equal(session.currentSegmentSequence, 1)
-
-    // 4. Submit a Shadowing Attempt
-    const submitAttempt = await request(`/api/v1/shadowing/sessions/${session.id}/attempts`, {
-      method: 'POST',
-      headers: authHeaders,
-      body: {
-        transcriptSegmentId: '00000000-0000-0000-0000-000000000001',
-        referenceText: 'こんにちは、元気ですか。',
-        referenceDurationMs: 2500,
-        durationMs: 2400,
-        attemptNo: 1,
-        audioBase64: 'dGVzdGF1ZGlvYnl0ZXM=', // dummy base64
-      },
-    })
-    assert.equal(submitAttempt.status, 201)
-    const attemptPayload = await submitAttempt.json()
-    const { attempt, evaluation } = attemptPayload.data
-    assert.equal(attempt.sessionId, session.id)
-    assert.ok(evaluation.feedback.summary)
-    assert.ok(typeof evaluation.overallScore === 'number')
-
-    // 5. Advance session to next sequence
-    const advance = await request(`/api/v1/shadowing/sessions/${session.id}/next`, {
-      method: 'POST',
-      headers: authHeaders,
-      body: { nextSequenceNo: 2, isCompleted: false },
-    })
-    assert.equal(advance.status, 200)
-    const advancePayload = await advance.json()
-    const updatedSession = advancePayload.data.session
-    assert.equal(updatedSession.currentSegmentSequence, 2)
-
-    // 6. Fetch session with attempts history
-    const getSession = await request(`/api/v1/shadowing/sessions/${session.id}`, {
-      method: 'GET',
-      headers: authHeaders,
-    })
-    assert.equal(getSession.status, 200)
-    const sessionDetailsPayload = await getSession.json()
-    const sessionDetails = sessionDetailsPayload.data
-    assert.equal(sessionDetails.session.id, session.id)
-    assert.equal(sessionDetails.attempts.length, 1)
+    assert.equal(sessionPayload.code, 'TRANSCRIPT_NOT_READY')
   } finally {
     server.kill()
   }

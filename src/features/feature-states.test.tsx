@@ -29,6 +29,17 @@ vi.mock('./video/videoApi', () => ({
   getMediaAsset: vi.fn(),
   getMediaJobs: vi.fn().mockResolvedValue({ items: [] }),
   getTranscript: vi.fn(),
+  getVideoLearningContent: vi.fn().mockResolvedValue({
+    transcriptVersionId: 'transcript-ready',
+    vocabulary: [],
+    grammarAnnotations: [],
+    provenance: {
+      vocabulary: 'dictionary_exact_lookup',
+      grammar: 'unavailable',
+      generatedAt: '2026-09-18T00:00:00.000Z',
+      segmentCount: 0,
+    },
+  }),
   createPlaybackSession: vi.fn(),
   importYouTubeVideo: vi.fn(),
 }))

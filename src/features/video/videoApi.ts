@@ -6,6 +6,7 @@ import type {
   ShadowingEvaluationResult,
   ShadowingSession,
   TranscriptVersion,
+  VideoLearningContent,
   UploadProgress,
 } from './videoTypes'
 
@@ -84,6 +85,10 @@ export function getTranscript(assetId: string) {
   return requestApi<TranscriptVersion>({ method: 'GET', url: apiPaths.video.transcript(assetId) })
 }
 
+export function getVideoLearningContent(assetId: string) {
+  return requestApi<VideoLearningContent>({ method: 'GET', url: apiPaths.video.learningContent(assetId) })
+}
+
 export function createPlaybackSession(assetId: string) {
   return requestApi<PlaybackSession>({ method: 'POST', url: apiPaths.video.playbackSession(assetId) })
 }
@@ -120,10 +125,6 @@ export function submitShadowingAttempt(
   sessionId: string,
   payload: {
     transcriptSegmentId: string
-    referenceText: string
-    referenceDurationMs: number
-    durationMs: number
-    attemptNo: number
     audioBase64: string
   }
 ) {

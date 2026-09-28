@@ -114,6 +114,8 @@ export function alignTokens(referenceTokens, recognizedTokens) {
  * @param {number} [params.referenceDurationMs=0] - Expected duration in milliseconds
  * @param {number} [params.userDurationMs=0] - User recording duration in milliseconds
  * @param {Object} [params.dspComparison=null] - DSP pitch and rhythm comparison result from Python DSP
+ * @param {Object} [params.providerAssessment=null] - Normalized managed pronunciation baseline
+ * @param {Object} [params.audioQuality=null] - Measured pre-inference recording quality
  * @returns {Object} Score details, token alignment, pitch contour, and feedback
  */
 export function evaluateShadowingAttempt({
@@ -122,6 +124,8 @@ export function evaluateShadowingAttempt({
   referenceDurationMs = 0,
   userDurationMs = 0,
   dspComparison = null,
+  providerAssessment = null,
+  audioQuality = null,
 }) {
   const cleanRef = normalizeJapaneseText(referenceText)
   const cleanRec = normalizeJapaneseText(recognizedText)
@@ -135,13 +139,15 @@ export function evaluateShadowingAttempt({
       contentScore: 0,
       timingScore: 0,
       pronunciationScore: 0,
-      pitchScore: 0,
+      pitchScore: null,
+      providerAssessment,
+      audioQuality,
       confidence: 100,
       alignment: [],
-      pitchContour: { reference: [], user: [] },
       feedback: {
         summary: 'Câu mẫu không có nội dung văn bản.',
         tips: [],
+        audioQuality,
       },
       scoringVersion: dspComparison ? 'dsp_pitch_dtw_v2' : 'whisper_basic_v1',
     }
@@ -181,14 +187,15 @@ export function evaluateShadowingAttempt({
       fluencyScore: 0,
       completenessScore: 0,
       pronunciationScore: 0,
-      pitchScore: 0,
+      pitchScore: null,
+      providerAssessment,
+      audioQuality,
       confidence: 100,
       alignment: missingTokens,
-      pitchContour: {
-        reference: dspComparison?.referenceContour ?? [],
-        user: dspComparison?.userContour ?? [],
-      },
-      feedback: { summary, tips },
+      ...(hasDspUserContour && Array.isArray(dspComparison?.referenceContour)
+        ? { pitchContour: { reference: dspComparison.referenceContour, user: dspComparison.userContour } }
+        : {}),
+      feedback: { summary, tips, audioQuality },
       scoringVersion: dspComparison ? 'dsp_pitch_dtw_v2' : 'whisper_basic_v1',
     }
   }
@@ -225,8 +232,14 @@ export function evaluateShadowingAttempt({
     }
   }
 
-  // 3. Pitch Score (from DSP comparison)
-  const pitchScore = dspComparison?.pitchScore !== undefined ? dspComparison.pitchScore : null
+  // 3. Pitch evidence is available only when both contours were actually extracted.
+  const hasRealPitchContours =
+    Array.isArray(dspComparison?.referenceContour) &&
+    Array.isArray(dspComparison?.userContour) &&
+    dspComparison.referenceContour.some((point) => point?.voiced && point?.semitone !== null) &&
+    dspComparison.userContour.some((point) => point?.voiced && point?.semitone !== null)
+  const pitchScore =
+    hasRealPitchContours && Number.isFinite(dspComparison?.pitchScore) ? dspComparison.pitchScore : null
 
   // 4. Overall Weighted Score
   let overallScore
@@ -271,67 +284,8 @@ export function evaluateShadowingAttempt({
   const accuracyScore = contentScore
   const fluencyScore = timingScore
   const completenessScore = Math.max(0, Math.round(((totalRefTokens - missingWords.length) / totalRefTokens) * 100))
-  const pronunciationScore = pitchScore !== null ? Math.round(contentScore * 0.6 + pitchScore * 0.4) : contentScore
-
-  // Fallback Pitch Contour generation if DSP comparison not provided or empty
-  const hasRefContour = dspComparison?.referenceContour && dspComparison.referenceContour.length > 0
-  const hasUserContour = dspComparison?.userContour && dspComparison.userContour.length > 0
-
-  let refContour = dspComparison?.referenceContour ?? []
-  let userContour = dspComparison?.userContour ?? []
-
-  if (!hasRefContour || !hasUserContour) {
-    const isQuestion = cleanRef.includes('？') || cleanRef.includes('?') || cleanRef.endsWith('か')
-    const refDur = Math.max(800, referenceDurationMs || 2500)
-    const userDur = Math.max(800, userDurationMs || refDur)
-    const stepMs = 40
-
-    if (!hasRefContour) {
-      const steps = Math.floor(refDur / stepMs)
-      refContour = []
-      for (let i = 0; i <= steps; i++) {
-        const timeMs = i * stepMs
-        const tNorm = timeMs / refDur
-        const initialRise = Math.sin(Math.min(Math.PI / 2, tNorm * 7.5)) * 1.5
-        const phraseOsci = Math.sin(tNorm * Math.PI * 3.6) * 1.7
-        const downdrift = -1.2 * tNorm
-        const terminalRise = isQuestion && tNorm > 0.8 ? ((tNorm - 0.8) / 0.2) * 3.5 : 0
-        const semitone = Number((initialRise + phraseOsci + downdrift + terminalRise).toFixed(2))
-        const f0Hz = Math.round(180 * Math.pow(2, semitone / 12))
-        const voiced = i > 1 && i < steps - 1
-
-        refContour.push({
-          timeMs,
-          f0Hz: voiced ? f0Hz : null,
-          semitone: voiced ? semitone : null,
-          voiced,
-        })
-      }
-    }
-
-    if (!hasUserContour) {
-      const steps = Math.floor(userDur / stepMs)
-      userContour = []
-      for (let i = 0; i <= steps; i++) {
-        const timeMs = i * stepMs
-        const tNorm = timeMs / userDur
-        const initialRise = Math.sin(Math.min(Math.PI / 2, tNorm * 7.2)) * 1.4
-        const phraseOsci = Math.sin(tNorm * Math.PI * 3.5 + 0.1) * 1.5
-        const downdrift = -1.1 * tNorm
-        const terminalRise = isQuestion && tNorm > 0.82 ? ((tNorm - 0.82) / 0.18) * 3.2 : 0
-        const semitone = Number((initialRise + phraseOsci + downdrift + terminalRise + 0.2).toFixed(2))
-        const f0Hz = Math.round(185 * Math.pow(2, semitone / 12))
-        const voiced = i > 2 && i < steps - 1
-
-        userContour.push({
-          timeMs,
-          f0Hz: voiced ? f0Hz : null,
-          semitone: voiced ? semitone : null,
-          voiced,
-        })
-      }
-    }
-  }
+  // Until Model A is calibrated, this is content similarity, not a phoneme grade.
+  const pronunciationScore = contentScore
 
   return {
     overallScore,
@@ -341,22 +295,28 @@ export function evaluateShadowingAttempt({
     fluencyScore,
     completenessScore,
     pronunciationScore,
-    pitchScore: pitchScore ?? contentScore,
+    pitchScore,
+    providerAssessment,
+    audioQuality,
     confidence: 90,
     alignment: alignments,
-    pitchContour: {
-      reference: refContour,
-      user: userContour,
-    },
+    ...(hasRealPitchContours
+      ? { pitchContour: { reference: dspComparison.referenceContour, user: dspComparison.userContour } }
+      : {}),
     feedback: {
       summary,
       tips,
       durationRatio: Number(durationRatio.toFixed(2)),
       userDurationMs,
       referenceDurationMs,
-      disclaimer: dspComparison
-        ? 'Điểm đánh giá dựa trên độ chính xác nội dung (ASR), nhịp điệu và độ tương đồng cao độ (DSP/DTW).'
-        : 'Điểm đánh giá dựa trên độ chính xác nội dung và nhịp điệu cơ bản (Whisper ASR).',
+      disclaimer:
+        providerAssessment?.provider === 'azure_pronunciation_assessment'
+          ? 'Đây là độ khớp shadowing cục bộ. Điểm Azure bên dưới là baseline dịch vụ ngoài để đối chiếu, chưa phải model đã hiệu chỉnh riêng cho người học Việt Nam.'
+          : dspComparison && hasRealPitchContours
+            ? 'Đây là độ khớp shadowing dựa trên nội dung ASR, nhịp điệu và đường cao độ DSP/DTW; chưa phải điểm phát âm âm vị đã hiệu chỉnh.'
+            : 'Đây là độ khớp shadowing dựa trên nội dung ASR và nhịp điệu; chưa phải điểm phát âm âm vị đã hiệu chỉnh.',
+      providerAssessment,
+      audioQuality,
     },
     scoringVersion: dspComparison ? 'dsp_pitch_dtw_v2' : 'whisper_basic_v1',
   }

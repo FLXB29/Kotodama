@@ -184,12 +184,15 @@ def compare_pitch_dtw(
     feedback_tips = []
 
     if len(user_voiced) < 3 or len(ref_voiced) < 3:
-        pitch_score = 50
         feedback_tips.append("Âm lượng giọng đọc hơi nhỏ hoặc chưa rõ âm nguyên âm để trích xuất cao độ.")
         return {
-            "pitchScore": pitch_score,
+            # A midpoint score would look like a measured pronunciation result
+            # even though no meaningful pitch curve could be compared.
+            "pitchScore": None,
             "rhythmScore": rhythm_score,
             "durationRatio": round(dur_ratio, 2),
+            "referenceDurationMs": int(ref_dur),
+            "userDurationMs": int(user_dur),
             "referenceContour": ref_contour,
             "userContour": user_contour,
             "feedbackTips": feedback_tips,
@@ -245,6 +248,8 @@ def compare_pitch_dtw(
         "pitchScore": pitch_score,
         "rhythmScore": rhythm_score,
         "durationRatio": round(dur_ratio, 2),
+        "referenceDurationMs": int(ref_dur),
+        "userDurationMs": int(user_dur),
         "referenceContour": ref_contour,
         "userContour": user_contour,
         "feedbackTips": feedback_tips,

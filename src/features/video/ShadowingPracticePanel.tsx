@@ -24,6 +24,7 @@ import type {
   TranscriptVersion,
 } from './videoTypes'
 import PitchContourVisualizer from './PitchContourVisualizer'
+import { getApiErrorMessage } from '../../lib/apiClient'
 
 function formatSeconds(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`
@@ -52,7 +53,6 @@ export default function ShadowingPracticePanel({
   const [recordedAudioUrl, setRecordedAudioUrl] = useState<string | null>(null)
   const [audioBySegmentId, setAudioBySegmentId] = useState<Record<string, string>>({})
   const [isPlayingUserAudio, setIsPlayingUserAudio] = useState(false)
-  const [attemptCount, setAttemptCount] = useState(1)
   const [micError, setMicError] = useState<string | null>(null)
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
@@ -96,7 +96,6 @@ export default function ShadowingPracticePanel({
     setEvaluationResult(existing ?? null)
     setRecordedAudioUrl(existingAudio)
     setIsPlayingUserAudio(false)
-    setAttemptCount(existing ? 2 : 1)
     setMicError(null)
     setIsRecording(false)
     if (recordingTimerRef.current) clearInterval(recordingTimerRef.current)
@@ -240,20 +239,15 @@ export default function ShadowingPracticePanel({
       reader.readAsDataURL(blob)
       reader.onloadend = async () => {
         const base64Audio = reader.result as string
-        const durationMs = recordingSeconds * 1000 || activeSegment.endMs - activeSegment.startMs
         try {
           const result = await submitShadowingAttempt(session.id, {
             transcriptSegmentId: activeSegment.id,
-            referenceText: activeSegment.textJa,
-            referenceDurationMs: activeSegment.endMs - activeSegment.startMs,
-            durationMs,
-            attemptNo: attemptCount,
             audioBase64: base64Audio,
           })
           setEvaluationResult(result)
           setHistoryBySegmentId((prev) => ({ ...prev, [activeSegment.id]: result }))
-        } catch {
-          setMicError('Không thể gửi bài thu âm lên máy chủ chấm điểm.')
+        } catch (error) {
+          setMicError(getApiErrorMessage(error, 'Không thể gửi bài thu âm lên máy chủ chấm điểm.'))
         } finally {
           setIsEvaluating(false)
         }
@@ -276,7 +270,6 @@ export default function ShadowingPracticePanel({
   }
 
   function handleRetry() {
-    setAttemptCount((prev) => prev + 1)
     setEvaluationResult(null)
     setIsPlayingUserAudio(false)
     setRecordingSeconds(0)
@@ -306,6 +299,7 @@ export default function ShadowingPracticePanel({
   }
 
   const overallScore = evaluationResult?.evaluation?.overallScore ?? 0
+  const providerAssessment = evaluationResult?.evaluation?.providerAssessment ?? null
   return (
     <Card
       padding="md"
@@ -387,7 +381,7 @@ export default function ShadowingPracticePanel({
                 }}
                 title="Phím tắt: Enter"
               >
-                <Mic size={15} /> Kiểm tra phát âm <small style={{ opacity: 0.85, marginLeft: '2px' }}>Enter</small>
+                <Mic size={15} /> So độ khớp câu đọc <small style={{ opacity: 0.85, marginLeft: '2px' }}>Enter</small>
               </Button>
             )}
 
@@ -689,7 +683,7 @@ export default function ShadowingPracticePanel({
             border: '1px dashed var(--color-border, #cbd5e1)',
           }}
         >
-          Bấm <strong style={{ color: '#059669' }}>Enter</strong> (hoặc nút "Kiểm tra phát âm") để thu âm, bấm{' '}
+          Bấm <strong style={{ color: '#059669' }}>Enter</strong> (hoặc nút "So độ khớp câu đọc") để thu âm, bấm{' '}
           <strong style={{ color: 'var(--color-text, #0f172a)' }}>Space</strong> để nghe câu thoại mẫu.
         </div>
       ) : (
@@ -719,10 +713,10 @@ export default function ShadowingPracticePanel({
           >
             <div>
               <div style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--color-text, #0f172a)' }}>
-                Điểm trung bình
+                Độ khớp Shadowing
               </div>
               <div style={{ fontSize: '0.82rem', color: '#64748b', marginTop: '2px' }}>
-                Trung bình của tất cả các tiêu chí
+                Nội dung, nhịp điệu và ngữ điệu khi có dữ liệu thật
               </div>
             </div>
             <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end' }}>
@@ -752,7 +746,7 @@ export default function ShadowingPracticePanel({
                           : '#dc2626',
                 }}
               >
-                {overallScore >= 90 ? 'Xuất sắc' : overallScore >= 70 ? 'Tốt' : 'Cần cố gắng'}
+                {overallScore >= 90 ? 'Rất khớp' : overallScore >= 70 ? 'Khá khớp' : 'Cần luyện thêm'}
               </span>
             </div>
           </div>
@@ -773,7 +767,7 @@ export default function ShadowingPracticePanel({
                 border: '1px solid #bfdbfe',
               }}
             >
-              <div style={{ fontSize: '0.8rem', color: '#1e40af', fontWeight: 700 }}>Điểm phát âm</div>
+              <div style={{ fontSize: '0.8rem', color: '#1e40af', fontWeight: 700 }}>Độ khớp nội dung</div>
               <div style={{ fontSize: '1.75rem', fontWeight: 900, color: '#2563eb', marginTop: '4px' }}>
                 {evaluationResult.evaluation.pronunciationScore ?? evaluationResult.evaluation.contentScore ?? 0}
               </div>
@@ -821,6 +815,34 @@ export default function ShadowingPracticePanel({
               </div>
             </div>
           </div>
+
+          {providerAssessment && (
+            <div
+              style={{
+                background: '#f8fafc',
+                padding: '0.85rem 1rem',
+                borderRadius: '12px',
+                border: '1px solid #cbd5e1',
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
+                <div>
+                  <div style={{ fontSize: '0.82rem', color: '#334155', fontWeight: 800 }}>
+                    Azure Pronunciation Assessment — baseline
+                  </div>
+                  <div style={{ fontSize: '0.76rem', color: '#64748b', marginTop: '2px' }}>
+                    Dịch vụ đối chiếu bên ngoài; chưa phải model riêng đã hiệu chỉnh cho người học Việt Nam.
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', color: '#0f172a', fontWeight: 700 }}>
+                  <span>Overall: {providerAssessment.overallScore ?? '—'}</span>
+                  <span>Accuracy: {providerAssessment.accuracyScore ?? '—'}</span>
+                  <span>Fluency: {providerAssessment.fluencyScore ?? '—'}</span>
+                  <span>Complete: {providerAssessment.completenessScore ?? '—'}</span>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Section: Văn bản & So sánh âm thanh (Matches Image 2) */}
           <div

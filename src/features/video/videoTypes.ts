@@ -86,6 +86,29 @@ export type TranscriptVersion = {
   segments: TranscriptSegment[]
 }
 
+export type VideoLearningVocabularyItem = {
+  word: string
+  reading: string | null
+  meanings: string[]
+  jlpt: string | null
+  partOfSpeech: string | null
+  occurrenceCount: number
+  firstSegmentId: string
+  segmentIds: string[]
+}
+
+export type VideoLearningContent = {
+  transcriptVersionId: string | null
+  vocabulary: VideoLearningVocabularyItem[]
+  grammarAnnotations: []
+  provenance: {
+    vocabulary: 'dictionary_exact_lookup'
+    grammar: 'unavailable'
+    generatedAt: string
+    segmentCount: number
+  }
+}
+
 export type UploadProgress = { loaded: number; total: number; percent: number }
 export type ListeningPreferences = { hideJp: boolean; hideFurigana: boolean; hideVi: boolean }
 
@@ -127,6 +150,8 @@ export type ShadowingScore = {
     userDurationMs?: number
     referenceDurationMs?: number
     disclaimer?: string
+    providerAssessment?: ManagedPronunciationAssessment | null
+    audioQuality?: ShadowingAudioQuality | null
   }
   scoringVersion: string
   createdAt: string
@@ -159,6 +184,30 @@ export type PitchContourData = {
   user: PitchPoint[]
 }
 
+export type ManagedPronunciationAssessment = {
+  provider: 'azure_pronunciation_assessment'
+  recognizedText: string
+  overallScore: number | null
+  accuracyScore: number | null
+  fluencyScore: number | null
+  completenessScore: number | null
+  words: Array<{
+    word: string
+    accuracyScore: number | null
+    errorType: string | null
+    phonemes: Array<{ phoneme: string; accuracyScore: number | null }>
+  }>
+}
+
+export type ShadowingAudioQuality = {
+  status: 'pass' | 'warning' | 'unscorable'
+  reason: string | null
+  rmsDbfs: number
+  peak: number
+  clippingRatio: number
+  activeFrameRatio: number
+}
+
 export type ShadowingEvaluationResult = {
   attempt: ShadowingAttempt
   evaluation: {
@@ -169,7 +218,7 @@ export type ShadowingEvaluationResult = {
     fluencyScore?: number
     completenessScore?: number
     pronunciationScore: number
-    pitchScore: number
+    pitchScore: number | null
     confidence: number
     alignment: ShadowingTokenAlignment[]
     pitchContour?: PitchContourData
@@ -180,7 +229,11 @@ export type ShadowingEvaluationResult = {
       userDurationMs?: number
       referenceDurationMs?: number
       disclaimer?: string
+      providerAssessment?: ManagedPronunciationAssessment | null
+      audioQuality?: ShadowingAudioQuality | null
     }
+    providerAssessment?: ManagedPronunciationAssessment | null
+    audioQuality?: ShadowingAudioQuality | null
     scoringVersion: string
   }
 }

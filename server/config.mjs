@@ -40,6 +40,14 @@ export function readConfig(env = process.env) {
     max: 4 * 1024 ** 3,
   })
   const mediaWorkerPollMs = boundedInteger(env.MEDIA_WORKER_POLL_MS, 1_000, { min: 250, max: 60_000 })
+  const mediaJobStaleAfterMs = boundedInteger(env.MEDIA_JOB_STALE_AFTER_MS, 15 * 60_000, {
+    min: 60_000,
+    max: 24 * 60 * 60_000,
+  })
+  const mediaJobRecoveryIntervalMs = boundedInteger(env.MEDIA_JOB_RECOVERY_INTERVAL_MS, 60_000, {
+    min: 10_000,
+    max: 60 * 60_000,
+  })
   const transcriptionChunkSeconds = boundedInteger(env.TRANSCRIPTION_CHUNK_SECONDS, 180, { min: 30, max: 600 })
   const transcriptionTimeoutMs = boundedInteger(env.TRANSCRIPTION_TIMEOUT_MS, 120_000, {
     min: 10_000,
@@ -52,6 +60,15 @@ export function readConfig(env = process.env) {
   const configuredTranscriptionProvider = env.TRANSCRIPTION_PROVIDER?.trim().toLowerCase()
   const geminiApiKey = env.GEMINI_API_KEY?.trim() || undefined
   const openaiApiKey = env.OPENAI_API_KEY?.trim() || undefined
+  const azureSpeechKey = env.AZURE_SPEECH_KEY?.trim() || undefined
+  const azureSpeechRegion = env.AZURE_SPEECH_REGION?.trim().toLowerCase() || undefined
+  if (azureSpeechRegion && !/^[a-z0-9-]+$/.test(azureSpeechRegion)) {
+    throw new Error('AZURE_SPEECH_REGION must contain only lowercase letters, digits, and hyphens.')
+  }
+  const azurePronunciationTimeoutMs = boundedInteger(env.AZURE_PRONUNCIATION_TIMEOUT_MS, 15_000, {
+    min: 3_000,
+    max: 60_000,
+  })
   const localAsrUrl = validHttpOrigin(env.LOCAL_ASR_URL?.trim() ?? '')
   const transcriptionProvider =
     configuredTranscriptionProvider === 'local_whisper'
@@ -97,6 +114,8 @@ export function readConfig(env = process.env) {
       storagePath: mediaStoragePath,
       maxUploadBytes: mediaMaxUploadBytes,
       workerPollMs: mediaWorkerPollMs,
+      jobStaleAfterMs: mediaJobStaleAfterMs,
+      jobRecoveryIntervalMs: mediaJobRecoveryIntervalMs,
       workerEnabled: env.MEDIA_WORKER_ENABLED === 'true' || (production && env.MEDIA_WORKER_ENABLED !== 'false'),
     },
     transcription: {
@@ -113,6 +132,14 @@ export function readConfig(env = process.env) {
       ffmpegPath: env.FFMPEG_PATH?.trim() || 'ffmpeg',
       chunkSeconds: transcriptionChunkSeconds,
       timeoutMs: transcriptionTimeoutMs,
+    },
+    pronunciation: {
+      azure: {
+        enabled: Boolean(azureSpeechKey && azureSpeechRegion),
+        key: azureSpeechKey,
+        region: azureSpeechRegion,
+        timeoutMs: azurePronunciationTimeoutMs,
+      },
     },
     youtube: {
       enabled: !production && env.YOUTUBE_IMPORT_ENABLED === 'true',

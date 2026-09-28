@@ -1637,7 +1637,9 @@ export function createDictionaryService(dbPath) {
       for (const segment of segments) {
         if (!segment?.textJa) continue
 
-        // 1. Generate furigana & tokens if not present
+        // 1. Generate furigana and preserve/complete token readings. ASR word
+        // timestamps remain authoritative; this step must not replace them with
+        // guessed proportional timings.
         if (!segment.textFurigana) {
           const text = segment.textJa.trim()
           const words = segmenter ? Array.from(segmenter.segment(text)).map((s) => s.segment) : [text]
@@ -1661,6 +1663,17 @@ export function createDictionaryService(dbPath) {
           if (!segment.tokens || segment.tokens.length === 0) {
             segment.tokens = enrichedTokens
           }
+        }
+
+        if (Array.isArray(segment.tokens) && segment.tokens.length > 0) {
+          segment.tokens = segment.tokens.map((token) => {
+            const surface = typeof token?.surface === 'string' ? token.surface.trim() : ''
+            if (!surface || token.reading) return token
+            const reading = /[\u4e00-\u9faf]/u.test(surface)
+              ? resolveFuriganaReading(surface, stmtMasterExact, stmtExact)
+              : surface
+            return { ...token, reading: reading || null }
+          })
         }
 
         // 2. Generate Bunsetsu Chunks & Romaji
@@ -1735,15 +1748,12 @@ export function createDictionaryService(dbPath) {
           // Gracefully continue
         }
 
-        // 3. Translate to Vietnamese if missing
+        // 3. Translate through the configured provider. Do not depend on the
+        // undocumented Google `client=gtx` endpoint: it has no project-level
+        // contract, quota or provenance controls.
         if (!segment.textVi) {
           try {
-            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=ja&tl=vi&dt=t&q=${encodeURIComponent(segment.textJa)}`
-            const res = await fetch(url, { signal: AbortSignal.timeout(4000) })
-            if (res.ok) {
-              const data = await res.json()
-              segment.textVi = data[0]?.map((item) => item[0]).join('') || null
-            }
+            segment.textVi = await translateJapaneseToVietnamese(segment.textJa)
           } catch {
             // Keep going gracefully without failing transcription
           }

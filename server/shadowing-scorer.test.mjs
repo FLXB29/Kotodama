@@ -28,7 +28,9 @@ test('evaluateShadowingAttempt awards high score for exact match with good timin
   assert.ok(result.contentScore >= 95)
   assert.equal(result.timingScore, 100)
   assert.equal(result.scoringVersion, 'whisper_basic_v1')
-  assert.ok(result.feedback.disclaimer.includes('Whisper ASR'))
+  assert.ok(result.feedback.disclaimer.includes('chưa phải điểm phát âm âm vị'))
+  assert.equal(result.pitchScore, null)
+  assert.equal(result.pitchContour, undefined)
 })
 
 test('evaluateShadowingAttempt penalizes missing audio / empty transcript', () => {
@@ -81,4 +83,26 @@ test('evaluateShadowingAttempt integrates DSP pitch comparison and outputs pitch
   assert.ok(result.pitchContour.reference.length === 1)
   assert.ok(result.pitchContour.user.length === 1)
   assert.ok(result.feedback.tips.includes('Ngữ điệu và cao độ bám sát câu gốc.'))
+})
+
+test('evaluateShadowingAttempt keeps the managed pronunciation baseline separate from local similarity', () => {
+  const providerAssessment = {
+    provider: 'azure_pronunciation_assessment',
+    recognizedText: '学校に行きます',
+    overallScore: 86,
+    accuracyScore: 88,
+    fluencyScore: 82,
+    completenessScore: 100,
+    words: [],
+  }
+  const result = evaluateShadowingAttempt({
+    referenceText: '学校に行きます。',
+    recognizedText: providerAssessment.recognizedText,
+    referenceDurationMs: 2000,
+    userDurationMs: 2100,
+    providerAssessment,
+  })
+  assert.equal(result.providerAssessment, providerAssessment)
+  assert.equal(result.feedback.providerAssessment, providerAssessment)
+  assert.ok(result.feedback.disclaimer.includes('baseline dịch vụ ngoài'))
 })
