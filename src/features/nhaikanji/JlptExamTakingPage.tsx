@@ -1957,6 +1957,7 @@ export function JlptExamTakingPage({ examId, onBack, mode = 'exam', attemptId }:
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              flexShrink: 0,
             }}
           >
             <div
@@ -1999,6 +2000,8 @@ export function JlptExamTakingPage({ examId, onBack, mode = 'exam', attemptId }:
               flexDirection: 'column',
               gap: '1.25rem',
               overflowY: 'auto',
+              flex: 1,
+              minHeight: 0,
             }}
           >
             {currentSection?.parts?.map((part: JlptPart, pIdx: number) => {

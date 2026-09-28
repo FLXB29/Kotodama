@@ -634,6 +634,8 @@ export class NhaiKanjiService {
     // 1. Nạp từ kho đề thi trọn gói ToanSensei (30 đề Full Mock Exam N3 từ 2010 đến 2025)
     if (this.toanMockMaster && Array.isArray(this.toanMockMaster) && this.toanMockMaster.length > 0) {
       this.toanMockMaster.forEach((t) => {
+        const baseTitle = (t.title || `JLPT N3 - ${t.year}`).replace(/\s*\(Thi Thử Trọn Gói 180 Điểm\)/i, '')
+        // Toàn đề (Full Mock 180 điểm)
         exams.push({
           id: t.id,
           title: t.title,
@@ -648,6 +650,52 @@ export class NhaiKanjiService {
             t.questionCount || (t.parts ? t.parts.reduce((acc, p) => acc + (p.questions?.length || 0), 0) : 0),
           audioUrl: t.audioUrl,
           isFullMock: true,
+          available: true,
+        })
+        // Phần 1: Từ vựng (文字・語彙)
+        exams.push({
+          id: `${t.id}-vocab`,
+          title: `${baseTitle} - Từ vựng (文字・語彙)`,
+          level: t.level || 'N3',
+          year: t.year || '2025',
+          session: t.session || '07',
+          section: 'vocab',
+          sectionLabel: 'Từ vựng (文字・語彙)',
+          sectionLabelJP: '言語知識（文字・語彙）',
+          timeLimit: 30,
+          questionCount: 35,
+          isFullMock: false,
+          available: true,
+        })
+        // Phần 2: Ngữ pháp & Đọc hiểu (文法・読解)
+        exams.push({
+          id: `${t.id}-grammar-reading`,
+          title: `${baseTitle} - Ngữ pháp & Đọc hiểu (文法・読解)`,
+          level: t.level || 'N3',
+          year: t.year || '2025',
+          session: t.session || '07',
+          section: 'grammar-reading',
+          sectionLabel: 'Ngữ pháp & Đọc hiểu (文法・読解)',
+          sectionLabelJP: '文法・読解',
+          timeLimit: 70,
+          questionCount: 38,
+          isFullMock: false,
+          available: true,
+        })
+        // Phần 3: Nghe hiểu (聴解)
+        exams.push({
+          id: `${t.id}-listening`,
+          title: `${baseTitle} - Nghe hiểu (聴解)`,
+          level: t.level || 'N3',
+          year: t.year || '2025',
+          session: t.session || '07',
+          section: 'listening',
+          sectionLabel: 'Nghe hiểu (聴解)',
+          sectionLabelJP: '聴解',
+          timeLimit: 40,
+          questionCount: 28,
+          audioUrl: t.audioUrl,
+          isFullMock: false,
           available: true,
         })
       })
@@ -885,6 +933,78 @@ export class NhaiKanjiService {
       const found = this.toanMockMaster.find((e) => e.id === examId)
       if (found) {
         return attachLocalListeningImages(attachCuratedExplanations(normalizeJlptExamMetadata(found)))
+      }
+
+      // Hỗ trợ làm từng phần riêng lẻ từ kho 30 đề ToanSensei (toan-n3-YYYYSS-full-[vocab|grammar-reading|grammar|reading|listening])
+      const sectionMatch = examId.match(/^(.+?)-(vocab|grammar-reading|grammar|reading|listening)$/)
+      if (sectionMatch) {
+        const baseExam = this.toanMockMaster.find((e) => e.id === sectionMatch[1])
+        if (baseExam) {
+          const subType = sectionMatch[2]
+          const fullExam = attachLocalListeningImages(attachCuratedExplanations(normalizeJlptExamMetadata(baseExam)))
+          let filteredParts = []
+          let sectionLabel = 'Phần thi'
+          let sectionLabelJP = '試験'
+          let timeLimit = 40
+
+          if (subType === 'vocab') {
+            filteredParts = fullExam.parts.filter(
+              (p) => Number(p.sectionType) === 1 || p.title?.includes('Từ vựng') || p.titleJP?.includes('文字・語彙')
+            )
+            sectionLabel = 'Từ vựng (文字・語彙)'
+            sectionLabelJP = '言語知識（文字・語彙）'
+            timeLimit = 30
+          } else if (subType === 'grammar-reading') {
+            filteredParts = fullExam.parts.filter(
+              (p) =>
+                Number(p.sectionType) === 2 ||
+                Number(p.sectionType) === 3 ||
+                p.title?.includes('Ngữ pháp') ||
+                p.title?.includes('Đọc hiểu') ||
+                p.titleJP?.includes('文法') ||
+                p.titleJP?.includes('読解')
+            )
+            sectionLabel = 'Ngữ pháp & Đọc hiểu (文法・読解)'
+            sectionLabelJP = '文法・読解'
+            timeLimit = 70
+          } else if (subType === 'grammar') {
+            filteredParts = fullExam.parts.filter(
+              (p) => Number(p.sectionType) === 2 || p.title?.includes('Ngữ pháp') || p.titleJP?.includes('文法')
+            )
+            sectionLabel = 'Ngữ pháp (文法)'
+            sectionLabelJP = '文法'
+            timeLimit = 30
+          } else if (subType === 'reading') {
+            filteredParts = fullExam.parts.filter(
+              (p) => Number(p.sectionType) === 3 || p.title?.includes('Đọc hiểu') || p.titleJP?.includes('読解')
+            )
+            sectionLabel = 'Đọc hiểu (読解)'
+            sectionLabelJP = '読解'
+            timeLimit = 40
+          } else if (subType === 'listening') {
+            filteredParts = fullExam.parts.filter(
+              (p) => Number(p.sectionType) === 4 || p.title?.includes('Nghe hiểu') || p.titleJP?.includes('聴解')
+            )
+            sectionLabel = 'Nghe hiểu (聴解)'
+            sectionLabelJP = '聴解'
+            timeLimit = 40
+          }
+
+          const qCount = filteredParts.reduce((acc, p) => acc + (p.questions?.length || 0), 0)
+
+          return {
+            ...fullExam,
+            id: examId,
+            title: `${fullExam.title.replace(/\s*\(Thi Thử Trọn Gói 180 Điểm\)/i, '')} - ${sectionLabel}`,
+            section: subType,
+            sectionLabel,
+            sectionLabelJP,
+            timeLimit,
+            questionCount: qCount,
+            isFullMock: false,
+            parts: filteredParts,
+          }
+        }
       }
     }
 

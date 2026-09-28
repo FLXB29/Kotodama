@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import {
   ArrowLeft,
+  Award,
   BookOpenCheck,
   BrainCircuit,
   CalendarDays,
@@ -47,6 +48,11 @@ function examYear(exam: Pick<JlptExamSummary, 'year'>) {
   return String(exam.year || '').match(/(?:19|20)\d{2}/)?.[0] || String(exam.year || '')
 }
 
+function getSessionKey(exam: Pick<JlptExamSummary, 'year' | 'session'>) {
+  const meta = getSessionMeta(exam.session)
+  return `${examYear(exam)}|${meta.month}`
+}
+
 function paperTitle(level: string, exam: Pick<JlptExamSummary, 'year' | 'session'>) {
   const session = getSessionMeta(exam.session)
   return `JLPT ${level} — Tháng ${session.month}, năm ${examYear(exam) || '—'}`
@@ -55,6 +61,95 @@ function paperTitle(level: string, exam: Pick<JlptExamSummary, 'year' | 'session
 function sectionLabel(exam: JlptExamSummary) {
   if (exam.isFullMock || exam.section === 'full_mock') return 'Toàn đề'
   return exam.sectionLabel || 'Phần thi'
+}
+
+type SessionGroup = {
+  key: string
+  year: string
+  sessionRaw: JlptExamSummary['session']
+  meta: ReturnType<typeof getSessionMeta>
+  representativeExam: JlptExamSummary
+  fullMockExam?: JlptExamSummary | undefined
+  sectionExams: JlptExamSummary[]
+  allExams: JlptExamSummary[]
+  hasListening: boolean
+  inProgress: boolean
+  completed: boolean
+  latestScore?: number | undefined
+}
+
+function getSectionDetail(exam: JlptExamSummary) {
+  const isVocab = exam.section === 'vocab' || exam.id.includes('-vocab')
+  const isGrammarReading = exam.section === 'grammar-reading' || exam.id.includes('-grammar-reading')
+  const isGrammar = exam.section === 'grammar'
+  const isReading = exam.section === 'reading'
+  const isListening = exam.section === 'listening' || exam.id.includes('-listening')
+
+  if (isVocab) {
+    return {
+      partBadge: 'Phần 1',
+      title: 'Từ vựng (文字・語彙)',
+      jpTitle: '言語知識（文字・語彙）',
+      icon: '🔤',
+      defaultQuestions: 35,
+      defaultMinutes: 30,
+      description: 'Cách đọc Kanji, biểu thức từ vựng, từ đồng nghĩa và cách dùng từ trong câu.',
+    }
+  }
+  if (isGrammarReading) {
+    return {
+      partBadge: 'Phần 2',
+      title: 'Ngữ pháp & Đọc hiểu (文法・読解)',
+      jpTitle: '文法・読解',
+      icon: '📖',
+      defaultQuestions: 38,
+      defaultMinutes: 70,
+      description: 'Ngữ pháp câu, ghép sao ★, đọc hiểu ngắn, trung, dài và bài tìm kiếm thông tin.',
+    }
+  }
+  if (isGrammar) {
+    return {
+      partBadge: 'Phần 2A',
+      title: 'Ngữ pháp (文法)',
+      jpTitle: '文法',
+      icon: '📝',
+      defaultQuestions: 22,
+      defaultMinutes: 30,
+      description: 'Ngữ pháp câu, dấu sao ★ và bài điền từ vào đoạn văn.',
+    }
+  }
+  if (isReading) {
+    return {
+      partBadge: 'Phần 2B',
+      title: 'Đọc hiểu (読解)',
+      jpTitle: '読解',
+      icon: '📑',
+      defaultQuestions: 16,
+      defaultMinutes: 40,
+      description: 'Đoạn văn ngắn, trung, dài và bài đọc tìm kiếm thông tin.',
+    }
+  }
+  if (isListening) {
+    return {
+      partBadge: 'Phần 3',
+      title: 'Nghe hiểu (聴解)',
+      jpTitle: '聴解',
+      icon: '🎧',
+      defaultQuestions: 28,
+      defaultMinutes: 40,
+      description: 'Đầy đủ âm thanh chất lượng cao, tranh minh họa và bản chép lời (Script kèm dịch).',
+    }
+  }
+
+  return {
+    partBadge: exam.sectionLabel || 'Phần thi',
+    title: exam.sectionLabel || 'Phần thi',
+    jpTitle: exam.sectionLabelJP || 'JLPT',
+    icon: '📋',
+    defaultQuestions: exam.questionCount,
+    defaultMinutes: exam.timeLimit,
+    description: 'Rèn luyện kỹ năng theo định dạng chuẩn đề thi JLPT.',
+  }
 }
 
 export function JlptPage() {
@@ -93,33 +188,106 @@ export function JlptPage() {
     void attemptsQuery.refetch()
   }
 
-  const papers = useMemo(() => {
-    const all = (examQuery.data?.exams || []).filter((exam) => exam.available)
+  const sessionGroupsByYear = useMemo(() => {
+    const allAvailable = (examQuery.data?.exams || []).filter((exam) => exam.available)
     const normalizedQuery = query.trim().toLocaleLowerCase()
-    return all.filter((exam) => {
-      const meta = getSessionMeta(exam.session)
-      const matchesYear = yearFilter === 'all' || examYear(exam) === yearFilter
-      const haystack = `${exam.year || ''} ${meta.label} ${meta.month} ${sectionLabel(exam)}`.toLocaleLowerCase()
-      const matchesSearch = !normalizedQuery || haystack.includes(normalizedQuery)
-      const attempts = attemptsByExam.get(exam.id) || []
-      const latestAttempt = attempts[0]
-      const matchesStatus =
-        statusFilter === 'all' ||
-        (statusFilter === 'not-started' && attempts.length === 0) ||
-        (statusFilter === 'in-progress' && latestAttempt?.status === 'in_progress') ||
-        (statusFilter === 'completed' && attempts.some((attempt) => attempt.status === 'completed'))
-      return matchesYear && matchesSearch && matchesStatus
-    })
-  }, [attemptsByExam, examQuery.data?.exams, query, statusFilter, yearFilter])
 
-  const paperGroups = useMemo(() => {
-    const map = new Map<string, JlptExamSummary[]>()
-    papers.forEach((exam) => {
-      const key = examYear(exam) || 'Khác'
-      map.set(key, [...(map.get(key) || []), exam])
-    })
-    return [...map.entries()].sort(([a], [b]) => b.localeCompare(a, undefined, { numeric: true }))
-  }, [papers])
+    // 1. Group all available exams by year -> sessionKey
+    const yearMap = new Map<string, Map<string, JlptExamSummary[]>>()
+
+    for (const exam of allAvailable) {
+      const y = examYear(exam) || 'Khác'
+      const key = getSessionKey(exam)
+
+      if (!yearMap.has(y)) {
+        yearMap.set(y, new Map())
+      }
+      const sessionMap = yearMap.get(y)!
+      sessionMap.set(key, [...(sessionMap.get(key) || []), exam])
+    }
+
+    // 2. Build normalized session groups per year (max 2 sessions per year: Kỳ 1 and Kỳ 2)
+    const result: Array<[string, SessionGroup[]]> = []
+
+    for (const [year, sessionMap] of yearMap.entries()) {
+      if (yearFilter !== 'all' && year !== yearFilter) {
+        continue
+      }
+
+      const sessions: SessionGroup[] = []
+
+      for (const [key, exams] of sessionMap.entries()) {
+        const rep = exams[0]
+        if (!rep) continue
+        const meta = getSessionMeta(rep.session)
+        const fullMock = exams.find((e) => e.isFullMock || e.section === 'full_mock')
+        const sections = exams.filter((e) => !e.isFullMock && e.section !== 'full_mock')
+
+        let hasInProgress = false
+        let hasCompleted = false
+        let latestScore: number | undefined = undefined
+
+        for (const e of exams) {
+          const attempts = attemptsByExam.get(e.id) || []
+          if (attempts[0]?.status === 'in_progress') hasInProgress = true
+          const completedAttempts = attempts.filter((a) => a.status === 'completed')
+          const firstCompleted = completedAttempts[0]
+          if (firstCompleted) {
+            hasCompleted = true
+            if (latestScore === undefined) {
+              latestScore = firstCompleted.result?.scorePercentage ?? firstCompleted.scorePercentage ?? 0
+            }
+          }
+        }
+
+        if (normalizedQuery) {
+          const haystack = `${year} ${meta.label} ${meta.month} ${exams
+            .map((e) => `${e.title || ''} ${sectionLabel(e)}`)
+            .join(' ')}`.toLocaleLowerCase()
+          if (!haystack.includes(normalizedQuery)) {
+            continue
+          }
+        }
+
+        if (statusFilter === 'not-started' && (hasInProgress || hasCompleted)) {
+          continue
+        }
+        if (statusFilter === 'in-progress' && !hasInProgress) {
+          continue
+        }
+        if (statusFilter === 'completed' && !hasCompleted) {
+          continue
+        }
+
+        const hasListening = exams.some((e) => e.section === 'listening' || e.id.includes('-listening'))
+
+        sessions.push({
+          key,
+          year,
+          sessionRaw: rep.session,
+          meta,
+          representativeExam: rep,
+          fullMockExam: fullMock,
+          sectionExams: sections,
+          allExams: exams,
+          hasListening,
+          inProgress: hasInProgress,
+          completed: hasCompleted,
+          latestScore,
+        })
+      }
+
+      // Sort sessions ascending by month: Kỳ 1 (07) then Kỳ 2 (12)
+      sessions.sort((a, b) => a.meta.month.localeCompare(b.meta.month))
+
+      if (sessions.length > 0) {
+        result.push([year, sessions])
+      }
+    }
+
+    // Sort years descending (2025, 2024, 2023, ...)
+    return result.sort(([a], [b]) => b.localeCompare(a, undefined, { numeric: true }))
+  }, [attemptsByExam, examQuery.data?.exams, query, statusFilter, yearFilter])
 
   const years = useMemo(
     () =>
@@ -130,7 +298,7 @@ export function JlptPage() {
   )
 
   const currentPaper = useMemo(
-    () => (examQuery.data?.exams || []).filter((exam) => `${examYear(exam)}|${exam.session}` === selectedPaper),
+    () => (examQuery.data?.exams || []).filter((exam) => getSessionKey(exam) === selectedPaper),
     [examQuery.data?.exams, selectedPaper]
   )
 
@@ -193,6 +361,49 @@ export function JlptPage() {
 
   const representative = currentPaper[0]
   if (selectedPaper && representative) {
+    const fullMockExam = currentPaper.find((e) => e.isFullMock || e.section === 'full_mock')
+
+    // Find tailored section exams (prefer high-quality ToanSensei split from full mock)
+    const vocabExam =
+      currentPaper.find((e) => e.id.includes('-vocab') && e.id.startsWith('toan-')) ||
+      currentPaper.find((e) => e.section === 'vocab' || e.id.includes('-vocab'))
+
+    const grammarReadingExam =
+      currentPaper.find((e) => e.id.includes('-grammar-reading') && e.id.startsWith('toan-')) ||
+      currentPaper.find((e) => e.section === 'grammar-reading' || e.id.includes('-grammar-reading'))
+
+    const listeningExam =
+      currentPaper.find((e) => e.id.includes('-listening') && e.id.startsWith('toan-')) ||
+      currentPaper.find((e) => e.section === 'listening' || e.id.includes('-listening'))
+
+    // Collect only genuinely distinct remaining sections (avoid duplicate vocab/grammar/listening)
+    const otherSections: JlptExamSummary[] = []
+    for (const exam of currentPaper) {
+      if (exam.isFullMock || exam.section === 'full_mock') continue
+      if (exam.id === vocabExam?.id || exam.id === grammarReadingExam?.id || exam.id === listeningExam?.id) continue
+
+      const isVocab = exam.section === 'vocab' || exam.id.includes('-vocab')
+      const isGrammarReading = exam.section === 'grammar-reading' || exam.id.includes('-grammar-reading')
+      const isListening = exam.section === 'listening' || exam.id.includes('-listening')
+
+      // Deduplicate: If we already have this section type, don't show legacy duplicates
+      if (isVocab && vocabExam) continue
+      if (isGrammarReading && grammarReadingExam) continue
+      if (isListening && listeningExam) continue
+      if (grammarReadingExam && (exam.section === 'grammar' || exam.section === 'reading')) continue
+
+      otherSections.push(exam)
+    }
+
+    const displaySections = [vocabExam, grammarReadingExam, listeningExam, ...otherSections].filter(
+      Boolean
+    ) as JlptExamSummary[]
+
+    const fullMockAttempts = fullMockExam ? attemptsByExam.get(fullMockExam.id) || [] : []
+    const fullMockInProgress = fullMockAttempts.find((a) => a.status === 'in_progress')
+    const fullMockCompletedAttempts = fullMockAttempts.filter((a) => a.status === 'completed')
+    const fullMockCompleted = fullMockCompletedAttempts[0]
+
     return (
       <main className="jlpt-page">
         <section className="jlpt-paper-picker">
@@ -203,49 +414,209 @@ export function JlptPage() {
             <span>{getSessionMeta(representative.session).label}</span>
             <h2>{paperTitle(selectedLevel, representative)}</h2>
             <p>
-              Chọn phần bạn muốn làm, hoặc mở chế độ học đáp án để xem khóa đáp án và ghi chú hiện có. Bản chép lời nghe
-              được hiển thị khi có dữ liệu.
+              Chọn thi thử trọn gói tính điểm 180 chuẩn JLPT, hoặc luyện tập riêng từng nội dung theo nhu cầu. 
+              Bản chép lời nghe (Script) và giải thích chi tiết được hiển thị đầy đủ sau khi nộp bài hoặc trong chế độ học đáp án.
             </p>
           </header>
-          <div className="jlpt-paper-picker__grid">
-            {currentPaper.map((exam) => (
-              <article className="jlpt-paper-option jlpt-exam-card" key={exam.id}>
-                {(() => {
-                  const examAttempts = attemptsByExam.get(exam.id) || []
-                  const latestAttempt = examAttempts[0]
-                  const inProgress = latestAttempt?.status === 'in_progress' ? latestAttempt : undefined
-                  const completedAttempts = examAttempts.filter((attempt) => attempt.status === 'completed')
-                  const completed = completedAttempts[0]
-                  return (
-                    <>
+
+          {/* LỰA CHỌN 1: THI THỬ TRỌN GÓI (LÀM CẢ 3 PHẦN - 180 ĐIỂM) */}
+          {fullMockExam && (
+            <section className="jlpt-session-mode-section">
+              <div className="jlpt-session-mode-heading">
+                <span className="jlpt-session-mode-badge">LỰA CHỌN 1</span>
+                <div>
+                  <h3>Thi Thử Trọn Gói (Làm Cả 3 Phần — 180 Điểm)</h3>
+                  <p>Phù hợp kiểm tra thực lực tổng quát, tính điểm đỗ/trượt theo 3 khối kiến thức chuẩn JLPT.</p>
+                </div>
+              </div>
+
+              <article className="jlpt-fullmock-hero-card">
+                <div className="jlpt-fullmock-hero-card__header">
+                  <div className="jlpt-fullmock-hero-card__badges">
+                    <span className="jlpt-badge-gold">
+                      <Award size={15} /> 180 ĐIỂM CHUẨN JLPT
+                    </span>
+                    <Badge variant="primary">Thi thử trọn gói</Badge>
+                    {fullMockInProgress && <span className="jlpt-status-pill in-progress">Đang làm dở</span>}
+                    {!fullMockInProgress && fullMockCompleted && (
+                      <span className="jlpt-status-pill completed">
+                        Lần gần nhất · {fullMockCompleted.result?.scorePercentage ?? fullMockCompleted.scorePercentage ?? 0}%
+                        {fullMockCompleted.result?.scaledTotalScore !== undefined
+                          ? ` (${fullMockCompleted.result.scaledTotalScore}/180 điểm)`
+                          : ''}
+                      </span>
+                    )}
+                  </div>
+                  <div className="jlpt-fullmock-hero-card__meta">
+                    <span>
+                      <Clock3 size={15} /> {fullMockExam.timeLimit} phút
+                    </span>
+                    <span>•</span>
+                    <span>{fullMockExam.questionCount} câu hỏi (3 phần thi)</span>
+                  </div>
+                </div>
+
+                <div className="jlpt-fullmock-hero-card__body">
+                  <div className="jlpt-fullmock-hero-card__info">
+                    <h4>Mô phỏng kỳ thi chính thức (総合模擬試験)</h4>
+                    <p>
+                      Làm bài liền mạch cả 3 phần: <strong>Từ vựng</strong> (35 câu),{' '}
+                      <strong>Ngữ pháp & Đọc hiểu</strong> (38 câu) và <strong>Nghe hiểu</strong> (28 câu). Hệ thống
+                      chấm điểm thang 180, xét điểm liệt từng phần và cấp chứng chỉ chuẩn CEFR.
+                    </p>
+                  </div>
+
+                  <div className="jlpt-fullmock-hero-card__chips">
+                    <div className="jlpt-chip">
+                      <span className="jlpt-chip__num">1</span>
                       <div>
-                        <Badge variant={exam.isFullMock || exam.section === 'full_mock' ? 'primary' : 'secondary'}>
-                          {sectionLabel(exam)}
-                        </Badge>
+                        <strong>Từ vựng</strong>
+                        <small>35 câu · 30p</small>
+                      </div>
+                    </div>
+                    <div className="jlpt-chip">
+                      <span className="jlpt-chip__num">2</span>
+                      <div>
+                        <strong>Ngữ pháp & Đọc hiểu</strong>
+                        <small>38 câu · 70p</small>
+                      </div>
+                    </div>
+                    <div className="jlpt-chip">
+                      <span className="jlpt-chip__num">3</span>
+                      <div>
+                        <strong>Nghe hiểu</strong>
+                        <small>28 câu · 40p</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {fullMockCompletedAttempts.length > 0 && (
+                  <div className="jlpt-attempt-history">
+                    <strong>Lịch sử thi trọn gói</strong>
+                    {fullMockCompletedAttempts.slice(0, 3).map((attempt, index) => (
+                      <button
+                        key={attempt.id}
+                        type="button"
+                        onClick={() => setLaunch({ examId: fullMockExam.id, mode: 'result', attemptId: attempt.id })}
+                      >
+                        <span>
+                          Lần {index + 1} · {new Date(attempt.finishedAt || attempt.updatedAt).toLocaleDateString('vi-VN')}
+                        </span>
+                        <b>
+                          {attempt.result?.scaledTotalScore !== undefined
+                            ? `${attempt.result.scaledTotalScore}/180 điểm`
+                            : `${attempt.result?.scorePercentage ?? attempt.scorePercentage ?? 0}%`}
+                        </b>
+                      </button>
+                    ))}
+                    {fullMockCompletedAttempts.length > 3 && (
+                      <details>
+                        <summary>Xem thêm {fullMockCompletedAttempts.length - 3} lần làm</summary>
+                        {fullMockCompletedAttempts.slice(3).map((attempt, index) => (
+                          <button
+                            key={attempt.id}
+                            type="button"
+                            onClick={() => setLaunch({ examId: fullMockExam.id, mode: 'result', attemptId: attempt.id })}
+                          >
+                            <span>
+                              Lần {index + 4} ·{' '}
+                              {new Date(attempt.finishedAt || attempt.updatedAt).toLocaleDateString('vi-VN')}
+                            </span>
+                            <b>
+                              {attempt.result?.scaledTotalScore !== undefined
+                                ? `${attempt.result.scaledTotalScore}/180 điểm`
+                                : `${attempt.result?.scorePercentage ?? attempt.scorePercentage ?? 0}%`}
+                            </b>
+                          </button>
+                        ))}
+                      </details>
+                    )}
+                  </div>
+                )}
+
+                <div className="jlpt-fullmock-hero-card__actions">
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => setLaunch({ examId: fullMockExam.id, mode: 'review' })}
+                  >
+                    <BookOpenCheck size={16} /> Học đáp án toàn đề
+                  </Button>
+                  {fullMockInProgress ? (
+                    <Button
+                      size="sm"
+                      onClick={() => setLaunch({ examId: fullMockExam.id, mode: 'exam', attemptId: fullMockInProgress.id })}
+                    >
+                      <FileText size={16} /> Tiếp tục
+                    </Button>
+                  ) : (
+                    <Button size="sm" onClick={() => void launchExam(fullMockExam)}>
+                      <FileText size={16} /> {fullMockCompleted ? 'Thi lại toàn đề' : 'Thi toàn đề'}
+                    </Button>
+                  )}
+                </div>
+              </article>
+            </section>
+          )}
+
+          {/* LỰA CHỌN 2: LUYỆN TẬP RIÊNG TỪNG NỘI DUNG */}
+          {displaySections.length > 0 && (
+            <section className="jlpt-session-mode-section">
+              <div className="jlpt-session-mode-heading">
+                <span className="jlpt-session-mode-badge jlpt-session-mode-badge--secondary">
+                  {fullMockExam ? 'LỰA CHỌN 2' : 'CÁC PHẦN THI'}
+                </span>
+                <div>
+                  <h3>Luyện Tập Riêng Từng Nội Dung</h3>
+                  <p>Chọn 1 trong các phần bên dưới để rèn luyện trọng tâm theo thời gian ngắn hơn.</p>
+                </div>
+              </div>
+
+              <div className="jlpt-paper-picker__grid">
+                {displaySections.map((exam) => {
+                  const detail = getSectionDetail(exam)
+                  const examAttempts = attemptsByExam.get(exam.id) || []
+                  const inProgress = examAttempts.find((a) => a.status === 'in_progress')
+                  const completedAttempts = examAttempts.filter((a) => a.status === 'completed')
+                  const completed = completedAttempts[0]
+
+                  return (
+                    <article className="jlpt-paper-option jlpt-exam-card" key={exam.id}>
+                      <div>
+                        <Badge variant="secondary">{detail.partBadge}</Badge>
                         <span className="jlpt-paper-option__meta">
                           {inProgress ? (
-                            'Đang làm dở'
+                            <span className="jlpt-status-pill in-progress">Đang làm dở</span>
                           ) : completed ? (
-                            `Lần gần nhất · ${completed.result?.scorePercentage ?? completed.scorePercentage ?? 0}%`
+                            <span className="jlpt-status-pill completed">
+                              Gần nhất · {completed.result?.scorePercentage ?? completed.scorePercentage ?? 0}%
+                            </span>
                           ) : (
                             <>
-                              <Clock3 size={14} /> {exam.timeLimit} phút
+                              <Clock3 size={14} /> {exam.timeLimit || detail.defaultMinutes} phút
                             </>
                           )}
                         </span>
                       </div>
-                      <div>
-                        <h3>
-                          {exam.isFullMock || exam.section === 'full_mock' ? 'Làm toàn bộ đề' : exam.sectionLabel}
-                        </h3>
-                        <p>
-                          {exam.questionCount} câu hỏi · {exam.sectionLabelJP || 'JLPT'}
+
+                      <div className="jlpt-section-card__body">
+                        <div className="jlpt-section-card__title-row">
+                          <span className="jlpt-section-card__icon">{detail.icon}</span>
+                          <div>
+                            <h3>{detail.title}</h3>
+                            <p className="jlpt-section-card__jp-sub">{detail.jpTitle}</p>
+                          </div>
+                        </div>
+                        <p className="jlpt-section-card__desc">
+                          {exam.questionCount || detail.defaultQuestions} câu hỏi · {detail.description}
                         </p>
                       </div>
+
                       {completedAttempts.length > 0 && (
                         <div className="jlpt-attempt-history">
                           <strong>Lịch sử gần đây</strong>
-                          {completedAttempts.slice(0, 3).map((attempt, index) => (
+                          {completedAttempts.slice(0, 2).map((attempt, index) => (
                             <button
                               key={attempt.id}
                               type="button"
@@ -258,26 +629,9 @@ export function JlptPage() {
                               <b>{attempt.result?.scorePercentage ?? attempt.scorePercentage ?? 0}%</b>
                             </button>
                           ))}
-                          {completedAttempts.length > 3 && (
-                            <details>
-                              <summary>Xem thêm {completedAttempts.length - 3} lần làm</summary>
-                              {completedAttempts.slice(3).map((attempt, index) => (
-                                <button
-                                  key={attempt.id}
-                                  type="button"
-                                  onClick={() => setLaunch({ examId: exam.id, mode: 'result', attemptId: attempt.id })}
-                                >
-                                  <span>
-                                    Lần {index + 4} ·{' '}
-                                    {new Date(attempt.finishedAt || attempt.updatedAt).toLocaleDateString('vi-VN')}
-                                  </span>
-                                  <b>{attempt.result?.scorePercentage ?? attempt.scorePercentage ?? 0}%</b>
-                                </button>
-                              ))}
-                            </details>
-                          )}
                         </div>
                       )}
+
                       <div className="jlpt-paper-option__actions">
                         <Button
                           variant="secondary"
@@ -295,23 +649,16 @@ export function JlptPage() {
                           </Button>
                         ) : (
                           <Button size="sm" onClick={() => void launchExam(exam)}>
-                            <FileText size={16} />{' '}
-                            {completed
-                              ? exam.isFullMock || exam.section === 'full_mock'
-                                ? 'Thi lại toàn đề'
-                                : 'Làm lại phần này'
-                              : exam.isFullMock || exam.section === 'full_mock'
-                                ? 'Thi toàn đề'
-                                : 'Làm phần này'}
+                            <FileText size={16} /> {completed ? 'Làm lại phần này' : 'Làm phần này'}
                           </Button>
                         )}
                       </div>
-                    </>
+                    </article>
                   )
-                })()}
-              </article>
-            ))}
-          </div>
+                })}
+              </div>
+            </section>
+          )}
         </section>
       </main>
     )
@@ -326,7 +673,7 @@ export function JlptPage() {
         <div>
           <span>Đề mô phỏng</span>
           <h1>{selectedLevel}</h1>
-          <p>Luyện đề theo kỳ để chuẩn bị nhịp làm bài trước khi vào phòng thi.</p>
+          <p>Mỗi năm gồm 2 kỳ thi (Tháng 7 & Tháng 12). Chọn kỳ thi để làm trọn gói 180 điểm hoặc làm riêng từng phần.</p>
         </div>
         <Button variant={answerMode ? 'secondary' : 'primary'} onClick={() => setAnswerMode((value) => !value)}>
           <BookOpenCheck size={17} /> {answerMode ? 'Quay lại làm đề' : 'Học đáp án các kỳ đề'}
@@ -392,50 +739,51 @@ export function JlptPage() {
       )}
       {!examQuery.isLoading &&
         !examQuery.isError &&
-        paperGroups.map(([year, exams]) => (
+        sessionGroupsByYear.map(([year, sessions]) => (
           <section className="jlpt-year-group" key={year}>
             <h2>
               <CalendarDays size={18} /> {year}
             </h2>
             <div className="jlpt-paper-grid">
-              {exams.map((exam) => {
-                const session = getSessionMeta(exam.session)
-                return (
-                  <button
-                    type="button"
-                    className="jlpt-session-card"
-                    key={exam.id}
-                    onClick={() => setSelectedPaper(`${examYear(exam)}|${exam.session}`)}
-                  >
-                    <span className="jlpt-session-card__badge">{session.label}</span>
-                    <span className="jlpt-session-card__body">
-                      <strong>
-                        {session.label} — tháng {session.month}
-                      </strong>
-                      <small>
-                        {answerMode ? 'Mở lời giải và đáp án' : `${exam.questionCount} câu · ${sectionLabel(exam)}`}
-                      </small>
-                      <em>
-                        {attemptsByExam.has(exam.id)
-                          ? `${attemptsByExam.get(exam.id)?.[0]?.status === 'in_progress' ? 'Đang làm · ' : 'Đã làm · '}`
-                          : ''}
-                        {sectionLabel(exam)}
-                        {exam.section === 'listening' && (
-                          <>
-                            <span> · </span>
-                            <Headphones size={13} aria-label="Có phần nghe" />
-                          </>
-                        )}
-                      </em>
-                    </span>
-                    <ChevronRight aria-hidden="true" />
-                  </button>
-                )
-              })}
+              {sessions.map((session) => (
+                <button
+                  type="button"
+                  className="jlpt-session-card"
+                  key={session.key}
+                  onClick={() => setSelectedPaper(session.key)}
+                >
+                  <span className="jlpt-session-card__badge">{session.meta.label}</span>
+                  <span className="jlpt-session-card__body">
+                    <strong>
+                      {session.meta.label} — tháng {session.meta.month}
+                    </strong>
+                    <small>
+                      {answerMode
+                        ? 'Mở lời giải và đáp án'
+                        : session.fullMockExam
+                          ? 'Thi thử trọn gói 180 điểm hoặc làm riêng 3 phần'
+                          : `${session.representativeExam.questionCount} câu · ${sectionLabel(session.representativeExam)}`}
+                    </small>
+                    <em>
+                      {session.inProgress ? 'Đang làm dở · ' : session.completed ? 'Đã làm · ' : ''}
+                      {session.fullMockExam
+                        ? '3 phần thi (Từ vựng, Ngữ pháp - Đọc hiểu, Nghe)'
+                        : sectionLabel(session.representativeExam)}
+                      {session.hasListening && (
+                        <>
+                          <span> · </span>
+                          <Headphones size={13} aria-label="Có phần nghe" />
+                        </>
+                      )}
+                    </em>
+                  </span>
+                  <ChevronRight aria-hidden="true" />
+                </button>
+              ))}
             </div>
           </section>
         ))}
-      {!examQuery.isLoading && !examQuery.isError && paperGroups.length === 0 && (
+      {!examQuery.isLoading && !examQuery.isError && sessionGroupsByYear.length === 0 && (
         <section className="jlpt-empty">
           <FileText size={30} />
           <h2>Chưa có kỳ đề phù hợp</h2>
