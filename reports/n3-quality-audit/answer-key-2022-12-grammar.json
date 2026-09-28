@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-09-27T00:04:15+07:00",
+  "examId": "toan-n3-202212-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "The stored key was manually checked against each sentence and option. The two published answer tables disagree strongly with one another and with obvious sentence fits; they are recorded as low-confidence references and never used to auto-correct the data. A user-provided answer-key PDF on Google Drive page 25 agrees with all 13 stored answers, but its provenance is unknown and it is not an official JLPT answer key. The prior conflicts therefore remain unresolved; no JLPT official answer key is available.",
+  "sources": [
+    {
+      "name": "User-provided JLPT N3 answer-key PDF",
+      "url": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view#page=25",
+      "qualification": "Read in the user's connected Google Drive on 2026-09-27. Page 25 labels the December 2022 grammar Mondai 1 and lists 2-1-3-4-1-4-2-3-1-4-2-2-3, matching all 13 stored answers. This is a user-provided reference with unknown provenance, not an official JLPT key, so it does not resolve conflicts with the two public answer tables."
+    },
+    {
+      "name": "Chuyenngoaingu",
+      "url": "https://chuyenngoaingu.com/news/de-thi-va-dap-an-jlpt-ky-thi-thang-12-2022-nang-luc-tieng-nhat-5284.aspx",
+      "qualification": "Publishes grammar sequence 3442131431322, which conflicts with the text and answer sequence independently listed by LuyenThiTiengNhat. Treat as low-confidence/version-uncertain."
+    },
+    {
+      "name": "LuyenThiTiengNhat",
+      "url": "https://www.luyenthitiengnhat.edu.vn/mod/page/view.php?id=3492&lang=ja",
+      "qualification": "Publishes grammar sequence 4134142314123. This sequence conflicts with the other reference on most items and includes answers that do not fit the reconstructed item text, such as question 36."
+    },
+    {
+      "name": "Question paper text",
+      "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/Tu-vung-ngu-phap-N3-T12-2022-Ver-1.0-2212015-Dokkai-dnag-cap-nhat.pdf",
+      "qualification": "Cross-checks the reconstructed Japanese sentence and choice wording; it is not an answer key."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 3,
+      "luyenThiJapaneseReference": 4,
+      "choices": ["1 に ", "2 で", "3 と ", "4 が"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": false
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 4,
+      "luyenThiJapaneseReference": 1,
+      "choices": [" 1 において", " 2 にとって ", " 3 に対して", " 4 について"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 4,
+      "luyenThiJapaneseReference": 3,
+      "choices": ["1 にだけ", "2 からだけ", "3 にでも", "4 からでも"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 2,
+      "luyenThiJapaneseReference": 4,
+      "choices": ["1 全く", "2 非常に ", "3 決して", " 4 必ず"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 1,
+      "luyenThiJapaneseReference": 1,
+      "choices": [" 1 どうしても", "2 それほど ", " 3 せっかく", " 4 つい"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 3,
+      "luyenThiJapaneseReference": 4,
+      "choices": ["1 途中で", " 2 一方で ", " 3 ように", "4 ために"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 1,
+      "luyenThiJapaneseReference": 2,
+      "choices": [" 1 磨いて", "2 磨かずに", "3 磨くたび ", " 4 磨かなくて"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 4,
+      "luyenThiJapaneseReference": 3,
+      "choices": [
+        " 1 出かけるところなのに",
+        " 2 出かけているところなのに",
+        "3 出かけるところだから",
+        " 4 出かけているところだから"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 3,
+      "luyenThiJapaneseReference": 1,
+      "choices": [" 1 のぼっていくと", " 2 のぼっていきながら ", " 3 のぼってくるには", " 4 のぼってくるとき"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 1,
+      "luyenThiJapaneseReference": 4,
+      "choices": ["1 知っとく", "2 知っちゃう ", "3 知ってく", "4 知ってる"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 3,
+      "luyenThiJapaneseReference": 1,
+      "choices": [" 1 いたします", "2 おります", " 3 いただきます ", "4 ございます"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": false
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 2,
+      "luyenThiJapaneseReference": 2,
+      "choices": [" 1 行ったこともある", "2 行ったことはない", "3 行くこともできる", "4 行くこともできない"],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesLuyenThiJapanese": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 2,
+      "luyenThiJapaneseReference": 3,
+      "choices": [
+        "1 履いてもらえませんか",
+        "2 履かないんですか",
+        " 3 履いてみてもいいですか ",
+        "4 履くことになりますか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": false,
+      "answerMatchesLuyenThiJapanese": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "storedMatchesChuyenNgoai": 2,
+    "storedMatchesLuyenThiJapanese": 11,
+    "disagreementsWithAtLeastOneReference": 11
+  },
+  "manualDecisions": {
+    "36": "Keep option 2: 「ここの書き方はこれで大丈夫でしょうか」 is the natural check that the form was filled out this way. Both reference tables select another option, but 「これが大丈夫」 or 「これと大丈夫」 do not fit the printed predicate.",
+    "46": "Keep option 2: 「中川がおりますので、今、代わります」 is the standard humble way for staff to say a colleague is present. Neither reference selects it; the alternatives 「いたします」 and 「いただきます」 do not express a colleague being present."
+  }
+}

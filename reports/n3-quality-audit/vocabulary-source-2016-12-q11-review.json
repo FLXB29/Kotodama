@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-09-26T09:48:50.370Z",
+  "examId": "toan-n3-201612-full",
+  "questionId": "toan_q_2016_12_11",
+  "printedQuestionNumber": 11,
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPage": 2,
+    "promptAndOptionsObserved": true
+  },
+  "answer": 3,
+  "explanationChecks": {
+    "targetKanji": "満足",
+    "vietnameseTranslation": true,
+    "allFourSpellingsExplained": true
+  },
+  "officialAnswerKeyPresent": false
+}

@@ -1,0 +1,94 @@
+{
+  "exam": "JLPT N3 July 2014, Grammar Mondai 2",
+  "source": {
+    "questionFile": "5. N3 7-2014.pdf",
+    "questionFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "questionPage": 5,
+    "questionSourceUrl": "https://drive.google.com/file/d/1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C/view",
+    "answerFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerPage": 9,
+    "answerKeySource": "Google Drive preview of ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf, page 9; visually checked in the user's connected Chrome session.",
+    "method": "Visually inspected the original question PDF in Google Drive, page 5, and transcribed the prompts, four fragments, and ★ position for questions 14–18. Reconstructed the Japanese sentence order. Cross-checked the star-slot answers against the separate answer-key PDF, page 9. Questions 14–17 agree; question 18 conflicts and is explicitly left disputed.",
+    "answerKey": {
+      "section": "JLPT N3 7/2014, Grammar Mondai 2, questions 14–18",
+      "answers": [2, 1, 2, 3, 4]
+    }
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2014_07_49",
+      "printedNumber": 14,
+      "promptBefore": "娘が歌手になることには反対でしたが、娘も一生懸命",
+      "promptAfter": "と思っています。",
+      "sourceOptions": ["1 がんばろうとして", "2 応援して", "3 やろうか", "4 いるので"],
+      "order": [1, 4, 2, 3],
+      "starSlotIndex": 2,
+      "answerFromSentence": 2,
+      "answerFromAnswerKey": 2,
+      "status": "verified",
+      "completedSentence": "娘が歌手になることには反対でしたが、娘も一生懸命がんばろうとしているので応援してやろうかと思っています。",
+      "translation": "Dù trước đó tôi phản đối việc con gái trở thành ca sĩ, nhưng thấy con cũng đang cố gắng hết sức nên tôi nghĩ mình sẽ thử ủng hộ con.",
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2014_07_50",
+      "printedNumber": 15,
+      "promptBefore": "ここにある家具は",
+      "promptAfter": "使うかもしれないと思うと、捨てられない。",
+      "sourceOptions": ["1 けれども", "2 いつかまた", "3 使っていない", "4 今はどれも"],
+      "order": [4, 3, 1, 2],
+      "starSlotIndex": 2,
+      "answerFromSentence": 1,
+      "answerFromAnswerKey": 1,
+      "status": "verified",
+      "completedSentence": "ここにある家具は今はどれも使っていないけれどもいつかまた使うかもしれないと思うと、捨てられない。",
+      "translation": "Những món đồ nội thất ở đây hiện giờ món nào tôi cũng không dùng, nhưng nghĩ rằng có thể một ngày nào đó sẽ dùng lại nên tôi không nỡ vứt đi.",
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2014_07_51",
+      "printedNumber": 16,
+      "promptBefore": "書いた",
+      "promptAfter": "手紙が引き出しにあった。",
+      "sourceOptions": ["1 まま", "2 忘れていた", "3 出すのを", "4 友人への"],
+      "order": [1, 3, 2, 4],
+      "starSlotIndex": 2,
+      "answerFromSentence": 2,
+      "answerFromAnswerKey": 2,
+      "status": "verified",
+      "completedSentence": "書いたまま出すのを忘れていた友人への手紙が引き出しにあった。",
+      "translation": "Trong ngăn kéo có lá thư gửi bạn mà tôi đã viết nhưng quên đem gửi.",
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2014_07_52",
+      "printedNumber": 17,
+      "promptBefore": "A「空が暗いですね。」B「そうですね。雨が",
+      "promptAfter": "ですね。」",
+      "sourceOptions": ["1 ない", "2 いつ", "3 おかしく", "4 降っても"],
+      "order": [2, 4, 3, 1],
+      "starSlotIndex": 2,
+      "answerFromSentence": 3,
+      "answerFromAnswerKey": 3,
+      "status": "verified",
+      "completedSentence": "A「空が暗いですね。」B「そうですね。雨がいつ降ってもおかしくないですね。」",
+      "translation": "A: “Trời tối quá nhỉ.” B: “Ừ nhỉ. Có thể mưa bất cứ lúc nào ấy.”",
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2014_07_53",
+      "printedNumber": 18,
+      "promptBefore": "（電話で）A「もしもし、ちょっと話したいことがあるんだけど、今、時間ある？」B「ごめん。ちょうど出かける",
+      "promptAfter": "。私から電話するね。」",
+      "sourceOptions": ["1 ゆっくり話す", "2 あとで", "3 ところで", "4 時間がないから"],
+      "order": [3, 4, 2, 1],
+      "starSlotIndex": 2,
+      "answerFromSentence": 2,
+      "answerFromAnswerKey": 4,
+      "status": "disputed",
+      "completedSentence": "（電話で）A「もしもし、ちょっと話したいことがあるんだけど、今、時間ある？」B「ごめん。ちょうど出かけるところで時間がないから、あとでゆっくり話す。私から電話するね。」",
+      "translation": "A: “A lô, mình có chuyện muốn nói, bây giờ bạn có thời gian không?” B: “Xin lỗi nhé. Mình đang đúng lúc chuẩn bị ra ngoài nên không có thời gian; lát nữa mình sẽ nói chuyện kỹ. Mình sẽ gọi lại cho bạn.”",
+      "sourceTextNote": "The question PDF shows the ★ in the third fragment slot. The natural order places option 2 あとで at that slot. The separate answer-key PDF records option 4 時間がないから, which cannot occupy the third slot in a grammatical ordering of the four printed fragments. Do not treat this item as fully answer-key verified until the discrepancy is resolved."
+    }
+  ]
+}

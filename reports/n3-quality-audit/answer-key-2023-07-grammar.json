@@ -1,0 +1,240 @@
+{
+  "generatedAt": "2026-09-26T10:24:03.835Z",
+  "examId": "toan-n3-202307-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the stored and linguistically reviewed keys with two published reference sequences. Neither reference is an official JLPT answer sheet. This is a scoped cross-check, not certification of all answers in the exam.",
+  "sources": [
+    {
+      "name": "Aixin Japanese School",
+      "url": "https://aixinjp.com/a/lianxifangshi/zhentidaan/2023/0703/1076.html",
+      "qualification": "Publishes the sequence 文法・読解問題１ ４３４１２４４２３３２１３; a reference key, not an official JLPT answer sheet."
+    },
+    {
+      "name": "Scribd N3 answer compilation",
+      "url": "https://www.scribd.com/document/1026523073/jlpt-n3-2023-07-1",
+      "qualification": "Extracted grammar key agrees with the stored sequence; uploaded answer compilation, not an official JLPT answer sheet."
+    },
+    {
+      "name": "PassJapanese question transcription",
+      "url": "https://passjapanese.com/ja/jlpt/n3/exam/2023-07-grammar-reading",
+      "qualification": "Cross-checks the question text and order; does not independently establish the answer key."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "aixinjpReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1 が",
+        "2 で",
+        " 3 の ",
+        "4 を"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "aixinjpReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        " 1 ことから",
+        "2 としたら",
+        " 3 にしたがって",
+        "4 のに比べて"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "aixinjpReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1 だけで",
+        "2 だけが",
+        "3 となら",
+        "4 としか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "aixinjpReference": 1,
+      "scribdReference": 1,
+      "choices": [
+        " 1 できれば ",
+        "2 別に ",
+        "3 せっかく ",
+        "4 確かに"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "aixinjpReference": 2,
+      "scribdReference": 2,
+      "choices": [
+        "1 降る",
+        "2 降り",
+        "3 降って",
+        " 4 降った"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "aixinjpReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        " 1 呼ぶと",
+        "2 呼ぶまで ",
+        " 3 呼ばれると",
+        " 4 呼ばれるまで"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "aixinjpReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1 間に",
+        "2 点で",
+        "3 たびに ",
+        "4 せいで"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "aixinjpReference": 2,
+      "scribdReference": 2,
+      "choices": [
+        "1 読んでおいてはいけない",
+        "2 読んでおかなければならない",
+        "3 読むことにしてはいけない ",
+        "4 読むことにしなければならない"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "aixinjpReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        "1 眠りたかった",
+        "2 眠ろうとした ",
+        "3 眠れなかった",
+        "4 眠らなくなった"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "aixinjpReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        "1 開くと思う ",
+        "2 開きたいと思う ",
+        "3 開くことだ",
+        "4 開きたいことだ"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "aixinjpReference": 2,
+      "scribdReference": 2,
+      "choices": [
+        "1 やまないはずがない ",
+        "2 やみそうにない",
+        "3 やむに違いない ",
+        "4 やんでもしかたない"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "aixinjpReference": 1,
+      "scribdReference": 1,
+      "choices": [
+        "1 できるらしい",
+        "2 できてほしい",
+        "3 できることがある",
+        "4 できたほうがいい"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "aixinjpReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        "1 してあげますか ",
+        "2 なってあげますか ",
+        "3 してもらえますか",
+        "4 なってもらえますか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesAixinjp": true,
+      "answerMatchesScribd": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "storedMatchesAixinjp": 13,
+    "storedMatchesScribd": 13
+  },
+  "transcriptionCorrection": "Question 47 response typo 「そんなんだ」 was corrected to 「そうなんだ」. PassJapanese independently transcribes the response as 「そうなんだ」."
+}

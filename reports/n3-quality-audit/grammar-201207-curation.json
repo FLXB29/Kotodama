@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-09-25T10:29:43.662Z",
+  "examId": "toan-n3-201207-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.saromalang.com/2012/07/dap-ky-thi-nang-luc-tieng-nhat-thang-7.html; https://www.scribd.com/document/1044581158/3-N3-7-2012",
+  "method": "The 13 stored choices match the Saromalang nonofficial N3 Grammar Mondai 1 answer sequence (13/13); question wording was also compared against an independent full-test transcription. Linguistic explanations were written from sentence context.",
+  "answerSequence": [
+    4,
+    1,
+    2,
+    2,
+    1,
+    3,
+    4,
+    2,
+    1,
+    4,
+    2,
+    3,
+    3
+  ],
+  "optionCorrections": {},
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        "1.対して",
+        "2.比べて ",
+        " 3.おいて",
+        " 4.とって"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "choices": [
+        "1.でも",
+        "2.では ",
+        "3.にも",
+        "4.には"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.らしい ",
+        "2.だろう",
+        "3.つもりだ",
+        "4.そうだ"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.としたら ",
+        "2.としても",
+        "3.とすると",
+        "4.とするなら"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        "1.こんなに",
+        " 2.そんなに ",
+        "3.あんなに",
+        " 4.どんなに"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.で/で",
+        "2.が/が ",
+        "3.に/に",
+        "4.は/は"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 4,
+      "choices": [
+        "1.近いから",
+        "2.近くて",
+        " 3.近くても",
+        "4.近ければ"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "1.思い出せそうで",
+        "2.思い出せなくて ",
+        " 3.出してきて",
+        "4.思い出させないで"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.借りられます ",
+        "2.借りてくださいま ",
+        "3.お借りいたします",
+        " 4.お借りいただきます"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "choices": [
+        "1.までで",
+        "2.でまで",
+        "3.までに",
+        "4.にまで"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.ついたり消えて",
+        "2.ついたり消えたり ",
+        "3.つけたり消して",
+        " 4.つけたり消したり"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        "1.動かさないあいだに",
+        "2.動かさないうちに",
+        " 3.動かなくなるまえに",
+        "4.動かなくなるころに"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        "1.行っているところです",
+        "2.行われているところです",
+        "3.行われるところです",
+        "4.行うところです"
+      ]
+    }
+  ]
+}

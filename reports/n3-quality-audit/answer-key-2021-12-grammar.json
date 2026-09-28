@@ -1,0 +1,180 @@
+{
+  "generatedAt": "2026-09-26T16:33:42.469Z",
+  "examId": "toan-n3-202112-full",
+  "standaloneExamId": "cm2u2xosv0138134ib0bvpy32-grammar-reading",
+  "scope": "Grammar Mondai 1, 13 questions numbered 36–48.",
+  "method": "Compared both app exam views with the original question PDF and the user-provided answer sheet, then checked each answer against its Japanese sentence and options. The supplied answer sheet is a reference, not an official JLPT answer notice; this review covers only these 13 grammar questions.",
+  "sources": [
+    {
+      "name": "User-provided question PDF, “12. N3 12-2021.pdf”",
+      "pages": [7, 8],
+      "qualification": "Read directly in the connected Google Drive viewer; used to verify wording and choices."
+    },
+    {
+      "name": "User-provided answer sheet, “ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf”",
+      "page": 23,
+      "answerSequence": [3, 4, 2, 4, 1, 2, 4, 1, 2, 2, 4, 1, 4],
+      "qualification": "The 12/2021 grammar Mondai 1 row matches both app views; this is not an official JLPT answer notice."
+    },
+    {
+      "name": "TryNihongo question transcription",
+      "url": "https://trynihongo.com/en/jlpt-grammar-reading-comprehension-n3-test-december-2021-q1314",
+      "qualification": "Additional transcription cross-check; the original PDF remains the primary wording source for this audit."
+    },
+    {
+      "name": "Uno Japano reference answers",
+      "url": "https://unojapano.com/jlpt-december-2021-n3-answers/",
+      "qualification": "An unofficial answer reference; not used as proof of an official JLPT key."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 3,
+      "standaloneAnswer": 3,
+      "userSheetAnswer": 3,
+      "choices": ["1 へ", "2 が", "3 を　", "4 の"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "standaloneAnswer": 4,
+      "userSheetAnswer": 4,
+      "choices": ["1 ずっと", "2 今にも", "3 次第に", "4 ついに"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "standaloneAnswer": 2,
+      "userSheetAnswer": 2,
+      "choices": ["1 でなら", "2 からなら", "3 へでも", "4 まででも"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "standaloneAnswer": 4,
+      "userSheetAnswer": 4,
+      "choices": ["1 に対して　", "2 によって", "3 について", "4 において"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "standaloneAnswer": 1,
+      "userSheetAnswer": 1,
+      "choices": ["1 たびに", "2 うちに", "3 間に", "4 前に"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "standaloneAnswer": 2,
+      "userSheetAnswer": 2,
+      "choices": [" 1 使う", "2 使い", "3 使おう", "4 使った"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 4,
+      "standaloneAnswer": 4,
+      "userSheetAnswer": 4,
+      "choices": ["1 走っていくことが", "2 走ってくることが", "3 走っていくのが", "4 走ってくるのが"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 1,
+      "standaloneAnswer": 1,
+      "userSheetAnswer": 1,
+      "choices": ["1 出られるように", "2 出られるために", "3 出させるように", "4 出させるために"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 2,
+      "standaloneAnswer": 2,
+      "userSheetAnswer": 2,
+      "choices": ["1 降っている", "2 降っていない", "3 降る", "4 降らない"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "standaloneAnswer": 2,
+      "userSheetAnswer": 2,
+      "choices": [" 1 落ちるそうです", "2 落ちそうです", "3 落とすそうです", "4 落としそうです"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "standaloneAnswer": 4,
+      "userSheetAnswer": 4,
+      "choices": ["1 でしょう", "2 といい　", "3 ほうがいい", "4 みたいだ"],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "standaloneAnswer": 1,
+      "userSheetAnswer": 1,
+      "choices": [
+        "1 やりすぎるのもよくない",
+        "2 やらなくていいのがいい",
+        "3 やってやるのもよくない",
+        "4 やらないでおくのがいい"
+      ],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "standaloneAnswer": 4,
+      "userSheetAnswer": 4,
+      "choices": [
+        "1 変えましょうか",
+        "2 変えたほうがいいですか ",
+        "3 変えていただきましょう　",
+        "4 変えていただけないでしょうか"
+      ],
+      "fullMockMatchesSheet": true,
+      "standaloneMatchesSheet": true
+    }
+  ],
+  "totals": { "questions": 13, "fullMockMatchesUserSheet": 13, "standaloneMatchesUserSheet": 13 },
+  "officialAnswerPdfConfirmed": false,
+  "sourceCorrections": [
+    {
+      "questionNumber": 41,
+      "sourcePdfPrint": "使い続いている",
+      "learnerFacingText": "使い続けている",
+      "reason": "The printed form is ungrammatical for the intended “continue using” meaning. 「使い＋続ける」 forms 「使い続ける」; the app preserves the intended answer while documenting the source discrepancy."
+    }
+  ],
+  "interpretationNotes": [
+    {
+      "questionNumber": 42,
+      "note": "「こと」 can nominalize an event; it is described as less idiomatic than 「の」 for a directly perceived action, rather than being labeled universally ungrammatical."
+    },
+    {
+      "questionNumber": 46,
+      "answerSheetChoice": 4,
+      "note": "「できるでしょうね」 is grammatical as a prediction. The answer sheet selects 「みたいだ」, which better fits the dialogue as sharing a new piece of information. The item has some pragmatic ambiguity, so the explanation records that choice 1 is not ungrammatical in every context."
+    }
+  ]
+}

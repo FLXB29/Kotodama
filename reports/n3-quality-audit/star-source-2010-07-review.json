@@ -1,0 +1,112 @@
+{
+  "reviewedAt": "2026-09-27",
+  "exam": "JLPT N3 July 2010, Grammar Mondai 2",
+  "sourcePdf": {
+    "title": "1. N3 7-2010.pdf",
+    "driveFileId": "1whWNU3gUS-FZrbUgLakfxk5P8lW8w9nX",
+    "url": "https://drive.google.com/file/d/1whWNU3gUS-FZrbUgLakfxk5P8lW8w9nX/view#page=8",
+    "renderedPage": 8,
+    "method": "Visually inspected the rendered page in Google Drive and cross-checked the PDF text layer. Transcribed all five prompts and options, verified each printed ★ slot, reconstructed every sentence, and reviewed the selected piece and Vietnamese explanation against the sentence grammar."
+  },
+  "answerKey": {
+    "officialKeyEstablished": false,
+    "basis": "Each selected option is the fragment that occupies the printed ★ slot in the reconstructed sentence. No separate official JLPT key was independently established for this batch."
+  },
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "questionId": "toan_q_2010_07_49",
+      "promptBefore": "Ａ「じゃあ、あしたはコンサート会場の入り口に5時に集まりませんか。」Ｂ「コンサートは7時からですから、そんなに",
+      "promptAfter": "と思いますよ。」",
+      "sourceOptions": ["1. 早く", "2. 開いていない", "3. まだ", "4. 行っても"],
+      "order": [1, 4, 3, 2],
+      "starSlotIndexZeroBased": 2,
+      "answer": 3,
+      "completedSentence": "Ａ「じゃあ、あしたはコンサート会場の入り口に5時に集まりませんか。」Ｂ「コンサートは7時からですから、そんなに早く行ってもまだ開いていないと思いますよ。」",
+      "translation": "A: “Vậy ngày mai chúng ta tập trung ở lối vào địa điểm hòa nhạc lúc 5 giờ nhé?” B: “Buổi hòa nhạc bắt đầu lúc 7 giờ, nên dù đến sớm như vậy thì chắc nơi đó vẫn chưa mở cửa đâu.”",
+      "explanationCoverage": {
+        "allFragmentsExplainedByRole": true,
+        "starSlotAndAnswerExplained": true,
+        "completedSentenceAndTranslation": true,
+        "grammarSummary": true
+      },
+      "status": "verified-against-supplied-source"
+    },
+    {
+      "printedQuestion": 15,
+      "questionId": "toan_q_2010_07_50",
+      "promptBefore": "（田中先生の研究室で）学生「田中先生はいらっしゃいますか。」秘書「今、ほかの学生と話して",
+      "promptAfter": "ください。」",
+      "sourceOptions": ["1. すこし", "2. から", "3. 待って", "4. いらっしゃいます"],
+      "order": [4, 2, 1, 3],
+      "starSlotIndexZeroBased": 2,
+      "answer": 1,
+      "completedSentence": "（田中先生の研究室で）学生「田中先生はいらっしゃいますか。」秘書「今、ほかの学生と話していらっしゃいますからすこし待ってください。」",
+      "translation": "Ở phòng nghiên cứu của thầy Tanaka, thư ký nói: “Thầy đang nói chuyện với sinh viên khác, nên xin hãy chờ một chút.”",
+      "explanationCoverage": {
+        "allFragmentsExplainedByRole": true,
+        "starSlotAndAnswerExplained": true,
+        "completedSentenceAndTranslation": true,
+        "grammarSummary": true
+      },
+      "status": "verified-against-supplied-source"
+    },
+    {
+      "printedQuestion": 16,
+      "questionId": "toan_q_2010_07_51",
+      "promptBefore": "父も私も、今日はかさがなくても",
+      "promptAfter": "が、雨に降られてしまった。",
+      "sourceOptions": ["1. だろう", "2. と思って", "3. 大丈夫", "4. 出かけた"],
+      "order": [3, 1, 2, 4],
+      "starSlotIndexZeroBased": 2,
+      "answer": 2,
+      "completedSentence": "父も私も、今日はかさがなくても大丈夫だろうと思って出かけたが、雨に降られてしまった。",
+      "translation": "Bố tôi và tôi nghĩ hôm nay ra ngoài không mang ô chắc cũng không sao, nhưng rồi lại bị mưa.",
+      "explanationCoverage": {
+        "allFragmentsExplainedByRole": true,
+        "starSlotAndAnswerExplained": true,
+        "completedSentenceAndTranslation": true,
+        "grammarSummary": true
+      },
+      "status": "verified-against-supplied-source"
+    },
+    {
+      "printedQuestion": 17,
+      "questionId": "toan_q_2010_07_52",
+      "promptBefore": "昨日動物園に行ったら、先月",
+      "promptAfter": "見ることができました。",
+      "sourceOptions": ["1. 生まれた", "2. ライオンの", "3. ばかりの", "4. 赤ちゃんを"],
+      "order": [1, 3, 2, 4],
+      "starSlotIndexZeroBased": 2,
+      "answer": 2,
+      "completedSentence": "昨日動物園に行ったら、先月生まれたばかりのライオンの赤ちゃんを見ることができました。",
+      "translation": "Hôm qua đến sở thú, tôi đã xem được một chú sư tử con vừa mới sinh tháng trước.",
+      "explanationCoverage": {
+        "allFragmentsExplainedByRole": true,
+        "starSlotAndAnswerExplained": true,
+        "completedSentenceAndTranslation": true,
+        "grammarSummary": true
+      },
+      "status": "verified-against-supplied-source"
+    },
+    {
+      "printedQuestion": 18,
+      "questionId": "toan_q_2010_07_53",
+      "promptBefore": "ジョン「この『りかい』という言葉はどういう意味ですか。」アリ「ああ、確か『わかる』",
+      "promptAfter": "んですけど。」",
+      "sourceOptions": ["1. 意味だった", "2. という", "3. と思う", "4. ような"],
+      "order": [2, 4, 1, 3],
+      "starSlotIndexZeroBased": 1,
+      "answer": 4,
+      "completedSentence": "ジョン「この『りかい』という言葉はどういう意味ですか。」アリ「ああ、確か『わかる』というような意味だったと思うんですけど。」",
+      "translation": "John hỏi: “Từ ‘りかい’ này có nghĩa là gì?” Ali trả lời: “À, hình như nó có nghĩa kiểu như ‘わかる’ (hiểu), nhưng tôi không chắc lắm.”",
+      "explanationCoverage": {
+        "allFragmentsExplainedByRole": true,
+        "starSlotAndAnswerExplained": true,
+        "completedSentenceAndTranslation": true,
+        "grammarSummary": true
+      },
+      "status": "verified-against-supplied-source"
+    }
+  ]
+}

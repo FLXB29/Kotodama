@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:03:08.076Z",
+  "examId": "toan-n3-201812-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.scribd.com/document/747840945/%C4%90ap-an-Script-N3-12-2018",
+  "method": "Manual linguistic answer review compared with one uploaded answer/script compilation and the local question source. The scanned key transcription is incomplete/unclear for some items, so it does not independently certify the sequence.",
+  "answerSequence": [
+    1,
+    4,
+    4,
+    3,
+    2,
+    4,
+    3,
+    1,
+    2,
+    1,
+    2,
+    4,
+    3
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.も",
+        "2.と",
+        "3.が",
+        "4.で"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.疲れて仕事が多くて",
+        "2.疲れたり仕事が多かったり",
+        "3.疲れたし仕事が多いし",
+        "4.疲れたとか仕事が多いとか"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.ちっとも",
+        "2.せっかく",
+        "3.ようやく",
+        "4.あまりにも"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.において",
+        "2.によって",
+        "3.にくらべて　",
+        "4.にしたがって"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.やりおわった",
+        "2.やりなおした",
+        "3.やっておいた",
+        "4.やってあった"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ようです",
+        "2.せいです",
+        "3.はずです",
+        "4.おかげです"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "1.使った",
+        "2.使わない",
+        "3.使っている",
+        "4.使っていなかった"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 1,
+      "choices": [
+        "1.いたします",
+        "2.なさいます",
+        "3.うかがいます",
+        "4.いらっしゃいます"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 2,
+      "choices": [
+        "1.誰には",
+        "2.誰にも",
+        "3.誰かは",
+        "4.誰かも"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "choices": [
+        "1.なるには",
+        "2.するよりは",
+        "3.なるかどうかは",
+        "4.することは"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.開こうと思えば",
+        "2.開こうと思ってから",
+        "3.開くようになれば",
+        "4.開くようになってから"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.してあげてもいい",
+        "2.してくれたらいい",
+        "3.してやったらいい",
+        "4.してもらってもいい"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        "1.行っているところなんです",
+        " 2.行っているところですね",
+        "3.行かなければならないんです",
+        " 4.行かなければならないんですね"
+      ]
+    }
+  ]
+}

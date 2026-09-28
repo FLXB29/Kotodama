@@ -1,0 +1,27 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Grammar Mondai 1, printed questions 1-13 (full-exam questions 36-48).",
+  "source": {
+    "file": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 9,
+    "location": "JLPT N3 7/2014, 文法 問題1"
+  },
+  "method": "Visually read the question-number row 1-13 and the answer row immediately below it in the provided answer-key PDF on Google Drive, then compared each answer with the local full-exam record.",
+  "answers": [
+    { "printedQuestion": 1, "fullExamQuestion": 36, "questionId": "toan_q_2014_07_36", "answer": 2 },
+    { "printedQuestion": 2, "fullExamQuestion": 37, "questionId": "toan_q_2014_07_37", "answer": 3 },
+    { "printedQuestion": 3, "fullExamQuestion": 38, "questionId": "toan_q_2014_07_38", "answer": 1 },
+    { "printedQuestion": 4, "fullExamQuestion": 39, "questionId": "toan_q_2014_07_39", "answer": 3 },
+    { "printedQuestion": 5, "fullExamQuestion": 40, "questionId": "toan_q_2014_07_40", "answer": 1 },
+    { "printedQuestion": 6, "fullExamQuestion": 41, "questionId": "toan_q_2014_07_41", "answer": 4 },
+    { "printedQuestion": 7, "fullExamQuestion": 42, "questionId": "toan_q_2014_07_42", "answer": 3 },
+    { "printedQuestion": 8, "fullExamQuestion": 43, "questionId": "toan_q_2014_07_43", "answer": 2 },
+    { "printedQuestion": 9, "fullExamQuestion": 44, "questionId": "toan_q_2014_07_44", "answer": 1 },
+    { "printedQuestion": 10, "fullExamQuestion": 45, "questionId": "toan_q_2014_07_45", "answer": 2 },
+    { "printedQuestion": 11, "fullExamQuestion": 46, "questionId": "toan_q_2014_07_46", "answer": 4 },
+    { "printedQuestion": 12, "fullExamQuestion": 47, "questionId": "toan_q_2014_07_47", "answer": 4 },
+    { "printedQuestion": 13, "fullExamQuestion": 48, "questionId": "toan_q_2014_07_48", "answer": 3 }
+  ]
+}

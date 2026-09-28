@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-09-25T10:29:43.661Z",
+  "examId": "toan-n3-201112-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://trynihongo.com/de/jlpt-n3-dezember-2011-testloesung-bunpou-dokkai-p1036; https://www.100ksw.com/wy/xyz/qt/570460.shtml; https://www.scribd.com/document/1075275791/2011%E5%B9%B412%E6%9C%88N3%E7%9C%9F%E9%A2%98",
+  "method": "Question text was compared against a 2011/12 N3 exam transcription and the linked German/Vietnamese study materials. The separate answer-key article has its grammar key embedded in an image that could not be fetched, so the sequence is reported as checked against sentence grammar, not as a full independent key match.",
+  "answerSequence": [
+    1,
+    3,
+    2,
+    4,
+    2,
+    2,
+    2,
+    1,
+    3,
+    4,
+    3,
+    3,
+    2
+  ],
+  "optionCorrections": {},
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 1,
+      "choices": [
+        "1.として ",
+        " 2.にして",
+        " 3.とまで",
+        "4.にまで"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        "1.の ",
+        "2.も",
+        "3.を",
+        "4.で"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.などを ",
+        "2.などと",
+        "3.ことを",
+        "4.ことと"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "choices": [
+        "1.いても",
+        "2.いると",
+        "3.いるけど",
+        "4.いるなら"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        "1.にしたがって",
+        " 2.にくらべて",
+        "3.の一方で",
+        "4.のことで"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.来る",
+        "2.行った",
+        "3.行く",
+        "4.来た"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.して ",
+        "2.させて",
+        " 3.やって",
+        "4.されて"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 1,
+      "choices": [
+        "1.するな ",
+        " 2.するよ",
+        "3.するね",
+        " 4.するんだ"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "choices": [
+        "1.くださる",
+        "2.なさる ",
+        "3.さしあげる",
+        " 4.いただく"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "choices": [
+        "1.そうなのを",
+        "2.ようなのを",
+        "3.そうなことを",
+        "4.ようなことを"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "choices": [
+        "1.ばかりでよければ ",
+        " 2.ばかりでよくても",
+        "3.だけでよければ ",
+        "4.だけでよくても"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.お見えになる",
+        "2.拝見できる",
+        "3.お目にかかる",
+        " 4.ご覧になる"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "choices": [
+        "1.しないことになった",
+        "2.しないようになった",
+        "3.しないことにした",
+        "4.しないようにした"
+      ]
+    }
+  ]
+}

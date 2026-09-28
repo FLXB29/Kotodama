@@ -46,6 +46,7 @@ scratch/
 coverage/
 *.db-shm
 *.db-wal
+*.bak
 
 # Local ML environments, downloaded checkpoints and private training data
 .venv-model-a/

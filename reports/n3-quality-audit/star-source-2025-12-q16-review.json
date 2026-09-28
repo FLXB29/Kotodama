@@ -1,0 +1,34 @@
+{
+  "exam": "JLPT N3 12/2025",
+  "printedQuestion": 16,
+  "fullExamQuestionId": "toan_q_2025_12_51",
+  "sourcePdf": {
+    "title": "17.N3 12-2025 (260506).pdf",
+    "driveFileId": "1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX",
+    "printedPage": 9,
+    "method": "Inspected the original Drive PDF page visually at 150% zoom and compared its visible option with the PDF text layer.",
+    "option2AsSeen": "弾くけど"
+  },
+  "appData": {
+    "option2": "弾くほど",
+    "answer": 4,
+    "order": [2, 1, 4, 3],
+    "completedSentence": "半年前にギターを習い始めてから、毎日練習している。弾けば弾くほど上手に弾けるようになっていくのが自分でもわかり、とても楽しい。"
+  },
+  "reference": {
+    "title": "2025年12月N3参考答案 — 宁波爱心日语学校",
+    "url": "https://aixinjp.com/a/lianxifangshi/zhentidaan/2025/1208/1241.html",
+    "answerOrderText": "弾けば2弾くほど1上手に4弾けるように3",
+    "provenance": "Third-party reference; not established as an official JLPT key."
+  },
+  "answerKeyCrossCheck": {
+    "title": "JLPT N3 – 12/2025 with Answers — LearnJP",
+    "url": "https://learnjp.net/jlpt-n3-12-2025.html",
+    "answerSequence": "Grammar Mondai 2 (14–18): 3 1 4 2 3",
+    "result": "Question 16 is also listed as answer 4.",
+    "provenance": "Independent third-party answer compilation; not an official JLPT key."
+  },
+  "decision": "Keep the educational option 弾くほど because it forms the grammatical construction 弾けば弾くほど and matches the referenced answer order. Show learners the conflict with the supplied PDF instead of silently claiming that the stored option matches the PDF.",
+  "status": "source-conflict-disclosed-unresolved",
+  "officialKeyEstablished": false
+}

@@ -1,0 +1,28 @@
+{
+  "reviewedDate": "2026-09-26",
+  "examId": "toan-n3-202012-full",
+  "scope": "Grammar Mondai 1, questions 36–48",
+  "answerKeyReview": {
+    "report": "answer-key-2020-12-grammar.json",
+    "matchesReviewedAnswers": 13,
+    "matchesPublishedReferenceA": 13,
+    "matchesPublishedReferenceB": 13,
+    "officialAnswerPdfConfirmed": false
+  },
+  "explanationReview": {
+    "questionsReviewed": 13,
+    "checks": [
+      "Correct option and grammar pattern are named",
+      "Each of the four options is explained in context",
+      "A Vietnamese translation of the complete sentence or dialogue is included"
+    ],
+    "corrections": [
+      {
+        "questionNumber": 43,
+        "issue": "絵本 was translated as a comic book, which is too specific and misleading.",
+        "correction": "Use sách tranh (picture book); the answer and Japanese explanation are unchanged."
+      }
+    ]
+  },
+  "limitation": "The two answer-key references are published compilations, not an official JLPT answer sheet."
+}

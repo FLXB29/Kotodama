@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-09-26T09:41:44.607Z",
+  "examId": "toan-n3-201612-full",
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPage": 3,
+    "promptsAndOptionsObserved": true,
+    "officialAnswerKeyPresent": false
+  },
+  "questions": [
+    {
+      "id": "toan_q_2016_12_26",
+      "printedQuestionNumber": 26,
+      "answer": 4,
+      "prompt": "26. 水の表面が かがやいて います。",
+      "options": [
+        "止まって",
+        "揺れて",
+        "汚れて",
+        "光って"
+      ],
+      "explanationChecks": {
+        "sentenceTranslated": true,
+        "eachOptionTranslatedInContext": true
+      }
+    },
+    {
+      "id": "toan_q_2016_12_27",
+      "printedQuestionNumber": 27,
+      "answer": 1,
+      "prompt": "27. その知らせを聞いたとき、わたしはとても がっかりした 。",
+      "options": [
+        "残念だと思った",
+        "うれしかった",
+        "驚いた",
+        "安心した"
+      ],
+      "explanationChecks": {
+        "sentenceTranslated": true,
+        "eachOptionTranslatedInContext": true
+      }
+    },
+    {
+      "id": "toan_q_2016_12_28",
+      "printedQuestionNumber": 28,
+      "answer": 3,
+      "prompt": "28. 留学生活に不安は 当然 ありました。",
+      "options": [
+        "いろいろ",
+        "少し",
+        "もちろん",
+        "いつも"
+      ],
+      "explanationChecks": {
+        "sentenceTranslated": true,
+        "eachOptionTranslatedInContext": true
+      }
+    },
+    {
+      "id": "toan_q_2016_12_30",
+      "printedQuestionNumber": 30,
+      "answer": 2,
+      "prompt": "30. ここは 横断禁止 です。",
+      "options": [
+        "座ってはいけません",
+        "渡ってはいけません",
+        "走ってはいけません",
+        "入ってはいけません"
+      ],
+      "explanationChecks": {
+        "sentenceTranslated": true,
+        "eachOptionTranslatedInContext": true
+      }
+    }
+  ],
+  "limitation": "The exam PDF does not include an official answer key; keys here are interpreted from the vocabulary meaning and source options."
+}

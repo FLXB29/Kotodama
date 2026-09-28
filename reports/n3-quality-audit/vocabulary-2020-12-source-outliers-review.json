@@ -1,0 +1,146 @@
+{
+  "reviewedOn": "2026-09-27",
+  "fullExamId": "toan-n3-202012-full",
+  "sectionExamId": "cm2u2xg4300wm134izpbjrysi-vocab",
+  "questionNumbers": [
+    1,
+    14,
+    19,
+    31,
+    32
+  ],
+  "answerKeys": {
+    "section": {
+      "1": 1,
+      "14": 4,
+      "19": 3,
+      "31": 2,
+      "32": 3
+    },
+    "fullMockQuestion14Before": 2,
+    "fullMockQuestion14After": 4
+  },
+  "answerKeysChanged": 1,
+  "contentRepairs": [
+    {
+      "question": 1,
+      "change": "Restored missing initial ち in option 4: ちょさつ."
+    },
+    {
+      "question": 14,
+      "change": "Restored source option order; 複雑 is option 4, so corrected the full-mock key 2→4."
+    },
+    {
+      "question": 19,
+      "change": "Replaced malformed ending してもらった with です, matching multiple December 2020 reproductions."
+    },
+    {
+      "question": 32,
+      "change": "Normalized option 4 ending 楽しみた to 楽しみだ; reproductions conflict, but independent copies and grammar support だ."
+    },
+    {
+      "question": 31,
+      "change": "Added translation and choice-by-choice usage contrasts for all four examples."
+    },
+    {
+      "question": 32,
+      "change": "Added translation, all-choice explanations, and marked the first distractor as less natural rather than impossible."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.nihongoph.com/2022/10/jlpt-n3-122020.html",
+      "type": "Third-party 12/2020 N3 vocabulary transcription; includes the canonical q1 reading options and q32 option 4 ending だ; not an official JLPT file."
+    },
+    {
+      "url": "https://www.scribd.com/document/879176896/2020%E5%B9%B412%E6%9C%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%83%BD%E5%8A%9B%E8%A9%A6%E9%A8%93N3%E7%9C%9F%E9%A1%8C",
+      "type": "Third-party copy of the December 2020 N3 exam; reproduces q14 choice order, q19 ending です, and q32 ending だ; not an official JLPT file."
+    },
+    {
+      "url": "https://www.scribd.com/document/894142200/N3-%C4%90e-2020-12",
+      "type": "Another third-party copy reproducing q31–32 and the corrected q19 prompt; not an official JLPT file."
+    },
+    {
+      "url": "https://learnjapaneseaz.com/jlpt-n3-vocabulary-test-17.html",
+      "type": "Third-party answer and usage compilation; lists q31=2 and q32=3; not an official JLPT key."
+    }
+  ],
+  "uncertainty": "Some third-party transcriptions print 楽しみた for question 32 option 4, while two other copies and the full-mock source print 楽しみだ. The app uses the grammatical だ reading and keeps the disagreement recorded here. Answer-key sources are secondary, not official JLPT keys.",
+  "rows": [
+    {
+      "number": 1,
+      "id": "cm2u2xg7o00wo134i6uwntpet",
+      "answer": 1,
+      "prompt": "まず、この問題を<u>調査</u>します。",
+      "options": [
+        "ちょうさ",
+        "ちょうさつ",
+        "ちょさ",
+        "ちょさつ"
+      ],
+      "explanation": "Đáp án 1 — 「調査（ちょうさ）」là điều tra/khảo sát để tìm hiểu một vấn đề. Cách đọc đúng là ちょうさ.\nDịch: “Trước tiên, tôi sẽ điều tra vấn đề này.” 「まず」nghĩa là trước tiên; 「調査する」là điều tra, khảo sát.\n1. ちょうさ: cách đọc đúng của 調査.\n2. ちょうさつ: thêm âm つ ở cuối; đây không phải cách đọc của 調査.\n3. ちょさ: thiếu âm dài 「う」 trong ちょう; không phải cách đọc chuẩn của từ.\n4. ちょさつ: vừa thiếu âm dài 「う」 vừa thêm 「つ」; không phải cách đọc của 調査.\nGhi nhớ: 調査（ちょうさ）する = điều tra/khảo sát; các phương án còn lại là cách đọc sai của cùng chữ, không phải những từ có nghĩa riêng trong câu này.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 14,
+      "id": "cm2u2xggr00x2134id4jtsate",
+      "answer": 4,
+      "prompt": "今は<u>ふくざつ</u>な気持ちだ。",
+      "options": [
+        "復推",
+        "復雑",
+        "複推",
+        "複雑"
+      ],
+      "explanation": "Đáp án 4 — 「複雑（ふくざつ）」nghĩa là phức tạp; 「複雑な気持ち」diễn tả cảm xúc lẫn lộn, khó gọi tên. Trong bộ lựa chọn của bản này, 複雑 đứng ở vị trí 4.\nDịch: “Bây giờ tôi có tâm trạng phức tạp/lẫn lộn.”\n1. 復推: không phải cách viết của từ ふくざつ; 復 thường mang ý quay lại/lặp lại, còn 推 không được đọc là ざつ ở đây.\n2. 復雑: sai chữ đầu; 「復」không phải chữ 「複」 trong 複雑. Không tạo thành cách viết đúng của từ cần điền.\n3. 複推: chữ 「推」không phải 「雑」 và không thể ghi âm 「ざつ」 trong từ này.\n4. 複雑（ふくざつ）: phức tạp; đúng cả cách viết lẫn nghĩa trong cụm 複雑な気持ち.\nGhi nhớ: 複雑な問題 = vấn đề phức tạp; 複雑な気持ち = cảm xúc lẫn lộn. Chữ 複 trong 複雑 khác 復 trong 復習（ふくしゅう, ôn tập).",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 19,
+      "id": "cm2u2xgpq00x8134ilxvf0na5",
+      "answer": 3,
+      "prompt": "さっき履いてみた靴は少し大きかったけど、この靴は（ ）です。",
+      "options": [
+        "はっきり",
+        "しっかり",
+        "ぴったり",
+        "そっくり"
+      ],
+      "explanation": "Đáp án 3 — 「ぴったり」là vừa khít/vừa vặn hoặc khớp chính xác; đối chiếu đôi giày trước hơi rộng thì đôi này vừa vặn là hợp ngữ cảnh nhất.\nDịch: “Đôi giày tôi vừa thử lúc nãy hơi rộng, nhưng đôi này vừa vặn.” Các bản chép đề được đối chiếu viết phần cuối là 「この靴は（ ）です」; dữ liệu cũ 「してもらった」đã được sửa vì không khớp câu trong các bản này.\n1. はっきり: rõ ràng/dứt khoát; thường nói về lời nói, hình ảnh hoặc ý định, không nói độ vừa của giày.\n2. しっかり: chắc chắn/vững vàng; không diễn tả việc kích cỡ đôi giày vừa khít.\n3. ぴったり: vừa vặn/vừa khít hoặc khớp chính xác; đúng với câu đang so kích cỡ hai đôi giày.\n4. そっくり: giống hệt nhau/toàn bộ; dùng khi hai người/vật rất giống nhau, không phải nói giày vừa chân.\nGhi nhớ: サイズがぴったり = kích cỡ vừa khít; そっくりな顔 = khuôn mặt giống hệt.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 31,
+      "id": "cm2u2xh7e00xm134ivpxeqjoy",
+      "answer": 2,
+      "prompt": "割引",
+      "options": [
+        "若者が都会に出ていくので、村の人口が割引になっている。",
+        "この美術館は団体で見学を申し込むと、料金が割引になる。",
+        "ジョギングを始めてから、体重が少し割引になってきた。",
+        "最近、仕事が忙しくて、眠る時間が割引になっている。"
+      ],
+      "explanation": "Đáp án 2 — 「割引（わりびき）」là giảm giá/chiết khấu so với giá thông thường; 「料金が割引になる」là phí được giảm.\nDịch câu đúng: “Nếu đăng ký tham quan bảo tàng theo đoàn thì phí tham quan được giảm.”\n1. 「村の人口が割引になっている」: “Dân số làng được giảm giá.” 割引 dùng cho giá cả; dân số giảm thì nói 「人口が減る／減少する」.\n2. 「料金が割引になる」: phí được giảm giá; dùng đúng với ưu đãi khi đăng ký theo đoàn.\n3. 「体重が割引になってきた」: “Cân nặng được giảm giá.” Cân nặng giảm là 「体重が減ってきた」.\n4. 「眠る時間が割引になっている」: “Thời gian ngủ được giảm giá.” Thời lượng ngủ ít đi là 「寝る時間が減っている」.\nGhi nhớ: giá/phí được giảm = 割引になる; dân số, cân nặng hoặc thời lượng giảm = 減る／減少する.",
+      "includesTranslation": false,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 32,
+      "id": "cm2u2xh7e00xn134i0tg3ibdv",
+      "answer": 3,
+      "prompt": "気づく",
+      "options": [
+        "この絵を見ると、ふるさとの景色に気づいて、懐かしくなる。",
+        "隣の部屋がにぎやかで、昨日の夜は声に気づいて眠れなかった。",
+        "家に着いたとき、電車に忘れ物をしたことに気づいた。",
+        "来月から始まる大学生活に気づくと、とても楽しみだ。"
+      ],
+      "explanation": "Đáp án 3 — 「気づく（きづく）」là chợt nhận ra/phát hiện một sự việc mà trước đó mình chưa biết. Trong câu 3, người nói về đến nhà rồi nhận ra mình để quên đồ trên tàu.\nDịch câu đúng: “Khi về đến nhà, tôi nhận ra mình đã để quên đồ trên tàu.”\n1. 「ふるさとの景色に気づいて懐かしくなる」: “Nhận ra phong cảnh quê nhà rồi thấy nhớ.” Có thể hiểu nếu bức tranh làm người nói chú ý đến một cảnh cụ thể, nhưng ý thường được diễn đạt tự nhiên hơn là 「ふるさとの景色を思い出して懐かしくなる」; phương án 3 dùng 気づく rõ ràng hơn với việc phát hiện ra một sự thật.\n2. 「声に気づいて眠れなかった」: “Nhận ra tiếng nói nên không ngủ được.” Việc tiếng ồn làm phiền thường nói 「声が気になって眠れなかった」; nhận ra có tiếng nói không tự nó giải thích vì sao không ngủ được.\n3. 「電車に忘れ物をしたことに気づいた」: nhận ra mình đã để quên đồ trên tàu; kết cấu 「〜ことに気づく」nêu chính xác điều vừa được nhận ra.\n4. 「大学生活に気づくと、とても楽しみだ」: 気づく không có nghĩa là mong chờ cuộc sống đại học; tự nhiên hơn là 「大学生活が始まると思うと楽しみだ」. Một số bản chép in 「楽しみた」, nhưng câu dùng 「楽しみだ」trong các bản đối chiếu khác.\nGhi nhớ: sự việc vừa nhận ra = 気づく; nhớ lại khung cảnh = 思い出す; bị âm thanh làm bận tâm = 気になる; mong chờ = 楽しみにする／楽しみだ.",
+      "includesTranslation": false,
+      "explainsAllFourChoices": true
+    }
+  ]
+}

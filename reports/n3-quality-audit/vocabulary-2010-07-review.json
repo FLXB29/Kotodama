@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-09-27T15:36:23.930Z",
+  "examId": "toan-n3-201007-full",
+  "section": "Từ vựng",
+  "questionRange": "1–35",
+  "reviewedQuestionCount": 35,
+  "reviewedChoiceCount": 140,
+  "answerKeysChanged": 0,
+  "sourceLimits": {
+    "originalQuestionSourceCompared": true,
+    "originalQuestionSourceUrl": "https://passjapanese.com/en/jlpt/n3/exam/2010-07-vocabulary",
+    "officialAnswerKeyConfirmed": false,
+    "method": "Checked the archived 2010-07 N3 vocabulary question list and inspected source pages for questions 16 and 24, including their printed choice labels. The remaining stored stems and choices were reviewed against the archive transcription available for this section. Rewrote Vietnamese prompt translations and contextual explanations for every option; preserved all answer keys because an official answer key has not been independently confirmed."
+  },
+  "targetedSourceChecks": {
+    "questionRange": "31–35 (Mondai 5)",
+    "questionTranscriptions": [
+      "https://www.chengzhushuo.com/jlpt_test_one.html?month=07%E6%9C%88&nLevel=n3&year=2010",
+      "https://www.scribd.com/document/832192913/T7-2010"
+    ],
+    "secondaryAnswerKeyUrl": "https://jp-files.riyutool.com/%E8%80%83%E8%AF%95%E7%9C%9F%E9%A2%98/N3/2010.07/2010%E5%B9%B47%E6%9C%88%E6%97%A5%E6%9C%AC%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%95N3%E7%9C%9F%E9%A2%98%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90%40byq1%40.pdf",
+    "answerSequence": [4, 2, 2, 1, 4],
+    "officialAnswerKeyConfirmed": false,
+    "dictionarySources": [
+      "https://kotobank.jp/word/%E8%90%BD%E7%9D%80%E3%81%8F-452941",
+      "https://kotobank.jp/word/%E3%81%AF%E3%81%8B%E3%82%8B-1576791",
+      "https://kotobank.jp/word/%E8%A8%88%E3%82%8B-599904",
+      "https://kotobank.jp/word/%E3%82%86%E3%83%BC%E3%82%82%E3%81%82-3174159",
+      "https://kotobank.jp/word/%E3%82%86%E3%83%BC%E3%82%82%E3%82%89%E3%81%99-3220021",
+      "https://kotobank.jp/word/%E6%9C%AA%E6%9D%A5-640358",
+      "https://kotobank.jp/word/%E3%81%9D%E3%81%A4%E3%81%8F%E3%82%8A-3213431"
+    ],
+    "interpretationNote": "For question 32, choice 2 is the clearest intended use and agrees with the secondary key. The verb はかる can also mean estimate in broader dictionary usage, so choice 3 is described as an awkward collocation here rather than claiming that はかる can never express estimation."
+  },
+  "rows": [
+    {
+      "number": 1,
+      "answer": 3,
+      "options": ["つっんで", "つづんで", "つつんで", "つうづんで"],
+      "explanation": "Đáp án 3 — 包む（つつむ）là gói/bọc; 包んであった diễn tả món quà đã được gói sẵn.\nDịch: “Món quà đã được gói bằng giấy đẹp.”\n1. つっんで: sai cách viết âm; động từ là 包む（つつむ）.\n2. つづんで: âm đục づ không có trong cách đọc này.\n3. つつんで: cách đọc đúng của 包んで.\n4. つうづんで: thêm trường âm và âm đục không đúng với 包む.\nGhi nhớ: 包む（つつむ）= gói, bọc; dạng て là 包んで.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 2,
+      "answer": 4,
+      "options": ["どおくい", "とおくい", "どくい", "とくい"],
+      "explanation": "Đáp án 4 — 得意（とくい）là giỏi về một việc hoặc là sở trường.\nDịch: “Anh ấy giỏi nhảy.”\n1. どおくい: sai âm đầu và thêm trường âm.\n2. とおくい: có trường âm thừa; 得意 đọc là とくい.\n3. どくい: âm đầu bị đục thành ど.\n4. とくい: cách đọc đúng của 得意.\nGhi nhớ: 得意だ = giỏi; ダンスが得意 = giỏi nhảy.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 3,
+      "answer": 1,
+      "options": ["はっけん", "はけん", "はつけん", "ぼつけん"],
+      "explanation": "Đáp án 1 — 発見（はっけん）là sự phát hiện; 発見された là đã được phát hiện.\nDịch: “Một ngôi sao mới đã được phát hiện.”\n1. はっけん: cách đọc đúng của 発見.\n2. はけん: thiếu âm ngắt nhỏ っ.\n3. はつけん: không có âm ngắt nhỏ; đọc sai 発見.\n4. ぼつけん: sai âm đầu; 発 đọc はっ trong từ này.\nGhi nhớ: 発見する = phát hiện; 発見される = được phát hiện.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 4,
+      "answer": 4,
+      "options": ["しめして", "ふやして", "うごかして", "あらわして"],
+      "explanation": "Đáp án 4 — 表す（あらわす）là biểu thị/thể hiện; 表して là dạng て.\nDịch: “Biểu đồ này thể hiện sự thay đổi dân số.”\n1. しめして: 示して（しめして）là chỉ ra, viết bằng 示す; không phải cách đọc của 表す.\n2. ふやして: 増やして（ふやして）là làm tăng; khác nghĩa và chữ.\n3. うごかして: 動かして（うごかして）là làm chuyển động; khác chữ và nghĩa.\n4. あらわして: cách đọc đúng của 表して trong câu này.\nGhi nhớ: 表す（あらわす）= biểu thị; 示す（しめす）= chỉ ra.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 5,
+      "answer": 1,
+      "options": ["けん", "あん", "ほう", "よう"],
+      "explanation": "Đáp án 1 — 件（けん）là việc/vấn đề; 件で電話があった là có điện thoại về việc đó.\nDịch: “Anh/chị Yamada gọi điện về cuộc họp tuần sau.”\n1. けん: cách đọc đúng của 件.\n2. あん: không phải cách đọc của 件.\n3. ほう: không phải cách đọc của 件.\n4. よう: không phải cách đọc của 件.\nGhi nhớ: 件（けん）= việc/vụ; ～の件で連絡する = liên lạc về việc…",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 6,
+      "answer": 2,
+      "options": ["つうがく", "つうきん", "つうやく", "つうしん"],
+      "explanation": "Đáp án 2 — 通勤（つうきん）là việc đi làm hằng ngày.\nDịch: “Việc đi làm mất rất nhiều thời gian.”\n1. つうがく: 通学, đi học hằng ngày.\n2. つうきん: cách đọc đúng của 通勤.\n3. つうやく: 通訳, phiên dịch.\n4. つうしん: 通信, liên lạc/truyền thông.\nGhi nhớ: 通勤 = đi làm; 通学 = đi học; 通訳 = phiên dịch.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 7,
+      "answer": 2,
+      "options": ["かい", "いわ", "すな", "なみ"],
+      "explanation": "Đáp án 2 — 岩（いわ）là tảng đá/đá lớn.\nDịch: “Bờ biển này có nhiều đá.”\n1. かい: 海（うみ／かい）là biển; không phải cách đọc của 岩.\n2. いわ: cách đọc đúng của 岩.\n3. すな: 砂, cát.\n4. なみ: 波, sóng.\nGhi nhớ: 岩（いわ）= đá tảng; 砂（すな）= cát; 波（なみ）= sóng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 8,
+      "answer": 3,
+      "options": ["どうりょく", "とうりょく", "どりょく", "とりょく"],
+      "explanation": "Đáp án 3 — 努力（どりょく）là sự nỗ lực/cố gắng.\nDịch: “Tôi nghĩ nỗ lực là điều quan trọng.”\n1. どうりょく: sai âm đục và trường âm; 努 đọc là ど.\n2. とうりょく: sai trường âm và âm đục.\n3. どりょく: cách đọc đúng của 努力.\n4. とりょく: 努 không đọc là と trong từ này.\nGhi nhớ: 努力する = nỗ lực, cố gắng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 9,
+      "answer": 4,
+      "options": ["盛情", "威常", "正情", "正常"],
+      "explanation": "Đáp án 4 — 正常（せいじょう）là bình thường/hoạt động đúng; câu hỏi cách viết せいじょう.\nDịch: “Tôi đã kiểm tra xem máy móc có hoạt động bình thường hay không.”\n1. 盛情: không phải cách viết chuẩn của từ “bình thường” được hỏi.\n2. 威常: hai chữ này không tạo thành từ thông dụng chỉ trạng thái bình thường.\n3. 正情: 情 có thể liên quan đến cảm xúc/tình hình, nhưng đây không phải cách viết của “bình thường”.\n4. 正常: cách viết đúng của せいじょう với nghĩa bình thường.\nGhi nhớ: 正常（せいじょう）= bình thường; 異常（いじょう）= bất thường.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 10,
+      "answer": 3,
+      "options": ["意識", "園圧", "血液", "血圧"],
+      "explanation": "Đáp án 3 — 血液（けつえき）là máu; 血液検査 là xét nghiệm máu.\nDịch: “Tôi đã làm xét nghiệm máu trong buổi khám sức khỏe.”\n1. 意識（いしき）= ý thức; không phải máu.\n2. 園圧: không phải cách viết của từ chỉ máu trong cụm xét nghiệm này.\n3. 血液（けつえき）= máu; ghép với 検査 thành 血液検査.\n4. 血圧（けつあつ）= huyết áp; khác với máu (血液).\nGhi nhớ: 血液検査 = xét nghiệm máu; 血圧 = huyết áp.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 11,
+      "answer": 2,
+      "options": ["送って", "追って", "押して", "折って"],
+      "explanation": "Đáp án 2 — 追う（おう）là đuổi/theo sau; 追って là dạng て.\nDịch: “Người mẹ đang chạy theo phía sau đứa trẻ.”\n1. 送って（おくって）= gửi/đưa tiễn; không hợp với việc chạy theo sau đứa trẻ.\n2. 追って（おって）= đuổi theo; đúng với 後ろを追って走る.\n3. 押して（おして）= đẩy/ấn; không phải chạy theo.\n4. 折って（おって）= bẻ/gấp; tuy đọc giống おって nhưng khác chữ và nghĩa.\nGhi nhớ: 追う = đuổi theo; 送る = gửi/tiễn; 押す = đẩy; 折る = bẻ/gấp.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 12,
+      "answer": 3,
+      "options": ["移りる", "移る", "降りる", "降る"],
+      "explanation": "Đáp án 3 — 降りる（おりる）là xuống khỏi phương tiện; dạng này dùng cho xuống tàu.\nDịch: “Tôi lỡ để quên ô khi xuống tàu.”\n1. 移りる: không phải dạng động từ chuẩn; 移る（うつる）mới là chuyển/dời.\n2. 移る（うつる）= chuyển sang/di chuyển; sai cách đọc và nghĩa trong ngữ cảnh xuống tàu.\n3. 降りる（おりる）= xuống xe/tàu; đúng với 電車を降りる.\n4. 降る（ふる）= mưa/tuyết rơi; không dùng để nói hành khách xuống tàu.\nGhi nhớ: 電車を降りる = xuống tàu; 雨が降る = trời mưa; 移る = chuyển/dời.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 13,
+      "answer": 3,
+      "options": ["背中", "背後", "身長", "身張"],
+      "explanation": "Đáp án 3 — 身長（しんちょう）là chiều cao cơ thể.\nDịch: “Từ khi vào đại học, chiều cao của tôi không thay đổi.”\n1. 背中（せなか）= lưng.\n2. 背後（はいご）= phía sau/lưng chừng phía sau.\n3. 身長（しんちょう）= chiều cao; đúng với điều được nói là không thay đổi.\n4. 身張 không phải từ chuẩn chỉ chiều cao; chữ đúng là 身長.\nGhi nhớ: 身長 = chiều cao; 背中 = lưng; 背後 = phía sau.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 14,
+      "answer": 1,
+      "options": ["物語", "物化", "物記", "物源"],
+      "explanation": "Đáp án 1 — 物語（ものがたり）là câu chuyện/truyện kể.\nDịch: “Câu chuyện đó thì ai cũng biết.”\n1. 物語（ものがたり）= câu chuyện; cách viết và cách đọc đúng.\n2. 物化 không phải cách viết của ものがたり.\n3. 物記 không phải cách viết của ものがたり.\n4. 物源 không phải cách viết của ものがたり.\nGhi nhớ: 物語（ものがたり）= câu chuyện, truyện kể.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 15,
+      "answer": 1,
+      "options": ["カタログ", "オーダー", "レシート", "セール"],
+      "explanation": "Đáp án 1 — カタログ là catalogue giới thiệu sản phẩm/mẫu xe.\nDịch: “Để mua xe mới, tôi đã lấy catalogue ở cửa hàng.”\n1. カタログ = catalogue; cửa hàng phát tài liệu này để khách xem mẫu xe.\n2. オーダー = đơn đặt hàng/yêu cầu đặt món; không phải tài liệu giới thiệu xe.\n3. レシート = hóa đơn/biên lai sau khi mua hàng.\n4. セール = đợt giảm giá/khuyến mãi.\nGhi nhớ: カタログを見る = xem catalogue; レシートをもらう = nhận hóa đơn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 16,
+      "answer": 4,
+      "options": ["関心", "気分", "考え", "感じ"],
+      "explanation": "Đáp án 4 — 感じ（かんじ）là cảm giác/ấn tượng; 上品な感じがする nghĩa là tạo cảm giác thanh lịch.\nDịch: “Trang phục của anh/chị Tanaka tạo cảm giác rất thanh lịch.”\n1. 関心（かんしん）= sự quan tâm; 関心がある là quan tâm đến điều gì.\n2. 気分（きぶん）= tâm trạng; 気分がする không phù hợp với cấu trúc này.\n3. 考え（かんがえ）= suy nghĩ/ý kiến; 上品な考えがする không tự nhiên ở đây.\n4. 感じ（かんじ）= cảm giác/ấn tượng; 上品な感じがする là kết hợp tự nhiên.\nGhi nhớ: ～感じがする = có cảm giác/ấn tượng rằng…; 上品 = thanh lịch, tao nhã.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 17,
+      "answer": 4,
+      "options": ["価格", "代金", "会費", "家賃"],
+      "explanation": "Đáp án 4 — 家賃（やちん）là tiền thuê nhà.\nDịch: “Để thuê căn hộ quanh đây, cần 50.000 yên tiền thuê mỗi tháng.”\n1. 価格（かかく）= giá niêm yết/giá trị của hàng hóa.\n2. 代金（だいきん）= khoản tiền phải trả để mua hàng/dịch vụ.\n3. 会費（かいひ）= hội phí/phí thành viên.\n4. 家賃（やちん）= tiền thuê nhà; phù hợp với căn hộ và khoản trả hằng tháng.\nGhi nhớ: 家賃 = tiền thuê nhà; 価格 = giá; 代金 = tiền thanh toán; 会費 = hội phí.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 18,
+      "answer": 3,
+      "options": ["ためって", "とじて", "しまって", "たたんで"],
+      "explanation": "Đáp án 3 — しまう trong 辞書をしまう là cất từ điển vào chỗ để, ở đây là trong cặp.\nDịch: “Vì chúng ta sẽ bắt đầu bài kiểm tra, hãy cất từ điển vào trong cặp.”\n1. ためって: không tạo thành cách nói tự nhiên với 辞書を…ください.\n2. とじて（閉じて）= đóng lại; thường dùng với sách/cửa, không có nghĩa cất vào cặp.\n3. しまって（仕舞って）= cất đi; đúng với yêu cầu cất từ điển trước khi kiểm tra.\n4. たたんで（畳んで）= gấp lại; từ điển không được gấp để cất.\nGhi nhớ: 物をしまう = cất đồ; 本を閉じる = đóng sách; 服を畳む = gấp quần áo.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 19,
+      "answer": 2,
+      "options": ["最大", "最新", "最中", "最多"],
+      "explanation": "Đáp án 2 — 最新（さいしん）のファッション là thời trang mới nhất.\nDịch: “Tôi muốn biết xu hướng thời trang mới nhất của giới trẻ Nhật Bản.”\n1. 最大（さいだい）= lớn nhất.\n2. 最新（さいしん）= mới nhất; kết hợp đúng với ファッション.\n3. 最中（さいちゅう）= đang giữa/trong lúc một việc diễn ra.\n4. 最多（さいた）= nhiều nhất về số lượng.\nGhi nhớ: 最新 = mới nhất; 最大 = lớn nhất; 最多 = nhiều nhất; 最中 = đang giữa lúc.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 20,
+      "answer": 1,
+      "options": ["しばって", "かこんで", "しめて", "あんで"],
+      "explanation": "Đáp án 1 — しばる（縛る）là buộc bằng dây; ひもでしばって là buộc bằng dây rồi…\nDịch: “Tôi xếp những tờ báo và tạp chí không cần nữa, buộc chúng bằng dây rồi vứt đi.”\n1. しばって（縛って）= buộc/chằng bằng dây; đúng với ひもで.\n2. かこんで（囲んで）= bao quanh; không có nghĩa bó báo lại.\n3. しめて（締めて）= siết/thắt chặt; thường là dây nịt hoặc nút thắt, nhưng không diễn đạt việc bó báo bằng dây tự nhiên như 縛る.\n4. あんで（編んで）= đan; không phải buộc giấy báo.\nGhi nhớ: ひもで縛る = buộc bằng dây; 囲む = bao quanh; 編む = đan.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 21,
+      "answer": 3,
+      "options": ["チェックアウト", "カット", "キャンセル", "オーバー"],
+      "explanation": "Đáp án 3 — キャンセルする là hủy; 予約をキャンセルする là hủy đặt chỗ.\nDịch: “Vì đột nhiên có việc nên tôi đã hủy đặt chỗ ở nhà hàng.”\n1. チェックアウト = làm thủ tục trả phòng.\n2. カット = cắt; không mang nghĩa hủy đặt bàn.\n3. キャンセル = hủy; kết hợp đúng với 予約.\n4. オーバー = vượt quá/áo khoác ngoài tùy ngữ cảnh; không có nghĩa hủy.\nGhi nhớ: 予約をキャンセルする = hủy đặt chỗ; 予約を取る = đặt chỗ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 22,
+      "answer": 2,
+      "options": ["沿い", "向き", "込み", "建て"],
+      "explanation": "Đáp án 2 — 東向き（ひがしむき）là quay/hướng về phía đông.\nDịch: “Phòng của tôi hướng đông.”\n1. 沿い（ぞい）= dọc theo; ví dụ 川沿い, dọc bờ sông.\n2. 向き（むき）= hướng về; 東向き là hướng đông.\n3. 込み（こみ）= đã bao gồm; ví dụ 税込み, đã gồm thuế.\n4. 建て（だて）= kiểu/kết cấu xây dựng hoặc số tầng; ví dụ 2階建て.\nGhi nhớ: 東向き = hướng đông; 川沿い = dọc sông; 税込み = đã gồm thuế.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 23,
+      "answer": 4,
+      "options": ["歓迎", "応援", "期待", "感動"],
+      "explanation": "Đáp án 4 — 感動（かんどう）là xúc động sâu sắc; 感動して泣く là xúc động đến bật khóc.\nDịch: “Hôm qua khi xem phim, tôi đã xúc động đến bật khóc.”\n1. 歓迎（かんげい）= chào đón/hoan nghênh.\n2. 応援（おうえん）= cổ vũ, ủng hộ.\n3. 期待（きたい）= kỳ vọng, mong đợi.\n4. 感動（かんどう）= xúc động; kết hợp tự nhiên với 泣く trong câu này.\nGhi nhớ: 感動する = xúc động; 感動して泣く = xúc động đến khóc.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 24,
+      "answer": 3,
+      "options": ["ぴったり", "ぐっすり", "うっかり", "がっかり"],
+      "explanation": "Đáp án 3 — うっかり là sơ ý/lơ đễnh, thường dẫn đến một lỗi ngoài ý muốn.\nDịch: “Vì đang vội nên tôi sơ ý lên nhầm xe buýt.”\n1. ぴったり = vừa khít/khớp chính xác.\n2. ぐっすり = ngủ say; thường dùng ぐっすり眠る.\n3. うっかり = sơ ý; đúng với việc lên nhầm xe vì vội.\n4. がっかり = thất vọng/chán nản sau khi kỳ vọng không thành.\nGhi nhớ: うっかりする = sơ ý; がっかりする = thất vọng; ぴったり = vừa khít.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 25,
+      "answer": 1,
+      "options": ["りっぱな", "さかんな", "まんぞくな", "しんせんな"],
+      "explanation": "Đáp án 1 — 立派な（りっぱな）là xuất sắc/đáng kính; 立派な医者 là bác sĩ giỏi, đáng kính.\nDịch: “Anh Mori đã học tập chăm chỉ và trở thành một bác sĩ giỏi.”\n1. りっぱな（立派な）= xuất sắc/đáng kính; phù hợp để khen một bác sĩ.\n2. さかんな（盛んな）= phát triển mạnh/sôi nổi; ví dụ hoạt động đang thịnh hành.\n3. まんぞくな（満足な）= khiến hài lòng/đầy đủ; không diễn tả người bác sĩ giỏi trong câu này.\n4. しんせんな（新鮮な）= tươi mới; thường dùng với thực phẩm hoặc ấn tượng mới mẻ.\nGhi nhớ: 立派な人 = người đáng kính/giỏi; 新鮮な魚 = cá tươi.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 26,
+      "answer": 1,
+      "options": ["大変だ", "簡単だ", "つまらない", "おもしろい"],
+      "explanation": "Đáp án 1 — きつい khi nói về công việc là vất vả/nặng nhọc, gần nghĩa với 大変だ.\nDịch: “Công việc lần này rất vất vả.”\n1. 大変だ = vất vả/khó khăn; phù hợp với きつい về công việc.\n2. 簡単だ = dễ dàng; nghĩa trái hướng.\n3. つまらない = chán; nói về mức độ thú vị chứ không phải độ nặng nhọc.\n4. おもしろい = thú vị; không đồng nghĩa với きつい.\nGhi nhớ: 仕事がきつい = công việc nặng nhọc; 大変な仕事 = công việc vất vả.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 27,
+      "answer": 2,
+      "options": ["いそがしかった", "つかれた", "はずかしかった", "こまった"],
+      "explanation": "Đáp án 2 — くたびれた là mệt/kiệt sức, gần nghĩa với 疲れた（つかれた）.\nDịch: “Hôm nay tôi mệt rã rời.”\n1. いそがしかった（忙しかった）= đã bận; bận có thể gây mệt nhưng không đồng nghĩa.\n2. つかれた（疲れた）= đã mệt; đồng nghĩa gần nhất với くたびれた.\n3. はずかしかった（恥ずかしかった）= đã xấu hổ/ngượng.\n4. こまった（困った）= đã gặp khó/không biết xử lý ra sao.\nGhi nhớ: くたびれる = mệt rã rời; 疲れる = mệt.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 28,
+      "answer": 3,
+      "options": ["とれたら", "きまったら", "おわったら", "はじまったら"],
+      "explanation": "Đáp án 3 — 休みが明ける là kỳ nghỉ kết thúc; 明けたら tương đương おわったら trong câu này.\nDịch: “Khi kỳ nghỉ kết thúc, tôi sẽ liên lạc lại.”\n1. とれたら（取れたら）= nếu lấy được/giành được; không hợp với 休みが.\n2. きまったら（決まったら）= nếu được quyết định; không có nghĩa kỳ nghỉ kết thúc.\n3. おわったら（終わったら）= khi kết thúc; gần nghĩa đúng với 休みが明けたら.\n4. はじまったら（始まったら）= khi bắt đầu; ngược nghĩa với kết thúc kỳ nghỉ.\nGhi nhớ: 休みが明ける = kỳ nghỉ kết thúc; 休みが始まる = kỳ nghỉ bắt đầu.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 29,
+      "answer": 3,
+      "options": ["客があまりいない", "品物があまりない", "客がたくさんいる", "品物がたくさんある"],
+      "explanation": "Đáp án 3 — 混雑している là đông đúc; cửa hàng đông khách tương ứng với 客がたくさんいる.\nDịch: “Cửa hàng này lúc nào cũng đông.”\n1. 客があまりいない = không có nhiều khách; trái với đông đúc.\n2. 品物があまりない = không có nhiều hàng hóa; nói về lượng hàng, không phải đông người.\n3. 客がたくさんいる = có nhiều khách; diễn đạt cửa hàng đông khách.\n4. 品物がたくさんある = có nhiều hàng hóa; không đồng nghĩa với đông khách.\nGhi nhớ: 混雑する = đông đúc; 客が多い = đông khách; 品物が多い = nhiều hàng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 30,
+      "answer": 2,
+      "options": ["よく知られている", "わかりやすい", "あまり知られていない", "わかりにくい"],
+      "explanation": "Đáp án 2 — 単純だ là đơn giản/không phức tạp; trong câu này điều đó khiến luật dễ hiểu, gần nhất với わかりやすい.\nDịch: “Luật của môn thể thao này rất đơn giản.”\n1. よく知られている = được biết đến rộng rãi; nói về độ phổ biến, không phải độ đơn giản.\n2. わかりやすい = dễ hiểu; diễn đạt gần nhất ý luật đơn giản, không phức tạp.\n3. あまり知られていない = không được biết đến nhiều; không liên quan độ phức tạp.\n4. わかりにくい = khó hiểu; trái với ý của câu.\nGhi nhớ: 単純だ = đơn giản; わかりやすい = dễ hiểu. Trong ngữ cảnh này, luật đơn giản nên dễ hiểu.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 31,
+      "answer": 4,
+      "options": [
+        "電車が駅に落ち着いたら電話をください",
+        "この商品は人気がなくて、棚にずっと落ち着いている",
+        "家のかぎが穴に落ち着いた",
+        "火事のとき落ち着いて行動しよう"
+      ],
+      "explanation": "Đáp án 4 — 落ち着く（おちつく）là bình tĩnh lại hoặc trở nên ổn định; 「落ち着いて行動する」 là bình tĩnh hành động.\nDịch: “Khi có hỏa hoạn, hãy bình tĩnh hành động.”\n1. Muốn nói tàu đến ga, dùng 駅に着く／停車する; 落ち着く không phải cách nói thông thường cho việc tàu đến nơi.\n2. Hàng chưa bán được và vẫn ở trên kệ nói 売れ残っている／棚に残っている; 落ち着く không diễn tả việc hàng còn tồn ở đây.\n3. Chìa khóa lọt vào lỗ nói 穴に入る／はまる; 落ち着く không diễn tả vật vô tình lọt vào lỗ trong câu này.\n4. 落ち着いて行動する = bình tĩnh hành động; kết hợp đúng.\nGhi nhớ: 落ち着く = bình tĩnh lại/ổn định; tàu đến ga là 着く, hàng còn trên kệ là 残る, vật lọt vào lỗ là はまる.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 32,
+      "answer": 2,
+      "options": [
+        "りんごの数をはかってみたら、１７個あった",
+        "小麦粉やバターをきちんとはかってケーキを作った",
+        "この宿題は一時間ぐらいで終わるとはかっています",
+        "先月の生活費を電卓ではかった"
+      ],
+      "explanation": "Đáp án 2 — 「はかる」 ở đáp án 2 là 量る, cân/đong lượng nguyên liệu; danh từ chỉ vật được đo giúp chọn chữ phù hợp.\nDịch: “Tôi cân đong bột mì và bơ cẩn thận để làm bánh.”\n1. Đếm quả táo nói 数を数える; đo số lượng trong đơn vị quả là không tự nhiên.\n2. Bột mì và bơ cần được cân/đong: 量る là cách dùng đúng.\n3. Để nói ước tính bài tập sẽ xong trong khoảng một giờ, thường nói 一時間ぐらいで終わると見積もっている／思っている. はかる cũng có nghĩa ước lượng trong một số cách dùng, nên không nên khẳng định từ này tuyệt đối không mang nghĩa đó; riêng kết hợp 終わるとはかっています ở câu này kém tự nhiên.\n4. Tính chi phí bằng máy tính nói 電卓で計算する; はかる không mang nghĩa tính tiền.\nGhi nhớ: 量る = cân/đong lượng; 数える = đếm; 時間を計る = đo thời gian; 終わると見積もる = ước tính sẽ xong.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 33,
+      "answer": 2,
+      "options": [
+        "私は映画が好きでユーモアした映画をよく見る",
+        "木村さんはユーモアがあって、いっしょにいると楽しい",
+        "きのう友達が貸してくれた本はとてもユーモアだった",
+        "彼はユーモアに自己紹介をして、名前を覚えてもらった"
+      ],
+      "explanation": "Đáp án 2 — ユーモア là khiếu/sự hài hước; mẫu đúng là ユーモアがある.\nDịch: “Anh Kimura có khiếu hài hước nên ở cùng rất vui.”\n1. ユーモアした映画 không tự nhiên; nói ユーモアのある映画 (phim có nét hài hước).\n2. ユーモアがあって là có khiếu hài hước; kết hợp đúng và câu sau giải thích hệ quả.\n3. ユーモアだった không tự nhiên vì ユーモア là danh từ; có thể nói ユーモラスだった／おもしろかった.\n4. Nói “tự giới thiệu pha chút hài hước” là ユーモアを交えて自己紹介する, không phải ユーモアにする.\nGhi nhớ: ユーモアがある = có khiếu hài hước; ユーモラスな = hài hước; ユーモアを交える = pha chút hài hước.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 34,
+      "answer": 1,
+      "options": [
+        "地球の未来のために環境問題について考えよう",
+        "山本さんは未来は何になりたいですか",
+        "いつ来られるか、未来の都合を教えてください",
+        "未来の今ごろ、大学が建つ予定です"
+      ],
+      "explanation": "Đáp án 1 — 未来（みらい）là tương lai nói chung; 地球の未来 là tương lai của Trái Đất.\nDịch: “Hãy suy nghĩ về vấn đề môi trường vì tương lai của Trái Đất.”\n1. 地球の未来 = tương lai của Trái Đất; kết hợp tự nhiên.\n2. Hỏi ước muốn nghề nghiệp thường nói 将来は何になりたいですか; 未来は không tự nhiên trong mẫu này.\n3. Hỏi lúc nào tiện nói 都合のいい日／これからの予定; 未来の都合 không tự nhiên.\n4. 未来の今ごろ nghe không tự nhiên khi nói mốc dự kiến; thường nói 来年の今ごろ hoặc một mốc thời gian cụ thể.\nGhi nhớ: 未来 = tương lai nói chung; 将来 thường nói định hướng/tương lai của một người; 都合 = sự thuận tiện về lịch.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 35,
+      "answer": 4,
+      "options": [
+        "父は毎朝そっくりの時間に会社に行きます",
+        "私にそっくりのサイズの服が見つかった",
+        "私と祖母の誕生日はそっくりです",
+        "夫と息子は顔だけでなく声までそっくりです"
+      ],
+      "explanation": "Đáp án 4 — そっくり là rất giống nhau; đáp án nói chồng và con trai giống nhau cả khuôn mặt lẫn giọng nói.\nDịch: “Chồng và con trai tôi giống nhau không chỉ ở khuôn mặt mà cả giọng nói.”\n1. Nói cùng một giờ là 同じ時間; そっくりの時間 không dùng tự nhiên.\n2. Quần áo vừa với mình nói 私にぴったりのサイズ; そっくり không có nghĩa vừa vặn.\n3. Sinh nhật trùng nhau nói 誕生日が同じ; そっくり không dùng cho ngày tháng.\n4. そっくりです diễn tả hai người/vật giống nhau rõ rệt; cách dùng đúng.\nGhi nhớ: そっくり = rất giống nhau; ぴったり = vừa khít/phù hợp; 同じ = giống nhau/trùng nhau.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    }
+  ]
+}

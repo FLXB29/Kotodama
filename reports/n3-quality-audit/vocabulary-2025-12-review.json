@@ -1,0 +1,323 @@
+{
+  "generatedAt": "2026-09-27T03:04:23.957Z",
+  "examId": "toan-n3-202512-full",
+  "section": "Từ vựng",
+  "reviewedQuestionCount": 35,
+  "completeExplanationCount": 35,
+  "answerKeysChanged": 0,
+  "automaticGlossaryBlocksRemoved": 19,
+  "q1To14CompanionReview": "reports/n3-quality-audit/vocabulary-2025-12-q1-14-review.json",
+  "sourceLimits": {
+    "originalQuestionPdfVisuallyInspectedThisPass": false,
+    "officialAnswerKeyConfirmed": false,
+    "method": "Checked the existing contextual explanations for all 35 stored vocabulary questions, retained their answers and choices, and removed only appended automatic dictionary blocks when present. Questions 1–14 are also covered by the separate manual review report. This pass does not certify the source transcription or official answer key."
+  },
+  "rows": [
+    {
+      "number": 1,
+      "answer": 3,
+      "options": ["1 せよう", "2 せいゆう", "3 せいよう", "4 せゆう"],
+      "explanation": "Đáp án 3 — 「西洋」（せいよう）là phương Tây; 「西洋の建物」là tòa nhà kiểu phương Tây.\nDịch: “Đây là bức ảnh chụp một tòa nhà phương Tây.”\n1. せよう: thiếu âm い trong cách đọc 西（せい）, nên không phải cách đọc của 西洋.\n2. せいゆう: đọc sai chữ 洋; từ này đọc よう, không phải ゆう.\n3. せいよう: cách đọc đúng của 西洋.\n4. せゆう: vừa thiếu âm い của 西, vừa đọc sai 洋.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 2,
+      "answer": 2,
+      "options": ["1 おしい", "2 くるしい", "3 くやしい", "4 きびしい"],
+      "explanation": "Đáp án 2 — 「苦しい試合」là trận đấu gian nan, căng thẳng hoặc đầy khó khăn.\nDịch: “Lần này là một trận đấu rất căng thẳng.”\n1. おしい（惜しい）: đáng tiếc; suýt đạt được. Không mang nghĩa vất vả của 苦しい.\n2. くるしい（苦しい）: đau đớn, khổ sở hoặc gian nan; đúng với trận đấu khó khăn.\n3. くやしい（悔しい）: cay cú/tiếc nuối vì kết quả không như ý; là cảm xúc sau thất bại, không phải tính chất trận đấu ở đây.\n4. きびしい（厳しい）: nghiêm khắc hoặc khắc nghiệt; không phải cách đọc của 苦しい.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 3,
+      "answer": 4,
+      "options": ["1 たんじん", "2 たじん", "3 たんにん", "4 たにん"],
+      "explanation": "Đáp án 4 — 「他人」（たにん）là người khác/người ngoài; 「他人に見せない」là không cho người khác xem.\nDịch: “Xin đừng cho người khác xem bức thư này.”\n1. たんじん: không phải cách đọc của 他人; thêm âm ん và đọc 人 sai.\n2. たじん: không phải cách đọc chuẩn của từ 他人.\n3. たんにん: không phải cách đọc của 他人; âm ん thừa sau た.\n4. たにん: cách đọc đúng của 他人.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 4,
+      "answer": 1,
+      "options": ["1 ふくつう", "2 ふくつ", "3 ずつう", "4 ずつ"],
+      "explanation": "Đáp án 1 — 「腹痛」（ふくつう）là đau bụng; 「腹痛で休む」là nghỉ vì đau bụng.\nDịch: “Hôm qua tôi nghỉ học vì đau bụng.”\n1. ふくつう: cách đọc Hán Nhật đúng của 腹痛.\n2. ふくつ: thiếu âm dài う ở cuối; không phải cách đọc chuẩn của 腹痛.\n3. ずつう: 「頭痛」, đau đầu; là từ khác, không phải 腹痛.\n4. ずつ: thiếu âm dài và không phải cách đọc của 腹痛.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 5,
+      "answer": 2,
+      "options": ["1 しゅうでん", "2 しゅうてん", "3 じゅうてん", "4 じゅうでん"],
+      "explanation": "Đáp án 2 — 「終点」（しゅうてん）là điểm cuối/ga cuối của tuyến đường.\nDịch: “Ga kế tiếp là ga cuối.”\n1. しゅうでん: 「終電」, chuyến tàu cuối trong ngày; khác chữ 点 và khác nghĩa.\n2. しゅうてん: cách đọc đúng của 終点.\n3. じゅうてん: không phải cách đọc của 終点; 「重点」（じゅうてん）là trọng điểm nhưng viết bằng chữ khác.\n4. じゅうでん: 「充電」, sạc điện; là từ khác và không hợp câu.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 6,
+      "answer": 3,
+      "options": ["1 はたらいて", "2 おどろいて", "3 ないて", "4 やいて"],
+      "explanation": "Đáp án 3 — 「泣いていました」là đã/đang khóc; đây là thể て của 泣く（なく）.\nDịch: “Anh/chị Morita đã khóc.”\n1. はたらいて（働いて）: đang làm việc; khác nghĩa và khác chữ Hán.\n2. おどろいて（驚いて）: ngạc nhiên/giật mình.\n3. ないて（泣いて）: cách đọc đúng của 泣いて, khóc.\n4. やいて（焼いて）: nướng/đốt; thể て của 焼く.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 7,
+      "answer": 1,
+      "options": ["1 おび", "2 えり", "3 そで", "4 いと"],
+      "explanation": "Đáp án 1 — 「帯」（おび）là dải thắt lưng rộng dùng để buộc kimono.\nDịch: “Dải thắt lưng của bộ kimono này rất đẹp.”\n1. おび: cách đọc đúng của 帯 trong nghĩa dải thắt lưng kimono.\n2. えり（襟）: cổ áo.\n3. そで（袖）: tay áo.\n4. いと（糸）: sợi chỉ.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 8,
+      "answer": 4,
+      "options": ["1 ようべん", "2 ようびん", "3 ゆうべん", "4 ゆうびん"],
+      "explanation": "Đáp án 4 — 「郵便」（ゆうびん）là thư từ/dịch vụ bưu chính; 「郵便が届く」là thư được gửi đến.\nDịch: “Hôm qua thư từ mẹ đã được gửi đến.”\n1. ようべん: đọc sai cả chữ 郵（ゆう）lẫn 便（びん）.\n2. ようびん: đọc sai 郵; chữ này đọc ゆう.\n3. ゆうべん: đọc sai 便; trong 郵便, chữ này đọc びん.\n4. ゆうびん: cách đọc đúng của 郵便.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 9,
+      "answer": 2,
+      "options": ["1 通り", "2 辺り", "3 返り", "4 迎り"],
+      "explanation": "Đáp án 2 — 「辺り」（あたり）nghĩa là khu vực xung quanh; 「この辺り」là khu vực này/quanh đây.\nDịch: “Quanh khu vực này có nhiều chung cư.”\n1. 通り（とおり）: con đường; hoặc “đúng như/theo như”. Không phải cách viết của あたり.\n2. 辺り（あたり）: vùng lân cận; đúng nghĩa và cách đọc trong câu.\n3. 返り（かえり）: sự quay lại/trả về; không hợp nghĩa “khu vực”.\n4. 迎り: không phải cách viết thông dụng/chuẩn của từ あたり; 迎える（むかえる）là đón/đón tiếp.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 10,
+      "answer": 2,
+      "options": ["1 絵　　　　　　　　　", "2 図", "3 表", "4 例"],
+      "explanation": "Đáp án 2 — 「図」（ず）là hình vẽ/sơ đồ; 「次の図」là hình minh họa tiếp theo.\nDịch: “Xin hãy xem sơ đồ tiếp theo.”\n1. 絵（え）: tranh/hình vẽ mang tính hình ảnh; không phải cách viết của ず.\n2. 図（ず）: sơ đồ hoặc hình minh họa; đúng cách đọc và nghĩa.\n3. 表（ひょう）: bảng biểu trình bày dữ liệu; thường đọc ひょう.\n4. 例（れい）: ví dụ; thường dùng như 例を見る “xem ví dụ”.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 11,
+      "answer": 4,
+      "options": ["1 細りました", "2 低りました", "3 消りました", "4 減りました"],
+      "explanation": "Đáp án 4 — 「減りました」（へりました）là đã giảm; 「貯金が減る」là tiền tiết kiệm giảm đi.\nDịch: “Tiền tiết kiệm đã giảm đi một chút.”\n1. 細りました: 細る（ほそる）có nghĩa gầy/thon đi và chia quá khứ là ほそりました; không đọc là へりました và không dùng tự nhiên cho số tiền tiết kiệm.\n2. 低りました: không phải dạng động từ chuẩn; 低い（ひくい）là tính từ “thấp”, còn “giảm xuống” có thể nói 低くなる.\n3. 消りました: không phải cách chia chuẩn; 消える（きえる）là biến mất, 消す（けす）là xóa/tắt.\n4. 減りました: dạng lịch sự quá khứ của 減る（へる）, giảm bớt; đúng cách đọc và kết hợp với 貯金.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 12,
+      "answer": 3,
+      "options": ["1 歩動　", "2 走道　", "3 歩道　　", "4 走動"],
+      "explanation": "Đáp án 3 — 「歩道」（ほどう）là vỉa hè/lối đi dành cho người đi bộ; 「歩道ができる」là có thêm vỉa hè.\nDịch: “Nghe nói năm sau ở đây sẽ có vỉa hè.”\n1. 歩動: không phải từ chỉ vỉa hè; 動（どう）là chuyển động, không phải 道（どう）“con đường” trong 歩道.\n2. 走道: không phải từ chuẩn chỉ vỉa hè; 走（そう）liên quan đến chạy, không phải 歩（ほ）“đi bộ”.\n3. 歩道: ghép 歩（đi bộ）+ 道（đường/lối đi）, đọc ほどう; đúng nghĩa.\n4. 走動: không phải cách viết chuẩn của từ được hỏi; hai chữ này không tạo thành nghĩa vỉa hè.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 13,
+      "answer": 1,
+      "options": ["1 打つ", "2 押つ", "3 指つ", "4 折つ"],
+      "explanation": "Đáp án 1 — 「キーボードを打つ」là gõ bàn phím; 打つ（うつ）cũng có nghĩa đánh/đập tùy ngữ cảnh.\nDịch: “Tôi nghe thấy tiếng gõ bàn phím máy tính.”\n1. 打つ（うつ）: gõ phím; cách dùng tự nhiên với キーボード.\n2. 押つ: không phải dạng đúng; 押す（おす）nghĩa là ấn/bấm, chia thể て thành 押して.\n3. 指つ: không phải động từ chuẩn; 指（ゆび）là ngón tay, không có cách đọc hay cách chia này.\n4. 折つ: không phải dạng đúng; 折る（おる）nghĩa là gập/bẻ, thể て là 折って.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 14,
+      "answer": 3,
+      "options": ["1 姓格", "2 性各", "3 性格　", "4 姓各"],
+      "explanation": "Đáp án 3 — 「性格」（せいかく）là tính cách; 「まじめな性格」là tính cách nghiêm túc/chăm chỉ.\nDịch: “Anh/chị Yamada có tính cách nghiêm túc.”\n1. 姓格: không phải cách viết chuẩn của từ này; 姓（せい）là họ, 格（かく）là phẩm cấp/chuẩn mực.\n2. 性各: không phải từ 性格; 性（せい）liên quan đến tính chất/giới tính, 各（かく）nghĩa là mỗi/từng.\n3. 性格（せいかく）: tính cách; đúng cả chữ Hán, cách đọc và nghĩa.\n4. 姓各: ghép sai chữ; 姓 là họ còn 各 là mỗi/từng, không tạo thành từ chỉ tính cách.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 15,
+      "answer": 4,
+      "options": ["1 時代", "2 時期", "3 時速", "4 時差"],
+      "explanation": "Dịch: Nước tôi và Nhật Bản vì có (chênh lệch múi giờ) 12 tiếng nên ngày và đêm ngược nhau.\n\nTại sao chọn 4: 時差 (Jisa - Thời sai) nghĩa là sự chênh lệch về thời gian giữa các múi giờ khác nhau trên thế giới.\n\nCác phương án sai:\n\n時代 (Jidai): Thời đại, thời kỳ lịch sử (ví dụ: thời Edo).\n\n時期 (Jiki): Thời điểm, thời kỳ (ví dụ: thời kỳ gặt hái).\n\n時速 (Jisoku): Tốc độ theo giờ (km/h).",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 16,
+      "answer": 3,
+      "options": ["1 くわしい", "2 だらしない", "3 しかたない", "4 うらやましい"],
+      "explanation": "Dịch: Xe đạp bị hỏng mất rồi, (vì không còn cách nào khác) nên tôi đã đi bộ về nhà.\n\nTại sao chọn 3: しかたない (Shikatanai) nghĩa là \"không còn cách nào khác\", dùng khi gặp tình huống ngoài ý muốn mà phải chấp nhận.\n\nCác phương án sai:\n\nくわしい (Kuwashii): Tường tận, am hiểu chi tiết.\n\nだらしない (Darashinai): Cẩu thả, luộm thuộm (chỉ tính cách/thái độ).\n\nうらやましい (Urayamashii): Ngưỡng mộ, ghen tị (với thành công của người khác).",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 17,
+      "answer": 2,
+      "options": ["1 予想　", "2 決心　", "3 証明", "4 仮定"],
+      "explanation": "Dịch: Vì muốn chữa bệnh cho mọi người, khi còn là học sinh cấp 3 tôi đã (quyết tâm) trở thành bác sĩ.\n\nTại sao chọn 2: 決心 (Kesshin - Quyết tâm) là đưa ra một quyết định quan trọng cho bản thân và giữ vững ý chí đó.\n\nCác phương án sai:\n\n予想 (Yosou): Dự đoán (về kết quả trong tương lai).\n\n証明 (Shoumei): Chứng minh (làm sáng tỏ sự thật).\n\n仮定 (Katei): Giả định (giả sử một điều không có thật).",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 18,
+      "answer": 3,
+      "options": ["1 感想", "2 文句", "3 冗談", "4 自慢"],
+      "explanation": "18. 彼は、いつも（ 3 冗談 ）を言って、みんなを笑わせる面白い人だ。\nDịch: Anh ấy lúc nào cũng nói (đùa), là một người thú vị hay làm mọi người cười.\n\nTại sao chọn 3: 冗談 (Joudan - Nhũng đàm) nghĩa là lời nói đùa, chuyện tiếu lâm.\n\nCác phương án sai:\n\n感想 (Kansou): Cảm tưởng, nhận xét sau khi trải nghiệm điều gì đó.\n\n文句 (Monku): Câu cú hoặc lời phàn nàn, kêu ca.\n\n自慢 (Jiman): Khoe khoang, tự mãn về bản thân.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": [" 1 預けて", "2 泊めて", "3 配って", "4 与えて"],
+      "explanation": "19. ホテルに到着したが、まだ部屋に入れなかったので、受付に荷物を（ 1 預けて ）出かけた。\nDịch: Đã đến khách sạn nhưng vì chưa được vào phòng nên tôi đã (gửi) hành lý ở quầy lễ tân rồi đi ra ngoài.\n\nTại sao chọn 1: 預ける (Azukeru) là gửi vật gì đó cho ai đó trông giữ hộ.\n\nCác phương án sai:\n2.  泊めて (Tomete): Cho ở lại trọ (dùng cho người).\n3.  配って (Kubatte): Phát, phân phát (tờ rơi, quà cáp).\n4.  与えて (Ataete): Ban tặng, gây ra (thường dùng cho cấp trên cho cấp dưới hoặc gây ra ảnh hưởng).",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 20,
+      "answer": 2,
+      "options": ["1 ガイダンス", "2 アナウンス", "3 コマーシャル", "4 スピーチ"],
+      "explanation": "Dịch: Khi đến sân bay, tôi đã nghe thấy (thông báo) rằng chuyến bay sẽ xuất phát muộn.\n\nTại sao chọn 2: アナウンス (Announcement) là thông báo qua loa phát thanh tại nơi công cộng.\n\nCác phương án sai:\n\nガイダンス (Guidance): Sự hướng dẫn, chỉ dẫn (thường là trong học tập/công việc).\n\nコマーシャル (Commercial): Quảng cáo trên TV/Radio.\n\nスピーチ (Speech): Bài diễn văn, bài phát biểu trước đám đông.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 21,
+      "answer": 4,
+      "options": ["1 突然", "2 当然", "3 年中", "4 案外"],
+      "explanation": "Dịch: Tôi cứ nghĩ ngày nghỉ thì sẽ tắc đường, nhưng con đường (hóa ra/bất ngờ thay) lại khá vắng.\n\nTại sao chọn 4: 案外 (Angai - Án ngoại) nghĩa là trái với dự đoán ban đầu, nằm ngoài suy nghĩ.\n\nCác phương án sai:\n\n突然 (Totsuzen): Đột nhiên (xảy ra bất thình lình).\n\n当然 (Touzen): Đương nhiên, dĩ nhiên (đúng như dự đoán).\n\n年中 (Nenjuu): Suốt cả năm, quanh năm.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 22,
+      "answer": 1,
+      "options": ["1 努力", "2 納得", "3 期待", "4 注意"],
+      "explanation": "Dịch: Anh ấy thời trẻ đã cực khổ vô cùng nhưng nhờ (nỗ lực) hết mình mà đã trở thành một chính trị gia tuyệt vời.\n\nTại sao chọn 1: 努力 (Doryoku - Nỗ lực) là cố gắng hết sức để đạt mục tiêu.\n\nCác phương án sai:\n2.  納得 (Nattoku): Sự thấu hiểu, đồng ý (với lý lẽ của người khác).\n3.  期待 (Kitai): Sự kỳ vọng, mong đợi vào người khác.\n4.  注意 (Chuui): Sự chú ý, nhắc nhở.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 23,
+      "answer": 3,
+      "options": ["1 ぺらぺら", "2 からから", "3 ぺこぺこ", "4 どきどき"],
+      "explanation": "Dịch: Không có thời gian, sáng cũng như trưa đều chưa được ăn gì nên bụng (đói meo).\n\nTại sao chọn 3: ぺこぺこ (Pekopeko) là từ láy mô tả trạng thái rất đói bụng.\n\nCác phương án sai:\n\nぺらぺら (Perapera): Nói lưu loát (ngoại ngữ) hoặc vật gì đó mỏng dính.\n\nからから (Karakara): Khô khốc (cổ họng khát nước) hoặc tiếng cười giòn giã.\n\nどきどき (Dokidoki): Tim đập thình thịch (hồi hộp, lo lắng).",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 24,
+      "answer": 4,
+      "options": ["1 満足な", "2 正常な", "3 完全な", "4 確実な"],
+      "explanation": "Dịch: Việc anh Hayashi nghỉ việc là thông tin (xác thực) vì tôi đã nghe trực tiếp từ anh ấy.\n\nTại sao chọn 4: 確実 (Kakujitsu - Xác thực) nghĩa là chắc chắn, có căn cứ rõ ràng, không sai lệch.\n\nCác phương án sai:\n\n満足 (Manzoku): Thỏa mãn, hài lòng.\n\n正常 (Seijou): Bình thường (trạng thái hoạt động bình thường, không lỗi).\n\n完全 (Kanzen): Hoàn hảo, đầy đủ không thiếu sót.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 25,
+      "answer": 1,
+      "options": ["1 取り付けて", "2 取り上げて", "3 受け入れて", "4 引き受けて"],
+      "explanation": "Dịch: Thợ điện đã đến và (lắp đặt) máy điều hòa lên tường phòng giúp tôi.\n\nTại sao chọn 1: 取り付け (Toritsuke) là lắp đặt máy móc, thiết bị vào một vị trí cố định.\n\nCác phương án sai:\n2.  取り上げて (Toriagete): Tịch thu, tước đoạt hoặc đề xuất một đề tài.\n3.  受け入れて (Ukeirete): Tiếp nhận (người/văn hóa/ý kiến).\n4.  引き受けて (Hikiukete): Đảm nhận, nhận lời làm việc gì đó.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 26,
+      "answer": 4,
+      "options": ["1 柔らかい", "2 ぬれた", "3 乾いた　", "4 きれいな"],
+      "explanation": "Đáp án 4: 清潔な nghĩa là sạch sẽ, gần nghĩa nhất với きれいな. Dịch câu: Xin hãy lau bằng chiếc khăn sạch. Phương án 1 柔らかい là mềm; 2 ぬれた là ướt; 3 乾いた là khô. Những tính chất đó không đồng nghĩa với sạch. Ghi nhớ: 清潔な / きれいな nhấn mạnh không bẩn; trợ từ で trong タオルで拭く chỉ dụng cụ dùng để lau.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 27,
+      "answer": 3,
+      "options": [" 1 急いで", "2 少し遅れて", "3 少し前に", "4 ゆっくり"],
+      "explanation": "Dịch: Tôi (vừa nãy) đã ăn cơm xong.\n\nTừ gạch chân: さっき (Sakki): Chỉ một thời điểm cách hiện tại một khoảng ngắn (vừa mới đây).\n\nĐáp án đúng: 3. 少し前に (Một chút trước đó). Cụm này giải thích chính xác khoảng thời gian của \"sakki\".\n\nGiải thích các phương án khác:\n\n急いで (Isoide): Khẩn trương, vội vàng (chỉ cách thức hành động).\n\n少し遅れて (Sukoshi okurete): Muộn một chút.\n\nゆっくり (Yukkuri): Thong thả, chậm rãi.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 28,
+      "answer": 2,
+      "options": ["1 居間", "2 台所", "3 廊下", "4 風呂"],
+      "explanation": "Dịch: Cái này hãy để ở (nhà bếp).\n\nTừ gạch chân: キッチン (Kitchen): Từ mượn tiếng Anh chỉ nhà bếp.\n\nĐáp án đúng: 2. 台所 (Daidokoro): Đây là từ thuần Nhật có nghĩa tương đương là nhà bếp.\n\nGiải thích các phương án khác:\n\n居間 (Ima): Phòng khách (nơi gia đình sinh hoạt chung).\n\n廊下 (Rouka): Hành lang.\n\n風呂 (Furo): Nhà tắm/Bồn tắm.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 29,
+      "answer": 4,
+      "options": ["1 調べて", "2 答えて", "3 聞いて", "4 教えて"],
+      "explanation": "Dịch: Bây giờ, anh Noguchi đang (hướng dẫn/chỉ dạy).\n\nTừ gạch chân: 指導 (Shidou - Chỉ đạo): Nghĩa là hướng dẫn, dạy bảo, dẫn dắt ai đó làm việc gì đó.\n\nĐáp án đúng: 4. 教えて (Oshiete): Dạng Te của động từ \"Oshieru\" (Dạy/Cho biết), có nghĩa gần nhất với việc hướng dẫn.\n\nGiải thích các phương án khác:\n\n調べて (Shirabete): Điều tra, tra cứu, tìm hiểu.\n\n答えて (Kotaete): Trả lời.\n\n聞いて (Kiite): Nghe hoặc Hỏi.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 30,
+      "answer": 3,
+      "options": ["1 休みましょう", "2 食事にしましょう", "3 終わりにしましょう", "4 寝ましょう"],
+      "explanation": "Đáp án 3: おしまいにしましょう gần nghĩa với 終わりにしましょう — hãy kết thúc. Dịch câu: Chúng ta sắp kết thúc thôi. Phương án 1 là hãy nghỉ, 2 là hãy ăn, 4 là hãy ngủ; không phương án nào diễn đạt kết thúc công việc. Ghi nhớ: おしまい là danh từ; mẫu ～にする diễn đạt quyết định/chuyển sang trạng thái đó. Câu tự nhiên là おしまいにしましょう, không phải おしまいましょう.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 31,
+      "answer": 2,
+      "options": [
+        "1 昨日の引っ越しで何度も重い家具をにぎったので体が痛い。",
+        "2 お祭りで弟が迷子にならないように、弟の手をしっかりとにぎった。",
+        "3 風で帽子が飛ばされたが、石原さんが走ってにぎってくれた。",
+        "4 母親が、生まれたばかりの赤ちゃんを大事そうににぎっている。"
+      ],
+      "explanation": "Dịch câu đúng: “Ở lễ hội, để em trai không bị lạc, tôi đã nắm chặt tay em.”\nĐáp án 2 — 握る（にぎる）là nắm bằng tay. 「弟の手をしっかりと握った」: “Tôi nắm chặt tay em trai để em không bị lạc”, dùng đúng.\n1. Nắm đồ nội thất nặng khi chuyển nhà: đồ cồng kềnh thường dùng 持ち上げる・運ぶ (nâng/khiêng), không phải 握る.\n2. Nắm tay em trai ở lễ hội để em không đi lạc: 手を握る là kết hợp chuẩn.\n3. Mũ bị gió thổi bay nhưng Ishihara “chạy rồi nắm”: ý là đuổi theo và bắt lấy, nên dùng 追いかけてつかまえた.\n4. Ôm em bé mới sinh một cách trìu mến: nói 抱く (bế/ôm), không phải 握る (nắm).\nGhi nhớ: 握る nắm tay/vật nhỏ; 持つ cầm; 抱く ôm bế; つかまえる bắt lấy vật/người đang chạy.\n\nTừ trọng tâm (nghĩa theo ngữ cảnh câu đúng): 「握る」（にぎる）: nắm hoặc cầm chặt; ở đây là nắm tay em trai.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 32,
+      "answer": 3,
+      "options": [
+        "1 今朝、妻とけんかしたので、早く仲を修理したい。",
+        "2 腕をけがしたとき、この病院で修理してもらった。",
+        "3 自転車が壊れたので、買ったお店で修理してもらった。",
+        "4 私が間違えた漢字を、先生が赤いペンで修理してくれた。"
+      ],
+      "explanation": "Dịch câu đúng: “Xe đạp bị hỏng nên tôi nhờ cửa hàng đã mua sửa giúp.”\nĐáp án 3 — 修理（しゅうり）là sửa chữa vật bị hỏng để dùng lại. 「自転車が壊れたので、買ったお店で修理してもらった」: “Xe đạp hỏng nên tôi nhờ cửa hàng đã mua sửa giúp”.\n1. Sau cãi nhau muốn “sửa chữa quan hệ”: làm hòa/khôi phục quan hệ là 仲直りする・関係を修復する.\n2. Bị thương ở tay và “được sửa chữa” tại bệnh viện: bác sĩ chữa bệnh là 治療してもらう.\n3. Xe đạp hỏng được cửa hàng sửa: 修理する dùng cho phương tiện/đồ vật hỏng.\n4. Giáo viên dùng bút đỏ “sửa chữa” chữ Hán sai: sửa lỗi bài viết là 直す・訂正する.\nGhi nhớ: 修理 dùng cho máy móc/đồ vật; 治療 dùng cho người bệnh; 訂正・直す dùng cho lỗi; 仲直り dùng cho quan hệ.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 33,
+      "answer": 4,
+      "options": [
+        "1 今日はたくさん商品が売れて、目的の 10 万円を超えました。",
+        "2 お店を予約するとき、窓側の席がいいと目的を伝えた。",
+        "3 来週から 1 か月海外に出張する目的なので、準備に忙しい。",
+        "4 この研究の目的は、新しい薬の効果を調べることです。"
+      ],
+      "explanation": "Dịch câu đúng: “Mục đích của nghiên cứu này là khảo sát hiệu quả của một loại thuốc mới.”\nĐáp án 4 — 目的（もくてき）là mục đích cần đạt khi làm việc gì. 「この研究の目的は、新しい薬の効果を調べることです」: “Mục đích nghiên cứu này là khảo sát hiệu quả của thuốc mới”.\n1. Bán được hàng vượt 100.000 yên: con số đặt ra là 目標 (mục tiêu), không phải 目的.\n2. Khi đặt chỗ, báo muốn ngồi cạnh cửa sổ: đó là 希望 (nguyện vọng), không phải mục đích.\n3. Vì sắp đi công tác nước ngoài một tháng nên bận chuẩn bị: nói 海外出張する予定なので (vì có lịch đi công tác), không dùng 目的なので.\n4. Nghiên cứu được thực hiện nhằm kiểm tra hiệu quả thuốc: nêu rõ làm để làm gì, nên 目的 dùng đúng.\nGhi nhớ: 目的 = mục đích/lý do thực hiện; 目標 = đích/mốc muốn đạt; 希望 = mong muốn; 予定 = kế hoạch.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 34,
+      "answer": 1,
+      "options": [
+        "1 子どものときの写真を見て、懐かしい気持ちになった。",
+        "2 ここは 800 年前に建てられた懐かしい寺なので、見学の人が多い。",
+        "3 結婚して 30 年たったので、妻とは懐かしい関係だ。",
+        "4 私と田村さんは、会ってすぐに懐かしい友達になった。"
+      ],
+      "explanation": "Dịch câu đúng: “Nhìn bức ảnh hồi nhỏ, tôi cảm thấy bồi hồi nhớ lại.”\nĐáp án 1 — 懐かしい（なつかしい）diễn tả cảm giác bồi hồi khi nhớ lại điều thân thuộc trong quá khứ. 「子どものときの写真を見て、懐かしい気持ちになった」: “Nhìn ảnh hồi nhỏ, tôi thấy bồi hồi nhớ lại”.\n1. Ảnh thời thơ ấu gợi cảm xúc nhớ về quá khứ: 懐かしい dùng tự nhiên.\n2. Ngôi chùa 800 năm tuổi là cổ kính/lịch sử: 歴史のある・古い寺, không phải 懐かしい nếu người nói không có kỷ niệm riêng.\n3. Quan hệ với vợ sau 30 năm là thân thiết/gắn bó: 親しい関係・長い付き合い; 懐かしい không tả mức độ thân thiết hiện tại.\n4. Mới gặp Tamura nhưng “trở thành người bạn hoài niệm”: người mới quen là 友達になる・親しくなる; 懐かしい chỉ cảm xúc nhớ lại chuyện cũ.\nGhi nhớ: 懐かしい gợi kỷ niệm; 親しい là thân; 歴史がある là có lịch sử lâu đời.\n\nTừ trọng tâm (nghĩa theo ngữ cảnh câu đúng): 「懐かしい」（なつかしい）: gợi nhớ quá khứ thân thuộc, khiến người ta bồi hồi.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    },
+    {
+      "number": 35,
+      "answer": 3,
+      "options": [
+        "1 友達の都合が悪くなって、食事の約束が来週に変化してしまった。",
+        "2 引っ越して住所が変化したので、みんなに知らせた。",
+        "3 インターネットが登場して、人々の生活は大きく変化した。",
+        "4 会議の司会は、水野さんから高橋さんに変化するそうです。"
+      ],
+      "explanation": "Dịch câu đúng: “Internet xuất hiện và cuộc sống của mọi người đã thay đổi đáng kể.”\nĐáp án 3 — 変化（へんか）là sự thay đổi trạng thái/tính chất. 「インターネットが登場して、人々の生活は大きく変化した」: “Internet xuất hiện khiến đời sống con người thay đổi lớn”.\n1. Bữa ăn bị chuyển sang tuần sau: đổi lịch là 変更する・延期する, không phải 変化する.\n2. Địa chỉ thay đổi sau khi chuyển nhà: thông tin được cập nhật/đổi là 住所が変わった・変更になった.\n3. Internet làm đời sống đổi khác rõ rệt: 生活が変化する dùng đúng.\n4. Người điều phối cuộc họp đổi từ Mizuno sang Takahashi: đổi người phụ trách là 交代する.\nGhi nhớ: trạng thái biến đổi là 変化; lịch/thông tin đổi là 変更; đổi người trực là 交代.",
+      "promptTranslated": true,
+      "fourChoiceDiscussionPresent": true
+    }
+  ],
+  "verdict": "The full vocabulary section has a stored explanation for every question and the appended automatic glossary blocks were removed. This cleanup does not re-verify the official key or original question text."
+}

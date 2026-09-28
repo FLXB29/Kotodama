@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-09-26T21:05:36.958Z",
+  "examId": "toan-n3-202207-full",
+  "scope": "Source-text and answer-explanation corrections for questions 44, 48–52, 62, and 65 in the July 2022 N3 full mock.",
+  "sourceReview": {
+    "questionPaper": "13. N3 7 2022.pdf",
+    "printedPagesReviewed": [6, 7, 10, 11],
+    "answerSheet": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerSheetPdfPage": 24,
+    "userProvidedStarAnswers": [2, 2, 3, 1, 4],
+    "officialAnswerKeyConfirmed": false
+  },
+  "corrections": [
+    {
+      "questionNumber": 44,
+      "field": "speaker label in question and sentence",
+      "before": "田中「わかりました。では、またあとで（　）。」",
+      "after": "石山「わかりました。では、またあとで（　）。」",
+      "sourcePdfPage": 6
+    },
+    {
+      "questionNumber": 48,
+      "field": "star answer, star position, verification metadata, and curated explanation",
+      "beforeAnswer": 4,
+      "afterAnswer": 2,
+      "beforeStarPositionZeroBased": 2,
+      "afterStarPositionZeroBased": 1,
+      "afterOrder": [3, 2, 4, 1],
+      "correctAnswer": 2,
+      "sourcePdfPage": 6
+    },
+    {
+      "questionNumber": 49,
+      "printedQuestionNumber": 15,
+      "field": "source verification metadata",
+      "order": [3, 1, 2, 4],
+      "starPositionZeroBased": 2,
+      "answer": 2,
+      "sourcePdfPage": 6
+    },
+    {
+      "questionNumber": 50,
+      "printedQuestionNumber": 16,
+      "field": "source verification metadata",
+      "order": [1, 4, 3, 2],
+      "starPositionZeroBased": 2,
+      "answer": 3,
+      "sourcePdfPage": 6
+    },
+    {
+      "questionNumber": 51,
+      "printedQuestionNumber": 17,
+      "field": "source verification metadata",
+      "order": [4, 2, 1, 3],
+      "starPositionZeroBased": 2,
+      "answer": 1,
+      "sourcePdfPage": 7
+    },
+    {
+      "questionNumber": 52,
+      "printedQuestionNumber": 18,
+      "field": "source verification metadata",
+      "order": [2, 1, 4, 3],
+      "starPositionZeroBased": 2,
+      "answer": 4,
+      "sourcePdfPage": 7
+    },
+    {
+      "questionNumber": 48,
+      "sectionExamId": "cm2u2xt6n016j134inupqhmlp-grammar-reading",
+      "field": "option 4 and reconstructed script orthography",
+      "before": "分かりやすく教えてくれる",
+      "after": "わかりやすく教えてくれる",
+      "sourcePdfPage": 6
+    },
+    {
+      "questionNumber": 62,
+      "field": "options[2]",
+      "before": "熱い飲み物を入れら、水筒が壊れてしまったこと",
+      "after": "熱い飲み物を入れたら、水筒が壊れてしまったこと",
+      "sourcePdfPage": 10,
+      "changed": false
+    },
+    {
+      "questionNumber": 62,
+      "field": "options[3]",
+      "before": "熱いもの飲み物が水筒から直接飲めなかったこと    熱い飲み物がすぐに冷めてしまったこと",
+      "after": "熱い飲み物が水筒から直接飲めなかったこと",
+      "sourcePdfPage": 10,
+      "changed": false
+    },
+    {
+      "questionNumber": 65,
+      "field": "options[4]",
+      "before": "カラスの鳴き方の違いを利用して、「東でも問題のない場所」に行かせる実験",
+      "after": "カラスの鳴き方の違いを利用して、「集まっても問題のない場所」に行かせる実験",
+      "sourcePdfPage": 11,
+      "changed": false
+    }
+  ],
+  "note": "The question and answer-sheet PDFs were read directly in Chrome. The user-provided answer sheet is a reference and is not represented as an official JLPT key. These corrections do not certify the full exam."
+}

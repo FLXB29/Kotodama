@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-09-27T11:04:50.829Z",
+  "exam": "JLPT N3 December 2016",
+  "scope": "Grammar questions 36–58 (printed questions 1–23).",
+  "questionPdf": "https://drive.google.com/file/d/1ZPZIPaDo5BrgR-n0h5XUcpCOXR73Riz7/view",
+  "secondaryAnswerKey": "https://chuyenngoaingu.com/news/dap-an-ky-thi-jlpt-thang-12-nam-2016-201.aspx",
+  "answerKeyStatus": "Compared against a published nonofficial answer table and independently assembled in context; the table is not an official JLPT answer sheet.",
+  "verifiedAnswerSequence": {
+    "mondai1": [2, 4, 3, 1, 4, 2, 3, 2, 3, 1, 2, 4, 1],
+    "mondai2": [2, 4, 2, 1, 3],
+    "mondai3": [3, 4, 1, 3, 2]
+  },
+  "keyConflictResolved": {
+    "questionNumber": 49,
+    "printedQuestion": 14,
+    "before": 3,
+    "after": 2,
+    "reason": "The source marks slot 2; the correct assembled sentence order is 4→2→3→1. The full-section master and nonofficial answer table both indicate 2."
+  },
+  "sourceCorrections": [
+    {
+      "questionNumber": 37,
+      "printedQuestion": 2,
+      "correction": "会社面接 → 会社の面接",
+      "reason": "The original PDF contains の."
+    },
+    {
+      "questionNumber": 42,
+      "printedQuestion": 7,
+      "correction": "申し上げ生す → 申し上げます",
+      "reason": "Corrected clear kana transcription in option 4."
+    },
+    {
+      "questionNumber": 43,
+      "printedQuestion": 8,
+      "correction": "持いくつもりだ / 持っていくつ香りだ → 持っていくつもりだ",
+      "reason": "Restored the printed option from the scanned PDF."
+    },
+    {
+      "questionNumber": 46,
+      "printedQuestion": 11,
+      "correction": "予約してある → 予約してあるね",
+      "reason": "Restored the final ね printed in option 4."
+    },
+    {
+      "questionNumber": 47,
+      "printedQuestion": 12,
+      "correction": "ごのトマト → このトマト",
+      "reason": "Restored the demonstrative visible in the original PDF."
+    },
+    {
+      "questionNumber": 52,
+      "printedQuestion": 17,
+      "correction": "(レスランで) → (レストランで); quoted wording retained as a disclosed source conflict",
+      "reason": "The scan and PDF text layer disagree on the prompt ending and option 2; see the star-specific review instead of treating this as a settled OCR correction."
+    },
+    {
+      "questionNumber": 57,
+      "printedQuestion": 22,
+      "correction": "持つのかもしれせん / つの かもしれません → 持つのかもしれません",
+      "reason": "Restored the beginning of option 3 and the correct kana."
+    }
+  ],
+  "explanationCoverage": "All 23 grammar explanations include the selected answer, a Vietnamese translation or full translated context, and a reason for each choice.",
+  "sourceDiscrepancies": [
+    {
+      "printedQuestion": 17,
+      "internalQuestionNumber": 52,
+      "status": "source-conflict-disclosed-editorial-reconstruction",
+      "visiblePromptEnding": "待てって",
+      "printedOption2": "と言われた",
+      "appOption2": "言われた",
+      "alternatePdfOption2": "言われた",
+      "alternatePdfUrl": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/De-N3-12-2016.pdf",
+      "explanation": "The supplied Google Drive PDF prints と言われた, while a separate published PDF copy prints 言われた and corroborates the app wording. Keep the version difference disclosed; no official JLPT key is established.",
+      "detailReport": "star-source-2016-12-q17-review.json"
+    }
+  ]
+}

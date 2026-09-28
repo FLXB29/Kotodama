@@ -1,0 +1,239 @@
+{
+  "generatedAt": "2026-09-26T10:24:01.313Z",
+  "examId": "toan-n3-201912-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the answer sequence with a Vietnamese reference table and a separately uploaded answer compilation. The Vietnamese table agrees with the stored sequence; the Scribd compilation differs on one item. Neither source is an official JLPT answer sheet, so the disputed item remains flagged.",
+  "sources": [
+    {
+      "name": "TrungTamNhatNgu answer table",
+      "url": "https://trungtamnhatngu.edu.vn/blog/dap-an-ky-thi-jlpt-12-2019-tu-n5-n1-chinh-xac-nhat-1746/"
+    },
+    {
+      "name": "Scribd answer compilation",
+      "url": "https://www.scribd.com/document/885818943/%C4%90ap-An-Jlpt-n3-Update-290724"
+    }
+  ],
+  "disputedQuestion": {
+    "questionNumber": 41,
+    "storedAndReviewed": 2,
+    "vietnameseReference": 2,
+    "scribdReference": 3,
+    "note": "「買うことにしている」 is the natural form for a recurring personal rule, and the Vietnamese table agrees. The Scribd sequence differs; keep the discrepancy visible rather than treating the cross-check as unanimous."
+  },
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "scribdReference": 2,
+      "choices": [
+        "1.に",
+        "2.を",
+        "3.が",
+        "4.と"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "vietnameseReference": 1,
+      "scribdReference": 1,
+      "choices": [
+        "1.『リボン』って",
+        "2.『リボン』とか",
+        "3.『リボン』だって",
+        "4.『リボン』なんか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        " 1.もっと",
+        "2.いまにも",
+        "3.もしかしたら",
+        "4.いつのまにか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1.どれ",
+        "2.どれか",
+        "3.いくつ",
+        "4.いくつか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        "1.見てあったら",
+        "2.見ていたら",
+        "3.見終わったら",
+        "4.見続けたら"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "scribdReference": 3,
+      "choices": [
+        " 1.買うはずだ",
+        "2.買うことにしている",
+        "3.買うところだ",
+        "4.買うようになっている"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": false
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "vietnameseReference": 1,
+      "scribdReference": 1,
+      "choices": [
+        " 1.見つかってよかった　",
+        "2.見つかるほうがいい",
+        "3.見つかったようだ",
+        "4.見つかりそうだった"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        " 1.うかがいましたか",
+        "2.申し上げましたか",
+        "3.おっしゃいましたか",
+        "4.お聞きになりましたか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "vietnameseReference": 1,
+      "scribdReference": 1,
+      "choices": [
+        " 1.までしか",
+        "2.までだけ",
+        "3.からしか",
+        "4.からだけ"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "scribdReference": 3,
+      "choices": [
+        "1.食べていて",
+        "2.食べているのに",
+        "3.食べようと思って",
+        "4.食べようと思うのに"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1.終わる前は",
+        "2.終わってからは",
+        "3.終わる前でも",
+        "4.終わってからでも"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "scribdReference": 2,
+      "choices": [
+        "1.通ってみたところだ",
+        "2.通ってみたことがある",
+        "3.通っておいたところだ",
+        "4.通っておいたことがある"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "scribdReference": 4,
+      "choices": [
+        "1.なりそうだ",
+        "2.なることができた",
+        "3.なっていたと思う",
+        "4.なりたいと思っていた"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true,
+      "answerMatchesScribd": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "storedMatchesVietnameseReference": 13,
+    "storedMatchesScribd": 12
+  }
+}

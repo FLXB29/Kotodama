@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-09-27T03:39:51.663Z",
+  "examId": "toan-n3-201112-full",
+  "sourceUrl": "https://www.scribd.com/document/1022846440/2-N3-12-2011",
+  "officialAnswerKeyConfirmed": false,
+  "answerKeysChanged": 0,
+  "rows": [
+    {
+      "number": 48,
+      "type": "source-transcription-correction",
+      "correctedFields": ["question", "sentence"],
+      "correction": "小学校に入学したことからは、だんだん風を引いたり → 小学校に入学したころからは、だんだん風邪を引いたり",
+      "answer": 2,
+      "answerKeyChanged": false,
+      "evidence": "Compared the prompt with the accessible exam copy; it reads 入学したころからは and 風邪を引いたり."
+    },
+    {
+      "number": 50,
+      "type": "star-order-explanation",
+      "answer": 4,
+      "correctOrder": [2, 1, 4, 3],
+      "starPosition": 3,
+      "starChoice": 4,
+      "fullSentence": "この美術館には、19世紀の画家たちによって描かれた絵がたくさんあります。",
+      "allFourChoicesExplained": true,
+      "translated": true,
+      "answerKeyChanged": false
+    }
+  ]
+}

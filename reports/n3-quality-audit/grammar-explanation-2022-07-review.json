@@ -1,0 +1,26 @@
+{
+  "examId": "toan-n3-202207-full",
+  "scope": "Grammar Mondai 1, questions 35–47 (printed items 1–13).",
+  "sourceReview": {
+    "questionPaper": "13. N3 7 2022.pdf",
+    "questionPaperPages": [5, 6],
+    "answerSheet": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerSheetPdfPage": 24,
+    "storedAnswersMatchUserProvidedSheet": 13,
+    "officialAnswerPdfConfirmed": false,
+    "sourceCorrection": {
+      "questionNumber": 44,
+      "questionPaperPage": 6,
+      "field": "speaker label for わかりました",
+      "before": "田中「わかりました。では、またあとで（　）。」",
+      "after": "石山「わかりました。では、またあとで（　）。」",
+      "reason": "The source PDF assigns this reply to 石山 after 田中 says he is about to enter a meeting."
+    }
+  },
+  "explanationCriteria": {
+    "questionsReviewed": 13,
+    "allFourChoicesExplained": true,
+    "fullVietnameseTranslation": true,
+    "grammarOrUsageNotePresent": true
+  }
+}

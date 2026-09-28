@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-09-26T09:39:29.616Z",
+  "examId": "toan-n3-201612-full",
+  "questionId": "toan_q_2016_12_29",
+  "fullExamQuestionNumber": 29,
+  "printedQuestionNumber": 29,
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPage": 3,
+    "promptAndOptionsObserved": true,
+    "prompt": "パーティーの料理があまりました。",
+    "options": [
+      "多すぎて残りました",
+      "少し足りませんでした",
+      "とてもおいしかったです",
+      "そんなにおいしくなかったです"
+    ]
+  },
+  "answer": 1,
+  "reasoning": "あまる means food or another amount remains unused. Choice 1 says too much remained; choice 2 says a little was insufficient, while 3 and 4 only evaluate taste.",
+  "officialAnswerKeyPresent": false,
+  "explanationChecks": {
+    "vietnameseTranslation": true,
+    "everyOptionExplainedInContext": true,
+    "unrelatedDictionaryMatchesRemoved": true
+  }
+}

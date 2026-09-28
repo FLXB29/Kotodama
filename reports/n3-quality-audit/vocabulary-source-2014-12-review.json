@@ -1,0 +1,283 @@
+{
+  "examId": "toan-n3-201412-full",
+  "reviewedOn": "2026-09-26",
+  "scope": "JLPT N3 12/2014 vocabulary answer-key comparison for questions 1–35, plus source transcription review for questions 18 and 30.",
+  "sources": {
+    "examPdf": {
+      "url": "https://drive.google.com/file/d/1YhA5giAFeFjf1aUb3HjahysLC6-wP1zR/view",
+      "viewedPages": [
+        1,
+        2,
+        3
+      ]
+    },
+    "answerKeyPdf": {
+      "url": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view",
+      "viewedPage": 10,
+      "officialStatus": "not established"
+    }
+  },
+  "answerKeyQuestions": [
+    {
+      "questionId": "toan_q_2014_12_1",
+      "number": 1,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_2",
+      "number": 2,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_3",
+      "number": 3,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_4",
+      "number": 4,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_5",
+      "number": 5,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_6",
+      "number": 6,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_7",
+      "number": 7,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_8",
+      "number": 8,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_9",
+      "number": 9,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_10",
+      "number": 10,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_11",
+      "number": 11,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_12",
+      "number": 12,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_13",
+      "number": 13,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_14",
+      "number": 14,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_15",
+      "number": 15,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_16",
+      "number": 16,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_17",
+      "number": 17,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_18",
+      "number": 18,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_19",
+      "number": 19,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_20",
+      "number": 20,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_21",
+      "number": 21,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_22",
+      "number": 22,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_23",
+      "number": 23,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_24",
+      "number": 24,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_25",
+      "number": 25,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_26",
+      "number": 26,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_27",
+      "number": 27,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_28",
+      "number": 28,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_29",
+      "number": 29,
+      "answer": 4,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_30",
+      "number": 30,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_31",
+      "number": 31,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_32",
+      "number": 32,
+      "answer": 3,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_33",
+      "number": 33,
+      "answer": 1,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_34",
+      "number": 34,
+      "answer": 2,
+      "matched": true
+    },
+    {
+      "questionId": "toan_q_2014_12_35",
+      "number": 35,
+      "answer": 4,
+      "matched": true
+    }
+  ],
+  "sourceTranscriptionQuestions": [
+    {
+      "questionId": "toan_q_2014_12_18",
+      "sourceStem": "袋の底に（　）があいていたので、入れたお菓子がいくつか落ちてしまった。",
+      "sourceOptions": [
+        "穴",
+        "傷",
+        "けが",
+        "汚れ"
+      ],
+      "answer": 1,
+      "examPdfPage": 2,
+      "answerKeyPdfPage": 10,
+      "verified": true
+    },
+    {
+      "questionId": "toan_q_2014_12_30",
+      "sourceStem": "山田さんはこの機械の使い方を指導しています。",
+      "sourceOptions": [
+        "考えています",
+        "習っています",
+        "教えています",
+        "調べています"
+      ],
+      "answer": 3,
+      "examPdfPage": 3,
+      "answerKeyPdfPage": 10,
+      "verified": true
+    }
+  ],
+  "corrections": [
+    {
+      "questionId": "toan_q_2014_12_18",
+      "field": "options[3]",
+      "before": "４. 汚れ",
+      "after": "4. 汚れ",
+      "reason": "Remove the duplicated option number; the source prints option 4 as 汚れ."
+    },
+    {
+      "questionId": "toan_q_2014_12_30",
+      "field": "options[2]",
+      "before": "3.教えていています",
+      "after": "3. 教えています",
+      "reason": "Restore the printed option from the exam PDF."
+    },
+    {
+      "scope": "questions 9–30",
+      "field": "explanation",
+      "reason": "Replace inaccurate dictionary glosses with contextual Vietnamese meanings and concise distractor explanations."
+    }
+  ]
+}

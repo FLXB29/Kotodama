@@ -1,0 +1,25 @@
+{
+  "exam": "JLPT N3 July 2014, Vocabulary Mondai 1",
+  "source": {
+    "questionFile": "5. N3 7-2014.pdf",
+    "questionPage": 1,
+    "questionFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "questionSourceUrl": "https://drive.google.com/file/d/1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C/view",
+    "answerFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerPage": 9,
+    "answerKeyAnswer": 2,
+    "answerKeySource": "Google Drive preview of ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf, page 9; visually checked in the user's connected Chrome session."
+  },
+  "question": {
+    "questionId": "toan_q_2014_07_1",
+    "printedNumber": 1,
+    "sourceStem": "この町は、昔から商業が盛んだった。",
+    "sourceOptions": ["1 さんぎょう", "2 しょうぎょう", "3 じょうぎょう", "4 ざんぎょう"],
+    "appBefore": ["1 さんぎょ", "2 しょうぎょう", "3 じょうぎょう", "4 ざんぎょう"],
+    "appAfter": ["1 さんぎょう", "2 しょうぎょう", "3 じょうぎょう", "4 ざんぎょう"],
+    "answer": 2,
+    "status": "verified",
+    "translation": "Thị trấn này từ xưa đã phát triển hoạt động thương mại.",
+    "correction": "Restored the final う omitted from option 1; expanded the explanation to distinguish 商業 (commerce) from the distractor readings 産業 (industry) and 残業 (overtime). The answer remains 2."
+  }
+}

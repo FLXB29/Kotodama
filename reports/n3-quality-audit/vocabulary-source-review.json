@@ -1,0 +1,91 @@
+{
+  "reviews": [
+    {
+      "questionId": "toan_q_2024_07_26",
+      "exam": "2024/07",
+      "printedQuestion": 26,
+      "pdfPage": 3,
+      "source": "https://www.tiengnhatdongian.com/wp-content/uploads/2024/07/De-thi-JLPT-chinh-thuc-N3-thang-7_2024.pdf",
+      "sourceExcerpt": "26. この商品は売り切れました。 1 ほとんど売れました 2 全部売れました 3 あまり売れませんでした 4 全然売れませんでした",
+      "correction": "Choice 2 was transcribed as 全然売れました; the source PDF says 全部売れました.",
+      "answerKey": {
+        "before": 2,
+        "after": 2,
+        "changed": false
+      },
+      "mirroredInto": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202407-full",
+          "questionId": "toan_q_2024_07_26"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2yale01jo134i8wwru1oo-vocab",
+          "questionId": "cm2u2ybg201ki134ijzygln16"
+        }
+      ]
+    }
+  ],
+  "sourceTranscriptionReviews": [
+    {
+      "exam": "2012/12",
+      "source": "3. N3 12-2012.pdf (Google Drive)",
+      "pdfPage": 2,
+      "reviewedDate": "2026-09-25",
+      "scope": "Verified question stems and all four printed options against the source PDF. Answer choices below were checked against context and Japanese usage, not a separate official answer sheet.",
+      "questions": [
+        {
+          "questionId": "toan_q_2012_12_13",
+          "printedQuestion": 13,
+          "stem": "リボンをきれいにむすぶのは難しい。",
+          "options": ["組ぶ", "絡ぶ", "給ぶ", "結ぶ"],
+          "answer": 4
+        },
+        {
+          "questionId": "toan_q_2012_12_16",
+          "printedQuestion": 16,
+          "stem": "皮を( )りんごを食べました。",
+          "options": ["折って", "離して", "むいて", "やぶって"],
+          "answer": 3
+        },
+        {
+          "questionId": "toan_q_2012_12_17",
+          "printedQuestion": 17,
+          "stem": "水をやるのを忘れていたので、花が ( ) しまった。",
+          "options": ["こわれて", "こげて", "かれて", "とけて"],
+          "answer": 3
+        },
+        {
+          "questionId": "toan_q_2012_12_19",
+          "printedQuestion": 19,
+          "stem": "楽しみにしていたコンサートが中止になって ( ) した。",
+          "options": ["はらはら", "うっかり", "どきどき", "がっかり"],
+          "answer": 4
+        },
+        {
+          "questionId": "toan_q_2012_12_21",
+          "printedQuestion": 21,
+          "stem": "昔の写真を見て、「子どものころ、この公園でよく遊んだなあ」と( )なった。",
+          "options": ["なつかしく", "うらやましく", "くやしく", "はずかしく"],
+          "answer": 1
+        },
+        {
+          "questionId": "toan_q_2012_12_23",
+          "printedQuestion": 23,
+          "stem": "何度もことわっているのに、彼に ( ) 頼まれて困っています。",
+          "options": ["しつこく", "きびしく", "こまかく", "くわしく"],
+          "answer": 1
+        },
+        {
+          "questionId": "toan_q_2012_12_25",
+          "printedQuestion": 25,
+          "stem": "いくら探しても、手袋が( )しか見つからない。",
+          "options": ["半々", "片方", "反対", "部分"],
+          "answer": 2
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-09-25T13:34:04.628Z"
+}

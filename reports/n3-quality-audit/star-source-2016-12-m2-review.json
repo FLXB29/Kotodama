@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-09-27T15:27:36.014Z",
+  "exam": "JLPT N3 December 2016",
+  "scope": "Grammar Mondai 2, printed questions 14–18 (internal questions 49–53).",
+  "sourcePdf": {
+    "title": "7. N3 12-2016.pdf",
+    "url": "https://drive.google.com/file/d/1ZPZIPaDo5BrgR-n0h5XUcpCOXR73Riz7/view",
+    "printedPagesReviewed": [5, 6],
+    "method": "Reviewed the supplied PDF in Chrome, compared the printed question text and starred blank positions visually, and checked its accessible PDF text layer."
+  },
+  "secondaryAnswerKey": {
+    "url": "https://chuyenngoaingu.com/news/dap-an-ky-thi-jlpt-thang-12-nam-2016-201.aspx",
+    "answers": [2, 4, 2, 1, 3],
+    "status": "Published reference table; not an official JLPT key."
+  },
+  "browserVerification": {
+    "browser": "Chrome",
+    "route": "http://127.0.0.1:5173/jlpt",
+    "mode": "answer-study",
+    "result": "The updated question 17 explanation and source-version note rendered; no answers selected, progress remained 0/39."
+  },
+  "officialKeyEstablished": false,
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "internalQuestionNumber": 49,
+      "standaloneQuestionId": "cm2u2wn7c00ar134i39niqeq3",
+      "fullExamQuestionId": "toan_q_2016_12_49",
+      "printedPage": 5,
+      "options": ["見る機会がない", "専門家でも", "なかなか", "研究をしている"],
+      "answer": 2,
+      "order": [4, 2, 3, 1],
+      "starPosition": 1,
+      "completedSentence": "この写真の鳥はとても珍しくて、この鳥の研究をしている専門家でもなかなか見る機会がないそうだ。",
+      "vietnameseTranslation": "Loài chim trong ảnh rất hiếm; nghe nói ngay cả chuyên gia nghiên cứu loài chim này cũng hiếm khi có cơ hội nhìn thấy nó.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "fullSentenceAndTranslation": true,
+        "roleOfEveryFragment": true,
+        "allFourChoicesAddressed": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 15,
+      "internalQuestionNumber": 50,
+      "standaloneQuestionId": "cm2u2wn7d00as134io9swxqz7",
+      "fullExamQuestionId": "toan_q_2016_12_50",
+      "printedPage": 5,
+      "options": ["にも", "にしか", "勉強以外", "大学時代"],
+      "answer": 4,
+      "order": [3, 1, 4, 2],
+      "starPosition": 2,
+      "completedSentence": "春から大学生になる娘には、勉強以外にも大学時代にしかできない経験をいろいろしてほしい。",
+      "vietnameseTranslation": "Tôi mong con gái sắp trở thành sinh viên từ mùa xuân sẽ có nhiều trải nghiệm ngoài việc học mà chỉ có thể có trong quãng đời đại học.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "fullSentenceAndTranslation": true,
+        "roleOfEveryFragment": true,
+        "allFourChoicesAddressed": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 16,
+      "internalQuestionNumber": 51,
+      "standaloneQuestionId": "cm2u2wn7d00at134ihkb620jy",
+      "fullExamQuestionId": "toan_q_2016_12_51",
+      "printedPage": 5,
+      "options": ["のが", "という", "家で過ごす", "どこにも出かけずに"],
+      "answer": 2,
+      "order": [4, 3, 2, 1],
+      "starPosition": 2,
+      "completedSentence": "土曜日は買い物をしたり友人と食事をしたりし、日曜日はどこにも出かけずに家で過ごすというのが、私の好きな週末の過ごし方だ。",
+      "vietnameseTranslation": "Thứ Bảy tôi đi mua sắm hoặc ăn cùng bạn bè; còn Chủ nhật tôi ở nhà, không đi đâu cả. Đó là cách tôi thích dành cuối tuần.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "fullSentenceAndTranslation": true,
+        "roleOfEveryFragment": true,
+        "allFourChoicesAddressed": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 17,
+      "internalQuestionNumber": 52,
+      "standaloneQuestionId": "cm2u2wn7d00au134irqsgbkcg",
+      "fullExamQuestionId": "toan_q_2016_12_52",
+      "printedPage": 5,
+      "options": ["待っているんです", "言われた", "から", "けど"],
+      "answer": 1,
+      "order": [2, 3, 1, 4],
+      "starPosition": 2,
+      "completedSentence": "しばらくここで待てって言われたから待っているんですけど、まだですか。",
+      "vietnameseTranslation": "Họ bảo tôi chờ ở đây một lúc nên tôi vẫn đang đợi, nhưng vẫn chưa đến lượt phải không ạ?",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "fullSentenceAndTranslation": true,
+        "roleOfEveryFragment": true,
+        "allFourChoicesAddressed": true
+      },
+      "sourceStatus": "source-conflict-disclosed-editorial-reconstruction",
+      "sourceConflict": {
+        "promptEndingAsRead": "待てって",
+        "option2AsPrinted": "と言われた",
+        "appOption2": "言われた",
+        "alternatePdfOption2": "言われた",
+        "alternatePdfUrl": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/De-N3-12-2016.pdf",
+        "disclosurePresent": true,
+        "detailReport": "star-source-2016-12-q17-review.json"
+      }
+    },
+    {
+      "printedQuestion": 18,
+      "internalQuestionNumber": 53,
+      "standaloneQuestionId": "cm2u2wn7d00av134ib0zsq383",
+      "fullExamQuestionId": "toan_q_2016_12_53",
+      "printedPage": 6,
+      "options": ["勉強すればするほど", "歴史学科への", "と思うようになって", "もっと学びたい"],
+      "answer": 3,
+      "order": [1, 4, 3, 2],
+      "starPosition": 2,
+      "completedSentence": "歴史を勉強すればするほどもっと学びたいと思うようになって、歴史学科への進学を決めた。",
+      "vietnameseTranslation": "Càng học lịch sử, tôi càng muốn tìm hiểu thêm, rồi dần dần quyết định theo học ngành Lịch sử.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "fullSentenceAndTranslation": true,
+        "roleOfEveryFragment": true,
+        "allFourChoicesAddressed": true
+      },
+      "sourceStatus": "verified-against-source"
+    }
+  ],
+  "remainingIssue": "Question 17 has an explicitly disclosed version difference: the supplied Google Drive PDF prints と言われた, while a separate published PDF copy prints 言われた, matching the app wording. The official JLPT key is not available."
+}

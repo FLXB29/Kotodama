@@ -1,0 +1,89 @@
+{
+  "reviewedAt": "2026-09-27",
+  "exam": "JLPT N3 December 2011",
+  "examId": "toan-n3-201112-full",
+  "section": "Grammar Mondai 2, printed questions 14–18.",
+  "sourcePdf": {
+    "title": "2. N3 12-2011.pdf",
+    "driveFileId": "1JLd7Jc1RtUIs0FwWcE8mXwuqT-h2WjJj",
+    "url": "https://drive.google.com/file/d/1JLd7Jc1RtUIs0FwWcE8mXwuqT-h2WjJj/view",
+    "renderedPages": [
+      {
+        "viewerPage": 5,
+        "printedPage": 5,
+        "printedQuestions": [14, 15, 16]
+      },
+      {
+        "viewerPage": 6,
+        "printedPage": 6,
+        "printedQuestions": [17, 18]
+      }
+    ],
+    "method": "Opened the original Drive PDF in Chrome and visually compared all four printed fragments and the ★ position. Pages 5–6 were checked at 75% and 100% zoom; all five ★ marks are over the third of four blanks. The existing fragment orders make grammatical sentences and place the stored answers in that printed slot.",
+    "limitation": "The PDF confirms source wording and ★ layout, not an official JLPT answer key. The stored answer sequence was not independently confirmed against an official key."
+  },
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "questionId": "toan_q_2011_12_49",
+      "viewerPage": 5,
+      "printedOptions": ["ほど", "仕事は", "これ", "おもしろい"],
+      "order": [3, 1, 4, 2],
+      "starPositionZeroBased": 2,
+      "answer": 4,
+      "completedSentence": "中山「上田さんは、本当にこの仕事が好きなんですね。",
+      "sourceStatus": "verified-against-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 15,
+      "questionId": "toan_q_2011_12_50",
+      "viewerPage": 5,
+      "printedOptions": ["よって", "画家たちに", "絵が", "描かれた"],
+      "order": [2, 1, 4, 3],
+      "starPositionZeroBased": 2,
+      "answer": 4,
+      "completedSentence": "この美術館には、19世紀の画家たちによって描かれた絵がたくさんあります。",
+      "sourceStatus": "verified-against-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 16,
+      "questionId": "toan_q_2011_12_51",
+      "viewerPage": 5,
+      "printedOptions": ["終わってしまって", "何も", "うちに", "食べない"],
+      "order": [2, 4, 3, 1],
+      "starPositionZeroBased": 2,
+      "answer": 3,
+      "completedSentence": "昨日のパーティーは、友だちと話していたら、ほとんど何も食べないうちに終わってしまって、あとでおなかがすいてしまった。",
+      "sourceStatus": "verified-against-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 17,
+      "questionId": "toan_q_2011_12_52",
+      "viewerPage": 6,
+      "printedOptions": ["考える", "というのが", "働く", "どういうことか"],
+      "order": [3, 2, 4, 1],
+      "starPositionZeroBased": 2,
+      "answer": 4,
+      "completedSentence": "夏休みに行われた会社での実習は、わたしにとって、企業で働くというのがどういうことか考えるいい機会になった。",
+      "sourceStatus": "verified-against-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 18,
+      "questionId": "toan_q_2011_12_53",
+      "viewerPage": 6,
+      "printedOptions": ["ジョギングの", "している", "おかげだ", "毎朝"],
+      "order": [4, 2, 1, 3],
+      "starPositionZeroBased": 2,
+      "answer": 1,
+      "completedSentence": "母は「風邪をひかないのは、毎朝しているジョギングのおかげだ。",
+      "sourceStatus": "verified-against-source",
+      "officialKeyEstablished": false
+    }
+  ],
+  "officialAnswerKeyConfirmed": false,
+  "summary": "The original exam PDF confirms all five choice sets and places every ★ in the third blank. Stored answer keys match the third fragment of the reconstructed grammatical order; no official JLPT key was independently verified."
+}

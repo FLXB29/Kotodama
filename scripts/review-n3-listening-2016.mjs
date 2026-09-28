@@ -1,0 +1,450 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const root = fileURLToPath(new URL('../', import.meta.url))
+const masterPath = path.join(root, 'data/jlpt_n3_toan_master.json')
+const curatedPath = path.join(root, 'data/jlpt_n3_explanations_curated.json')
+const reportPath = path.join(root, 'reports/n3-quality-audit/listening-2016-transcript-review.json')
+const master = JSON.parse(fs.readFileSync(masterPath, 'utf8').replace(/^\uFEFF/, ''))
+const curated = JSON.parse(fs.readFileSync(curatedPath, 'utf8').replace(/^\uFEFF/, ''))
+
+const reviews = {
+  toan_q_2016_07_75: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — gọi điện cho thầy Mori. Dịch câu hỏi: “Sau đây người đàn ông phải làm gì?” Trưởng phòng nói email có thể không được thầy xem kịp nên yêu cầu gọi điện để xác nhận tài liệu phát trong buổi hội thảo. 1 sai vì trưởng phòng đã nhận đi mượn micro; 2 sai vì trưởng phòng dặn không gửi email; 4 sai vì loa đã được kiểm tra và hoạt động. Ghi nhớ: lời yêu cầu sửa lại sau cùng thay cho phương án ban đầu.',
+  },
+  toan_q_2016_07_76: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — mua tấm thiệp trước. Dịch câu hỏi: “Trước tiên người phụ nữ phải làm gì?” Cô được nhờ mua thiệp rồi chuyền cho mọi người viết lời nhắn. Người đàn ông tự chuẩn bị quà; cô sẽ đặt nhà hàng sau khi biết ngày; trưởng phòng chưa được hỏi lịch cho tới tuần sau. Vì vậy 2–4 chưa phải việc đầu tiên. Ghi nhớ: xếp việc theo trình tự được giao, không chọn việc thuộc trách nhiệm người khác.',
+  },
+  toan_q_2016_07_77: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — viết cảm nghĩ về câu chuyện khoảng 400 chữ. Dịch câu hỏi: “Sau đây học sinh phải làm gì trước tiên?” Buổi thuyết trình sở thích được chuyển sang ngày mai; hôm nay không có bài kiểm tra chữ Hán. Giáo viên phát giấy để viết cảm nghĩ ngay trong tiết này; bài tập sách giáo khoa mới nộp ngày mai. Do đó 1, 2 và 4 không phải việc cần làm bây giờ.',
+  },
+  toan_q_2016_07_78: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — chỉ cho Hayashi vị trí các mặt hàng. Dịch câu hỏi: “Trước tiên nữ nhân viên phải làm gì?” Việc quét trước cửa gần xong, nên quản lý bảo cô hướng dẫn nhân viên mới xem hàng được bày ở đâu. Giải thích công việc thu ngân là buổi chiều; kiểm tra đồ thất lạc là sau giờ đóng cửa. Vì vậy 1, 3 và 4 đều là việc đã gần xong hoặc làm sau.',
+  },
+  toan_q_2016_07_79: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — lớp trung cấp (中級クラス). Dịch câu hỏi: “Người đàn ông sẽ đăng ký lớp nào?” Anh từng chơi golf nhưng nghỉ một thời gian. Lớp cao cấp đã kín chỗ, nên nhân viên đề nghị bắt đầu ở lớp thấp hơn một bậc: trung cấp. 1 dành cho người mới hoàn toàn; 2 củng cố cách đánh căn bản; 4 là lớp nâng cao hướng tới giải đấu và hiện đã đủ người.',
+  },
+  toan_q_2016_07_80: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — cho giày vào túi rồi mang theo. Dịch câu hỏi: “Sau khi cởi giày ở lối vào, khách tham quan phải làm gì?” Nhân viên phát túi và yêu cầu bỏ giày vào đó để đất không rơi ra. Kệ để giày hôm nay không dùng; không được để giày ở góc lối vào và cũng không cần đưa cho nhân viên. Ghi nhớ: chú ý chỉ dẫn được nhấn mạnh thay cho cách làm thông thường.',
+  },
+  toan_q_2016_07_81: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — quán cà phê ở cửa Bắc. Dịch câu hỏi: “Hai người sẽ gặp nhau ở đâu?” Người đàn ông ban đầu đợi tại cổng soát vé cửa Bắc; người phụ nữ đang sửa giày ở cửa hàng phía Nam và bảo anh chuyển sang quán cà phê quen ở phía Bắc vì việc sửa có thể lâu. 1 là nơi anh đang đứng lúc đầu, không phải điểm hẹn cuối; 3–4 ở khu phía Nam nên sai.',
+  },
+  toan_q_2016_07_82: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — vì nhà có nhiều phòng. Dịch câu hỏi: “Vì sao người đàn ông sống ở căn nhà hiện tại?” Tiền thuê không rẻ hơn nhà gần công ty; anh chọn nhà xa hơn vì có nhiều phòng và có chỗ để nhiều sách. Anh sống một mình chứ không ở cùng bố mẹ; dù có vườn, anh không định nuôi chó vì hay đi công tác. Ghi nhớ: chọn lý do chính người nói nêu, không chọn tiện ích phụ.',
+  },
+  toan_q_2016_07_83: {
+    answer: 4,
+    explanation:
+      'Đáp án 4 — bắt đầu tập luyện ở nhà. Dịch câu hỏi: “Vì sao cô ấy nói gần đây chơi tennis giỏi hơn?” Cô nói đổi vợt và giày chỉ là nói đùa. Cô đã thử tăng số buổi đến lớp, đổi giáo viên và tập ở nhà; với cô, tự tập tại nhà hiệu quả nhất. Vì vậy 1–3 không phải cách đem lại tiến bộ theo kết luận của cô.',
+  },
+  toan_q_2016_07_84: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — vì đang tiết kiệm tiền mua ô tô. Dịch câu hỏi: “Vì sao người đàn ông mang cơm hộp?” Anh không thích nấu ăn lắm; việc tự nghĩ thực đơn mỗi ngày còn hơi vất vả. Anh chuẩn bị cơm để tiết kiệm vì muốn mua xe. Rau và sức khỏe chỉ do người phụ nữ nhận xét, anh nói trước đó không nghĩ tới điều này. 1, 3 và 4 không phải lý do anh nêu.',
+  },
+  toan_q_2016_07_85: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — không thể mặc thử món đồ trước khi mua. Dịch câu hỏi: “Lý do lớn nhất khiến người đàn ông không mua quần áo trên mạng là gì?” Anh nhắc phí vận chuyển và thời gian giao hàng, nhưng nói điều khiến mình ngại nhất là không được mặc thử đồ thật trước khi đặt. Việc phải cung cấp tên và địa chỉ là mối lo của người phụ nữ, không phải lý do của anh. Ghi nhớ: phân biệt điều được nhắc tới với điều được nhấn mạnh là quan trọng nhất.',
+  },
+  toan_q_2016_07_86: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — chưa biết tên của tất cả người sử dụng. Dịch câu hỏi: “Vì sao hôm nay người đàn ông chưa đăng ký sử dụng nhà thi đấu được?” Anh có giấy phép lái xe chứng minh cư trú và có con dấu, nhưng chưa biết tên tất cả 12 người nên chưa điền đủ đơn. Giấy tờ và con dấu đều hợp lệ; lệ phí có thể trả bằng tiền mặt khi nộp đơn vào hôm sau. Vì thế 1, 2 và 4 sai.',
+  },
+  toan_q_2016_07_87: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — những điều tốt đẹp khi nuôi chim. Dịch câu hỏi: “Người đàn ông đang nói chủ yếu về điều gì?” Cậu con trai tự chăm sóc chim, gia đình trò chuyện nhiều hơn và đưa chú chim vào tranh vẽ gia đình; ông cũng thích tiếng chim đáp lại khi gọi tên. Việc cắt móng khó với trẻ chỉ là chi tiết phụ; ông không giải nghĩa tên Shiro hay hướng dẫn cách nuôi. Các lựa chọn hiển thị được khôi phục từ chính transcript.',
+  },
+  toan_q_2016_07_88: {
+    answer: 4,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 4 — cô ấy muốn hàng xóm đừng gây ồn vào đêm muộn. Dịch câu hỏi: “Người phụ nữ muốn nói điều gì?” Cô thừa nhận tiệc vui và từng tổ chức tiệc khi còn trẻ, nhưng than phiền khách nói quá to khiến cô khó ngủ. 1 và 3 chỉ là lời mời/tâm sự không được yêu cầu; 2 cấm tổ chức tiệc hoàn toàn, mạnh hơn điều cô muốn. Ý chính là chú ý giờ giấc và giữ yên tĩnh.',
+  },
+  toan_q_2016_07_89: {
+    answer: 4,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 4 — cách bảo vệ cơ thể khỏi virus. Dịch câu hỏi: “Người phụ nữ đang nói về điều gì?” Cô khuyên rửa tay, súc miệng và duy trì nếp sống điều độ để giúp cơ thể chống virus cúm. Cô không giải thích nguyên nhân khiến bệnh chỉ lây vào mùa đông, không hướng dẫn chữa bệnh và cũng không nói bệnh do thói quen sống gây ra. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_90: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「傘、忘れてるよ」: “Cậu quên ô kìa.” Bạn sắp về và chiếc ô vẫn ở trên bàn, nên đây là lời nhắc tự nhiên. 2 hỏi liệu bạn có mang ô theo không, không báo chiếc ô đang bị bỏ quên; 3 là gợi ý để ô ở đó, trái tình huống. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_91: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「写真を撮っていただけませんか」: “Xin anh/chị chụp giúp tôi một tấm ảnh được không ạ?” Đây là cách nhờ người gần đó chụp ảnh lịch sự. 2 hỏi xin phép tự mình chụp ảnh, còn 3 là đề nghị chụp ảnh cho người khác; cả hai đảo vai người chụp và người được chụp. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_92: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「ここ、ちょっと見て行かない」: “Mình ghé vào xem chỗ này một chút nhé?” Câu này rủ bạn cùng xem cửa hàng vừa phát hiện. 1 nói rằng bắt buộc phải đến đây; 2 hỏi đã từng vào đây cùng nhau chưa. Chỉ 3 vừa nêu hành động sắp làm vừa mang sắc thái rủ rê. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_93: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「その辞書、ちょっと使わせてもらってもいい」: “Cho mình mượn/dùng quyển từ điển đó một chút được không?” Người nói quên từ điển và muốn xin phép dùng của bạn. 1 là lời người sở hữu cho phép người khác dùng; 3 khuyên người khác thử dùng. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_94: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「六人です」: “Sáu người ạ.” Nhân viên nhà hàng hỏi số khách, nên cần trả lời số người. 1 「六回目です」 là “lần thứ sáu”, dùng 回 đếm số lần; 3 「お客様です」 là “là khách hàng”, không trả lời số lượng. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_95: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「ああ、すこし後ならできるけど」: “Ừ, nếu để lát nữa thì mình giúp được.” Người được nhờ sắp xếp tài liệu báo thời điểm có thể làm. 1 hỏi có phải không cần giúp nữa; 2 「ありがとう、じゃ、お願いするね」 hợp với người nhờ đang nhận lời đề nghị giúp, không phải người được nhờ; cả hai không trả lời phù hợp. Các lựa chọn được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_96: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「こちらこそ、またお会いしたいです」: “Tôi cũng vậy, mong lại được gặp anh/chị.” Đây là lời đáp cân xứng với câu cảm ơn vì đã được gặp. 2 「楽しみにしております」 là “tôi đang mong chờ”, không có sự kiện tương lai được nhắc tới; 3 「どうぞ、ご覧ください」 mời xem/ngắm thứ gì đó. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_97: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「はい、私も出てみたいと思ってるんです」: “Vâng, tôi cũng đang muốn thử tham gia.” Người nghe được khuyến khích dự thi hùng biện và đồng ý với gợi ý. 1 nói về từ bỏ ngủ, không liên quan; 3 lặp lại lời khuyên 「出てみたら」 thành câu khuyên ngược lại. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_98: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「ほんとだ。ぜんぜん気がつかなかったよ」: “Đúng thật, mình chẳng để ý chút nào.” Câu trước báo nút áo sắp tuột; đáp án này xác nhận và nói người mặc chưa nhận ra. 1 hỏi nút rơi ở đâu dù nó chưa rơi; 3 cảm ơn vì đã nhặt giúp, cũng không đúng tình huống. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_99: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「うん、どんなこと」: “Ừ, cậu muốn hỏi chuyện gì?” Người nói vừa báo muốn hỏi về tài liệu đàn anh đưa, nên cần mời nêu rõ câu hỏi. 1 hỏi đã nghe ở đâu; 2 hỏi muốn lấy tài liệu nào, lệch khỏi lời xin hỏi. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_100: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「はい、では、さっそくいただきます」: “Vâng, vậy tôi xin dùng ngay.” Chủ nhà mời ăn khi món còn nóng; khách nhận lời và bắt đầu ăn. 2 nói sẽ đợi món nguội, trái với lời mời; 3 nói ăn khi đã lạnh, cũng trái ý 「冷めないうちに」 — trước khi nguội. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_101: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「帰って確かめたほうがいいんじゃない」: “Cậu nên về kiểm tra thì hơn.” Người nói không chắc đã khóa cửa căn hộ, nên lời khuyên hợp lý là quay về xác nhận. 1 hỏi có quên đồ trong phòng không, không liên quan tới khóa cửa; 3 chỉ trấn an nếu đã khóa, nhưng người nói chưa biết chắc. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_07_102: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「すみません、じゃ、今日はここにします」: “Xin lỗi, vậy hôm nay tôi dừng ở đây.” Người kia cho phép để phần dọn kệ còn lại sang ngày mai. 1 khẳng định phải xong hôm nay, trái với lời cho phép; 2 từ chối giúp đỡ, trong khi không ai yêu cầu từ chối. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_75: {
+    answer: 2,
+    needsVisualMapping: true,
+    explanation:
+      'Đáp án đang lưu là 2 (アエ). Dịch tình huống: người vợ nhờ chồng mang quần áo phơi vào nhà và tưới hoa trong vườn; gói hàng đã được giao, còn bữa tối cô ấy sẽ mua đồ ăn mang về. Vì vậy hai việc còn lại là quần áo và tưới hoa; lựa chọn thay bằng nhận hàng hoặc chuẩn bị bữa tối không khớp. Tuy nhiên transcript không cho biết sơ đồ gán ア／イ và ウ／エ cho từng việc, nên chưa thể giải thích chính xác từng tổ hợp nhiễu; cần đối chiếu hình đề trước khi coi câu này hoàn tất.',
+  },
+  toan_q_2016_12_76: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — thứ Sáu. Dịch câu hỏi: “Người phụ nữ sẽ đến lấy váy vào ngày nào?” Hôm nay thứ Tư; dịch vụ thường hoàn thành thứ Bảy, nhưng cô chọn dịch vụ nhanh làm xong ngày hôm sau. Thứ Năm cửa hàng nghỉ, nên nhân viên hẹn ngày kế tiếp là thứ Sáu. 1 là ngày gửi đồ; 2 cửa hàng đóng; 4 là lịch dịch vụ thường.',
+  },
+  toan_q_2016_12_77: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — hỏi những người tham gia có thể dự hay không. Dịch câu hỏi: “Trước tiên người phụ nữ làm gì?” Cô cần lấy xác nhận từ toàn bộ nhân viên phòng kinh doanh. Sau đó, từ ngày mai mới gọi nhà hàng chốt số lượng; gửi email danh sách cho người đàn ông là bước kế tiếp; nội dung buổi tiệc do anh ấy tự quyết. Vì vậy 2–4 chưa làm trước.',
+  },
+  toan_q_2016_12_78: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — làm bài kiểm tra trước. Dịch câu hỏi: “Sinh viên muốn tham gia phải làm gì trước tiên?” Họ phải làm bài kiểm tra trực tuyến trong tuần này để xét có đủ điều kiện không. Kết quả công bố trên bảng tin tuần sau; chỉ sau đó mới đăng ký hội thảo và chuyển phí. Do đó 1, 3 và 4 đều là bước đến sau.',
+  },
+  toan_q_2016_12_79: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — nhập kết quả khảo sát. Dịch câu hỏi: “Trước tiên người phụ nữ làm gì?” Việc chuẩn bị gửi mẫu sản phẩm có thể để sau, còn nhập dữ liệu khảo sát đang gấp và người đàn ông muốn cô làm ngay. Anh sẽ nhờ Ohno chuẩn bị tài liệu, phòng họp và bữa trưa. Vì vậy 2 và 3 được hoãn/chuyển người khác; 4 là việc người đàn ông nhận xử lý.',
+  },
+  toan_q_2016_12_80: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — đặt mua DVD hướng dẫn tập. Dịch câu hỏi: “Trước tiên người đàn ông sẽ làm gì?” Anh bận nên chưa thể đi lớp thể dục; người phụ nữ gợi ý DVD có thể xem và tập ở nhà, và anh nói sẽ đặt trên mạng ngay hôm nay. 1 phải chờ có thời gian; 3 chỉ là thông tin về công việc cũ của giáo viên; 4 là vé miễn phí để dùng sau khi công việc bớt bận.',
+  },
+  toan_q_2016_12_81: {
+    answer: 2,
+    explanation:
+      'Đáp án 2 — vì chưa cần mua ngay nữa. Dịch câu hỏi: “Vì sao hôm qua người vợ không mua máy hút bụi mới?” Chiếc máy cũ tưởng hỏng nhưng lại hoạt động, nên cô quyết định hoãn mua. Cô đã thích mẫu quảng cáo và giá không đắt; không phải vì thiếu lựa chọn hay muốn chờ chồng cùng chọn. Cô chỉ hẹn đi mua chung nếu máy lại hỏng.',
+  },
+  toan_q_2016_12_82: {
+    answer: 4,
+    explanation:
+      'Đáp án 4 — để đi du học. Dịch câu hỏi: “Người đàn ông bắt đầu tiết kiệm để làm gì?” Anh muốn học cao học ở nước ngoài. Chuyến du lịch nước ngoài là dự định được nhắc để đánh lạc hướng; tiền cho tuổi già và mua nhà là ví dụ trong khảo sát hoặc lời người phụ nữ. Ghi nhớ: nghe phần người nói đính chính 「そうじゃなくて」 để loại lý do vừa nêu.',
+  },
+  toan_q_2016_12_83: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — đưa thú cưng đến bệnh viện. Dịch câu hỏi: “Vì sao nữ sinh không thể đi ăn?” Con mèo bị thương; mẹ cô dự định đưa nó đi khám nhưng bận đột xuất nên nhờ cô đưa đi thay. Người mẹ không phải là người bị thương; việc làm thêm đổi ngày nên cô vẫn đi họp câu lạc bộ được. Vì vậy 2–4 không phải lý do lỡ hẹn ăn trưa.',
+  },
+  toan_q_2016_12_84: {
+    answer: 1,
+    explanation:
+      'Đáp án 1 — học với bạn của Sara theo hình thức dạy riêng. Dịch câu hỏi: “Người đàn ông quyết định học ngôn ngữ đó bằng cách nào?” Anh thích học cá nhân và nhờ Sara giới thiệu người bạn có kinh nghiệm dạy. Chương trình truyền hình khó hiểu; lớp trực tuyến nhóm ít được hỏi và ít giải thích bằng tiếng Nhật; không có trường gần nhà. Vì vậy 2–4 không phù hợp.',
+  },
+  toan_q_2016_12_85: {
+    answer: 3,
+    explanation:
+      'Đáp án 3 — có khách ăn xong nhưng vẫn chiếm chỗ, khiến khách khác không vào được. Dịch câu hỏi: “Nữ nhân viên cho rằng cửa hàng có vấn đề gì?” Khách quanh khu phố đến ăn sáng đông, nhưng một số người ngồi lại lâu dù đã ăn xong; khi quán kín, khách mới phải bỏ đi. Do đó 1 trái với lượng khách đang tốt; 2 và 4 không được nêu là vấn đề.',
+  },
+  toan_q_2016_12_86: {
+    answer: 4,
+    explanation:
+      'Đáp án 4 — thay đổi trình tự bài thuyết trình trước. Dịch câu hỏi: “Trước tiên hai sinh viên sẽ làm gì?” Ý kiến chính đang để tận cuối nên người nghe khó biết nội dung muốn nói; họ quyết định sửa bố cục trước. Sau khi đổi trình tự, cách trình bày số liệu mới thay đổi, còn thêm biểu đồ sẽ làm sau. 1 và 3 là các việc để sau; 2 không cần khảo sát lại.',
+  },
+  toan_q_2016_12_87: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — các mặt hàng cửa hàng này kinh doanh. Dịch câu hỏi: “Phát thanh viên chủ yếu nói về điều gì?” Cô giới thiệu cửa hàng chuyên bán đồ dùng cho người thuận tay trái, từ kéo, dao tới bàn phím và nhạc cụ. 1 chỉ hỏi đặc điểm một số dụng cụ; 2 về khó khăn của người thuận tay trái không phải trọng tâm; 4 không nói cảm nhận khách hàng. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_88: {
+    answer: 4,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 4 — anh ấy muốn trở lại thi đấu. Dịch câu hỏi: “Vận động viên muốn truyền đạt điều gì?” Sau khi nghỉ vì chấn thương, nhìn các vận động viên trẻ thi đấu khiến anh nhận ra mình vẫn muốn đứng trên sân và chưa thể từ bỏ. Anh sẽ tiếp tục hoạt động với tâm thế mới. 1 chỉ là việc tạm nghỉ đã xảy ra; 2 và 3 là lựa chọn giải nghệ hoặc làm huấn luyện viên mà anh chưa chọn. Các lựa chọn được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_89: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — cách dạy khoa học cho trẻ. Dịch câu hỏi: “Người ở bảo tàng đang nói về điều gì?” Thay vì giải thích bằng toán học hay thuật ngữ khó, nên cho trẻ trực tiếp trải nghiệm để hiểu. 1 không nói lý do trẻ vốn thích khoa học; 3 không bàn mục đích bắt trẻ học; 4 không liệt kê kiến thức cần thiết. Ví dụ cầm vật nặng trên Mặt Trăng minh họa cách dạy qua trải nghiệm.',
+  },
+  toan_q_2016_12_90: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「待たせてごめん」: “Xin lỗi đã để cậu chờ.” Người nói đến muộn nên xin lỗi vì đã khiến bạn phải đợi. 2 xin lỗi vì đã làm người khác vội; 3 「お先に」 dùng khi mình đi trước, không phải lời xin lỗi vì đến trễ. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_91: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「こちらをご覧ください」: “Xin mời nhìn tòa nhà này.” Hướng dẫn viên muốn khách quan sát công trình nên dùng kính ngữ ご覧ください. 1 「お目にかかります」 là khiêm nhường ngữ “được gặp”, không dùng để mời nhìn; 3 「お見せくださいますか」 yêu cầu người khác cho mình xem. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_92: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「どこにサインをすればいいですか」: “Tôi cần ký ở đâu?” Người nhận hàng không biết vị trí cần ký, nên hỏi trực tiếp nơi phải ký. 1 hỏi chữ ký được viết ở đâu như hỏi vị trí văn bản; 2 hỏi sẽ đưa chữ ký ở đâu, không tự nhiên trong thủ tục nhận hàng. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_93: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「ご飯、少なめでお願いします」: “Làm ơn cho tôi ít cơm hơn bình thường.” Người nói chưa đói nên xin khẩu phần nhỏ. 1 than rằng cơm ít quá; 2 xin thêm cơm, đều ngược với yêu cầu. 「少なめ」 là dạng nói nhẹ nhàng về lượng ít hơn.',
+  },
+  toan_q_2016_12_94: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「ありがとうございます、よかったです」: “Cảm ơn, vậy thì tốt quá.” Người kia khen tài liệu đã dễ đọc hơn sau khi sửa, nên đáp lời cảm ơn là phù hợp. 2 nói sẽ sửa ngay dù vừa được khen bản sửa; 3 hỏi có cần làm đơn giản hơn không, trái với phản hồi tích cực. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_95: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「さあ、他の人に聞いてみて」: “Mình không biết, thử hỏi người khác xem.” Người nói hỏi có thấy Kimura đâu không; đáp án tự nhiên là nói mình không rõ và gợi ý hỏi người khác. 1 rủ cùng xem một thứ; 2 hiểu nhầm rằng người hỏi đang tìm việc của chính mình. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_96: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「結構面白かったでしょう」: “Hay lắm đúng không?” Bạn nói đọc cuốn sách rồi không thể dừng lại, hàm ý sách rất cuốn hút; đây là lời đáp đồng cảm tự nhiên. 1 bảo không cần đọc hết, 3 hỏi sách có bị mất không, đều không liên quan. 「読み出したら止まらない」 nghĩa là đã đọc thì không dừng được.',
+  },
+  toan_q_2016_12_97: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「お構いなく」: “Anh/chị đừng bận tâm, không cần phiền đâu ạ.” Chủ nhà mời vào và định pha trà; khách đáp khiêm nhường rằng không cần phải lo cho mình. 2 「ごちそうさまでした」 dùng sau khi ăn; 3 「どういたしまして」 đáp lại lời cảm ơn. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_98: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「あ、はい。どんなことでしょうか」: “Vâng, bạn muốn hỏi việc gì?” Người kia xin hỏi về nghiên cứu của Quý-san, nên cô mời nêu câu hỏi. 2 nói đã từng nghe chuyện đó; 3 nói mình không có câu hỏi, trái vai giao tiếp. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_99: {
+    answer: 3,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 3 — 「何でも喜んでくれるんじゃない」: “Món gì chắc họ cũng vui thôi nhỉ.” Người nói xin ý kiến chọn quà cho bạn vừa sinh em bé; câu này trấn an rằng người nhận sẽ vui với món quà nào. 1 khẳng định “cái đó tốt” nhưng chưa có món nào được đề xuất; 2 chỉ hỏi lại như thể nên tặng quà, không giúp chọn.',
+  },
+  toan_q_2016_12_100: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「生まれたのは東京ですが、京都で育ちました」: “Tôi sinh ở Tokyo nhưng lớn lên ở Kyoto.” Câu hỏi 「どちらのご出身ですか」 hỏi quê quán/xuất thân, nên câu trả lời về nơi sinh và lớn lên phù hợp. 1 nói nơi làm việc; 3 nói sắp đi Tokyo, không trả lời nguồn gốc. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_101: {
+    answer: 1,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 1 — 「来る前に、いろいろ調べたんです」: “Trước khi đến, tôi đã tìm hiểu nhiều thứ.” Câu này giải thích vì sao Tom mới đến Nhật mà đã biết nhiều. 2 chỉ nói anh chưa sống ở Nhật lâu, không nêu nguồn hiểu biết; 3 nói mới tới nên không tránh khỏi, trái với lời khen. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+  toan_q_2016_12_102: {
+    answer: 2,
+    restoreOptions: true,
+    explanation:
+      'Đáp án 2 — 「これは降るだろうね」: “Chắc tuyết sẽ rơi đấy.” Câu 「降ってもおかしくない」 nghĩa là thời tiết đủ lạnh để tuyết rơi, việc đó chẳng có gì lạ. 1 hiểu 「おかしくない」 theo nghĩa “không kỳ lạ à?”; 3 phủ nhận khả năng tuyết rơi, trái với dự đoán. Các lựa chọn hiển thị được khôi phục từ transcript.',
+  },
+}
+
+function isPlaceholderOptions(options) {
+  return (
+    Array.isArray(options) &&
+    options.length >= 3 &&
+    options.every((option) => typeof option === 'string' && /^[⓵①②③④➀➁➂➃]$/.test(option))
+  )
+}
+
+function extractPrintedOptions(script) {
+  const matches = [...String(script ?? '').matchAll(/^\s*([1-4])\.\s*(.+?)\s*$/gm)]
+  if (matches.length < 3) return []
+  const numbers = matches.map((match) => Number(match[1]))
+  if (!numbers.every((number, index) => number === index + 1)) return []
+  return matches.map((match) => match[2].trim())
+}
+
+const examIds = new Set(['toan-n3-201607-full', 'toan-n3-201612-full'])
+const exams = master.filter((exam) => examIds.has(exam.id))
+if (exams.length !== 2) throw new Error('Expected both 2016 exams; found ' + exams.length)
+
+const questionMap = new Map(
+  exams.flatMap((exam) => exam.parts.flatMap((part) => part.questions)).map((question) => [question.id, question])
+)
+const reviewed = []
+const restoredOptionQuestions = []
+const keyMismatches = []
+
+for (const [id, review] of Object.entries(reviews)) {
+  const question = questionMap.get(id)
+  if (!question) throw new Error('Question not found: ' + id)
+  if (!question.script) throw new Error('Transcript missing: ' + id)
+  if (question.correctAnswer !== review.answer || question.answer !== review.answer) {
+    keyMismatches.push({
+      questionId: id,
+      expected: review.answer,
+      actual: [question.correctAnswer, question.answer],
+    })
+    continue
+  }
+
+  if (review.restoreOptions) {
+    const options = extractPrintedOptions(question.script)
+    if (options.length !== question.options.length) {
+      throw new Error(id + ': could not recover ' + question.options.length + ' options from transcript')
+    }
+    if (isPlaceholderOptions(question.options)) {
+      question.options = options
+    } else if (JSON.stringify(question.options) !== JSON.stringify(options)) {
+      throw new Error(id + ': stored options differ from transcript choices')
+    }
+    restoredOptionQuestions.push(id)
+  }
+
+  curated[id] = review.explanation
+  reviewed.push({
+    questionId: id,
+    examId: id.includes('_07_') ? 'toan-n3-201607-full' : 'toan-n3-201612-full',
+    number: question.number,
+    answer: review.answer,
+    answerEvidence:
+      'Đối chiếu luận cứ với transcript gắn trong dữ liệu câu hỏi; không có khóa PDF/khóa JLPT độc lập trong lượt rà này.',
+    status: review.needsVisualMapping ? 'needs-visual-mapping' : 'transcript-reviewed',
+    optionsRecoveredFromTranscript: Boolean(review.restoreOptions),
+    explanation: review.explanation,
+  })
+}
+
+if (keyMismatches.length) {
+  throw new Error('Stored answer keys differ from this transcript review: ' + JSON.stringify(keyMismatches))
+}
+if (reviewed.length !== 56) throw new Error('Expected 56 reviewed questions; got ' + reviewed.length)
+if (restoredOptionQuestions.length !== 32) {
+  throw new Error('Expected 32 option lists recovered from transcripts; got ' + restoredOptionQuestions.length)
+}
+
+fs.writeFileSync(curatedPath, JSON.stringify(curated, null, 2) + '\n')
+fs.writeFileSync(masterPath, JSON.stringify(master, null, 2) + '\n')
+fs.mkdirSync(path.dirname(reportPath), { recursive: true })
+fs.writeFileSync(
+  reportPath,
+  JSON.stringify(
+    {
+      generatedAt: new Date().toISOString(),
+      method:
+        'All 56 stored answer choices were reviewed against the transcripts attached to the local question data. Explanations include a Vietnamese rendering of the prompt, transcript-based reasoning, distractor analysis, and usage notes where useful. The local source PDFs were not inspected in this pass, so no answer key is independently PDF- or JLPT-key-verified. The 32 Mondai 4–5 questions whose visible options were only circled-number placeholders now show the numbered choices transcribed in the question script. December 2016 question 75 still needs its missing visual mapping for ア／イ and ウ／エ.',
+      transcriptSource: 'data/jlpt_n3_toan_master.json, script field on each question',
+      answerKeySource: 'Existing stored keys only; not independently validated against answer-key documents',
+      totals: {
+        questionsReviewed: reviewed.length,
+        explanationsAdded: reviewed.length,
+        keysChanged: 0,
+        keysComparedWithIndependentAnswerKey: 0,
+        optionsRecoveredFromTranscript: restoredOptionQuestions.length,
+        unresolvedVisualMappings: reviewed.filter((question) => question.status === 'needs-visual-mapping').length,
+      },
+      restoredOptionQuestions,
+      limitations: [
+        {
+          questionId: 'toan_q_2016_12_75',
+          issue:
+            'Transcript confirms the two required chores but does not identify which image/action each symbol ア・イ・ウ・エ represents; option-by-option elimination requires the missing visual.',
+        },
+        {
+          issue:
+            'No printed or official answer key was reviewed for either 2016 exam, so transcript coherence is not independent answer-key certification.',
+        },
+      ],
+      questions: reviewed,
+    },
+    null,
+    2
+  ) + '\n'
+)
+
+console.log(
+  JSON.stringify({
+    reviewed: reviewed.length,
+    restoredOptionQuestions: restoredOptionQuestions.length,
+    reportPath,
+    unresolvedVisualMappings: reviewed.filter((question) => question.status === 'needs-visual-mapping').length,
+    keysChanged: 0,
+  })
+)

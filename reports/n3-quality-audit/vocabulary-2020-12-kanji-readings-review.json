@@ -1,0 +1,99 @@
+{
+  "reviewedOn": "2026-09-27",
+  "fullExamId": "toan-n3-202012-full",
+  "sectionExamId": "cm2u2xg4300wm134izpbjrysi-vocab",
+  "questionNumbers": [
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "answerKeysChanged": 0,
+  "answerKeys": [
+    3,
+    2,
+    3,
+    4,
+    1
+  ],
+  "scope": "Translate the prompt and explain the correct reading/writing plus the meaning or spelling reason for each distractor.",
+  "rows": [
+    {
+      "number": 9,
+      "answer": 3,
+      "options": [
+        "途",
+        "迅",
+        "逆",
+        "造"
+      ],
+      "explanation": "Đáp án 3 — 「逆（ぎゃく）」là ngược lại/trái chiều. Cách đọc ぎゃく khớp với chữ 逆.\nDịch: “Điều đó ngược lại rồi.”\n1. 途（と）: đường/lộ trình; là chữ khác và không đọc là ぎゃく.\n2. 迅（じん）: nhanh/chớp nhoáng; không có cách đọc ぎゃく.\n3. 逆（ぎゃく）: ngược lại; đúng với câu 「それは逆ですよ」.\n4. 造（ぞう）: tạo ra/chế tạo; không đọc là ぎゃく và không hợp nghĩa câu.\nGhi nhớ: 逆（ぎゃく）= ngược; 逆になる = trở nên trái ngược.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 10,
+      "answer": 2,
+      "options": [
+        "冷く",
+        "低く",
+        "底く",
+        "令く"
+      ],
+      "explanation": "Đáp án 2 — 「低く（ひくく）」là dạng nối của 低い（ひくい）, nghĩa là thấp. Nhiệt độ dự báo sẽ xuống thấp nên dùng 低くなる.\nDịch: “Nghe nói sáng mai nhiệt độ sẽ xuống thấp.”\n1. 冷く: 「冷」gợi nghĩa lạnh, nhưng chữ này không viết từ ひくい; “trời lạnh” thường nói 「寒い」, còn “đồ vật lạnh” là 「冷たい」.\n2. 低く（ひくく）: thấp; đúng với nhiệt độ ở mức thấp hơn.\n3. 底く: 底（そこ）là đáy/phần dưới cùng; không phải tính từ 低い và không viết cách đọc ひくい.\n4. 令く: 令（れい）mang nghĩa mệnh lệnh/chỉ thị; không đọc là ひく và không diễn tả nhiệt độ thấp.\nGhi nhớ: nhiệt độ thấp = 気温が低い; lạnh = 寒い／冷たい tùy ngữ cảnh; 底 là đáy.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 11,
+      "answer": 3,
+      "options": [
+        "観祭",
+        "視察",
+        "観察",
+        "視祭"
+      ],
+      "explanation": "Đáp án 3 — 「観察（かんさつ）」là quan sát kỹ để nhận biết đặc điểm. Hình dáng và màu sắc của hoa là những điều học sinh quan sát trong giờ học.\nDịch: “Trong giờ học, chúng tôi đã quan sát hình dáng và màu sắc của hoa.”\n1. 観祭: sai chữ thứ hai; 祭（まつり／さい）liên quan đến lễ hội, không tạo thành từ かんさつ.\n2. 視察（しさつ）: thị sát/đi kiểm tra một địa điểm hoặc cơ sở; cách đọc và cách dùng khác với quan sát đặc điểm của hoa.\n3. 観察（かんさつ）: quan sát để tìm hiểu đặc điểm; dùng đúng trong ngữ cảnh bài học.\n4. 視祭: chữ 祭 không đúng và tổ hợp này không phải cách viết của từ かんさつ.\nGhi nhớ: 花を観察する = quan sát hoa; 現場を視察する = đi thị sát hiện trường.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 12,
+      "answer": 4,
+      "options": [
+        "恋いて",
+        "涙いて",
+        "悲いて",
+        "泣いて"
+      ],
+      "explanation": "Đáp án 4 — 「泣いて」là thể て của 泣く（なく）, nghĩa là khóc. Người ta khóc khi đọc bức thư.\nDịch: “Anh/chị Tamura đã khóc khi đọc thư.”\n1. 恋いて: 恋（こい）là tình yêu/nhớ thương; không phải động từ 泣く và không tạo thể て này.\n2. 涙いて: 涙（なみだ）là nước mắt; danh từ này không chia thành 涙いて để diễn tả “khóc”.\n3. 悲いて: 悲しい（かなしい）là buồn; không viết động từ “khóc” bằng chữ 悲. Động từ khóc là 泣く.\n4. 泣いて: đúng là thể て của 泣く; 「手紙を読んで泣いていた」diễn tả đang khóc khi đọc thư.\nGhi nhớ: 泣く（なく）= khóc; 涙（なみだ）= nước mắt; 悲しい（かなしい）= buồn.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    },
+    {
+      "number": 13,
+      "answer": 1,
+      "options": [
+        "以降",
+        "以向",
+        "移降",
+        "移向"
+      ],
+      "explanation": "Đáp án 1 — 「以降（いこう）」nghĩa là từ mốc đó trở đi. 「夜の11時以降」là từ sau 11 giờ đêm.\nDịch: “Từ sau 11 giờ đêm, phí sẽ cao hơn.”\n1. 以降（いこう）: kể từ mốc ấy trở đi; kết hợp tự nhiên với giờ giấc và đúng nghĩa câu.\n2. 以向: 向（むく／こう）mang nghĩa hướng về; không phải chữ 降 trong cách viết 以降 và không tạo thành từ chỉ thời điểm về sau.\n3. 移降: 移（うつる／い）gợi nghĩa di chuyển; đây không phải cách viết いこう trong nghĩa “từ đó trở đi”.\n4. 移向: hai chữ đều khác dạng cần dùng; không phải cách viết 以降 và không diễn tả thời điểm trở đi.\nGhi nhớ: 11時以降 = từ sau 11 giờ; 以降／以前 dùng để chỉ mốc về sau/về trước.",
+      "includesTranslation": true,
+      "explainsAllFourChoices": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.nihongoph.com/2022/10/jlpt-n3-122020.html",
+      "type": "Third-party transcription of the December 2020 N3 vocabulary prompts and choices; not an official JLPT answer key."
+    },
+    {
+      "url": "https://www.scribd.com/document/879176896/2020%E5%B9%B412%E6%9C%88%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%83%BD%E5%8A%9B%E8%A9%A6%E9%A8%93N3%E7%9C%9F%E9%A1%8C",
+      "type": "Independent third-party reproduction of the same N3 12/2020 vocabulary section; not official."
+    }
+  ],
+  "method": "Kept the current answer keys unchanged, matched the prompts/options in both stored exam records, translated each sentence, and described why each written choice matches or does not match the target reading and context. This is an explanation/content review, not an independent official-key audit."
+}

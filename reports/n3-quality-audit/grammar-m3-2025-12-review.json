@@ -1,0 +1,72 @@
+{
+  "exam": "JLPT N3 12/2025",
+  "partId": "toan_part_2025_12_m2_g3",
+  "questions": [
+    {
+      "questionId": "toan_q_2025_12_54",
+      "answer": 3,
+      "options": ["思います", "思ってしまいます", "思っていたからです", "思ったことです"],
+      "explanation": "Đáp án 3 — 「思っていたからです」.\n\nCâu hoàn chỉnh: 「会社が違っても、売っている商品は同じだと思っていたからです。」「～と思っていた」 diễn tả điều người viết đã nghĩ trong quá khứ; 「からです」 nêu lý do. Câu trước nói lúc mới sang Nhật người viết chưa để ý sự khác nhau giữa các chuỗi cửa hàng, nên đây là nguyên nhân phù hợp.\n\nDịch: “Vì tôi đã nghĩ rằng dù công ty khác nhau thì những món hàng được bán cũng giống nhau.”\n\n1. 思います — “nghĩ rằng”. 「同じだと思います」 là nhận định hiện tại, không giải thích việc trước đây người viết đã không để ý.\n2. 思ってしまいます — “lỡ/cứ nghĩ rằng”. Cách này nói cảm giác hoặc kết quả ngoài ý muốn ở hiện tại, không tạo lý do ở quá khứ như đoạn văn cần.\n3. 思っていたからです — “vì đã nghĩ rằng”. Vừa khớp mốc quá khứ, vừa nối nguyên nhân bằng 「からです」.\n4. 思ったことです — “điều tôi đã nghĩ”. Dạng này danh từ hóa nội dung đã nghĩ; đặt sau 「同じだと」 không nêu được nguyên nhân cho câu trước.\n\nGhi nhớ: đọc mốc thời gian và quan hệ câu. Ở đây cần một niềm tin trong quá khứ làm nguyên nhân, nên 「～と思っていたからです」 phù hợp nhất."
+    },
+    {
+      "questionId": "toan_q_2025_12_55",
+      "answer": 4,
+      "options": ["つまり", "ところで", "ちなみに", "でも"],
+      "explanation": "Đáp án 4 — 「でも」.\n\nCâu chứa chỗ trống: 「飲み物、食べ物、生活用品、雑誌などが売られているのは同じです。でも、それぞれの会社のコンビニには、ほかの会社のコンビニにはないデザートやパンや弁当などがあるのです。」\n\nDịch: “Các cửa hàng đều bán những nhóm hàng như đồ uống, thức ăn, đồ dùng sinh hoạt và tạp chí. Nhưng mỗi chuỗi cửa hàng lại có những món tráng miệng, bánh mì và cơm hộp mà các chuỗi khác không có.”\n\n1. つまり — “nói cách khác”. Dùng để diễn đạt lại hoặc tóm tắt ý vừa nêu; câu tiếp theo bổ sung một điểm đối lập, không phải lời diễn đạt lại.\n2. ところで — “nhân tiện/chuyển sang chuyện khác”. Dùng để đổi chủ đề, trong khi đoạn vẫn đang so sánh các chuỗi cửa hàng.\n3. ちなみに — “nhân tiện/nói thêm”. Dùng cho thông tin bổ sung bên lề; không thể hiện rõ sự tương phản giữa nhóm hàng giống nhau và món riêng của từng chuỗi.\n4. でも — “nhưng/tuy vậy”. Là liên từ đầu câu thể hiện tương phản, đúng với hai ý trước và sau.\n\nLưu ý: 「でも」 ở đây là liên từ “nhưng”, không phải trợ từ 「Nでも」 mang nghĩa “ngay cả N”. Tra khớp mặt chữ với mục 「〜でも」 trong kho ngữ pháp sẽ gán sai nghĩa nếu bỏ qua ngữ cảnh.\n\nGhi nhớ: 「でも」 đầu câu có thể nối hai vế tương phản, tương tự “nhưng/tuy vậy” trong tiếng Việt."
+    },
+    {
+      "questionId": "toan_q_2025_12_56",
+      "answer": 1,
+      "options": ["どの", "その", "この", "あの"],
+      "explanation": "Đáp án 1 — 「どの」.\n\nCâu hoàn chỉnh: 「見ているだけでも楽しいし、どの会社もいい商品を売ろうとがんばっているようで、応援したくなります。」Mẫu 「どのNも」 có nghĩa “N nào cũng/mọi N đều”; ở đây nói về tất cả các chuỗi cửa hàng.\n\nDịch: “Chỉ ngắm thôi cũng vui, hơn nữa có vẻ công ty nào cũng cố gắng bán sản phẩm tốt nên tôi muốn ủng hộ họ.”\n\n1. どの — “nào/mỗi (trong số nào)”; kết hợp với 「も」 thành “công ty nào cũng”, phù hợp với nhận xét khái quát.\n2. その — “công ty đó”; chỉ một công ty đã được nhắc đến, không có nghĩa “tất cả các công ty”.\n3. この — “công ty này”; trỏ tới một công ty gần người nói, quá cụ thể so với ý khái quát.\n4. あの — “công ty kia”; trỏ tới một công ty ở xa hoặc đã biết, cũng không diễn đạt phạm vi “mọi công ty”.\n\nGhi nhớ: 「どの + danh từ + も」 diễn đạt phạm vi bao quát: “danh từ nào cũng”."
+    },
+    {
+      "questionId": "toan_q_2025_12_57",
+      "answer": 2,
+      "options": ["場所にしたのです", "場所なのです", "場所にするのでしょう", "場所なのでしょうか"],
+      "explanation": "Đáp án 2 — 「場所なのです」.\n\nCâu hoàn chỉnh: 「私にとってコンビニは買い物をするだけの場所ではありません。食べてみたい商品や新商品がたくさん並んでいて、行くと楽しい気分になれる場所なのです。」Cụm 「楽しい気分になれる」 bổ nghĩa cho 「場所」; 「なのです」 giải thích và kết luận nơi cửa hàng tiện lợi có ý nghĩa gì với người viết.\n\nDịch: “Đối với tôi, cửa hàng tiện lợi không chỉ là nơi để mua sắm. Đó còn là nơi bày bán nhiều món tôi muốn thử và sản phẩm mới, khiến tôi cảm thấy vui khi ghé đến.”\n\n1. 場所にしたのです — “đã biến/chọn thành một nơi”. 「Nにする」 diễn tả ai đó chủ động chọn hoặc biến đổi thành N; đoạn văn đang mô tả cảm nhận của người viết, không kể việc người viết tạo ra cửa hàng.\n2. 場所なのです — “chính là một nơi như vậy”. Hoàn chỉnh phần kết luận và khẳng định cảm nhận đã nêu.\n3. 場所にするのでしょう — “có lẽ sẽ biến/chọn thành một nơi”. 「にする」 nói về hành động chọn/biến đổi, còn 「のでしょう」 mang sắc thái phỏng đoán; cả hai đều lệch với lời kết luận chắc chắn của người viết.\n4. 場所なのでしょうか — “liệu có phải là một nơi như vậy không?”. Đây là câu hỏi/phỏng đoán, không hợp với lời khẳng định về cảm nhận của chính người viết.\n\nGhi nhớ: đọc vị ngữ ngay trước chỗ trống và giọng điệu toàn đoạn. Bài kết bằng nhận xét của người viết nên dùng 「場所なのです」; lựa chọn không có đại từ 「その」."
+    }
+  ],
+  "sourceInstructionCorrection": {
+    "source": "Google Drive PDF: 17.N3 12-2025 (260506).pdf",
+    "pdfPage": 10,
+    "visualCrossCheck": true,
+    "correctedInstruction": "問題3　つぎの文章を読んで、文章全体の内容を考えて、19から22の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+    "priorStoredInstruction": "問題３　つぎのぶんしょうの（ 29 ）から（ 33 ）に何をいれますか。ぶんしょうの意味を考えて、１・２・３・４から最もよいものを一つえらびなさい。",
+    "note": "The stored instruction incorrectly referred to blanks 29–33; the source page labels this passage blanks 19–22."
+  },
+  "sourcePassageCorrection": {
+    "source": "Google Drive PDF: 17.N3 12-2025 (260506).pdf",
+    "pdfPage": 10,
+    "visualCrossCheck": true,
+    "correctedPhrase": "ほかの会社のコンビニにはないデザートやパンや弁当などがあるのです。",
+    "priorStoredPhrase": "ほかの会社のコンビニはないデザートやパンや弁当のです。",
+    "note": "Transcribed from the visible PDF page; the stored passage had lost 「には」 and 「などがある」."
+  },
+  "answerKeyCrossCheck": {
+    "source": "Google Drive PDF: ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "pdfPage": 31,
+    "answers": {
+      "19": 3,
+      "20": 4,
+      "21": 1,
+      "22": 2
+    },
+    "result": "Matches the stored answer fields and the contextual reading of the passage.",
+    "limitation": "This is a third-party answer compilation, not an official JLPT answer key."
+  },
+  "grammarPatternException": {
+    "questionId": "toan_q_2025_12_55",
+    "surfaceMatch": "でも",
+    "rejectedDictionaryMatch": "〜でも: “even/as much as”, pattern N + でも",
+    "contextualUse": "Sentence-initial conjunction meaning “but/however”.",
+    "reason": "A terminal surface match alone confuses two different uses; no automatic pattern label is shown in this explanation."
+  },
+  "browserVerification": {
+    "browser": "Chrome",
+    "sourceExamPdfPage": 10,
+    "sourceAnswerPdfPage": 31,
+    "result": "Visually inspected the original exam passage and the answer table; the four stored keys agree."
+  },
+  "passage": "<p>以下は、留学生の作文である。コンビニ ウイルソン リサ\n私は日本のコンビニが好きです。家の近くや大学の近くにいろいろなコンビニがあるのですが、24時間営業なので、とても便利です。\n日本に来たばかりのころ、コンビニに行くとき、コンビニの会社の違いはあまり気にしていませんでした。会社が違っても、売っている商品は同じだと（19）。売っている商品が会社によって少し違うことに気がついたのは、日本に来て1か月ぐらいたったころでした。飲み物、食べ物、生活用品、雑誌などが売られているのは同じです。（20）、それぞれの会社のコンビニには、ほかの会社のコンビニにはないデザートやパンや弁当などがあるのです。会社ごとにおいしいデザートやパンや弁当を考えて、自分たちだけの新しい商品を作っているようです。いつ行っても店には新しい商品がたくさん並んでいます。見ているだけでも楽しいし、（21）会社もいい商品を売ろうとがんばっているようで、応援したくなります。\n私にとってコンビニは買い物をするだけの場所ではありません。食べてみたい商品や新商品がたくさん並んでいて、行くと楽しい気分になれる（22）。</p>"
+}

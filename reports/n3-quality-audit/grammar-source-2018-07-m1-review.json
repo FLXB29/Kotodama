@@ -1,0 +1,118 @@
+{
+  "exam": "JLPT N3 07/2018",
+  "sourcePdf": {
+    "url": "https://drive.google.com/file/d/1dGoaVmeSyblxeUaTrAEhbqnf1zlf7C8M/view",
+    "title": "9. N3 Tháng 7 2018.pdf",
+    "driveFileId": "1dGoaVmeSyblxeUaTrAEhbqnf1zlf7C8M",
+    "renderedPages": [
+      {
+        "viewerPage": 4,
+        "printedPage": 4,
+        "printedQuestions": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "findings": "Visually checked in Chrome and compared with the PDF text layer; printed question 8, app question 43, option 3 is 「コピーしたらいかがですか」."
+      },
+      {
+        "viewerPage": 5,
+        "printedPage": 5,
+        "printedQuestions": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "findings": "Compared against the PDF text layer; question 9 option 2 is 「ずつなら」 and question 10 option 3 is 「行っただろう」."
+      }
+    ]
+  },
+  "secondaryAnswerKey": {
+    "url": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 17,
+    "section": "Grammar Mondai 1, questions 1–13",
+    "answers": [
+      4,
+      1,
+      2,
+      4,
+      2,
+      3,
+      3,
+      2,
+      3,
+      1,
+      4,
+      1,
+      2
+    ],
+    "answersForReviewedQuestions": [
+      2,
+      3,
+      1
+    ],
+    "allStoredAnswersMatch": true,
+    "matchesStoredAnswers": true,
+    "officialKeyEstablished": false
+  },
+  "questions": [
+    {
+      "printedQuestion": 8,
+      "appNumber": 43,
+      "answer": 2,
+      "options": [
+        "コピーさせるでしょうか",
+        "コピーさせていただけませんか",
+        "コピーしたらいかがですか",
+        "コピーするのではないでしょうか"
+      ],
+      "fullExamQuestionId": "toan_q_2018_07_43",
+      "standaloneQuestionId": "cm2u2wzvf00kl134iaz2ued1q"
+    },
+    {
+      "printedQuestion": 9,
+      "appNumber": 44,
+      "answer": 3,
+      "options": [
+        "ぐらいでも",
+        "ずつなら",
+        "までなら",
+        "からでも"
+      ],
+      "fullExamQuestionId": "toan_q_2018_07_44",
+      "standaloneQuestionId": "cm2u2wzvf00km134ibkno1ra2"
+    },
+    {
+      "printedQuestion": 10,
+      "appNumber": 45,
+      "answer": 1,
+      "options": [
+        "行ってみないか",
+        "行ったらいい",
+        "行っただろう",
+        "行ってみて"
+      ],
+      "fullExamQuestionId": "toan_q_2018_07_45",
+      "standaloneQuestionId": "cm2u2wzvf00kn134icoe07gz4"
+    }
+  ],
+  "corrections": [
+    "Question 43 option 3 restored from the PDF: 「コピーしたらいかがですか」; corrected the explanation to distinguish advice to the listener from asking permission for oneself.",
+    "Question 44 option 2 corrected in the standalone dataset from OCR 「ずっなら」 to 「ずつなら」.",
+    "Question 45 option 3 corrected in the standalone dataset by removing the stray leading period.",
+    "Synchronized explanations for app questions 43–45 to both full-exam and standalone datasets."
+  ]
+}

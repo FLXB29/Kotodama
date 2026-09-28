@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-09-25T10:29:43.662Z",
+  "examId": "toan-n3-201212-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.scribd.com/document/909969790/2012%E5%B9%B412%E6%9C%88-N3%E7%9C%9F%E9%A2%98%E7%AD%94%E6%A1%88; https://www.scribd.com/document/909969793/2012%E5%B9%B412%E6%9C%88-N3%E7%9C%9F%E9%A2%98",
+  "method": "The stored 13-answer sequence matches the linked nonofficial answer compilation. Question text and choices were compared against the linked test transcription. Three duplicated option strings in the app source were corrected from that transcription before writing explanations; this is not an official JLPT certification.",
+  "answerSequence": [
+    4,
+    4,
+    1,
+    2,
+    2,
+    1,
+    2,
+    3,
+    3,
+    1,
+    3,
+    2,
+    1
+  ],
+  "optionCorrections": {
+    "40": [
+      "1.したがる",
+      "2.してほしい",
+      "3.していたい",
+      "4.したがっている"
+    ],
+    "43": [
+      "1.拝見する",
+      "2.お目にかかる",
+      "3.ご覧になる",
+      "4.お読みする"
+    ],
+    "44": [
+      "1.あとなのに",
+      "2.あとだから",
+      "3.ばかりなのに",
+      "4.ばかりだから"
+    ]
+  },
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        "1.か",
+        "2.で",
+        "3.は ",
+        "4.に"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        "1.いまにも",
+        "2.少しも",
+        "3.すぐに",
+        "4.たしかに"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "choices": [
+        "1.寝ている",
+        "2.寝ていた",
+        " 3.寝ない",
+        "4.寝なかった"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "choices": [
+        "1.いいと",
+        "2.いいのか",
+        "3.よくて",
+        "4.よくても"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        "1.したがる",
+        "2.してほしい",
+        "3.していたい",
+        "4.したがっている"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "1.だけ",
+        " 2.なら",
+        "3.しか",
+        " 4.にも"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.さしあげた",
+        "2.いただいた",
+        "3.いらっしゃった",
+        " 4.くださった"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        "1.拝見する",
+        "2.お目にかかる",
+        "3.ご覧になる",
+        "4.お読みする"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "choices": [
+        "1.あとなのに",
+        "2.あとだから",
+        "3.ばかりなのに",
+        "4.ばかりだから"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.ためにも",
+        " 2.ようにも",
+        "3.おかげでも",
+        " 4.ときでも"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.おいてあげますよ",
+        " 2.おこうと思えますか ",
+        "3.おいてもらえませんか",
+        " 4.おこうと思いませんよ"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "choices": [
+        "1.食べるかもしれない ",
+        "2.食べられるかもしれない ",
+        "3.食べるようになった ",
+        "4.食べられるようになった"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "choices": [
+        "1.してこないはず",
+        "2.しにこないはず ",
+        "3.してこないつもり",
+        "4.しにこないつもり"
+      ]
+    }
+  ]
+}

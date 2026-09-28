@@ -1,0 +1,83 @@
+{
+  "exam": "JLPT N3 December 2012, Grammar Mondai 2",
+  "source": {
+    "file": "3. N3 12-2012.pdf",
+    "provider": "Google Drive",
+    "url": "https://drive.google.com/file/d/113QWsU7OKs23DMJtygRO3TU_Ht5VGdLl/view",
+    "pages": {
+      "14-16": 6,
+      "17-18": 7
+    },
+    "method": "Read the PDF text layer and visually checked the printed star slot and choice layout in Chrome. The answer piece is derived from the natural completed sentence and the star slot; no separate official answer sheet was consulted."
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2012_12_49",
+      "printedNumber": 14,
+      "promptBefore": "A「片づけはあしたにしますか。」B「あしたは朝から",
+      "promptAfter": "ましょう。",
+      "sourceOptions": ["1 忙しくなり", "2 今日中に", "3 そうですし", "4 やってしまい"],
+      "order": [1, 3, 2, 4],
+      "starSlotIndex": 2,
+      "answer": 2,
+      "completedSentence": "あしたは朝から忙しくなりそうですし、今日中にやってしまいましょう。",
+      "sourcePage": 6,
+      "changedAnswer": false
+    },
+    {
+      "questionId": "toan_q_2012_12_50",
+      "printedNumber": 15,
+      "promptBefore": "仕事から帰って、娘に笑顔で",
+      "promptAfter": "幸せだといつも思う。",
+      "sourceOptions": ["1 私は本当に", "2 「おかえり」と言われると", "3 娘がいる", "4 こんなかわいい"],
+      "order": [2, 4, 3, 1],
+      "starSlotIndex": 2,
+      "answer": 3,
+      "completedSentence": "仕事から帰って、娘に笑顔で「おかえり」と言われると、こんなかわいい娘がいる私は本当に幸せだといつも思う。",
+      "sourcePage": 6,
+      "changedAnswer": false
+    },
+    {
+      "questionId": "toan_q_2012_12_51",
+      "printedNumber": 16,
+      "promptBefore": "川名寺は桜が",
+      "promptAfter": "秋の景色もすばらしいです。",
+      "sourceOptions": ["1 桜だけでなく", "2 ことで", "3 有名ですが", "4 きれいな"],
+      "order": [4, 2, 3, 1],
+      "starSlotIndex": 2,
+      "answerBefore": 1,
+      "answer": 3,
+      "completedSentence": "川名寺は桜がきれいなことで有名ですが、桜だけでなく秋の景色もすばらしいです。",
+      "sourcePage": 6,
+      "changedAnswer": true,
+      "pdfTextLayerNote": "The extracted text layer appends the printed page number 7 to option 4 (きれいな7); the Chrome-rendered PDF page visibly prints the choice as きれいな. This is a page-number extraction artifact, not an option change.",
+      "answerRationale": "The PDF places the star over the third segment. In the natural order 4→2→3→1, that segment is option 3 「有名ですが」."
+    },
+    {
+      "questionId": "toan_q_2012_12_52",
+      "printedNumber": 17,
+      "promptBefore": "父はいつも、「何も",
+      "promptAfter": "ほうがいい。」と言っている。",
+      "sourceOptions": ["1 チャレンジして", "2 失敗する", "3 しないで", "4 いるより"],
+      "order": [3, 4, 1, 2],
+      "starSlotIndex": 2,
+      "answer": 1,
+      "completedSentence": "父はいつも、「何もしないでいるよりチャレンジして失敗するほうがいい。」と言っている。",
+      "sourcePage": 7,
+      "changedAnswer": false
+    },
+    {
+      "questionId": "toan_q_2012_12_53",
+      "printedNumber": 18,
+      "promptBefore": "A「ねえ、来週の日曜日、北町の美術館に行かない?」B「いいね。あ、私、そこの割引券を持ってるよ。その",
+      "promptAfter": "になるんだ。",
+      "sourceOptions": ["1 三人", "2 割引券一枚で", "3 二割引", "4 まで"],
+      "order": [2, 1, 4, 3],
+      "starSlotIndex": 2,
+      "answer": 4,
+      "completedSentence": "その割引券一枚で三人まで二割引になるんだ。",
+      "sourcePage": 7,
+      "changedAnswer": false
+    }
+  ]
+}

@@ -1,0 +1,1207 @@
+{
+  "generatedAt": "2026-09-25T13:29:51.849Z",
+  "dictionaryRows": 192776,
+  "mode": "dry run; pass --apply to write",
+  "stats": {
+    "1": {
+      "questions": 239,
+      "allFourGlossed": 0,
+      "someGlossed": 0,
+      "targetWordGlossed": 239,
+      "questionsWithExplanation": 239
+    },
+    "2": {
+      "questions": 180,
+      "allFourGlossed": 21,
+      "someGlossed": 154,
+      "targetWordGlossed": 0,
+      "questionsWithExplanation": 180
+    },
+    "3": {
+      "questions": 330,
+      "allFourGlossed": 212,
+      "someGlossed": 65,
+      "targetWordGlossed": 0,
+      "questionsWithExplanation": 330
+    },
+    "4": {
+      "questions": 150,
+      "allFourGlossed": 43,
+      "someGlossed": 59,
+      "targetWordGlossed": 0,
+      "questionsWithExplanation": 150
+    },
+    "5": {
+      "questions": 150,
+      "allFourGlossed": 0,
+      "someGlossed": 0,
+      "targetWordGlossed": 75,
+      "questionsWithExplanation": 150
+    }
+  },
+  "optionMatchStats": {
+    "options": 2640,
+    "wholeOptionMatches": 1537,
+    "segmentedMatches": 89,
+    "unmatched": 1014
+  },
+  "segmentedExamples": [
+    {
+      "questionId": "toan_q_2025_12_24",
+      "option": "2 正常な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "正常"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_12_24",
+      "option": "3 完全な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "完全"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_12_24",
+      "option": "4 確実な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "確実"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_12_27",
+      "option": "2 少し遅れて",
+      "coverage": 0.8,
+      "matchedWords": [
+        "少し",
+        "遅れ"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_12_27",
+      "option": "3 少し前に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "少し",
+        "前"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_07_9",
+      "option": "育てたい",
+      "coverage": 0.5,
+      "matchedWords": [
+        "育て"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_07_28",
+      "option": "2.早く来た",
+      "coverage": 0.75,
+      "matchedWords": [
+        "早く",
+        "来"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_07_28",
+      "option": "3.早く寝た　",
+      "coverage": 0.75,
+      "matchedWords": [
+        "早く",
+        "寝"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_07_30",
+      "option": "2.有名な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "有名"
+      ]
+    },
+    {
+      "questionId": "toan_q_2025_07_30",
+      "option": "4.特別な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "特別"
+      ]
+    },
+    {
+      "questionId": "toan_q_2024_12_21",
+      "option": "1.派手な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "派手"
+      ]
+    },
+    {
+      "questionId": "toan_q_2024_12_21",
+      "option": " 2.盛んな",
+      "coverage": 0.67,
+      "matchedWords": [
+        "盛ん"
+      ]
+    },
+    {
+      "questionId": "toan_q_2024_12_21",
+      "option": "4.身近な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "身近"
+      ]
+    },
+    {
+      "questionId": "toan_q_2024_07_18",
+      "option": "2 消極적",
+      "coverage": 0.67,
+      "matchedWords": [
+        "消極"
+      ]
+    },
+    {
+      "questionId": "toan_q_2023_12_29",
+      "option": "1 最もよい",
+      "coverage": 0.5,
+      "matchedWords": [
+        "最も"
+      ]
+    },
+    {
+      "questionId": "toan_q_2023_07_11",
+      "option": " 3 煙いて",
+      "coverage": 0.67,
+      "matchedWords": [
+        "煙い"
+      ]
+    },
+    {
+      "questionId": "toan_q_2023_07_29",
+      "option": "3 間違えるところ",
+      "coverage": 0.57,
+      "matchedWords": [
+        "間違える"
+      ]
+    },
+    {
+      "questionId": "toan_q_2023_07_29",
+      "option": "4 忘れるところ",
+      "coverage": 0.5,
+      "matchedWords": [
+        "忘れる"
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_07_26",
+      "option": "1 すぐ怒る",
+      "coverage": 0.5,
+      "matchedWords": [
+        "怒る"
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_07_26",
+      "option": "2 すぐ謝る",
+      "coverage": 0.5,
+      "matchedWords": [
+        "謝る"
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_07_26",
+      "option": "3 すぐ驚く",
+      "coverage": 0.5,
+      "matchedWords": [
+        "驚く"
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_07_26",
+      "option": "4 すぐ喜ぶ",
+      "coverage": 0.5,
+      "matchedWords": [
+        "喜ぶ"
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_07_28",
+      "option": "1 姉の息子",
+      "coverage": 0.75,
+      "matchedWords": [
+        "姉",
+        "息子"
+      ]
+    },
+    {
+      "questionId": "toan_q_2021_12_30",
+      "option": " 1 少し分かった",
+      "coverage": 0.5,
+      "matchedWords": [
+        "少し",
+        "分"
+      ]
+    },
+    {
+      "questionId": "toan_q_2021_12_30",
+      "option": " 3 もう一度考えた　",
+      "coverage": 0.86,
+      "matchedWords": [
+        "もう一度",
+        "考え"
+      ]
+    },
+    {
+      "questionId": "toan_q_2021_12_30",
+      "option": "4 何度も考えた",
+      "coverage": 0.67,
+      "matchedWords": [
+        "何",
+        "度",
+        "考え"
+      ]
+    },
+    {
+      "questionId": "toan_q_2021_07_25",
+      "option": "2 気に入りたい",
+      "coverage": 0.5,
+      "matchedWords": [
+        "気",
+        "入り"
+      ]
+    },
+    {
+      "questionId": "toan_q_2021_07_25",
+      "option": "3 押し込みたい",
+      "coverage": 0.67,
+      "matchedWords": [
+        "押し込み"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_27",
+      "option": "1.安全な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "安全"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_27",
+      "option": "2.危険な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "危険"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_27",
+      "option": "3.簡単な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "簡単"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_27",
+      "option": "4.大変な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "大変"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_29",
+      "option": "1.兄弟の娘",
+      "coverage": 0.75,
+      "matchedWords": [
+        "兄弟",
+        "娘"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_29",
+      "option": "2.兄弟の息子　",
+      "coverage": 0.8,
+      "matchedWords": [
+        "兄弟",
+        "息子"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_29",
+      "option": "3.両親の姉　",
+      "coverage": 0.75,
+      "matchedWords": [
+        "両親",
+        "姉"
+      ]
+    },
+    {
+      "questionId": "toan_q_2020_12_29",
+      "option": "4.両親の兄",
+      "coverage": 0.75,
+      "matchedWords": [
+        "両親",
+        "兄"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_12_28",
+      "option": "3.危険な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "危険"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_12_28",
+      "option": "4.心配な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "心配"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_18",
+      "option": "１．感情的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "感情",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_18",
+      "option": "２．積極的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "積極",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_18",
+      "option": "３．自動的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "自動的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_18",
+      "option": "４．効果的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "効果",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_27",
+      "option": "２．有名な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "有名"
+      ]
+    },
+    {
+      "questionId": "toan_q_2019_07_30",
+      "option": "２．自分の言葉で",
+      "coverage": 0.67,
+      "matchedWords": [
+        "自分",
+        "言葉"
+      ]
+    },
+    {
+      "questionId": "toan_q_2018_12_16",
+      "option": "1.人工的に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "人工",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2018_12_16",
+      "option": "3.積極的に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "積極",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2018_12_16",
+      "option": "4.具体的に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "具体",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2018_07_22",
+      "option": " 1.余りそう",
+      "coverage": 0.5,
+      "matchedWords": [
+        "余り"
+      ]
+    },
+    {
+      "questionId": "toan_q_2018_07_22",
+      "option": "3.逃げそう",
+      "coverage": 0.5,
+      "matchedWords": [
+        "逃げ"
+      ]
+    },
+    {
+      "questionId": "toan_q_2017_12_12",
+      "option": "3. 遅います",
+      "coverage": 0.5,
+      "matchedWords": [
+        "遅い"
+      ]
+    },
+    {
+      "questionId": "toan_q_2017_12_28",
+      "option": "3. 1万円以上 ",
+      "coverage": 0.8,
+      "matchedWords": [
+        "万",
+        "円",
+        "以上"
+      ]
+    },
+    {
+      "questionId": "toan_q_2017_12_28",
+      "option": "4. 1万円以下",
+      "coverage": 0.8,
+      "matchedWords": [
+        "万",
+        "円",
+        "以下"
+      ]
+    },
+    {
+      "questionId": "toan_q_2017_12_30",
+      "option": "4.簡単な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "簡単"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_12_27",
+      "option": "4.安心した",
+      "coverage": 0.5,
+      "matchedWords": [
+        "安心"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_11",
+      "option": "3.煙いて",
+      "coverage": 0.67,
+      "matchedWords": [
+        "煙い"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_20",
+      "option": "1.派手な",
+      "coverage": 0.67,
+      "matchedWords": [
+        "派手"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_20",
+      "option": "3.盛んな ",
+      "coverage": 0.67,
+      "matchedWords": [
+        "盛ん"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_21",
+      "option": "3.否定た",
+      "coverage": 0.67,
+      "matchedWords": [
+        "否定"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_21",
+      "option": "4.禁止した",
+      "coverage": 0.5,
+      "matchedWords": [
+        "禁止"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_27",
+      "option": "1.心配だ",
+      "coverage": 0.67,
+      "matchedWords": [
+        "心配"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_27",
+      "option": "3.危険だ ",
+      "coverage": 0.67,
+      "matchedWords": [
+        "危険"
+      ]
+    },
+    {
+      "questionId": "toan_q_2016_07_30",
+      "option": "2.始まるのが予定より早くなった ",
+      "coverage": 0.5,
+      "matchedWords": [
+        "始まる",
+        "予定",
+        "早く"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_12_26",
+      "option": "3.一番好きな",
+      "coverage": 0.8,
+      "matchedWords": [
+        "一番",
+        "好き"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_12_30",
+      "option": "1.前と同じで",
+      "coverage": 0.6,
+      "matchedWords": [
+        "前",
+        "同じ"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_07_20",
+      "option": "1.実用的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "実用",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_07_20",
+      "option": "2.効果的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "効果",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_07_20",
+      "option": "3.積極的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "積極",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2015_07_20",
+      "option": "4.代表的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "代表",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2014_07_9",
+      "option": "2.洗いて",
+      "coverage": 0.67,
+      "matchedWords": [
+        "洗い"
+      ]
+    },
+    {
+      "questionId": "toan_q_2014_07_18",
+      "option": "2.効果的な",
+      "coverage": 0.75,
+      "matchedWords": [
+        "効果",
+        "的"
+      ]
+    },
+    {
+      "questionId": "toan_q_2014_07_26",
+      "option": "4.少し前に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "少し",
+        "前"
+      ]
+    },
+    {
+      "questionId": "toan_q_2013_12_25",
+      "option": "1.期待して",
+      "coverage": 0.5,
+      "matchedWords": [
+        "期待"
+      ]
+    },
+    {
+      "questionId": "toan_q_2013_12_25",
+      "option": "2.応援して",
+      "coverage": 0.5,
+      "matchedWords": [
+        "応援"
+      ]
+    },
+    {
+      "questionId": "toan_q_2013_12_25",
+      "option": "3.自慢して",
+      "coverage": 0.5,
+      "matchedWords": [
+        "自慢"
+      ]
+    },
+    {
+      "questionId": "toan_q_2013_12_25",
+      "option": "4.賛成して",
+      "coverage": 0.5,
+      "matchedWords": [
+        "賛成"
+      ]
+    },
+    {
+      "questionId": "toan_q_2012_12_29",
+      "option": " 4.一人ずつ",
+      "coverage": 0.5,
+      "matchedWords": [
+        "一人"
+      ]
+    },
+    {
+      "questionId": "toan_q_2012_07_30",
+      "option": "3.好きな",
+      "coverage": 0.67,
+      "matchedWords": [
+        "好き"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_12_10",
+      "option": "2.ご事由",
+      "coverage": 0.67,
+      "matchedWords": [
+        "事由"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_12_10",
+      "option": "4.ご自由",
+      "coverage": 0.67,
+      "matchedWords": [
+        "自由"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_12_30",
+      "option": "2.少し前に",
+      "coverage": 0.75,
+      "matchedWords": [
+        "少し",
+        "前"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_26",
+      "option": " 1.仕事に行って",
+      "coverage": 0.5,
+      "matchedWords": [
+        "仕事",
+        "行"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_26",
+      "option": "2.勉強に行って",
+      "coverage": 0.5,
+      "matchedWords": [
+        "勉強",
+        "行"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_26",
+      "option": "3.買い物に行って",
+      "coverage": 0.57,
+      "matchedWords": [
+        "買い物",
+        "行"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_26",
+      "option": " 4.散歩に行って",
+      "coverage": 0.5,
+      "matchedWords": [
+        "散歩",
+        "行"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_30",
+      "option": "1.やり方を調べた ",
+      "coverage": 0.71,
+      "matchedWords": [
+        "やり方",
+        "調べ"
+      ]
+    },
+    {
+      "questionId": "toan_q_2011_07_30",
+      "option": "3.もう一度やった ",
+      "coverage": 0.57,
+      "matchedWords": [
+        "もう一度"
+      ]
+    },
+    {
+      "questionId": "toan_q_2010_07_12",
+      "option": "1.移りる",
+      "coverage": 0.67,
+      "matchedWords": [
+        "移り"
+      ]
+    },
+    {
+      "questionId": "toan_q_2010_07_26",
+      "option": "1.大変だ",
+      "coverage": 0.67,
+      "matchedWords": [
+        "大変"
+      ]
+    },
+    {
+      "questionId": "toan_q_2010_07_26",
+      "option": "2.簡単だ",
+      "coverage": 0.67,
+      "matchedWords": [
+        "簡単"
+      ]
+    }
+  ],
+  "unmatchedExamples": [
+    {
+      "questionId": "toan_q_2025_12_9",
+      "option": "4 迎り"
+    },
+    {
+      "questionId": "toan_q_2025_12_11",
+      "option": "2 低りました"
+    },
+    {
+      "questionId": "toan_q_2025_12_11",
+      "option": "3 消りました"
+    },
+    {
+      "questionId": "toan_q_2025_12_12",
+      "option": "1 歩動　"
+    },
+    {
+      "questionId": "toan_q_2025_12_12",
+      "option": "2 走道　"
+    },
+    {
+      "questionId": "toan_q_2025_12_12",
+      "option": "4 走動"
+    },
+    {
+      "questionId": "toan_q_2025_12_13",
+      "option": "2 押つ"
+    },
+    {
+      "questionId": "toan_q_2025_12_13",
+      "option": "3 指つ"
+    },
+    {
+      "questionId": "toan_q_2025_12_13",
+      "option": "4 折つ"
+    },
+    {
+      "questionId": "toan_q_2025_12_14",
+      "option": "1 姓格"
+    },
+    {
+      "questionId": "toan_q_2025_12_14",
+      "option": "2 性各"
+    },
+    {
+      "questionId": "toan_q_2025_12_14",
+      "option": "4 姓各"
+    },
+    {
+      "questionId": "toan_q_2025_12_16",
+      "option": "1 くわしい"
+    },
+    {
+      "questionId": "toan_q_2025_12_16",
+      "option": "2 だらしない"
+    },
+    {
+      "questionId": "toan_q_2025_12_16",
+      "option": "3 しかたない"
+    },
+    {
+      "questionId": "toan_q_2025_12_16",
+      "option": "4 うらやましい"
+    },
+    {
+      "questionId": "toan_q_2025_12_26",
+      "option": "2 ぬれた"
+    },
+    {
+      "questionId": "toan_q_2025_12_26",
+      "option": "4 きれいな"
+    },
+    {
+      "questionId": "toan_q_2025_12_30",
+      "option": "1 休みましょう"
+    },
+    {
+      "questionId": "toan_q_2025_12_30",
+      "option": "2 食事にしましょう"
+    },
+    {
+      "questionId": "toan_q_2025_12_30",
+      "option": "3 終わりにしましょう"
+    },
+    {
+      "questionId": "toan_q_2025_12_30",
+      "option": "4 寝ましょう"
+    },
+    {
+      "questionId": "toan_q_2025_07_9",
+      "option": "産たい"
+    },
+    {
+      "questionId": "toan_q_2025_07_9",
+      "option": "愛たい"
+    },
+    {
+      "questionId": "toan_q_2025_07_9",
+      "option": "幸たい"
+    },
+    {
+      "questionId": "toan_q_2025_07_10",
+      "option": "2.燥"
+    },
+    {
+      "questionId": "toan_q_2025_07_10",
+      "option": "3.焼"
+    },
+    {
+      "questionId": "toan_q_2025_07_11",
+      "option": "1.森村"
+    },
+    {
+      "questionId": "toan_q_2025_07_12",
+      "option": "1.流びました"
+    },
+    {
+      "questionId": "toan_q_2025_07_12",
+      "option": "2.洗びました"
+    },
+    {
+      "questionId": "toan_q_2025_07_12",
+      "option": "3.清びました"
+    },
+    {
+      "questionId": "toan_q_2025_07_13",
+      "option": "2.可態"
+    },
+    {
+      "questionId": "toan_q_2025_07_13",
+      "option": "3.化能"
+    },
+    {
+      "questionId": "toan_q_2025_07_13",
+      "option": "4.化態"
+    },
+    {
+      "questionId": "toan_q_2025_07_14",
+      "option": "2.送真"
+    },
+    {
+      "questionId": "toan_q_2025_07_14",
+      "option": "4.返真"
+    },
+    {
+      "questionId": "toan_q_2025_07_18",
+      "option": " 1.くやしかった　"
+    },
+    {
+      "questionId": "toan_q_2025_07_18",
+      "option": "2.まずしかった"
+    },
+    {
+      "questionId": "toan_q_2025_07_18",
+      "option": "3.ゆるかった"
+    },
+    {
+      "questionId": "toan_q_2025_07_18",
+      "option": "4.ずるかった"
+    },
+    {
+      "questionId": "toan_q_2025_07_20",
+      "option": "1.ほして"
+    },
+    {
+      "questionId": "toan_q_2025_07_26",
+      "option": "危険だった"
+    },
+    {
+      "questionId": "toan_q_2025_07_26",
+      "option": "大変だった"
+    },
+    {
+      "questionId": "toan_q_2025_07_26",
+      "option": "つまらなかった"
+    },
+    {
+      "questionId": "toan_q_2025_07_26",
+      "option": "やりたくなかった"
+    },
+    {
+      "questionId": "toan_q_2025_07_27",
+      "option": "2.にぎやかに　"
+    },
+    {
+      "questionId": "toan_q_2025_07_27",
+      "option": "4.二人で"
+    },
+    {
+      "questionId": "toan_q_2025_07_28",
+      "option": "1.早く起きた"
+    },
+    {
+      "questionId": "toan_q_2025_07_28",
+      "option": "4.早く帰った"
+    },
+    {
+      "questionId": "toan_q_2025_07_30",
+      "option": "1.きれいな"
+    },
+    {
+      "questionId": "toan_q_2025_07_30",
+      "option": "3.いろいろな"
+    },
+    {
+      "questionId": "toan_q_2024_12_9",
+      "option": "順審"
+    },
+    {
+      "questionId": "toan_q_2024_12_9",
+      "option": "項審"
+    },
+    {
+      "questionId": "toan_q_2024_12_10",
+      "option": "2.働めて"
+    },
+    {
+      "questionId": "toan_q_2024_12_10",
+      "option": " 3.仕めて "
+    },
+    {
+      "questionId": "toan_q_2024_12_10",
+      "option": "4.労めて"
+    },
+    {
+      "questionId": "toan_q_2024_12_11",
+      "option": "3.表裏"
+    },
+    {
+      "questionId": "toan_q_2024_12_12",
+      "option": "3.失けて"
+    },
+    {
+      "questionId": "toan_q_2024_12_13",
+      "option": "1.適去"
+    },
+    {
+      "questionId": "toan_q_2024_12_13",
+      "option": "2.過古"
+    },
+    {
+      "questionId": "toan_q_2024_12_13",
+      "option": "4.適古"
+    },
+    {
+      "questionId": "toan_q_2024_12_14",
+      "option": "1.違"
+    },
+    {
+      "questionId": "toan_q_2024_12_16",
+      "option": "3.あせ"
+    },
+    {
+      "questionId": "toan_q_2024_12_16",
+      "option": "4.いき"
+    },
+    {
+      "questionId": "toan_q_2024_12_19",
+      "option": " 1.あやしい "
+    },
+    {
+      "questionId": "toan_q_2024_12_19",
+      "option": "2.おそろしい"
+    },
+    {
+      "questionId": "toan_q_2024_12_19",
+      "option": "3.にくらしい"
+    },
+    {
+      "questionId": "toan_q_2024_12_19",
+      "option": "4.まずしい"
+    },
+    {
+      "questionId": "toan_q_2024_12_21",
+      "option": " 3.わがままな "
+    },
+    {
+      "questionId": "toan_q_2024_12_23",
+      "option": "1.もったいない"
+    },
+    {
+      "questionId": "toan_q_2024_12_23",
+      "option": "2.しかたない"
+    },
+    {
+      "questionId": "toan_q_2024_12_23",
+      "option": "3.かわいらしい"
+    },
+    {
+      "questionId": "toan_q_2024_12_23",
+      "option": "4.こいしい"
+    },
+    {
+      "questionId": "toan_q_2024_12_24",
+      "option": "1.包んだ"
+    },
+    {
+      "questionId": "toan_q_2024_12_24",
+      "option": " 3.囲んだ"
+    },
+    {
+      "questionId": "toan_q_2024_12_25",
+      "option": "3.けっこう"
+    },
+    {
+      "questionId": "toan_q_2024_12_25",
+      "option": " 4.たいてい"
+    },
+    {
+      "questionId": "toan_q_2024_12_26",
+      "option": "よく考えて"
+    },
+    {
+      "questionId": "toan_q_2024_12_26",
+      "option": "よく探して"
+    },
+    {
+      "questionId": "toan_q_2024_12_26",
+      "option": "よく読んで"
+    },
+    {
+      "questionId": "toan_q_2024_12_26",
+      "option": "よく数えて"
+    },
+    {
+      "questionId": "toan_q_2024_12_28",
+      "option": " 1.前に進んで"
+    },
+    {
+      "questionId": "toan_q_2024_12_28",
+      "option": "2.後ろに下がって"
+    },
+    {
+      "questionId": "toan_q_2024_12_28",
+      "option": "3.横に動いて"
+    },
+    {
+      "questionId": "toan_q_2024_12_28",
+      "option": "4.そこで止まって"
+    },
+    {
+      "questionId": "toan_q_2024_12_29",
+      "option": "2.普通の"
+    },
+    {
+      "questionId": "toan_q_2024_12_29",
+      "option": "3.人気がある "
+    },
+    {
+      "questionId": "toan_q_2024_12_30",
+      "option": "2.すぐに"
+    },
+    {
+      "questionId": "toan_q_2024_07_9",
+      "option": "1　試いて　"
+    },
+    {
+      "questionId": "toan_q_2024_07_9",
+      "option": "2　答いて"
+    },
+    {
+      "questionId": "toan_q_2024_07_9",
+      "option": "4　調いて"
+    },
+    {
+      "questionId": "toan_q_2024_07_11",
+      "option": "3 明週"
+    },
+    {
+      "questionId": "toan_q_2024_07_11",
+      "option": "4 遠週"
+    },
+    {
+      "questionId": "toan_q_2024_07_12",
+      "option": "2 底かった"
+    },
+    {
+      "questionId": "toan_q_2024_07_13",
+      "option": "3 法向"
+    },
+    {
+      "questionId": "toan_q_2024_07_13",
+      "option": " 4 法角"
+    },
+    {
+      "questionId": "toan_q_2024_07_14",
+      "option": "1 規側"
+    },
+    {
+      "questionId": "toan_q_2024_07_14",
+      "option": " 3 期則"
+    },
+    {
+      "questionId": "toan_q_2024_07_14",
+      "option": " 4 期側"
+    },
+    {
+      "questionId": "toan_q_2024_07_16",
+      "option": "2 なつかしい"
+    }
+  ],
+  "changedQuestions": [],
+  "changedCount": 0
+}

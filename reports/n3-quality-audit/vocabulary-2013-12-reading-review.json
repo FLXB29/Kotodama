@@ -1,0 +1,291 @@
+{
+  "examId": "toan-n3-201312-full",
+  "reviewedOn": "2026-09-27",
+  "scope": "Rewrite vocabulary explanations for questions 1–30 with Vietnamese sentence translations and choice-by-choice reading, meaning, and usage distinctions. Answers were checked against the local answer-key transcription and independent third-party sources; official status is not established.",
+  "sources": {
+    "examTranscript": {
+      "url": "https://www.vnjpclub.com/de-thi-chinh-thuc-jlpt-n3/de-thi-jlpt-n3-12-2013-moji-goi.html",
+      "sourceType": "third-party exam transcription; not an official JLPT publication"
+    },
+    "answerKey": {
+      "url": "https://max.book118.com/html/2021/0822/6221052015003235.shtm",
+      "sourceType": "third-party answer-key transcription; official status not established"
+    },
+    "crossCheck": {
+      "url": "https://www.scribd.com/document/891971853/jlpt-n3-2013-12",
+      "sourceType": "third-party exam, answer, and explanation transcription; official status not established"
+    }
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2013_12_1",
+      "number": 1,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 生えた（はえた）là dạng quá khứ của 生える, “mọc lên”. Dịch: “Những bông hoa đẹp đã nở trên đám cỏ mọc trong vườn.”\n1. はえた là cách đọc đúng của 生えた.\n2. せいえた không phải cách đọc của 生えた.\n3. しょうえた không phải cách đọc của 生えた.\n4. うえた thường viết 植えた, “đã trồng”. 植える là chủ động đem cây trồng xuống đất; 生える là tự mọc lên.\nGhi nhớ: 草が生える = cỏ mọc; 草を植える = trồng cỏ."
+    },
+    {
+      "questionId": "toan_q_2013_12_2",
+      "number": 2,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 各地（かくち）nghĩa là nhiều nơi/các địa phương. Dịch: “Tuần này có nhiều lễ hội ở khắp các nơi.”\n1. かっじ không phải cách đọc của 各地.\n2. かっち không phải cách đọc của 各地.\n3. かくじ có thể là 各自（かくじ）, “mỗi người/từng người”; 地 ở đây phải đọc ち.\n4. かくち là cách đọc đúng của 各地.\nGhi nhớ: 各地（かくち）= các địa phương; 各自（かくじ）= mỗi người tự mình."
+    },
+    {
+      "questionId": "toan_q_2013_12_3",
+      "number": 3,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 貯金（ちょきん）là tiền tiết kiệm. Dịch: “Tôi không biết mình có bao nhiêu tiền tiết kiệm.”\n1. だいきん thường viết 代金, tiền phải trả/giá hàng hóa.\n2. ちょきん là cách đọc đúng của 貯金.\n3. げんきん thường viết 現金, tiền mặt.\n4. ぜいきん thường viết 税金, tiền thuế.\nGhi nhớ: 貯金 = tiền tiết kiệm; 現金 = tiền mặt; 税金 = thuế; 代金 = tiền hàng."
+    },
+    {
+      "questionId": "toan_q_2013_12_4",
+      "number": 4,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 留守（るす）là tình trạng vắng nhà. Dịch: “Có vẻ nhà hàng xóm đang không có ai ở nhà.”\n1. るす là cách đọc đúng của 留守.\n2. りゅうす không phải cách đọc của 留守.\n3. るしゅ không phải cách đọc của 留守; âm cuối của từ là す.\n4. りゅうしゅ không phải cách đọc của 留守.\nGhi nhớ: 留守（るす）= vắng nhà; 留守番（るすばん）= trông nhà khi người khác đi vắng."
+    },
+    {
+      "questionId": "toan_q_2013_12_5",
+      "number": 5,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 浅い（あさい）là nông/cạn. Dịch: “Có chiếc đĩa nào nông hơn một chút không?”\n1. ふかい thường viết 深い, “sâu”; trái nghĩa với 浅い.\n2. あつい thường viết 厚い, “dày”; không phải cách đọc của 浅い.\n3. あさい là cách đọc đúng của 浅い.\n4. うすい thường viết 薄い, “mỏng”; không phải cách đọc của 浅い.\nGhi nhớ: 浅い（あさい）= nông; 深い（ふかい）= sâu; 薄い（うすい）= mỏng."
+    },
+    {
+      "questionId": "toan_q_2013_12_6",
+      "number": 6,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 文章（ぶんしょう）là bài viết/đoạn văn. Dịch: “Bài viết này dài và khó hiểu.”\n1. ぶんそ không phải cách đọc chuẩn của 文章.\n2. ぶんしょ thường viết 文書, nghĩa là văn bản/tài liệu; là từ khác.\n3. ぶんそう không phải cách đọc chuẩn của 文章.\n4. ぶんしょう là cách đọc đúng của 文章.\nGhi nhớ: 文章（ぶんしょう）= bài viết/văn xuôi; 文書（ぶんしょ）= văn bản/tài liệu."
+    },
+    {
+      "questionId": "toan_q_2013_12_7",
+      "number": 7,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 改札（かいさつ）là cổng/khu soát vé ở ga. Dịch: “Tôi đang đợi ở trước cổng soát vé.”\n1. かいさつ là cách đọc đúng của 改札.\n2. かいじょう thường viết 会場, địa điểm tổ chức sự kiện; không phải cổng soát vé.\n3. けいさつ thường viết 警察, cảnh sát; là từ khác.\n4. けいじょう thường viết 形状, hình dạng/trạng thái hình thể; là từ khác.\nGhi nhớ: 改札（かいさつ）= cổng soát vé; 会場（かいじょう）= địa điểm; 警察（けいさつ）= cảnh sát."
+    },
+    {
+      "questionId": "toan_q_2013_12_8",
+      "number": 8,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 笑って（わらって）là thể て của 笑う, “cười”. Dịch: “Khi tôi kể chuyện đó, cô ấy đã cười.”\n1. こまって thường viết 困って, “lúng túng/gặp khó khăn”.\n2. おこって thường viết 怒って, “đang giận”.\n3. わらって là cách đọc đúng của 笑って.\n4. うたがって thường viết 疑って, “đang nghi ngờ”.\nGhi nhớ: 笑う（わらう）= cười; 困る（こまる）= lúng túng; 怒る（おこる）= giận; 疑う（うたがう）= nghi ngờ."
+    },
+    {
+      "questionId": "toan_q_2013_12_9",
+      "number": 9,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 倍（ばい）chỉ số lần/gấp bội; ２倍 là gấp đôi. Dịch: “Lượng gạo xuất khẩu đã gấp đôi năm ngoái.”\n1. 培 có âm バイ trong từ như 培養（ばいよう, nuôi cấy/bồi dưỡng） và mang nghĩa vun trồng; không phải chữ chỉ số lần.\n2. 倍（ばい）là chữ cần điền trong ２倍, nghĩa là gấp hai.\n3. 増 thường đọc ゾウ hoặc ふえる, nghĩa là tăng; không viết ２ばい.\n4. 憎 đọc ゾウ／にくむ, liên quan đến ghét; không mang nghĩa “lần”.\nGhi nhớ: 倍 = số lần; 増える = tăng lên; 培う = vun đắp/nuôi dưỡng."
+    },
+    {
+      "questionId": "toan_q_2013_12_10",
+      "number": 10,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 停電（ていでん）là sự mất điện/cúp điện. Dịch: “Chiều qua, khu vực này đã bị mất điện.”\n1. 止電 không phải cách viết thông dụng của “mất điện”; 止める／停止 diễn tả dừng lại.\n2. 落電 không phải từ chuẩn ở nghĩa này; 落雷（らくらい）mới là sét đánh.\n3. 停電（ていでん）là cách viết đúng của ていでん, chỉ tình trạng nguồn điện bị ngắt.\n4. 閉電 không phải cách viết chuẩn của “mất điện”.\nGhi nhớ: 停電 = mất điện; 落雷 = sét đánh; 停止 = dừng lại."
+    },
+    {
+      "questionId": "toan_q_2013_12_11",
+      "number": 11,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 包んで（つつんで）là thể て của 包む, gói/bọc đồ vật. Dịch: “Xin hãy gói món đồ ngay.”\n1. 呼んで（よんで）là gọi người/gọi tên; không phải gói đồ.\n2. 結んで（むすんで）là buộc hoặc thắt nút, thường dùng với dây; khác với bọc món đồ.\n3. 運んで（はこんで）là mang/vận chuyển vật đi.\n4. 包んで（つつんで）là cách viết đúng của つつんで.\nGhi nhớ: 包む = gói/bọc; 結ぶ = buộc; 運ぶ = vận chuyển; 呼ぶ = gọi."
+    },
+    {
+      "questionId": "toan_q_2013_12_12",
+      "number": 12,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 独身（どくしん）nghĩa là độc thân, chưa kết hôn. Dịch: “Anh Tanaka độc thân.”\n1. 独身（どくしん）là từ chỉ tình trạng hôn nhân độc thân.\n2. 単身（たんしん）nghĩa là một mình/sống một mình; không khẳng định người đó chưa kết hôn.\n3. 独者 không phải từ chuẩn cho nghĩa “độc thân”; 者（しゃ）là người.\n4. 単者 không phải cách viết của từ どくしん.\nGhi nhớ: 独身 = chưa kết hôn; 単身 = một mình, đơn thân trong một số ngữ cảnh."
+    },
+    {
+      "questionId": "toan_q_2013_12_13",
+      "number": 13,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 貸して（かして）là thể て của 貸す, cho người khác mượn. Dịch: “Hãy cho tôi mượn quyển sách này.”\n1. 措して không phải cách viết của かして; 措く（おく）có nghĩa đặt/để trong những cách dùng nhất định.\n2. 借して là cách viết sai; động từ “mượn” là 借りる, thể て là 借りて（かりて）.\n3. 貨 liên quan đến hàng hóa/tiền tệ, không viết động từ かす bằng chữ này.\n4. 貸して là thể て đúng của 貸す（かす）, cho mượn.\nGhi nhớ: 貸す = cho mượn; 借りる = mượn."
+    },
+    {
+      "questionId": "toan_q_2013_12_14",
+      "number": 14,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 逃げる（にげる）là chạy trốn/bỏ chạy. Dịch: “Con mèo này hễ tôi định chạm vào là lập tức bỏ chạy.”\n1. 逃げる（にげる）là cách viết đúng của にげる.\n2. 遠げる không phải cách viết của にげる; 遠い（とおい）nghĩa là xa.\n3. 逆げる không phải động từ にげる; 逆（ぎゃく）nghĩa là ngược/đảo lại.\n4. 返げる không phải cách viết của にげる; 返す（かえす）là trả lại, 返る（かえる）là quay trở lại.\nGhi nhớ: 逃げる = chạy trốn; 返す = trả lại; 遠い = xa."
+    },
+    {
+      "questionId": "toan_q_2013_12_15",
+      "number": 15,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 調子（ちょうし）là tình trạng/hoạt động của một bộ phận; のどの調子が悪い nghĩa là cổ họng không ổn. Dịch: “Tôi bị cảm nên cổ họng không được khỏe.”\n1. 気分（きぶん）là tâm trạng hoặc cảm giác chung của người; 気分が悪い thường là cảm thấy buồn nôn/khó chịu, không nói riêng tình trạng cổ họng.\n2. 調子（ちょうし）kết hợp tự nhiên với のど để nói tình trạng cổ họng; đúng.\n3. 事情（じじょう）là hoàn cảnh/lý do, không phải tình trạng cơ thể.\n4. 都合（つごう）là sự thuận tiện/điều kiện; thường nói 都合がいい・悪い về lịch hoặc hoàn cảnh.\nGhi nhớ: bộ phận cơ thể không khỏe 調子が悪い; tâm trạng/cảm giác 気分; sự thuận tiện 都合."
+    },
+    {
+      "questionId": "toan_q_2013_12_16",
+      "number": 16,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 緩い（ゆるい）nghĩa là lỏng/rộng; người nói xin đổi sang cỡ nhỏ hơn. Dịch: “Chiếc quần này hơi rộng nên hãy cho tôi chiếc nhỏ hơn một chút.”\n1. きつい là chật hoặc bó sát; khi quần chật, thường cần cỡ lớn hơn, trái với vế sau.\n2. だるい là mệt mỏi/uể oải, thường tả cơ thể; không miêu tả độ vừa của quần.\n3. 緩い（ゆるい）là rộng/lỏng; khớp với yêu cầu lấy cỡ nhỏ hơn.\n4. 苦しい（くるしい）là khổ sở/khó chịu, không phải từ thông dụng chỉ quần rộng.\nGhi nhớ: quần chật きつい → đổi cỡ lớn hơn; quần rộng 緩い → đổi cỡ nhỏ hơn."
+    },
+    {
+      "questionId": "toan_q_2013_12_17",
+      "number": 17,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — たつ（経つ）diễn tả thời gian trôi qua; もう３年たちました là đã ba năm rồi. Dịch: “Đã ba năm trôi qua kể từ khi tôi đến Nhật.”\n1. 移りました（うつりました）là đã chuyển/dời sang nơi khác; không đi với mốc thời gian theo nghĩa thời gian trôi qua.\n2. かかりました là đã mất/tốn một khoảng thời gian để hoàn tất việc gì; cấu trúc này không khớp với もう３年 sau khi đến Nhật.\n3. 通りました（とおりました）là đã đi qua hoặc được thông qua; không nói thời gian đã trôi qua.\n4. たちました（経ちました）là đã trôi qua; đúng với khoảng thời gian kể từ khi đến Nhật.\nGhi nhớ: thời gian trôi qua 経つ; mất bao lâu để làm việc gì かかる; đi qua một nơi 通る."
+    },
+    {
+      "questionId": "toan_q_2013_12_18",
+      "number": 18,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 突然（とつぜん）là đột nhiên/bất ngờ; thời tiết vừa đẹp thì mưa bất chợt khiến người nói bị ướt. Dịch: “Mới nãy trời còn đẹp vậy mà đột nhiên mưa xuống, làm tôi bị ướt.”\n1. 突然（とつぜん）là đột nhiên; hợp với sự thay đổi thời tiết bất ngờ.\n2. 早めに（はやめに）nghĩa là sớm hơn một chút; không diễn tả việc mưa bất ngờ.\n3. さっそく là ngay lập tức, thường nói bắt tay làm việc gì ngay; không tự nhiên để bổ nghĩa cho 雨が降ってきた ở đây.\n4. 急ぐ（いそぐ）là động từ “vội/vội vàng”; dạng nguyên mẫu không thể điền tự nhiên trước 雨が降ってきて.\nGhi nhớ: sự việc xảy ra bất ngờ 突然; làm việc sớm hơn dự kiến 早めに; bắt tay vào việc ngay さっそく."
+    },
+    {
+      "questionId": "toan_q_2013_12_19",
+      "number": 19,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 物価（ぶっか）là mặt bằng giá cả hàng hóa/dịch vụ; 物価が高い làm chi phí sinh hoạt tăng. Dịch: “Ở nước này giá cả cao nên cuộc sống rất vất vả.”\n1. 経済（けいざい）là nền kinh tế nói chung; không nói nền kinh tế “cao” theo cách này.\n2. 物価（ぶっか）kết hợp tự nhiên với 高い để nói giá cả đắt; đúng.\n3. 消費（しょうひ）là sự tiêu dùng; không mang nghĩa giá của hàng hóa.\n4. 支出（ししゅつ）là khoản chi/chi tiêu; có thể nhiều hoặc ít, nhưng không nói 支出が高い để chỉ giá cả đắt.\nGhi nhớ: giá cả 物価; nền kinh tế 経済; tiêu dùng 消費; khoản chi 支出."
+    },
+    {
+      "questionId": "toan_q_2013_12_20",
+      "number": 20,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 追いつく（おいつく）là đuổi kịp một người/vật đi trước. Dịch: “Cuối cùng tôi cũng đuổi kịp anh trai, người đã rời nhà trước, ở gần nhà ga.”\n1. 間に合いました（まにあいました）là kịp giờ/kịp hạn; không có mốc giờ hoặc chuyến tàu cần kịp.\n2. ぶつかりました（ぶつかりました）là va vào/đâm phải; không hợp với ý đi theo anh trai.\n3. 届きました（とどきました）là vật được gửi tới/đến nơi; thường không dùng để nói đuổi kịp một người.\n4. 追いつきました（おいつきました）là đã đuổi kịp; phù hợp với việc anh trai đi trước và người nói gặp kịp anh ở gần ga.\nGhi nhớ: đuổi kịp 追いつく; đến kịp giờ 間に合う; đồ vật được chuyển tới 届く."
+    },
+    {
+      "questionId": "toan_q_2013_12_21",
+      "number": 21,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — おぼれる（溺れる）là chết đuối/chìm dưới nước; おぼれそうになった là suýt chết đuối. Dịch: “Vì tôi bơi kém nên lần trước suýt chết đuối ở biển.”\n1. こおりそう（凍りそう）là suýt đóng băng/lạnh cóng; không diễn tả nguy hiểm do bơi kém.\n2. たまりそう（溜まりそう）là có vẻ sẽ tích tụ/đọng lại; không hợp với người bơi ở biển.\n3. おぼれそう（溺れそう）là suýt bị chìm/suýt chết đuối; đúng với 海で và lý do 泳ぐのが下手.\n4. すべりそう（滑りそう）là suýt trượt chân; khác với bị chìm dưới nước.\nGhi nhớ: 溺れる = chết đuối; 凍る = đóng băng; 滑る = trượt."
+    },
+    {
+      "questionId": "toan_q_2013_12_22",
+      "number": 22,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 材料（ざいりょう）là nguyên liệu/thành phần dùng để làm món ăn. Dịch: “Vì chiếc bánh ăn ở nhà bạn rất ngon nên tôi nhờ bạn ấy cho biết nguyên liệu và cách làm.”\n1. 資源（しげん）là tài nguyên, chẳng hạn tài nguyên thiên nhiên; không phải thành phần làm bánh.\n2. 材料（ざいりょう）là nguyên liệu; cụm 材料と作り方 nghĩa là nguyên liệu và cách làm.\n3. 部品（ぶひん）là linh kiện/bộ phận của máy móc hoặc đồ vật lắp ghép.\n4. 原因（げんいん）là nguyên nhân; không phải nguyên liệu hay công thức.\nGhi nhớ: nguyên liệu 材料; tài nguyên 資源; linh kiện 部品; nguyên nhân 原因."
+    },
+    {
+      "questionId": "toan_q_2013_12_23",
+      "number": 23,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 別々に（べつべつに）là riêng rẽ/tách riêng. Dịch: “Hai anh em đó thường đi học cùng nhau, nhưng hôm nay lại đến riêng.”\n1. 別々に（べつべつに）là riêng từng người; trái với 一緒に “cùng nhau” ở vế đầu.\n2. 半々に（はんはんに）là chia đều một nửa mỗi bên; không diễn tả hai người đến tách nhau.\n3. 分けて（わけて）là chia/tách một thứ thành phần; cần nói hai người hành động riêng rẽ nên 別々に tự nhiên hơn.\n4. 区切って（くぎって）là ngăn/chia thành đoạn hoặc phần; không dùng cho hai người đi học riêng.\nGhi nhớ: đi riêng 別々に; chia đôi 半々に; chia một vật 分ける; ngắt thành đoạn 区切る."
+    },
+    {
+      "questionId": "toan_q_2013_12_24",
+      "number": 24,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 引き受ける（ひきうける）là nhận lời/đảm nhận việc được nhờ. Dịch: “Khi tôi nhờ anh Sato làm việc đó, anh ấy đã nhận lời giúp.”\n1. 引き受けて（ひきうけて）là nhận đảm nhiệm một công việc; hợp với 仕事をお願いした.\n2. 引き出して（ひきだして）là kéo/lấy thứ gì ra; cũng có thể là rút tiền, nhưng không có nghĩa nhận việc.\n3. 引っ張って（ひっぱって）là kéo/giật một vật hoặc dẫn ai đi; không phải nhận lời làm việc.\n4. 引っかけて（ひっかけて）là móc/vướng vào hoặc lừa mắc bẫy; không hợp với lời nhờ nhận việc.\nGhi nhớ: nhận việc 引き受ける; kéo ra 引き出す; kéo 引っ張る; móc/vướng 引っかける."
+    },
+    {
+      "questionId": "toan_q_2013_12_25",
+      "number": 25,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 自慢する（じまんする）là khoe/kể với vẻ tự hào về điều mình có. Dịch: “Anh Mori lúc nào cũng khoe với mọi người rằng thú cưng mình nuôi là đáng yêu nhất.”\n1. 期待して（きたいして）là mong đợi/kỳ vọng; không có nghĩa khoe với người khác.\n2. 応援して（おうえんして）là cổ vũ/ủng hộ một người hay đội; không hợp với nội dung khoe thú cưng.\n3. 自慢して（じまんして）là khoe/tự hào kể; kết hợp đúng với việc nói pet của mình đáng yêu nhất.\n4. 賛成して（さんせいして）là đồng ý/tán thành một ý kiến hoặc đề xuất; không phải chủ động khoe.\nGhi nhớ: khoe 自慢する; kỳ vọng 期待する; cổ vũ 応援する; tán thành 賛成する."
+    },
+    {
+      "questionId": "toan_q_2013_12_26",
+      "number": 26,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — キッチン là bếp/nhà bếp, gần nghĩa nhất với 台所（だいどころ）. Dịch: “Nhà anh Takahashi có căn bếp rộng, thích thật.”\n1. 玄関（げんかん）là lối vào/sảnh trước nhà; không phải bếp.\n2. 台所（だいどころ）là nhà bếp; đồng nghĩa gần nhất với キッチン.\n3. 部屋（へや）là phòng nói chung; không xác định đó là bếp.\n4. 廊下（ろうか）là hành lang nối các phòng; không phải bếp.\nGhi nhớ: bếp 台所; cửa/lối vào 玄関; phòng 部屋; hành lang 廊下."
+    },
+    {
+      "questionId": "toan_q_2013_12_27",
+      "number": 27,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 位置（いち）là vị trí, nơi một vật nằm/được đặt; nghĩa gần nhất là 場所（ばしょ）. Dịch: “Xin hãy kiểm tra trước vị trí chiếc bàn.”\n1. 値段（ねだん）là giá tiền; không phải vị trí.\n2. 場所（ばしょ）là địa điểm/nơi chốn; gần nghĩa nhất với 位置.\n3. 数（かず）là số lượng; không nói bàn đang ở đâu.\n4. 色（いろ）là màu sắc; là thuộc tính khác của chiếc bàn.\nGhi nhớ: vị trí 位置／場所; giá tiền 値段; số lượng 数; màu 色."
+    },
+    {
+      "questionId": "toan_q_2013_12_28",
+      "number": 28,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 売り切れた（うりきれた）là đã bán hết sạch. Dịch: “Món hàng đó đã bán hết.”\n1. 全部売れた là đã bán hết tất cả; diễn đạt đúng nghĩa 売り切れた.\n2. 全部売れなかった là không bán được món nào; ngược nghĩa.\n3. だんだん売れなくなってきた là dần dần bán không chạy nữa; không có nghĩa toàn bộ hàng đã hết.\n4. よく売れるようになってきた là bắt đầu bán chạy; không nói hàng đã hết.\nGhi nhớ: bán hết 売り切れる; bán chạy よく売れる; không bán được 売れない."
+    },
+    {
+      "questionId": "toan_q_2013_12_29",
+      "number": 29,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — わけ trong câu này có nghĩa là lý do; từ gần nghĩa nhất là 理由（りゆう）. Dịch: “Lần tới hãy cho tôi biết lý do nhé.”\n1. 計画（けいかく）là kế hoạch/dự định, không phải lý do.\n2. 意見（いけん）là ý kiến/quan điểm; khác với căn cứ khiến sự việc xảy ra.\n3. 規則（きそく）là quy tắc/nội quy; không đồng nghĩa với わけ.\n4. 理由（りゆう）là lý do; thay vào câu vẫn giữ nguyên nghĩa.\nGhi nhớ: lý do わけ／理由; kế hoạch 計画; ý kiến 意見; quy tắc 規則."
+    },
+    {
+      "questionId": "toan_q_2013_12_30",
+      "number": 30,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 回収（かいしゅう）là thu gom/thu lại những thứ đã phát hoặc phân phát; 集める（あつめる）là gom lại. Dịch: “Bây giờ tôi sẽ thu lại các phiếu khảo sát.”\n1. 渡す（わたす）là đưa/giao cho người khác; chiều hành động ngược với thu lại.\n2. 贈る（おくる）là tặng/biếu; không phải thu hồi phiếu.\n3. 集める（あつめる）là gom/thu thập; gần nghĩa nhất với 回収する.\n4. 始める（はじめる）là bắt đầu; không mang nghĩa thu gom.\nGhi nhớ: thu lại 回収する; gom tập hợp 集める; đưa cho 渡す; tặng 贈る."
+    }
+  ]
+}

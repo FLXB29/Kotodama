@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-09-26",
+  "exam": "JLPT N3 December 2018",
+  "scope": {
+    "fullMockQuestionNumbers": "36–58",
+    "printedQuestionNumbers": "1–23 in Grammar Mondai 1–3",
+    "appSectionId": "cm2u2x30900ml134ilniaj8pm-grammar-reading",
+    "fullMockId": "toan-n3-201812-full"
+  },
+  "source": {
+    "questionPdf": {
+      "file": "9. N3 12-2018.pdf",
+      "driveFileId": "1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5",
+      "url": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "printedPages": {
+        "mondai1": [4, 5],
+        "starQuestions14To18": [5],
+        "clozeQuestions19To23": [6]
+      },
+      "method": "Read the Drive PDF text layer and visually inspected printed pages 4–6 in Chrome at 100%. Compared the M1 wording and options, all five printed ★ positions, the complete cloze passage, and all answer choices with both app datasets."
+    },
+    "secondaryAnswerReferences": [
+      {
+        "name": "SOFL answer table",
+        "url": "https://trungtamnhatngu.edu.vn/blog/dap-an-ky-thi-jlpt-thang-12-2018-1260/",
+        "qualification": "Nonofficial reference. Its M1 and ★ answers agree with the Chuyenngoaingu table. Its cloze key conflicts with the natural reading at question 23."
+      },
+      {
+        "name": "Chuyenngoaingu answer table",
+        "url": "https://chuyenngoaingu.com/news/dap-an-ky-thi-nang-luc-nhat-ngu-jlpt-ky-thi-thang-12-2018-2250.aspx",
+        "qualification": "Nonofficial reference. Its M1 and ★ answers agree with the SOFL table. Its question 23 key conflicts with the sentence meaning."
+      },
+      {
+        "name": "Sohu question-by-question answer review",
+        "url": "https://www.sohu.com/a/279192667_691404",
+        "qualification": "Nonofficial explanation source. It differs on the ★ sequence for question 14 and gives cloze questions 20 and 23 different answers from the two tables."
+      }
+    ],
+    "officialAnswerKeyEstablished": false
+  },
+  "answerReview": {
+    "mondai1": {
+      "appQuestionNumbers": "36–48",
+      "answerSequence": [1, 4, 4, 3, 2, 4, 3, 1, 2, 1, 2, 4, 3],
+      "secondaryTableAgreement": "The stored sequence agrees with the SOFL and Chuyenngoaingu tables."
+    },
+    "starOrdering": {
+      "printedQuestionNumbers": "14–18",
+      "appQuestionNumbers": "49–53",
+      "answerSequence": [3, 4, 1, 4, 2],
+      "orders": [
+        [2, 3, 4, 1],
+        [3, 2, 4, 1],
+        [4, 2, 1, 3],
+        [2, 1, 4, 3],
+        [1, 3, 2, 4]
+      ],
+      "starPositionZeroBased": [1, 2, 2, 2, 2],
+      "result": "The PDF visually confirms the ★ slots. The five reconstructed sentences place the keyed fragment under ★ and form natural sentences. SOFL and Chuyenngoaingu agree on all five keyed fragments. Sohu's question 14 sequence (2→1→4→3) conflicts with the printed ★ fragment and the natural sentence; it is recorded as a source discrepancy."
+    },
+    "cloze": {
+      "printedQuestionNumbers": "19–23",
+      "appQuestionNumbers": "54–58",
+      "storedAndAdjudicatedAnswerSequence": [1, 1, 2, 4, 3],
+      "referenceAnswerSequences": {
+        "SOFL": [1, 1, 2, 4, 4],
+        "Chuyenngoaingu": [1, 1, 2, 4, 4],
+        "Sohu": [1, 4, 2, 4, 3]
+      },
+      "conflicts": [
+        {
+          "printedQuestionNumber": 20,
+          "appQuestionNumber": 55,
+          "storedAnswer": 1,
+          "SOFL": 1,
+          "Chuyenngoaingu": 1,
+          "Sohu": 4,
+          "decision": "Choose それに (1): the sentence adds another observation about the same room. The preceding sentence gives no expectation that the room would be warm or otherwise sets up a reversal for ところが (4)."
+        },
+        {
+          "printedQuestionNumber": 23,
+          "appQuestionNumber": 58,
+          "storedAnswer": 3,
+          "SOFL": 4,
+          "Chuyenngoaingu": 4,
+          "Sohu": 3,
+          "decision": "Choose 住んでみたいです (3): it naturally expresses the writer's wish to try living in a house with a tatami room after learning its benefits. 住もうとすることです (4) nominalizes an attempt or intention and does not complete this first-person wish. This is a semantic adjudication, not an official-key confirmation."
+        }
+      ]
+    }
+  },
+  "dataRepairs": [
+    "Grammar section question 38 option 1 was もっとも; the PDF prints ちっとも. Corrected the section API choice and restored its mirrored explanation.",
+    "Grammar section question 40 option 2 was the non-past やりなおす; the PDF prints やりなおした. Corrected the section API choice and restored its mirrored explanation.",
+    "Full-mock question 48 omitted もう in 今日はもうお帰りですか. Restored the printed wording.",
+    "Full-mock question 48 option 4 included an extra ん; corrected 行かなければならないんですね to the printed 行かなければならないですね.",
+    "Full-mock question 56 option 1 had stray whitespace; normalized it to 1.部屋.",
+    "The grammar-reading API section cloze passage gave the visit month as August and differed from the reviewed full-mock text. Aligned it with the PDF-reviewed June passage.",
+    "Added complete Vietnamese explanations for all choices, reconstructed scripts, ★ positions, and translations for app questions 49–58. Existing M1 explanations now mirror to the section after the transcription mismatches were fixed."
+  ],
+  "browserValidation": {
+    "browser": "Chrome",
+    "application": "http://127.0.0.1:5175/jlpt",
+    "mode": "answer study",
+    "progress": "0/43 answered; no choices selected.",
+    "visibleCheckboxesUnchecked": 92,
+    "checks": [
+      "After a fresh reload, the section view displayed explanations and translations for all 23 grammar questions 36–58; all 92 answer checkboxes were unchecked.",
+      "Questions 38 and 40 showed the PDF-aligned choices; question 48 showed the complete prompt with もう.",
+      "Questions 49–53 showed all fragments, keyed ★ choices, assembled scripts, and ordering notes.",
+      "Question 58 showed the selected #3 answer and a visible note that two reference tables disagree."
+    ],
+    "storage": "Local API QA; no exam answers were selected or submitted."
+  },
+  "totals": {
+    "grammarQuestionsReviewed": 23,
+    "questionsWithExplanationsInBothApiRepresentations": 23,
+    "starQuestionsVisuallyVerified": 5,
+    "officialAnswerKeyEstablished": false,
+    "clozeAnswersWithConflictingSecondaryKeys": 2
+  }
+}

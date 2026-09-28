@@ -1,0 +1,22 @@
+{
+  "reviewedDate": "2026-09-26",
+  "examId": "toan-n3-201412-full",
+  "scope": "Grammar Mondai 3 cloze passage, printed questions 19–23 (full-exam IDs 54–58).",
+  "source": {
+    "questionFile": "5. N3 12-2014.pdf",
+    "questionDriveFileId": "1YhA5giAFeFjf1aUb3HjahysLC6-wP1zR",
+    "printedPage": 7,
+    "answerKeyFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerKeyDriveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "answerKeyViewerPage": 10,
+    "method": "Visually inspected the original exam PDF in Chrome and compared the extracted passage and all four choices for each blank; checked all five keys against the separate answer-key PDF. The answer PDF is a reference compilation; its JLPT-official status is not established."
+  },
+  "sourcePassage": "以下の文章は、留学生の作文である。日本で感動したこと アレン ルーシー 先月、友達へのプレゼントを買いに初めて日本のデパートに行きました。私は、食器売り場で見つけたかわいいコップを買うことにしました。(19)をレジに持っていったとき、びっくりすることが起きたのです。レジで店員さんにコップを渡すと、「ご自宅用ですか。」と聞かれました。意味がわからず答えられない私を見て、店員さんは「家で使いますか、プレゼントですか。」と(20)。私は、なぜそんなことを聞くのだろうと思いながら、「プレゼントです。」と答えました。(21)、店員さんはコップを箱に入れ、紙を一枚取り出しました。そして、その紙の上に箱を置いて包み始めました。テープを使わず、紙を折って包んでいきます。最後だけ短いテープでとめ、15秒ぐらいで完成しました。短い時間で包んだのに、紙は箱の形にぴったり合っています。最初からきれいに(22)。帰国したら家族にこの話をしたいです。でも、言葉だけでは伝わらないでしょう。だから、デパートでお土産を買って包んでもらい、家族に(23)。",
+  "questions": [
+    { "printedQuestion": 19, "questionId": "toan_q_2014_12_54", "sourceMarker": "[19]", "sourceOptions": ["それ", "あれ", "そっち", "あっち"], "answerKeyAnswer": 1 },
+    { "printedQuestion": 20, "questionId": "toan_q_2014_12_55", "sourceMarker": "[20]", "sourceOptions": ["言い返しました", "言い直しませんでした", "言い返さないでくれました", "言い直してくれました"], "answerKeyAnswer": 4 },
+    { "printedQuestion": 21, "questionId": "toan_q_2014_12_56", "sourceMarker": "[21]", "sourceOptions": ["実は", "すると", "ところで", "例えば"], "answerKeyAnswer": 2 },
+    { "printedQuestion": 22, "questionId": "toan_q_2014_12_57", "sourceMarker": "[22]", "sourceOptions": ["包まれていたものでした", "包まれていたことでした", "包まれていたみたいでした", "包まれていたからでした"], "answerKeyAnswer": 3 },
+    { "printedQuestion": 23, "questionId": "toan_q_2014_12_58", "sourceMarker": "[23]", "sourceOptions": ["見せるだろうと思っていました", "見せようと思っています", "見せるだろうと思うはずです", "見せようと思ったかもしれません"], "answerKeyAnswer": 2 }
+  ]
+}

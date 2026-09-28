@@ -1,0 +1,127 @@
+{
+  "exam": "JLPT N3 2023/07 — vocabulary Mondai 5, questions 31–35",
+  "reviewDate": "2026-09-27",
+  "answerKeysChanged": 0,
+  "answers": {
+    "31": 2,
+    "32": 1,
+    "33": 3,
+    "34": 2,
+    "35": 4
+  },
+  "rationale": "Preserved keys 2–1–3–2–4, corroborated by two public third-party answer references; no official JLPT key was located. The standalone section had blank explanations and OCR variants in questions 31 and 33. Question 35 option 1 is treated as contextually odd rather than grammatically impossible: the subject of にこにこした is omitted and would ordinarily be a person, not the car.",
+  "sourceDiffs": [
+    {
+      "number": 31,
+      "questionIds": {
+        "mock": "toan_q_2023_07_31",
+        "section": "cm2u2y31a01e2134isy3bx5x2"
+      },
+      "key": 2,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 32,
+      "questionIds": {
+        "mock": "toan_q_2023_07_32",
+        "section": "cm2u2y31a01e3134iqtfidj9z"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 33,
+      "questionIds": {
+        "mock": "toan_q_2023_07_33",
+        "section": "cm2u2y31a01e4134idihaigru"
+      },
+      "key": 3,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 34,
+      "questionIds": {
+        "mock": "toan_q_2023_07_34",
+        "section": "cm2u2y31a01e5134ipyg9l6t7"
+      },
+      "key": 2,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 35,
+      "questionIds": {
+        "mock": "toan_q_2023_07_35",
+        "section": "cm2u2y31a01e6134iqtf2zy2o"
+      },
+      "key": 4,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "type": "exam-transcription",
+      "url": "https://learnjapaneseaz.com/jlpt-n3-vocabulary-test-26.html",
+      "note": "Public transcription of July 2023 N3 M5 questions 31–35 and answer sequence; not an official JLPT publication."
+    },
+    {
+      "type": "exam-transcription-cross-check",
+      "url": "https://trynihongo.com/en/jlpt-vocabulary-n3-test-july-2023-q1335",
+      "note": "Independent question transcription; contains OCR-like glyph errors in q33, so its garbled spellings were not copied."
+    },
+    {
+      "type": "answer-key-cross-check",
+      "url": "https://nihongoaz.com/jlpt-n3-vocabulary-7-2023.html",
+      "note": "Second public answer reference for the sequence 2–1–3–2–4; not an official JLPT key."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E9%80%B2%E6%AD%A9-169808",
+      "note": "Digital Daijisen: 進歩 is movement toward a better or more desirable state; examples include 技術が進歩する."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E8%A9%B1%E3%81%97%E6%8E%9B%E3%81%91%E3%82%8B-603493",
+      "note": "Digital Daijisen: 話しかける means addressing someone or initiating speech; example 英語で話しかけられる."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E4%BA%A4%E6%B5%81-63363",
+      "note": "Digital Daijisen: 交流 describes people, regions or organizations interacting and exchanging things."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E6%B8%8B%E6%BB%9E-527172",
+      "note": "Digital Daijisen entry for 渋滞 and its use for movement that does not proceed smoothly."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E3%81%AB%E3%81%93%E3%81%AB%E3%81%93-591473",
+      "note": "Digital Daijisen entry for にこにこ, the adverb for smiling cheerfully."
+    }
+  ]
+}

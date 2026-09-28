@@ -1,0 +1,201 @@
+{
+  "generatedAt": "2026-09-27T14:33:47.358Z",
+  "method": "Exact normalized comparison between stored star choices and choices extracted from the source PDF text layer. Choice labels are stripped only when they match the choice slot, preserving content numerals such as 「2週間は」. Mismatches that differ only by a trailing one- or two-digit suffix are flagged as possible printed-page-number contamination, not automatically corrected.",
+  "total": 150,
+  "equal": 126,
+  "mismatchCount": 24,
+  "possiblePageNumberSuffixCount": 19,
+  "mixedWithPossiblePageNumberSuffixCount": 2,
+  "otherTextLayerDifferenceCount": 3,
+  "placeholder": 0,
+  "verifiedWithSource": 148,
+  "sourceConflicts": [
+    {
+      "exam": "2025/12",
+      "question": 16,
+      "note": "The rendered source PDF (printed question 16, page 9) says option 2 is 「弾くけど」, but the stored key and secondary answer reference use 「弾くほど」 to form 「弾けば弾くほど」. The source wording and answer key conflict, so this item is excluded from source-verified counts pending authoritative confirmation."
+    },
+    {
+      "exam": "2016/12",
+      "question": 17,
+      "note": "The printed page supports the question layout and third blank. The scan/text layer conflict on 待てって versus 待ってて and printed option 2 と言われた versus the app reconstruction 言われた is disclosed in star-source-2016-12-q17-review.json; the listed key is nonofficial."
+    }
+  ],
+  "secondaryKeyDiscrepancies": [
+    {
+      "exam": "2023/07",
+      "question": 15,
+      "note": "Compared visually with the rendered original PDF, printed question 15 on page 7. All four option fragments match. The printed ★ is over segment 2; assembled order 2→3→1→4 puts choice 3 in that slot. Secondary-key discrepancy: The rendered exam puts ★ over the second fragment, 「なかなか」. A secondary answer-key compilation lists choice 1, which would put ★ over the third fragment; the original question layout and natural assembled sentence support choice 3."
+    }
+  ],
+  "mismatches": [
+    {
+      "exam": "2025/12",
+      "question": 16,
+      "classification": "other-text-layer-difference",
+      "existing": ["上手に", "弾くほど", "なっていくのが", "弾けるように"],
+      "extracted": ["上手に", "弾くけど", "なっていくのが", "弾けるように"]
+    },
+    {
+      "exam": "2023/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["専門家で", "都会で", "いらっしゃる", "山下花子先生に"],
+      "extracted": ["専門家で", "都会で", "いらっしゃる", "山下花子先生に8"]
+    },
+    {
+      "exam": "2022/07",
+      "question": 16,
+      "classification": "possible-page-number-suffix",
+      "existing": ["が", "聞いてみたら", "から", "北森町に住んでいる"],
+      "extracted": ["が", "聞いてみたら", "から", "北森町に住んでいる7"]
+    },
+    {
+      "exam": "2021/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["なって", "いたら", "熱が下がって", "あしたに"],
+      "extracted": ["なって", "いたら", "熱が下がって", "あしたに10"]
+    },
+    {
+      "exam": "2021/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["形に", "見えることから", "人の耳のような", "見ると"],
+      "extracted": ["形に", "見えることから", "人の耳のような", "見ると6"]
+    },
+    {
+      "exam": "2020/12",
+      "question": 18,
+      "classification": "mixed-with-possible-page-number-suffix",
+      "existing": ["こんでいる電車は", "よい運動になるから", "嫌いだし", "自転車で行けば"],
+      "extracted": ["こんでいる電車は", "よい運転になるから", "嫌いだし", "自転車で行けば6"]
+    },
+    {
+      "exam": "2019/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["もし", "乗せていってあげる", "行くんだったら", "行くつもりだから"],
+      "extracted": ["もし", "乗せていってあげる", "行くんだったら", "行くつもりだから7"]
+    },
+    {
+      "exam": "2019/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["とき", "アルバイトしていた", "みたいだ", "コンピューター会社で"],
+      "extracted": ["とき", "アルバイトしていた", "みたいだ", "コンピューター会社で6"]
+    },
+    {
+      "exam": "2018/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["まで", "あった", "あそこに", "白い段ボール箱に"],
+      "extracted": ["まで", "あった", "あそこに", "白い段ボール箱に6"]
+    },
+    {
+      "exam": "2017/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["私には", "できない", "生活する", "車の運転が"],
+      "extracted": ["私には", "できない", "生活する", "車の運転が6"]
+    },
+    {
+      "exam": "2017/07",
+      "question": 14,
+      "classification": "possible-page-number-suffix",
+      "existing": ["雑誌か", "で", "何か", "紹介されてから"],
+      "extracted": ["雑誌か", "で", "何か", "紹介されてから6"]
+    },
+    {
+      "exam": "2017/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["ようにする", "たくさん練習して", "まで", "メモを見ないで話せる"],
+      "extracted": ["ようにする", "たくさん練習して", "まで", "メモを見ないで話せる7"]
+    },
+    {
+      "exam": "2016/12",
+      "question": 17,
+      "classification": "mixed-with-possible-page-number-suffix",
+      "existing": ["待っているんです", "言われた", "から", "けど"],
+      "extracted": ["待っているんです", "と言われた", "から", "けど6"]
+    },
+    {
+      "exam": "2016/07",
+      "question": 17,
+      "classification": "possible-page-number-suffix",
+      "existing": ["日ほど", "自分の子供が", "うれしかった", "生まれた"],
+      "extracted": ["日ほど", "自分の子供が", "うれしかった", "生まれた7"]
+    },
+    {
+      "exam": "2015/12",
+      "question": 16,
+      "classification": "possible-page-number-suffix",
+      "existing": ["選ぶ", "ことを", "どれにするか", "考えながら"],
+      "extracted": ["選ぶ", "ことを", "どれにするか", "考えながら7"]
+    },
+    {
+      "exam": "2015/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["日が", "降らない", "続いている", "雨の"],
+      "extracted": ["日が", "降らない", "続いている", "雨の6"]
+    },
+    {
+      "exam": "2014/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["うるさいと", "こともあった", "音がして", "思う"],
+      "extracted": ["うるさいと", "こともあった", "音がして", "思う7"]
+    },
+    {
+      "exam": "2014/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["ゆっくり話す", "あとで", "ところで", "時間がないから"],
+      "extracted": ["ゆっくり話す", "あとで", "ところで", "時間がないから6"]
+    },
+    {
+      "exam": "2013/12",
+      "question": 17,
+      "classification": "other-text-layer-difference",
+      "existing": ["あきらめないで", "ようやく", "うまく育たなかったが", "毎年チャレンジしていたら"],
+      "extracted": ["あきらめないで", "ようやく", "うまく育たなかったが", "毎年チャンジしていたら"]
+    },
+    {
+      "exam": "2013/12",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["着られなくなった", "大切に持って", "今でも", "体が大きくなって"],
+      "extracted": ["着られなくなった", "大切に持って", "今でも", "体が大きくなって7"]
+    },
+    {
+      "exam": "2013/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["体育館を", "建設する", "二つの", "という案が"],
+      "extracted": ["体育館を", "建設する", "二つの", "という案が7"]
+    },
+    {
+      "exam": "2012/12",
+      "question": 16,
+      "classification": "possible-page-number-suffix",
+      "existing": ["桜だけでなく", "ことで", "有名ですが", "きれいな"],
+      "extracted": ["桜だけでなく", "ことで", "有名ですが", "きれいな7"]
+    },
+    {
+      "exam": "2012/07",
+      "question": 14,
+      "classification": "other-text-layer-difference",
+      "existing": ["と思う", "たぶん", "時間は", "家にいる"],
+      "extracted": ["と思う", "多分", "時間は", "家にいる"]
+    },
+    {
+      "exam": "2012/07",
+      "question": 18,
+      "classification": "possible-page-number-suffix",
+      "existing": ["すっかり忘れていた", "メールが来るまで", "ということを", "今日がレポートのしめ切り日だった"],
+      "extracted": ["すっかり忘れていた", "メールが来るまで", "ということを", "今日がレポートのしめ切り日だった6"]
+    }
+  ]
+}

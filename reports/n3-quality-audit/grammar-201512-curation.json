@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:14:58.157Z",
+  "examId": "toan-n3-201512-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://wenku.baidu.com/view/2ae58f2419e8b8f67d1cb937.html",
+  "method": "Answers were manually checked against the Japanese sentence context and compared with the linked published reference sequence. The answer source is nonofficial and does not certify other test sections.",
+  "answerSequence": [
+    4,
+    2,
+    1,
+    3,
+    4,
+    1,
+    2,
+    2,
+    4,
+    1,
+    3,
+    2,
+    4
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        "1.によって",
+        "2.に比べて ",
+        "3.のことで",
+        "4.のほかに"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.『キムラ・ブック』と",
+        " 2.『キムラ・ブック』って",
+        " 3.『キムラ・ブック』だって ",
+        "4.『キムラ・ブック』なんか"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "choices": [
+        "1.大変か",
+        "2.大変だと",
+        "3.大変かどうか",
+        "4.大変なのが"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        "1.はずで ",
+        " 2.一方で",
+        "3.せいで",
+        "4.場合"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 4,
+      "choices": [
+        "1.行けば",
+        "2.行っていたら",
+        "3.行くとすると",
+        "4.行くんだったら"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "1.習いはじめた",
+        "2.習いつづけた",
+        "3.習わせたかった ",
+        "4.習わせてほしかった"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.おります",
+        "2.ございます",
+        "3.いたします",
+        "4.いらっしゃいます"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "1.しませんでしたか",
+        "2.しないように",
+        "3.しなかったのに",
+        "4.していませんが"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "1.では ",
+        "2.でしか",
+        "3.ぐらいは",
+        "4.ぐらいしか"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "choices": [
+        "1.になるまで ",
+        "2.にしたくなって",
+        " 3.になっていって ",
+        "4.にするより"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "choices": [
+        "1.誰かも",
+        " 2.誰でも",
+        "3.誰からも",
+        "4.誰かにでも"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.話し合いたがっています",
+        "2.話し合ってみるつもりです",
+        "3.話し合いたいに違いありません ",
+        "4.話し合っておけばいいんです"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.信じられそうにない ",
+        "2.信じられなかったらしい ",
+        "3.信じてきてしまった ",
+        "4.信じてしまいそうだ"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:06:54.924Z",
+  "examId": "toan-n3-201712-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.sohu.com/a/208348786_691404",
+  "method": "Thirteen explanations were written from the Japanese sentence context and checked against the local answer key; the linked publication is an external nonofficial reference, not the official JLPT marking sheet.",
+  "answerSequence": [
+    4,
+    2,
+    1,
+    3,
+    4,
+    1,
+    2,
+    3,
+    1,
+    2,
+    4,
+    1,
+    3
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        "1.と ",
+        "2.から",
+        "3.との ",
+        "4.からの"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 2,
+      "choices": [
+        "1.ほか",
+        "2.ため",
+        "3.途中",
+        "4.一方"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "choices": [
+        "1.あと",
+        "2.まだ",
+        "3.だんだん",
+        " 4.今にも"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        "1.作っているうちに",
+        "2.作ったとしても ",
+        "3.作ってみると",
+        "4.作った後で"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 4,
+      "choices": [
+        "1.おりました",
+        "2.まいりました",
+        "3.なさった ",
+        "4.いただいた"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "1.なんだろう",
+        " 2.だった",
+        "3.みたいだ",
+        " 4.だったのか"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.でいらっしゃいます",
+        "2.でございます",
+        "3.と申し上げます",
+        "4.とおっしゃいます"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.おもしろかったはずがない",
+        "2.おもしろくなければならなかった ",
+        "3.おもしろそうじゃなかった",
+        "4.おもしろくなかっただろう"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        "1.でしか",
+        " 2.だけの",
+        "3.にだけ",
+        "4.での"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "choices": [
+        "1.にするのに",
+        "2.にしても",
+        " 3.になると",
+        "4.になって"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ついている間 ",
+        "2.つけている間",
+        "3.ついたまま",
+        "4.つけたまま"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "choices": [
+        "1.歩きやすくて",
+        "2.歩きすぎて ",
+        " 3.歩きやすかったら",
+        "4.歩きすぎたら"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        "1.帰ってきたことがある",
+        "2.帰っていったことがある",
+        "3.帰ってきたところだ",
+        "4.帰っていったところだ"
+      ]
+    }
+  ]
+}

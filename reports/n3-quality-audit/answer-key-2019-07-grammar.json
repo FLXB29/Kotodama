@@ -1,0 +1,205 @@
+{
+  "generatedAt": "2026-09-26T10:24:00.852Z",
+  "examId": "toan-n3-201907-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the local answer sequence with a published Vietnamese reference table and checks the question transcription against PassJapanese. The answer table is nonofficial; review of one grammar subtest does not certify the rest of this exam.",
+  "sources": [
+    {
+      "name": "Phanmemhoctiengnhat answer table",
+      "url": "https://phanmemhoctiengnhat.com/jlpt/dap-an-jlpt-n3/dap-an-jlpt-n3-7-2019-chuan-day-du-nhat.html"
+    },
+    {
+      "name": "PassJapanese question transcription",
+      "url": "https://passjapanese.com/ja/jlpt/n3/exam/2019-07-grammar-reading"
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "choices": [
+        "１．は",
+        "２．も",
+        "３．など",
+        "４．くらい"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "choices": [
+        "１．に　",
+        "２．が　",
+        "３．は",
+        "４．を"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "choices": [
+        "１．必ず",
+        "２．必ずしも",
+        "３．どうか",
+        "４．どうしても"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "vietnameseReference": 1,
+      "choices": [
+        "１．のほかに",
+        "２．のことで",
+        "３．について　",
+        "４．にくらべ"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "choices": [
+        "１．ように　",
+        "２．うちに",
+        "３．ために　",
+        "４．までに"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "vietnameseReference": 1,
+      "choices": [
+        "１．くださいます",
+        "２．いただきます　",
+        "３．さしあげます",
+        "４．召し上がります"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "choices": [
+        "１．来てる",
+        "２．来とく",
+        "３．来ちゃう",
+        "４．来なきゃ"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "choices": [
+        "１．ないに違いない",
+        "２．ないはずがない",
+        "３．なくてはいけない",
+        "４．なくてもおかしくない"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "vietnameseReference": 4,
+      "choices": [
+        "１．どちらかは",
+        "２．どちらからは",
+        "３．どちらかでも",
+        "４．どちらからでも"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "choices": [
+        "１．やわらかくするまで",
+        "２．やわらかくする間",
+        "３．やわらかくなるまで",
+        "４．やわらかくなる間"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "vietnameseReference": 2,
+      "choices": [
+        "１．書いていたから",
+        "２．書いてあったのに",
+        "３．書いてみたから",
+        "４．書いておいたのに"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "choices": [
+        "１．入ったままなんだ",
+        "２．入ったばかりだったんだ",
+        "３．入っていたことがあるんだ",
+        "４．入っているところだったんだ"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "vietnameseReference": 3,
+      "choices": [
+        "１．使いすぎている",
+        "２．使いすぎるらしい",
+        "３．使いやすそうだ",
+        "４．使いやすくてもいい"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesVietnameseReference": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "storedMatchesVietnameseReference": 13
+  }
+}

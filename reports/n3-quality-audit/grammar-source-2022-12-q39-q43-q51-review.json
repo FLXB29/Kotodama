@@ -1,0 +1,69 @@
+{
+  "exam": "JLPT N3 12/2022 — grammar and reading section",
+  "questionSource": {
+    "title": "13. N3 12-2022 .pdf",
+    "driveFolderId": "1ccBkcPviGdtm9TZZaDP0393exMAG5MDv",
+    "printedPages": [5, 6],
+    "method": "Reviewed the original PDF page images and the visible text layer in Google Drive."
+  },
+  "answerReference": {
+    "title": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 25,
+    "section": "JLPT N3 12/2022",
+    "answers": {
+      "36": 2,
+      "39": 4,
+      "43": 3,
+      "51": 3,
+      "52": 2,
+      "53": 2
+    },
+    "provenance": "This is a user-provided compiled answer reference; its status as an official JLPT key is not established."
+  },
+  "corrections": [
+    {
+      "question": 36,
+      "sourcePage": 5,
+      "correction": "Removed a source line-wrap newline inside 「あったんですが」 and an extraction space after the Japanese comma from the standalone-section copy so the displayed sentence reads continuously.",
+      "answer": 2,
+      "answerStatus": "Matches the compiled reference; the official-key provenance remains unverified as noted in the q36/q46 review."
+    },
+    {
+      "question": 39,
+      "sourcePage": 5,
+      "correction": "Restored the missing に in option 2, 非常に, in the full-mock master so the standalone section can inherit its explanation.",
+      "answer": 4,
+      "answerStatus": "Matches the compiled reference; answer is also supported by the sentence context."
+    },
+    {
+      "question": 43,
+      "sourcePage": 5,
+      "correction": "Removed a stray Latin J after the speaker's question and restored the closing Japanese quote mark in the standalone-section prompt.",
+      "answer": 3,
+      "answerStatus": "Matches the compiled reference; explanation distinguishes Vるところ from Vているところ."
+    },
+    {
+      "question": 51,
+      "sourcePage": 6,
+      "correction": "Restored 1 in option 1 (1年前に習い始めたのだが) and in the answer script; the standalone data had omitted the numeral.",
+      "answer": 3,
+      "answerStatus": "Matches the compiled reference; the full-mock explanation's fragment order reconstructs the standalone script exactly."
+    },
+    {
+      "question": 52,
+      "sourcePage": 6,
+      "correction": "Replaced duplicated quotation marks in the Vietnamese translation with a natural translation of the full two-speaker exchange.",
+      "answer": 2,
+      "answerStatus": "Matches the compiled reference; the explanation still identifies the third fragment in the reconstructed order."
+    },
+    {
+      "question": 53,
+      "sourcePage": 7,
+      "correction": "Expanded the existing short note into a full sentence reconstruction, translation, star-slot identification, and explanation of each fragment's grammatical role.",
+      "answer": 2,
+      "answerStatus": "Matches the compiled reference; the answer is the third fragment in the reconstructed order."
+    }
+  ],
+  "limitation": "The compiled answer-reference provenance is unverified. Questions 36 and 46 remain explicitly unresolved against the conflicting third-party answer tables documented in grammar-source-2022-12-q36-q46-review.json."
+}

@@ -1,0 +1,40 @@
+{
+  "questionId": "toan_q_2012_12_30",
+  "exam": "N3 12/2012, vocabulary Mondai 4, Q30",
+  "previous": {
+    "answer": 1,
+    "options": [
+      "1.明るすぎて",
+      "2.遠すぎて",
+      "3.薄すぎて ",
+      "3.薄すぎて "
+    ]
+  },
+  "reviewed": {
+    "answer": 4,
+    "options": [
+      "1. 小さすぎて",
+      "2. 暗すぎて",
+      "3. 薄すぎて",
+      "4. 明るすぎて"
+    ]
+  },
+  "evidence": [
+    {
+      "source": "data/jlpt_full_master.json, matching question text",
+      "answer": 4,
+      "options": [
+        "小さすぎて",
+        "暗すぎて",
+        "稼すぎて",
+        "明るすぎて"
+      ],
+      "note": "The local source gives answer 4 and places 明るすぎて in option 4. The malformed third choice is normalized to the existing plausible distractor 薄すぎて."
+    },
+    {
+      "source": "Japanese meaning and sentence context",
+      "note": "眩しい means dazzling/glary; 明るすぎて (too bright) directly explains why the poster text cannot be seen. This also confirms the answer independently of the copied key."
+    }
+  ],
+  "explanation": "Restored the source option order and answer; corrected a duplicate option and replaced misleading dictionary senses for 工夫 and 薄 in the reviewed vocabulary entries."
+}

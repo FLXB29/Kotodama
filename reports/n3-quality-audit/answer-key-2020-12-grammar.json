@@ -1,0 +1,239 @@
+{
+  "generatedAt": "2026-09-26T15:54:56.501Z",
+  "examId": "toan-n3-202012-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the stored and linguistically reviewed keys with two published reference sequences. Neither reference is an official JLPT answer sheet. This is a scoped cross-check, not certification of all answers in the exam.",
+  "sources": [
+    {
+      "name": "ChuyenNgoaiNgu answer compilation",
+      "url": "https://chuyenngoaingu.com/news/de-thi-va-dap-an-jlpt-ky-thi-thang-12-2020-nang-luc-tieng-nhat-5276.aspx",
+      "qualification": "Publishes the N3 grammar Mondai 1 sequence; it is a published reference key, not an official JLPT answer sheet."
+    },
+    {
+      "name": "Jpedo answer compilation",
+      "url": "https://www.jpedo.com/news/1572.html",
+      "qualification": "Publishes a matching N3 grammar Mondai 1 sequence; it is a published reference key, not an official JLPT answer sheet."
+    },
+    {
+      "name": "Question booklet mirror",
+      "url": "https://www.scribd.com/document/871661110/14-N3-Tha-ng-12-2020",
+      "qualification": "Used as a question-text mirror only; it does not establish the official answer key."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 2,
+      "jpedoReference": 2,
+      "choices": [
+        "１．から",
+        "２．ほど",
+        "３．まで",
+        "４．しか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 1,
+      "jpedoReference": 1,
+      "choices": [
+        "１．か／か",
+        "２．は／は",
+        "３．が／が",
+        "４．で／で"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 4,
+      "jpedoReference": 4,
+      "choices": [
+        "１．とでも",
+        "２．となら",
+        "３．だけでも",
+        "４．だけなら"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 3,
+      "jpedoReference": 3,
+      "choices": [
+        "１．やっと　",
+        "２．きっと",
+        "３．ちっとも",
+        "４．せっかく"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 1,
+      "jpedoReference": 1,
+      "choices": [
+        "１．おかげで",
+        "２．ようで　",
+        "３．ことで",
+        "４．ほかで"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 3,
+      "jpedoReference": 3,
+      "choices": [
+        "１．着いたり",
+        "２．着いたため",
+        "３．着いたとしても",
+        "４．着いたかどうか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "chuyenNgoaiReference": 3,
+      "jpedoReference": 3,
+      "choices": [
+        "１．営業して",
+        "２．営業しなくて",
+        "３．営業していて",
+        "４．営業していなくて"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 2,
+      "jpedoReference": 2,
+      "choices": [
+        "１．読んでくれてから",
+        "２．読んでもらってから",
+        "３．読んでくれるから",
+        "４．読んでもらうから"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 4,
+      "jpedoReference": 4,
+      "choices": [
+        "１．変わっていって",
+        "２．変わってくるのに",
+        "３．変わっていくと　",
+        "４．変わってきたら"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 1,
+      "jpedoReference": 1,
+      "choices": [
+        "１．聞かせる",
+        "２．聞かれる",
+        "３．聞かされる",
+        "４．聞いている"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "chuyenNgoaiReference": 2,
+      "jpedoReference": 2,
+      "choices": [
+        "１．ございます　",
+        "２．いらっしゃいます　",
+        "３．拝見します　",
+        "４．お目にかかります"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "chuyenNgoaiReference": 4,
+      "jpedoReference": 4,
+      "choices": [
+        "１．よりしていれば",
+        "２．よりしていても",
+        "３．ばかりしていれば　",
+        "４．ばかりしていても"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "chuyenNgoaiReference": 1,
+      "jpedoReference": 1,
+      "choices": [
+        "１．しなきゃならなくなった　",
+        "２．しちゃいけなくなった",
+        "３．するつもりでいる",
+        "４．しないようにしている"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesChuyenNgoai": true,
+      "answerMatchesJpedo": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "storedMatchesChuyenNgoai": 13,
+    "storedMatchesJpedo": 13
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-09-26T13:30:21.753Z",
+  "examId": "toan-n3-201907-full",
+  "scope": "Grammar questions 36–58: Mondai 1, star-order Mondai 2, cloze Mondai 3.",
+  "method": "Compared printed prompts/options and star placement with the supplied Google Drive PDF (printed pages 4–6), reconstructed each star sentence and checked the answer sequence against a nonofficial Vietnamese reference table. The reference table is not an official JLPT answer key.",
+  "sources": [
+    {
+      "name": "User-provided source PDF: 10. N3 7-2019.pdf",
+      "scope": "Prompt and option visual inspection, printed pages 4–6; star prompts/order on page 5 and cloze passage/options on page 6."
+    },
+    {
+      "name": "Phanmemhoctiengnhat answer table",
+      "url": "https://phanmemhoctiengnhat.com/jlpt/dap-an-jlpt-n3/dap-an-jlpt-n3-7-2019-chuan-day-du-nhat.html",
+      "scope": "Published nonofficial answers for all 23 grammar items."
+    },
+    {
+      "name": "PassJapanese question transcription",
+      "url": "https://passjapanese.com/ja/jlpt/n3/exam/2019-07-grammar-reading",
+      "scope": "Cross-check of exam structure and question transcription; not used as an official answer key."
+    }
+  ],
+  "answerSequence": [2, 4, 4, 1, 2, 1, 3, 2, 4, 3, 2, 3, 3, 1, 3, 3, 2, 2, 4, 2, 4, 3, 1],
+  "corrections": [
+    {
+      "questionNumber": 55,
+      "before": 3,
+      "after": 2,
+      "reason": "「そして」 carries the narrative forward from watching practice to the resulting thought; 「ところが」 incorrectly implies a contrast. The reference table also gives option 2."
+    },
+    {
+      "questionNumber": 57,
+      "before": 2,
+      "after": 3,
+      "reason": "「彼女は」 is the person who answered; 「答えてくれました」 matches that subject and the narrator’s beneficiary perspective. The reference table also gives option 3."
+    }
+  ],
+  "starQuestions": [
+    {
+      "questionNumber": 49,
+      "order": [2, 4, 1, 3],
+      "starPosition": 2,
+      "starAnswer": 1,
+      "completeSentence": "X 高校と Y 高校のバスケットボールの試合は 10 時開始の予定だったが、大雨による電車の遅れのため１１時開始になった。"
+    },
+    {
+      "questionNumber": 50,
+      "order": [1, 4, 3, 2],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "completeSentence": "昨日行った桜動物園には、500 種類以上の動物がいた。あんなにいろいろな動物が見られる動物園はなかなかないだろう。"
+    },
+    {
+      "questionNumber": 51,
+      "order": [4, 2, 3, 1],
+      "starPosition": 2,
+      "starAnswer": 3,
+      "completeSentence": "母は、姉が一番行きたがっていた大学に合格したという知らせを聞いて今にも泣きそうな顔をしていた。"
+    },
+    {
+      "questionNumber": 52,
+      "order": [1, 3, 2, 4],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "completeSentence": "20 階建ての大きいマンションが隣に建ったことで私の家に日が当たらなくなって昼でも部屋の中が暗い。"
+    },
+    {
+      "questionNumber": 53,
+      "order": [1, 4, 2, 3],
+      "starPosition": 2,
+      "starAnswer": 2,
+      "completeSentence": "田中「山下さんって、パソコンにすごく詳しいよね。」木村「うん、大学生のときコンピューター会社でアルバイトしていたみたいだよ。"
+    }
+  ],
+  "explanationsCompleted": 10,
+  "officialKeyConfirmed": false
+}

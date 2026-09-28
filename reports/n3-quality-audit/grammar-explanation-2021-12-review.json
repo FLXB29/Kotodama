@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-09-26",
+  "examId": "toan-n3-202112-full",
+  "standaloneExamId": "cm2u2xosv0138134ib0bvpy32-grammar-reading",
+  "scope": "Grammar Mondai 1, questions 36–48, reviewed in both the full mock and standalone grammar-reading exam.",
+  "sourceReview": {
+    "questionPdf": "12. N3 12-2021.pdf",
+    "questionPdfPages": [7, 8],
+    "answerSheetPdf": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerSheetPdfPage": 23,
+    "answerSequence": [3, 4, 2, 4, 1, 2, 4, 1, 2, 2, 4, 1, 4],
+    "storedAnswersMatchUserProvidedSheet": 13,
+    "officialAnswerPdfConfirmed": false,
+    "notes": [
+      "The supplied answer sheet matches all 13 grammar answers in both app views; it is a user-provided reference, not an official JLPT answer notice.",
+      "Question 41's source print reads 使い続いている, which is ungrammatical for the intended meaning. The app uses 使い続けている and explains the correction.",
+      "Question 46's answer-sheet choice is 4. Choice 1 でしょう can be grammatical as a prediction, so the explanation presents choice 4 as the intended contextual answer and records the pragmatic ambiguity."
+    ]
+  },
+  "explanationCriteria": {
+    "correctAnswerAndGrammarPoint": true,
+    "allFourChoicesExplained": true,
+    "fullVietnameseTranslation": true,
+    "bothExamViewsHaveSameExplanation": true,
+    "sourceDiscrepancyAndAmbiguityDisclosed": true
+  },
+  "reviewLimitations": [
+    "The source question PDF and the user's answer sheet are available, but no official JLPT answer PDF was confirmed.",
+    "Question 46 has a context-sensitive alternative reading; the reference sheet supports choice 4, while choice 1 is not inherently ungrammatical."
+  ],
+  "totals": {
+    "questions": 13,
+    "answerKeysMatchingUserProvidedSheet": 13,
+    "completeExplanations": 13,
+    "sourceCorrectionsDocumented": 1,
+    "contextNotesDocumented": 2
+  }
+}

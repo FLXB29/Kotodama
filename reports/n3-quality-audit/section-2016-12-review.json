@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-09-26T15:17:26.823Z",
+  "examId": "cm2u2wlnt0097134ira8pl9rk",
+  "scope": "Repair of the December 2016 N3 standalone section mirrors and one source-checked listening transcript typo.",
+  "source": {
+    "examPdf": {
+      "name": "7. N3 12-2016.pdf",
+      "inspectedInChrome": true,
+      "pages": [3, 4, 5],
+      "notes": "Printed page 3 shows vocabulary questions 31–35; printed pages 4–5 start grammar at question 36 and confirm grammar/cloze questions through 23 (global 58)."
+    },
+    "scriptPdf": {
+      "name": "7. N3 12-2016 (script).pdf",
+      "localPath": "data/n3_scripts/7. N3 12-2016/7. N3 12-2016 (script).pdf",
+      "inspectedWithPdfplumber": true,
+      "printedPage": 8,
+      "confirmedQuestionPrompts": [
+        "約束の時間に少し遅れました。友達に何と言いますか。",
+        "観光の案内をしています。建物を見てもらいたいです。何と言いますか。",
+        "荷物を受け取ります。サインするところがわかりません。何と言いますか。",
+        "今日はあまりおなかがすいていません。ご飯を普通より少なくしてほしいです。何と言いますか。"
+      ],
+      "confirmedText": "今日はあまりおなかがすいていません"
+    },
+    "listeningKeys": "Existing answer fields were retained; script transcription review does not certify those keys."
+  },
+  "before": {
+    "vocabularyQuestionCount": 30,
+    "grammarReadingQuestionCount": 48,
+    "listeningQuestionCount": 24,
+    "misplacedVocabularyRange": "31-35",
+    "misplacedListeningRange": "16-19",
+    "listeningQuestion93Script": "今日はおあまりなかがすいていません",
+    "sectionQuestion35Option4": "第が希望の大学に合格したので、家族で外食をして慰めた。"
+  },
+  "after": {
+    "vocabularyQuestionCount": 35,
+    "grammarReadingQuestionCount": 39,
+    "listeningQuestionCount": 28,
+    "vocabularyRanges": ["1-8", "9-14", "15-25", "26-30", "31-35"],
+    "grammarReadingRanges": ["36-48", "49-53", "54-58", "59-62", "63-68", "69-72", "73-74"],
+    "listeningRanges": ["1-6", "7-12", "13-15", "16-19", "20-28"],
+    "listeningQuestion93Script": "今日はあまりおなかがすいていません",
+    "sectionQuestion35Option4": "弟が希望の大学に合格したので、家族で外食をして慰めた"
+  },
+  "officialKeysConfirmed": false
+}

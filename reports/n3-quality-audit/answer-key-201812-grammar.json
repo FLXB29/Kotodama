@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-09-26T10:24:00.384Z",
+  "examId": "toan-n3-201812-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "The local 13-item key agrees with the SOFL table; Read01 separately explains several specific items. These are nonofficial references and do not certify other parts of the test.",
+  "sources": [
+    {
+      "name": "SOFL published answer table",
+      "url": "https://trungtamnhatngu.edu.vn/blog/dap-an-ky-thi-jlpt-thang-12-2018-1260/"
+    },
+    {
+      "name": "Read01 grammar explanations",
+      "url": "https://read01.com/AJ273Dj.html"
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        " 1.も",
+        "2.と",
+        "3.が",
+        "4.で"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        " 1.疲れて仕事が多くて",
+        "2.疲れたり仕事が多かったり",
+        "3.疲れたし仕事が多いし",
+        "4.疲れたとか仕事が多いとか"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        " 1.ちっとも",
+        "2.せっかく",
+        "3.ようやく",
+        "4.あまりにも"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        " 1.において",
+        "2.によって",
+        "3.にくらべて　",
+        "4.にしたがって"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        " 1.やりおわった",
+        "2.やりなおした",
+        "3.やっておいた",
+        "4.やってあった"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        "1.ようです",
+        "2.せいです",
+        "3.はずです",
+        "4.おかげです"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        "1.使った",
+        "2.使わない",
+        "3.使っている",
+        "4.使っていなかった"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1.いたします",
+        "2.なさいます",
+        "3.うかがいます",
+        "4.いらっしゃいます"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        "1.誰には",
+        "2.誰にも",
+        "3.誰かは",
+        "4.誰かも"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1.なるには",
+        "2.するよりは",
+        "3.なるかどうかは",
+        "4.することは"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        " 1.開こうと思えば",
+        "2.開こうと思ってから",
+        "3.開くようになれば",
+        "4.開くようになってから"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        " 1.してあげてもいい",
+        "2.してくれたらいい",
+        "3.してやったらいい",
+        "4.してもらってもいい"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        "1.行っているところなんです",
+        " 2.行っているところですね",
+        "3.行かなければならないんです",
+        " 4.行かなければならないんですね"
+      ],
+      "matches": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReference": 13
+  }
+}

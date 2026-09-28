@@ -1,0 +1,180 @@
+{
+  "exam": "JLPT N3 2021/07 — vocabulary Mondai 5, questions 31–35",
+  "reviewDate": "2026-09-27",
+  "answerKeysChanged": 0,
+  "answers": {
+    "31": 2,
+    "32": 1,
+    "33": 4,
+    "34": 1,
+    "35": 3
+  },
+  "rationale": "Preserved keys 2–1–4–1–3, matching the public TryNihongo answer reference; Misonedu publishes a second reference answer sheet as an image, but no official JLPT key was located. The standalone text had several transcription differences from the mock. This pass synchronizes both dataset versions, retains the published question 33 option 1 tail 「彼女」, restores the likely intended q32 guardrail particle and spelling, and uses the meeting-material q35 option 4 corroborated by the standalone copy and the Nihongoph transcription. Question 33 option 3 and q35 option 4 are treated as less natural/context-dependent rather than absolutely impossible. The original JLPT question scan was not available for direct visual verification.",
+  "sourceDiffs": [
+    {
+      "number": 31,
+      "questionIds": {
+        "mock": "toan_q_2021_07_31",
+        "section": "cm2u2xlkf010x134i5vohy136"
+      },
+      "key": 2,
+      "priorOptionTextDifferences": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 32,
+      "questionIds": {
+        "mock": "toan_q_2021_07_32",
+        "section": "cm2u2xlkf010y134iytrdbxa8"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        true,
+        false,
+        true,
+        true
+      ]
+    },
+    {
+      "number": 33,
+      "questionIds": {
+        "mock": "toan_q_2021_07_33",
+        "section": "cm2u2xlkf010z134ii49bb8pt"
+      },
+      "key": 4,
+      "priorOptionTextDifferences": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "number": 34,
+      "questionIds": {
+        "mock": "toan_q_2021_07_34",
+        "section": "cm2u2xlkf0110134i195fqu0s"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 35,
+      "questionIds": {
+        "mock": "toan_q_2021_07_35",
+        "section": "cm2u2xlkg0111134idwvhpmwy"
+      },
+      "key": 3,
+      "priorOptionTextDifferences": [
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "question": 32,
+      "option": 1,
+      "variants": [
+        "場所 (main mock)",
+        "場面 (standalone and two public transcriptions)"
+      ],
+      "decision": "Use 場所 because the sentence describes a physical location that is far from the station; original scan not verified, so this remains a transcription uncertainty."
+    },
+    {
+      "question": 32,
+      "option": 3,
+      "variants": [
+        "カードレールに (old main mock)",
+        "ガードレールぶつけて (standalone and public transcriptions)"
+      ],
+      "decision": "Correct the common noun to ガードレール and restore に for the Japanese construction ガードレールにぶつける; exact punctuation/particle not verified against an original scan."
+    },
+    {
+      "question": 33,
+      "option": 1,
+      "variants": [
+        "...親しかった。 (old main mock)",
+        "...親しかった彼女。 (standalone and public transcriptions)"
+      ],
+      "decision": "Keep the transcribed 彼女 tail and explicitly flag the sentence as malformed/uncertain instead of silently deleting it."
+    },
+    {
+      "question": 35,
+      "option": 4,
+      "variants": [
+        "お釣りを支給してもらいのを忘れた (old main mock)",
+        "会議が始まる前に、この資料を支給してください (standalone and public transcription)"
+      ],
+      "decision": "Use the latter as the likely intended source choice; it forms a complete sentence and is corroborated by two transcriptions. Clarify that 配布する is the usual verb for distributing meeting handouts."
+    }
+  ],
+  "limitations": [
+    "The public answer references are secondary references, not the JLPT official key.",
+    "The question-paper source is a public transcription, not an original JLPT scan. Exact characters in q32 and the malformed q33 option 1 remain uncertain.",
+    "Question 33 option 3 and question 35 option 4 are context-sensitive/awkward; explanations identify the expected best usage without claiming absolute grammatical impossibility."
+  ],
+  "sources": [
+    {
+      "type": "exam-transcription",
+      "url": "https://www.nihongoph.com/2022/10/jlpt-n3-72021.html",
+      "note": "Public transcription of July 2021 N3 questions 31–35. It includes likely transcription/OCR anomalies in q32, q33 and q35; no original scan was available for visual comparison."
+    },
+    {
+      "type": "exam-transcription-cross-check",
+      "url": "https://www.scribd.com/document/976942855/12-N3-7-2021",
+      "note": "Independent public transcription of the N3 07/2021 question paper; not an official source."
+    },
+    {
+      "type": "answer-key",
+      "url": "https://trynihongo.com/ko/dap-an-ky-thi-jlpt-n3-thang-072021-p450",
+      "note": "Public reference key lists M5 questions 31–35 as 2–1–4–1–3; explicitly presented as a reference answer, not an official key."
+    },
+    {
+      "type": "answer-key-cross-check",
+      "url": "https://www.misonedu.cn/riyu/n1n2/5537.html",
+      "note": "Misonedu publishes a second July 2021 N3 answer sheet as an image; not an official JLPT key."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E3%81%8A%E3%83%BC%E3%81%B0%E3%83%BC-3208656",
+      "note": "Digital Daijisen: quantity over a limit; examples include 重量制限をオーバーする and 予算オーバー."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E6%AC%A0%E7%82%B9-490685",
+      "note": "Digital Daijisen: 欠点 means an insufficient or unfavorable point, shortcoming."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E8%A6%AA%E3%81%97%E3%81%84-520457",
+      "note": "Digital Daijisen: 親しい means being close and on good terms; also familiar through frequent contact."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://www2.ninjal.ac.jp/dictionaries/IPALBA/pdf_dir/%E3%81%97%E3%81%9F%E3%81%97%E3%81%84.pdf",
+      "note": "NINJAL IPAL: 親しい describes people who know one another well and are on good terms."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E8%A9%B0%E3%82%81%E3%82%8B-572623",
+      "note": "Digital Daijisen: place objects into a container so it is full/tightly packed; example 衣装を詰めた鞄."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E7%B5%A6%E4%BB%98-52186",
+      "note": "Digital Daijisen: 給付 means to provide/disburse money or goods; used as a boundary for interpreting 支給 without claiming it applies only to money."
+    }
+  ]
+}

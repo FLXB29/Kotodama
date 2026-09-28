@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:06:54.921Z",
+  "examId": "toan-n3-201707-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.luyenthitiengnhat.edu.vn/mod/page/view.php?id=3405",
+  "method": "Thirteen explanations were written from the Japanese sentence context and checked against the local answer key; the linked publication is an external nonofficial reference, not the official JLPT marking sheet.",
+  "answerSequence": [
+    1,
+    4,
+    2,
+    1,
+    3,
+    2,
+    3,
+    4,
+    1,
+    3,
+    4,
+    2,
+    2
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 1,
+      "choices": [
+        "1.ばかり",
+        "2.なんか",
+        "3.しか",
+        "4.でも"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        "1.までに",
+        " 2.たびに",
+        " 3.に対して",
+        " 4.にしたがって"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.今にも",
+        "2.ようやく",
+        "3.絶対 ",
+        " 4.あまりに"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "choices": [
+        "1.便利である一方で ",
+        " 2.便利なのだから ",
+        "3.利だとすると",
+        "4.便利であるように"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 3,
+      "choices": [
+        "1.入れる",
+        " 2.入る",
+        "3.入れ ",
+        "4.入り"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "choices": [
+        "1.間に合うに違いなくて",
+        " 2.間に合いそうになくて",
+        " 3.間に合わないはずがなくて",
+        " 4.間に合わせないといけなくて"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "1.入ろう",
+        "2.入って ",
+        "3.入るな ",
+        "4.入りなさい"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "choices": [
+        "1.買うところだ ",
+        "2.買うことにする ",
+        "3.買ってほしい ",
+        "4.買ってしまう"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        "1.だけでも ",
+        " 2.までには",
+        " 3.だけに",
+        "4.までで"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "choices": [
+        "1.持たなくて",
+        "2.持てなくて",
+        "3.持たないで",
+        " 4.持てないで"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.入りたいのも ",
+        "2.入れたのは ",
+        "3.入るまでより",
+        "4.入ってからのほうが"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.をしてい ",
+        "2.がしてくる",
+        "3.をしている ",
+        "4.がしてある"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "choices": [
+        "1.やっておきそうなので ",
+        "2.やってしまいたいので ",
+        "3.やってみてもいいんですが ",
+        "4.やっているところなんですが"
+      ]
+    }
+  ]
+}

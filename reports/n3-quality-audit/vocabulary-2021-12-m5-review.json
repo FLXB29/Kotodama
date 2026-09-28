@@ -1,0 +1,153 @@
+{
+  "exam": "JLPT N3 2021/12 — vocabulary Mondai 5, questions 31–35",
+  "reviewDate": "2026-09-27",
+  "answerKeysChanged": 0,
+  "answers": {
+    "31": 1,
+    "32": 3,
+    "33": 1,
+    "34": 3,
+    "35": 4
+  },
+  "rationale": "Preserved answer keys 1–3–1–3–4. The explanations now translate the full correct sentence and all four options, identify the word usage in each distractor, and provide a short usage contrast. The q31 question text is retained as 7時 because several question transcriptions show 7時, while some answer/recollection pages show 10時; the original scan was not available to resolve this conflict.",
+  "sourceDiffs": [
+    {
+      "question": 31,
+      "key": 1,
+      "questionIds": {
+        "mock": "toan_q_2021_12_31",
+        "section": "cm2u2xpvd0148134imifzq83b"
+      },
+      "priorOptionDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "question": 32,
+      "key": 3,
+      "questionIds": {
+        "mock": "toan_q_2021_12_32",
+        "section": "cm2u2xpvd0149134iwh4xzzuo"
+      },
+      "priorOptionDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "question": 33,
+      "key": 1,
+      "questionIds": {
+        "mock": "toan_q_2021_12_33",
+        "section": "cm2u2xpvd014a134i94x82rm8"
+      },
+      "priorOptionDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "question": 34,
+      "key": 3,
+      "questionIds": {
+        "mock": "toan_q_2021_12_34",
+        "section": "cm2u2xpvd014b134ichifl6ie"
+      },
+      "priorOptionDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "question": 35,
+      "key": 4,
+      "questionIds": {
+        "mock": "toan_q_2021_12_35",
+        "section": "cm2u2xpvd014c134i3v6zjnmx"
+      },
+      "priorOptionDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    {
+      "question": 31,
+      "option": 1,
+      "variants": [
+        "7時 (multiple question transcriptions)",
+        "10時 (some answer/recollection references)"
+      ],
+      "decision": "Keep 7時 in the question text because it is corroborated by multiple question-paper transcriptions; do not silently alter it based on answer-key/recollection pages. This remains unverified against an original scan."
+    }
+  ],
+  "limitations": [
+    "The available answer references are secondary references, not an official JLPT key.",
+    "No original JLPT question scan was available for direct visual verification; q31 has an unresolved 7時／10時 transcription conflict.",
+    "The distractor explanations describe the intended standard usage and replacements; they do not claim every sentence could never be interpreted in any context."
+  ],
+  "sources": [
+    {
+      "type": "exam-transcription",
+      "url": "https://www.scribd.com/document/1047321670/N3-T12-2021-Final-Version",
+      "note": "Public transcription of the December 2021 questions; q31 option 1 is transcribed with 7時. Not an official or original scan."
+    },
+    {
+      "type": "exam-transcription-cross-check",
+      "url": "https://www.scribd.com/document/1068037765/Jlpt-n3-2021-December",
+      "note": "Another public transcription also gives 7時 for q31. Not an official or original scan."
+    },
+    {
+      "type": "answer-key",
+      "url": "https://trynihongo.com/zh/dap-an-ky-thi-jlpt-n3-thang-122021-p809",
+      "note": "Public reference answers give the M5 key and show 10時 for q31 option 1; this conflicts with multiple question transcriptions. Not an official key."
+    },
+    {
+      "type": "answer-key-cross-check",
+      "url": "https://jp-files.riyutool.com/%E8%80%83%E8%AF%95%E7%9C%9F%E9%A2%98/N3/2021.12/2021%E5%B9%B412%E6%9C%88N3%E7%AD%94%E6%A1%88%E4%B8%8E%E8%A7%A3%E6%9E%90%40x9az%40.pdf",
+      "note": "After-exam recollection PDF provides explanations for 集合, 中古, 追い抜く, 見本, and だるい; it is not an official source and also shows 10時 for q31."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E9%9B%86%E5%90%88-4409",
+      "note": "Digital Daijisen: 集合 means people/things gather at one place; includes 駅前に八時に集合する."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E9%9B%86%E4%B8%AD-527265",
+      "note": "Digital Daijisen: 集中 is gathering/concentrating at one place or focus."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E4%B8%AD%E5%8F%A4-567365",
+      "note": "Digital Daijisen: 中古 describes something used and somewhat old; examples include 中古のカメラ."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E8%BF%BD%E6%8A%9C%E3%81%8F-448551",
+      "note": "Digital Daijisen: 追い抜く means catch up with something ahead and go past it."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E8%A6%8B%E6%9C%AC-639559",
+      "note": "Digital Daijisen: 見本 is a sample or concrete example to follow."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E6%80%A0%E3%81%84-563322",
+      "note": "Digital Daijisen: だるい commonly describes a body that feels heavy or reluctant to move because of fatigue or illness."
+    }
+  ]
+}

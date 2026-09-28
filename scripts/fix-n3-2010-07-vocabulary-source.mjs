@@ -1,0 +1,63 @@
+import fs from 'node:fs'
+import prettier from 'prettier'
+
+const masterPath = 'data/jlpt_n3_toan_master.json'
+const examId = 'toan-n3-201007-full'
+const apply = process.argv.includes('--apply')
+const formatJson = async (file, value) =>
+  prettier.format(JSON.stringify(value), { ...(await prettier.resolveConfig(file)), filepath: file })
+const corrections = [
+  {
+    number: 16,
+    answer: 4,
+    before: ['1.関心', '2.気分', '3.考え', '感じ'],
+    after: ['1.関心', '2.気分', '3.考え', '4.感じ'],
+  },
+  {
+    number: 24,
+    answer: 3,
+    before: ['1.ぴったり', '2.ぐっすり', '2.うっかり', '4.がっかり'],
+    after: ['1.ぴったり', '2.ぐっすり', '3.うっかり', '4.がっかり'],
+  },
+]
+const normalizeOption = (value) =>
+  String(value || '')
+    .normalize('NFKC')
+    .replace(/^\s*[1-4][.)．、]?\s*/u, '')
+    .replace(/\s+/gu, '')
+
+const master = JSON.parse(fs.readFileSync(masterPath, 'utf8'))
+const exam = master.find((entry) => entry.id === examId)
+if (!exam) throw new Error('Missing exam ' + examId + '.')
+const questions = exam.parts.filter((part) => part.title.includes('Từ vựng')).flatMap((part) => part.questions || [])
+if (questions.length !== 35) throw new Error('Expected 35 vocabulary questions.')
+
+for (const row of corrections) {
+  const question = questions.find((entry) => Number(entry.number) === row.number)
+  if (!question) throw new Error('Missing question ' + row.number + '.')
+  if (Number(question.correctAnswer ?? question.answer) !== row.answer) {
+    throw new Error('Answer key changed for question ' + row.number + '.')
+  }
+  const actual = question.options.map(normalizeOption)
+  if (
+    JSON.stringify(actual) !== JSON.stringify(row.before.map(normalizeOption)) &&
+    JSON.stringify(actual) !== JSON.stringify(row.after.map(normalizeOption))
+  ) {
+    throw new Error('Unexpected source options for question ' + row.number + '; review manually before applying.')
+  }
+  question.options = row.after
+}
+
+if (apply) fs.writeFileSync(masterPath, await formatJson(masterPath, master))
+console.log(
+  JSON.stringify(
+    {
+      mode: apply ? 'applied' : 'dry-run',
+      examId,
+      correctedOptionLabels: corrections.map((row) => row.number),
+      answerKeysChanged: 0,
+    },
+    null,
+    2
+  )
+)

@@ -1,0 +1,72 @@
+{
+  "exam": "JLPT N3 December 2017",
+  "scope": "Grammar questions 36–58: Mondai 1 (13 items), star ordering (5 items), and passage cloze (5 items).",
+  "source": {
+    "questionPdf": {
+      "file": "8. N3 12.2017.pdf",
+      "driveFileId": "1U0CZnFUibxiS9PFX_BdfWK2QgaDB-m6C",
+      "url": "https://drive.google.com/file/d/1U0CZnFUibxiS9PFX_BdfWK2QgaDB-m6C/view",
+      "printedPages": {
+        "mondai1": [4, 5],
+        "starQuestions14To18": [5],
+        "clozeQuestions19To23": [6]
+      },
+      "method": "Read the connected Google Drive PDF text and visually inspected printed pages 4–6 in Chrome at 75% and 100%. Compared all four M1 choices, the five ★ placements, the complete cloze passage, and its choices with the app data."
+    },
+    "answerReference": {
+      "name": "Sohu question-by-question answer review",
+      "url": "https://www.sohu.com/a/208348786_691404",
+      "qualification": "Secondary answer reference, not an official JLPT marking sheet. Its M1 sequence agrees with the key stored in the app."
+    }
+  },
+  "review": {
+    "mondai1": {
+      "questions": 13,
+      "answerSequence": [4, 2, 1, 3, 4, 1, 2, 3, 1, 2, 4, 1, 3],
+      "result": "Compared PDF wording and answer choices; checked each choice rationale against the sentence context. Corrected question 10 (app question 45), where the source prints そのまま but the app had dropped the final ま."
+    },
+    "starOrdering": {
+      "questions": 5,
+      "answerSequence": [3, 2, 2, 4, 1],
+      "orders": [
+        [4, 2, 3, 1],
+        [3, 4, 2, 1],
+        [1, 3, 2, 4],
+        [2, 1, 4, 3],
+        [4, 2, 1, 3]
+      ],
+      "starPositionZeroBased": 2,
+      "result": "The five printed ★ slots were visually checked on page 5. Each reconstructed order places the stored answer at the printed third blank and forms a grammatical sentence. The extracted text layer appends page number 6 to question 18 option 4; the visual PDF shows the option is only 車の運転が, so the app text is correct. Added completed-fragment scripts, choice-by-choice ordering explanations, and the source PDF to provenance."
+    },
+    "cloze": {
+      "questions": 5,
+      "answerSequence": [3, 1, 2, 1, 4],
+      "result": "Compared the app passage and choices with the full printed page 6. Added a contextual reason for each correct choice, why each alternative does not fit, and a Vietnamese translation for every blank's sentence context."
+    }
+  },
+  "sectionDataRepairs": [
+    "Grammar-reading section question 42 had ruby text 客きゃく inserted into the prompt and trailing full stops on choices 1, 3, and 4; removed those artifacts to match the PDF.",
+    "Grammar-reading section question 57 choice 2 had an extra が after そんな部屋; corrected the choice to そんな部屋.",
+    "Repaired furigana import artifacts in the karaoke passage: 大おお勢ぜい to 大勢 and 自じ由ゆう to 自由."
+  ],
+  "browserValidation": {
+    "browser": "Chrome",
+    "application": "http://127.0.0.1:5175/jlpt",
+    "mode": "answer study",
+    "questionsDisplayed": "23/23 grammar questions (36–58) have answer notes and translations in the section view.",
+    "progress": "0/39 answered; no choices selected.",
+    "checks": [
+      "Question 42 displays clean PDF-aligned wording and choices.",
+      "Question 45 includes そのまま.",
+      "Questions 49–53 display reconstructed star orders and completed scripts.",
+      "Questions 54–58 display the cloze explanations and corrected choice そんな部屋 in question 57."
+    ]
+  },
+  "totals": {
+    "questionsReviewed": 23,
+    "questionsWithExplanations": 23,
+    "apiRepresentationsReviewed": 2,
+    "pdfVerifiedStarQuestions": 5,
+    "officialAnswerKeyEstablished": false
+  }
+}

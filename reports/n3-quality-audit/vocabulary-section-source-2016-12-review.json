@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-09-26T09:47:15.066Z",
+  "examId": "cm2u2wlnt0097134ira8pl9rk-vocab",
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPages": [
+      2,
+      3
+    ],
+    "observed": true
+  },
+  "corrections": [
+    {
+      "questionNumber": 11,
+      "field": "option 2",
+      "before": "万族",
+      "after": "万続",
+      "answer": 3
+    },
+    {
+      "questionNumber": 16,
+      "field": "prompt and option 2",
+      "before": [
+        "依さん",
+        "タイル"
+      ],
+      "after": [
+        "佐藤さん",
+        "タイトル"
+      ],
+      "answer": 4
+    },
+    {
+      "questionNumber": 21,
+      "field": "option 4",
+      "before": "閲隔",
+      "after": "間隔",
+      "answer": 2
+    },
+    {
+      "questionNumber": 30,
+      "field": "options 2–3 and answer key",
+      "before": [
+        "走ってはいけません",
+        "渡ってはいけません"
+      ],
+      "after": [
+        "渡ってはいけません",
+        "走ってはいけません"
+      ],
+      "answerBefore": 3,
+      "answerAfter": 2
+    }
+  ],
+  "explanationDelivery": "After source alignment, the section questions match the corresponding full-exam prompts, ordered options and answer keys; the service can attach their curated explanations.",
+  "limitation": "The exam PDF has no official answer key; the question wording and options were visually checked, while the answer keys remain sourced from the local exam dataset and language analysis."
+}

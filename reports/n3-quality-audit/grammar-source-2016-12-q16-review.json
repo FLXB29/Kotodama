@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-26T09:20:15.730Z",
+  "examId": "toan-n3-201612-full",
+  "questionId": "toan_q_2016_12_51",
+  "fullExamQuestionNumber": 51,
+  "sectionQuestionNumber": 16,
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPage": 5,
+    "promptAndOptionsObserved": true,
+    "prompt": "土曜日は買い物をしたり友人と食事をしたりし、日曜日は ★ 、私の好きな 週末の過ごし方だ。",
+    "options": [
+      "のが",
+      "という",
+      "家で過ごす",
+      "どこにも出かけずに"
+    ]
+  },
+  "answer": {
+    "choiceAtStar": 2,
+    "order": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "basis": "Natural syntax and sentence meaning; the source exam PDF does not contain an official answer key."
+  },
+  "officialKeyEstablished": false,
+  "explanationChecks": {
+    "completeSentence": true,
+    "vietnameseTranslation": true,
+    "orderAndRoleOfEveryPiece": true,
+    "distinguishesContextualMeaningFromHearsay": true
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "generatedAt": "2026-09-26T16:22:25.077Z",
+  "examId": "toan-n3-202107-full",
+  "scope": "Grammar Mondai 1, 13 items, questions 36–48.",
+  "method": "All 13 stored answers match the published reference sequence and were checked against the Japanese sentence context. Reference keys are not official JLPT answer sheets.",
+  "sources": [
+    {
+      "name": "TryNihongo reference answer key",
+      "url": "https://trynihongo.com/hi/jlpt-n3-parakashha-utatara-jalii-2021-p450",
+      "qualification": "Publishes the full N3 reference sequence, including grammar Mondai 1: 3 4 4 2 1 3 1 4 3 1 3 2 2."
+    },
+    {
+      "name": "TryNihongo question transcription",
+      "url": "https://trynihongo.com/ja/ri-ben-yu-neng-li-shi-yan-jlptwen-fa-du-jie-n3-2021nian-7yue-shi-yan-q1226",
+      "qualification": "Cross-checks grammar sentence wording and confirms choice 3 in question 45 is 優勝するに違いない."
+    },
+    {
+      "name": "PassJapanese question transcription",
+      "url": "https://passjapanese.com/vi/jlpt/n3/exam/2021-07-grammar-reading",
+      "qualification": "Cross-checks the grammar section. Its extracted question 43 repeats なりにくい for choice 4; the local choice なりやすい fits the sentence and the referenced key, so this is recorded as a transcription discrepancy in that page."
+    },
+    {
+      "name": "User-provided answer sheet, “ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf”",
+      "page": 22,
+      "answerSequence": [3, 4, 4, 2, 1, 3, 1, 4, 3, 1, 3, 2, 2],
+      "qualification": "The displayed answer row for JLPT N3 7/2021 matches all 13 stored grammar answers. This is a user-provided reference sheet, not an official JLPT answer notice."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": ["1 を", "2 が", "3 で", "4 に"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": ["1 そろそろ", "2 だんだん　", "3 ようやく", "4 いつのまにか"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": ["1 に対して", "2 比べて", "3 おいて", "4 とって"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [" 1 にだけ", "2 にしか", "3 でしか", "4 でだけ"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": ["1 ときでも", "2 ままで", "3 間だから", "4 ところなら"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": ["1 何とか", "2 なんか", "3 なんて", "4 何でも"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": ["1 行こうか", "2 行かないか", "3 行くのか", "4 行ったか"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": ["1 なりにくい", "2 しやすい", "3 しにくい", "4 なりやすい"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": ["1 踏んでしまった", "2 踏んでおいた", "3 踏まれてしまった　　　", "4 踏ませておいた"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1 優勝しても不思議ではない",
+        "　2 優勝したらいい",
+        " 3 優勝するに違いない",
+        "4 優勝するのではないだろうか"
+      ],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": ["1 してる", "2 しとく", "3 しちゃう　", "4 しなきゃ"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [" 1 いただいていました", "2 いただきました", "3 めしあがっていました　　", "4 めしあがりました"],
+      "answerMatchesReference": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        "1 出すつもりかもしれない",
+        "2 出たほうがいいかもしれない",
+        " 3 出てはいけなそうだ",
+        "4 出なくてもよさそうだ"
+      ],
+      "answerMatchesReference": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReference": 13,
+    "standaloneMatchesReference": 13,
+    "userProvidedAnswerSheetMatches": 13
+  },
+  "officialAnswerPdfConfirmed": false,
+  "transcriptionCorrections": [
+    {
+      "questionNumber": 37,
+      "view": "Full mock",
+      "choice": 3,
+      "before": "ようやくか",
+      "after": "ようやく",
+      "evidence": "The original question PDF prints ようやく without the trailing か."
+    },
+    {
+      "questionNumber": 38,
+      "view": "Standalone section",
+      "choice": 1,
+      "before": "対して",
+      "after": "に対して",
+      "evidence": "The original question PDF prints に対して."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Full mock",
+      "choice": 2,
+      "before": "まで",
+      "after": "ままで",
+      "evidence": "The original question PDF prints ままで."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Full mock",
+      "choice": 3,
+      "before": "間だからが",
+      "after": "間だから",
+      "evidence": "The original question PDF prints 間だから; the extra が was introduced in the mock transcription."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Standalone section",
+      "before": "この図書館はは",
+      "after": "この図書館は",
+      "evidence": "The PDF has one は; the duplicate was in the standalone transcription."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "choice": 1,
+      "before": "ときでも",
+      "after": "何とか",
+      "evidence": "The original question PDF prints 何とか."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "choice": 4,
+      "before": "なんでも",
+      "after": "何でも",
+      "evidence": "The original question PDF prints 何でも."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "before": "きれいなんだろう。",
+      "after": "きれいなんだろうか。",
+      "evidence": "The original question PDF ends the exclamation with なんだろうか."
+    },
+    {
+      "questionNumber": 42,
+      "view": "Full mock",
+      "before": "絵がかざられるので",
+      "after": "絵がかざれるので",
+      "evidence": "The original question PDF prints かざれる."
+    },
+    {
+      "questionNumber": 44,
+      "view": "Full mock",
+      "before": "隣に立っていた人",
+      "after": "隣に立っている人",
+      "evidence": "The original question PDF uses 立っている."
+    },
+    {
+      "questionNumber": 45,
+      "view": "Both",
+      "before": "国際大会出の",
+      "after": "国際大会での",
+      "evidence": "The PDF appears to print 出の; the app corrects the obvious particle/character typo so the sentence reads naturally."
+    },
+    {
+      "questionNumber": 46,
+      "view": "Full mock",
+      "choice": 4,
+      "before": "しなきゃなる",
+      "after": "しなきゃ",
+      "evidence": "The original question PDF prints only しなきゃ."
+    },
+    {
+      "questionNumber": 47,
+      "view": "Standalone section",
+      "before": "昨日がどうも",
+      "after": "昨日はどうも",
+      "evidence": "The original question PDF prints 昨日はどうも."
+    },
+    {
+      "questionNumber": 47,
+      "view": "Full mock",
+      "before": "おいしい物をたくさん",
+      "after": "おいしい食べ物をたくさん",
+      "evidence": "The original question PDF prints おいしい食べ物をたくさん."
+    },
+    {
+      "questionNumber": 48,
+      "view": "Both",
+      "choice": 1,
+      "before": "出るつもりかもしれない (one mock copy also had a stray trailing う)",
+      "after": "出すつもりかもしれない",
+      "evidence": "The original question PDF prints 出すつもりかもしれない."
+    },
+    {
+      "questionNumber": 48,
+      "view": "Standalone section",
+      "choice": 4,
+      "before": "行出なくてもよさそうだ",
+      "after": "出なくてもよさそうだ",
+      "evidence": "The original question PDF prints 出なくてもよさそうだ."
+    }
+  ]
+}

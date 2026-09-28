@@ -1,0 +1,322 @@
+{
+  "generatedAt": "2026-09-27T03:36:47.571Z",
+  "examId": "toan-n3-201112-full",
+  "section": "Từ vựng",
+  "questionRange": "1–35",
+  "reviewedQuestionCount": 35,
+  "reviewedChoiceCount": 140,
+  "answerKeysChanged": 0,
+  "sourceLimits": {
+    "originalQuestionSourceCompared": true,
+    "originalQuestionSourceUrl": "https://www.scribd.com/document/1022846440/2-N3-12-2011",
+    "officialAnswerKeyConfirmed": false,
+    "method": "Compared the Japanese prompts and choices against an accessible copy of the December 2011 N3 paper, then translated all prompts and reviewed every answer and distractor in context. Corrected the missing choice number in question 32 and transcription errors in question 33. Existing answer keys were preserved; the paper copy is not an official answer-key source, so answer keys are explicitly not marked as independently confirmed."
+  },
+  "rows": [
+    {
+      "number": 1,
+      "answer": 3,
+      "options": ["かきょ", "かこう", "かこ", "かきょう"],
+      "explanation": "Đáp án 3 — 過去（かこ）là quá khứ; trong mẫu 「過去十年間」 nghĩa là “mười năm qua”.\nDịch: “Nghe nói mùa hè năm nay nóng nhất trong mười năm qua.”\n1. かきょ: sai cách đọc; 過去 đọc là かこ.\n2. かこう: sai trường âm và cách đọc của 過去.\n3. かこ: cách đọc đúng của 過去.\n4. かきょう: sai cách đọc; không có âm きょう trong từ này.\nGhi nhớ: 過去（かこ）十年間 là “mười năm qua”.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 2,
+      "answer": 2,
+      "options": ["とうつく", "とうちゃく", "どうつく", "どうちゃく"],
+      "explanation": "Đáp án 2 — 到着（とうちゃく）nghĩa là đến nơi/việc đến.\nDịch: “Tàu sẽ đến ga Tokyo trong năm phút nữa.”\n1. とうつく: sai cách đọc của 到着; 着 ở đây đọc là ちゃく.\n2. とうちゃく: cách đọc đúng của 到着.\n3. どうつく: sai âm đầu và cách đọc của 着.\n4. どうちゃく: sai âm đầu; 到 đọc là とう.\nGhi nhớ: 到着する = đến nơi; 着 đọc là ちゃく trong từ này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 3,
+      "answer": 2,
+      "options": ["うって", "おって", "わって", "きって"],
+      "explanation": "Đáp án 2 — 折る（おる）nghĩa là bẻ/gãy; 折って là dạng て.\nDịch: “Không được bẻ cành cây trong công viên.”\n1. うって: có thể là 売って (bán) hoặc 打って (đánh); không phải cách đọc 折って.\n2. おって: cách đọc đúng của 折って.\n3. わって: 割って, chia/bổ; không phải cách đọc của 折って.\n4. きって: 切って, cắt; không phải cách đọc của 折って.\nGhi nhớ: 折る（おる）là bẻ/gấp; cành cây là 木の枝.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 4,
+      "answer": 3,
+      "options": ["じゅうほう", "じょうほ", "じょうほう", "じゅうほ"],
+      "explanation": "Đáp án 3 — 情報（じょうほう）nghĩa là thông tin.\nDịch: “Tôi đã kiểm tra thông tin mới nhất trên Internet.”\n1. じゅうほう: sai trường âm ở 情; đọc là じょう.\n2. じょうほ: thiếu âm う cuối của 報（ほう）.\n3. じょうほう: cách đọc đúng của 情報.\n4. じゅうほ: sai trường âm ở 情 và thiếu う cuối.\nGhi nhớ: 情報（じょうほう）= thông tin; cả hai âm đều có trường âm.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 5,
+      "answer": 4,
+      "options": ["かかく", "かがく", "ねたん", "ねだん"],
+      "explanation": "Đáp án 4 — 値段（ねだん）nghĩa là giá/giá tiền.\nDịch: “Gần đây giá rau đang tăng.”\n1. かかく: 価格（かかく）cũng là “giá”, nhưng không phải cách đọc của chữ 値段 trong câu.\n2. かがく: 科学（かがく）là khoa học; sai cách đọc.\n3. ねたん: sai âm đục; 段 đọc là だん.\n4. ねだん: cách đọc đúng của 値段.\nGhi nhớ: 値段（ねだん）là giá bán; 価格（かかく）cũng có nghĩa “giá” nhưng viết bằng chữ khác.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 6,
+      "answer": 1,
+      "options": ["ふかい", "つよい", "ひろい", "おもい"],
+      "explanation": "Đáp án 1 — 深い（ふかい）nghĩa đen là sâu; 深い関心 là sự quan tâm sâu sắc.\nDịch: “Anh ấy rất quan tâm đến văn hóa của đất nước đó.”\n1. ふかい: cách đọc đúng của 深い.\n2. つよい: 強い, mạnh; 強い関心 cũng là một kết hợp tự nhiên, nhưng không phải cách đọc của 深い.\n3. ひろい: 広い, rộng; không phải cách đọc của 深い.\n4. おもい: 重い, nặng; không phải cách đọc của 深い.\nGhi nhớ: 深い関心 và 強い関心 đều diễn tả sự quan tâm lớn, nhưng câu hỏi yêu cầu cách đọc chữ gạch chân 深い.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 7,
+      "answer": 2,
+      "options": ["かしました", "かえしました", "もどしました", "わたしました"],
+      "explanation": "Đáp án 2 — 返す（かえす）là trả lại; 返しました là dạng quá khứ lịch sự.\nDịch: “Hôm qua tôi đã trả sách cho bạn.”\n1. かしました: 貸しました, đã cho mượn; nghĩa ngược với trả lại.\n2. かえしました: cách đọc đúng của 返しました.\n3. もどしました: 戻しました, đã đưa về/đặt lại trạng thái hoặc vị trí cũ; không phải cách đọc của 返しました.\n4. わたしました: 渡しました, đã trao/chuyển cho; có thể dùng trong tình huống khác nhưng không phải cách đọc của 返しました.\nGhi nhớ: 貸す（かす）là cho mượn; 返す（かえす）là trả lại.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 8,
+      "answer": 4,
+      "options": ["しょめん", "ひょめん", "しょうめん", "ひょうめん"],
+      "explanation": "Đáp án 4 — 表面（ひょうめん）nghĩa là bề mặt.\nDịch: “Bề mặt Mặt Trăng gồ ghề.”\n1. しょめん: sai âm đọc của 表 và thiếu trường âm.\n2. ひょめん: thiếu trường âm của 表（ひょう）.\n3. しょうめん: 正面（しょうめん）là mặt trước/chính diện; không phải cách đọc 表面.\n4. ひょうめん: cách đọc đúng của 表面.\nGhi nhớ: 表面（ひょうめん）là bề mặt; 正面（しょうめん）là mặt trước.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 9,
+      "answer": 3,
+      "options": ["祝在", "現存", "現在", "祝存"],
+      "explanation": "Đáp án 3 — 現在（げんざい）nghĩa là hiện tại/bây giờ.\nDịch: “Ở Tokyo bây giờ là 3 giờ chiều.”\n1. 祝在: không phải cách viết của げんざい; 祝 không thay cho 現.\n2. 現存（げんそん）nghĩa là hiện còn tồn tại; cách đọc và nghĩa không khớp câu.\n3. 現在（げんざい）là cách viết đúng của げんざい, nghĩa là hiện tại.\n4. 祝存: không phải từ viết đúng cho げんざい.\nGhi nhớ: 現在（げんざい）= hiện tại; 現存（げんそん）= vẫn còn tồn tại.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 10,
+      "answer": 4,
+      "options": ["ご事有", "ご事由", "ご自有", "ご自由"],
+      "explanation": "Đáp án 4 — ご自由（ごじゆう）là cách nói lịch sự “tự do/tùy ý”; ご自由にお取りください là “xin cứ tự nhiên lấy”.\nDịch: “Xin cứ tự nhiên lấy mẫu ở đây.”\n1. ご事有: không tạo thành cách viết chuẩn của ごじゆう.\n2. ご事由: 事由（じゆう）có nghĩa là lý do/căn cứ, nhưng không viết lời mời này.\n3. ご自有: không phải cách viết chuẩn của 自由（じゆう）.\n4. ご自由: viết đúng 自由, phù hợp với mẫu lịch sự ご自由に.\nGhi nhớ: Mẫu cố định: ご自由にお取りください = xin cứ tự nhiên lấy.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 11,
+      "answer": 4,
+      "options": ["方立", "法立", "方律", "法律"],
+      "explanation": "Đáp án 4 — 法律（ほうりつ）nghĩa là luật pháp.\nDịch: “Tôi đã học luật ở trường đại học.”\n1. 方立: không phải cách viết của 法律.\n2. 法立: thiếu 律; không phải từ chỉ luật pháp trong câu.\n3. 方律: 方 không phải chữ đúng của từ này.\n4. 法律: cách viết đúng của ほうりつ, nghĩa là luật.\nGhi nhớ: 法律（ほうりつ）là luật pháp; ghi nhớ đúng cặp chữ 法＋律.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 12,
+      "answer": 1,
+      "options": ["観光", "観察", "歓光", "歓察"],
+      "explanation": "Đáp án 1 — 観光（かんこう）nghĩa là tham quan/du lịch.\nDịch: “Một ngày nào đó tôi muốn thong thả tham quan Kyoto.”\n1. 観光: cách viết đúng của かんこう.\n2. 観察（かんさつ）là quan sát; khác cả nghĩa lẫn âm cuối.\n3. 歓光: 歓 mang nghĩa vui mừng, không phải chữ trong 観光.\n4. 歓察: không phải cách viết của かんこう; 観察 mới là từ “quan sát” và đọc かんさつ.\nGhi nhớ: 観光（かんこう）là du lịch tham quan; 観察（かんさつ）là quan sát.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 13,
+      "answer": 2,
+      "options": ["巻", "券", "募", "巷"],
+      "explanation": "Đáp án 2 — 券（けん）là vé/phiếu; この券 là tấm vé này.\nDịch: “Hãy nhớ đừng quên tấm vé này vào ngày diễn ra sự kiện.”\n1. 巻 thường đọc まき/かん, nghĩa là cuộn hoặc tập sách; không phải vé.\n2. 券（けん）nghĩa là vé/phiếu và là chữ đúng.\n3. 募（ぼ）liên quan đến tuyển mộ/quyên góp, như 募集; không đọc là けん.\n4. 巷（ちまた）nghĩa là phố phường/dư luận; không đọc là けん.\nGhi nhớ: 乗車券・入場券 đều dùng 券 với nghĩa vé.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 14,
+      "answer": 3,
+      "options": ["流", "汗", "涙", "泣"],
+      "explanation": "Đáp án 3 — 涙（なみだ）nghĩa là nước mắt.\nDịch: “Nước mắt mãi không ngừng khiến tôi khổ sở.”\n1. 流（りゅう／なが-れる）liên quan đến dòng chảy; không đọc là なみだ.\n2. 汗（あせ）là mồ hôi, khác nghĩa.\n3. 涙（なみだ）là cách viết đúng của “nước mắt”.\n4. 泣（な-く）là khóc; thường cần okurigana 泣く và không phải danh từ なみだ.\nGhi nhớ: 涙（なみだ）là nước mắt; 泣く（なく）là khóc.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 15,
+      "answer": 2,
+      "options": ["うかる", "かかる", "あたる", "はいる"],
+      "explanation": "Đáp án 2 — 病気にかかる nghĩa là mắc bệnh; trong câu 「この病気にかかると」 là “khi mắc bệnh này”.\nDịch: “Khi mắc bệnh này, ban đầu sẽ bị sốt cao.”\n1. うかる: 受かる, thi đỗ; thường đi với kỳ thi, như 試験に受かる.\n2. かかる: 罹る, mắc (bệnh); 病気にかかる là kết hợp đúng.\n3. あたる: 当たる, trúng/chạm hoặc đoán đúng; không dùng với 病気 theo nghĩa mắc bệnh.\n4. はいる: 入る, đi vào; 病気に入る không diễn tả mắc bệnh.\nGhi nhớ: Bệnh: 病気にかかる; thi đỗ: 試験に受かる.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 16,
+      "answer": 4,
+      "options": ["上品", "派手", "安全", "清潔"],
+      "explanation": "Đáp án 4 — 清潔（せいけつ）nghĩa là sạch sẽ/vệ sinh; được dọn kỹ nên phòng ở sạch.\nDịch: “Phòng khách sạn này luôn được dọn dẹp cẩn thận nên rất sạch sẽ.”\n1. 上品（じょうひん）: thanh lịch/tinh tế; nói về phong cách, không phải độ sạch.\n2. 派手（はで）: sặc sỡ/nổi bật; không phù hợp với việc phòng được dọn dẹp.\n3. 安全（あんぜん）: an toàn; câu đang đánh giá sự sạch sẽ.\n4. 清潔（せいけつ）: sạch sẽ; hợp với ngữ cảnh dọn phòng.\nGhi nhớ: 掃除されていて清潔だ = được dọn dẹp nên sạch sẽ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 17,
+      "answer": 2,
+      "options": ["かさねて", "あわせて", "くわえて", "ふやして"],
+      "explanation": "Đáp án 2 — 力を合わせる là thành ngữ/kết hợp quen thuộc, nghĩa là hợp sức hoặc chung sức.\nDịch: “Trận đấu tới, mọi người hãy hợp sức và cùng cố gắng.”\n1. かさねて: 重ねて, chồng/lặp lại; không kết hợp tự nhiên với 力 trong nghĩa hợp sức.\n2. あわせて: 合わせて, cách dùng đúng trong 力を合わせる.\n3. くわえて: 加えて, thêm vào; 加えて có thể dùng theo nghĩa bổ sung, nhưng không tạo thành cụm 力を合わせる.\n4. ふやして: 増やして, làm tăng số lượng; không nói 力を増やして頑張ろう theo ý cùng phối hợp của câu.\nGhi nhớ: 力を合わせる = hợp sức; 力を重ねる không phải cụm tự nhiên với nghĩa này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 18,
+      "answer": 3,
+      "options": ["出席", "出勤", "出張", "出国"],
+      "explanation": "Đáp án 3 — 出張する（しゅっちょうする）nghĩa là đi công tác.\nDịch: “Để dự cuộc họp, từ ngày mai tôi sẽ đi công tác ở Mỹ cùng trưởng phòng trong một tuần.”\n1. 出席（しゅっせき）: tham dự; thường là tham dự một cuộc họp/sự kiện.\n2. 出勤（しゅっきん）: đi làm/đến nơi làm việc; không phải chuyến công tác.\n3. 出張（しゅっちょう）: đi công tác; dùng đúng với chuyến đi Mỹ một tuần vì công việc.\n4. 出国（しゅっこく）: xuất cảnh/rời khỏi đất nước; chỉ việc qua biên giới, không nêu mục đích công tác.\nGhi nhớ: 出張する = đi công tác; 出席する = tham dự.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": ["冗談", "文句", "感想", "希望"],
+      "explanation": "Đáp án 1 — 冗談（じょうだん）を言う là nói đùa/kể chuyện đùa.\nDịch: “Anh Yamada là người thú vị, thường hay nói đùa.”\n1. 冗談（じょうだん）: lời nói đùa; kết hợp tự nhiên với を言う.\n2. 文句（もんく）: lời phàn nàn; 文句を言う là than phiền, trái với sắc thái 面白い人 trong câu.\n3. 感想（かんそう）: cảm nghĩ/nhận xét; 感想を言う được, nhưng không diễn tả việc thường nói đùa.\n4. 希望（きぼう）: hy vọng/mong muốn; 希望を言う không phù hợp với “người thú vị hay nói đùa”.\nGhi nhớ: 冗談を言う = nói đùa; 文句を言う = phàn nàn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 20,
+      "answer": 2,
+      "options": ["せっかく", "さっそく", "もうすぐ", "なるべく"],
+      "explanation": "Đáp án 2 — さっそく nghĩa là ngay sau đó/lập tức, thường dùng khi bắt tay làm việc vừa nghe hoặc vừa quyết định.\nDịch: “Bạn chỉ cho quán pizza ngon nên tôi liền thử đi ăn.”\n1. せっかく: nhân dịp đã mất công/có cơ hội; không diễn tả hành động đi ngay sau lời giới thiệu.\n2. さっそく: ngay lập tức; khớp với việc được chỉ quán rồi đi thử ăn.\n3. もうすぐ: chẳng bao lâu nữa; nói về việc sắp xảy ra, không phải hành động làm ngay.\n4. なるべく: cố hết sức/càng… càng tốt; thường bổ nghĩa mức độ, không hợp với ý “liền đi”.\nGhi nhớ: Nghe gợi ý rồi làm ngay: さっそく試す／行ってみる.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 21,
+      "answer": 2,
+      "options": ["コース", "カーブ", "スピード", "ブレーキ"],
+      "explanation": "Đáp án 2 — カーブ là khúc cua/đoạn cong của con đường.\nDịch: “Con đường này có nhiều khúc cua nên hãy lái xe cẩn thận.”\n1. コース: lộ trình/đường chạy hoặc khóa học; không phải khúc cua trên đường.\n2. カーブ: khúc cua; 「カーブが多い道」 là đường có nhiều đoạn cong.\n3. スピード: tốc độ; đường có nhiều tốc độ không có nghĩa phù hợp.\n4. ブレーキ: phanh; đường không “có nhiều phanh”.\nGhi nhớ: カーブが多い = có nhiều khúc cua; vì vậy cần chú ý khi lái xe.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 22,
+      "answer": 4,
+      "options": ["貯金", "会計", "借金", "両替"],
+      "explanation": "Đáp án 4 — 両替（りょうがえ）する nghĩa là đổi tiền; ドルを円に両替する là đổi đô la sang yên.\nDịch: “Tôi đã đổi đô la sang yên ở ngân hàng.”\n1. 貯金（ちょきん）: tiền tiết kiệm/việc gửi tiết kiệm; không phải đổi ngoại tệ.\n2. 会計（かいけい）: kế toán hoặc thanh toán hóa đơn; không phải đổi tiền.\n3. 借金（しゃっきん）: khoản nợ/việc vay tiền; trái nghĩa với giao dịch đổi tiền.\n4. 両替（りょうがえ）: đổi tiền; khớp cấu trúc AをBに両替する.\nGhi nhớ: AをBに両替する = đổi A sang B.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 23,
+      "answer": 1,
+      "options": ["前後", "上下", "大小", "多少"],
+      "explanation": "Đáp án 1 — 前後（ぜんご）sau một con số có nghĩa là xấp xỉ/khoảng con số đó.\nDịch: “Nghe nói mỗi ngày mặt hàng này bán được khoảng 1.000 chiếc.”\n1. 前後（ぜんご）: trước sau; sau số lượng biểu thị mức xấp xỉ, như 1000個前後.\n2. 上下（じょうげ）: trên dưới/tăng giảm; không dùng để nói khoảng 1.000 chiếc trong câu này.\n3. 大小（だいしょう）: lớn nhỏ/kích cỡ; không diễn tả số lượng xấp xỉ.\n4. 多少（たしょう）: nhiều ít/một ít; không đứng sau số lượng với nghĩa khoảng như 前後.\nGhi nhớ: Số＋前後 = khoảng/xấp xỉ số đó.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 24,
+      "answer": 2,
+      "options": ["効果", "影響", "制限", "結果"],
+      "explanation": "Đáp án 2 — 影響（えいきょう）là ảnh hưởng/tác động; 台風の影響で là do ảnh hưởng của bão.\nDịch: “Chuyến bay bị hoãn khởi hành do ảnh hưởng của bão.”\n1. 効果（こうか）: hiệu quả/tác dụng; thường là kết quả có ích do một biện pháp.\n2. 影響（えいきょう）: ảnh hưởng; dùng tự nhiên trong 「台風の影響で」.\n3. 制限（せいげん）: sự hạn chế/giới hạn; không phải nguyên nhân thời tiết tác động.\n4. 結果（けっか）: kết quả; 台風の結果で không phải cách nói tự nhiên ở đây.\nGhi nhớ: Nêu tác nhân gây ảnh hưởng: Nの影響で….",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 25,
+      "answer": 1,
+      "options": ["しっかり", "はっきり", "うっかり", "ぐっすり"],
+      "explanation": "Đáp án 1 — しっかり nghĩa là chắc chắn/chặt chẽ; ふたをしっかりしめる là đóng nắp thật chặt.\nDịch: “Hãy đóng nắp thật chặt để đồ bên trong không bị đổ/tràn ra.”\n1. しっかり: chắc chắn/kỹ; bổ nghĩa đúng cho hành động đóng nắp.\n2. はっきり: rõ ràng; thường nói về lời nói, hình dạng hoặc nhận thức, không phải độ chặt của nắp.\n3. うっかり: bất cẩn/vô ý; không mô tả cách đóng nắp cần thiết.\n4. ぐっすり: ngủ say; chỉ dùng tự nhiên với 睡眠する／眠る.\nGhi nhớ: Vật cần giữ kín hoặc chắc: しっかりしめる.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 26,
+      "answer": 4,
+      "options": ["すきなところ", "いいところ", "きらいなところ", "わるいところ"],
+      "explanation": "Đáp án 4 — 欠点（けってん）là khuyết điểm/điểm yếu; gần nghĩa nhất là わるいところ.\nDịch: “Đó chính là khuyết điểm của cuốn từ điển này.”\n1. すきなところ: chỗ/điểm mình thích; sắc thái tích cực, trái với 欠点.\n2. いいところ: điểm tốt/ưu điểm; ngược nghĩa.\n3. きらいなところ: điểm không thích; nói cảm nhận không thích, không đồng nghĩa trực tiếp với khuyết điểm.\n4. わるいところ: điểm xấu/điểm yếu; gần nghĩa nhất với 欠点.\nGhi nhớ: 欠点 = khuyết điểm; 対義語 là 長所（ちょうしょ）, ưu điểm.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 27,
+      "answer": 4,
+      "options": ["前の前の年", "次の次の年", "前の年", "次の年"],
+      "explanation": "Đáp án 4 — 翌年（よくねん／よくとし）là năm kế tiếp/năm sau.\nDịch: “Anh ấy đi du học vào năm sau khi tốt nghiệp đại học.”\n1. 前の前の年: năm trước năm trước nữa; lùi hai năm.\n2. 次の次の年: năm kế tiếp nữa; tiến hai năm.\n3. 前の年: năm trước; lùi một năm so với mốc.\n4. 次の年: năm kế tiếp; đồng nghĩa gần nhất với 翌年.\nGhi nhớ: 翌年 = năm ngay sau mốc đang nói; 前年（ぜんねん）= năm trước.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 28,
+      "answer": 2,
+      "options": ["準備", "予定", "場所", "資料"],
+      "explanation": "Đáp án 2 — スケジュール là lịch trình/thời gian dự kiến; trong ngữ cảnh này gần với 予定（よてい）.\nDịch: “Tôi nhận được liên lạc về lịch trình cuộc họp tuần tới.”\n1. 準備（じゅんび）: sự chuẩn bị; là việc làm trước sự kiện, không phải lịch.\n2. 予定（よてい）: kế hoạch/lịch dự kiến; gần nghĩa với スケジュール trong câu.\n3. 場所（ばしょ）: địa điểm; trả lời “ở đâu”, không phải “khi nào/theo lịch nào”.\n4. 資料（しりょう）: tài liệu; không phải lịch trình cuộc họp.\nGhi nhớ: スケジュールは予定表・日程を指し、予定が最も近い語です。",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 29,
+      "answer": 3,
+      "options": ["だいじな", "こまかい", "かんたんな", "あたらしい"],
+      "explanation": "Đáp án 3 — らくな仕事 là công việc nhẹ/không vất vả; lựa chọn gần nghĩa nhất ở đây là かんたんな仕事 (công việc dễ).\nDịch: “Tôi nhờ anh ấy làm một công việc nhẹ/dễ.”\n1. だいじな: 大事な, quan trọng; không nói công việc nhẹ/dễ.\n2. こまかい: 細かい, chi tiết/nhỏ lẻ; không đồng nghĩa với らく.\n3. かんたんな: 簡単な, đơn giản/dễ; là lựa chọn gần nghĩa nhất theo bài.\n4. あたらしい: 新しい, mới; không mô tả độ nhẹ hay dễ của công việc.\nGhi nhớ: らく có thể là nhẹ nhàng/đỡ vất vả; trong các lựa chọn này かんたん là từ gần nhất.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 30,
+      "answer": 2,
+      "options": ["ずっと前に", "少し前に", "何回か", "何回も"],
+      "explanation": "Đáp án 2 — さっき nghĩa là vừa nãy/mới đây; gần nhất với 少し前に.\nDịch: “Anh Tanaka vừa gọi điện lúc nãy đấy.”\n1. ずっと前に: từ rất lâu trước đây; xa hơn nhiều so với さっき.\n2. 少し前に: cách đây một lúc ngắn; gần nghĩa nhất với さっき.\n3. 何回か: một vài lần; nói số lần, không nói thời điểm.\n4. 何回も: nhiều lần; nói tần suất, không nói thời điểm.\nGhi nhớ: さっき／少し前に đều chỉ thời điểm gần trong quá khứ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 31,
+      "answer": 4,
+      "options": [
+        "半年前にタバコを断ってから、体の調子がよくなりました",
+        "彼は働いた会社を断ってお店を始めました",
+        "どんなに大変でも、医師になるという夢は断らないでください",
+        "ほかに約束があったので、パーティーの誘いを断りました"
+      ],
+      "explanation": "Đáp án 4 — 断る（ことわる）là từ chối lời mời, yêu cầu hoặc đề nghị; 誘いを断る là từ chối lời mời.\nDịch: “Vì đã có hẹn khác nên tôi từ chối lời mời dự tiệc.”\n1. Ở đây muốn nói bỏ thuốc thì dùng タバコをやめる／断つ（たつ）; 断る（ことわる）không mang nghĩa bỏ hút thuốc.\n2. Muốn nói nghỉ khỏi công ty đã làm thì dùng 会社を辞める; 会社を断る không diễn đạt nghỉ việc.\n3. Với ước mơ, cách tự nhiên là 夢をあきらめないでください (đừng từ bỏ ước mơ), không dùng 夢を断る.\n4. 誘いを断る là kết hợp đúng: từ chối lời mời vì đã có hẹn khác.\nGhi nhớ: 断る = từ chối; phân biệt 断つ（たつ, dứt/bỏ một thói quen）, 辞める（nghỉ việc） và あきらめる（từ bỏ ước mơ）.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 32,
+      "answer": 2,
+      "options": [
+        "朝の電車はこんでいたが、帰りはゆるかった",
+        "ズボンがゆるいので、ベルトをきつくしめた",
+        "今回の旅行は荷物が少ないので、スーツケースがまだゆるい",
+        "この家は、夫婦二人で住むなら十分ゆるいです"
+      ],
+      "explanation": "Đáp án 2 — ゆるい（緩い）là lỏng hoặc rộng; quần rộng nên phải siết dây lưng.\nDịch: “Quần rộng nên tôi đã siết chặt thắt lưng.”\n1. Tàu lúc về vắng thì nói 電車が空いていた; ゆるい không có nghĩa “ít đông”.\n2. ズボンがゆるい (quần rộng/lỏng) kết hợp tự nhiên và giải thích vì sao phải siết dây lưng.\n3. Nếu va-li còn nhiều chỗ thì nói スーツケースに余裕がある／まだ空いている; va-li không được mô tả là ゆるい.\n4. Nói căn nhà đủ rộng cho hai người thì dùng 十分広い; ゆるい không có nghĩa rộng rãi về diện tích.\nGhi nhớ: ゆるい dùng cho độ lỏng/rộng của quần áo, dây, nút; không thay cho 空いている hay 広い.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 33,
+      "answer": 1,
+      "options": [
+        "短気な性格の人は、この仕事にはあまり向かない",
+        "雨のせいで、今日はグランドの性格がよくない",
+        "この車の性格は電気で走る点だ",
+        "あの人はその日の性格で言うことが変わる"
+      ],
+      "explanation": "Đáp án 1 — 性格（せいかく）là tính cách của người; 短気な性格 là tính nóng nảy.\nDịch: “Người có tính nóng nảy không hợp lắm với công việc này.”\n1. 短気な性格の人 là người có tính nóng nảy; 性格 được dùng đúng cho đặc điểm tâm tính của người.\n2. Sau mưa, nói tình trạng mặt sân xấu thì dùng グランドの状態／コンディション; sân không có “tính cách”.\n3. Đặc tính kỹ thuật của xe nên nói 性能 hoặc 特徴; 性格 thường chỉ tính cách, nhất là của người.\n4. Ý định là lời nói thay đổi theo tâm trạng từng ngày, nên dùng その日の気分; 性格 là tính cách tương đối ổn định.\nGhi nhớ: 性格 = tính cách; 性能／特徴 = đặc tính của vật; 気分 = tâm trạng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 34,
+      "answer": 1,
+      "options": [
+        "わたしの大学では、毎年大勢の留学生を受け入れています",
+        "入口でパンフレットを受け入れてから席にお座りください",
+        "チケットのお申し込みは電話で受け入れています",
+        "最新の技術を受け入れた製品について説明してもらいました"
+      ],
+      "explanation": "Đáp án 1 — 受け入れる（うけいれる）là tiếp nhận người/đề nghị/hoàn cảnh; trường tiếp nhận du học sinh.\nDịch: “Ở trường đại học của tôi, mỗi năm tiếp nhận đông du học sinh.”\n1. Đại học tiếp nhận sinh viên quốc tế: 留学生を受け入れる là cách dùng đúng.\n2. Khi nhận tờ giới thiệu được phát ở cửa, dùng パンフレットを受け取る (nhận lấy), không dùng 受け入れる.\n3. Đơn đặt vé được nhận qua điện thoại thì dùng 申し込みを受け付ける; 受け入れる không phải động từ tự nhiên cho việc tiếp nhận đơn.\n4. Sản phẩm áp dụng công nghệ mới nên nói 技術を取り入れた／採用した製品; không dùng 受け入れた ở đây.\nGhi nhớ: 受け入れる = tiếp nhận người/chấp nhận điều gì; 受け取る = nhận vật; 受け付ける = nhận đơn; 取り入れる = áp dụng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 35,
+      "answer": 4,
+      "options": [
+        "もう１０分以上待っているのに、バスがそろそろ来ない",
+        "最近洗濯機の調子がよくなかったが、昨日そろそろ壊れた",
+        "以前から探していた本が、そろそろ見つかった",
+        "仕事が残っているけど、そろそろ１２時なので昼休みにしよう"
+      ],
+      "explanation": "Đáp án 4 — そろそろ báo hiệu một thời điểm thích hợp đã đến hoặc việc gì đó sắp xảy ra.\nDịch: “Công việc vẫn còn, nhưng sắp 12 giờ rồi nên nghỉ trưa thôi.”\n1. Sau khi chờ xe, nói 「まだ来ない」 (vẫn chưa đến) hoặc 「そろそろ来てもいいころだ」 (đến lúc xe sắp tới rồi); 「そろそろ来ない」 không hợp ý câu.\n2. Với sự cố đã xảy ra hôm qua, dùng とうとう壊れた; そろそろ thường dự đoán tương lai, như そろそろ壊れそうだ.\n3. Sau khi tìm lâu và đã tìm thấy, nói やっと見つかった; そろそろ見つかった không diễn tả kết quả đã đạt được.\n4. そろそろ12時なので là “vì sắp/đã gần 12 giờ”; đây là cách dùng tự nhiên để đề nghị nghỉ trưa.\nGhi nhớ: そろそろ = sắp đến lúc; やっと = cuối cùng cũng đạt được sau chờ đợi; とうとう = rốt cuộc sự việc đã xảy ra.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    }
+  ]
+}

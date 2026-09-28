@@ -1,0 +1,127 @@
+{
+  "exam": "JLPT N3 2022/07 — vocabulary Mondai 5, questions 30–34",
+  "reviewDate": "2026-09-27",
+  "answerKeysChanged": 0,
+  "answers": {
+    "30": 2,
+    "31": 3,
+    "32": 4,
+    "33": 1,
+    "34": 1
+  },
+  "rationale": "The five choices were cross-checked against the Kosei-hosted exam PDF and the existing mock, and keys 2–3–4–1–1 match a public third-party answer sheet. The standalone record had no explanations and had meaningful OCR/transcription changes in q30, including 鍵 (key) incorrectly copied as 眼鏡 (glasses) and omission of に in ことにした. The explanation for q30 option 4 now distinguishes contextual/collocational fit from absolute grammatical impossibility.",
+  "sourceDiffs": [
+    {
+      "number": 30,
+      "questionIds": {
+        "mock": "toan_q_2022_07_30",
+        "section": "cm2u2xua3017i134ipi1j5e1e"
+      },
+      "key": 2,
+      "priorOptionTextDifferences": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "number": 31,
+      "questionIds": {
+        "mock": "toan_q_2022_07_31",
+        "section": "cm2u2xua3017j134iqatv1bxt"
+      },
+      "key": 3,
+      "priorOptionTextDifferences": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "number": 32,
+      "questionIds": {
+        "mock": "toan_q_2022_07_32",
+        "section": "cm2u2xua3017k134ie0a4o9k7"
+      },
+      "key": 4,
+      "priorOptionTextDifferences": [
+        true,
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "number": 33,
+      "questionIds": {
+        "mock": "toan_q_2022_07_33",
+        "section": "cm2u2xua3017l134i5esuyc25"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        true,
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "number": 34,
+      "questionIds": {
+        "mock": "toan_q_2022_07_34",
+        "section": "cm2u2xua3017m134idat3ga1s"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        true,
+        false
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "type": "exam-pdf",
+      "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/N3-T7-2022-Final-Version.pdf",
+      "note": "Kosei-hosted exam transcription, pages 1–2, M5 questions 30–34. The extracted PDF text is OCR; obvious OCR noise was checked against the mock and a second transcription."
+    },
+    {
+      "type": "exam-transcription-cross-check",
+      "url": "https://trynihongo.com/ja/de-thi-jlpt-tu-vung-n3-thang-7-nam-2022-q1308",
+      "note": "Independent question transcription; it has OCR/copy errors in q30 and q32, so the garbled variants were not used."
+    },
+    {
+      "type": "answer-key",
+      "url": "https://hikariacademy.edu.vn/hot-tong-hop-dap-an-jlpt-cac-trinh-do-ky-thi-thang-7-2022.html",
+      "note": "Public answer reference, N3 vocabulary 問題5 row 2–3–4–1–1. This is not an official JLPT key."
+    },
+    {
+      "type": "answer-key-cross-check",
+      "url": "https://jpnihon.com/5112.html",
+      "note": "Public answer/explanation reference independently confirms the usage items for 参加, 盛ん, 整理 and 通り過ぎる (q31–34); third-party source, not official."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E5%8F%82%E5%8A%A0-70342",
+      "note": "Digital Daijisen: joining a gathering for a shared purpose and acting as a member."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E7%9B%9B%E3%82%93-509261",
+      "note": "Digital Daijisen entry for 盛ん, including vigorous activity and flourishing."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E6%95%B4%E7%90%86-546621",
+      "note": "Digital Daijisen: put disordered things in order and dispose of unnecessary things."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E9%80%9A%E3%82%8A%E8%B6%8A%E3%81%99-582009",
+      "note": "Digital Daijisen entry for 通り越す, defining movement past a point; used as a supporting distinction for the location-based 通り過ぎる item."
+    }
+  ]
+}

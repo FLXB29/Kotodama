@@ -1,0 +1,179 @@
+{
+  "generatedAt": "2026-09-26T16:43:18.625Z",
+  "examId": "toan-n3-202207-full",
+  "scope": "Grammar Mondai 1, the 13 items stored as questions 35–47 in this dataset.",
+  "method": "The 13 prompts and choices were checked against the user-provided original exam PDF, printed pages 5–6. The stored key was checked against the user-provided answer-sheet PDF, page 24, and reviewed in sentence context. This confirms agreement with the supplied reference sheet, not an official JLPT key.",
+  "sourceReview": {
+    "questionPaper": "13. N3 7 2022.pdf",
+    "questionPaperPages": [5, 6],
+    "questionPaperItemNumbers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "answerSheet": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerSheetPdfPage": 24,
+    "userProvidedAnswers": [3, 2, 4, 1, 2, 2, 3, 3, 4, 1, 4, 1, 3],
+    "storedAnswersMatchUserProvidedSheet": 13,
+    "officialAnswerPdfConfirmed": false
+  },
+  "sources": [
+    {
+      "name": "TryNihongo question transcription",
+      "url": "https://trynihongo.com/en/jlpt-grammar-reading-comprehension-n3-test-july-2022-q1309",
+      "qualification": "Cross-checks wording and order for the full grammar section; no answer key was exposed in the text page."
+    },
+    {
+      "name": "JPNIHON reconstructed test",
+      "url": "https://jpnihon.com/5112.html",
+      "qualification": "Its extracted item answers agree with the stored choice for the study-abroad question and PIN-security question; this is a third-party answer reconstruction."
+    },
+    {
+      "name": "Tiếng Nhật Đơn Giản reference-answer page",
+      "url": "https://www.tiengnhatdongian.com/hot-dap-an-jlpt-n3-thang-7-2022-chuan-xac-nhat/",
+      "qualification": "Identifies its key as a reference compiled from teachers; answer is embedded in images and was not independently OCR-verified in this audit."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 35,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": ["1 で", "　2 へ", "3 には　", "　4 より"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        " 1 「大きな家」と",
+        "2 「大きな家」って",
+        "3 「大きな家」でも　",
+        "　4 「大きな家」なんか"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": ["1 やっと　", "2 すっかり", "3 せっかく　", "4 ちっとも"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": ["1 のほかに", "2 のことで", "3 に比べて", "4 について"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": ["1 点で", "　2 一方で　", "3 としたら", "     4 のだから"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        " 1 暑くなるまで",
+        "2 暑くなる前に ",
+        "3 暑くするまで　",
+        "4 暑くする前に"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": ["1 ごろしか", "2 ごろだけ　", "3 ぐらいしか", "4 ぐらいだけ"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": [
+        "1 なればいいので　　　　　　",
+        "2 なったばかりなので 　　　",
+        "3 なることがあるので　",
+        "4 なってはいけないので"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": ["1 はずです", "2 ようです", "3 ことです", "4 おかげです"],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": [
+        " 1 かけ直します",
+        "2 かけ出します",
+        "3 かけています",
+        "4 かけておきます"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": [
+        "1 買って いってもらわない",
+        "2 買って いってくれない ",
+        "3 買って きてもらわない　",
+        "4 買って きてくれない"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": [
+        "1 留学することにしたんです",
+        "2 留学することにしそうです",
+        "3 留学したことがあるんです",
+        "4 留学したことがありそうです"
+      ],
+      "answerMatchesReviewed": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": [
+        "1 知ってはいけません　",
+        "2 知らせにくいです",
+        " 3 知られないようにしてください",
+        "4 知らないほうがいいでしょう"
+      ],
+      "answerMatchesReviewed": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13,
+    "referenceAnswerTextChecks": [
+      {
+        "questionNumber": 46,
+        "storedAnswer": 1,
+        "reconstructedAnswerText": "留学することにしたんです",
+        "matches": true
+      },
+      {
+        "questionNumber": 47,
+        "storedAnswer": 3,
+        "reconstructedAnswerText": "知られないようにしてください",
+        "matches": true
+      }
+    ]
+  }
+}

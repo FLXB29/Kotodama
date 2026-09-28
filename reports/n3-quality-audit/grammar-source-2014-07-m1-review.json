@@ -1,0 +1,26 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Printed Grammar Mondai 1 questions 1-13, corresponding to full-exam questions 36-48.",
+  "source": {
+    "file": "5. N3 7-2014.pdf",
+    "driveFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "viewerPages": [4, 5],
+    "method": "Compared the prompt and all four choices on each question with the rendered Google Drive PDF accessibility text."
+  },
+  "questions": [
+    { "printedQuestion": 1, "fullExamQuestion": 36, "questionId": "toan_q_2014_07_36", "sourcePrompt": "プロのカメラマンは、天気や場所( )レンズを替える。", "sourceOptions": ["にとって", "によって", "において", "に比べて"] },
+    { "printedQuestion": 2, "fullExamQuestion": 37, "questionId": "toan_q_2014_07_37", "sourcePrompt": "(インタビューで)アナウンサー「北村選手、今回の大会の目標は?」北村選手「( )優勝です。それ以外、考えていません。」", "sourceOptions": ["必ずしも", "非常に", "もちろん", "あまりにも"] },
+    { "printedQuestion": 3, "fullExamQuestion": 38, "questionId": "toan_q_2014_07_38", "sourcePrompt": "A「日曜日はいつも何をしていますか。」B「本を( )しています。」", "sourceOptions": ["読んだり", "読んだから", "読んで", "読んでから"] },
+    { "printedQuestion": 4, "fullExamQuestion": 39, "questionId": "toan_q_2014_07_39", "sourcePrompt": "夜中に漫画を読んでいたら、父に早く( )と怒られた。", "sourceOptions": ["寝られる", "寝ている", "寝ろ", "寝たいか"] },
+    { "printedQuestion": 5, "fullExamQuestion": 40, "questionId": "toan_q_2014_07_40", "sourcePrompt": "田村さんの部屋は、いろいろな動物の写真が飾ってあって、動物が好きな田村さん( )部屋だ。", "sourceOptions": ["らしい", "である", "そうな", "ばかりの"] },
+    { "printedQuestion": 6, "fullExamQuestion": 41, "questionId": "toan_q_2014_07_41", "sourcePrompt": "A「雨、やんだ?」B「さっき外に出たときはもう( )よ。」", "sourceOptions": ["降らない", "降っていない", "降らなかった", "降っていなかった"] },
+    { "printedQuestion": 7, "fullExamQuestion": 42, "questionId": "toan_q_2014_07_42", "sourcePrompt": "客「あのう、この赤いのは何のアイスクリームですか。」店員「トマトのアイスクリーム( )。」", "sourceOptions": ["ございます", "がございます", "でございます", "はございます"] },
+    { "printedQuestion": 8, "fullExamQuestion": 43, "questionId": "toan_q_2014_07_43", "sourcePrompt": "(レストランで)山田「7時に予約をした山田ですが。」店員「山田様ですね。お席にご案内( )。どうぞこちらへ。」", "sourceOptions": ["参ります", "いたします", "なさいます", "くださいます"] },
+    { "printedQuestion": 9, "fullExamQuestion": 44, "questionId": "toan_q_2014_07_44", "sourcePrompt": "田中さんは鉄道が大好きで、列車の写真を撮る( )、どこへでも行く。", "sourceOptions": ["ためなら", "ためで", "からなら", "からで"] },
+    { "printedQuestion": 10, "fullExamQuestion": 45, "questionId": "toan_q_2014_07_45", "sourcePrompt": "暑い日が続いているが、この暑さは、今週末( )続くそうだ。", "sourceOptions": ["ごろは", "ぐらいまで", "ごろよりも", "ぐらいに"] },
+    { "printedQuestion": 11, "fullExamQuestion": 46, "questionId": "toan_q_2014_07_46", "sourcePrompt": "実家がパン屋だったので、私は休みの日も親に店の掃除などを( )ことが多く、友達とほとんど遊べなかった。", "sourceOptions": ["手伝える", "手伝われる", "手伝わせる", "手伝わされる"] },
+    { "printedQuestion": 12, "fullExamQuestion": 47, "questionId": "toan_q_2014_07_47", "sourcePrompt": "A「来月、大阪に出張するんだけど、いいホテル、知らない?」B「駅の近くで( )、一つ、知ってるよ。」", "sourceOptions": ["よくないと", "なくてもいいと", "よくなければ", "なくてもよければ"] },
+    { "printedQuestion": 13, "fullExamQuestion": 48, "questionId": "toan_q_2014_07_48", "sourcePrompt": "うちには3歳の娘がいるので、間違って( )、薬は子供の手の届かないところに置いています。", "sourceOptions": ["飲み終わらないように", "飲み終わらないようで", "飲んでしまわないように", "飲んでしまわないようで"] }
+  ]
+}

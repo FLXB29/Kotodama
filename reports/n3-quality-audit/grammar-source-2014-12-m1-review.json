@@ -1,0 +1,27 @@
+{
+  "examId": "toan-n3-201412-full",
+  "scope": "Grammar Mondai 1, printed questions 1–13; full-exam IDs 36–48.",
+  "source": {
+    "file": "5. N3 12-2014.pdf",
+    "driveFileId": "1YhA5giAFeFjf1aUb3HjahysLC6-wP1zR",
+    "folderDriveId": "1OgGAhw3J5X6AJq6QP9Nacxqr2CLtnhtI",
+    "printedPages": [5, 6],
+    "viewerPages": [5, 6],
+    "method": "Read the PDF text extraction and visually inspected the original PDF pages 5–6 in Chrome."
+  },
+  "questions": [
+    { "questionId": "toan_q_2014_12_36", "printedQuestion": 1, "printedPage": 5, "sourcePrompt": "森さんが飼っている魚は、とてもきれいな色（ ）している。", "sourceOptions": ["が", "を", "も", "より"] },
+    { "questionId": "toan_q_2014_12_37", "printedQuestion": 2, "printedPage": 5, "sourcePrompt": "そばは、ラーメンやスパゲティ（ ）カロリーが低い。", "sourceOptions": ["について", "において", "にくらべて", "にしたがって"] },
+    { "questionId": "toan_q_2014_12_38", "printedQuestion": 3, "printedPage": 5, "sourcePrompt": "弟は、先月新しいギターを買った（ ）なのに、もう別のが欲しいと言っている。", "sourceOptions": ["あいだ", "ばかり", "たび", "ころ"] },
+    { "questionId": "toan_q_2014_12_39", "printedQuestion": 4, "printedPage": 5, "sourcePrompt": "会社に入ったとき、かっこよく働いている先輩を見て、自分も早く（ ）なりたいと思った。", "sourceOptions": ["ああ", "あんな", "そういう", "そこも"] },
+    { "questionId": "toan_q_2014_12_40", "printedQuestion": 5, "printedPage": 5, "sourcePrompt": "朝は曇っていたが、（ ）晴れてきて、午後には快晴になった。", "sourceOptions": ["次第に", "今にも", "まだ", "いつでも"] },
+    { "questionId": "toan_q_2014_12_41", "printedQuestion": 6, "printedPage": 5, "sourcePrompt": "木村「山田さんのそのネックレス、かわいいですね。どこで買ったんですか。」山田「ああ、これは（ ）、自分で作ったんです。」", "sourceOptions": ["買ったんだって", "買わなくたって", "買ってもよくて", "買ったんじゃなくて"] },
+    { "questionId": "toan_q_2014_12_42", "printedQuestion": 7, "printedPage": 5, "sourcePrompt": "（講演会で）「みなさんは、インターネットに40年以上の歴史があることを（ ）か。」", "sourceOptions": ["なさいます", "ご存じです", "申します", "お目にかかります"] },
+    { "questionId": "toan_q_2014_12_43", "printedQuestion": 8, "printedPage": 5, "sourcePrompt": "大川「すみません、石田さん。会社の近くで、いい歯医者を知っていたら（ ）。歯が痛くて。」石田「それは大変ですね。駅前の歯医者は丁寧でよかったですよ。」", "sourceOptions": ["教えたいんですが", "教えていいですか", "教えてほしいんです", "教えてもらっていますか"] },
+    { "questionId": "toan_q_2014_12_44", "printedQuestion": 9, "printedPage": 5, "sourcePrompt": "夕方、ケーキ屋に行ったら、ほとんど売り切れていて、チョコレートケーキとチーズケーキが1個（ ）残っていなかった。", "sourceOptions": ["ぐらい", "ぐらいから", "ずつと", "ずつしか"] },
+    { "questionId": "toan_q_2014_12_45", "printedQuestion": 10, "printedPage": 5, "sourcePrompt": "先輩「大学生活で困ったことがあったら、授業のこと（ ）相談してくださいね。」", "sourceOptions": ["か何かが", "と何かに", "でも何でも", "など何も"] },
+    { "questionId": "toan_q_2014_12_46", "printedQuestion": 11, "printedPage": 6, "sourcePrompt": "インターネットで注文したセーターは、実際に着てみるまでサイズが（ ）が、ちょうどよかった。", "sourceOptions": ["合って不安がない", "合ったから不安だ", "合うし不安もない", "合うか不安だった"] },
+    { "questionId": "toan_q_2014_12_47", "printedQuestion": 12, "printedPage": 6, "sourcePrompt": "先月から一人暮らしを始めたが、一人分の量の食事を作るのが難しくて、いつも（ ）。", "sourceOptions": ["作り出している", "作りすぎてしまう", "作り終わったところだ", "作っておこう"] },
+    { "questionId": "toan_q_2014_12_48", "printedQuestion": 13, "printedPage": 6, "sourcePrompt": "友達が悩んでいたのは知っていたけれど、そのとき私は仕事が忙しくて、何も話を（ ）。", "sourceOptions": ["聞いてあげられなかった", "聞いてあげてよかった", "聞いたほうがよかった", "聞いてもかまわなかった"] }
+  ]
+}

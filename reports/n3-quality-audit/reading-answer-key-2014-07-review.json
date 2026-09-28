@@ -1,0 +1,29 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Printed Reading questions 24-39, full-exam questions 59-74, all four reading Mondai groups.",
+  "source": {
+    "file": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 9,
+    "method": "Read the Reading columns (Mondai 4-7) on the N3 7/2014 answer-key page in Google Drive and mapped the printed question numbers to the app's full-exam IDs."
+  },
+  "answers": [
+    { "printedQuestion": 24, "questionId": "toan_q_2014_07_59", "answer": 2 },
+    { "printedQuestion": 25, "questionId": "toan_q_2014_07_60", "answer": 1 },
+    { "printedQuestion": 26, "questionId": "toan_q_2014_07_61", "answer": 1 },
+    { "printedQuestion": 27, "questionId": "toan_q_2014_07_62", "answer": 2 },
+    { "printedQuestion": 28, "questionId": "toan_q_2014_07_63", "answer": 2 },
+    { "printedQuestion": 29, "questionId": "toan_q_2014_07_64", "answer": 1 },
+    { "printedQuestion": 30, "questionId": "toan_q_2014_07_65", "answer": 3 },
+    { "printedQuestion": 31, "questionId": "toan_q_2014_07_66", "answer": 1 },
+    { "printedQuestion": 32, "questionId": "toan_q_2014_07_67", "answer": 4 },
+    { "printedQuestion": 33, "questionId": "toan_q_2014_07_68", "answer": 3 },
+    { "printedQuestion": 34, "questionId": "toan_q_2014_07_69", "answer": 2 },
+    { "printedQuestion": 35, "questionId": "toan_q_2014_07_70", "answer": 3 },
+    { "printedQuestion": 36, "questionId": "toan_q_2014_07_71", "answer": 4 },
+    { "printedQuestion": 37, "questionId": "toan_q_2014_07_72", "answer": 1 },
+    { "printedQuestion": 38, "questionId": "toan_q_2014_07_73", "answer": 3 },
+    { "printedQuestion": 39, "questionId": "toan_q_2014_07_74", "answer": 4 }
+  ]
+}

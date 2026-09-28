@@ -1,0 +1,784 @@
+{
+  "generatedAt": "2026-09-26T17:32:45.565Z",
+  "exam": "JLPT N3 December 2022",
+  "scope": "All 35 vocabulary questions; rewrote incomplete/gloss-misaligned explanations, corrected the confirmed q15 transcription typo, and restored 「ので」 to q35 choice 3 based on the Ver 1.0 source copy.",
+  "method": "The rendered answer page exposed unrelated dictionary glosses and explanations that did not translate or distinguish every choice. Explanations were rewritten against the Japanese options and sentence context. A shared-copy question PDF labelled Ver 1.0 was checked: it confirms q15 and q35 wording and q33 content but differs from the current dataset in several distractors/text details, so it is not treated as the authoritative version for the full exam. Only q15, whose standalone copy contained a clear typo, and q35 choice 3, whose causal link was missing ので, were normalized to that copy. Answer labels were retained; a user-provided answer-key PDF has unknown provenance and is not an official JLPT key.",
+  "questionPaperReference": {
+    "name": "N3 December 2022 Ver 1.0 shared-copy question PDF",
+    "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/Tu-vung-ngu-phap-N3-T12-2022-Ver-1.0-2212015-Dokkai-dnag-cap-nhat.pdf",
+    "qualification": "This copy confirms q15 wording/options, q33 content and the natural q35 sentence, but differs from the current dataset in distractors/text details including q3, q4, q8, q12–14, q30 and q31. It is a version reference, not an official or definitive source for those mismatched questions.",
+    "sourceNotes": {
+      "q12": "Current dataset choices 楽顔・悲顔・泣顔・笑顔; Ver 1.0 choices 顔笑・頭笑・笑頭・笑顔.",
+      "q13": "Current dataset choices 黒板・黒坂・告板・告坂; Ver 1.0 choices 黒板・黒坂・看板・看坂. The explanation follows the current choices; the variant remains unresolved.",
+      "q30": "Ver 1.0 choice 1 is 生き方; the current dataset is 行き方. This variant remains unresolved.",
+      "toan_q_2022_12_3": "PDF Ver 1.0 ghi phương án 2 là ふうくす và phương án 4 là ふくうす; dữ liệu hiện tại ghi ふうすう・ふうす. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "toan_q_2022_12_4": "PDF Ver 1.0 ghi phương án 2 là けいあつ và phương án 4 là ちけつ; dữ liệu hiện tại ghi けつやつ・ちやつ. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "toan_q_2022_12_8": "PDF Ver 1.0 ghi phương án 1 là おだん và phương án 4 là よこだん; dữ liệu hiện tại ghi おうざん・きざん. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "toan_q_2022_12_12": "PDF Ver 1.0 có các phương án khác ở câu 12; giữ nguyên bộ lựa chọn hiện tại vì chưa xác định được phiên bản gốc của bộ dữ liệu.",
+      "toan_q_2022_12_13": "PDF Ver 1.0 ghi phương án 3–4 là 看板・看坂, còn dữ liệu hiện tại là 告板・告坂; lời giải theo lựa chọn đang có và không tự đồng bộ biến thể.",
+      "toan_q_2022_12_14": "PDF Ver 1.0 có các phương án nhiễu khác ở câu 14; giải nghĩa theo bộ lựa chọn hiện tại nhưng chưa xác nhận phiên bản gốc.",
+      "toan_q_2022_12_15": "PDF tham khảo trang 2 xác nhận câu và lựa chọn; bản đề rời có lỗi chép 「にまりました」, đã sửa thành 「になりました」.",
+      "toan_q_2022_12_30": "PDF Ver 1.0 in lựa chọn 1 là 生き方, dữ liệu hiện tại là 行き方; lời giải theo lựa chọn hiện có, khóa 4 vẫn là 予定.",
+      "toan_q_2022_12_31": "PDF Ver 1.0 ghi 村さん ở lựa chọn 3, trong khi dữ liệu hiện tại ghi 林さん; giữ nguyên nội dung hiện có vì chưa xác định được bản đề gốc.",
+      "toan_q_2022_12_33": "PDF Ver 1.0 xác nhận câu và ý nghĩa các phương án ở câu 33; có khác biệt chép liệu nhỏ giữa đề toàn phần và đề rời (描く/かく, 仕事をしたい/仕事がしたい), nên giữ nguyên từng bản và dùng giải thích chung theo ngữ nghĩa.",
+      "toan_q_2022_12_35": "PDF tham khảo Ver 1.0 ghi 「重なったので、見に行けない」; đã sửa câu trả lời lựa chọn 3 bằng cách thêm ので, giữ nguyên khóa 3."
+    }
+  },
+  "answerKeySource": {
+    "name": "User-provided JLPT N3 answer-key PDF",
+    "url": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view#page=25",
+    "qualification": "Page 25 lists answers 4, 1, 2, 1, 3 for questions 12 and 26–29. It supports the retained answer labels but is not an official source and does not validate the question text."
+  },
+  "rows": [
+    {
+      "questionId": "toan_q_2022_12_1",
+      "questionNumber": 1,
+      "answer": 2,
+      "choices": ["ようぎ", "ようき", "どうぐ", "どうく"],
+      "sectionChoices": ["ようぎ", "ようき", "どうぐ", "どうく"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_1"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq7019v134iwztj1rac"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_2",
+      "questionNumber": 2,
+      "answer": 1,
+      "choices": ["くらべた", "ならべた", "しらべた", "えらべた"],
+      "sectionChoices": ["くらべた", "ならべた", "しらべた", "えらべた"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_2"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq7019w134igebv731r"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_3",
+      "questionNumber": 3,
+      "answer": 3,
+      "choices": ["ふくす", "ふうすう", "ふくすう", "ふうす"],
+      "sectionChoices": ["ふくす", "ふうすう", "ふくすう", "ふうす"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 ghi phương án 2 là ふうくす và phương án 4 là ふくうす; dữ liệu hiện tại ghi ふうすう・ふうす. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_3"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq7019x134i6bjra45r"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_4",
+      "questionNumber": 4,
+      "answer": 1,
+      "choices": ["けつあつ", "けつやつ", "ちあつ", "ちやつ"],
+      "sectionChoices": ["けつあつ", "けつやつ", "ちあつ", "ちやつ"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 ghi phương án 2 là けいあつ và phương án 4 là ちけつ; dữ liệu hiện tại ghi けつやつ・ちやつ. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_4"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq7019y134iuo12soy5"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_5",
+      "questionNumber": 5,
+      "answer": 4,
+      "choices": ["ゆび", "ゆひ", "ゆうび", "ゆうひ"],
+      "sectionChoices": ["ゆび", "ゆひ", "ゆうび", "ゆうひ"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_5"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq8019z134ikeo4w6or"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_6",
+      "questionNumber": 6,
+      "answer": 4,
+      "choices": ["きびしい", "めずらしい", "さびしい", "むずかしい"],
+      "sectionChoices": ["きびしい", "めずらしい", "さびしい", "むずかしい"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_6"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq801a0134ilit73yto"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_7",
+      "questionNumber": 7,
+      "answer": 3,
+      "choices": ["けい", "よう", "けん", "よん"],
+      "sectionChoices": ["けい", "よう", "けん", "よん"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_7"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq801a1134i71yr5btt"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_8",
+      "questionNumber": 8,
+      "answer": 2,
+      "choices": ["おうざん", "おうだん", "きだん", "きざん"],
+      "sectionChoices": ["おうざん", "おうだん", "きだん", "きざん"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 ghi phương án 1 là おだん và phương án 4 là よこだん; dữ liệu hiện tại ghi おうざん・きざん. Giữ nguyên và giải theo bộ lựa chọn hiện có.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_8"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxq801a2134iqimr5ug2"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_9",
+      "questionNumber": 9,
+      "answer": 3,
+      "choices": ["吹った", "呼った", "吸った", "叫った"],
+      "sectionChoices": ["吹った", "呼った", "吸った", "叫った"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_9"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a4134i0qubz184"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_10",
+      "questionNumber": 10,
+      "answer": 3,
+      "choices": ["早い", "長い", "短い", "遅い"],
+      "sectionChoices": ["早い", "長い", "短い", "遅い"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_10"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a5134i4iorglrz"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_11",
+      "questionNumber": 11,
+      "answer": 2,
+      "choices": ["肩", "胃", "腰", "肌"],
+      "sectionChoices": ["肩", "胃", "腰", "肌"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_11"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a6134iydpjhlhq"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_12",
+      "questionNumber": 12,
+      "answer": 4,
+      "choices": ["楽顔", "悲顔", "泣顔", "笑顔"],
+      "sectionChoices": ["楽顔", "悲顔", "泣顔", "笑顔"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 có các phương án khác ở câu 12; giữ nguyên bộ lựa chọn hiện tại vì chưa xác định được phiên bản gốc của bộ dữ liệu.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_12"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a7134iotwq0r3e"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_13",
+      "questionNumber": 13,
+      "answer": 1,
+      "choices": ["黒板", "黒坂", "告板", "告坂"],
+      "sectionChoices": ["黒板", "黒坂", "告板", "告坂"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 ghi phương án 3–4 là 看板・看坂, còn dữ liệu hiện tại là 告板・告坂; lời giải theo lựa chọn đang có và không tự đồng bộ biến thể.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_13"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a8134ikt8p6zc1"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_14",
+      "questionNumber": 14,
+      "answer": 2,
+      "choices": ["一段的", "一般的", "一役的", "一設的な"],
+      "sectionChoices": ["一段的", "一般的", "一役的", "一設的"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 có các phương án nhiễu khác ở câu 14; giải nghĩa theo bộ lựa chọn hiện tại nhưng chưa xác nhận phiên bản gốc.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_14"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xxze01a9134ipo3jtbr2"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_15",
+      "questionNumber": 15,
+      "answer": 3,
+      "choices": ["夫婦", "家内", "親戚", "兄弟"],
+      "sectionChoices": ["夫婦", "家内", "親戚", "兄弟"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF tham khảo trang 2 xác nhận câu và lựa chọn; bản đề rời có lỗi chép 「にまりました」, đã sửa thành 「になりました」.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_15"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ab134i2vi259fm"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_16",
+      "questionNumber": 16,
+      "answer": 4,
+      "choices": ["ついでに", "当然", "たまに", "偶然"],
+      "sectionChoices": ["ついでに", "当然", "たまに", "偶然"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_16"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ac134ir1o159kx"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_17",
+      "questionNumber": 17,
+      "answer": 1,
+      "choices": ["迷って", "騒いで", "疑って", "飽きて"],
+      "sectionChoices": ["迷って", "騒いで", "疑って", "飽きて"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_17"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ad134i5plcud73"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_18",
+      "questionNumber": 18,
+      "answer": 2,
+      "choices": ["はっきり", "ぴったり", "うっかり", "がっかり"],
+      "sectionChoices": ["はっきり", "ぴったり", "うっかり", "がっかり"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_18"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ae134ior4xlapy"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_19",
+      "questionNumber": 19,
+      "answer": 3,
+      "choices": ["混ぜた", "揚げた", "干した", "こぼした"],
+      "sectionChoices": ["混ぜた", "揚げた", "干した", "こぼした"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_19"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01af134irsu0yiay"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_20",
+      "questionNumber": 20,
+      "answer": 2,
+      "choices": ["メッセージ", "レシピ", "サイン", "アナウンス"],
+      "sectionChoices": ["メッセージ", "レシピ", "サイン", "アナウンス"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_20"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ag134if15wcug2"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_21",
+      "questionNumber": 21,
+      "answer": 4,
+      "choices": ["発生", "支出", "掲示", "登場"],
+      "sectionChoices": ["発生", "支出", "掲示", "登場"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_21"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ah134i9bxjybvj"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_22",
+      "questionNumber": 22,
+      "answer": 1,
+      "choices": ["どきどき", "だぶだぶ", "ぐうぐう", "ざあざあ"],
+      "sectionChoices": ["どきどき", "だぶだぶ", "ぐうぐう", "ざあざあ"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_22"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ai134iqwj6wqiw"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_23",
+      "questionNumber": 23,
+      "answer": 3,
+      "choices": ["納得", "承知", "希望", "準備"],
+      "sectionChoices": ["納得", "承知", "希望", "準備"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_23"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01aj134i57sly7gx"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_24",
+      "questionNumber": 24,
+      "answer": 1,
+      "choices": ["ほえる", "ひびく", "しゃべる", "どなる"],
+      "sectionChoices": ["ほえる", "ひびく", "しゃべる", "どなる"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_24"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01ak134i9evwin3b"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_25",
+      "questionNumber": 25,
+      "answer": 2,
+      "choices": ["飛び出す", "追い越す", "押し込む", "取り替える"],
+      "sectionChoices": ["飛び出す", "追い越す", "押し込む", "取り替える"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_25"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xy8p01al134ikmos97e5"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_26",
+      "questionNumber": 26,
+      "answer": 1,
+      "choices": ["あげよう", "もらおう", "作ろう", "使おう"],
+      "sectionChoices": ["あげよう", "もらおう", "作ろう", "使おう"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_26"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyia01an134iir1y461y"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_27",
+      "questionNumber": 27,
+      "answer": 2,
+      "choices": ["最も", "非常に", "まあまあ", "やっぱり"],
+      "sectionChoices": ["最も", "非常に", "まあまあ", "やっぱり"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_27"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyia01ao134ifdvgh1qi"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_28",
+      "questionNumber": 28,
+      "answer": 1,
+      "choices": ["決められた", "空いている", "近くの", "ほかの"],
+      "sectionChoices": ["決められた", "空いている", "近くの", "ほかの"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_28"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyia01ap134ivwmjzyua"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_29",
+      "questionNumber": 29,
+      "answer": 3,
+      "choices": ["賛成", "大変", "心配", "反対"],
+      "sectionChoices": ["賛成", "大変", "心配", "反対"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_29"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyia01aq134ir25dxk3o"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_30",
+      "questionNumber": 30,
+      "answer": 4,
+      "choices": ["行き方", "理由", "やり方", "予定"],
+      "sectionChoices": ["行き方", "理由", "やり方", "予定"],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 in lựa chọn 1 là 生き方, dữ liệu hiện tại là 行き方; lời giải theo lựa chọn hiện có, khóa 4 vẫn là 予定.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_30"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyia01ar134izwfzolys"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_31",
+      "questionNumber": 31,
+      "answer": 4,
+      "choices": [
+        "毎朝ジョギングを続けたら、健康が発展するだろう。",
+        "テレビで紹介されてから、この店は客の数が発展した。",
+        "林さんは中学校のとき、成績が急に発展したそうだ。",
+        "この町は歴史的な建物が多く、観光地として発展してきた。"
+      ],
+      "sectionChoices": [
+        "毎朝ジョギングを続けたら、健康が発展するだろう。",
+        "テレビで紹介されてから、この店は客の数が発展した。",
+        "林さんは中学校のとき、成績が急に発展したそうだ 。",
+        "この町は歴史的な建物が多く、観光地として発展してきた。"
+      ],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 ghi 村さん ở lựa chọn 3, trong khi dữ liệu hiện tại ghi 林さん; giữ nguyên nội dung hiện có vì chưa xác định được bản đề gốc.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_31"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyr001at134iro7yrmb0"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_32",
+      "questionNumber": 32,
+      "answer": 2,
+      "choices": [
+        "朝作ったお弁当を大きめのハンカチでだいてかばんに入れた。",
+        "生まれた子を初めてだいたとき、とても小さくて軽いと感じた。",
+        "けがをしないように、包丁をしっかりだいて魚を切った。",
+        "引っ越しのとき運びやすいように、本や雑誌をひもでだいた。"
+      ],
+      "sectionChoices": [
+        "朝作ったお弁当を大きめのハンカチでだいてかばんに入れた 。",
+        "生まれた子を初めてだいたとき、とても小さくて軽いと感じた 。",
+        "けがをしないように、包丁をしっかりだいて魚を切った。",
+        "引っ越しのとき運びやすいように、本や雑誌をひもでだいた。"
+      ],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_32"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyr001au134it710qamg"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_33",
+      "questionNumber": 33,
+      "answer": 4,
+      "choices": [
+        "ここから見える景色を原料にして、抽象的な絵をかくつもりだ。",
+        "大学を卒業したら、留学の経験を原料にして仕事をしたい。",
+        "このドラマは、海外の小説を原料にしたそうです。",
+        "牛乳を原料にして、チーズやバターが作られます。"
+      ],
+      "sectionChoices": [
+        "ここから見える景色を原料にして、抽象的な絵をかくつもりだ。",
+        "大学を卒業したら、留学の経験を原料にして仕事がしたい。",
+        "このドラマは、海外の小説を原料にしたそうです。",
+        "牛乳を原料にして、チーズやバターが作られます。"
+      ],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF Ver 1.0 xác nhận câu và ý nghĩa các phương án ở câu 33; có khác biệt chép liệu nhỏ giữa đề toàn phần và đề rời (描く/かく, 仕事をしたい/仕事がしたい), nên giữ nguyên từng bản và dùng giải thích chung theo ngữ nghĩa.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_33"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyr001av134isal22pe0"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_34",
+      "questionNumber": 34,
+      "answer": 1,
+      "choices": [
+        "今年の夏は異常な暑さで、エアコンがよく売れたそうだ。",
+        "その色は見えにくいので、赤などの異常な色を使ってください。",
+        "妹の作文は上手に書けていたが、異常な漢字が一つあった。",
+        "姉の靴は、私とは異常なサイズなので、借りることができない。"
+      ],
+      "sectionChoices": [
+        "今年の夏は異常な暑さで、エアコンがよく売れたそうだ。",
+        "その色は見えにくいので、赤などの異常な色を使ってください。",
+        "妹の作文は上手に書けていたが、異常な漢字が一つあった。",
+        "姉の靴は、私とは異常なサイズなので、借りることができない。"
+      ],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_34"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyr001aw134ihmkhzm7h"
+        }
+      ]
+    },
+    {
+      "questionId": "toan_q_2022_12_35",
+      "questionNumber": 35,
+      "answer": 3,
+      "choices": [
+        "A銀行とB銀行が重なって、新しい銀行ができました。",
+        "私たちの研究会に、来月から新しい仲間が重なります。",
+        "子どもの運動会が大切な会議と重なったので、見に行けない。",
+        "貯金がたくさん重なったら、車を買おうと思っている。"
+      ],
+      "sectionChoices": [
+        "A銀行とB銀行が重なって、新しい銀行ができました。",
+        "私たちの研究会に、来月から新しい仲間が重なります。",
+        "子どもの運動会が大切な会議と重なったので、見に行けない。",
+        "貯金がたくさん重なったら、車を買おうと思っている。"
+      ],
+      "issue": "Incorrect or missing answer explanations were replaced with context-checked meanings and a Vietnamese translation. PDF tham khảo Ver 1.0 ghi 「重なったので、見に行けない」; đã sửa câu trả lời lựa chọn 3 bằng cách thêm ので, giữ nguyên khóa 3.",
+      "copies": [
+        {
+          "file": "data/jlpt_n3_toan_master.json",
+          "examId": "toan-n3-202212-full",
+          "questionId": "toan_q_2022_12_35"
+        },
+        {
+          "file": "data/jlpt_full_master.json",
+          "examId": "cm2u2xxmo019t134izzsjxgrl-vocab",
+          "questionId": "cm2u2xyr001ax134ihc6650qe"
+        }
+      ]
+    }
+  ]
+}

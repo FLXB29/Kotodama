@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-09-25T10:29:43.658Z",
+  "examId": "toan-n3-201007-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://trynihongo.com/ja/de-thi-jlpt-ngu-phap-doc-hieu-n3-thang-7-2010-q625; https://www.renrendoc.com/paper/122808080.html",
+  "method": "Question wording was cross-checked against TryNihongo; answers were checked against sentence grammar and the translated solution compilation. The latter is a nonofficial study transcription; no official JLPT key is claimed.",
+  "answerSequence": [
+    2,
+    3,
+    4,
+    2,
+    1,
+    3,
+    1,
+    4,
+    4,
+    2,
+    3,
+    1,
+    3
+  ],
+  "optionCorrections": {},
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "1.を",
+        "2.って",
+        "3.のを",
+        "4.だ"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        "1.うちに",
+        "2.はじめに",
+        "3.たびに",
+        "4.だけに"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "choices": [
+        "1.そろそろ",
+        "2.だんだん",
+        "3.ようやく",
+        "4.いつの間にか"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "choices": [
+        "1.会おう ",
+        "2.会う",
+        "3.会った",
+        "4.会って"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.やめる ",
+        "2.やめた",
+        "3.やめない",
+        "4.やめ"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "choices": [
+        "1.あいだと",
+        " 2.あいだに",
+        "3.あいだ ",
+        "4.あいだで"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "choices": [
+        "1.ございます",
+        " 2.いらっしゃいます",
+        "3.いる ",
+        "4.おります"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "choices": [
+        "1.だけ",
+        "2.だけで ",
+        "3.だけを",
+        "4.だけに"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ことができるまで",
+        "2.ことができてから",
+        "3.ようになるまで",
+        "4.ようになってから"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "choices": [
+        "1.あるのかによって",
+        "2.あるのかについて",
+        "3.あるのかどうかによって ",
+        "4.あるのかどうかについて"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "choices": [
+        "1.濃くなりやすくなって",
+        " 2.濃くしやすくなって",
+        " 3.濃くなりすぎて",
+        "4.濃くしすぎて"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "choices": [
+        "1.させないでください",
+        " 2.させてください ",
+        "3.させないことにしてください ",
+        "4.させることにしてください"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        "1.行かなくてもいいのだろうが",
+        "2.行かなくてもいいようだが",
+        "3.行けばいいのだろうが ",
+        "4.行ければいいようだが"
+      ]
+    }
+  ]
+}

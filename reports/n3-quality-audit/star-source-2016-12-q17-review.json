@@ -1,0 +1,40 @@
+{
+  "exam": "JLPT N3 12/2016",
+  "printedQuestion": 17,
+  "fullExamQuestionId": "toan_q_2016_12_52",
+  "sourcePdf": {
+    "title": "7. N3 12-2016.pdf",
+    "driveFileId": "1ZPZIPaDo5BrgR-n0h5XUcpCOXR73Riz7",
+    "printedPage": 5,
+    "method": "Reviewed the page in Google Drive and compared visible text with the PDF text layer.",
+    "promptEnding": "待てって",
+    "option2AsSeen": "と言われた"
+  },
+  "appData": {
+    "option2": "言われた",
+    "answer": 1,
+    "order": [2, 3, 1, 4],
+    "completedSentence": "しばらくここで待てって言われたから待っているんですけど。",
+    "promptEnding": "待てって"
+  },
+  "decision": "Keep app option 2 言われた because a separate published PDF copy prints that wording and it forms 待てって言われた. Continue disclosing that the supplied Google Drive PDF prints と言われた; no official JLPT key has been established.",
+  "status": "source-conflict-disclosed-editorial-reconstruction",
+  "officialKeyEstablished": false,
+  "explanationContainsSourceConflictDisclosure": true,
+  "alternatePdf": {
+    "title": "2016 年 12 月新日本語能力試験N3 真题",
+    "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/De-N3-12-2016.pdf",
+    "zeroBasedPageIndex": 6,
+    "printedQuestion": 17,
+    "promptEnding": "待てって",
+    "option2": "言われた",
+    "result": "This separate PDF copy corroborates the app wording; it differs from the supplied Google Drive PDF.",
+    "provenance": "Third-party PDF reproduction; not an official JLPT answer key."
+  },
+  "browserVerification": {
+    "browser": "Chrome",
+    "route": "http://127.0.0.1:5173/jlpt",
+    "exam": "JLPT N3 12/2016, grammar and reading, answer-study mode",
+    "result": "Printed question 17, all fragments, full explanation, and the source-version note were visible; zero answers were selected and progress remained 0/39."
+  }
+}

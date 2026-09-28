@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-09-27T12:35:52.287Z",
+  "exam": "JLPT N3 July 2016",
+  "scope": "Grammar Mondai 2, printed questions 14–18.",
+  "sourcePdf": {
+    "title": "JLPT・N3・7/2016",
+    "url": "https://drive.google.com/file/d/1wTMSYTI-E1v3c67VMlkPUkJBz1uF9FGZ/view",
+    "renderedPages": [
+      {
+        "printedPage": 6,
+        "pdfPage": 6,
+        "printedQuestions": [14, 15, 16, 17]
+      },
+      {
+        "printedPage": 7,
+        "pdfPage": 7,
+        "printedQuestions": [18]
+      }
+    ],
+    "status": "Original PDF reviewed visually in Chrome; option text, sentence fragments, and each printed ★ slot checked against the stored order."
+  },
+  "answerReferences": [
+    {
+      "name": "Saromalang",
+      "url": "https://www.saromalang.com/2016/07/jlptn3-bunpou.html",
+      "answers": [1, 3, 4, 1, 2],
+      "status": "Independent nonofficial answer explanation; agrees with the assembled sentence and marked ★ option."
+    },
+    {
+      "name": "NJLPT Center",
+      "url": "https://njlptcenter.wordpress.com/tag/%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%A1%E0%B9%88%E0%B8%B2/",
+      "answers": [1, 3, 4, 1, 2],
+      "status": "Independent nonofficial answer explanation; agrees with the assembled sentence and marked ★ option."
+    }
+  ],
+  "officialKeyEstablished": false,
+  "corrections": [
+    {
+      "printedQuestion": 14,
+      "previousAnswer": 4,
+      "answer": 1,
+      "previousStarPosition": 2,
+      "starPosition": 1
+    },
+    {
+      "printedQuestion": 15,
+      "previousAnswer": 2,
+      "answer": 3,
+      "previousStarPosition": 2,
+      "starPosition": 1
+    },
+    {
+      "printedQuestion": 18,
+      "previousAnswer": 1,
+      "answer": 2,
+      "previousStarPosition": 3,
+      "starPosition": 2
+    }
+  ],
+  "sourceTextCorrection": "Câu 18 ở đề học riêng từng có lỗi chép 「テーマになったいる」; câu và script đã được đồng bộ theo PDF thành 「テーマになっている」.",
+  "explanationsAppliedTo": ["full mock exam", "standalone grammar/reading exam"],
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "internalQuestionNumber": 49,
+      "fullExamQuestionId": "toan_q_2016_07_49",
+      "standaloneQuestionId": "cm2u2wiso007e134ibcm1xmew",
+      "printedPage": 6,
+      "printedOptions": ["で", "を", "5人", "楽しい休日"],
+      "answer": 1,
+      "order": [3, 1, 4, 2],
+      "starPosition": 1,
+      "completedSentence": "今日は、久しぶりに家族5人で楽しい休日を過ごした。",
+      "vietnameseTranslation": "Hôm nay, sau một thời gian dài, gia đình năm người chúng tôi đã có một ngày nghỉ vui vẻ.",
+      "displayedSolutionScript": "今日は、久しぶりに家族5人<u>で</u>楽しい休日を過ごした。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 15,
+      "internalQuestionNumber": 50,
+      "fullExamQuestionId": "toan_q_2016_07_50",
+      "standaloneQuestionId": "cm2u2wiso007f134i0onaauz4",
+      "printedPage": 6,
+      "printedOptions": ["味が", "いい", "好きな人には", "かもしれないが"],
+      "answer": 3,
+      "order": [1, 3, 2, 4],
+      "starPosition": 1,
+      "completedSentence": "駅前の店のラーメンは、濃い味が好きな人にはいいかもしれないが、私はちょっと苦手だ。",
+      "vietnameseTranslation": "Món ramen của quán trước nhà ga có thể hợp với những người thích vị đậm, nhưng tôi thì hơi không hợp khẩu vị.",
+      "displayedSolutionScript": "駅前の店のラーメンは、濃い味が<u>好きな人には</u>いいかもしれないが、私はちょっと苦手だ。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 16,
+      "internalQuestionNumber": 51,
+      "fullExamQuestionId": "toan_q_2016_07_51",
+      "standaloneQuestionId": "cm2u2wiso007g134isuwf4kgp",
+      "printedPage": 6,
+      "printedOptions": ["のを", "すっかり", "駅の周りが", "変わっている"],
+      "answer": 4,
+      "order": [3, 2, 4, 1],
+      "starPosition": 2,
+      "completedSentence": "久しぶりにふるさとに帰ったが、昔は何もなかった駅の周りがすっかり変わっているのを見て驚いた。",
+      "vietnameseTranslation": "Lâu ngày mới trở về quê, tôi ngạc nhiên khi thấy khu vực quanh nhà ga, nơi trước đây chẳng có gì, đã thay đổi hoàn toàn.",
+      "displayedSolutionScript": "久しぶりにふるさとに帰ったが、昔は何もなかった駅の周りがすっかり<u>変わっている</u>のを見て驚いた。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 17,
+      "internalQuestionNumber": 52,
+      "fullExamQuestionId": "toan_q_2016_07_52",
+      "standaloneQuestionId": "cm2u2wiso007h134in7dioior",
+      "printedPage": 6,
+      "printedOptions": ["日ほど", "自分の子供が", "うれしかった", "生まれた"],
+      "answer": 1,
+      "order": [2, 4, 1, 3],
+      "starPosition": 2,
+      "completedSentence": "これまでの人生の中で自分の子供が生まれた日ほど、うれしかった日はない。",
+      "vietnameseTranslation": "Trong suốt cuộc đời mình cho đến nay, chưa có ngày nào vui bằng ngày con tôi chào đời.",
+      "displayedSolutionScript": "これまでの人生の中で自分の子供が生まれた<u>日ほど</u>うれしかった日はない。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 18,
+      "internalQuestionNumber": 53,
+      "fullExamQuestionId": "toan_q_2016_07_53",
+      "standaloneQuestionId": "cm2u2wiso007i134iq66lbuwf",
+      "printedPage": 7,
+      "printedOptions": ["彼の曲と", "発表されてきた", "という点で", "これまでに"],
+      "answer": 2,
+      "order": [3, 4, 2, 1],
+      "starPosition": 2,
+      "completedSentence": "今回の彼の新曲は、友情がテーマになっているという点でこれまでに発表されてきた彼の曲と大きく違う。",
+      "vietnameseTranslation": "Ca khúc mới lần này của anh ấy khác hẳn các ca khúc anh từng phát hành trước đây ở điểm chủ đề là tình bạn.",
+      "displayedSolutionScript": "今回の彼の新曲は、友情がテーマになっているという点でこれまでに<u>発表されてきた</u>彼の曲と大きく違う。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    }
+  ]
+}

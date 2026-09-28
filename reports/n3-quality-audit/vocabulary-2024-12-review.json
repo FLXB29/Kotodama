@@ -1,0 +1,325 @@
+{
+  "generatedAt": "2026-09-27T02:59:33.785Z",
+  "examId": "toan-n3-202412-full",
+  "section": "Từ vựng",
+  "reviewedQuestionCount": 35,
+  "completedExplanationCount": 35,
+  "translatedPromptCount": 35,
+  "fourChoiceDiscussionCount": 35,
+  "newlyWrittenExplanationCount": 1,
+  "autoGlossaryBlocksRemoved": 33,
+  "reviewedExplanationCount": 35,
+  "answerKeysChanged": 0,
+  "sourceLimits": {
+    "originalQuestionPdfVisuallyInspectedThisPass": false,
+    "officialAnswerKeyConfirmed": false,
+    "method": "Reviewed the stored stems and choices, supplied the missing translation and four-choice explanation for question 3, preserved the existing contextual explanations, and removed only their appended automatic dictionary gloss blocks. This pass does not certify the source transcription or official answer key."
+  },
+  "rows": [
+    {
+      "number": 1,
+      "answer": 2,
+      "options": ["ひろった", "くばった", "やぶった", "はった"],
+      "explanation": "「配った（くばった）」＝ phát, phát tờ rơi\n\n→ 山田さん phát tờ rơi.\n\nĐáp án: 2 くばった\n\n1 ひろった = nhặt lên\n2 くばった = phát, phân phát ⭕\n3 やぶった = xé\n4 はった = dán",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 2,
+      "answer": 3,
+      "options": [" 1.いしゆ", "2.せきう", "3.せきゆ", "4.いしう"],
+      "explanation": "Dịch: “Đất nước tôi nhập khẩu dầu mỏ.”\n\n石油は「せきゆ」と読みます。石油 (dầu mỏ) は日本語の音読みで せきゆ。1. いしゆ と 4. いしう は誤読、2. せきう は末尾の読みが違います。",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 3,
+      "answer": 2,
+      "options": ["1.ふば", "2.ふぼ", " 3.ふうぼ", "4.ふうば"],
+      "explanation": "Đáp án 2 — 「父母」（ふぼ）là cha mẹ/phụ huynh; 「生徒の父母」là cha mẹ của học sinh.\nDịch: “Lễ tốt nghiệp cũng có rất nhiều phụ huynh của học sinh đến dự.”\n1. ふば: không phải cách đọc chuẩn của 父母; chữ 母 trong từ này đọc ぼ, âm hữu thanh.\n2. ふぼ: cách đọc đúng của 父母.\n3. ふうぼ: thêm âm dài う không có trong cách đọc của từ này.\n4. ふうば: vừa thêm âm dài う, vừa đọc 母 thành ば thay vì ぼ.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 4,
+      "answer": 4,
+      "options": [" 1.じゅうおう ", "2.しゅうおう", "3.じゅうよう", "4.しゅよう"],
+      "explanation": "Dịch: “Ngành công nghiệp chính của thị trấn này là gì?”\n\n主要 đọc là しゅよう, nghĩa là chủ yếu/chính. Trong câu hỏi, đây là ngành công nghiệp chính của thị trấn. Các lựa chọn còn lại đảo âm đầu, đổi trường âm hoặc đọc nhầm よう thành おう.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 5,
+      "answer": 1,
+      "options": [" 1.かねつ ", "2.かあつ", "3.かいねつ ", "4.かいあつ"],
+      "explanation": "Dịch: “Xin hãy làm nóng món này trước khi ăn.”\n\n加熱 đọc là かねつ, nghĩa là làm nóng/gia nhiệt. Câu hướng dẫn yêu cầu làm nóng thức ăn trước khi ăn. かあつ, かいねつ và かいあつ không phải cách đọc của 加熱.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 6,
+      "answer": 1,
+      "options": ["1.ふかく ", "2.あさく", "3.ひろく", "4.せまく"],
+      "explanation": "Dịch: “Con sông trở nên sâu ở đoạn gần chỗ kia.”\n\n深く đọc là ふかく, dạng trạng từ của 深い (sâu). Câu nói dòng sông sâu dần ở khu vực đó. あさく là nông, ひろく là rộng và せまく là hẹp nên không phù hợp.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 7,
+      "answer": 3,
+      "options": [" 1.がんじょうてき", " 2.かんしょうてき ", "3.かんじょうてき", "4.がんしょうてき"],
+      "explanation": "Dịch: “Bị người ta phàn nàn nên tôi đã trở nên cảm tính/mất bình tĩnh.”\n\n感情的 đọc là かんじょうてき, nghĩa là để cảm xúc chi phối/cảm tính. Khi bị phàn nàn, người nói đã không kiềm chế được cảm xúc. Các phương án khác sai cách đọc những âm 感・情.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 8,
+      "answer": 4,
+      "options": ["1.なくさないで ", "2.よごさないで", "3.こぼさないで ", "4.のこさないで"],
+      "explanation": "Dịch: “Xin đừng để thừa/bỏ lại cái này.”\n\n残さないで đọc là のこさないで, nghĩa là đừng để thừa/bỏ lại. Câu yêu cầu không để lại phần còn dư. なくす là làm mất, よごす là làm bẩn và こぼす là làm đổ.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 9,
+      "answer": 1,
+      "options": ["順番", "項番", "順審", "項審"],
+      "explanation": "Dịch: “Xin hãy xem lần lượt theo thứ tự từ đây.”\n\nじゅんばん được viết 順番, nghĩa là thứ tự. Câu yêu cầu xem lần lượt theo thứ tự từ đây. 項番, 順審 và 項審 không phải cách viết của từ này.\n\nCác lựa chọn: 1. 順番（じゅんばん）là thứ tự, đáp án đúng; 2. 項番（こうばん）là số thứ tự của mục, không đọc là じゅんばん; 3. 順審 và 4. 項審 không phải cách viết thông dụng của từ cần tìm.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 10,
+      "answer": 1,
+      "options": ["1.勤めて", "2.働めて", " 3.仕めて ", "4.労めて"],
+      "explanation": "Dịch: “Bố tôi làm việc ở ngân hàng.”\n\n勤める đọc là つとめる khi nói làm việc cho một cơ quan hoặc công ty; câu này là làm việc tại ngân hàng. 働く cũng có nghĩa làm việc nhưng không viết bằng chữ 働める trong lựa chọn này.\n\nCác lựa chọn: 1. 勤めて（つとめて）là làm việc cho một cơ quan, đúng với ngân hàng; 2. 働めて không phải cách viết/chia động từ chuẩn (働く → 働いて); 3. 仕めて không phải dạng chuẩn của 仕える; 4. 労めて cũng không phải dạng chuẩn (努める／勤める mới là các động từ thường gặp).",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 11,
+      "answer": 4,
+      "options": ["1.裏表", "2.右左", "3.表裏", " 4.左右"],
+      "explanation": "Dịch: “À, túi áo nằm ở hai bên trái và phải nhỉ.”\n\nさゆう viết 左右, nghĩa là bên trái và bên phải. Câu nói túi áo được đặt ở cả hai phía. 右左 diễn đạt thứ tự ngược và không phải cách viết thông thường của さゆう.\n\nCác lựa chọn: 1. 裏表（うらおもて）là mặt trái và mặt phải; 2. 右左（みぎひだり）là phải rồi trái, đảo thứ tự quen dùng; 3. 表裏（おもてうら／ひょうり）là hai mặt trước–sau; 4. 左右（さゆう）là trái và phải, đúng cách đọc của さゆう.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 12,
+      "answer": 2,
+      "options": ["1.退けて", "2.負けて", "3.失けて", "4.欠けて"],
+      "explanation": "Dịch: “Trận đấu hôm qua chúng tôi đã thua mất rồi.”\n\nまけて viết 負けて, dạng て của 負ける (thua). Câu nói đội đã thua trong trận hôm qua. 退ける, 失ける và 欠ける có chữ khác và không mang nghĩa thua cuộc.\n\nCác lựa chọn: 1. 退けて（しりぞけて）là đẩy lui/đánh lui; 2. 負けて（まけて）là đã thua, đúng; 3. 失けて không phải cách viết chuẩn cho “thua”; 4. 欠けて（かけて）là bị khuyết/sứt mẻ hoặc thiếu.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 13,
+      "answer": 3,
+      "options": ["1.適去", "2.過古", "3.過去", "4.適古"],
+      "explanation": "Dịch: “Chúng ta cũng thử tìm hiểu những ví dụ trong quá khứ.”\n\nかこ viết 過去, nghĩa là quá khứ. Câu yêu cầu thử tìm hiểu cả những ví dụ trong quá khứ. Chỉ 過去 là cách viết đúng; các chữ 適・古 không tạo thành từ này.\n\nCác lựa chọn: 1. 適去 và 2. 過古 không phải từ viết đúng cho かこ; 3. 過去（かこ）là quá khứ, đúng; 4. 適古 cũng không phải từ chuẩn. Chữ 過 gợi ý vượt qua/đã qua, còn 去 có nghĩa đi/rời khỏi.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 14,
+      "answer": 3,
+      "options": ["1.違", "2.変", "3.逆", "4.別"],
+      "explanation": "Dịch: “Các trang của tài liệu này đang bị đảo ngược rồi.”\n\nぎゃく viết 逆, nghĩa là ngược/đảo chiều. Trang trong tài liệu đang bị đảo ngược thứ tự. 違 là khác, 変 là thay đổi và 別 là riêng/khác; chúng không mang nghĩa ngược lại.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 15,
+      "answer": 4,
+      "options": ["縮小", "滞在", "延期", "運休"],
+      "explanation": "Dịch: “Tàu đã ngừng chạy từ sáng do tuyết rơi dày.”\n\n運休する nghĩa là tạm ngừng chạy chuyến tàu. Tuyết lớn khiến tàu ngừng hoạt động từ sáng, nên chọn 運休. 縮小 là thu nhỏ, 滞在 là lưu trú và 延期 là hoãn một sự kiện.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 16,
+      "answer": 3,
+      "options": ["1.いびき", "2.あくび ", "3.あせ", "4.いき"],
+      "explanation": "Dịch: “Hôm nay trời nóng nên áo sơ mi của tôi bị ướt đẫm mồ hôi.”\n\n汗 nghĩa là mồ hôi. Trời nóng làm áo ướt đẫm mồ hôi. いびき là tiếng ngáy, あくび là ngáp và いき là hơi thở.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 17,
+      "answer": 4,
+      "options": [" 1.サイレン ", "2.エンジン", "3.ノック", " 4.マイク"],
+      "explanation": "Dịch: “Xin hãy dùng micro nói để mọi người đều nghe rõ.”\n\nマイク (micro) giúp giọng nói được mọi người nghe rõ. サイレン là còi báo động, エンジン là động cơ và ノック là tiếng gõ cửa.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 18,
+      "answer": 2,
+      "options": ["1.嫌がって ", "2.覚めて", "3.驚いて", "4.怖がって"],
+      "explanation": "Dịch: “Giữa đêm có tiếng động lớn làm tôi tỉnh giấc.”\n\n目が覚める nghĩa là tỉnh giấc. Tiếng động lớn giữa đêm làm người nói tỉnh dậy. 嫌がる là tỏ ra không thích, 驚く là giật mình và 怖がる là sợ; những động từ này không kết hợp tự nhiên với 目が ở đây.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": [" 1.あやしい ", "2.おそろしい", "3.にくらしい", "4.まずしい"],
+      "explanation": "Dịch: “Hayashi lúc nào cũng nói đùa nên tôi nghi ngờ chuyện đó có thật hay không.”\n\nあやしい nghĩa là đáng ngờ/khó tin. Hayashi thường xuyên nói đùa nên người nghe nghi ngờ câu chuyện lần này có thật hay không. おそろしい là đáng sợ, にくらしい là đáng ghét và まずしい là nghèo.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 20,
+      "answer": 3,
+      "options": [" 1.広告", "2.合図", "3.通知", "4.伝言"],
+      "explanation": "Dịch: “Kết quả buổi phỏng vấn hôm nay sẽ được thông báo qua email trong vòng một tuần.”\n\n通知する nghĩa là thông báo chính thức. Kết quả phỏng vấn sẽ được gửi thông báo qua email trong vòng một tuần. 広告 là quảng cáo, 合図 là tín hiệu và 伝言 là lời nhắn.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 21,
+      "answer": 1,
+      "options": ["1.派手な", " 2.盛んな", " 3.わがままな ", "4.身近な"],
+      "explanation": "Dịch: “Anh trai tôi lúc nào cũng mặc áo sặc sỡ nên dù ở xa cũng dễ nhận ra ngay.”\n\n派手な nghĩa là sặc sỡ/nổi bật. Anh trai luôn mặc áo nổi bật nên dễ nhận ra từ xa. 盛んな là thịnh hành/sôi nổi, わがままな là ích kỷ và 身近な là gần gũi.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 22,
+      "answer": 3,
+      "options": [" 1.支配 ", " 2.失敗 ", " 3.禁止", " 4.批判"],
+      "explanation": "Dịch: “Quy định cấm đỗ xe ở đây, nên xin hãy di chuyển xe ngay.”\n\n禁止する nghĩa là cấm. Quy định cấm đỗ xe ở đây nên người lái phải di chuyển xe ngay. 支配 là kiểm soát, 失敗 là thất bại và 批判 là phê bình.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 23,
+      "answer": 1,
+      "options": ["1.もったいない", "2.しかたない", "3.かわいらしい", "4.こいしい"],
+      "explanation": "Dịch: “Chiếc áo khoác này cũ nhưng vẫn mặc được, nên vứt nó đi thì thật lãng phí.”\n\nもったいない diễn tả sự lãng phí khi một món đồ vẫn còn dùng được. Chiếc áo khoác cũ vẫn mặc được nên vứt đi thật phí. しかたない là không còn cách nào, かわいらしい là dễ thương và こいしい là nhớ nhung.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 24,
+      "answer": 2,
+      "options": ["1.包んだ", "2.隠した", " 3.囲んだ", "4.閉じた"],
+      "explanation": "Dịch: “Tôi đã giấu quà sinh nhật cho em trai sâu trong tủ để em ấy không tìm thấy trước sinh nhật.”\n\n隠す nghĩa là giấu. Để em trai không phát hiện quà trước sinh nhật, người nói giấu nó sâu trong tủ. 包む là gói, 囲む là bao quanh và 閉じる là đóng lại.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 25,
+      "answer": 2,
+      "options": ["1.十分", "2.一応", "3.けっこう", " 4.たいてい"],
+      "explanation": "Dịch: “Yamaguchi có thể không đến bữa tiệc lần này, nhưng tôi vẫn định mời anh ấy.”\n\n一応 có nghĩa là trước mắt/cứ thử làm một lần cho chắc. Dù nghĩ Yamaguchi có thể không đến, người nói vẫn sẽ mời anh ấy. 十分 là đầy đủ, けっこう là khá/đủ và たいてい là phần lớn/thường.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 26,
+      "answer": 1,
+      "options": ["よく考えて", "よく探して", "よく読んで", "よく数えて"],
+      "explanation": "Dịch: “Tôi sẽ xem xét kỹ việc này trước ngày mai.”\n\n検討する nghĩa là cân nhắc, xem xét kỹ. Người nói sẽ suy nghĩ kỹ về vấn đề trước hạn ngày mai. Các phương án khác lần lượt là tìm kiếm, đọc và đếm, không phải nghĩa của 検討.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 27,
+      "answer": 2,
+      "options": ["1.旅行", " 2.会社", "3.大学", "4.建物"],
+      "explanation": "Dịch: “Tuần sau sẽ có buổi giới thiệu doanh nghiệp ở đây.”\n\n企業 là doanh nghiệp/công ty. Câu thông báo có buổi giới thiệu về các công ty vào tuần sau. 旅行 là chuyến du lịch, 大学 là trường đại học và 建物 là tòa nhà.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 28,
+      "answer": 2,
+      "options": [" 1.前に進んで", "2.後ろに下がって", "3.横に動いて", "4.そこで止まって"],
+      "explanation": "Dịch: “Xin hãy lùi xe lại một chút.”\n\nバックする trong ngữ cảnh điều khiển xe nghĩa là lùi về phía sau. Vì vậy câu yêu cầu lùi lại, đáp án 後ろに下がって. Các lựa chọn khác là đi tới, đi ngang hoặc dừng tại chỗ.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 29,
+      "answer": 4,
+      "options": ["1.かっこいい", "2.普通の", "3.人気がある ", " 4.素晴らしい"],
+      "explanation": "Dịch: “Anh/chị Suzuki là một vận động viên hàng đầu.”\n\n一流の選手 nghĩa là vận động viên hàng đầu/xuất sắc. Trong các lựa chọn, 素晴らしい (tuyệt vời, xuất sắc) gần nghĩa nhất. かっこいい là ngầu, 普通 là bình thường và 人気がある là được yêu thích.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 30,
+      "answer": 3,
+      "options": [" 1.本当に", "2.すぐに", "3.やっと", "4.初めて"],
+      "explanation": "Dịch: “Cuối cùng thì anh Tanaka cũng đã đến.”\n\nようやく và やっと đều có nghĩa là cuối cùng cũng. Câu nói Tanaka cuối cùng đã đến sau khi mọi người chờ đợi. 本当に là thật sự, すぐに là ngay lập tức và 初めて là lần đầu tiên.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 31,
+      "answer": 4,
+      "options": [
+        "修理のため、エアコンの内容を一度取り出します。",
+        "鍋の中にカレーの内容を入れて、１時間くらい煮てください。",
+        "古い財布から新しい財布へ内容を移しました。",
+        "この手紙の内容は、ほかの人には秘密にしてください。"
+      ],
+      "explanation": "Đáp án 4. 内容（ないよう） là nội dung/thông tin của thư.「この手紙の内容は、ほかの人には秘密にしてください」= “Xin giữ kín nội dung bức thư này với những người khác”.\n1.「エアコンの内容を一度取り出します」: “Tôi sẽ lấy phần bên trong máy điều hòa ra để sửa”. Khi nói các bộ phận bên trong thiết bị, dùng 中身 hoặc 部品; 内容 thường là thông tin/nội dung trừu tượng.\n2.「カレーの内容を入れて…」: “Cho phần bên trong của món cà ri vào nồi rồi nấu”. Nói nguyên liệu nấu ăn dùng 材料/具, không dùng 内容.\n3.「古い財布から新しい財布へ内容を移しました」: “Tôi chuyển đồ từ ví cũ sang ví mới”. Đồ vật bên trong ví là 中身.\n4. Nội dung thư là thông tin được viết trong thư, nên 内容 dùng đúng.\nGhi nhớ: văn bản/lời nói có 内容; vật chứa có 中身; món ăn có 材料・具.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 32,
+      "answer": 1,
+      "options": [
+        "1 彼は有名なロック歌手だったが、今は活動していない。",
+        " 2 山に登ると、新鮮な空気が活動していて気持ちがいい。",
+        " 3 さっきまで活動していたパソコンが、急に動かなくなった。",
+        " 4 駅前のコンビニは24時間活動しているので便利だ。"
+      ],
+      "explanation": "Đáp án 1. 活動する là hoạt động/làm nghề hoặc tham gia hoạt động.「彼は有名なロック歌手だったが、今は活動していない」= “Anh ấy từng là ca sĩ rock nổi tiếng nhưng hiện không còn hoạt động”.\n1. Ca sĩ không còn hoạt động nghệ thuật: 活動する dùng đúng.\n2.「新鮮な空気が活動していて…」: “Không khí trong lành đang hoạt động…”; không khí có thể 澄んでいる (trong lành) hoặc 流れている (luân chuyển), không 活動する.\n3.「活動していたパソコンが…」: “Máy tính đang hoạt động bỗng dưng ngừng chạy”. Với máy tính, tự nhiên hơn là 動いていた hoặc 稼働していた.\n4.「コンビニは24時間活動している」: “Cửa hàng tiện lợi hoạt động 24 giờ”. Cửa hàng kinh doanh dùng 営業している.\nGhi nhớ: người/nhóm/nghề nghiệp 活動する; máy móc 動く・稼働する; cửa hàng 営業する.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 33,
+      "answer": 4,
+      "options": [
+        "1 この辺りは、冬になると雪が落ち着いて、春になるまで溶けません。",
+        "2 シャツにしみが落ち着いてしまって、洗ってもきれいになりません。",
+        "3 あそこの木の上に美しい鳥が落ち着いています。",
+        "4 大好きなこの曲を聞くと、いつも気持ちが落ち着きます。"
+      ],
+      "explanation": "Đáp án 4. 落ち着く là bình tĩnh/lắng dịu.「大好きなこの曲を聞くと、いつも気持ちが落ち着きます」= “Mỗi khi nghe bài hát yêu thích này, tâm trạng tôi dịu lại”.\n1.「雪が落ち着いて」: “Tuyết đọng lại khi đông đến”. Tuyết phủ xuống là 積もる; 落ち着く nói về tâm trạng/trạng thái ổn định.\n2.「シャツにしみが落ち着いて」: “Vết bẩn bám vào áo”. Vết bẩn bám/dính là 付く hoặc 染みつく.\n3.「鳥が木の上に落ち着いています」: “Con chim đang đậu trên cây”. Chim đậu dùng 止まる（とまる）.\n4. Nghe nhạc làm tâm trạng lắng lại, nên 落ち着く dùng đúng.\nGhi nhớ: tâm trạng bình tĩnh/lắng lại là 落ち着く; tuyết tích tụ là 積もる; vết bẩn bám là 付く; chim đậu là 止まる.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 34,
+      "answer": 3,
+      "options": [
+        "1 遠慮しないで、ぐっすり食べてください。",
+        " 2 優勝できたのは、毎日ぐっすり練習したからだと思う。",
+        " 3 今日は疲れているので、朝までぐっすり眠れそうだ。 ",
+        "4 古い友人と久しぶりに会って、ぐっすりおしゃべりした。"
+      ],
+      "explanation": "Đáp án 3. ぐっすり dùng chủ yếu với 眠る・寝る, nghĩa là ngủ say/ngon giấc.「今日は疲れているので、朝までぐっすり眠れそうだ」= “Hôm nay tôi mệt nên có lẽ sẽ ngủ ngon đến sáng”.\n1.「ぐっすり食べてください」: “Cứ ăn ぐっすり nhé”. Muốn mời ăn thoải mái nói たくさん食べてください; ぐっすり không dùng với ăn.\n2.「ぐっすり練習した」: “Đã luyện tập ぐっすり mỗi ngày”. Luyện tập chăm chỉ nói 一生懸命/熱心に練習した.\n3. Mệt nên có thể ngủ say đến sáng; ぐっすり眠る là kết hợp tự nhiên.\n4.「ぐっすりおしゃべりした」: “Đã trò chuyện ぐっすり với bạn cũ”. Trò chuyện vui vẻ nói 楽しく話した; ぐっすり không bổ nghĩa cho おしゃべりする.\nGhi nhớ: ぐっすり眠る = ngủ say/ngon; たくさん食べる = ăn nhiều; 一生懸命練習する = luyện tập chăm chỉ.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    },
+    {
+      "number": 35,
+      "answer": 2,
+      "options": [
+        "1 日本の古い性格に興味があるので、神社やお寺によく行きます。",
+        " 2 森さんはおとなしい性格で、自分の意見はあまり言いません。",
+        "3 値段が高くても、安全で性格のいい車を買うつもりです。",
+        "4 音楽の性格を伸ばすために、5歳から専門家の指導を受けました。"
+      ],
+      "explanation": "Đáp án 2. 性格（せいかく） là tính cách.「森さんはおとなしい性格で、自分の意見はあまり言いません」= “Mori có tính cách trầm lặng và ít khi nói ý kiến của mình”.\n1.「日本の古い性格」: “Tính cách cổ xưa của Nhật Bản”. Nói về lịch sử cổ dùng 古い歴史, không phải 性格.\n2. Mori ít nói, mô tả tính cách trầm lặng nên 性格 dùng đúng.\n3.「安全で性格のいい車」: “Chiếc xe an toàn và có tính cách tốt”. Với xe, nói tính năng/hiệu năng tốt dùng 性能がいい hoặc 機能がいい.\n4.「音楽の性格を伸ばす」: “Phát triển tính cách âm nhạc”. Năng khiếu âm nhạc là 音楽の才能; 性格 là tính cách con người.\nGhi nhớ: 性格 là tính cách; 性能・機能 là hiệu năng/tính năng; 才能 là năng khiếu.\n\nTừ trọng tâm (nghĩa theo ngữ cảnh câu đúng): 「性格」（せいかく）: tính cách của một người.",
+      "promptTranslated": true,
+      "fourChoicesDiscussed": true
+    }
+  ]
+}

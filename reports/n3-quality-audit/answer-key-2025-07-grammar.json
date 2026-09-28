@@ -1,0 +1,285 @@
+{
+  "generatedAt": "2026-09-26T10:24:04.691Z",
+  "examId": "toan-n3-202507-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the stored key with two published reference keys and an editorially checked key; neither published reference is an official JLPT answer sheet. Disagreements are reported, never auto-corrected.",
+  "sources": [
+    {
+      "name": "TryNihongo",
+      "url": "https://trynihongo.com/en/jlpt-n3-exam-answers-july-2025-p1177",
+      "qualification": "Reference answers; its answer for question 46 differs from the key supported by the option wording and a third published text-answer source."
+    },
+    {
+      "name": "Xgxedu / 新干线日语",
+      "url": "https://www.xgxedu.com/html/kszx/6736.html",
+      "qualification": "The page explicitly says answers are for reference only. Its whole grammar sequence differs from the other checked sequence, so treat it as a possible version/key mismatch."
+    },
+    {
+      "name": "NJLPT Center",
+      "url": "https://njlptcenter.wordpress.com/2025/07/07/jlpt-n3-answer-2025-7-grammar/",
+      "qualification": "Publishes answer text; for question 46 it identifies ご参加になれます (option 1)."
+    },
+    {
+      "name": "PassJapanese",
+      "url": "https://passjapanese.com/ja/jlpt/n3/exam/2025-07-grammar-reading",
+      "qualification": "Cross-check of the question wording, order, and choice surfaces; this page does not publish an answer key in the extracted content."
+    }
+  ],
+  "question46Decision": "Keep option 1: ご参加になれます is the respectful potential form in a city notice telling residents they may attend. TryNihongo lists option 3, Xgxedu lists option 2, and NJLPT Center lists the text of option 1. This item remains source-disputed pending an original answer sheet.",
+  "otherDisagreements": [
+    {
+      "questionNumber": 38,
+      "decision": "Keep option 3 引っ越すって. This is the colloquial quotation marker required before この前言ってた; NJLPT Center lists 引っ越すか, which does not fit that reported-speech frame."
+    },
+    {
+      "questionNumber": 39,
+      "decision": "Keep option 4 どちらかというと as the best fit for the explicit preference contrast. NJLPT Center lists 確かに, which remains possible in some conversational readings, so mark the item ambiguous until an original answer sheet is checked."
+    },
+    {
+      "questionNumber": 44,
+      "decision": "The stored option 3 is 持ってく. NJLPT Center prints 待ってく, which means “wait”; treat that as a likely transcription typo because TryNihongo agrees with option 3 and the question asks the speaker to bring the book to school."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "optionKey": 1,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 2,
+      "njlptCenterAnswerText": "から",
+      "choices": [
+        "に",
+        "で",
+        "から",
+        "まで"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 37,
+      "optionKey": 2,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "tryNihongoReference": 1,
+      "xgxeduReference": 3,
+      "njlptCenterAnswerText": "によって",
+      "choices": [
+        "1.によって",
+        "2.に対して",
+        "3.にとって",
+        "4.において"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 38,
+      "optionKey": 3,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 1,
+      "njlptCenterAnswerText": "引っ越すか",
+      "choices": [
+        "1.引っ越す",
+        "2.引っ越すか",
+        "3.引っ越すって",
+        "4.引っ越すのを"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 39,
+      "optionKey": 4,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 3,
+      "njlptCenterAnswerText": "確かに",
+      "choices": [
+        "確かに",
+        "まるで　",
+        "必ずしも　",
+        "どちらかというと"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 40,
+      "optionKey": 5,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 4,
+      "njlptCenterAnswerText": "うちに",
+      "choices": [
+        " 1.のに　",
+        "2.うちに　",
+        "3.ことで",
+        "4.とすると"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 41,
+      "optionKey": 6,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 2,
+      "njlptCenterAnswerText": "ばかり",
+      "choices": [
+        " 1.せい",
+        "2.とき",
+        "3.よう　",
+        "4.ばかり"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 42,
+      "optionKey": 7,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "tryNihongoReference": 1,
+      "xgxeduReference": 4,
+      "njlptCenterAnswerText": "したくて",
+      "choices": [
+        "1.したくて",
+        "2.したくても",
+        "3.するためで",
+        "4.するためでも"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 43,
+      "optionKey": 8,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 1,
+      "njlptCenterAnswerText": "あげたら",
+      "choices": [
+        "くれたら",
+        "あげたら",
+        "くれるから",
+        "あげるから"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 44,
+      "optionKey": 9,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 2,
+      "njlptCenterAnswerText": "待ってく",
+      "choices": [
+        "1.持っとく",
+        "2.持ってる",
+        "3.持ってく",
+        "4.持っちゃう"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 45,
+      "optionKey": 10,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 3,
+      "njlptCenterAnswerText": "晴れるといいね",
+      "choices": [
+        "1.晴れてきた",
+        "2.晴れるといい",
+        "3.晴れるんだ",
+        "4.晴れてよかった"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 46,
+      "optionKey": 11,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 2,
+      "njlptCenterAnswerText": "ご参加になれます",
+      "choices": [
+        "1.ご参加になれます",
+        "2.参加いたします　",
+        "3.ご参加になっています　",
+        "4.参加できております"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": false,
+      "answerMatchesXgxedu": false
+    },
+    {
+      "questionNumber": 47,
+      "optionKey": 12,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "njlptCenterAnswerText": "見えなくなってしまった",
+      "choices": [
+        "1.見えなくてもよくなった　",
+        "2.見られたかもしれない　",
+        "3.見えなくなってしまった　",
+        "4.見られるようにならない"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 48,
+      "optionKey": 13,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 4,
+      "njlptCenterAnswerText": "のんだ方がいい",
+      "choices": [
+        "1.飲んではいけませんか",
+        "2.飲んでいないんでしょうか",
+        ".飲んでみようと思いますか",
+        "4.飲んだほうがいいでしょうか"
+      ],
+      "answerMatchesReviewed": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    }
+  ],
+  "totals": {
+    "storedKeyMatchesReviewed": 13,
+    "storedKeyMatchesTryNihongo": 12,
+    "storedKeyMatchesXgxedu": 2,
+    "storedAnswersWithTextSupportFromNjlptCenter": 10
+  }
+}

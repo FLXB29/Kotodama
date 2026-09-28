@@ -1,0 +1,89 @@
+{
+  "examId": "toan-n3-201212-full",
+  "reviewedOn": "2026-09-27",
+  "scope": "Rewrite explanations for vocabulary reading questions 1–8 with Vietnamese translations, correct kanji readings, and choice-by-choice distractor contrasts. The existing answer key was checked against an independent third-party answer transcription and preserved.",
+  "sources": {
+    "examTranscript": {
+      "url": "https://www.scribd.com/document/861809754/jlpt-n3-2012-12",
+      "sourceType": "third-party transcription; not an official JLPT publication"
+    },
+    "answerKey": {
+      "url": "https://www.scribd.com/document/909969790/2012%E5%B9%B412%E6%9C%88-N3%E7%9C%9F%E9%A2%98%E7%AD%94%E6%A1%88",
+      "sourceType": "independent third-party answer transcription; official status not established"
+    }
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2012_12_1",
+      "number": 1,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 短い（みじかい）nghĩa là ngắn; 短すぎて là ngắn quá. Dịch: “Sợi dây này ngắn quá nên khó sử dụng.”\n1. よわすぎて là 弱すぎて, yếu quá; không nói về chiều dài sợi dây.\n2. みじかすぎて là cách đọc đúng của 短すぎて, nghĩa là ngắn quá.\n3. ほそすぎて là 細すぎて, mảnh/quá nhỏ bề ngang; không phải cách đọc của 短い.\n4. かたすぎて là 硬すぎて, cứng quá; không phải cách đọc của 短い.\nGhi nhớ: 短い（みじかい）= ngắn; 細い（ほそい）= mảnh; 弱い（よわい）= yếu; 硬い（かたい）= cứng."
+    },
+    {
+      "questionId": "toan_q_2012_12_2",
+      "number": 2,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 他人（たにん）là người khác/người ngoài. Dịch: “Người đó hoàn toàn không nghe ý kiến của người khác.”\n1. ちにん không phải cách đọc của 他人.\n2. たじん không phải cách đọc chuẩn của 他人.\n3. たにん là cách đọc đúng; 他人の意見 nghĩa là ý kiến của người khác.\n4. ちじん thường viết 知人, nghĩa là người quen; đó là từ khác, không phải 他人.\nGhi nhớ: 他人（たにん）= người khác/người ngoài; 知人（ちじん）= người quen."
+    },
+    {
+      "questionId": "toan_q_2012_12_3",
+      "number": 3,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 示す（しめす）nghĩa là chỉ ra hoặc biểu thị. Dịch: “Tôi đã biểu thị sự thay đổi dân số bằng biểu đồ.”\n1. うつした có thể viết 移した (di chuyển) hoặc 写した (chụp/sao lại); không phải cách đọc của 示した.\n2. さした có thể viết 指した (chỉ) hoặc 刺した (đâm/chích); không phải 示した.\n3. あらわした có thể viết 表した (thể hiện); nghĩa gần câu này nhưng không phải cách đọc của chữ 示.\n4. しめした là cách đọc đúng của 示した, quá khứ của 示す.\nGhi nhớ: 示す（しめす）= chỉ ra/biểu thị; 表す（あらわす）= thể hiện. Nghĩa có thể gần nhau nhưng cách đọc và chữ Hán khác."
+    },
+    {
+      "questionId": "toan_q_2012_12_4",
+      "number": 4,
+      "answer": 2,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 2 — 外科（げか）là khoa ngoại. Dịch: “Anh/chị Tanaka là bác sĩ ngoại khoa.”\n1. がいか có thể viết 外貨, nghĩa là ngoại tệ; không phải cách đọc của 外科.\n2. げか là cách đọc đúng của 外科, chỉ khoa phẫu thuật/ngoại khoa.\n3. げいか không phải cách đọc của 外科.\n4. がか thường viết 画家, nghĩa là họa sĩ; là từ khác.\nGhi nhớ: 外科（げか）= ngoại khoa; 外貨（がいか）= ngoại tệ; 画家（がか）= họa sĩ."
+    },
+    {
+      "questionId": "toan_q_2012_12_5",
+      "number": 5,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 笑顔（えがお）là nụ cười/vẻ mặt tươi cười. Dịch: “Nụ cười của anh/chị Sato rất duyên.”\n1. えがお là cách đọc đúng của 笑顔.\n2. えかお không phải cách đọc chuẩn của 笑顔.\n3. わらがお không đọc 笑顔; 笑う thường đọc わらう, còn cả từ này đọc là えがお.\n4. わらかお cũng không phải cách đọc của 笑顔.\nGhi nhớ: học 笑顔 như một từ ghép có cách đọc えがお, không ghép máy móc わらう + かお."
+    },
+    {
+      "questionId": "toan_q_2012_12_6",
+      "number": 6,
+      "answer": 3,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 3 — 以降（いこう）nghĩa là từ mốc đó trở đi. Dịch: “Xin hãy gọi lại một lần nữa sau 5 giờ.”\n1. いこ không phải cách đọc đầy đủ của 以降.\n2. いごう không phải cách đọc của 以降.\n3. いこう là cách đọc đúng của 以降.\n4. いご có thể viết 以後, cũng mang nghĩa “sau đó”, nhưng không phải cách đọc của chữ 降 trong 以降.\nGhi nhớ: 以降（いこう）= từ thời điểm ấy trở đi; 以後（いご）= từ đó về sau."
+    },
+    {
+      "questionId": "toan_q_2012_12_7",
+      "number": 7,
+      "answer": 1,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 1 — 横断（おうだん）nghĩa là băng qua. Dịch: “Khi băng qua đường, hãy chú ý xe cộ đầy đủ.”\n1. おうだん là cách đọc đúng của 横断.\n2. よこだん đọc chữ 横 theo âm よこ, nhưng trong từ ghép này phải dùng âm おう.\n3. おうたん đọc sai chữ 断; cách đọc ở đây là だん.\n4. よこたん đọc sai cả cách ghép âm của 横断.\nGhi nhớ: 横断（おうだん）= băng ngang/băng qua; âm よこ thường gặp trong từ độc lập như 横（よこ）."
+    },
+    {
+      "questionId": "toan_q_2012_12_8",
+      "number": 8,
+      "answer": 4,
+      "answerPreserved": true,
+      "includesTranslation": true,
+      "explainsAllChoices": true,
+      "explanation": "Đáp án 4 — 合図（あいず）là tín hiệu hoặc hiệu lệnh. Dịch: “Khi tôi ra hiệu thì hãy bắt đầu.”\n1. ごうと không phải cách đọc của 合図.\n2. あいと đọc sai âm cuối; 合図 đọc là あいず với âm đục ず.\n3. ごうず đọc sai âm đầu của 合図; chữ 合 trong từ này đọc あい.\n4. あいず là cách đọc đúng; 合図をする nghĩa là ra hiệu.\nGhi nhớ: 合図（あいず）= tín hiệu/hiệu lệnh; chú ý âm cuối là ず."
+    }
+  ]
+}

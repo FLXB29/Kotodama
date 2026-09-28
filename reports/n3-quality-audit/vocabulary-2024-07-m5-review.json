@@ -1,0 +1,127 @@
+{
+  "exam": "JLPT N3 2024/07 — vocabulary Mondai 5, questions 31–35",
+  "reviewDate": "2026-09-27",
+  "answerKeysChanged": 0,
+  "answers": {
+    "31": 4,
+    "32": 3,
+    "33": 4,
+    "34": 2,
+    "35": 1
+  },
+  "rationale": "Keys are preserved from the existing corpus and corroborated by a third-party answer sheet; this is not an official JLPT key. The exam wording is aligned to the Kosei-hosted PDF transcription linked below. Ambiguity is called out in q32 option 4 and q34 option 4 rather than overstating that those strings are impossible in every context.",
+  "sourceDiffs": [
+    {
+      "number": 31,
+      "questionIds": {
+        "mock": "toan_q_2024_07_31",
+        "section": "cm2u2ybpu01ko134ismqtzf48"
+      },
+      "key": 4,
+      "priorOptionTextDifferences": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "number": 32,
+      "questionIds": {
+        "mock": "toan_q_2024_07_32",
+        "section": "cm2u2ybpu01kp134izukcg9nx"
+      },
+      "key": 3,
+      "priorOptionTextDifferences": [
+        false,
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "number": 33,
+      "questionIds": {
+        "mock": "toan_q_2024_07_33",
+        "section": "cm2u2ybpu01kq134ijznxo38p"
+      },
+      "key": 4,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 34,
+      "questionIds": {
+        "mock": "toan_q_2024_07_34",
+        "section": "cm2u2ybpu01kr134il8armic8"
+      },
+      "key": 2,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "number": 35,
+      "questionIds": {
+        "mock": "toan_q_2024_07_35",
+        "section": "cm2u2ybpu01ks134id9i0tnk2"
+      },
+      "key": 1,
+      "priorOptionTextDifferences": [
+        false,
+        false,
+        true,
+        true
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "type": "exam-text",
+      "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2024/07/De-thi-JLPT-chinh-thuc-N3-thang-7_2024.pdf",
+      "note": "Kosei-hosted N3 July 2024 PDF, pages 2–3, questions 31–35; source transcription used to align all option text."
+    },
+    {
+      "type": "answer-key",
+      "url": "https://vtimirai.edu.vn/upload/files/De%20thi%20N3/%C4%90%C3%A1p%20%C3%A1n%20N3%20T7-2024%20Ver%202_0.pdf",
+      "note": "Independent third-party answer PDF, page 1, Mondai 5 sequence 4–3–4–2–1; answer keys remain unverified as official."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E7%9F%A5%E8%AD%98-96098",
+      "note": "Digital Daijisen entry for 知識."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E9%9F%BF%E3%81%8F-585232",
+      "note": "Digital Daijisen entry for 響く, including sound spreading/resounding and figurative meanings."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E5%AE%8C%E6%88%90-470378",
+      "note": "Digital Daijisen entry for 完成."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E6%85%8C%E3%81%A6%E3%82%8B-428974",
+      "note": "Digital Daijisen entry for 慌てる, including the “lose composure” and “hurry to do” senses."
+    },
+    {
+      "type": "dictionary",
+      "url": "https://kotobank.jp/word/%E5%AE%9F%E7%89%A9-521685",
+      "note": "Digital Daijisen entry for 実物 (じつぶつ, actual thing/object)."
+    },
+    {
+      "type": "usage-reference",
+      "url": "https://www2.ninjal.ac.jp/IPALBV/mibook.html",
+      "note": "NINJAL IPAL example 「世間に噂が広まる」 supports the ordinary collocation for a rumor spreading."
+    }
+  ]
+}

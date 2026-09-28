@@ -1,0 +1,284 @@
+{
+  "generatedAt": "2026-09-27",
+  "status": "reviewed_against_local_transcript_pdf",
+  "sourceQuality": "The local transcript PDFs are secondary sources, not official JLPT answer-key publications.",
+  "sources": [
+    {
+      "file": "data/n3_scripts/5. N3 7-2014/5. N3 7-2014 (script).pdf",
+      "questions": "87-102",
+      "pages": "7-10"
+    },
+    {
+      "file": "data/n3_scripts/5. N3 12-2014/5. N3 12-2014 (script).pdf",
+      "questions": "87-102",
+      "pages": "7-12"
+    },
+    {
+      "url": "https://dethitiengnhat.com/en/jlpt/N3/201412/4",
+      "note": "Secondary source with question 100 (Mondai 5, question 7) options and a correction comment confirming answer 3."
+    }
+  ],
+  "reviewedCount": 32,
+  "reviewed": {
+    "toan_q_2014_07_87": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 7,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_88": {
+      "answer": 4,
+      "previousAnswer": 4,
+      "sourcePage": 7,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_89": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_90": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_91": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_92": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_93": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_94": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_95": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_96": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_97": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_98": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_99": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_100": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_101": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_102": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_87": {
+      "answer": 4,
+      "previousAnswer": 4,
+      "sourcePage": 7,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_88": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 7,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_89": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_90": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 8,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_91": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_92": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 9,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_93": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_94": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_95": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 10,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_96": {
+      "answer": 2,
+      "previousAnswer": 2,
+      "sourcePage": 11,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_97": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 11,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_98": {
+      "answer": 3,
+      "previousAnswer": 3,
+      "sourcePage": 11,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_99": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 11,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_100": {
+      "answer": 3,
+      "previousAnswer": 1,
+      "sourcePage": 11,
+      "answerKeyChanged": true,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_101": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 12,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_102": {
+      "answer": 1,
+      "previousAnswer": 1,
+      "sourcePage": 12,
+      "answerKeyChanged": false,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    }
+  },
+  "limits": [
+    "The local script PDFs and the cited answer page are secondary sources; no claim is made that the answer keys are official JLPT keys.",
+    "Mondai 4 picture prompts were reviewed against the illustrations and response choices printed on the source pages."
+  ]
+}

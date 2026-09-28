@@ -1,0 +1,2026 @@
+{
+  "generatedAt": "2026-09-24T11:27:29.740Z",
+  "exams": [
+    {
+      "exam": "2025/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2025/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2024/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2024/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2023/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 7,
+      "missingReading": [
+        26
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2022/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2022/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 7,
+      "missingReading": [
+        37
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2021/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2020/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2019/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2019/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2018/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2018/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2017/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2017/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2016/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2016/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2015/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2015/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2014/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2014/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2013/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2013/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2012/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2012/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2011/12",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2011/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    },
+    {
+      "exam": "2010/07",
+      "star": 5,
+      "cloze": true,
+      "reading": 8,
+      "missingReading": []
+    }
+  ],
+  "answerPositionChecks": [
+    {
+      "exam": "2025/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2025/12",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2025/12",
+      "question": 16,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2025/12",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2025/12",
+      "question": 18,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2025/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2025/07",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2025/07",
+      "question": 16,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2025/07",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2024/12",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2024/12",
+      "question": 15,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2024/12",
+      "question": 16,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2024/12",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2024/12",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2024/07",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 0,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2024/07",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2024/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2024/07",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2024/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2023/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2023/12",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2023/12",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2023/12",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2023/12",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2023/07",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2022/12",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2022/12",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2022/12",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2022/12",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2022/12",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2022/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2022/07",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2022/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2022/07",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2022/07",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2021/12",
+      "question": 18,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2021/07",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 1,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2021/07",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2021/07",
+      "question": 16,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2021/07",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2021/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2020/12",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2020/12",
+      "question": 15,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2020/12",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2020/12",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2020/12",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2019/12",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2019/12",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2019/12",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2019/12",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2019/12",
+      "question": 18,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2019/07",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2019/07",
+      "question": 15,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2019/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2019/07",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2019/07",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2018/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 1,
+      "order": [
+        2,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2018/12",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2018/12",
+      "question": 16,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2018/12",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2018/12",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2018/07",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2018/07",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2018/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "exam": "2018/07",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2018/07",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2017/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2017/12",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2017/12",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2017/12",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2017/12",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2017/07",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2017/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2017/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2017/07",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2017/07",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2016/12",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2016/12",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2016/12",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2016/12",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2016/12",
+      "question": 18,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2016/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2016/07",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2016/07",
+      "question": 16,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2016/07",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2016/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 3,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2015/12",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2015/12",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2015/12",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2015/12",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2015/12",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2015/07",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2015/07",
+      "question": 15,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2015/07",
+      "question": 16,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2015/07",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2015/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2014/12",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2014/12",
+      "question": 16,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2014/12",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2014/12",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2014/07",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2014/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2014/07",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2014/07",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2014/07",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2013/12",
+      "question": 14,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "exam": "2013/12",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2013/12",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2013/12",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2013/12",
+      "question": 18,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2013/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2013/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2013/07",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2013/07",
+      "question": 17,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2013/07",
+      "question": 18,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2012/12",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2012/12",
+      "question": 15,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2012/12",
+      "question": 16,
+      "correctOption": 1,
+      "starPosition": 3,
+      "order": [
+        4,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2012/12",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2012/12",
+      "question": 18,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2012/07",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2012/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "exam": "2012/07",
+      "question": 16,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2012/07",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2012/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 3,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2011/12",
+      "question": 14,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2011/12",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        2,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "exam": "2011/12",
+      "question": 16,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "exam": "2011/12",
+      "question": 17,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "exam": "2011/12",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2011/07",
+      "question": 14,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "exam": "2011/07",
+      "question": 15,
+      "correctOption": 4,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "exam": "2011/07",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "exam": "2011/07",
+      "question": 17,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2010/07",
+      "question": 14,
+      "correctOption": 3,
+      "starPosition": 2,
+      "order": [
+        1,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "exam": "2010/07",
+      "question": 15,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        4,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "exam": "2010/07",
+      "question": 16,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        3,
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2010/07",
+      "question": 17,
+      "correctOption": 2,
+      "starPosition": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "exam": "2010/07",
+      "question": 18,
+      "correctOption": 1,
+      "starPosition": 2,
+      "order": [
+        2,
+        4,
+        1,
+        3
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "exam": "2025/07",
+      "type": "star-answer",
+      "question": 18,
+      "reason": "The complete four-piece order needs visual review before certifying the star answer."
+    },
+    {
+      "exam": "2023/12",
+      "type": "reading-source",
+      "question": 26,
+      "reason": "PDF text layer did not contain this image-backed passage/table."
+    },
+    {
+      "exam": "2022/07",
+      "type": "reading-source",
+      "question": 37,
+      "reason": "PDF text layer did not contain this image-backed passage/table."
+    },
+    {
+      "exam": "2014/12",
+      "type": "star-answer",
+      "question": 15,
+      "reason": "The complete four-piece order needs visual review before certifying the star answer."
+    },
+    {
+      "exam": "2011/07",
+      "type": "star-answer",
+      "question": 18,
+      "reason": "The complete four-piece order needs visual review before certifying the star answer."
+    }
+  ],
+  "totals": {
+    "exams": 30,
+    "importedStarQuestions": 150,
+    "importedClozePassages": 30,
+    "importedReadingPassages": 238,
+    "verifiedStarOrders": 147,
+    "verifiedStarPositions": 147,
+    "unresolvedItems": 5
+  }
+}

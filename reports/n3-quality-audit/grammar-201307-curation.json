@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T16:14:15.208Z",
+  "examId": "toan-n3-201307-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://trynihongo.com/ja/jlpt-n3-july-2013-test-solution-bunpou-dokkai; https://www.luyenthitiengnhat.edu.vn/mod/page/view.php?id=3404",
+  "method": "Question text was checked against the local source transcription and the linked independent 2013 test materials; each answer was verified by completing the sentence and checking the requested grammar. These are nonofficial study sources.",
+  "answerSequence": [
+    3,
+    3,
+    2,
+    4,
+    1,
+    1,
+    2,
+    3,
+    2,
+    3,
+    1,
+    4,
+    4
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 3,
+      "choices": [
+        "1.の",
+        "2.ことの",
+        "3.という",
+        "4.をいう"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        "1.に",
+        "2.で",
+        "3.への",
+        "4.とは"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.として",
+        "2.と比べて",
+        "3.にまで",
+        "4.において"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "choices": [
+        "1.行けば",
+        "2.行くなら ",
+        "3.行こうと",
+        "4.行ったら"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        "1.来たのだから",
+        "2.来たために",
+        "3.来たおかげで ",
+        "4.来たかったから"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "1.あんなに",
+        " 2.やっと",
+        " 3.どんなに",
+        "4.つい"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.嫌そうだ",
+        "2.嫌がっていた",
+        "3.嫌なのだ ",
+        " 4.嫌がったままだ"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.見学してはいけませんよ ",
+        "2.見学しましょうよ",
+        " 3.見学させていただけませんか",
+        "4.見学ではどうですか"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 2,
+      "choices": [
+        "1.階段の近く",
+        "2.階段の近くに",
+        "3.階段に近くて",
+        "4.階段は近くて"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "choices": [
+        "1.しないときに ",
+        " 2.しないあいだは ",
+        "3.しなくなってから",
+        "4.しなくなったあとで"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 1,
+      "choices": [
+        "1.作り直すには ",
+        "2.作ったままでは",
+        "3.作り始めなくて",
+        "4.作っていなくて"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "choices": [
+        "1.をしてよかった ",
+        " 2.になってもしかたなかった ",
+        "3.をしたくなった",
+        "4.になってもおかしくない"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "choices": [
+        "1.買い替えなし、かもしれない",
+        "2.買い替えてみたかもしれない",
+        "3.買い替えにくかったんじゃない ",
+        "4.買い替えてもいいんじゃない"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:14:58.155Z",
+  "examId": "toan-n3-201507-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://trynihongo.com/ko/jlpt-n3-2015nyeon-7weol-siheom-solrusyeon-bunpou-dokkai-p1057",
+  "method": "Answers were manually checked against the Japanese sentence context and compared with the linked published reference sequence. The answer source is nonofficial and does not certify other test sections.",
+  "answerSequence": [
+    3,
+    4,
+    2,
+    1,
+    2,
+    4,
+    4,
+    3,
+    1,
+    2,
+    1,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 3,
+      "choices": [
+        "1.へ",
+        "2.で",
+        "3.には ",
+        "4.より"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ずっと",
+        "2.今にも ",
+        "3.次第に",
+        "4.ついに"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.に対し",
+        " 2.により",
+        "3.に比べて",
+        " 4.において"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.うちに",
+        "2.一方で",
+        " 3.たびに",
+        "4.ことで"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        "1.作った ",
+        "2.作ろう",
+        "3.作れる ",
+        "4.作って"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "choices": [
+        "1.取ってくるよ",
+        "2.取ってくるけど",
+        "3.取ってきたの",
+        "4.取ってきてくれ"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 4,
+      "choices": [
+        "1.でございますか ",
+        "2.をくださいませんか ",
+        "3.したいんでしょうか ",
+        "4.させてください"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        "1.おります",
+        "2.お会いになります",
+        "3.いらっしゃいます",
+        "4.お目にかかります"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.になら",
+        "2.にばかり ",
+        "3.へと",
+        "4.へなど"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "choices": [
+        "1.やりたいようで",
+        "2.やりたいように ",
+        "3.やってみるようで ",
+        "4.やってみるように"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 1,
+      "choices": [
+        "1.ができるのか",
+        " 2.ができるのを",
+        "3.になれるのか ",
+        "4.になれるのを"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        "1.選んでいるところだ ",
+        "2.選ぶところだ ",
+        " 3.選ばれたこともある",
+        " 4.選ぶためでもある"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "choices": [
+        "1.座ってしたままではいけません",
+        " 2.座ったまましてはいけません ",
+        "3.座ってしたままでもかまいません ",
+        "4.座ったまましてもかまいません"
+      ]
+    }
+  ]
+}

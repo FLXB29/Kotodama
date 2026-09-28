@@ -1,0 +1,30 @@
+{
+  "reviewedAt": "2026-09-27",
+  "examId": "toan-n3-201512-full",
+  "standaloneExamId": "cm2u2wco4002g134io8nm04te-grammar-reading",
+  "scope": "Reading Mondai 5, printed questions 28–30 (internal questions 63–65).",
+  "storedAnswerSequence": [3, 2, 1],
+  "method": "The three short notes were checked against the passage stored in both exam records. The answer sequence is unchanged and matches both local records; this is not an independent official JLPT key verification.",
+  "questions": [
+    {
+      "printedQuestion": 28,
+      "internalQuestion": 63,
+      "answer": 3,
+      "evidence": "The narrator listened to a favorite singer every day while studying and sleeping."
+    },
+    {
+      "printedQuestion": 29,
+      "internalQuestion": 64,
+      "answer": 2,
+      "evidence": "The cassette stopped being used after the narrator received a CD player in high school."
+    },
+    {
+      "printedQuestion": 30,
+      "internalQuestion": 65,
+      "answer": 1,
+      "evidence": "The narrator still considers it a good purchase because it was something they truly wanted at the time."
+    }
+  ],
+  "sourceCopyDifference": "The first distractor in question 63 uses 祖母 in the full mock and 祖父母 in the standalone copy; neither is keyed, and the note follows the unchanged answer 3.",
+  "officialKeyEstablished": false
+}

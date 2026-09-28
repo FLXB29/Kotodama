@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T16:14:15.211Z",
+  "examId": "toan-n3-201412-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://passjapanese.com/ja/jlpt/n3/exam/2014-12-grammar-reading; https://www.studocu.com/in/document/chennai-institute-of-technology/japanese-n3-shinkanzen/jlpt-n3-2014%E5%B9%B412%E6%9C%88%E7%9C%9F%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%E8%A7%A3%E6%9E%90/159498580",
+  "method": "Question text was compared with the independent PassJapanese and VNJPClub test transcriptions; answer choices were checked against the complete Japanese sentence. A nonofficial answer compilation was also consulted where its extracted sequence was legible. This is not an official JLPT answer key.",
+  "answerSequence": [
+    2,
+    3,
+    2,
+    1,
+    1,
+    4,
+    2,
+    3,
+    4,
+    3,
+    4,
+    2,
+    1
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.が",
+        " 2.を",
+        "3.も",
+        "4.より"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.について ",
+        " 2.において",
+        "3.にくらべて",
+        "4.にしたがって"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.あいだ ",
+        " 2.ばかり",
+        "3.たび",
+        "4.ころ"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "choices": [
+        "1.ああ ",
+        " 2.あんな",
+        " 3.そういう",
+        " 4.そこも"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.次第に",
+        "2.今にも",
+        "3.まだ",
+        " 4.いつでも"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "choices": [
+        "1.買ったんだって",
+        "2.買わなくたって",
+        "3.買ってもよくて",
+        "4.買ったんじゃなくて"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.なさいます",
+        "2.ご存じです",
+        "3.申します",
+        " 4.お目にかかります"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        "1.教えたいんですが ",
+        "2.教えていいですか ",
+        "3.教えてほしいんです ",
+        "4.教えてもらっていますか"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ぐらい",
+        "2.ぐらいから",
+        "3.ずつと ",
+        " 4.ずつしか"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "choices": [
+        "1.か何かが",
+        "2.とか何かに",
+        "3.でも何でも",
+        "4.など何も"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        "1.合って不安がない ",
+        "2.合ったから不安だ ",
+        "3.合うし不安もない",
+        " 4.合うか不安だった"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "choices": [
+        "1.作り出している",
+        "2.作りすぎてしまう",
+        " 3.作り終わったところだ ",
+        "4.作っておこう"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "choices": [
+        "1.聞いてあげられなかった",
+        "2.聞いてあげてよかった",
+        " 3.聞いたほうがよかった ",
+        "4.聞いてもかまわなかった"
+      ]
+    }
+  ]
+}

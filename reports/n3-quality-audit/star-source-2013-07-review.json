@@ -1,0 +1,89 @@
+{
+  "exam": "JLPT N3 July 2013, Grammar Mondai 2",
+  "source": {
+    "file": "4. N3 7-2013.pdf",
+    "provider": "Google Drive, reviewed in the user's connected Chrome session",
+    "pages": {
+      "printedQuestions14-18": 6
+    },
+    "method": "Visually inspected the original question PDF at 50–150% zoom, transcribed all five printed prompts and option sets, checked the star's third-slot placement, reconstructed each sentence, and cross-checked the selected option against the separate answer-key PDF (page 7, JLPT N3 7/2013 Grammar Mondai 2).",
+    "answerKey": {
+      "file": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+      "page": 7,
+      "section": "JLPT N3 7/2013, Grammar Mondai 2, questions 14–18",
+      "answers": [4, 1, 2, 3, 2]
+    }
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2013_07_49",
+      "printedNumber": 14,
+      "promptBefore": "（病院で）村山「すみません。予約をした村山ですが。」受付「はい、村山さんですね。では、そちらの",
+      "promptAfter": "ください。」",
+      "sourceOptions": ["1 お待ち", "2 おかけ", "3 いすに", "4 になって"],
+      "order": [3, 2, 4, 1],
+      "starSlotIndex": 2,
+      "answer": 4,
+      "completedSentence": "（病院で）村山「すみません。予約をした村山ですが。」受付「はい、村山さんですね。では、そちらのいすにおかけになってお待ちください。」",
+      "translation": "Lễ tân nói: “Vâng, anh/chị Murayama. Xin mời ngồi vào chiếc ghế đằng kia và chờ một chút.”",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_07_50",
+      "printedNumber": 15,
+      "promptBefore": "料理をする",
+      "promptAfter": "おいしく作れる。",
+      "sourceOptions": ["1 私でも", "2 ハンバーグだけは", "3 それほど得意ではない", "4 のが"],
+      "order": [4, 3, 1, 2],
+      "starSlotIndex": 2,
+      "answer": 1,
+      "completedSentence": "料理をするのがそれほど得意ではない私でもハンバーグだけはおいしく作れる。",
+      "translation": "Ngay cả tôi, vốn không quá giỏi nấu ăn, cũng làm riêng món hambāgu thật ngon.",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_07_51",
+      "printedNumber": 16,
+      "promptBefore": "高木「山村さんは、いつもポケットにメモ帳を入れているんですか。」山村「はい。思いついた",
+      "promptAfter": "しているんです。」",
+      "sourceOptions": ["1 忘れて", "2 しまわないように", "3 必ず持ち歩くように", "4 アイデアを"],
+      "order": [4, 1, 2, 3],
+      "starSlotIndex": 2,
+      "answer": 2,
+      "completedSentence": "高木「山村さんは、いつもポケットにメモ帳を入れているんですか。」山村「はい。思いついたアイデアを忘れてしまわないように必ず持ち歩くようにしているんです。」",
+      "translation": "Tôi luôn mang theo sổ ghi chú để khỏi quên những ý tưởng vừa nảy ra.",
+      "sourcePage": 6,
+      "sourceTextNote": "Visual inspection shows the kanji 入 in メモ帳を入れている. The PDF text layer exposed through Drive misrecognizes it as 人 (人れている); the app prompt is corrected to match the printed page."
+    },
+    {
+      "questionId": "toan_q_2013_07_52",
+      "printedNumber": 17,
+      "promptBefore": "昨日の夜、誰も",
+      "promptAfter": "気がした。",
+      "sourceOptions": ["1 いない", "2 聞こえた", "3 何か音が", "4 部屋から"],
+      "order": [1, 4, 3, 2],
+      "starSlotIndex": 2,
+      "answer": 3,
+      "completedSentence": "昨日の夜、誰もいない部屋から何か音が聞こえた気がした。",
+      "translation": "Tối qua, tôi có cảm giác như nghe thấy tiếng động nào đó từ căn phòng không có ai.",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_07_53",
+      "printedNumber": 18,
+      "promptBefore": "現在、市民運動公園の中に、大小",
+      "promptAfter": "検討されている。",
+      "sourceOptions": ["1 体育館を", "2 建設する", "3 二つの", "4 という案が"],
+      "order": [3, 1, 2, 4],
+      "starSlotIndex": 2,
+      "answer": 2,
+      "completedSentence": "現在、市民運動公園の中に、大小二つの体育館を建設するという案が検討されている。",
+      "translation": "Hiện đang xem xét phương án xây hai nhà thi đấu, một lớn và một nhỏ, trong công viên thể thao thành phố.",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-09-25T09:58:18.285Z",
+  "examId": "toan-n3-201907-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Question transcription and answer sequence checked against PassJapanese and a published Vietnamese answer table. The answer table is nonofficial; this scoped comparison does not certify the other sections of the exam.",
+  "sources": [
+    {
+      "url": "https://passjapanese.com/ja/jlpt/n3/exam/2019-07-grammar-reading"
+    },
+    {
+      "url": "https://phanmemhoctiengnhat.com/jlpt/dap-an-jlpt-n3/dap-an-jlpt-n3-7-2019-chuan-day-du-nhat.html"
+    }
+  ],
+  "answerSequence": [
+    2,
+    4,
+    4,
+    1,
+    2,
+    1,
+    3,
+    2,
+    4,
+    3,
+    2,
+    3,
+    3
+  ],
+  "explanationCount": 13,
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "１．は",
+        "２．も",
+        "３．など",
+        "４．くらい"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        "１．に　",
+        "２．が　",
+        "３．は",
+        "４．を"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "choices": [
+        "１．必ず",
+        "２．必ずしも",
+        "３．どうか",
+        "４．どうしても"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "choices": [
+        "１．のほかに",
+        "２．のことで",
+        "３．について　",
+        "４．にくらべ"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        "１．ように　",
+        "２．うちに",
+        "３．ために　",
+        "４．までに"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "１．くださいます",
+        "２．いただきます　",
+        "３．さしあげます",
+        "４．召し上がります"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "１．来てる",
+        "２．来とく",
+        "３．来ちゃう",
+        "４．来なきゃ"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "１．ないに違いない",
+        "２．ないはずがない",
+        "３．なくてはいけない",
+        "４．なくてもおかしくない"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "１．どちらかは",
+        "２．どちらからは",
+        "３．どちらかでも",
+        "４．どちらからでも"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "choices": [
+        "１．やわらかくするまで",
+        "２．やわらかくする間",
+        "３．やわらかくなるまで",
+        "４．やわらかくなる間"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        "１．書いていたから",
+        "２．書いてあったのに",
+        "３．書いてみたから",
+        "４．書いておいたのに"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        "１．入ったままなんだ",
+        "２．入ったばかりだったんだ",
+        "３．入っていたことがあるんだ",
+        "４．入っているところだったんだ"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        "１．使いすぎている",
+        "２．使いすぎるらしい",
+        "３．使いやすそうだ",
+        "４．使いやすくてもいい"
+      ]
+    }
+  ]
+}

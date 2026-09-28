@@ -1,0 +1,37 @@
+{
+  "reviewedOn": "2026-09-27",
+  "examId": "toan-n3-202312-full",
+  "questionId": "toan_q_2023_12_61",
+  "scope": "Resolve the duplicate printed label on the December 2023 short-reading Natto question and verify its stored answer against the reading-group sequence.",
+  "sources": {
+    "questionPaper": {
+      "name": "14. N3 12.2023 .pdf",
+      "url": "https://drive.google.com/file/d/1Yr4o92v_iySjcXZEdiKGKgcdvltqBqad/view",
+      "pdfPagesReviewed": [15, 17],
+      "observed": "The fourth short-reading item about 納豆 is printed as 27 on PDF page 15. The first question of the following 問題5 is also printed as 27 on PDF page 17, so the supplied PDF has a duplicate question label."
+    },
+    "secondaryAnswerReference": {
+      "name": "TryNihongo — JLPT N3 Exam Answers December 2023",
+      "url": "https://trynihongo.com/en/dap-an-ky-thi-jlpt-n3-thang-12-nam-2023-p1139",
+      "readingMondai4": {
+        "questionNumbers": [23, 24, 25, 26],
+        "answers": [3, 3, 1, 1]
+      },
+      "readingMondai5": {
+        "questionNumbers": [27, 28, 29, 30, 31, 32],
+        "answers": [3, 1, 4, 4, 2, 1]
+      },
+      "officialAnswerKeyConfirmed": false
+    }
+  },
+  "finding": {
+    "pdfPrintedLabel": 27,
+    "appLabel": 26,
+    "appGroup": "short-reading Mondai 4, fourth and final item",
+    "answer": 1,
+    "rationale": "The passage says natto contains an enzyme that helps blood flow, but it decreases under heat above 50°C. The writer fries natto with egg and adds it to miso soup, so the beneficial effect is weakened by the cooking method. This matches option 1.",
+    "decision": "Keep app label [26] and answer 1. The item's position as the fourth of four short-reading questions agrees with the secondary answer reference's Mondai 4 numbering 23–26 and final answer 1. Changing it to 27 would duplicate the next Mondai 5 question, whose reference answer is 3.",
+    "confidence": "Strongly supported by the exam section order, the duplicated labels visible in the supplied PDF, and a secondary answer reference; not verified against an official JLPT key.",
+    "contentChanged": false
+  }
+}

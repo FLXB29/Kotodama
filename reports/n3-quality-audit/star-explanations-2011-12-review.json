@@ -1,0 +1,77 @@
+{
+  "reviewedAt": "2026-09-27",
+  "examId": "toan-n3-201112-full",
+  "scope": "Sentence construction, printed questions 14–18 (application question IDs 49–53).",
+  "source": {
+    "name": "JLPT N3 December 2011 scan/transcription hosted on Scribd",
+    "url": "https://www.scribd.com/document/1022846440/2-N3-12-2011",
+    "location": "Printed page 5, questions 14–18; the rendered transcription contains the Japanese prompts and all four fragments.",
+    "method": "Compared prompt wording and fragments to the accessible rendered transcription, then reconstructed each sentence from its four pieces. The existing answer key, fragment order, and stored star slot were not changed.",
+    "limitation": "The Scribd transcription view did not expose a verifiable visual rendering of the ★ glyph placement in this review. This report therefore records explanation improvements, not new source verification of the starred slots or official answer key."
+  },
+  "officialAnswerKeyConfirmed": false,
+  "starLayoutVisuallyConfirmed": false,
+  "starSourceVerificationAdded": false,
+  "questions": [
+    {
+      "questionId": "toan_q_2011_12_49",
+      "printedQuestion": 14,
+      "order": [3, 1, 4, 2],
+      "starPositionZeroBased": 2,
+      "storedAnswer": 4,
+      "completedSentence": "中山「上田さんは、本当にこの仕事が好きなんですね。",
+      "explanation": "Câu hoàn chỉnh: 「中山「上田さんは、本当にこの仕事が好きなんですね。」上田「はい、わたしは、これほどおもしろい仕事はないと思っているんです。」」\nDịch: “Nakamura: ‘Ueda, anh thật sự thích công việc này nhỉ.’ Ueda: ‘Vâng, tôi nghĩ không có công việc nào thú vị đến thế này.’”\nThứ tự ghép là 3→1→4→2. 「これ」(3) chỉ công việc đang nói; 「ほど」(1) tạo cụm nhấn mức độ 「これほど」, “đến mức này”; 「おもしろい」(4) là tính từ “thú vị”, bổ nghĩa cho 「仕事」; 「仕事は」(2) đưa “công việc” làm chủ đề trong cấu trúc phủ định 「仕事はない」. Ô ★ thứ ba nhận lựa chọn 4 「おもしろい」. Các mảnh cần giữ liền mạch để tạo 「これほど」, 「おもしろい仕事」 và 「仕事はない」.",
+      "translationPresent": true,
+      "allFragmentsExplained": true,
+      "provenanceUnchanged": true
+    },
+    {
+      "questionId": "toan_q_2011_12_50",
+      "printedQuestion": 15,
+      "order": [2, 1, 4, 3],
+      "starPositionZeroBased": 2,
+      "storedAnswer": 4,
+      "completedSentence": "この美術館には、19世紀の画家たちによって描かれた絵がたくさんあります。",
+      "explanation": "Đáp án 4 (mảnh ở ô ★) — câu hoàn chỉnh: 「この美術館には、19世紀の画家たちによって描かれた絵がたくさんあります。」\nDịch: “Trong bảo tàng mỹ thuật này có nhiều bức tranh do các họa sĩ thế kỷ 19 vẽ.”\nThứ tự ghép là 2 → 1 → 4 → 3: 「画家たちに」＋「よって」＋「描かれた」＋「絵が」. Ô ★ nằm ở vị trí thứ ba, nên đáp án tại ô sao là 「描かれた」, lựa chọn 4.\n1. よって: nối với 画家たちに thành 「画家たちによって」, cụm nêu tác giả trong câu bị động; không đứng đúng tại ô ★.\n2. 画家たちに: phải đứng trước よって để tạo cụm 「画家たちによって」 (“do các họa sĩ…”).\n3. 絵が: là chủ ngữ “những bức tranh”, đứng ngay trước たくさんあります; không thể đứng ở ô sao trước phần bổ nghĩa 描かれた.\n4. 描かれた: dạng bị động “được vẽ”, bổ nghĩa cho 絵; đây là mảnh thứ ba trong câu hoàn chỉnh và điền vào ô ★.\nGhi nhớ: 「人によって描かれた絵」= bức tranh được người đó vẽ; thứ tự trong câu là cụm tác giả → phần bổ nghĩa bị động → danh từ 絵が.",
+      "translationPresent": true,
+      "allFragmentsExplained": true,
+      "provenanceUnchanged": true
+    },
+    {
+      "questionId": "toan_q_2011_12_51",
+      "printedQuestion": 16,
+      "order": [2, 4, 3, 1],
+      "starPositionZeroBased": 2,
+      "storedAnswer": 3,
+      "completedSentence": "昨日のパーティーは、友だちと話していたら、ほとんど何も食べないうちに終わってしまって、あとでおなかがすいてしまった。",
+      "explanation": "Câu hoàn chỉnh: 「昨日のパーティーは、友だちと話していたら、ほとんど何も食べないうちに終わってしまって、あとでおなかがすいてしまった。」\nDịch: “Hôm qua ở bữa tiệc, tôi mải trò chuyện với bạn bè nên bữa tiệc đã kết thúc trước khi tôi ăn được gì; sau đó tôi bị đói.”\nThứ tự ghép là 2→4→3→1. 「何も」(2) nghĩa là “gì cả” và đi với phủ định; 「食べない」(4) tạo cụm 「何も食べない」, “không ăn gì”; 「うちに」(3) nghĩa là “trước khi/khi còn chưa”, tạo 「食べないうちに」; 「終わってしまって」(1) nêu bữa tiệc kết thúc ngoài ý muốn rồi nối với kết quả bị đói. Ô ★ thứ ba nhận lựa chọn 3 「うちに」. Nếu đặt 「終わってしまって」 trước 「うちに」, cụm chỉ thời điểm 「食べないうちに」 sẽ bị phá vỡ.",
+      "translationPresent": true,
+      "allFragmentsExplained": true,
+      "provenanceUnchanged": true
+    },
+    {
+      "questionId": "toan_q_2011_12_52",
+      "printedQuestion": 17,
+      "order": [3, 2, 4, 1],
+      "starPositionZeroBased": 2,
+      "storedAnswer": 4,
+      "completedSentence": "夏休みに行われた会社での実習は、わたしにとって、企業で働くというのがどういうことか考えるいい機会になった。",
+      "explanation": "Câu hoàn chỉnh: 「夏休みに行われた会社での実習は、わたしにとって、企業で働くというのがどういうことか考えるいい機会になった。」\nDịch: “Buổi thực tập ở công ty vào kỳ nghỉ hè là cơ hội tốt để tôi suy nghĩ xem làm việc trong doanh nghiệp là như thế nào.”\nThứ tự ghép là 3→2→4→1. 「働く」(3) hoàn thành cụm 「企業で働く」, “làm việc trong doanh nghiệp”; 「というのが」(2) danh từ hóa cụm vừa nêu và đưa nó làm chủ đề; 「どういうことか」(4) là câu hỏi gián tiếp “là việc như thế nào”; 「考える」(1) là “suy nghĩ”, đứng trước 「いい機会」 để tạo “cơ hội tốt để suy nghĩ”. Ô ★ thứ ba nhận lựa chọn 4 「どういうことか」. Cần giữ thứ tự câu hỏi gián tiếp 「どういうことか考える」 trước danh từ 「いい機会」.",
+      "translationPresent": true,
+      "allFragmentsExplained": true,
+      "provenanceUnchanged": true
+    },
+    {
+      "questionId": "toan_q_2011_12_53",
+      "printedQuestion": 18,
+      "order": [4, 2, 1, 3],
+      "starPositionZeroBased": 2,
+      "storedAnswer": 1,
+      "completedSentence": "母は「風邪をひかないのは、毎朝しているジョギングのおかげだ。",
+      "explanation": "Câu hoàn chỉnh: 「母は「風邪をひかないのは、毎朝しているジョギングのおかげだ。」とよく言っている。」\nDịch: “Mẹ tôi thường nói rằng việc không bị cảm là nhờ chạy bộ mỗi sáng.”\nThứ tự ghép là 4→2→1→3. 「毎朝」(4) là “mỗi sáng”; 「している」(2) bổ nghĩa cho 「ジョギング」, tạo cụm 「毎朝しているジョギング」, “việc chạy bộ mà mẹ thực hiện mỗi sáng”; 「ジョギングの」(1) nối danh từ này với 「おかげ」; 「おかげだ」(3) kết luận kết quả tốt là “nhờ vào”. Ô ★ thứ ba nhận lựa chọn 1 「ジョギングの」. Cụm sở hữu/nguyên nhân phải liền nhau thành 「ジョギングのおかげだ」.",
+      "translationPresent": true,
+      "allFragmentsExplained": true,
+      "provenanceUnchanged": true
+    }
+  ]
+}

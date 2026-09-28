@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-09-27T03:07:33.498Z",
+  "examId": "toan-n3-201307-full",
+  "section": "Từ vựng",
+  "questionRange": "9–14",
+  "reviewedQuestionCount": 6,
+  "reviewedChoiceCount": 24,
+  "answerKeysChanged": 0,
+  "sourceLimits": {
+    "originalQuestionPdfVisuallyInspectedThisPass": false,
+    "officialAnswerKeyConfirmed": false,
+    "method": "Reviewed the stored Japanese stems and each printed choice, translated the sentences, and explained contextual meanings and invalid Kanji constructions. The stored answer keys and option text were preserved; this pass does not independently certify the source transcription or official answer key."
+  },
+  "rows": [
+    {
+      "number": 9,
+      "answer": 2,
+      "options": ["真じて", "信じて", "心じて", "親じて"],
+      "explanation": "Đáp án 2 — 「信じる」（しんじる）là tin/tin tưởng; 「彼ならできると信じている」là tin rằng anh ấy có thể làm được.\nDịch: “Tôi tin rằng nếu là anh ấy thì anh ấy làm được.”\n1. 真じて: 真（しん／ま）gợi nghĩa thật/chân thật, nhưng không viết động từ しんじる bằng chữ này.\n2. 信じて: cách viết đúng của thể て của 信じる.\n3. 心じて: 心（こころ／しん）là trái tim/tấm lòng; không tạo thành cách viết của しんじる.\n4. 親じて: 親（おや／しん）là cha mẹ/thân thiết; không phải chữ dùng trong động từ này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 10,
+      "answer": 3,
+      "options": ["遠く", "後く", "遅く", "復く"],
+      "explanation": "Đáp án 3 — 「遅く」（おそく）là dạng trạng từ của 遅い (muộn); 「夜遅くまで」là đến tận khuya.\nDịch: “Cửa hàng này mở đến tận khuya nên rất tiện.”\n1. 遠く（とおく）: ở xa; cách đọc và nghĩa đều không khớp おそく.\n2. 後く: không phải cách viết chuẩn của おそく; 後 thường đọc あと／うしろ／ご.\n3. 遅く（おそく）: muộn; đúng cách đọc và nghĩa trong câu.\n4. 復く: không phải cách viết chuẩn của おそく; 復 xuất hiện trong từ như 復習（ふくしゅう, ôn tập）.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 11,
+      "answer": 2,
+      "options": ["浴器", "容器", "容機", "浴機"],
+      "explanation": "Đáp án 2 — 「容器」（ようき）là đồ đựng/vật chứa; 「プラスチックの容器」là hộp hoặc bao bì nhựa.\nDịch: “Nhà máy này sản xuất đồ đựng bằng nhựa.”\n1. 浴器: 浴 liên quan đến tắm/ngâm; không viết từ ようき “đồ đựng” bằng chữ này.\n2. 容器: 容 (chứa) + 器 (đồ dùng/vật chứa), đúng cách viết của ようき.\n3. 容機: 容 là chứa, 機 là máy móc; không phải từ chỉ hộp/đồ đựng.\n4. 浴機: ghép sai chữ; 浴 không mang nghĩa “chứa”, còn 機 là máy móc.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 12,
+      "answer": 1,
+      "options": ["疲れました", "痛れました", "病れました", "症れました"],
+      "explanation": "Đáp án 1 — 「疲れました」（つかれました）là đã mệt; đi bộ cả ngày khiến chân mỏi/mệt.\nDịch: “Hôm nay tôi đi bộ suốt cả ngày nên chân đã mỏi.”\n1. 疲れました: dạng lịch sự quá khứ của 疲れる (mệt), cách viết đúng của つかれました.\n2. 痛れました: không phải dạng động từ chuẩn; 痛む／痛い diễn tả đau, nhưng không viết つかれました bằng 痛.\n3. 病れました: không phải cách chia chuẩn; 病気になる／病む diễn tả mắc bệnh.\n4. 症れました: không phải động từ chuẩn; 症 xuất hiện trong danh từ như 症状 (triệu chứng).",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 13,
+      "answer": 4,
+      "options": ["整ねて", "列ねて", "階ねて", "重ねて"],
+      "explanation": "Đáp án 4 — 「重ねて」（かさねて）là xếp chồng lên nhau; 「皿を重ねる」là chồng các chiếc đĩa lên.\nDịch: “Xin hãy xếp chồng đĩa lên rồi cất vào chiếc kệ đó.”\n1. 整ねて: không phải cách viết của かさねて; 整える（ととのえる）là sắp xếp/chỉnh cho ngay ngắn.\n2. 列ねて: không đọc là かさねて; 列 liên quan đến hàng/lối hoặc xếp thành hàng.\n3. 階ねて: 階（かい）là tầng/bậc; không tạo thành động từ かさねる.\n4. 重ねて: thể て của 重ねる, xếp chồng/đặt nhiều vật lên nhau; hợp với đĩa.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 14,
+      "answer": 4,
+      "options": ["増勤", "増業", "残勤", "残業"],
+      "explanation": "Đáp án 4 — 「残業」（ざんぎょう）là làm thêm giờ ngoài thời gian làm việc thông thường.\nDịch: “Tuần này tôi phải làm thêm giờ nhiều.”\n1. 増勤: không phải từ chuẩn cho làm thêm giờ; 増 liên quan đến tăng, 勤 đến việc chuyên cần/làm việc.\n2. 増業: không phải cách viết của ざんぎょう; 増業 không phải danh từ thông dụng mang nghĩa tăng ca.\n3. 残勤: 残 là còn lại, 勤 là làm việc/chuyên cần; không phải thuật ngữ chuẩn cho giờ làm ngoài lịch.\n4. 残業: 残 (còn lại) + 業 (công việc), là phần việc làm thêm sau giờ; đúng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    }
+  ]
+}

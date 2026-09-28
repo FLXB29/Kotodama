@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-09-25T16:04:06.053Z",
+  "examId": "toan-n3-201407-full",
+  "questionId": "toan_q_2014_07_42",
+  "scope": "Grammar Mondai 1, question 7 (full-exam question 42).",
+  "sources": {
+    "question": "Google Drive: 5. N3 7-2014.pdf, printed page 4; Drive file 1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C.",
+    "answerKey": "Google Drive: ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf, page 9; Drive file 1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL."
+  },
+  "sourceQuestion": "客「あのう、この赤いのは何のアイスクリームですか。」 店員「トマトのアイスクリーム ( )。」",
+  "sourceOptions": [
+    "ございます",
+    "がございます",
+    "でございます",
+    "はございます"
+  ],
+  "answerKeyAnswer": 3,
+  "discrepancy": {
+    "prompt": "The stored prompt said どの; the PDF page 4 says 何の.",
+    "option2": "The stored option said がざいます; the PDF page 4 says がございます."
+  },
+  "resolution": "The separate answer key page 9 gives grammar Mondai 1 question 7 as answer 3. The explanation distinguishes the copular identification 「Nでございます」 from the availability readings of ございます."
+}

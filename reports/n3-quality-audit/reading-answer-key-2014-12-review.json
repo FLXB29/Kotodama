@@ -1,0 +1,30 @@
+{
+  "reviewedDate": "2026-09-26",
+  "examId": "toan-n3-201412-full",
+  "scope": "Reading comprehension answer-key comparison only: printed questions 24–39 (full-exam IDs 59–74). This does not certify the source transcription or semantic quality of the reading explanations.",
+  "source": {
+    "file": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 10,
+    "method": "Visually inspected the Reading tables for Mondai 4–7 on viewer page 10 and compared all 16 numbered keys with the stored answers.",
+    "statusNote": "The answer PDF is a reference compilation; its JLPT-official status is not established."
+  },
+  "answers": [
+    { "questionId": "toan_q_2014_12_59", "printedQuestion": 24, "answer": 3 },
+    { "questionId": "toan_q_2014_12_60", "printedQuestion": 25, "answer": 2 },
+    { "questionId": "toan_q_2014_12_61", "printedQuestion": 26, "answer": 3 },
+    { "questionId": "toan_q_2014_12_62", "printedQuestion": 27, "answer": 2 },
+    { "questionId": "toan_q_2014_12_63", "printedQuestion": 28, "answer": 3 },
+    { "questionId": "toan_q_2014_12_64", "printedQuestion": 29, "answer": 3 },
+    { "questionId": "toan_q_2014_12_65", "printedQuestion": 30, "answer": 4 },
+    { "questionId": "toan_q_2014_12_66", "printedQuestion": 31, "answer": 2 },
+    { "questionId": "toan_q_2014_12_67", "printedQuestion": 32, "answer": 1 },
+    { "questionId": "toan_q_2014_12_68", "printedQuestion": 33, "answer": 4 },
+    { "questionId": "toan_q_2014_12_69", "printedQuestion": 34, "answer": 2 },
+    { "questionId": "toan_q_2014_12_70", "printedQuestion": 35, "answer": 1 },
+    { "questionId": "toan_q_2014_12_71", "printedQuestion": 36, "answer": 4 },
+    { "questionId": "toan_q_2014_12_72", "printedQuestion": 37, "answer": 4 },
+    { "questionId": "toan_q_2014_12_73", "printedQuestion": 38, "answer": 1 },
+    { "questionId": "toan_q_2014_12_74", "printedQuestion": 39, "answer": 1 }
+  ]
+}

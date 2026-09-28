@@ -1,0 +1,55 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Printed Reading Mondai 5 questions 28-30, corresponding to full-exam questions 63-65.",
+  "source": {
+    "questionFile": "5. N3 7-2014.pdf",
+    "questionDriveFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "printedPages": [9],
+    "answerKeyFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerKeyDriveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "answerKeyViewerPage": 9,
+    "method": "Compared source questions and all four choices with the rendered Google Drive exam PDF; checked the three keys against the separate answer-key PDF."
+  },
+  "questions": [
+    {
+      "printedQuestion": 28,
+      "questionId": "toan_q_2014_07_63",
+      "sourcePrompt": "中学生のころの「私」は、どんな子どもだったか。",
+      "sourceOptions": [
+        "絵を描くのが好きで、どの科目の成績も悪くない子どもだった。",
+        "絵は上手だったが、美術以外の勉強はあまりできない子どもだった。",
+        "絵ばかり描いていたが、美術の成績はあまりよくない子どもだった。",
+        "絵が得意で、どの科目の勉強も頑張っていて、先生にほめられる子どもだった。"
+      ],
+      "answerKeyAnswer": 2
+    },
+    {
+      "printedQuestion": 29,
+      "questionId": "toan_q_2014_07_64",
+      "sourcePrompt": "①お母さんのお考えとあるが、それはどのような考えか。",
+      "sourceOptions": [
+        "苦手な科目でいい成績が取れなくてもいいので、娘には得意なことをやらせたい。",
+        "娘には得意なことをやらせたいが、テストでもいい点が取れるようにさせたい。",
+        "授業でわからないことがあったら、娘が先生に質問できるようにしてほしい。",
+        "娘には、苦手な勉強も得意なことも、もっと一生懸命に頑張ってほしい。"
+      ],
+      "answerKeyAnswer": 1,
+      "correctedOptionIndex": 0,
+      "previousAppOption": "上手な科目でいい成績が取れなくてもいいので、娘には得意なことをやらせたい",
+      "correctionReason": "The source says 苦手な科目 (a weak subject), not 上手な科目 (a skilled subject). The passage says the daughter cannot score well in other subjects while the mother wants to develop her strength in drawing."
+    },
+    {
+      "printedQuestion": 30,
+      "questionId": "toan_q_2014_07_65",
+      "sourcePrompt": "②あの時の母に「ありがとう」と言いたいとあるが、今、「私」がそう思っているのはどうしてか。",
+      "sourceOptions": [
+        "母が先生に「私」は絵がとても上手だと言ってくれたおかげで、自信を持って生きられる人間になれたから",
+        "母が成績がよくないことは悪いことではないと教えてくれたおかげで、広い考えを持てるようになったから",
+        "母が「私」の成績を気にせずに、絵を描く力を伸ばしたいと考えてくれたおかげで、好きな道に進むことができたから。",
+        "母が「私」に質問することの大切さを教えてくれたおかげで、積極的な行動ができる人間になれたから。"
+      ],
+      "answerKeyAnswer": 3
+    }
+  ]
+}

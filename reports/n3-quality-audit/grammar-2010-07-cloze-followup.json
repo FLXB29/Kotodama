@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-27T03:52:18.861Z",
+  "examId": "toan-n3-201007-full",
+  "scope": "Grammar star question 18 and cloze questions 20 and 22.",
+  "sourceLimits": {
+    "sourcesCompared": {
+      "examTranscription": "https://trynihongo.com/en/grammar-exam-n3-9-q179",
+      "answerSolution": "https://www.renrendoc.com/paper/122808080.html",
+      "starQuestionTranscription": "https://avalon1119.pixnet.net/blog/posts/9232468943"
+    },
+    "officialAnswerKeyConfirmed": false,
+    "method": "Compared the star-order question and vending-machine cloze passage against independent transcriptions and a published answer-solution compilation. Corrected the star slot/key for grammar question 18, restored の in the 一台の option for cloze question 20, and wrote full Vietnamese explanations for the star fragments and every cloze option. These are nonofficial copies, so the report does not claim official-key verification."
+  },
+  "corrections": [
+    {
+      "questionNumber": 53,
+      "displayedQuestionNumber": 18,
+      "previousAnswer": 1,
+      "answer": 4,
+      "previousStarPosition": 2,
+      "starPosition": 1,
+      "starCorrectOrder": [2, 4, 1, 3],
+      "reason": "The star is on the second blank; the second fragment in 2 → 4 → 1 → 3 is option 4.",
+      "explanation": "Câu hoàn chỉnh: 「ジョン『この「りかい」という言葉はどういう意味ですか。』アリ『ああ、確か「わかる」というような意味だったと思うんですけど。』」\nDịch: “John: Từ 「りかい」 này có nghĩa là gì? — Ali: À, tôi nghĩ hình như nó có nghĩa kiểu như 「わかる」 (hiểu), nhưng tôi không chắc lắm.”\nThứ tự ghép là 2 → 4 → 1 → 3. Dấu ★ nằm ở ô thứ hai, nên mảnh đúng là lựa chọn 4 「ような」.\n1. 意味だった (いみだった): “đã là nghĩa/ý nghĩa”; là danh từ trung tâm, cần đứng sau 「ような」 để thành 「ような意味」.\n2. という: dấu trích dẫn/diễn giải; nối 「わかる」 với phần nói về ý nghĩa thành 「わかるという…」.\n3. と思う: “tôi nghĩ rằng”; theo sau nhận định 「意味だった」 để hoàn tất câu và thể hiện sự dè dặt.\n4. ような: “như/kiểu như”; bổ nghĩa cho danh từ 「意味」. Nó đứng ở ô ★, vì vậy chọn 4.\nGhi nhớ: 「Aというような意味」 = ý nghĩa kiểu như A; 「～と思うんですけど」 làm lời giải thích mềm và không khẳng định tuyệt đối."
+    },
+    {
+      "questionNumber": 55,
+      "displayedQuestionNumber": 20,
+      "answer": 3,
+      "correctedOption": "2. 一台の",
+      "reason": "The archived question writes the counter phrase as 一台の; the missing の had made the stored distractor ungrammatical.",
+      "explanation": "Đáp án 3 — 「この自動販売機」 chỉ rõ chiếc máy đã được giới thiệu ở câu trước; mạch văn nói chiếc máy gần nhà của người kể có thể nói.\nDịch câu: “Máy bán đồ uống trông như máy bán hàng bình thường, nhưng chiếc máy này có thể nói chuyện.”\n1. ある = một/có một…; 「ある自動販売機」 có thể mở đầu một đối tượng chưa xác định, nhưng ở đây chiếc máy đã được nêu nên cần từ chỉ định.\n2. 一台の = một chiếc; cách viết này đúng ngữ pháp, nhưng lặp lại cách giới thiệu một chiếc máy mới thay vì chỉ rõ chiếc đã nói ở câu trước.\n3. この = chiếc này; hồi chỉ máy bán hàng vừa được giới thiệu, phù hợp nhất với mạch văn.\n4. ふつうの = bình thường; lặp lại ý “máy bán hàng bình thường” ở vế ngay trước, không nêu rõ máy cụ thể có thể nói.\nGhi nhớ: この + danh từ dùng để chỉ rõ đối tượng đã biết/đang được nói đến; 一台の chỉ số lượng một chiếc."
+    },
+    {
+      "questionNumber": 57,
+      "displayedQuestionNumber": 22,
+      "answer": 2,
+      "explanation": "Đáp án 2 — 「ですから」 nối nguyên nhân với kết quả: trong hoạt hình, máy móc cũng nói và đi lại như người; vì vậy nghe máy bán hàng chào khiến người kể thấy như đang ở thế giới hoạt hình.\nDịch câu: “Trong những bộ hoạt hình tôi thường xem, máy móc cũng nói chuyện và đi lại như con người. Vì vậy, khi máy bán hàng nói với tôi, tôi cảm thấy như mình đang ở trong thế giới hoạt hình.”\n1. 一方（いっぽう）= mặt khác; dùng để đối chiếu hai phía, trong khi câu sau là cảm nhận nảy sinh từ ví dụ trước.\n2. ですから = vì vậy/do đó; diễn tả đúng quan hệ nguyên nhân–kết quả trong đoạn.\n3. それなのに = mặc dù vậy/thế mà; báo hiệu kết quả trái mong đợi, không có ý tương phản ở đây.\n4. そのうえ = hơn nữa; bổ sung thêm thông tin cùng hướng, nhưng không thể hiện kết luận/cảm nhận được giải thích bởi câu trước.\nGhi nhớ: 「ですから」 nêu kết quả; 「一方」 đối chiếu, 「それなのに」 nghịch dự đoán, 「そのうえ」 bổ sung."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "reviewedAt": "2026-09-27",
+  "examId": "toan-n3-201107-full",
+  "questionId": "toan_q_2011_07_50",
+  "printedQuestion": 15,
+  "section": "Grammar Mondai 2, sentence construction",
+  "questionSource": {
+    "name": "JLPT N3 July 2011 question scan",
+    "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/03/de-thi-jlpt-n3-13.pdf",
+    "status": "The printed question gives あの美術館は曜日＿＿＿＿★＿＿＿＿窓口で確認したほうがいいよ and the four fragments."
+  },
+  "corroboratingSource": {
+    "name": "Japanese-language worked solution for the July 2011 N3 paper",
+    "url": "https://japaneselanguage.client.jp/Official_N3_P13-P16_n.pdf",
+    "reviewedLocation": "Printed page P13, extracted lines 523–552",
+    "status": "Gives the completed sentence あの美術館は曜日によって閉まる時間が違うから窓口で確認したほうがいいよ and an English translation. This is an independent study solution, not an official JLPT answer key."
+  },
+  "verifiedStructure": {
+    "order": [3, 1, 4, 2],
+    "starPositionZeroBased": 2,
+    "starChoice": 4,
+    "completedSentence": "あの美術館は曜日によって閉まる時間が違うから窓口で確認したほうがいいよ。",
+    "officialAnswerKeyEstablished": false,
+    "answerBasis": "The source sentence and printed star placement make choice 4 (が) the third ordered fragment. The saved key agrees with that reconstruction."
+  },
+  "explanationCoverage": {
+    "fullSentence": true,
+    "translation": true,
+    "allFourFragmentsExplained": true,
+    "starPositionAndAnswerExplained": true,
+    "orderingRationale": true
+  }
+}

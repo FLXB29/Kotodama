@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-09-25T09:58:18.287Z",
+  "examId": "toan-n3-201912-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Question text checked against the JP Nihon paper mirror. Answer sequence has not yet been independently confirmed against two published answer tables; explanations are manual linguistic analyses and not official marking.",
+  "sources": [
+    {
+      "url": "https://trynihongo.com/en/jlpt-grammar-reading-comprehension-n3-test-december-2019-q663"
+    },
+    {
+      "url": "https://jpnihon.com/wp-content/uploads/2019/12/2019%E5%B9%B412%E6%9C%88N3%E7%9C%9F%E9%A1%8C.pdf"
+    }
+  ],
+  "answerSequence": [
+    2,
+    1,
+    4,
+    4,
+    3,
+    2,
+    1,
+    3,
+    1,
+    3,
+    4,
+    2,
+    4
+  ],
+  "explanationCount": 13,
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "1.に",
+        "2.を",
+        "3.が",
+        "4.と"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "choices": [
+        "1.『リボン』って",
+        "2.『リボン』とか",
+        "3.『リボン』だって",
+        "4.『リボン』なんか"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.もっと",
+        "2.いまにも",
+        "3.もしかしたら",
+        "4.いつのまにか"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "choices": [
+        "1.どれ",
+        "2.どれか",
+        "3.いくつ",
+        "4.いくつか"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 3,
+      "choices": [
+        "1.見てあったら",
+        "2.見ていたら",
+        "3.見終わったら",
+        "4.見続けたら"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.買うはずだ",
+        "2.買うことにしている",
+        "3.買うところだ",
+        "4.買うようになっている"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.見つかってよかった　",
+        "2.見つかるほうがいい",
+        "3.見つかったようだ",
+        "4.見つかりそうだった"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.うかがいましたか",
+        "2.申し上げましたか",
+        "3.おっしゃいましたか",
+        "4.お聞きになりましたか"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.までしか",
+        "2.までだけ",
+        "3.からしか",
+        "4.からだけ"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "choices": [
+        "1.食べていて",
+        "2.食べているのに",
+        "3.食べようと思って",
+        "4.食べようと思うのに"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        "1.終わる前は",
+        "2.終わってからは",
+        "3.終わる前でも",
+        "4.終わってからでも"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "choices": [
+        "1.通ってみたところだ",
+        "2.通ってみたことがある",
+        "3.通っておいたところだ",
+        "4.通っておいたことがある"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "choices": [
+        "1.なりそうだ",
+        "2.なることができた",
+        "3.なっていたと思う",
+        "4.なりたいと思っていた"
+      ]
+    }
+  ]
+}

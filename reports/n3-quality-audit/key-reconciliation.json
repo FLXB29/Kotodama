@@ -1,0 +1,480 @@
+{
+  "generatedAt": "2026-09-23T15:09:04.837Z",
+  "reference": {
+    "file": "D:/VKU/data/drive-download-20260828T102340Z-1-002/nhaikanji_data/de_thi_jlpt/jlpt_all_exams_master.json",
+    "sha256": "719b20b6d2c0abd77d0034c1371c697a86d3a28e2e59fc3bca9b84c124e44d33"
+  },
+  "method": "Match each question by year/session, app section (vocab, grammar-reading, listening), Mondai group (_gN), then item order within that group. Reconcile only where the answer in the local reference matches either the answer at HEAD or the answer edited before this audit. A later Chrome visual review of the previously unmatched 2013/07 Q62 reading source restored its answer to the original key; a separate 2019/12 Q58 correction was checked against data/jlpt_full_master.json and the embedded explanation.",
+  "counts": {
+    "originalChangedKeysBeforeReconciliation": 48,
+    "matchedAgainstLocalReference": 36,
+    "referenceAgreesWithOriginalAndWasRestored": 21,
+    "referenceAgreesWithEditedValue": 15,
+    "unmatchedAtInitialReview": 12,
+    "unmatchedKeysStillChanged": 1,
+    "independentlyReviewedKeyRestoredToOriginal": 1,
+    "separatelyCorrectedAfterSecondarySourceReview": 1,
+    "currentChangedAgainstHead": 18
+  },
+  "confirmedOriginal": [
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_51",
+      "section": "grammar-reading",
+      "mondai": 2,
+      "index": 3,
+      "sourceQuestionId": 4149,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 4,
+      "referenceAnswer": 1
+    },
+    {
+      "exam": "toan-n3-202207-full",
+      "id": "toan_q_2022_07_48",
+      "section": "grammar-reading",
+      "mondai": 2,
+      "index": 1,
+      "sourceQuestionId": 691,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_87",
+      "section": "listening",
+      "mondai": 3,
+      "index": 1,
+      "sourceQuestionId": 3394,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_89",
+      "section": "listening",
+      "mondai": 3,
+      "index": 3,
+      "sourceQuestionId": 3396,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_90",
+      "section": "listening",
+      "mondai": 4,
+      "index": 1,
+      "sourceQuestionId": 3397,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_91",
+      "section": "listening",
+      "mondai": 4,
+      "index": 2,
+      "sourceQuestionId": 3398,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 1
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_93",
+      "section": "listening",
+      "mondai": 4,
+      "index": 4,
+      "sourceQuestionId": 3400,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_96",
+      "section": "listening",
+      "mondai": 5,
+      "index": 3,
+      "sourceQuestionId": 3403,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_97",
+      "section": "listening",
+      "mondai": 5,
+      "index": 4,
+      "sourceQuestionId": 3404,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_98",
+      "section": "listening",
+      "mondai": 5,
+      "index": 5,
+      "sourceQuestionId": 3405,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201412-full",
+      "id": "toan_q_2014_12_102",
+      "section": "listening",
+      "mondai": 5,
+      "index": 9,
+      "sourceQuestionId": 3409,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 1
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_87",
+      "section": "listening",
+      "mondai": 3,
+      "index": 1,
+      "sourceQuestionId": 3308,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 1
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_88",
+      "section": "listening",
+      "mondai": 3,
+      "index": 2,
+      "sourceQuestionId": 3309,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_90",
+      "section": "listening",
+      "mondai": 4,
+      "index": 1,
+      "sourceQuestionId": 3311,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_91",
+      "section": "listening",
+      "mondai": 4,
+      "index": 2,
+      "sourceQuestionId": 3312,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_93",
+      "section": "listening",
+      "mondai": 4,
+      "index": 4,
+      "sourceQuestionId": 3314,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_94",
+      "section": "listening",
+      "mondai": 5,
+      "index": 1,
+      "sourceQuestionId": 3315,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_98",
+      "section": "listening",
+      "mondai": 5,
+      "index": 5,
+      "sourceQuestionId": 3319,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_100",
+      "section": "listening",
+      "mondai": 5,
+      "index": 7,
+      "sourceQuestionId": 3321,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_101",
+      "section": "listening",
+      "mondai": 5,
+      "index": 8,
+      "sourceQuestionId": 3322,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201407-full",
+      "id": "toan_q_2014_07_102",
+      "section": "listening",
+      "mondai": 5,
+      "index": 9,
+      "sourceQuestionId": 3323,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 3
+    }
+  ],
+  "confirmedCurrent": [
+    {
+      "exam": "toan-n3-202512-full",
+      "id": "toan_q_2025_12_88",
+      "section": "listening",
+      "mondai": 3,
+      "index": 3,
+      "sourceQuestionId": 4255,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 4,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-202512-full",
+      "id": "toan_q_2025_12_89",
+      "section": "listening",
+      "mondai": 4,
+      "index": 1,
+      "sourceQuestionId": 4256,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_76",
+      "section": "listening",
+      "mondai": 1,
+      "index": 3,
+      "sourceQuestionId": 4158,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 4,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_78",
+      "section": "listening",
+      "mondai": 1,
+      "index": 5,
+      "sourceQuestionId": 4160,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_81",
+      "section": "listening",
+      "mondai": 2,
+      "index": 2,
+      "sourceQuestionId": 4163,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_85",
+      "section": "listening",
+      "mondai": 2,
+      "index": 6,
+      "sourceQuestionId": 4167,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 4,
+      "referenceAnswer": 4
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_97",
+      "section": "listening",
+      "mondai": 5,
+      "index": 5,
+      "sourceQuestionId": 4179,
+      "answerAtHead": 2,
+      "answerBeforeThisRun": 1,
+      "referenceAnswer": 1
+    },
+    {
+      "exam": "toan-n3-202507-full",
+      "id": "toan_q_2025_07_100",
+      "section": "listening",
+      "mondai": 5,
+      "index": 8,
+      "sourceQuestionId": 4182,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-202312-full",
+      "id": "toan_q_2023_12_92",
+      "section": "listening",
+      "mondai": 4,
+      "index": 4,
+      "sourceQuestionId": 4067,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-202307-full",
+      "id": "toan_q_2023_07_45",
+      "section": "grammar-reading",
+      "mondai": 1,
+      "index": 10,
+      "sourceQuestionId": 855,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-202307-full",
+      "id": "toan_q_2023_07_49",
+      "section": "grammar-reading",
+      "mondai": 2,
+      "index": 1,
+      "sourceQuestionId": 859,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-202207-full",
+      "id": "toan_q_2022_07_39",
+      "section": "grammar-reading",
+      "mondai": 1,
+      "index": 5,
+      "sourceQuestionId": 682,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201812-full",
+      "id": "toan_q_2018_12_49",
+      "section": "grammar-reading",
+      "mondai": 2,
+      "index": 1,
+      "sourceQuestionId": 433,
+      "answerAtHead": 4,
+      "answerBeforeThisRun": 3,
+      "referenceAnswer": 3
+    },
+    {
+      "exam": "toan-n3-201707-full",
+      "id": "toan_q_2017_07_9",
+      "section": "vocab",
+      "mondai": 2,
+      "index": 1,
+      "sourceQuestionId": 3590,
+      "answerAtHead": 1,
+      "answerBeforeThisRun": 2,
+      "referenceAnswer": 2
+    },
+    {
+      "exam": "toan-n3-201612-full",
+      "id": "toan_q_2016_12_14",
+      "section": "vocab",
+      "mondai": 2,
+      "index": 6,
+      "sourceQuestionId": 312,
+      "answerAtHead": 3,
+      "answerBeforeThisRun": 4,
+      "referenceAnswer": 4
+    }
+  ],
+  "unmatchedQuestionIds": [
+    "toan_q_2012_12_11"
+  ],
+  "independentReview": [
+    {
+      "id": "toan_q_2013_07_62",
+      "exam": "toan-n3-201307-full",
+      "answerAtHead": 2,
+      "answerBeforeThisReview": 1,
+      "answerAfterThisReview": 2,
+      "source": "https://i.ibb.co/rG1t3DS6/4.png",
+      "verification": "Opened the image in the local Chrome answer-study UI and read the passage: the author regrets that the riverside path color differs across the city and towns. The correct option is 2.",
+      "evidence": "Chrome screenshots: reports/n3-quality-audit/chrome-q62-passage.png (passage and answer choices) and reports/n3-quality-audit/chrome-q62-explanation.png (answer 2 and full explanation). Image source loaded at 1280×460. chrome-reading-image-missing.png is the earlier failed-load snapshot."
+    }
+  ],
+  "additionalSourceReview": [
+    {
+      "id": "toan_q_2019_12_58",
+      "answer": 2,
+      "source": "data/jlpt_full_master.json (2019/12, Q58); app embedded explanation also states option 2.",
+      "verification": "The passage contrasts choosing a cleaning time freely with following a predetermined time; 決められた is passive."
+    }
+  ],
+  "published2013DecemberReview": {
+    "scope": "All 102 answers, matching group order and counts",
+    "sources": [
+      "data/n3_scripts/4. N3 12-2013/4. N3 12-2013 (script).pdf",
+      "https://old.lophoctiengnhat.com/index.php?id=4208&p=chitietbai",
+      "https://max.book118.com/html/2021/0822/6221052015003235.shtm"
+    ],
+    "correctedQuestionNumbers": [
+      80,
+      87,
+      89,
+      91,
+      92,
+      96,
+      97,
+      99,
+      100,
+      101,
+      102
+    ],
+    "restoredToHead": [
+      87,
+      89,
+      91,
+      92,
+      96,
+      97,
+      99,
+      100,
+      101,
+      102
+    ],
+    "newCorrectionAgainstHead": [
+      80
+    ],
+    "fixture": "reports/n3-quality-audit/answer-key-2013-12.json"
+  },
+  "referenceReliabilityNote": "The local reference is not sufficient to certify keys or scripts in other exams: 2014/07 and 2014/12 listening scripts conflict with the source PDF and visible choices."
+}

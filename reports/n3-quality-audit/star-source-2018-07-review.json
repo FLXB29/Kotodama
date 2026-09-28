@@ -1,0 +1,200 @@
+{
+  "exam": "JLPT N3 07/2018",
+  "sourcePdf": {
+    "title": "9. N3 Tháng 7 2018.pdf",
+    "driveFileId": "1dGoaVmeSyblxeUaTrAEhbqnf1zlf7C8M",
+    "url": "https://drive.google.com/file/d/1dGoaVmeSyblxeUaTrAEhbqnf1zlf7C8M/view",
+    "renderedPages": [
+      {
+        "viewerPage": 5,
+        "printedPage": 5,
+        "printedQuestions": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    ],
+    "method": "Visually checked viewer page 5 at 50% zoom in Chrome, which shows the complete option layout and all five ★ marks. The printed fragments and the third-slot placement were compared with the PDF text layer."
+  },
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "fullExamQuestionId": "toan_q_2018_07_49",
+      "standaloneQuestionId": "cm2u2x03z00ks134ikqkm2tsb",
+      "printedOptions": [
+        "で",
+        "人生",
+        "にとって",
+        "いちばん大切"
+      ],
+      "answer": 1,
+      "order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "starPosition": 2,
+      "completedSentence": "私にとって人生でいちばん大切なのは、家族の幸せだ。",
+      "vietnameseTranslation": "Điều quan trọng nhất trong cuộc đời đối với tôi là hạnh phúc của gia đình.",
+      "optionPlacementNotes": [
+        "「で」 theo sau 「人生」 để giới hạn phạm vi “trong cuộc đời”; đây là mảnh ở ô ★.",
+        "「人生」 theo sau 「私にとって」 và đứng trước 「で」 để tạo cụm 「人生で」.",
+        "「にとって」 theo sau 「私」, nêu góc nhìn “đối với tôi”.",
+        "「いちばん大切」 đứng trước 「なのは」 để nêu điều được xem là quan trọng nhất."
+      ],
+      "displayedSolutionScript": "にとって 人生 <u>で</u> いちばん大切",
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 15,
+      "fullExamQuestionId": "toan_q_2018_07_50",
+      "standaloneQuestionId": "cm2u2x03z00kt134ioc5wi4td",
+      "printedOptions": [
+        "見ても",
+        "何度も",
+        "見たけれど",
+        "何度"
+      ],
+      "answer": 4,
+      "order": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "starPosition": 2,
+      "completedSentence": "この映画は昔から大好きで今まで何度も見たけれど、何度見ても感動して泣いてしまう。",
+      "vietnameseTranslation": "Tôi rất thích bộ phim này từ lâu và đã xem nhiều lần, nhưng xem bao nhiêu lần tôi vẫn cảm động đến phát khóc.",
+      "optionPlacementNotes": [
+        "「見ても」 theo sau 「何度」 để tạo mẫu 「何度見ても」, nghĩa là “dù xem bao nhiêu lần”.",
+        "「何度も」 theo sau 「今まで」, diễn tả đã xem nhiều lần.",
+        "「見たけれど」 nối việc đã xem nhiều lần với ý tương phản ở vế sau.",
+        "「何度」 mở cụm 「何度見ても」; đây là mảnh ở ô ★."
+      ],
+      "displayedSolutionScript": "何度も 見たけれど <u>何度</u> 見ても",
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 16,
+      "fullExamQuestionId": "toan_q_2018_07_51",
+      "standaloneQuestionId": "cm2u2x03z00ku134iabrg1z84",
+      "printedOptions": [
+        "ある",
+        "大通り側に",
+        "せいで",
+        "車の音が"
+      ],
+      "answer": 3,
+      "order": [
+        2,
+        1,
+        3,
+        4
+      ],
+      "starPosition": 2,
+      "completedSentence": "新しい家は、駅に近くて便利なのだが、窓が大通り側にあるせいで、車の音が聞こえてきて、うるさいと感じることがある。",
+      "vietnameseTranslation": "Ngôi nhà mới gần ga và tiện lợi, nhưng vì cửa sổ hướng ra đường lớn nên đôi khi nghe tiếng xe và cảm thấy ồn.",
+      "optionPlacementNotes": [
+        "「ある」 hoàn tất vị ngữ 「窓が大通り側にある」.",
+        "「大通り側に」 nêu vị trí của cửa sổ và phải đứng trước 「ある」.",
+        "「せいで」 nối nguyên nhân bất lợi với kết quả; đây là mảnh ở ô ★.",
+        "「車の音が」 mở mệnh đề kết quả, làm chủ thể của 「聞こえてきて」."
+      ],
+      "displayedSolutionScript": "大通り側に ある <u>せいで</u> 車の音が",
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 17,
+      "fullExamQuestionId": "toan_q_2018_07_52",
+      "standaloneQuestionId": "cm2u2x03z00kv134iav445bpy",
+      "printedOptions": [
+        "作る",
+        "ほど",
+        "ハンバーグ",
+        "おいしい"
+      ],
+      "answer": 2,
+      "order": [
+        1,
+        3,
+        2,
+        4
+      ],
+      "starPosition": 2,
+      "completedSentence": "林さんの奥さんは料理がとても上手で、ハンバーグが特においしいらしい。林さんは奥さんの作るハンバーグほどおいしいものはないとよく言っている。",
+      "vietnameseTranslation": "Ông Hayashi thường nói rằng không có món nào ngon bằng hamburger do vợ ông làm.",
+      "optionPlacementNotes": [
+        "「作る」 bổ nghĩa cho danh từ theo sau trong cụm 「奥さんの作るハンバーグ」.",
+        "「ほど」 theo sau cụm so sánh và tạo cấu trúc 「Aほどおいしいものはない」; đây là mảnh ở ô ★.",
+        "「ハンバーグ」 là món ăn do 「奥さんの作る」 bổ nghĩa, rồi được đem ra so sánh.",
+        "「おいしい」 đứng trước 「ものはない」, khép ý “không có món nào ngon đến mức ấy”."
+      ],
+      "displayedSolutionScript": "作る ハンバーグ <u>ほど</u> おいしい",
+      "standalonePrompt": "林さんの奥さんは料理がとても上手で、ハンバーグが特においしいらしい。林さんは奥さんの ___ ___ _★_ ___ ものはないとよく言っている。",
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 18,
+      "fullExamQuestionId": "toan_q_2018_07_53",
+      "standaloneQuestionId": "cm2u2x03z00kw134iiqvn6lof",
+      "printedOptions": [
+        "食事をするたび",
+        "妻との初めてのデートで",
+        "来たとき",
+        "このレストランで"
+      ],
+      "answer": 2,
+      "order": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "starPosition": 2,
+      "completedSentence": "このレストランで食事をするたび、妻との初めてのデートで来たときのことを思い出す。",
+      "vietnameseTranslation": "Mỗi lần ăn ở nhà hàng này, tôi lại nhớ đến lần mình đến đây trong buổi hẹn đầu tiên với vợ.",
+      "optionPlacementNotes": [
+        "「食事をするたび」 theo sau địa điểm, nghĩa là “mỗi lần ăn”.",
+        "「妻との初めてのデートで」 bổ nghĩa cho 「来たとき」, nêu lần đến nhà hàng trong buổi hẹn đầu tiên; đây là mảnh ở ô ★.",
+        "「来たとき」 khép cụm chỉ kỷ niệm trước 「のこと」.",
+        "「このレストランで」 là địa điểm cho hành động 「食事をする」."
+      ],
+      "displayedSolutionScript": "このレストランで 食事をするたび <u>妻との初めてのデートで</u> 来たとき",
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    }
+  ],
+  "secondaryAnswerKey": {
+    "title": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "url": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view#page=17",
+    "viewerPage": 17,
+    "section": "JLPT N3 7/2018 — 文法・問題2",
+    "printedQuestions": [
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "answers": [
+      1,
+      4,
+      3,
+      2,
+      2
+    ],
+    "matchesStoredAnswers": true,
+    "authority": "Secondary answer compilation supplied in Drive; not authenticated as an official JLPT key."
+  },
+  "summary": "The five option sets and third-slot ★ marks were visually checked against the supplied exam PDF. Reconstructed orders place answers 1–4–3–2–2 in the ★ slots and agree with the supplied secondary answer compilation on page 17. Four explanations missing from the standalone grammar-and-reading exam are now synchronized from the complete exam dataset. No official answer key was established.",
+  "officialKeyEstablished": false
+}

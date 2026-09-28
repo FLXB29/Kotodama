@@ -1,0 +1,44 @@
+{
+  "examId": "toan-n3-202212-full",
+  "scope": "Grammar Mondai 1, printed questions 1 and 11; full-exam question IDs 36 and 46.",
+  "source": {
+    "file": "13. N3 12-2022 .pdf",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1ccBkcPviGdtm9TZZaDP0393exMAG5MDv",
+    "printedPages": [5, 6],
+    "viewerPages": [5, 6],
+    "method": "Read the PDF text layer and visually inspected pages 5–6 in Chrome.",
+    "provenanceQualification": "The Drive PDF directly supports the printed wording and choices. Its publication provenance was not independently established, and it contains no answer key."
+  },
+  "answerKeyStatus": "unresolved_reference_conflict",
+  "answerKeyLimitation": "The source exam PDF does not include an answer key. Two answer tables already recorded in answer-key-2022-12-grammar.json disagree on both items; the linguistically reviewed option is retained, but is not certified as the official JLPT key.",
+  "questions": [
+    {
+      "questionId": "toan_q_2022_12_36",
+      "printedQuestion": 1,
+      "printedPage": 5,
+      "transcriptionStatus": "verified_against_drive_pdf",
+      "sourcePrompt": "（教室で）アン「先生、スピーチ大会の申込書を書いてきました。書き方がよくわからないところがあったんですが、ここの書き方はこれ（　）大丈夫でしょうか。」",
+      "sourceOptions": ["に", "で", "と", "が"],
+      "storedAnswer": 2,
+      "linguisticReview": "Option 2, これで大丈夫, naturally asks whether this way of filling in the form is acceptable. The two recorded answer tables instead give options 3 and 4.",
+      "referenceAnswers": {
+        "Chuyenngoaingu": 3,
+        "LuyenThiTiengNhat": 4
+      }
+    },
+    {
+      "questionId": "toan_q_2022_12_46",
+      "printedQuestion": 11,
+      "printedPage": 6,
+      "transcriptionStatus": "verified_against_drive_pdf",
+      "sourcePrompt": "（電話で）山下「はい、X 建設営業課、山下です。」石田「ABC 銀行の石田と申しますが、中川さんか林さんはいらっしゃいますか。」山下「はい、中川が（　）ので、今、代わります。」",
+      "sourceOptions": ["いたします", "おります", "いただきます", "ございます"],
+      "storedAnswer": 2,
+      "linguisticReview": "Option 2, おります, is the humble form of いる and fits an employee saying that a colleague is present. Neither recorded answer table gives option 2.",
+      "referenceAnswers": {
+        "Chuyenngoaingu": 3,
+        "LuyenThiTiengNhat": 1
+      }
+    }
+  ]
+}

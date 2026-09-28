@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T16:14:15.210Z",
+  "examId": "toan-n3-201312-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://max.book118.com/html/2021/0822/6221052015003235.shtm; https://www.jpedo.com/news/1667.html",
+  "method": "The complete stored answer key was independently reconciled earlier against two answer compilations for this exam (102/102). These M1 explanations were then checked against the Japanese sentence and choice semantics; the sources are nonofficial reproductions.",
+  "answerSequence": [
+    4,
+    2,
+    2,
+    3,
+    1,
+    3,
+    4,
+    1,
+    4,
+    2,
+    2,
+    3,
+    1
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.へ",
+        " 2.が",
+        "3.と",
+        "4.を"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.全く",
+        " 2.必ず",
+        "3.非常に",
+        "4.決して"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1.その",
+        "2.あの ",
+        "3.そう",
+        "4.ああ"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        "1.では ",
+        "2.から",
+        "3.にとって",
+        "4.によって"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        "1.したら",
+        " 2.したのに",
+        "3.するより",
+        "4.することは"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "choices": [
+        "1.行って ",
+        " 2.行けて",
+        "3.行かせて ",
+        " 4.行かされて"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 4,
+      "choices": [
+        "1.出すようになる",
+        "2.出すことがある",
+        "3.出さないかもしれないだ",
+        "4.出さないといけない"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 1,
+      "choices": [
+        "1.伺いたい",
+        " 2.いただきたい",
+        "3.ご覧になりたい",
+        "4.お聞きになりたい"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "1.どこまで",
+        " 2.どこから",
+        "3.どこへでも",
+        "4.どこからでも"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.見なくて",
+        "2.見えにくくて",
+        " 3.見せなくて",
+        "4.見られにくくて"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        "1.なるときで",
+        "2.ならないうちに",
+        "3.なるまえ",
+        "4.ならないあいだ"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        "1.運んできます",
+        "2.運んでいきます",
+        " 3.運ばれてきます",
+        "4.運ばれていきます"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "choices": [
+        "1.やりすぎるのもよくない",
+        " 2.やらなくていいのがいい",
+        " 3.やってやるのもよくない",
+        "4.やらないでおくのがいい"
+      ]
+    }
+  ]
+}

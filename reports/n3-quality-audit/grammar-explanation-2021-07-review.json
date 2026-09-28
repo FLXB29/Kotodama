@@ -1,0 +1,162 @@
+{
+  "reviewedAt": "2026-09-26",
+  "examId": "toan-n3-202107-full",
+  "standaloneExamId": "cm2u2xkhj00zx134iasxlu6kb-grammar-reading",
+  "scope": "Grammar Mondai 1, questions 36–48, reviewed in both the full mock and standalone grammar-reading exam.",
+  "sourceReview": {
+    "questionPdf": "12. N3 7-2021.pdf",
+    "questionPdfPages": [4, 5],
+    "answerSheetPdf": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerSheetPdfPage": 22,
+    "answerSequence": [3, 4, 4, 2, 1, 3, 1, 4, 3, 1, 3, 2, 2],
+    "storedAnswersMatchUserProvidedSheet": 13,
+    "officialAnswerPdfConfirmed": false,
+    "notes": [
+      "The user-provided answer sheet confirms all 13 stored grammar answers, but it is not an official JLPT answer notice.",
+      "The source PDF prints 国際大会出の in question 45; the learner-facing text corrects this apparent typo to 国際大会での.",
+      "PassJapanese repeats なりにくい for choice 4 in question 43; the original question PDF and answer sheet support なりやすい."
+    ]
+  },
+  "explanationCriteria": {
+    "correctAnswerAndGrammarPoint": true,
+    "allFourChoicesExplained": true,
+    "fullVietnameseTranslation": true,
+    "bothExamViewsHaveSameExplanation": true
+  },
+  "transcriptionCorrections": [
+    {
+      "questionNumber": 37,
+      "view": "Full mock",
+      "field": "choice 3",
+      "before": "ようやくか",
+      "after": "ようやく",
+      "reason": "Removed the trailing か absent from the PDF."
+    },
+    {
+      "questionNumber": 38,
+      "view": "Standalone section",
+      "field": "choice 1",
+      "before": "対して",
+      "after": "に対して",
+      "reason": "Restored に as printed in the PDF."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Full mock",
+      "field": "choice 2",
+      "before": "まで",
+      "after": "ままで",
+      "reason": "Restored まま as printed in the PDF."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Full mock",
+      "field": "choice 3",
+      "before": "間だからが",
+      "after": "間だから",
+      "reason": "The extra が was a mock transcription error."
+    },
+    {
+      "questionNumber": 40,
+      "view": "Standalone section",
+      "field": "question and sentence",
+      "before": "この図書館はは",
+      "after": "この図書館は",
+      "reason": "Removed the duplicated particle は."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "field": "choice 1",
+      "before": "ときでも",
+      "after": "何とか",
+      "reason": "Restored the choice printed in the PDF."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "field": "choice 4",
+      "before": "なんでも",
+      "after": "何でも",
+      "reason": "Restored the kanji printed in the PDF."
+    },
+    {
+      "questionNumber": 41,
+      "view": "Full mock",
+      "field": "question and sentence",
+      "before": "きれいなんだろう。",
+      "after": "きれいなんだろうか。",
+      "reason": "Restored か at the end of the sentence as printed in the PDF."
+    },
+    {
+      "questionNumber": 42,
+      "view": "Full mock",
+      "field": "question and sentence",
+      "before": "絵がかざられるので",
+      "after": "絵がかざれるので",
+      "reason": "Restored かざれる as printed in the PDF."
+    },
+    {
+      "questionNumber": 44,
+      "view": "Full mock",
+      "field": "question and sentence",
+      "before": "隣に立っていた人",
+      "after": "隣に立っている人",
+      "reason": "Restored the present progressive printed in the PDF."
+    },
+    {
+      "questionNumber": 45,
+      "view": "Both",
+      "field": "question and sentence",
+      "before": "国際大会出の",
+      "after": "国際大会での",
+      "reason": "Corrected an apparent particle/character typo in the source print."
+    },
+    {
+      "questionNumber": 46,
+      "view": "Full mock",
+      "field": "choice 4",
+      "before": "しなきゃなる",
+      "after": "しなきゃ",
+      "reason": "Removed なる, which is absent from the PDF."
+    },
+    {
+      "questionNumber": 47,
+      "view": "Standalone section",
+      "field": "question and sentence",
+      "before": "昨日がどうも",
+      "after": "昨日はどうも",
+      "reason": "Restored は as printed in the PDF."
+    },
+    {
+      "questionNumber": 47,
+      "view": "Full mock",
+      "field": "question and sentence",
+      "before": "おいしい物をたくさん",
+      "after": "おいしい食べ物をたくさん",
+      "reason": "Restored 食べ物 as printed in the PDF."
+    },
+    {
+      "questionNumber": 48,
+      "view": "Both",
+      "field": "choice 1",
+      "before": "出るつもりかもしれない (the full mock also had a stray trailing う)",
+      "after": "出すつもりかもしれない",
+      "reason": "Restored the printed choice."
+    },
+    {
+      "questionNumber": 48,
+      "view": "Standalone section",
+      "field": "choice 4",
+      "before": "行出なくてもよさそうだ",
+      "after": "出なくてもよさそうだ",
+      "reason": "Removed the stray 行 in the standalone transcription."
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "answerKeysMatchingUserProvidedSheet": 13,
+    "completeExplanations": 13,
+    "sourceTranscriptionCorrections": 16
+  }
+}

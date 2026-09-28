@@ -1,0 +1,22 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Grammar Mondai 3 (printed fill-in-the-blank questions 19-23, full-exam questions 54-58).",
+  "source": {
+    "questionFile": "5. N3 7-2014.pdf",
+    "questionDriveFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "printedPage": 6,
+    "answerKeyFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerKeyDriveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "answerKeyViewerPage": 9,
+    "method": "Compared the complete passage and four choices per blank with the rendered Google Drive exam PDF and checked all five keys against the separate answer-key PDF."
+  },
+  "sourcePassage": "私は一つのお菓子の箱を捨てずに持っています。私にとっては特別な箱なのです。4月に日本に来て、初めて買い物に行ったとき、桜の絵の箱に入ったお菓子を買いました。桜味の(19)。きれいな箱だったので、日本で初めて買い物をした記念に持っていることにしました。先週、買い物に行ったとき、久しぶりにそのチョコレートが食べたくなって、店の中を探しました。(20)、いくら探しても、見つけられませんでした。店の人に聞いたら、「桜味のお菓子は春にしか売っていないんです。今は、スイカ味やソーダ味の夏のお菓子が並んでいますよ。」と言われました。秋や冬にだけ売られるお菓子もあるそうです。日本には(21)お菓子があると知って驚きました。四季の変化でお菓子もかわるのです。また、店の人は、日本人は桜味のお菓子を見ると春を感じるということも(22)。でも、私は桜の絵の箱を見ると、日本に来たころの自分を思い出します。私は、あのころの新鮮な気持ちを忘れたくありません。だから、これからもずっと、桜の絵の箱を大切にしようと(23)。",
+  "questions": [
+    { "printedQuestion": 19, "questionId": "toan_q_2014_07_54", "sourceMarker": "[19]", "sourceOptions": ["チョコレートでした", "チョコレートにしてみます", "チョコレートのことでした", "チョコレートにするつもりです"], "answerKeyAnswer": 1 },
+    { "printedQuestion": 20, "questionId": "toan_q_2014_07_55", "sourceMarker": "[20]", "sourceOptions": ["それで", "そのうえ", "ちなみに", "ところが"], "answerKeyAnswer": 4 },
+    { "printedQuestion": 21, "questionId": "toan_q_2014_07_56", "sourceMarker": "[21]", "sourceOptions": ["ある", "この", "そういう", "どちらにも"], "answerKeyAnswer": 3 },
+    { "printedQuestion": 22, "questionId": "toan_q_2014_07_57", "sourceMarker": "[22]", "sourceOptions": ["教えられました", "教えてもらいました", "教えさせられました", "教えてくれました"], "answerKeyAnswer": 4 },
+    { "printedQuestion": 23, "questionId": "toan_q_2014_07_58", "sourceMarker": "[23]", "sourceOptions": ["思いましょう", "思っています", "思うのではありませんか", "思ってもしかたありません"], "answerKeyAnswer": 2 }
+  ]
+}

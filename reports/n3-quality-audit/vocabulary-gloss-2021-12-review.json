@@ -1,0 +1,252 @@
+{
+  "generatedAt": "2026-09-27T02:02:53.009Z",
+  "examId": "toan-n3-202112-full",
+  "standaloneExamId": "cm2u2xosv0138134ib0bvpy32-vocab",
+  "grammarReadingExamId": "cm2u2xosv0138134ib0bvpy32-grammar-reading",
+  "scope": "Manual contextual Vietnamese explanation and four-choice review for December 2021 vocabulary questions 6, 8, 10–25, 26–30, 33, and 34; source-text corrections; correction of the misplaced section group; and comparison of all 35 vocabulary answers against the user-provided answer sheet.",
+  "method": "Fetched the original question PDF text through Google Drive, visually inspected source PDF pages 4–6 and the user-provided answer sheet page 23 in Chrome, compared all 35 vocabulary answers in both app views against that sheet, compared the two stored question variants, and added concise contextual Vietnamese explanations with translations and distractor distinctions.",
+  "sourceLimits": {
+    "officialAnswerKeyConfirmed": false,
+    "userProvidedAnswerSheetVisuallyInspected": true,
+    "userProvidedAnswerSheetPage": 23,
+    "originalPdfTextFetched": true,
+    "questionPdfVisuallyInspected": true,
+    "questionPaperPdfUrl": "https://drive.google.com/file/d/1J-ZCgDqadzo6_E7zYqYBY0mu4YEtqgpo/view",
+    "visuallyInspectedPages": [4, 5, 6],
+    "note": "The full-mock variants for questions 6 and 12 were corrected to the extracted PDF text. Visual inspection confirmed the standalone typo in question 27 should read ください, question 33 option 4 should read しましょう, and question 34 option 3 should read ください. The printed PDF visibly says 少しかった for question 30 option 1, while both app sources use the natural 少し分かった; the web version retains the natural wording and records the source misprint. All 35 vocabulary answers in both app views match page 23 of the user-provided reference sheet; this is not an official JLPT answer notice."
+  },
+  "answerKeyReview": {
+    "sourceName": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "sourceUrl": "https://drive.google.com/file/d/1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL/view#page=23",
+    "page": 23,
+    "answerSequence": [
+      1, 3, 3, 2, 1, 1, 4, 4, 4, 1, 2, 1, 3, 4, 2, 3, 2, 4, 1, 4, 2, 2, 3, 4, 2, 2, 3, 4, 1, 2, 1, 3, 1, 3, 4
+    ],
+    "questionCount": 35,
+    "fullMockMatches": 35,
+    "standaloneMatches": 35,
+    "officialAnswerPdfConfirmed": false,
+    "qualification": "User-provided reference sheet; not an official JLPT answer notice."
+  },
+  "sourceCorrections": [
+    {
+      "questionNumber": 6,
+      "optionNumber": 2,
+      "previousFullMockText": "せいた",
+      "sourceText": "せいえた",
+      "standaloneText": "せいえた",
+      "result": "corrected-full-mock-to-source"
+    },
+    {
+      "questionNumber": 12,
+      "optionNumber": 3,
+      "previousFullMockText": "替え",
+      "sourceText": "替け",
+      "standaloneText": "替け",
+      "result": "corrected-full-mock-to-source"
+    },
+    {
+      "questionNumber": 30,
+      "optionNumber": 1,
+      "printedPdfText": "少しかった",
+      "storedText": "少し分かった",
+      "result": "pdf-source-misprint-retained-natural-app-text"
+    },
+    {
+      "questionNumber": 33,
+      "optionNumber": 4,
+      "previousStandaloneText": "しましよう",
+      "sourceText": "しましょう",
+      "result": "corrected-standalone-from-visual-source-review"
+    },
+    {
+      "questionNumber": 34,
+      "optionNumber": 3,
+      "previousStandaloneText": "くだきい",
+      "sourceText": "ください",
+      "result": "corrected-standalone-from-visual-source-review"
+    }
+  ],
+  "transcriptionCorrections": [
+    {
+      "questionNumber": 27,
+      "fields": ["question", "sentence"],
+      "previousStandaloneText": "くだきい",
+      "sourceText": "ください",
+      "result": "corrected-standalone-from-visual-source-review"
+    }
+  ],
+  "reviewedQuestionCount": 25,
+  "reviewedChoiceCount": 100,
+  "sectionClassification": {
+    "vocabularyBefore": 24,
+    "grammarReadingBefore": 49,
+    "vocabularyAfter": 35,
+    "grammarReadingAfter": 38,
+    "movedQuestionNumbers": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    "mondaiLabelsReindexed": true
+  },
+  "rows": [
+    {
+      "number": 6,
+      "answer": 1,
+      "options": ["はえた", "せいえた", "しようえた", "うえた"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 8,
+      "answer": 4,
+      "options": ["ほそう", "ほうそう", "ゆそう", "ゆうそう"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 10,
+      "answer": 1,
+      "options": ["性格", "正格", "性確", "正確"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 11,
+      "answer": 2,
+      "options": ["命例", "命令", "企例", "企令"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 12,
+      "answer": 1,
+      "options": ["預け", "借け", "替け", "貯け"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 13,
+      "answer": 3,
+      "options": ["予習", "予測", "予想", "予定"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 14,
+      "answer": 4,
+      "options": ["高値", "高費", "高給", "高価"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 15,
+      "answer": 2,
+      "options": ["発言", "報告", "講演", "応答"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 16,
+      "answer": 3,
+      "options": ["なぐった", "うつった", "あたった", "うった"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 17,
+      "answer": 2,
+      "options": ["苦手", "無駄", "貧乏", "不用"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 18,
+      "answer": 4,
+      "options": ["うっかり", "たいてい", "そっと", "なるべく"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": ["翌日", "今後", "明日", "早速"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 20,
+      "answer": 4,
+      "options": ["オープン", "ノック", "マーク", "チャレンジ"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 21,
+      "answer": 2,
+      "options": ["住所", "土地", "近所", "番地"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 22,
+      "answer": 2,
+      "options": ["これから", "このあいだ", "ふだん", "しばらく"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 23,
+      "answer": 3,
+      "options": ["がらがら", "どきどき", "ばらばら", "ずきずき"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 24,
+      "answer": 4,
+      "options": ["満足", "将来", "努力", "意志"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 25,
+      "answer": 2,
+      "options": ["おまちどおさま", "おつかれさま", "おかえりなさい", "おかげさまで"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 26,
+      "answer": 2,
+      "options": ["めずらしかった", "つまらなかった", "おかしかった", "おもしろかった"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 27,
+      "answer": 3,
+      "options": ["座らないで", "走らないで", "触らないで", "休まないで"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 28,
+      "answer": 4,
+      "options": ["プレゼント", "アイディア", "パーティー", "チャンス"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 29,
+      "answer": 1,
+      "options": ["大変だった", "簡単だった", "楽しかった", "長かった"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 30,
+      "answer": 2,
+      "options": ["少し分かった", "とてもよく分かった", "もう一度考えた", "何度も考えた"],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 33,
+      "answer": 1,
+      "options": [
+        "マラソンで前の人を追い抜くときに、腕がぶつかってしまった。",
+        "この山を追い抜いたら、向こうに海が見えると思います。",
+        "この国では二十歳を追い抜くと、もう大人だ。",
+        "12時を追い抜いたので、お昼ご飯にしましょう。"
+      ],
+      "allChoicesExplained": true
+    },
+    {
+      "number": 34,
+      "answer": 3,
+      "options": [
+        "今度のスピーチ大会には、川井さんが学校の見本で出るそうだ。",
+        "私の兄は、日本人の見本の身長より10センチくらい高い。",
+        "ここに申込書の書き方の見本があるので、参考にしてください。",
+        "ギターを弾くのが初めての人は、見本から教えてもらえます。"
+      ],
+      "allChoicesExplained": true
+    }
+  ],
+  "verdict": "Reviewed 25 questions and 100 choices, replacing misleading or missing local dictionary glosses with contextual meanings and concise distractor distinctions. Corrected two full-mock choices against the extracted PDF and three standalone typos against visual source inspection. Question 30 retains a natural app option while documenting the printed PDF misprint. All 35 vocabulary answers in both app views match the user-provided reference sheet; this does not establish an official JLPT key."
+}

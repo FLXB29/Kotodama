@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-09-27T11:20:33.754Z",
+  "examId": "toan-n3-201607-full",
+  "scope": "Grammar Mondai 3, printed questions 19–23 (internal questions 54–58).",
+  "sourcePdf": {
+    "title": "2016 年 7 月 新日本語能力試験 N3",
+    "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/De-N3-7-2016.pdf",
+    "printedPageReviewed": 6,
+    "status": "Question passage and all four option texts checked against the PDF text layer."
+  },
+  "answerReferences": [
+    {
+      "name": "Saromalang",
+      "url": "https://www.saromalang.com/2016/07/jlptn3-bunpou.html",
+      "answers": [1, 2, 1, 4, 3],
+      "status": "Nonofficial reference; independently agrees with the sentence context."
+    },
+    {
+      "name": "Lớp Nhật ngữ Cú Mèo",
+      "url": "https://loptiengnhat.edu.vn/dap-ki-thi-jlpt-cap-n3-072016/",
+      "answers": [1, 2, 1, 4, 3],
+      "status": "Nonofficial reference; independently agrees with the sentence context."
+    }
+  ],
+  "officialKeyEstablished": false,
+  "explanationsAppliedTo": ["full exam", "standalone grammar/reading exam"],
+  "questions": [
+    {
+      "printedQuestion": 19,
+      "internalQuestion": 54,
+      "questionId": "toan_q_2016_07_54",
+      "options": [" 1 こんなこと", " 2 こんなもの", "3 そんなこと", "4 そんなもの"],
+      "answer": 1,
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "contextualTranslation": true,
+        "grammarNote": true
+      },
+      "explanation": "Đáp án 1 — 「こんなことがあって」: “đã xảy ra chuyện như thế này”. 「こと」chỉ một sự việc; 「こんな」giới thiệu câu chuyện sắp kể và hướng người đọc tới trải nghiệm của vị khách ở câu sau. Trải nghiệm đó khiến tác giả suy nghĩ lại về sản phẩm nhiều chức năng.\n1. こんなこと = chuyện như thế này; dùng để dẫn vào sự việc sắp kể, phù hợp với 「があって」.\n2. こんなもの = vật/sản phẩm như thế này; 「もの」chỉ đồ vật, không diễn đạt tự nhiên một sự việc làm thay đổi suy nghĩ.\n3. そんなこと = chuyện như thế đó; 「そんな」thường nhắc lại điều đã được nêu hoặc đặt từ góc nhìn xa hơn, không tự nhiên bằng 「こんな」khi người viết sắp kể trải nghiệm của mình.\n4. そんなもの = vật như thế đó; vừa chỉ đồ vật thay vì sự việc, vừa không hợp với mạch tự thuật.\nDịch câu chứa chỗ trống: “Nhưng hôm nọ đã xảy ra một chuyện như thế này, khiến tôi thay đổi suy nghĩ đôi chút.”\nGhi nhớ: 「こんなことがあって」 thường dùng để mở đầu một trải nghiệm cụ thể."
+    },
+    {
+      "printedQuestion": 20,
+      "internalQuestion": 55,
+      "questionId": "toan_q_2016_07_55",
+      "options": ["1 また", "2 すると", "3 だから", " 4 そのうえ"],
+      "answer": 2,
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "contextualTranslation": true,
+        "grammarNote": true
+      },
+      "explanation": "Đáp án 2 — 「すると、そこに一人の客がやってきて」: 「すると」nối tình huống đang xem máy với sự việc xảy ra ngay sau đó: một vị khách bước tới.\n1. また = lại/cũng; không thể hiện rõ diễn biến tiếp nối bất ngờ trong lời kể.\n2. すると = thế thì/ngay sau đó; phù hợp để dẫn sự việc tiếp theo trong câu chuyện.\n3. だから = vì vậy; cần quan hệ nguyên nhân–kết quả, trong khi hai vế ở đây chủ yếu nối theo trình tự.\n4. そのうえ = hơn nữa; thêm một thông tin cùng chiều, không hợp để giới thiệu người khách xuất hiện.\nDịch câu chứa chỗ trống: “Hôm đó, tôi đang xem một chiếc máy DVD trong cửa hàng thì một vị khách bước tới và bắt đầu hỏi nhân viên về chiếc máy có thể xem DVD.”\nGhi nhớ: 「すると」thường dẫn sự việc xuất hiện ngay sau tình huống vừa kể."
+    },
+    {
+      "printedQuestion": 21,
+      "internalQuestion": 56,
+      "questionId": "toan_q_2016_07_56",
+      "options": ["1 言いました", " 2 言ってもらえました", "3 言わせました", "4 言わされました"],
+      "answer": 1,
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "contextualTranslation": true,
+        "grammarNote": true
+      },
+      "explanation": "Đáp án 1 — 「使いにくそうだと言いました」: vị khách nói rằng sản phẩm nhiều chức năng có vẻ khó sử dụng. Mẫu 「～と」đánh dấu nội dung lời nói; chủ thể 「その人は」 là người khách nên dùng động từ chủ động 「言いました」.\n1. 言いました = đã nói; đúng với chủ thể là vị khách trực tiếp nêu ý kiến.\n2. 言ってもらえました = đã được ai đó nói cho (theo hướng có lợi cho mình); đổi vai người nói và thêm sắc thái nhận được sự giúp đỡ không có trong ngữ cảnh.\n3. 言わせました = đã bắt/cho ai đó nói; đây là thể sai khiến, nhưng không ai yêu cầu vị khách phải nói.\n4. 言わされました = đã bị buộc phải nói; đây là sai khiến–bị động, trái với việc vị khách tự nêu nhận xét.\nDịch câu chứa chỗ trống: “Nhưng vị khách đó nói rằng những sản phẩm làm được nhiều việc có vẻ khó sử dụng.”\nGhi nhớ: 「～と＋言う」dẫn lời nói hoặc nội dung được phát biểu."
+    },
+    {
+      "printedQuestion": 22,
+      "internalQuestion": 57,
+      "questionId": "toan_q_2016_07_57",
+      "options": ["1 よりも ", "2 のほかは", "3 までは ", "4 のほうが"],
+      "answer": 4,
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "contextualTranslation": true,
+        "grammarNote": true
+      },
+      "explanation": "Đáp án 4 — 「一台でいろいろなことができるもののほうが便利」: người viết cho rằng sản phẩm làm được nhiều việc trên một máy thì tiện hơn; đối tượng so sánh được hiểu từ ngữ cảnh.\n1. よりも = hơn so với; đứng sau 「もの」 sẽ cần một vế/đối tượng được so sánh với nó, nhưng câu không nêu vế đó trước vị ngữ 「便利」.\n2. のほかは = ngoài… ra/thì ngoài… không; không tạo cụm chủ ngữ tự nhiên với 「便利だ」.\n3. までは = cho đến/tới mức; không phù hợp để nêu sản phẩm được đánh giá là tiện.\n4. のほうが = phía/cái… thì hơn; tạo cụm 「もののほうが便利」, khớp với đánh giá của người viết.\nDịch câu chứa chỗ trống: “Tôi nghĩ những sản phẩm làm được nhiều việc trên một chiếc máy thì tiện hơn. Tuy nhiên, cũng có người thấy chúng phức tạp và khó sử dụng.”\nGhi nhớ: 「Aのほうが便利」nêu A là lựa chọn được đánh giá tiện hơn; đối tượng đối chiếu có thể được lược khi đã rõ từ ngữ cảnh."
+    },
+    {
+      "printedQuestion": 23,
+      "internalQuestion": 58,
+      "questionId": "toan_q_2016_07_58",
+      "options": [
+        "1 考えているからです ",
+        "2 考えていたのでしょう ",
+        "3 考えるようになりました",
+        "4 考えただろうと思います"
+      ],
+      "answer": 3,
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "contextualTranslation": true,
+        "grammarNote": true
+      },
+      "explanation": "Đáp án 3 — 「人によって違うのだと考えるようになりました」: người viết “đã dần đi đến suy nghĩ rằng” quan niệm về sự tiện lợi khác nhau tùy từng người. 「ようになる」diễn tả sự thay đổi trong nhận thức.\n1. 考えているからです = vì đang nghĩ; 「からです」biến câu thành lời giải thích nguyên nhân, không nối tự nhiên với phát hiện mới của người viết.\n2. 考えていたのでしょう = có lẽ đã nghĩ; 「のでしょう」là phỏng đoán về suy nghĩ của ai đó, không diễn đạt kết luận mà chính người viết vừa rút ra.\n3. 考えるようになりました = đã dần bắt đầu nghĩ; diễn tả thay đổi quan điểm sau khi biết có người thấy máy nhiều chức năng khó dùng.\n4. 考えただろうと思います = tôi nghĩ (ai đó) có lẽ đã nghĩ; là suy đoán về suy nghĩ quá khứ, không hợp với chủ thể người kể và mạch tự nhận ra.\nDịch câu chứa chỗ trống: “Biết được điều đó, tôi đã dần nghĩ rằng mỗi người có quan niệm khác nhau về điều gì là ‘tiện lợi’.”\nGhi nhớ: 「Vるようになる」 = dần bắt đầu/thành ra V; thường nêu một thay đổi về hành vi hoặc suy nghĩ."
+    }
+  ]
+}

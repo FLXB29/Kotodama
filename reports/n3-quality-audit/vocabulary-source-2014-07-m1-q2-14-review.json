@@ -1,0 +1,30 @@
+{
+  "reviewedDate": "2026-09-25",
+  "examId": "toan-n3-201407-full",
+  "scope": "Vocabulary Mondai 1 questions 2-5 and 7-14, completing the source transcription and answer-key audit for questions 1-14.",
+  "sources": {
+    "questionFile": "5. N3 7-2014.pdf",
+    "questionFileId": "1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C",
+    "questionSourceUrl": "https://drive.google.com/file/d/1oRFJ0VVyVbfT4YmoJ03-bJWQsrYgJ05C/view",
+    "questionPage": 1,
+    "answerFile": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "answerFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "answerPage": 9,
+    "answerKeySource": "Google Drive preview of ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf, page 9; visually checked in the connected Chrome session."
+  },
+  "method": "Compared each source prompt and all four options with page 1 of the rendered exam PDF, then compared the stored answer with the corresponding Vocabulary Mondai 1 or 2 answer row on page 9 of the separate answer-key PDF.",
+  "questions": [
+    { "printedNumber": 2, "questionId": "toan_q_2014_07_2", "sourcePrompt": "メールアドレスは覚えていません。", "sourceOptions": ["おしえて", "おぼえて", "かえて", "かんがえて"], "answerKeyAnswer": 2 },
+    { "printedNumber": 3, "questionId": "toan_q_2014_07_3", "sourcePrompt": "新しいサービスの広告はまだできていません。", "sourceOptions": ["こうこく", "ほうこく", "こうごく", "ほうごく"], "answerKeyAnswer": 1 },
+    { "printedNumber": 4, "questionId": "toan_q_2014_07_4", "sourcePrompt": "今日の試合の相手は強かった。", "sourceOptions": ["そうて", "あいしゅ", "あいて", "そうしゅ"], "answerKeyAnswer": 3 },
+    { "printedNumber": 5, "questionId": "toan_q_2014_07_5", "sourcePrompt": "来月、スポーツ大会があります。", "sourceOptions": ["たいがい", "だいかい", "たいかい", "だいがい"], "answerKeyAnswer": 3 },
+    { "printedNumber": 7, "questionId": "toan_q_2014_07_7", "sourcePrompt": "うるさくて仕事に集中できない。", "sourceOptions": ["しゅじゅう", "しゅちゅう", "しゅうじゅう", "しゅうちゅう"], "answerKeyAnswer": 4 },
+    { "printedNumber": 8, "questionId": "toan_q_2014_07_8", "sourcePrompt": "食器売り場はどこですか。", "sourceOptions": ["しょくき", "しょっき", "しょくひん", "しょっぴん"], "answerKeyAnswer": 2 },
+    { "printedNumber": 9, "questionId": "toan_q_2014_07_9", "sourcePrompt": "子どもが壁に絵を書いてしまったので、けしてきれいにした。", "sourceOptions": ["流して", "洗いて", "消して", "清して"], "answerKeyAnswer": 3 },
+    { "printedNumber": 10, "questionId": "toan_q_2014_07_10", "sourcePrompt": "風邪で学校をけっせきした。", "sourceOptions": ["休座", "体席", "欠座", "欠席"], "answerKeyAnswer": 4 },
+    { "printedNumber": 11, "questionId": "toan_q_2014_07_11", "sourcePrompt": "野菜をこまかく切ってください。", "sourceOptions": ["細かく", "短かく", "丸かく", "角かく"], "answerKeyAnswer": 1 },
+    { "printedNumber": 12, "questionId": "toan_q_2014_07_12", "sourcePrompt": "このアパートにはわかい人がたくさん住んでいる。", "sourceOptions": ["孝い", "苦い", "老い", "若い"], "answerKeyAnswer": 4 },
+    { "printedNumber": 13, "questionId": "toan_q_2014_07_13", "sourcePrompt": "ふくすうの写真からいいものを選んだ。", "sourceOptions": ["複数", "復数", "複枚", "復枚"], "answerKeyAnswer": 1 },
+    { "printedNumber": 14, "questionId": "toan_q_2014_07_14", "sourcePrompt": "米の輸入量がげんしょうしている。", "sourceOptions": ["減小", "減少", "現少", "現小"], "answerKeyAnswer": 2 }
+  ]
+}

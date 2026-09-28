@@ -1,0 +1,717 @@
+- link "Chuyển đến nội dung chính":
+  - /url: "#main-content"
+- navigation "Điều hướng chính":
+  - button "Kotodama":
+    - generic: Kotodama
+  - button "Trang chủ":
+    - text: Trang chủ
+  - button "Từ Điển":
+    - text: Từ Điển
+  - button "Ôn Tập SRS Anki":
+    - text: Ôn Tập SRS
+    - generic: Anki
+  - button "Thi JLPT":
+    - text: Thi JLPT
+  - button "Anime":
+    - text: Anime
+  - button "Video AI":
+    - text: Video AI
+  - 'generic "Chuỗi học tập liên tục: 0 ngày"':
+    - text: "0"
+  - text: "0"
+  - button "Đăng nhập":
+    - text: Đăng nhập
+- main:
+  - paragraph: Luyện thi JLPT
+  - button "Quay lại":
+    - text: Quay lại
+  - generic: N3
+  - generic: 180 ĐIỂM
+  - heading "JLPT N3 — Tháng 12, năm 2025" [level=1]
+  - generic: 総合模擬試験 • Thi Thử Trọn Gói
+  - generic: Chế độ học đáp án
+  - button "1. Từ vựng (文字・語彙) 言語知識（文字・語彙） 0/35":
+    - generic: 1. Từ vựng (文字・語彙)
+    - generic: 言語知識（文字・語彙）
+    - generic: 0/35
+  - button "2. Ngữ pháp & Đọc hiểu (文法・読解) 文法・読解 0/38":
+    - generic: 2. Ngữ pháp & Đọc hiểu (文法・読解)
+    - generic: 文法・読解
+    - generic: 0/38
+  - button "3. Nghe hiểu (聴解) 聴解 0/28":
+    - generic: 3. Nghe hiểu (聴解)
+    - generic: 聴解
+    - generic: 0/28
+  - generic: Mondai 1
+  - heading "Kiến thức ngôn ngữ (Từ vựng) - Mondai 1" [level=2]
+  - paragraph: 問題 1 ______ のことばの読み方として最もよいものを、1・2・3・4 から一つ選びなさい。
+  - generic: "1"
+  - paragraph:
+    - strong: １ これは西洋の建物の写真です。
+  - button "1 1 せよう":
+    - generic: "1"
+    - generic: 1 せよう
+  - button "2 2 せいゆう":
+    - generic: "2"
+    - generic: 2 せいゆう
+  - button "3 3 せいよう":
+    - generic: "3"
+    - generic: 3 せいよう
+  - button "4 4 せゆう":
+    - generic: "4"
+    - generic: 4 せゆう
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Đáp án 3: 西洋 đọc là せいよう, nghĩa là phương Tây. Dịch cả câu: Đây là bức ảnh chụp một tòa nhà phương Tây. 西 đọc せい và 洋 đọc よう. Phương án 1 せよう thiếu い trong âm của 西; 2 せいゆう đọc sai 洋 thành ゆう; 4 せゆう vừa thiếu い vừa đọc sai 洋. Ghi nhớ: 西洋（せいよう）= phương Tây; khi chỉ có kana, không gán nghĩa chữ Hán cho cách đọc sai."
+  - generic: "2"
+  - paragraph:
+    - strong: ２ 今回はとても苦しい試合だった
+    - text: 。
+  - button "1 1 おしい":
+    - generic: "1"
+    - generic: 1 おしい
+  - button "2 2 くるしい":
+    - generic: "2"
+    - generic: 2 くるしい
+  - button "3 3 くやしい":
+    - generic: "3"
+    - generic: 3 くやしい
+  - button "4 4 きびしい":
+    - generic: "4"
+    - generic: 4 きびしい
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "2. 苦しい (Khó khăn/Khổ sở) Đáp án đúng: 2. くるしい Giải thích: Dùng để chỉ trạng thái đau đớn, khó khăn về tinh thần hoặc thể chất. Các từ khác: 1. おしい (Đáng tiếc), 3. くやしい (Hối tiếc/Cay cú), 4. きびしい (Nghiêm khắc)."
+  - generic: "3"
+  - paragraph:
+    - strong: ３ この手紙は他人に見せないでください。
+  - button "1 1 たんじん":
+    - generic: "1"
+    - generic: 1 たんじん
+  - button "2 2 たじん":
+    - generic: "2"
+    - generic: 2 たじん
+  - button "3 3 たんにん":
+    - generic: "3"
+    - generic: 3 たんにん
+  - button "4 4 たにん":
+    - generic: "4"
+    - generic: 4 たにん
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "3. 他人 (Người khác/Người lạ) Đáp án đúng: 4. たにん Giải thích: 他 (Tha/Khác) đọc là \"た\", 人 (Nhân) đọc là \"にん\". Các từ khác: 1. たんじん, 2. たじん, 3. たんにん (đều là cách đọc sai cho từ này)."
+  - generic: "4"
+  - paragraph:
+    - strong: ４ 昨日は腹痛で学校を休みました。
+  - button "1 1 ふくつう":
+    - generic: "1"
+    - generic: 1 ふくつう
+  - button "2 2 ふくつ":
+    - generic: "2"
+    - generic: 2 ふくつ
+  - button "3 3 ずつう":
+    - generic: "3"
+    - generic: 3 ずつう
+  - button "4 4 ずつ":
+    - generic: "4"
+    - generic: 4 ずつ
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "4. 腹痛 (Đau bụng) Đáp án đúng: 1. ふくつう Giải thích: 腹 (Phúc/Bụng) đọc là \"ふく\", 痛 (Thống/Đau) đọc là \"つう\". Các từ khác: 3. ずつう (Đau đầu - 頭痛)."
+  - generic: "5"
+  - paragraph:
+    - strong: ５ 次の駅が終点です。
+  - button "1 1 しゅうでん":
+    - generic: "1"
+    - generic: 1 しゅうでん
+  - button "2 2 しゅうてん":
+    - generic: "2"
+    - generic: 2 しゅうてん
+  - button "3 3 じゅうてん":
+    - generic: "3"
+    - generic: 3 じゅうてん
+  - button "4 4 じゅうでん":
+    - generic: "4"
+    - generic: 4 じゅうでん
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "5. 終点 (Trạm cuối/Điểm kết thúc) Đáp án đúng: 2. しゅうてん Giải thích: 終 (Chung) đọc là \"しゅう\", 点 (Điểm) đọc là \"てん\". Các từ khác: 1. しゅうでん (Chuyến tàu cuối - 終電)."
+  - generic: "6"
+  - paragraph:
+    - strong: ６ 森田さんが泣いていました。
+  - button "1 1 はたらいて":
+    - generic: "1"
+    - generic: 1 はたらいて
+  - button "2 2 おどろいて":
+    - generic: "2"
+    - generic: 2 おどろいて
+  - button "3 3 ないて":
+    - generic: "3"
+    - generic: 3 ないて
+  - button "4 4 やいて":
+    - generic: "4"
+    - generic: 4 やいて
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "6. 泣いて (Khóc) Đáp án đúng: 3. ないて Giải thích: Động từ 泣く (Naku) chia thể Te thành 泣いて. Các từ khác: 1. はたらいて (Làm việc), 2. おどろいて (Ngạc nhiên), 4. やいて (Nướng)."
+  - generic: "7"
+  - paragraph:
+    - strong: ７ この着物の帯は美しいです。
+  - button "1 1 おび":
+    - generic: "1"
+    - generic: 1 おび
+  - button "2 2 えり":
+    - generic: "2"
+    - generic: 2 えり
+  - button "3 3 そで":
+    - generic: "3"
+    - generic: 3 そで
+  - button "4 4 いと":
+    - generic: "4"
+    - generic: 4 いと
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "7. 帯 (Thắt lưng Obi) Đáp án đúng: 1. おび Giải thích: Loại thắt lưng dùng cho Kimono. Các từ khác: 2. えり (Cổ áo), 3. そで (Tay áo), 4. いと (Sợi chỉ)."
+  - generic: "8"
+  - paragraph:
+    - strong: ８ 昨日母から郵便が届いた。
+  - button "1 1 ようべん":
+    - generic: "1"
+    - generic: 1 ようべん
+  - button "2 2 ようびん":
+    - generic: "2"
+    - generic: 2 ようびん
+  - button "3 3 ゆうべん":
+    - generic: "3"
+    - generic: 3 ゆうべん
+  - button "4 4 ゆうびん":
+    - generic: "4"
+    - generic: 4 ゆうびん
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "8. 郵便 (Bưu phẩm/Bưu điện) Đáp án đúng: 4. ゆうびん Giải thích: 郵 (Bưu) đọc là \"ゆう\", 便 (Tiện) đọc là \"びん\". Các từ khác: Cách đọc khác dễ nhầm lẫn nhưng không đúng."
+  - generic: Mondai 2
+  - heading "Kiến thức ngôn ngữ (Từ vựng) - Mondai 2" [level=2]
+  - paragraph: 問題 2 ______ のことばを漢字で書くとき、最もよいものを、1・2・3・4 から一つ選びなさい。
+  - generic: "9"
+  - paragraph:
+    - strong: ９ このあたりはマンションが多い。
+  - button "1 1 通り":
+    - generic: "1"
+    - generic: 1 通り
+  - button "2 2 辺り":
+    - generic: "2"
+    - generic: 2 辺り
+  - button "3 3 返り":
+    - generic: "3"
+    - generic: 3 返り
+  - button "4 4 迎り":
+    - generic: "4"
+    - generic: 4 迎り
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "9. あたり (Vùng lân cận) Đáp án đúng: 2. 辺り (Cận/Vùng lân cận). Các từ khác: 1. 通り (Đường đi), 3. 返り (Sự quay lại), 4. 迎り (Không có nghĩa này)."
+  - generic: "10"
+  - paragraph:
+    - strong: １０ 次のずを見てください。
+  - button "1 1 絵":
+    - generic: "1"
+    - generic: 1 絵
+  - button "2 2 図":
+    - generic: "2"
+    - generic: 2 図
+  - button "3 3 表":
+    - generic: "3"
+    - generic: 3 表
+  - button "4 4 例":
+    - generic: "4"
+    - generic: 4 例
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "10. ず (Bản vẽ/Sơ đồ) Đáp án đúng: 2. 図 (Đồ/Sơ đồ). Các từ khác: 1. 絵 (Tranh), 3. 表 (Bảng biểu), 4. 例 (Ví dụ)."
+  - generic: "11"
+  - paragraph:
+    - strong: １１ 貯金が少しへりました。
+  - button "1 1 細りました":
+    - generic: "1"
+    - generic: 1 細りました
+  - button "2 2 低りました":
+    - generic: "2"
+    - generic: 2 低りました
+  - button "3 3 消りました":
+    - generic: "3"
+    - generic: 3 消りました
+  - button "4 4 減りました":
+    - generic: "4"
+    - generic: 4 減りました
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "11. へり (Giảm đi) Đáp án đúng: 4. 減りました (Giảm - 減る). Các từ khác: 1. 細 (Gầy/nhỏ đi), 2. 低 (Thấp đi), 3. 消 (Biến mất)."
+  - generic: "12"
+  - paragraph:
+    - strong: １２ 来年、ここにほどうができるそうです。
+  - button "1 1 歩動":
+    - generic: "1"
+    - generic: 1 歩動
+  - button "2 2 走道":
+    - generic: "2"
+    - generic: 2 走道
+  - button "3 3 歩道":
+    - generic: "3"
+    - generic: 3 歩道
+  - button "4 4 走動":
+    - generic: "4"
+    - generic: 4 走動
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "12. ほどう (Vỉa hè) Đáp án đúng: 3. 歩道 (Bộ Đạo - Đường đi bộ). Giải thích: 歩 (Đi bộ) + 道 (Đường)."
+  - generic: "13"
+  - paragraph:
+    - strong: １３ パソコンのキーボードをうつ音が聞こえる。
+  - button "1 1 打つ":
+    - generic: "1"
+    - generic: 1 打つ
+  - button "2 2 押つ":
+    - generic: "2"
+    - generic: 2 押つ
+  - button "3 3 指つ":
+    - generic: "3"
+    - generic: 3 指つ
+  - button "4 4 折つ":
+    - generic: "4"
+    - generic: 4 折つ
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "13. うつ (Đánh/Gõ) Đáp án đúng: 1. 打つ (Đả/Gõ phím). Các từ khác: 2. 押す (Ấn), 3. 指 (Ngón tay)."
+  - generic: "14"
+  - paragraph:
+    - strong: １４ 山田さんは、まじめなせいかくだ
+    - text: 。
+  - button "1 1 姓格":
+    - generic: "1"
+    - generic: 1 姓格
+  - button "2 2 性各":
+    - generic: "2"
+    - generic: 2 性各
+  - button "3 3 性格":
+    - generic: "3"
+    - generic: 3 性格
+  - button "4 4 姓各":
+    - generic: "4"
+    - generic: 4 姓各
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "14. せいかく (Tính cách) Đáp án đúng: 3. 性格 (Tính Cách). Giải thích: Chữ 性 (Tính) trong tính tình và 格 (Cách) trong quy cách."
+  - generic: Mondai 3
+  - heading "Kiến thức ngôn ngữ (Từ vựng) - Mondai 3" [level=2]
+  - paragraph: 問題 3 ( ) に入れるのに最もよいものを、1・2・3・4 から一つえらびなさい。
+  - generic: "15"
+  - paragraph:
+    - strong: １５ 私の国と日本は ( ) が 12 時間あるので、昼と夜が反対だ。
+  - button "1 1 時代":
+    - generic: "1"
+    - generic: 1 時代
+  - button "2 2 時期":
+    - generic: "2"
+    - generic: 2 時期
+  - button "3 3 時速":
+    - generic: "3"
+    - generic: 3 時速
+  - button "4 4 時差":
+    - generic: "4"
+    - generic: 4 時差
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Nước tôi và Nhật Bản vì có (chênh lệch múi giờ) 12 tiếng nên ngày và đêm ngược nhau. Tại sao chọn 4: 時差 (Jisa - Thời sai) nghĩa là sự chênh lệch về thời gian giữa các múi giờ khác nhau trên thế giới. Các phương án sai: 時代 (Jidai): Thời đại, thời kỳ lịch sử (ví dụ: thời Edo). 時期 (Jiki): Thời điểm, thời kỳ (ví dụ: thời kỳ gặt hái). 時速 (Jisoku): Tốc độ theo giờ (km/h)."
+  - generic: "16"
+  - paragraph:
+    - strong: １６ 自転車が壊れてしまい、( ) ので歩いて家に帰りました。
+  - button "1 1 くわしい":
+    - generic: "1"
+    - generic: 1 くわしい
+  - button "2 2 だらしない":
+    - generic: "2"
+    - generic: 2 だらしない
+  - button "3 3 しかたない":
+    - generic: "3"
+    - generic: 3 しかたない
+  - button "4 4 うらやましい":
+    - generic: "4"
+    - generic: 4 うらやましい
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Xe đạp bị hỏng mất rồi, (vì không còn cách nào khác) nên tôi đã đi bộ về nhà. Tại sao chọn 3: しかたない (Shikatanai) nghĩa là \"không còn cách nào khác\", dùng khi gặp tình huống ngoài ý muốn mà phải chấp nhận. Các phương án sai: くわしい (Kuwashii): Tường tận, am hiểu chi tiết. だらしない (Darashinai): Cẩu thả, luộm thuộm (chỉ tính cách/thái độ). うらやましい (Urayamashii): Ngưỡng mộ, ghen tị (với thành công của người khác)."
+  - generic: "17"
+  - paragraph:
+    - strong: １７ 病気の人を治したくて、高校生のときに医者になることを ( ) した。
+  - button "1 1 予想":
+    - generic: "1"
+    - generic: 1 予想
+  - button "2 2 決心":
+    - generic: "2"
+    - generic: 2 決心
+  - button "3 3 証明":
+    - generic: "3"
+    - generic: 3 証明
+  - button "4 4 仮定":
+    - generic: "4"
+    - generic: 4 仮定
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Vì muốn chữa bệnh cho mọi người, khi còn là học sinh cấp 3 tôi đã (quyết tâm) trở thành bác sĩ. Tại sao chọn 2: 決心 (Kesshin - Quyết tâm) là đưa ra một quyết định quan trọng cho bản thân và giữ vững ý chí đó. Các phương án sai: 予想 (Yosou): Dự đoán (về kết quả trong tương lai). 証明 (Shoumei): Chứng minh (làm sáng tỏ sự thật). 仮定 (Katei): Giả định (giả sử một điều không có thật)."
+  - generic: "18"
+  - paragraph:
+    - strong: １８ 彼は、いつも ( ) を言って、みんなを笑わせる面白い人だ。
+  - button "1 1 感想":
+    - generic: "1"
+    - generic: 1 感想
+  - button "2 2 文句":
+    - generic: "2"
+    - generic: 2 文句
+  - button "3 3 冗談":
+    - generic: "3"
+    - generic: 3 冗談
+  - button "4 4 自慢":
+    - generic: "4"
+    - generic: 4 自慢
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "18. 彼は、いつも（ 3 冗談 ）を言って、みんなを笑わせる面白い人だ。 Dịch: Anh ấy lúc nào cũng nói (đùa), là một người thú vị hay làm mọi người cười. Tại sao chọn 3: 冗談 (Joudan - Nhũng đàm) nghĩa là lời nói đùa, chuyện tiếu lâm. Các phương án sai: 感想 (Kansou): Cảm tưởng, nhận xét sau khi trải nghiệm điều gì đó. 文句 (Monku): Câu cú hoặc lời phàn nàn, kêu ca. 自慢 (Jiman): Khoe khoang, tự mãn về bản thân."
+  - generic: "19"
+  - paragraph:
+    - strong: １９ ホテルに到着したが、まだ部屋に入れなかったので、受付に荷物を ( ) 出かけた。
+  - button "1 1 預けて":
+    - generic: "1"
+    - generic: 1 預けて
+  - button "2 2 泊めて":
+    - generic: "2"
+    - generic: 2 泊めて
+  - button "3 3 配って":
+    - generic: "3"
+    - generic: 3 配って
+  - button "4 4 与えて":
+    - generic: "4"
+    - generic: 4 与えて
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "19. ホテルに到着したが、まだ部屋に入れなかったので、受付に荷物を（ 1 預けて ）出かけた。 Dịch: Đã đến khách sạn nhưng vì chưa được vào phòng nên tôi đã (gửi) hành lý ở quầy lễ tân rồi đi ra ngoài. Tại sao chọn 1: 預ける (Azukeru) là gửi vật gì đó cho ai đó trông giữ hộ. Các phương án sai: 2. 泊めて (Tomete): Cho ở lại trọ (dùng cho người). 3. 配って (Kubatte): Phát, phân phát (tờ rơi, quà cáp). 4. 与えて (Ataete): Ban tặng, gây ra (thường dùng cho cấp trên cho cấp dưới hoặc gây ra ảnh hưởng)."
+  - generic: "20"
+  - paragraph:
+    - strong: ２０ 空港に着いたとき、飛行機の出発が遅れるという ( ) が聞こえた。
+  - button "1 1 ガイダンス":
+    - generic: "1"
+    - generic: 1 ガイダンス
+  - button "2 2 アナウンス":
+    - generic: "2"
+    - generic: 2 アナウンス
+  - button "3 3 コマーシャル":
+    - generic: "3"
+    - generic: 3 コマーシャル
+  - button "4 4 スピーチ":
+    - generic: "4"
+    - generic: 4 スピーチ
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Khi đến sân bay, tôi đã nghe thấy (thông báo) rằng chuyến bay sẽ xuất phát muộn. Tại sao chọn 2: アナウンス (Announcement) là thông báo qua loa phát thanh tại nơi công cộng. Các phương án sai: ガイダンス (Guidance): Sự hướng dẫn, chỉ dẫn (thường là trong học tập/công việc). コマーシャル (Commercial): Quảng cáo trên TV/Radio. スピーチ (Speech): Bài diễn văn, bài phát biểu trước đám đông."
+  - generic: "21"
+  - paragraph:
+    - strong: ２１ 休日で渋滞すると思いますが、( ) 道はすいていました。
+  - button "1 1 突然":
+    - generic: "1"
+    - generic: 1 突然
+  - button "2 2 当然":
+    - generic: "2"
+    - generic: 2 当然
+  - button "3 3 年中":
+    - generic: "3"
+    - generic: 3 年中
+  - button "4 4 案外":
+    - generic: "4"
+    - generic: 4 案外
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Tôi cứ nghĩ ngày nghỉ thì sẽ tắc đường, nhưng con đường (hóa ra/bất ngờ thay) lại khá vắng. Tại sao chọn 4: 案外 (Angai - Án ngoại) nghĩa là trái với dự đoán ban đầu, nằm ngoài suy nghĩ. Các phương án sai: 突然 (Totsuzen): Đột nhiên (xảy ra bất thình lình). 当然 (Touzen): Đương nhiên, dĩ nhiên (đúng như dự đoán). 年中 (Nenjuu): Suốt cả năm, quanh năm."
+  - generic: "22"
+  - paragraph:
+    - strong: ２２ 彼は若いとき非常に苦労したが、一生懸命 ( ) して、立派な政治家になった。
+  - button "1 1 努力":
+    - generic: "1"
+    - generic: 1 努力
+  - button "2 2 納得":
+    - generic: "2"
+    - generic: 2 納得
+  - button "3 3 期待":
+    - generic: "3"
+    - generic: 3 期待
+  - button "4 4 注意":
+    - generic: "4"
+    - generic: 4 注意
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Anh ấy thời trẻ đã cực khổ vô cùng nhưng nhờ (nỗ lực) hết mình mà đã trở thành một chính trị gia tuyệt vời. Tại sao chọn 1: 努力 (Doryoku - Nỗ lực) là cố gắng hết sức để đạt mục tiêu. Các phương án sai: 2. 納得 (Nattoku): Sự thấu hiểu, đồng ý (với lý lẽ của người khác). 3. 期待 (Kitai): Sự kỳ vọng, mong đợi vào người khác. 4. 注意 (Chuui): Sự chú ý, nhắc nhở."
+  - generic: "23"
+  - paragraph:
+    - strong: ２３ 時間がなくて、朝も昼もご飯を食べられなかったので、おなかが ( ) だ。
+  - button "1 1 ぺらぺら":
+    - generic: "1"
+    - generic: 1 ぺらぺら
+  - button "2 2 からから":
+    - generic: "2"
+    - generic: 2 からから
+  - button "3 3 ぺこぺこ":
+    - generic: "3"
+    - generic: 3 ぺこぺこ
+  - button "4 4 どきどき":
+    - generic: "4"
+    - generic: 4 どきどき
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Không có thời gian, sáng cũng như trưa đều chưa được ăn gì nên bụng (đói meo). Tại sao chọn 3: ぺこぺこ (Pekopeko) là từ láy mô tả trạng thái rất đói bụng. Các phương án sai: ぺらぺら (Perapera): Nói lưu loát (ngoại ngữ) hoặc vật gì đó mỏng dính. からから (Karakara): Khô khốc (cổ họng khát nước) hoặc tiếng cười giòn giã. どきどき (Dokidoki): Tim đập thình thịch (hồi hộp, lo lắng)."
+  - generic: "24"
+  - paragraph:
+    - strong: ２４ 林さんが会社を辞めるというのは、林さんから直接聞いたので ( ) 情報です。
+  - button "1 1 満足な":
+    - generic: "1"
+    - generic: 1 満足な
+  - button "2 2 正常な":
+    - generic: "2"
+    - generic: 2 正常な
+  - button "3 3 完全な":
+    - generic: "3"
+    - generic: 3 完全な
+  - button "4 4 確実な":
+    - generic: "4"
+    - generic: 4 確実な
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Việc anh Hayashi nghỉ việc là thông tin (xác thực) vì tôi đã nghe trực tiếp từ anh ấy. Tại sao chọn 4: 確実 (Kakujitsu - Xác thực) nghĩa là chắc chắn, có căn cứ rõ ràng, không sai lệch. Các phương án sai: 満足 (Manzoku): Thỏa mãn, hài lòng. 正常 (Seijou): Bình thường (trạng thái hoạt động bình thường, không lỗi). 完全 (Kanzen): Hoàn hảo, đầy đủ không thiếu sót."
+  - generic: "25"
+  - paragraph:
+    - strong: ２５ 電気の工事の人が来て、部屋の壁にエアコンを ( ) くれた。
+  - button "1 1 取り付けて":
+    - generic: "1"
+    - generic: 1 取り付けて
+  - button "2 2 取り上げて":
+    - generic: "2"
+    - generic: 2 取り上げて
+  - button "3 3 受け入れて":
+    - generic: "3"
+    - generic: 3 受け入れて
+  - button "4 4 引き受けて":
+    - generic: "4"
+    - generic: 4 引き受けて
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Thợ điện đã đến và (lắp đặt) máy điều hòa lên tường phòng giúp tôi. Tại sao chọn 1: 取り付け (Toritsuke) là lắp đặt máy móc, thiết bị vào một vị trí cố định. Các phương án sai: 2. 取り上げて (Toriagete): Tịch thu, tước đoạt hoặc đề xuất một đề tài. 3. 受け入れて (Ukeirete): Tiếp nhận (người/văn hóa/ý kiến). 4. 引き受けて (Hikiukete): Đảm nhận, nhận lời làm việc gì đó."
+  - generic: Mondai 4
+  - heading "Kiến thức ngôn ngữ (Từ vựng) - Mondai 4" [level=2]
+  - paragraph: 問題 4 ______ に意味が最も近いものを、1・2・3・4 から一つ選びなさい。
+  - generic: "26"
+  - paragraph:
+    - strong: ２６ 清潔なタオルで拭いてください。
+  - button "1 1 柔らかい":
+    - generic: "1"
+    - generic: 1 柔らかい
+  - button "2 2 ぬれた":
+    - generic: "2"
+    - generic: 2 ぬれた
+  - button "3 3 乾いた":
+    - generic: "3"
+    - generic: 3 乾いた
+  - button "4 4 きれいな":
+    - generic: "4"
+    - generic: 4 きれいな
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Đáp án 4: 清潔な nghĩa là sạch sẽ, gần nghĩa nhất với きれいな. Dịch câu: Xin hãy lau bằng chiếc khăn sạch. Phương án 1 柔らかい là mềm; 2 ぬれた là ướt; 3 乾いた là khô. Những tính chất đó không đồng nghĩa với sạch. Ghi nhớ: 清潔な / きれいな nhấn mạnh không bẩn; trợ từ で trong タオルで拭く chỉ dụng cụ dùng để lau."
+  - generic: "27"
+  - paragraph:
+    - strong: ２７ さっきご飯を食べました。
+  - button "1 1 急いで":
+    - generic: "1"
+    - generic: 1 急いで
+  - button "2 2 少し遅れて":
+    - generic: "2"
+    - generic: 2 少し遅れて
+  - button "3 3 少し前に":
+    - generic: "3"
+    - generic: 3 少し前に
+  - button "4 4 ゆっくり":
+    - generic: "4"
+    - generic: 4 ゆっくり
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Tôi (vừa nãy) đã ăn cơm xong. Từ gạch chân: さっき (Sakki): Chỉ một thời điểm cách hiện tại một khoảng ngắn (vừa mới đây). Đáp án đúng: 3. 少し前に (Một chút trước đó). Cụm này giải thích chính xác khoảng thời gian của \"sakki\". Giải thích các phương án khác: 急いで (Isoide): Khẩn trương, vội vàng (chỉ cách thức hành động). 少し遅れて (Sukoshi okurete): Muộn một chút. ゆっくり (Yukkuri): Thong thả, chậm rãi."
+  - generic: "28"
+  - paragraph:
+    - strong: ２８ これはキッチンに置いてください。
+  - button "1 1 居間":
+    - generic: "1"
+    - generic: 1 居間
+  - button "2 2 台所":
+    - generic: "2"
+    - generic: 2 台所
+  - button "3 3 廊下":
+    - generic: "3"
+    - generic: 3 廊下
+  - button "4 4 風呂":
+    - generic: "4"
+    - generic: 4 風呂
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Cái này hãy để ở (nhà bếp). Từ gạch chân: キッチン (Kitchen): Từ mượn tiếng Anh chỉ nhà bếp. Đáp án đúng: 2. 台所 (Daidokoro): Đây là từ thuần Nhật có nghĩa tương đương là nhà bếp. Giải thích các phương án khác: 居間 (Ima): Phòng khách (nơi gia đình sinh hoạt chung). 廊下 (Rouka): Hành lang. 風呂 (Furo): Nhà tắm/Bồn tắm."
+  - generic: "29"
+  - paragraph:
+    - strong: ２９ 今、野口さんが指導しています。
+  - button "1 1 調べて":
+    - generic: "1"
+    - generic: 1 調べて
+  - button "2 2 答えて":
+    - generic: "2"
+    - generic: 2 答えて
+  - button "3 3 聞いて":
+    - generic: "3"
+    - generic: 3 聞いて
+  - button "4 4 教えて":
+    - generic: "4"
+    - generic: 4 教えて
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Dịch: Bây giờ, anh Noguchi đang (hướng dẫn/chỉ dạy). Từ gạch chân: 指導 (Shidou - Chỉ đạo): Nghĩa là hướng dẫn, dạy bảo, dẫn dắt ai đó làm việc gì đó. Đáp án đúng: 4. 教えて (Oshiete): Dạng Te của động từ \"Oshieru\" (Dạy/Cho biết), có nghĩa gần nhất với việc hướng dẫn. Giải thích các phương án khác: 調べて (Shirabete): Điều tra, tra cứu, tìm hiểu. 答えて (Kotaete): Trả lời. 聞いて (Kiite): Nghe hoặc Hỏi."
+  - generic: "30"
+  - paragraph:
+    - strong: ３０ そろそろおしまいにしましょう。
+  - button "1 1 休みましょう":
+    - generic: "1"
+    - generic: 1 休みましょう
+  - button "2 2 食事にしましょう":
+    - generic: "2"
+    - generic: 2 食事にしましょう
+  - button "3 3 終わりにしましょう":
+    - generic: "3"
+    - generic: 3 終わりにしましょう
+  - button "4 4 寝ましょう":
+    - generic: "4"
+    - generic: 4 寝ましょう
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "Đáp án 3: おしまいにしましょう gần nghĩa với 終わりにしましょう — hãy kết thúc. Dịch câu: Chúng ta sắp kết thúc thôi. Phương án 1 là hãy nghỉ, 2 là hãy ăn, 4 là hãy ngủ; không phương án nào diễn đạt kết thúc công việc. Ghi nhớ: おしまい là danh từ; mẫu ～にする diễn đạt quyết định/chuyển sang trạng thái đó. Câu tự nhiên là おしまいにしましょう, không phải おしまいましょう."
+  - generic: Mondai 5
+  - heading "Kiến thức ngôn ngữ (Từ vựng) - Mondai 5" [level=2]
+  - paragraph: 問題 5 次の言葉の使い方として最も近いものを、1・2・3・4 から一つ選びなさい。
+  - generic: "31"
+  - table:
+    - rowgroup:
+      - row "３１ にぎる":
+        - paragraph: ３１ にぎる
+  - button "1 1 昨日の引っ越しで何度も重い家具をにぎったので体が痛い。":
+    - generic: "1"
+    - generic: 1 昨日の引っ越しで何度も重い家具をにぎったので体が痛い。
+  - button "2 2 お祭りで弟が迷子にならないように、弟の手をしっかりとにぎった。":
+    - generic: "2"
+    - generic: 2 お祭りで弟が迷子にならないように、弟の手をしっかりとにぎった。
+  - button "3 3 風で帽子が飛ばされたが、石原さんが走ってにぎってくれた。":
+    - generic: "3"
+    - generic: 3 風で帽子が飛ばされたが、石原さんが走ってにぎってくれた。
+  - button "4 4 母親が、生まれたばかりの赤ちゃんを大事そうににぎっている。":
+    - generic: "4"
+    - generic: 4 母親が、生まれたばかりの赤ちゃんを大事そうににぎっている。
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "にぎる (Nắm) Cách dùng: Dùng bàn tay nắm chặt lấy một vật (thường có hình dài hoặc nhỏ) hoặc nắm tay người khác. Câu đúng: 2 (Nắm tay em trai để không bị lạc). Tại sao đúng: Đây là hành động vật lý dùng bàn tay bao quanh và giữ chặt lấy tay người khác, đúng đặc tính của từ."
+  - generic: "32"
+  - table:
+    - rowgroup:
+      - row "３２ 修理":
+        - paragraph: ３２ 修理
+  - button "1 1 今朝、妻とけんかしたので、早く仲を修理したい。":
+    - generic: "1"
+    - generic: 1 今朝、妻とけんかしたので、早く仲を修理したい。
+  - button "2 2 腕をけがしたとき、この病院で修理してもらった。":
+    - generic: "2"
+    - generic: 2 腕をけがしたとき、この病院で修理してもらった。
+  - button "3 3 自転車が壊れたので、買ったお店で修理してもらった。":
+    - generic: "3"
+    - generic: 3 自転車が壊れたので、買ったお店で修理してもらった。
+  - button "4 4 私が間違えた漢字を、先生が赤いペンで修理してくれた。":
+    - generic: "4"
+    - generic: 4 私が間違えた漢字を、先生が赤いペンで修理してくれた。
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "修理 (Sửa chữa) Cách dùng: Chuyên dùng cho máy móc, thiết bị, đồ vật bị hỏng hóc kỹ thuật (xe đạp, đồng hồ, máy tính). Câu đúng: 3 (Sửa xe đạp bị hỏng). Tại sao đúng: Xe đạp là vật dụng cơ khí, khi hỏng cần các thao tác kỹ thuật để khôi phục chức năng, gọi là \"修理\"."
+  - generic: "33"
+  - table:
+    - rowgroup:
+      - row "３３ 目的":
+        - paragraph: ３３ 目的
+  - button "1 1 今日はたくさん商品が売れて、目的の 10 万円を超えました。":
+    - generic: "1"
+    - generic: 1 今日はたくさん商品が売れて、目的の 10 万円を超えました。
+  - button "2 2 お店を予約するとき、窓側の席がいいと目的を伝えた。":
+    - generic: "2"
+    - generic: 2 お店を予約するとき、窓側の席がいいと目的を伝えた。
+  - button "3 3 来週から 1 か月海外に出張する目的なので、準備に忙しい。":
+    - generic: "3"
+    - generic: 3 来週から 1 か月海外に出張する目的なので、準備に忙しい。
+  - button "4 4 この研究の目的は、新しい薬の効果を調べることです。":
+    - generic: "4"
+    - generic: 4 この研究の目的は、新しい薬の効果を調べることです。
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "目的 (Mục đích) Cách dùng: Chỉ cái đích cuối cùng, ý nghĩa cốt lõi mà một hành động hoặc công trình hướng tới. Câu đúng: 4 (Mục đích của nghiên cứu này là tìm ra hiệu quả của thuốc mới). Tại sao đúng: Trả lời cho câu hỏi \"Làm việc đó để làm gì?\". Các câu khác thường nhầm với \"Mục tiêu - con số\" hoặc \"Dự định\"."
+  - generic: "34"
+  - table:
+    - rowgroup:
+      - row "３４ 懐かしい":
+        - paragraph: ３４ 懐かしい
+  - button "1 1 子どものときの写真を見て、懐かしい気持ちになった。":
+    - generic: "1"
+    - generic: 1 子どものときの写真を見て、懐かしい気持ちになった。
+  - button "2 2 ここは 800 年前に建てられた懐かしい寺なので、見学の人が多い。":
+    - generic: "2"
+    - generic: 2 ここは 800 年前に建てられた懐かしい寺なので、見学の人が多い。
+  - button "3 3 結婚して 30 年たったので、妻とは懐かしい関係だ。":
+    - generic: "3"
+    - generic: 3 結婚して 30 年たったので、妻とは懐かしい関係だ。
+  - button "4 4 私と田村さんは、会ってすぐに懐かしい友達になった。":
+    - generic: "4"
+    - generic: 4 私と田村さんは、会ってすぐに懐かしい友達になった。
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "懐かしい (Hoài niệm/Nhớ) Cách dùng: Diễn tả cảm giác xúc động khi gặp lại những thứ thuộc về quá khứ đã lâu không thấy. Câu đúng: 1 (Xem ảnh hồi nhỏ thấy nhớ quá). Tại sao đúng: Tấm ảnh là vật dẫn đưa cảm xúc về quá khứ, tạo ra sự hoài niệm đúng nghĩa của \"懐かしい\"."
+  - generic: "35"
+  - table:
+    - rowgroup:
+      - row "３５ 変化":
+        - paragraph: ３５ 変化
+  - button "1 1 友達の都合が悪くなって、食事の約束が来週に変化してしまった。":
+    - generic: "1"
+    - generic: 1 友達の都合が悪くなって、食事の約束が来週に変化してしまった。
+  - button "2 2 引っ越して住所が変化したので、みんなに知らせた。":
+    - generic: "2"
+    - generic: 2 引っ越して住所が変化したので、みんなに知らせた。
+  - button "3 3 インターネットが登場して、人々の生活は大きく変化した。":
+    - generic: "3"
+    - generic: 3 インターネットが登場して、人々の生活は大きく変化した。
+  - button "4 4 会議の司会は、水野さんから高橋さんに変化するそうです。":
+    - generic: "4"
+    - generic: 4 会議の司会は、水野さんから高橋さんに変化するそうです。
+  - generic: Giải thích chi tiết & Dịch nghĩa
+  - generic: "変化 (Thay đổi) Cách dùng: Sự biến đổi về trạng thái, tính chất hoặc hình dáng của một sự vật, hiện tượng (thường là sự thay đổi khách quan hoặc vĩ mô). Câu đúng: 3 (Internet làm cuộc sống con người thay đổi lớn). Tại sao đúng: Đây là sự biến đổi về bản chất đời sống xã hội theo thời gian. Các câu khác thường nhầm với \"Thay đổi lịch trình\" (変更) hoặc \"Thay đổi người\" (交代)."
+  - button "Phần trước" [disabled]:
+    - text: Phần trước
+  - generic: Phần 1/3 • 0/35 câu
+  - button "Sang 2. Ngữ pháp & Đọc hiểu (文法・読解)":
+    - text: Sang 2. Ngữ pháp & Đọc hiểu (文法・読解)
+  - generic: "1"
+  - generic: Từ vựng
+  - generic: 0/35
+  - generic "問題 1 ______ のことばの読み方として最もよいものを、1・2・3・4 から一つ選びなさい。"
+  - button "1"
+  - button "2"
+  - button "3"
+  - button "4"
+  - button "5"
+  - button "6"
+  - button "7"
+  - button "8"
+  - generic "問題 2 ______ のことばを漢字で書くとき、最もよいものを、1・2・3・4 から一つ選びなさい。"
+  - button "9"
+  - button "10"
+  - button "11"
+  - button "12"
+  - button "13"
+  - button "14"
+  - generic "問題 3 ( ) に入れるのに最もよいものを、1・2・3・4 から一つえらびなさい。"
+  - button "15"
+  - button "16"
+  - button "17"
+  - button "18"
+  - button "19"
+  - button "20"
+  - button "21"
+  - button "22"
+  - button "23"
+  - button "24"
+  - button "25"
+  - generic "問題 4 ______ に意味が最も近いものを、1・2・3・4 から一つ選びなさい。"
+  - button "26"
+  - button "27"
+  - button "28"
+  - button "29"
+  - button "30"
+  - generic "問題 5 次の言葉の使い方として最も近いものを、1・2・3・4 から一つ選びなさい。"
+  - button "31"
+  - button "32"
+  - button "33"
+  - button "34"
+  - button "35"
+  - generic: Đã chọn
+  - generic: Chưa làm
+  - generic: Đúng

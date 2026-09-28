@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-09-26T10:04:17.939Z",
+  "examId": "toan-n3-201612-full",
+  "section": "vocabulary M1 questions 1–35",
+  "questionSource": {
+    "file": "7. N3 12-2016.pdf",
+    "driveUrl": "https://drive.google.com/file/d/1ZPZIPaDo5BrgR-n0h5XUcpCOXR73Riz7/view",
+    "printedPages": [
+      1,
+      2,
+      3
+    ],
+    "visuallyComparedInChrome": true,
+    "promptAndOptionCount": {
+      "questions": 35,
+      "options": 140
+    }
+  },
+  "answerKeyReference": {
+    "title": "Đáp án kỳ thi JLPT tháng 12 năm 2016",
+    "url": "https://chuyenngoaingu.com/news/dap-an-ky-thi-jlpt-thang-12-nam-2016-201.aspx",
+    "type": "public secondary answer-key table; not an official JLPT document",
+    "matchedQuestions": 34,
+    "totalQuestions": 35,
+    "answerSequence": [
+      3,
+      2,
+      1,
+      3,
+      2,
+      4,
+      3,
+      1,
+      4,
+      3,
+      3,
+      2,
+      1,
+      4,
+      2,
+      4,
+      1,
+      3,
+      1,
+      3,
+      2,
+      4,
+      4,
+      1,
+      2,
+      4,
+      1,
+      3,
+      1,
+      2,
+      3,
+      2,
+      2,
+      1,
+      3
+    ]
+  },
+  "answerKeysMatchReference": {
+    "matchedCount": 34,
+    "totalCount": 35,
+    "mismatch": {
+      "questionNumber": 1,
+      "localAndLanguageCheckedAnswer": 4,
+      "publicTableAnswer": 3,
+      "resolution": "The PDF orders かんきゃく as choice 4, and an independent solution page gives the reading 観客（かんきゃく）. The table entry 3 conflicts with that reading, so answer 4 is retained and the discrepancy is disclosed."
+    }
+  },
+  "editedQuestionNumbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "previouslyReviewedQuestionNumbers": [
+    11,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "explanationCriteria": {
+    "contextualMeaningForCorrectWord": true,
+    "everyOptionExplained": true,
+    "fullVietnameseSentenceTranslation": true,
+    "misleadingLocalDictionaryMatchesRemovedFromEditedItems": true
+  },
+  "limitation": "The question text and options were visually checked against the Drive PDF. Thirty-four stored keys match the public secondary table. For question 1, the table conflicts with the reading かんきゃく printed as choice 4 and corroborated by an independent solution page, so the stored language-checked answer 4 is retained and the table discrepancy is disclosed. No official JLPT answer key was available for this review."
+}

@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-09-27T13:58:35.116Z",
+  "exam": "JLPT N3 December 2011",
+  "scope": "Reading Mondai 4, printed question 24 (internal question 59).",
+  "source": {
+    "type": "passage text stored with toan-n3-201112-full",
+    "pdfIndependentlyReviewed": false,
+    "relevantText": [
+      "日時とだいたいのご出席人数は伺っております",
+      "こちらにいらっしゃる日を知らせていただけないでしょうか",
+      "最終的な人数については、パーティー当日の 3 日までにご連絡"
+    ]
+  },
+  "answerReference": {
+    "officialKeyEstablished": false,
+    "basis": "The saved option 3 matches the explicit request in the passage; the other timing requirements are already known or due later."
+  },
+  "answerKeysChanged": 0,
+  "correction": {
+    "questionId": "toan_q_2011_12_59",
+    "previousExplanation": "Đáp án 3: Trước hết Tanaka cần báo cho nhà hàng số người cuối cùng có thể tham dự bữa tiệc. Email yêu cầu xác nhận số lượng chính thức để nhà hàng chuẩn bị.",
+    "answer": 3,
+    "selectedOption": "パーティーの相談をするためにレストランに行ける日",
+    "explanation": "Đáp án 3 — Trước hết, Tanaka cần báo ngày nào anh có thể đến nhà hàng để trao đổi về thực đơn và đồ uống. Email đã nhận ngày tổ chức cùng số khách ước tính; số lượng chính thức phải báo riêng trước buổi tiệc ba ngày.\nDịch: “Trước hết, anh Tanaka cần cho nhà hàng biết ngày mình có thể đến để bàn về món ăn và đồ uống.”",
+    "issue": "The previous explanation said Tanaka first needed to report the final attendee count, contradicting the email.",
+    "explanationScope": "Concise reading explanation and translation, consistent with the requested reading-section scope."
+  }
+}

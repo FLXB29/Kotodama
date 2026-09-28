@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-09-27T12:53:04.747Z",
+  "exam": "JLPT N3 July 2015",
+  "scope": "Grammar Mondai 2, printed questions 14–18.",
+  "sourcePdf": {
+    "title": "JLPT・N3・7/2015",
+    "url": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+    "driveFileId": "1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe",
+    "renderedPages": [
+      {
+        "printedPage": 5,
+        "pdfPage": 5,
+        "printedQuestions": [14, 15, 16, 17, 18]
+      }
+    ],
+    "status": "PDF gốc đã được kiểm tra trực tiếp bằng mắt trong Chrome ở mức thu phóng cho thấy trọn trang; chữ các lựa chọn và vị trí ★ của cả năm câu đã được đối chiếu với dữ liệu."
+  },
+  "answerReferences": [
+    {
+      "name": "TiengNhatDonGian — đáp án và giải thích",
+      "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2023/04/Dap-anScript-N3-7-2015.pdf",
+      "answers": [3, 2, 1, 4, 1],
+      "status": "Nguồn khóa/giải không chính thức; dãy đáp án khớp với câu đã hoàn chỉnh và lựa chọn nằm tại dấu ★."
+    },
+    {
+      "name": "Tailieutiengnhat — đáp án đề JLPT N3 7/2015",
+      "url": "https://tailieutiengnhat.net/luyen-thi-ngu-phap-jlpt-n3-de-6.html",
+      "answers": [3, 2, 1, 4, 1],
+      "status": "Nguồn khóa/giải không chính thức; dãy đáp án khớp với câu đã hoàn chỉnh và lựa chọn nằm tại dấu ★."
+    },
+    {
+      "name": "Scribd — bảng đáp án JLPT N3",
+      "url": "https://www.scribd.com/document/885818943/%C4%90ap-An-Jlpt-n3-Update-290724",
+      "answers": [3, 2, 1, 4, 1],
+      "status": "Nguồn khóa/giải không chính thức; dãy đáp án khớp với câu đã hoàn chỉnh và lựa chọn nằm tại dấu ★."
+    }
+  ],
+  "officialKeyEstablished": false,
+  "corrections": [
+    {
+      "printedQuestion": 14,
+      "previousFullExamAnswer": 1,
+      "previousStandaloneAnswer": 3,
+      "answer": 3,
+      "previousStarPosition": 2,
+      "starPosition": 0,
+      "order": [3, 2, 1, 4]
+    }
+  ],
+  "explanationsAppliedTo": ["full mock exam", "standalone grammar/reading exam", "curated explanation map"],
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "internalQuestionNumber": 49,
+      "fullExamQuestionId": "toan_q_2015_07_49",
+      "standaloneQuestionId": "cm2u2wb4l001l134ih6zka17v",
+      "printedPage": 5,
+      "printedOptions": ["まだ", "のに", "半年になる", "住所を覚えていない"],
+      "answer": 3,
+      "order": [3, 2, 1, 4],
+      "starPosition": 0,
+      "completedSentence": "この家に引っ越してきて、もう半年になるのにまだ住所を覚えていないだけです。",
+      "vietnameseTranslation": "Tôi chuyển đến ngôi nhà này đã nửa năm rồi mà vẫn chưa nhớ được địa chỉ.",
+      "displayedSolutionScript": "この家に引っ越してきて、もう<u>半年になる</u>のにまだ住所を覚えていないだけです。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 15,
+      "internalQuestionNumber": 50,
+      "fullExamQuestionId": "toan_q_2015_07_50",
+      "standaloneQuestionId": "cm2u2wb4l001m134itqyi45hr",
+      "printedPage": 5,
+      "printedOptions": ["あまりに忙しくて", "やめてしまう", "社員が", "3年以内に"],
+      "answer": 2,
+      "order": [1, 4, 2, 3],
+      "starPosition": 2,
+      "completedSentence": "毎年、X社には多くの新入社員が入るが、仕事があまりに忙しくて3年以内にやめてしまう社員が多いそうだ。",
+      "vietnameseTranslation": "Hằng năm có nhiều nhân viên mới vào công ty X, nhưng nghe nói nhiều người nghỉ việc trong vòng ba năm vì công việc quá bận.",
+      "displayedSolutionScript": "毎年、X 社には多くの新入社員が入るが、仕事があまりに忙しくて3年以内に<u>やめてしまう</u>社員が多いそうだ。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 16,
+      "internalQuestionNumber": 51,
+      "fullExamQuestionId": "toan_q_2015_07_51",
+      "standaloneQuestionId": "cm2u2wb4l001n134ix9n5r7v2",
+      "printedPage": 5,
+      "printedOptions": ["形に", "見えることから", "人の耳のような", "見ると"],
+      "answer": 1,
+      "order": [4, 3, 1, 2],
+      "starPosition": 2,
+      "completedSentence": "この島は、空から見ると人の耳のような形に見えることから「耳島」と呼ばれています。",
+      "vietnameseTranslation": "Hòn đảo này được gọi là ‘đảo Tai’ vì nhìn từ trên cao, nó có hình dáng giống tai người.",
+      "displayedSolutionScript": "この島は、空から見ると人の耳のような<u>形に</u>見えることから「耳島」と呼ばれています。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 17,
+      "internalQuestionNumber": 52,
+      "fullExamQuestionId": "toan_q_2015_07_52",
+      "standaloneQuestionId": "cm2u2wb4l001o134i588sbmg9",
+      "printedPage": 5,
+      "printedOptions": ["誰もいない", "話し相手が", "寂しい", "のは"],
+      "answer": 4,
+      "order": [2, 1, 4, 3],
+      "starPosition": 2,
+      "completedSentence": "一人暮らしを始めて3か月が過ぎたが、家に話し相手が誰もいないのは寂しいといつも思う。",
+      "vietnameseTranslation": "Dù đã qua ba tháng sống một mình, tôi vẫn luôn thấy buồn vì ở nhà chẳng có ai để trò chuyện.",
+      "displayedSolutionScript": "一人暮らしを始めて 3 か月が過ぎたが、家に話し相手が誰もいない<u>のは</u>寂しいといつも思う。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    },
+    {
+      "printedQuestion": 18,
+      "internalQuestionNumber": 53,
+      "fullExamQuestionId": "toan_q_2015_07_53",
+      "standaloneQuestionId": "cm2u2wb4l001p134inqrpmezi",
+      "printedPage": 5,
+      "printedOptions": ["日が", "降らない", "続いている", "雨の"],
+      "answer": 1,
+      "order": [4, 2, 1, 3],
+      "starPosition": 2,
+      "completedSentence": "30日以上雨の降らない日が続いているが、すぐ気にならなくなった。",
+      "vietnameseTranslation": "Đã hơn 30 ngày liền không mưa, nhưng rồi tôi cũng nhanh chóng không còn bận tâm đến điều đó nữa.",
+      "displayedSolutionScript": "30 日以上雨の降らない<u>日が</u>続いているが、すぐ気にならなくなった。",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      },
+      "sourceStatus": "verified-against-source"
+    }
+  ]
+}

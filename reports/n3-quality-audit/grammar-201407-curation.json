@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T16:14:15.211Z",
+  "examId": "toan-n3-201407-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://trynihongo.com/en/de-thi-jlpt-ngu-phap-doc-hieu-n3-thang-7-2014-q652; https://www.vnjpclub.com/de-thi-chinh-thuc-jlpt-n3/de-thi-jlpt-n3-7-2014-bunpo-dokkai.html",
+  "method": "Question wording was cross-checked against independent TryNihongo and VNJPClub transcriptions; answers were manually selected by completing and interpreting the sentence. These sites reproduce questions and are not an official answer-key certification.",
+  "answerSequence": [
+    2,
+    3,
+    1,
+    3,
+    1,
+    4,
+    3,
+    2,
+    1,
+    2,
+    4,
+    4,
+    3
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "1.にとって",
+        "2.によって",
+        " 3.において",
+        "4.に比べて"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        "1.必ずしも",
+        "2.非常に",
+        "3.もちろん",
+        "4.あまりにも"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "choices": [
+        "1.読んだり",
+        "2.読んだから",
+        "3.読んで",
+        "4.読んでから"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.寝られる",
+        "2.寝ている ",
+        "3.寝ろ",
+        "4.寝たいか"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "choices": [
+        "1.らしい",
+        "2.である",
+        "3.そうな",
+        "4.ばかりの"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "choices": [
+        "1.降らない ",
+        "2.降っていない ",
+        "3.降らなかった ",
+        "4.降っていなかった"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "1.ございます",
+        " 2.がございます ",
+        "3.でございます",
+        "4.はございます"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "1.参ります",
+        "2.いたします",
+        "3.なさいます",
+        "4.くださいます"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        "1.ためなら",
+        "2.ためで",
+        "3.からなら",
+        "4.からで"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "choices": [
+        "1.ごろは",
+        "2.ぐらいまで",
+        "3.ごろよりも",
+        " 4.ぐらいに"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        "1.手伝える",
+        " 2.手伝われる",
+        "3.手伝わせる",
+        "4.手伝わされる"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "choices": [
+        "1.よくないと",
+        "2.なくてもいいと",
+        "3.よくなければ ",
+        "4.なくてもよければ"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.飲み終わらないように",
+        "2.飲み終わらないようで ",
+        " 3.飲んでしまわないように",
+        " 4.飲んでしまわないようで"
+      ]
+    }
+  ]
+}

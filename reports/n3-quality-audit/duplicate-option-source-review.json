@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-09-25T11:43:10.996Z",
+  "method": "Manual comparison against the named original exam PDF, page, and printed question. The correct answer key was checked and left unchanged.",
+  "changed": 10,
+  "verifiedQuestions": [
+    {
+      "questionId": "toan_q_2023_12_68",
+      "correctAnswerPreserved": 2,
+      "optionNumber": 3,
+      "previousText": "仕事や子供の世話で忙しかったから",
+      "sourceText": "「私」のオートバイを妻が使っていたから",
+      "sourceFile": "14. N3 12-2023.pdf",
+      "sourcePage": 21,
+      "evidence": "Choice 3 states 「私」のオートバイを妻が使っていたから; choice 2 remains 仕事や子供の世話で忙しかったから."
+    },
+    {
+      "questionId": "toan_q_2022_07_13",
+      "correctAnswerPreserved": 3,
+      "optionNumber": 4,
+      "previousText": "4 図面",
+      "sourceText": "4 図画",
+      "sourceFile": "13. N3 7-2022.pdf",
+      "sourcePage": 2,
+      "evidence": "Choice 4 is 図画; choice 2 is 図面 and choice 3 絵画 is the answer."
+    },
+    {
+      "questionId": "toan_q_2019_12_84",
+      "correctAnswerPreserved": 4,
+      "optionNumber": 2,
+      "previousText": "3.　24時間利用できる ",
+      "sourceText": "2.　かりた本を家にとどけてくれる",
+      "sourceFile": "10. N3 12-2019.pdf",
+      "sourcePage": 16,
+      "evidence": "Mondai 2 Q4 choice 2 is かりた本を家にとどけてくれる; choice 3 is 24時間利用できる."
+    },
+    {
+      "questionId": "toan_q_2019_07_12",
+      "correctAnswerPreserved": 2,
+      "optionNumber": 4,
+      "previousText": "４．道具",
+      "sourceText": "４．道貝",
+      "sourceFile": "10. N3 7-2019.pdf",
+      "sourcePage": 1,
+      "evidence": "Question 12 choices read 道具, 家具, 家貝, 道貝 in order."
+    },
+    {
+      "questionId": "toan_q_2015_12_78",
+      "correctAnswerPreserved": 3,
+      "optionNumber": 4,
+      "previousText": "テーブルの上をかたづける",
+      "sourceText": "しょっきを洗う",
+      "sourceFile": "6. N3 12-2015.pdf",
+      "sourcePage": 16,
+      "evidence": "Mondai 1 Q4 choice 4 is しょっきを洗う; choice 3 is テーブルの上をかたづける."
+    },
+    {
+      "questionId": "toan_q_2015_07_58",
+      "correctAnswerPreserved": 2,
+      "optionNumber": 4,
+      "previousText": "4.大好きだという点です",
+      "sourceText": "4.大好きそうな点です",
+      "sourceFile": "6. N3 7-2015.pdf",
+      "sourcePage": 6,
+      "evidence": "The source page prints choice 4 大好きそうな点です."
+    },
+    {
+      "questionId": "toan_q_2015_07_62",
+      "correctAnswerPreserved": 4,
+      "optionNumber": 3,
+      "previousText": "相手が聞きたくなるような話をする",
+      "sourceText": "相手に自分のことを多く話すようにする",
+      "sourceFile": "6. N3 7-2015.pdf",
+      "sourcePage": 9,
+      "evidence": "Reading Q27 choice 3 is 相手に自分のことを多く話すようにする; choice 4 is 相手にたくさん話してもらうようにする."
+    },
+    {
+      "questionId": "toan_q_2014_12_12",
+      "correctAnswerPreserved": 2,
+      "optionNumber": 4,
+      "previousText": "4.雑誌",
+      "sourceText": "4.雑志",
+      "sourceFile": "5. N3 12-2014.pdf",
+      "sourcePage": 1,
+      "evidence": "Question 12 choices read 稚志, 雑誌, 稚誌, 雑志 in order."
+    },
+    {
+      "questionId": "toan_q_2014_12_82",
+      "correctAnswerPreserved": 4,
+      "optionNumber": 4,
+      "previousText": " アルバイトをしていたから",
+      "sourceText": "友だちとご飯を食べていたから",
+      "sourceFile": "5. N3 12-2014.pdf",
+      "sourcePage": 16,
+      "evidence": "Mondai 2 Q2 choice 4 is 友だちとご飯を食べていたから; choice 3 is アルバイトをしていたから."
+    },
+    {
+      "questionId": "toan_q_2013_12_71",
+      "correctAnswerPreserved": 1,
+      "optionNumber": 3,
+      "previousText": "コンピューターで、距離と時間から適当な速度を計算する訓練",
+      "sourceText": "コンピューターが計算して決めた速度を守って、時刻表の通りに運転する訓練",
+      "sourceFile": "4. N3 12-2013.pdf",
+      "sourcePage": 14,
+      "evidence": "Reading Q36 choice 3 is コンピューターが計算して決めた速度を守って、時刻表の通りに運転する訓練; choice 2 is the computer calculating speed from distance and time."
+    }
+  ]
+}

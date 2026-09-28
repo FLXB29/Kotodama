@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-09-27T08:28:34.587Z",
+  "method": "Section-copy transcription fixes were checked against the corresponding full-exam data already stored in the repository; this is not an official JLPT PDF confirmation.",
+  "corrections": [
+    {
+      "examId": "cm2u2xg4300wm134izpbjrysi-grammar-reading",
+      "sourceExamId": "toan-n3-202012-full",
+      "questionNumber": 48,
+      "field": "question",
+      "from": "急に出勤（ ）」",
+      "to": "急に出勤（ ）んだ。」",
+      "reason": "The standalone copy omitted んだ after the answer blank, unlike the matching full-exam question."
+    },
+    {
+      "examId": "cm2u2xg4300wm134izpbjrysi-grammar-reading",
+      "sourceExamId": "toan-n3-202012-full",
+      "questionNumber": 55,
+      "field": "passage",
+      "from": "並んで待つ気持ちが少わかりました",
+      "fromPattern": "並んで\\s*待つ気持ちが少\\s*[。．.・…]*\\s*わかりました",
+      "to": "並んで待つ気持ちが少しわかりました",
+      "reason": "The standalone passage omitted し from 少し, producing malformed Japanese and preventing passage matching."
+    },
+    {
+      "examId": "cm2u2xkhj00zx134iasxlu6kb-grammar-reading",
+      "sourceExamId": "toan-n3-202107-full",
+      "questionNumber": 45,
+      "field": "question",
+      "from": "こんかいの大会",
+      "to": "今回の大会",
+      "reason": "The standalone copy uses hiragana where the matching full-exam source uses 今回; normalized text then matches exactly."
+    },
+    {
+      "examId": "cm2u2xosv0138134ib0bvpy32-grammar-reading",
+      "sourceExamId": "toan-n3-202112-full",
+      "questionNumber": 40,
+      "field": "question",
+      "from": "びつくりする",
+      "to": "びっくりする",
+      "reason": "The standalone copy has a small-tsu transcription error in びっくり."
+    },
+    {
+      "examId": "cm2u2xosv0138134ib0bvpy32-grammar-reading",
+      "sourceExamId": "toan-n3-202112-full",
+      "questionNumber": 46,
+      "field": "option:0",
+      "from": "でしよう",
+      "to": "でしょう",
+      "reason": "The first answer choice confuses small ょ with よ."
+    }
+  ]
+}

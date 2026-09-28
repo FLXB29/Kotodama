@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-09-26T10:24:00.384Z",
+  "examId": "toan-n3-201807-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "The local 13-item key agrees with Saromalang; TryNihongo provides question text and translations. Neither is an official JLPT marking sheet.",
+  "sources": [
+    {
+      "name": "Saromalang answer table",
+      "url": "https://www.saromalang.com/2018/06/jlpt.html"
+    },
+    {
+      "name": "TryNihongo question-and-answer review",
+      "url": "https://trynihongo.com/ja/giai-de-jlpt-n3-thang-7-nam-2018-bunpou-dokkai-p1075"
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        "1 と",
+        "2 が ",
+        "3 へ",
+        "4 を"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1 に対して",
+        " 2 に比べて",
+        " 3 のことで",
+        "4 のほかに"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        "1 ぜったい",
+        "2 せっかく",
+        "3 けっして",
+        "4 まったく"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        " 1 気をつけることで",
+        "2 気をつけるかどうか ",
+        "3 気をつけるのだから",
+        "4 気をつけるだけではなく"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        " 1 習わせるだろうか",
+        "2 習わせようか",
+        "3 習わせているのだ",
+        "4 習わせるつもりだ"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        "1 難しいに違いない",
+        "2 難しいはずがない ",
+        " 3 難しいことではない",
+        " 4 難しいかもしれない"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        "1 食べられます ",
+        "2 差し上げます ",
+        "3 なさいます",
+        " 4 ございます"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        "1 コピーさせるでしょうか ",
+        "2 コピーさせていただけませんか ",
+        "3 コピーしたらいいがですか",
+        "4 コピーするのではないでしょうか"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "referenceAnswer": 3,
+      "choices": [
+        "1 ぐらいでも",
+        "2 ずつなら",
+        "3 までなら",
+        "4 からでも"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1 行ってみないか",
+        "2 行ったらいい ",
+        " 3 行っただろう ",
+        "4 行ってみて"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "referenceAnswer": 4,
+      "choices": [
+        " 1 帰っていく前に",
+        " 2 帰っている間は",
+        "3 帰ってきたまま",
+        "4 帰ってしまっていて"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "referenceAnswer": 1,
+      "choices": [
+        "1 大きくなるのに",
+        "2 大きいようだし",
+        " 3 大きくできて",
+        "4 大きいほうがよければ"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "referenceAnswer": 2,
+      "choices": [
+        "1 飲まないほうがよさそうですね ",
+        "2 飲まないといけないでしょうか",
+        " 3 飲まなくてもしかたないですね",
+        "4 飲まなければいいんでしょうか"
+      ],
+      "matches": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReference": 13
+  }
+}

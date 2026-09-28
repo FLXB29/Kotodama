@@ -1,0 +1,22 @@
+{
+  "exam": "JLPT N3 12/2025",
+  "questionId": "toan_q_2025_12_41",
+  "option": 3,
+  "source": {
+    "file": "data/mimi_kara_n3_grammar.json",
+    "pattern": "縮約形（～ておく／～でおく）",
+    "meaning": "Dạng rút gọn ～ておく／～でおく; vẫn giữ nghĩa làm trước hoặc chuẩn bị sẵn."
+  },
+  "correction": {
+    "from": "3. 読んで置いたら: “nếu đọc rồi để lại”; 「置く」 là đặt/để, không có nghĩa đọc xong.",
+    "to": "3. 読んで置いたら: nếu 「置く」 được dùng làm trợ động từ 「～ておく」 (thường viết 「読んでおく」), nghĩa là “đọc trước/đọc sẵn”; cách này đúng ngữ pháp nhưng không nói rõ mốc “đọc xong” như lời hứa ở đây. Nếu hiểu 「置く」 theo nghĩa “đặt xuống”, lựa chọn cũng không diễn đạt việc hoàn tất đọc.",
+    "note": "Mimi Kara N3 nhận diện 「～ておく／～でおく」 là cách diễn tả làm trước hoặc chuẩn bị sẵn. Lời giải nay phân biệt mẫu này với 「読み終わる」, đồng thời không gọi lựa chọn 3 sai ngữ pháp."
+  },
+  "browserVerification": {
+    "browser": "Chrome",
+    "route": "http://127.0.0.1:5173/jlpt",
+    "mode": "answer-study",
+    "result": "Question 41, answer 4, all four options, and the revised explanation were visible; no answer was selected."
+  },
+  "explanation": "Đáp án 4 — 「読み終わったら」: “sau khi đọc xong”. Người chị đang đọc dở truyện và hứa cho mượn sau khi hoàn tất.\n1. 読んでいたら: “nếu/đang đọc thì”; không nói rõ việc đọc xong trước khi cho mượn.\n2. 読み続けたら: “nếu tiếp tục đọc”; cũng không nêu mốc hoàn thành mà lời hứa cần.\n3. 読んで置いたら: nếu 「置く」 được dùng làm trợ động từ 「～ておく」 (thường viết 「読んでおく」), nghĩa là “đọc trước/đọc sẵn”; cách này đúng ngữ pháp nhưng không nói rõ mốc “đọc xong” như lời hứa ở đây. Nếu hiểu 「置く」 theo nghĩa “đặt xuống”, lựa chọn cũng không diễn đạt việc hoàn tất đọc.\n4. 読み終わったら: 「Vます-bỏ ます＋終わる」 diễn tả làm xong; 「たら」 ở đây chỉ thời điểm sau khi đọc xong.\nDịch: “Em gái: Chị đọc xong cuốn manga này chưa? Em mượn được không? — Chị: À, chị vẫn đang đọc dở. Khi đọc xong chị sẽ cho em mượn nhé.”\nGhi nhớ: 「V終わる」 nhấn mạnh hoàn tất hành động; 「Vたら」 có thể nối với hành động xảy ra sau đó."
+}

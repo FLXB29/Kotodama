@@ -1,0 +1,252 @@
+{
+  "exam": "JLPT N3 12/2022",
+  "sourcePdf": {
+    "title": "13. N3 12-2022 .pdf",
+    "driveFolderId": "1ccBkcPviGdtm9TZZaDP0393exMAG5MDv",
+    "driveFolderUrl": "https://drive.google.com/drive/folders/1ccBkcPviGdtm9TZZaDP0393exMAG5MDv",
+    "renderedPages": [
+      {
+        "viewerPage": 6,
+        "printedPage": 6,
+        "printedQuestions": [
+          14,
+          15,
+          16
+        ]
+      },
+      {
+        "viewerPage": 7,
+        "printedPage": 7,
+        "printedQuestions": [
+          17,
+          18
+        ]
+      }
+    ],
+    "method": "Visually checked source pages 6 and 7 at 75% zoom, examined page 6 more closely at 200% zoom, and cross-checked the displayed PDF text layer. All five ★ marks are above the third of four answer slots."
+  },
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "fullExamQuestionId": "toan_q_2022_12_49",
+      "standaloneQuestionId": "cm2u2xz9201bd134izt9vyr4a",
+      "printedOptions": [
+        "メール",
+        "から",
+        "に",
+        "の"
+      ],
+      "appData": {
+        "options": [
+          "1 メール",
+          "2 から",
+          "3 に",
+          "4 の"
+        ],
+        "answer": 1,
+        "order": [
+          2,
+          4,
+          1,
+          3
+        ],
+        "starPosition": 2
+      },
+      "displayedSolutionScript": "から の <u>メール</u> に",
+      "completedSentence": "留学している息子からのメールに毎日楽しく過ごしていると書かれていて安心した。",
+      "vietnameseTranslation": "Tôi thấy yên tâm khi đọc email của con trai đang du học, trong đó viết rằng ngày nào con cũng sống vui vẻ.",
+      "starSlotReasoning": "「留学している息子」 là N trong mẫu 「Nからのメール」 (“email từ N”); tiếp theo 「に」 đánh dấu email là nơi chứa nội dung được viết. Ô ★ là mảnh thứ ba nên nhận 「メール」. Cả bốn mảnh đều cần dùng; các mảnh còn lại sai tại ★ vì chúng thuộc các vị trí đã ghi dưới đây.",
+      "optionPlacementNotes": [
+        "メール: đứng sau 「からの」 và trước trợ từ 「に」, tạo cụm “email từ con trai đang du học”; đây là mảnh ở ô ★.",
+        "から: theo sau 「留学している息子」, nêu nguồn gửi.",
+        "に: theo sau 「メール」 để đánh dấu nơi chứa nội dung được viết.",
+        "の: nối 「から」 với danh từ 「メール」 thành mẫu 「Nからのメール」."
+      ],
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 15,
+      "fullExamQuestionId": "toan_q_2022_12_50",
+      "standaloneQuestionId": "cm2u2xz9201be134idr2cknwp",
+      "printedOptions": [
+        "いるので",
+        "いる間に",
+        "友達が",
+        "東京に"
+      ],
+      "appData": {
+        "options": [
+          "1 いるので",
+          "2 いる間に",
+          "3 友達が",
+          "4 東京に"
+        ],
+        "answer": 4,
+        "order": [
+          3,
+          1,
+          4,
+          2
+        ],
+        "starPosition": 2
+      },
+      "displayedSolutionScript": "友達が いるので <u>東京に</u> いる間に",
+      "completedSentence": "来週から1か月間、出張で東京に行く。東京には友達がいるので、東京にいる間に一緒に食事でもしたいと思う。",
+      "vietnameseTranslation": "Từ tuần sau, tôi sẽ đi công tác ở Tokyo trong một tháng. Vì có bạn ở Tokyo, tôi muốn cùng bạn đi ăn trong khoảng thời gian mình ở đó.",
+      "starSlotReasoning": "「東京には」 được nối với 「友達がいるので」 để nêu lý do; 「東京にいる間に」 chỉ khoảng thời gian muốn đi ăn cùng bạn. Ô ★ là mảnh thứ ba 「東京に」. Cả bốn mảnh đều cần dùng; ba mảnh còn lại không thể thay thế mảnh này ở ô ★.",
+      "optionPlacementNotes": [
+        "いるので: theo sau 「友達が」 để nêu lý do có bạn ở Tokyo.",
+        "いる間に: kết thúc cụm chỉ khoảng thời gian “trong lúc ở đó”.",
+        "友達が: theo sau 「東京には」, nêu người bạn làm chủ thể của 「いる」.",
+        "東京に: đứng trước 「いる間に」 để tạo cụm thời gian “trong lúc ở Tokyo”; đây là mảnh ở ô ★."
+      ],
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 16,
+      "fullExamQuestionId": "toan_q_2022_12_51",
+      "standaloneQuestionId": "cm2u2xz9201bf134irctqk8ey",
+      "printedOptions": [
+        "1年前に習い始めたのだが",
+        "弾くほど",
+        "弾けば",
+        "弾けるようになりたくて"
+      ],
+      "appData": {
+        "options": [
+          "1. 1年前に習い始めたのだが",
+          "2. 弾くほど",
+          "3. 弾けば",
+          "4. 弾けるようになりたくて"
+        ],
+        "answer": 3,
+        "order": [
+          4,
+          1,
+          3,
+          2
+        ],
+        "starPosition": 2
+      },
+      "displayedSolutionScript": "弾けるようになりたくて 1年前に習い始めたのだが <u>弾けば</u> 弾くほど",
+      "completedSentence": "バイオリンが弾けるようになりたくて1年前に習い始めたのだが、弾けば弾くほどこんなに面白い楽器はないと感じる。",
+      "vietnameseTranslation": "Tôi bắt đầu học violin cách đây một năm vì muốn chơi được; càng chơi, tôi càng thấy chưa có nhạc cụ nào thú vị như thế.",
+      "starSlotReasoning": "「バイオリンが弾けるようになりたくて」 nêu mục đích; tiếp theo là 「1年前に習い始めたのだが」. Cấu trúc 「弾けば弾くほど」 nghĩa là “càng chơi thì càng…”. Ô ★ là 「弾けば」, mảnh thứ ba. PDF in lựa chọn 1 là 「1年前に」; dấu cách trong lớp chữ là lỗi trích xuất.",
+      "optionPlacementNotes": [
+        "1年前に習い始めたのだが: nêu thời điểm bắt đầu học và nối với vế sau bằng 「のだが」 (“nhưng…”).",
+        "弾くほど: theo sau mệnh đề điều kiện 「弾けば」 để tạo mẫu 「VばVるほど」.",
+        "弾けば: mở vế điều kiện trong 「弾けば弾くほど」; đây là mảnh ở ô ★.",
+        "弾けるようになりたくて: nối với 「バイオリンが」 để nêu mục tiêu “muốn có thể chơi violin”."
+      ],
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 17,
+      "fullExamQuestionId": "toan_q_2022_12_52",
+      "standaloneQuestionId": "cm2u2xz9201bg134igqe9dx6f",
+      "printedOptions": [
+        "こういう色の",
+        "欲しい",
+        "と思っていた",
+        "かばんが"
+      ],
+      "appData": {
+        "options": [
+          "1 こういう色の",
+          "2 欲しい",
+          "3 と思っていた",
+          "4 かばんが"
+        ],
+        "answer": 2,
+        "order": [
+          1,
+          4,
+          2,
+          3
+        ],
+        "starPosition": 2
+      },
+      "displayedSolutionScript": "こういう色の かばんが <u>欲しい</u> と思っていた",
+      "completedSentence": "A「お誕生日おめでとう。これ、プレゼントだよ。」B「わあ、かばんだ。ちょうどこういう色のかばんが欲しいと思っていたんだ。ありがとう。」",
+      "vietnameseTranslation": "A: “Chúc mừng sinh nhật. Đây là quà tặng cho cậu.” B: “Ồ, là túi xách. Đúng lúc mình đang muốn một chiếc túi màu như thế này. Cảm ơn nhé.”",
+      "starSlotReasoning": "「こういう色の」 bổ nghĩa cho 「かばん」; 「かばんが欲しい」 nêu món đồ người nói mong muốn, rồi 「と思っていた」 diễn tả ý định đã có từ trước. Ô ★ là 「欲しい」, mảnh thứ ba.",
+      "optionPlacementNotes": [
+        "こういう色の: đứng trước 「かばん」 để bổ nghĩa “màu như thế này”.",
+        "欲しい: theo sau chủ ngữ 「かばんが」, nêu mong muốn; đây là mảnh ở ô ★.",
+        "と思っていた: theo sau 「欲しい」, diễn tả mong muốn đã nghĩ đến từ trước.",
+        "かばんが: hoàn thành cụm danh từ 「こういう色のかばん」 và làm chủ ngữ cho 「欲しい」."
+      ],
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    },
+    {
+      "printedQuestion": 18,
+      "fullExamQuestionId": "toan_q_2022_12_53",
+      "standaloneQuestionId": "cm2u2xz9201bh134isodsslu3",
+      "printedOptions": [
+        "という点で",
+        "違いは",
+        "生活している",
+        "ない"
+      ],
+      "appData": {
+        "options": [
+          "1 という点で",
+          "2 違いは",
+          "3 生活している",
+          "4 ない"
+        ],
+        "answer": 2,
+        "order": [
+          3,
+          1,
+          2,
+          4
+        ],
+        "starPosition": 2
+      },
+      "displayedSolutionScript": "生活している という点で <u>違いは</u> ない",
+      "completedSentence": "都会と田舎には違うところも多いが、どちらも人が働き、生活しているという点で違いはない。",
+      "vietnameseTranslation": "Thành thị và nông thôn có nhiều điểm khác nhau, nhưng xét ở điểm con người đều làm việc và sinh sống thì không có khác biệt.",
+      "starSlotReasoning": "「生活している」 nối với 「という点で」 để nêu khía cạnh so sánh; 「違いはない」 kết luận rằng không có khác biệt ở khía cạnh ấy. Ô ★ là 「違いは」, mảnh thứ ba.",
+      "optionPlacementNotes": [
+        "という点で: theo sau mệnh đề 「人が働き、生活している」, nêu tiêu chí so sánh.",
+        "違いは: mở cụm kết luận 「違いはない」; đây là mảnh ở ô ★.",
+        "生活している: song song với 「働き」 để nêu việc con người sinh sống.",
+        "ない: theo sau 「違いは」 để khép ý “không có khác biệt”."
+      ],
+      "status": "verified-against-supplied-source",
+      "officialKeyEstablished": false
+    }
+  ],
+  "secondaryAnswerKey": {
+    "title": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 25,
+    "section": "JLPT N3 12/2022 — 文法・問題2",
+    "printedQuestions": [
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "answers": [
+      1,
+      4,
+      3,
+      2,
+      2
+    ],
+    "matchesStoredAnswers": true,
+    "authority": "Secondary answer compilation in the supplied Drive; not authenticated as an official JLPT key."
+  },
+  "textLayerNotes": [
+    "Question 16 option 1 visibly reads 「1年前に習い始めたのだが」; the PDF text layer separates the number and year as 「1 年前」. The source-exact option is kept with no inserted space."
+  ],
+  "summary": "All five option sets, fragment orders, and third-position ★ slots were visually checked against pages 6–7 of the supplied exam PDF. The stored answers (1–4–3–2–2) follow from the completed sentences and agree with the secondary answer compilation on page 25. That compilation has not been authenticated as an official JLPT key.",
+  "officialKeyEstablished": false
+}

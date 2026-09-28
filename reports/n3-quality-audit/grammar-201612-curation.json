@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:14:58.161Z",
+  "examId": "toan-n3-201612-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://chuyenngoaingu.com/news/dap-an-ky-thi-jlpt-thang-12-nam-2016-201.aspx",
+  "method": "Answers were manually checked against the Japanese sentence context and compared with the linked published reference sequence. The answer source is nonofficial and does not certify other test sections.",
+  "answerSequence": [
+    2,
+    4,
+    3,
+    1,
+    4,
+    2,
+    3,
+    2,
+    3,
+    1,
+    2,
+    4,
+    1
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "1.について",
+        "2.として",
+        "3.にしたがって",
+        "4.と比べて"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ことから",
+        "2.いう点で",
+        " 3.ように",
+        " 4.としたら"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.どうか",
+        "2.せっかく",
+        "3.どうしても",
+        " 4.きっと"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "choices": [
+        " 1.だけだ",
+        " 2.ことだ",
+        "3.せいだ",
+        "4.ときだ"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 4,
+      "choices": [
+        "1.行います",
+        "2.行わせます ",
+        " 3.行っています",
+        "4.行われます"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "choices": [
+        "1.お待ちしております",
+        " 2.お待ちください ",
+        "3.お待ちできます",
+        " 4.お待ちしましょう"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "1.ございます",
+        "2.いたします",
+        " 3.申します",
+        " 4.申し上げます"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "1.持っていったばかりだ ",
+        "2.持っていくことになっている",
+        " 3.持っていきたい",
+        "4.持いくつもりだ"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "choices": [
+        "1.寝なくて",
+        "2.寝られると思って",
+        "3.寝られないと",
+        "4.寝ると思うと"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "choices": [
+        "1.利用したくても",
+        "2.利用しそうになって",
+        "3.利用しているのに",
+        "4.利用できたら"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        "1.予約してね",
+        "2.予約しておくよ ",
+        " 3.予約しようよ",
+        " 4.予約してあるね"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 4,
+      "choices": [
+        "1.食べやすいそうだ",
+        "2.食べていそうだ",
+        "3.食べたがるそうだ ",
+        " 4.食べてもよさそうだ"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "choices": [
+        "1.行ってしまいましょうか",
+        "2.行ってしまうのでしょう",
+        "3.行ってしまいましたか",
+        "4.行ってしまっていました"
+      ]
+    }
+  ]
+}

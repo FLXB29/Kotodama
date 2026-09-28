@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-09-26T09:35:17.756Z",
+  "examId": "toan-n3-201612-full",
+  "sourcePdf": {
+    "driveFile": "7. N3 12-2016.pdf",
+    "printedPage": 13,
+    "visuallyReviewed": true,
+    "officialAnswerKeyPresent": false
+  },
+  "passageStorage": "Shared at the reading-part level so both questions can use the poster without duplicate rendering.",
+  "questions": [
+    {
+      "id": "toan_q_2016_12_73",
+      "fullExamQuestionNumber": 73,
+      "printedQuestionNumber": 38,
+      "answer": 2,
+      "reasoning": "At Sunday 14:00, A has a 14:30 tour; B runs 13:30–15:00 and explicitly accepts late participants. C is Saturday-only and D ends at noon Sunday.",
+      "sourceChecks": [
+        "A: daily, 10:30 / 14:30 / 16:00, about one hour",
+        "B: Sunday 13:30–15:00, mid-session participation allowed",
+        "C: Saturday 14:30",
+        "D: Sunday 11:00–12:00"
+      ]
+    },
+    {
+      "id": "toan_q_2016_12_74",
+      "fullExamQuestionNumber": 74,
+      "printedQuestionNumber": 39,
+      "answer": 2,
+      "reasoning": "The poster says daytime visitors must exit at 17:00 and pay admission again after the night zoo opens at 17:30; the east gate closes at 17:00, so re-enter via the front entrance.",
+      "sourceChecks": [
+        "August 9 is listed",
+        "night opening 17:30–21:00; last entry 19:30",
+        "daytime visitors must exit and pay again",
+        "use the front entrance"
+      ]
+    }
+  ],
+  "limitation": "The source exam PDF contains no answer key; answers are supported by the poster schedule and question wording, not an independently verified official key."
+}

@@ -1,0 +1,346 @@
+{
+  "generatedAt": "2026-09-27T15:45:14.997Z",
+  "examId": "toan-n3-201107-full",
+  "section": "Từ vựng",
+  "questionRange": "1–35",
+  "reviewedQuestionCount": 35,
+  "reviewedChoiceCount": 140,
+  "answerKeysChanged": 0,
+  "sourceLimits": {
+    "originalQuestionPdfVisuallyInspectedThisPass": false,
+    "officialAnswerKeyConfirmed": false,
+    "questionTextSources": [
+      "https://ns2.jlpt.jp/samples/sample2012/pdf/N3V.pdf",
+      "https://www.chengzhushuo.com/jlpt_test_one.html?month=07%E6%9C%88&nLevel=n3&year=2011"
+    ],
+    "secondaryAnswerKeySources": [
+      "https://www.scribd.com/document/1058014920/2011%E5%B9%B47%E6%9C%88%E6%96%B0%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%95N3"
+    ],
+    "secondaryAnswerKeyConfirmed": true,
+    "method": "Reviewed all stored prompts and choices for the vocabulary section. Questions 31–35 were checked against the official JLPT N3 sample PDF, which prints the same five usage questions, and a separate transcription of the July 2011 exam. The stored key for questions 31–35 (4–1–4–1–1) matches a secondary solution scan, not an official JLPT answer key. Question 35 choice 3 uses the established phrase 正直な話 and is therefore documented as less suitable in the intended meaning, not categorically ungrammatical. The original July 2011 paper was not visually inspected this pass."
+  },
+  "linguisticCautions": [
+    {
+      "question": 31,
+      "choice": 1,
+      "note": "Literal falling onto a bed is imaginable; the choice is unsuitable for the intended meaning of going to bed early."
+    },
+    {
+      "question": 33,
+      "choice": 3,
+      "note": "景色を見送る is interpretable when scenery recedes, but 景色を眺める is the usual collocation and choice 4 is clearer."
+    },
+    {
+      "question": 35,
+      "choice": 3,
+      "note": "正直な話 is an established expression; choice 3 is not labeled ungrammatical, though 本当の話 is clearer for “a true story”."
+    }
+  ],
+  "rows": [
+    {
+      "number": 1,
+      "answer": 3,
+      "options": ["しゅとう", "しゅうと", "しゅと", "しゅうとう"],
+      "explanation": "Đáp án 3 — 首都（しゅと）là thủ đô; câu hỏi muốn biết thủ đô của Nhật Bản ở đâu.\nDịch: “Thủ đô của Nhật Bản ở đâu?”\n1. しゅとう: không phải cách đọc 首都; từ này đọc là しゅと.\n2. しゅうと: sai trường âm và âm cuối; không phải cách đọc chuẩn của 首都.\n3. しゅと: cách đọc đúng của 首都, nghĩa là thủ đô.\n4. しゅうとう: thêm trường âm không có trong cách đọc 首都.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 2,
+      "answer": 2,
+      "options": ["じきゅう", "ちきゅう", "じきゅ", "ちきゅ"],
+      "explanation": "Đáp án 2 — 地球（ちきゅう）là Trái Đất; câu nêu chuyển động quay quanh Mặt Trời.\nDịch: “Trái Đất quay quanh Mặt Trời.”\n1. じきゅう: sai âm đầu; 地 đọc là ち trong từ này.\n2. ちきゅう: cách đọc đúng của 地球.\n3. じきゅ: sai âm đầu và thiếu trường âm cuối.\n4. ちきゅ: thiếu trường âm う; cách đọc chuẩn là ちきゅう.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 3,
+      "answer": 2,
+      "options": ["こわれて", "おくれて", "たおれて", "よごれて"],
+      "explanation": "Đáp án 2 — 遅れる（おくれる）là chậm/trễ; đồng hồ đó đang chạy chậm so với giờ đúng.\nDịch: “Chiếc đồng hồ đó đang bị chậm.”\n1. こわれて: 壊れる, bị hỏng; không phải cách đọc 遅れて.\n2. おくれて: cách đọc đúng của 遅れて, dạng て của 遅れる.\n3. たおれて: 倒れる, ngã/đổ; không phải cách đọc của 遅れる.\n4. よごれて: 汚れる, bị bẩn; không phải cách đọc của 遅れる.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 4,
+      "answer": 3,
+      "options": ["きょりょく", "どりょく", "きょうりょく", "どうりょく"],
+      "explanation": "Đáp án 3 — 協力（きょうりょく）là hợp tác; hai người cùng làm thì công việc có thể kết thúc sớm.\nDịch: “Nếu hai người cùng hợp tác thì công việc sẽ xong nhanh hơn.”\n1. きょりょく: thiếu trường âm; không phải cách đọc chuẩn của 協力.\n2. どりょく: 努力, nỗ lực; là từ khác, không phải 協力.\n3. きょうりょく: cách đọc đúng của 協力, sự hợp tác.\n4. どうりょく: sai âm đầu và âm ghép; không phải cách đọc 協力.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 5,
+      "answer": 1,
+      "options": ["おうぼ", "おうも", "おうぼう", "おうもう"],
+      "explanation": "Đáp án 1 — 応募（おうぼ）là nộp đơn/ứng tuyển; người nói đã nộp đơn xin học bổng đại học.\nDịch: “Tôi đã đăng ký xin học bổng của trường đại học.”\n1. おうぼ: cách đọc đúng của 応募.\n2. おうも: sai phụ âm cuối của 応募.\n3. おうぼう: thêm trường âm sau ぼ; cách đọc đúng không có う cuối.\n4. おうもう: vừa sai âm ぼ vừa thêm trường âm; không phải cách đọc 応募.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 6,
+      "answer": 4,
+      "options": ["くもん", "きもん", "ぐもん", "ぎもん"],
+      "explanation": "Đáp án 4 — 疑問（ぎもん）là câu hỏi/điều thắc mắc; người nói đã trả lời điều trẻ muốn biết.\nDịch: “Tôi đã trả lời thắc mắc của đứa trẻ.”\n1. くもん: sai phụ âm đầu của 疑問.\n2. きもん: sai phụ âm đầu; 疑 đọc là ぎ trong từ này.\n3. ぐもん: sai âm đục của 疑.\n4. ぎもん: cách đọc đúng của 疑問.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 7,
+      "answer": 2,
+      "options": ["はつひょう", "はっぴょう", "はつひょ", "はっぴょ"],
+      "explanation": "Đáp án 2 — 発表（はっぴょう）là công bố/thông báo; kết quả thi đã được công bố.\nDịch: “Kết quả kỳ thi đã được công bố.”\n1. はつひょう: thiếu âm ngắt nhỏ っ và sai âm đọc của 表.\n2. はっぴょう: cách đọc đúng của 発表.\n3. はつひょ: thiếu っ và thiếu trường âm よう.\n4. はっぴょ: thiếu trường âm よう ở cuối.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 8,
+      "answer": 4,
+      "options": ["げいご", "けいご", "だんご", "たんご"],
+      "explanation": "Đáp án 4 — 単語（たんご）là từ vựng/từ đơn; danh sách từ nằm ở trang bên cạnh.\nDịch: “Danh sách từ vựng nằm ở trang bên cạnh.”\n1. げいご: sai âm đầu và âm đục; không phải cách đọc 単語.\n2. けいご: 敬語, ngôn ngữ kính ngữ; là từ khác.\n3. だんご: 団子, bánh dango; là từ khác.\n4. たんご: cách đọc đúng của 単語.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 9,
+      "answer": 3,
+      "options": ["改決", "改結", "解決", "解結"],
+      "explanation": "Đáp án 3 — 解決（かいけつ）là giải quyết; mọi người thảo luận rồi xử lý vấn đề.\nDịch: “Mọi người cùng bàn bạc rồi giải quyết vấn đề.”\n1. 改決: không phải cách viết chuẩn của かいけつ; 改める mang nghĩa sửa đổi, không phải giải quyết trong từ này.\n2. 改結: không tạo thành từ chuẩn với nghĩa giải quyết vấn đề.\n3. 解決: cách viết đúng; 解決する là giải quyết vấn đề.\n4. 解結: 結 không phải chữ dùng trong từ 解決; tổ hợp này không mang nghĩa cần tìm.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 10,
+      "answer": 4,
+      "options": ["安内", "家内", "室内", "案内"],
+      "explanation": "Đáp án 4 — 案内（あんない）là hướng dẫn/dẫn đường; Yamaguchi đã dẫn người nói đi tham quan Tokyo.\nDịch: “Anh/chị Yamaguchi đã dẫn tôi đi tham quan Tokyo.”\n1. 安内: không phải từ chuẩn chỉ sự hướng dẫn; 安 có nghĩa yên/ổn.\n2. 家内（かない）: trong nhà/vợ (cách gọi khiêm nhường); không có nghĩa hướng dẫn.\n3. 室内（しつない）: trong phòng; chỉ địa điểm, không phải hành động dẫn đi.\n4. 案内（あんない）: hướng dẫn/đưa đi; 案内してもらう là được ai đó dẫn đi.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 11,
+      "answer": 1,
+      "options": ["健康", "建康", "健庫", "建庫"],
+      "explanation": "Đáp án 1 — 健康（けんこう）là sức khỏe; người nói chạy bộ mỗi ngày để giữ gìn sức khỏe.\nDịch: “Tôi chạy bộ mỗi ngày vì sức khỏe.”\n1. 健康: cách viết chuẩn của けんこう, sức khỏe.\n2. 建康: 建 không phải chữ trong từ 健康; cách viết này không mang nghĩa sức khỏe.\n3. 健庫: 庫 là kho; tổ hợp này không phải từ chỉ sức khỏe.\n4. 建庫: không phải từ chuẩn có cách đọc けんこう và nghĩa sức khỏe.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 12,
+      "answer": 2,
+      "options": ["気湿", "気温", "気湯", "気混"],
+      "explanation": "Đáp án 2 — 気温（きおん）là nhiệt độ không khí; câu nói mùa hè năm nay trời nóng với nhiệt độ cao.\nDịch: “Nhiệt độ mùa hè năm nay đã cao.”\n1. 気湿: 湿 nghĩa là độ ẩm; không phải cách viết của 気温.\n2. 気温: cách viết đúng của きおん, nhiệt độ không khí.\n3. 気湯: 湯 là nước nóng; tổ hợp này không có nghĩa nhiệt độ không khí.\n4. 気混: 混 liên quan đến trộn/lẫn; không phải từ chỉ nhiệt độ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 13,
+      "answer": 2,
+      "options": ["病い", "痛い", "疫い", "症い"],
+      "explanation": "Đáp án 2 — 痛い（いたい）là đau; vì bị đau đầu nên người nói đã uống thuốc.\nDịch: “Vì đau đầu nên tôi đã uống thuốc.”\n1. 病い: 病 là bệnh (びょう/やまい), không dùng cách viết này cho tính từ いたい.\n2. 痛い: cách viết đúng của いたい, đau.\n3. 疫い: 疫 xuất hiện trong từ như 疫病, nhưng 疫い không phải cách viết của いたい.\n4. 症い: 症 xuất hiện trong 症状 (triệu chứng); 症い không phải từ có cách đọc và nghĩa này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 14,
+      "answer": 3,
+      "options": ["多量", "多料", "大量", "大料"],
+      "explanation": "Đáp án 3 — 大量（たいりょう）là số lượng lớn; chiếc áo được sản xuất với số lượng lớn tại nhà máy.\nDịch: “Chiếc áo này được sản xuất hàng loạt tại nhà máy.”\n1. 多量（たりょう）: số lượng nhiều, nhưng đọc là たりょう chứ không phải たいりょう.\n2. 多料: không phải từ chuẩn với nghĩa sản xuất số lượng lớn; 料 thường liên quan phí/nguyên liệu.\n3. 大量（たいりょう）: cách viết và cách đọc đúng, nghĩa là số lượng lớn.\n4. 大料: không phải cách viết chuẩn của たいりょう trong nghĩa này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 15,
+      "answer": 2,
+      "options": ["関心", "不満", "目標", "我慢"],
+      "explanation": "Đáp án 2 — 不満（ふまん）là sự không hài lòng/phàn nàn; một số người dùng không thích việc nút bấm khó nhấn.\nDịch: “Một số người dùng phàn nàn rằng các nút của chiếc điện thoại này khó bấm.”\n1. 関心（かんしん）: sự quan tâm; không diễn tả ý kiến tiêu cực về nút bấm.\n2. 不満（ふまん）: điều không hài lòng; 「不満を持つ」là có lời phàn nàn/bất mãn.\n3. 目標（もくひょう）: mục tiêu; không phải cảm nhận của khách hàng về sản phẩm.\n4. 我慢（がまん）: sự chịu đựng; 「不便を我慢する」là chịu bất tiện, không phải có phàn nàn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 16,
+      "answer": 4,
+      "options": ["ぐらぐら", "がらがら", "ばらばら", "ぶらぶら"],
+      "explanation": "Đáp án 4 — ぶらぶらする là đi loanh quanh thong thả, không có mục đích cụ thể; đang đi dạo phố thì tình cờ gặp Yamamoto.\nDịch: “Đang đi loanh quanh trong phố thì tôi gặp anh Yamamoto.”\n1. ぐらぐら: lắc lư/chao đảo; thường tả vật không vững hoặc răng lung lay.\n2. がらがら: trống vắng hoặc tiếng lạch cạch; không có nghĩa đi dạo.\n3. ばらばら: rời rạc/tách rời; không diễn tả việc đi chơi quanh phố.\n4. ぶらぶら: đi dạo/đi quanh nhàn rỗi; 街をぶらぶらする là kết hợp tự nhiên.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 17,
+      "answer": 3,
+      "options": ["証明書", "領収書", "申込書", "参考書"],
+      "explanation": "Đáp án 3 — 申込書（もうしこみしょ）là mẫu đơn đăng ký; người muốn dự hội thảo điền địa chỉ, tên và ngày mong muốn vào đơn.\nDịch: “Ai muốn tham gia hội thảo hãy điền địa chỉ, họ tên và ngày mong muốn vào đơn đăng ký.”\n1. 証明書（しょうめいしょ）: giấy chứng nhận; không phải biểu mẫu đăng ký dự sự kiện.\n2. 領収書（りょうしゅうしょ）: biên lai; dùng để chứng minh đã thanh toán.\n3. 申込書（もうしこみしょ）: đơn đăng ký/phiếu đăng ký; phù hợp với thông tin cần điền trước khi tham gia.\n4. 参考書（さんこうしょ）: sách tham khảo; không phải giấy để ghi thông tin đăng ký.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 18,
+      "answer": 3,
+      "options": ["意外", "重大", "複雑", "正常"],
+      "explanation": "Đáp án 3 — 複雑（ふくざつ）là phức tạp; phép tính rắc rối đến mức dùng máy tính vẫn tốn thời gian.\nDịch: “Phép tính này phức tạp nên dù dùng máy tính vẫn mất thời gian.”\n1. 意外（いがい）: bất ngờ/không ngờ; không mô tả độ khó của phép tính.\n2. 重大（じゅうだい）: nghiêm trọng/quan trọng; không giải thích vì sao phải tính lâu.\n3. 複雑（ふくざつ）: phức tạp; hợp với phép tính nhiều bước/rắc rối.\n4. 正常（せいじょう）: bình thường/hoạt động ổn định; trái với ý phép tính khó xử lý.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": ["流れて", "しずんで", "浮いて", "こぼれて"],
+      "explanation": "Đáp án 1 — 川が流れる là dòng sông chảy; câu nói có một con sông lớn chảy qua thị trấn.\nDịch: “Ở thị trấn này có một con sông lớn chảy qua.”\n1. 流れて（流れる）: chảy; kết hợp tự nhiên với 川が〜いる.\n2. しずんで（沈む）: chìm/lặn xuống; không phải chuyển động thông thường của dòng sông qua thị trấn.\n3. 浮いて（浮く）: nổi; không diễn tả con sông chảy.\n4. こぼれて（こぼれる）: tràn/đổ ra ngoài khỏi vật chứa; không dùng để nói sông chảy qua.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 20,
+      "answer": 1,
+      "options": ["産", "製", "作", "品"],
+      "explanation": "Đáp án 1 — アメリカ産 là có nguồn gốc/sản xuất tại Mỹ; 産 gắn sau địa danh để nêu nơi sản vật được trồng hoặc làm ra.\nDịch: “Quả cam này có xuất xứ từ Mỹ.”\n1. 産: chỉ nơi xuất xứ; アメリカ産オレンジ là cam có nguồn gốc Mỹ.\n2. 製: nói về nơi/chủ thể chế tạo vật, thường trong tên sản phẩm công nghiệp như 日本製; không dùng tự nhiên cho nông sản ở mẫu này.\n3. 作: nghĩa là làm/tạo ra; アメリカ作 không phải cách nói xuất xứ chuẩn.\n4. 品: món hàng/sản phẩm; 品 đứng riêng không biểu thị nơi sản xuất.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 21,
+      "answer": 2,
+      "options": ["スピーチ", "インタビュー", "メッセージ", "コミュニケーション"],
+      "explanation": "Đáp án 2 — インタビューをする là phỏng vấn; người viết bài hỏi vận động viên vừa vô địch để lấy thông tin.\nDịch: “Tôi đã phỏng vấn vận động viên vô địch rồi viết bài.”\n1. スピーチ: bài phát biểu; người viết không yêu cầu vận động viên phát biểu trước khán giả.\n2. インタビュー: cuộc phỏng vấn; 優勝した選手にインタビューする là cách dùng đúng.\n3. メッセージ: lời nhắn/thông điệp; không phải một cuộc hỏi đáp để viết bài.\n4. コミュニケーション: giao tiếp/nối kết; nghĩa rộng hơn, không chỉ việc phỏng vấn một người.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 22,
+      "answer": 3,
+      "options": ["命令", "返信", "主張", "注文"],
+      "explanation": "Đáp án 3 — 意見を主張する là nêu/khẳng định ý kiến của mình; vì ai cũng nói lập trường nên cuộc họp kéo dài.\nDịch: “Vì mọi người đều nêu ý kiến riêng nên cuộc họp mãi chưa kết thúc.”\n1. 命令（めいれい）: ra lệnh; không phải bày tỏ ý kiến trong cuộc họp.\n2. 返信（へんしん）: trả lời thư/tin nhắn; không khớp với 会議で意見を〜する.\n3. 主張（しゅちょう）: khẳng định/nêu lập trường; 意見を主張する là kết hợp phù hợp.\n4. 注文（ちゅうもん）: đặt hàng/gọi món hoặc yêu cầu; không phải nêu quan điểm.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 23,
+      "answer": 4,
+      "options": ["準備", "世話", "選択", "整理"],
+      "explanation": "Đáp án 4 — 書類や本が整理されている nghĩa là giấy tờ và sách được sắp xếp ngăn nắp; đó là lý do căn phòng trông gọn gàng.\nDịch: “Giấy tờ và sách được sắp xếp chỉnh tề; căn phòng đẹp và gọn thật.”\n1. 準備（じゅんび）: chuẩn bị; không có nghĩa là các giấy tờ đã được xếp gọn.\n2. 世話（せわ）: chăm sóc/giúp đỡ; không phù hợp với đồ vật được sắp xếp.\n3. 選択（せんたく）: lựa chọn; không mô tả tình trạng ngăn nắp.\n4. 整理（せいり）: sắp xếp/phân loại gọn gàng; 書類や本が整理されている dùng đúng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 24,
+      "answer": 2,
+      "options": ["ぺらぺら", "からから", "ふらふら", "ぺこぺこ"],
+      "explanation": "Đáp án 2 — のどがからから là cổ họng khô khốc/khát khô; từ sáng chưa uống gì nên người nói khát.\nDịch: “Từ sáng tôi chưa uống gì nên cổ họng khô khốc.”\n1. ぺらぺら: nói trôi chảy (ngôn ngữ) hoặc mỏng; không diễn tả khát.\n2. からから: khô rang; のどがからから là cách nói tự nhiên về khát nước.\n3. ふらふら: choáng váng/đi không vững; mô tả trạng thái cơ thể chứ không phải cổ họng khô.\n4. ぺこぺこ: đói cồn cào, thường nói おなかがぺこぺこ; không diễn tả cổ họng khát.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 25,
+      "answer": 1,
+      "options": ["ためて", "のせて", "かさねて", "くわえて"],
+      "explanation": "Đáp án 1 — お金をためる là để dành/tiết kiệm tiền; người nói tiết kiệm cho tương lai.\nDịch: “Tôi đang để dành tiền cho tương lai.”\n1. ためて: 貯める, tích góp/để dành; kết hợp đúng với お金.\n2. のせて: 乗せる/載せる, đặt hoặc chở lên; không có nghĩa tiết kiệm tiền.\n3. かさねて: 重ねる, xếp chồng/chồng thêm; không dùng với お金 để nói dành dụm.\n4. くわえて: 加える, thêm vào; không diễn tả tiết kiệm để dành.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 26,
+      "answer": 1,
+      "options": ["仕事に行って", "勉強に行って", "買い物に行って", "散歩に行って"],
+      "explanation": "Đáp án 1 — 通勤する（つうきんする）là đi từ nhà đến nơi làm việc; nghĩa gần nhất là đi làm.\nDịch: “Tôi đang đi làm cùng với vợ.”\n1. 仕事に行って: đi làm; gần nghĩa nhất với 通勤して.\n2. 勉強に行って: đi học/đi học tập; khác với đi làm.\n3. 買い物に行って: đi mua sắm; là mục đích khác.\n4. 散歩に行って: đi dạo; không liên quan đến việc đi làm hằng ngày.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 27,
+      "answer": 4,
+      "options": ["たのしい", "うれしい", "はずかしい", "こわい"],
+      "explanation": "Đáp án 4 — おそろしい nghĩa là đáng sợ/kinh khủng; gần nghĩa nhất là こわい.\nDịch: “Tôi đã trải qua một chuyện rất đáng sợ.”\n1. たのしい: vui/thú vị; trái với sắc thái đáng sợ.\n2. うれしい: vui mừng; diễn tả niềm vui chứ không phải sợ hãi.\n3. はずかしい: xấu hổ/ngượng; là cảm xúc khác.\n4. こわい: sợ/đáng sợ; gần nghĩa với おそろしい trong câu này.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 28,
+      "answer": 3,
+      "options": ["アイディア", "ルール", "理由", "秘密"],
+      "explanation": "Đáp án 3 — わけ ở đây là lý do/nguyên do; người nói kể lý do của mình với giáo viên.\nDịch: “Tôi đã kể lý do cho thầy/cô.”\n1. アイディア: ý tưởng; không đồng nghĩa với lý do.\n2. ルール: quy tắc; không giải thích vì sao một việc xảy ra.\n3. 理由（りゆう）: lý do; gần nghĩa với わけ trong câu này.\n4. 秘密（ひみつ）: bí mật; một thông tin cần giấu, không phải nguyên do.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 29,
+      "answer": 2,
+      "options": ["多くなった", "少なくなった", "きれいになった", "きたなくなった"],
+      "explanation": "Đáp án 2 — 水が減る（へる）là lượng nước giảm; gần nghĩa với 少なくなる.\nDịch: “Gần đây tôi có cảm giác lượng nước ở con sông này đã giảm.”\n1. 多くなった: đã tăng/nhiều lên; ngược nghĩa với へった.\n2. 少なくなった: đã ít đi; diễn đạt đúng việc lượng nước giảm.\n3. きれいになった: đã sạch/đẹp hơn; nói về chất lượng, không phải lượng nước.\n4. きたなくなった: đã bẩn hơn; cũng nói về chất lượng chứ không phải lượng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 30,
+      "answer": 3,
+      "options": ["やり方を調べた", "やり方を教わった", "もう一度やった", "やるのを途中でやめた"],
+      "explanation": "Đáp án 3 — やり直す（やりなおす）là làm lại một lần nữa/từ đầu; thí nghiệm không thành công nên được thử lại.\nDịch: “Thí nghiệm không thành công nên tôi đã làm lại.”\n1. やり方を調べた: đã tìm hiểu cách làm; không có nghĩa thực hiện lại thí nghiệm.\n2. やり方を教わった: đã được chỉ cách làm; chưa nói rằng đã làm lại.\n3. もう一度やった: đã làm thêm một lần nữa; gần nghĩa trực tiếp với やり直した.\n4. やるのを途中でやめた: đã dừng giữa chừng; trái nghĩa với làm lại.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 31,
+      "answer": 4,
+      "options": [
+        "今日は疲れたので、早めにベッドにころんだ",
+        "仕事が入ったので、旅行の計画がころんでしまった",
+        "台風で庭の木がころんだ",
+        "階段でころんでけがをした"
+      ],
+      "explanation": "Đáp án 4 — 転ぶ（ころぶ）là ngã, mất thăng bằng rồi đổ xuống; người nói bị ngã trên cầu thang và bị thương.\nDịch câu đúng: “Tôi bị ngã ở cầu thang và bị thương.”\n1. Nếu muốn nói “mệt nên đi nằm/đi ngủ sớm”, cách nói tự nhiên là 横になった hoặc ベッドに入った. 転んだ nói về việc ngã; có thể hình dung ai đó ngã lên giường, nhưng câu không nêu tai nạn và không diễn đạt tự nhiên ý “đi nằm sớm”.\n2. Kế hoạch du lịch bị hủy/đổ bể thì dùng 計画がだめになった・くずれた; kế hoạch không “ngã”.\n3. Cây đổ do bão thì thường dùng 木が倒れた; 転ぶ chủ yếu nói về người/con vật ngã.\n4. 階段で転んでけがをした: ngã ở cầu thang rồi bị thương; cách dùng đúng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 32,
+      "answer": 1,
+      "options": [
+        "「この書類、３０部コピーしておいて」と秘書に指示した",
+        "「この作文を見ていただけませんか」と先生に指示した",
+        "「あした映画を見に行こうよ」と友達に指示した",
+        "「トイレはどこにありますか」と店員に指示した"
+      ],
+      "explanation": "Đáp án 1 — 指示する（しじする）là giao chỉ thị/hướng dẫn công việc; yêu cầu thư ký sao chép tài liệu là chỉ thị cụ thể.\nDịch câu đúng: “Tôi chỉ thị cho thư ký: ‘Hãy sao chép sẵn 30 bản tài liệu này nhé.’”\n1. Giao cho thư ký nhiệm vụ sao chép 30 bản: 指示した dùng đúng.\n2. Nhờ giáo viên xem bài là お願いした・頼んだ; không phải ra chỉ thị cho giáo viên.\n3. Rủ bạn đi xem phim thì dùng 誘った; đó không phải chỉ thị.\n4. Hỏi nhân viên nhà vệ sinh ở đâu thì dùng 尋ねた・聞いた; không phải chỉ thị.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 33,
+      "answer": 4,
+      "options": [
+        "毎日かならずメールを見送るようにしている",
+        "何ページか見送ってみたが、むずかしくてわからなかった",
+        "電車の窓から景色を見送るのが好きだ",
+        "国に帰る友人を空港まで見送った"
+      ],
+      "explanation": "Đáp án 4 — 見送る（みおくる）là tiễn người lên đường hoặc nhìn họ rời đi; người nói tiễn bạn ở sân bay.\nDịch câu đúng: “Tôi đã tiễn người bạn về nước đến tận sân bay.”\n1. Với email, nói đọc/kiểm tra thư là メールを読む・確認する; không nói 見送る.\n2. Bỏ qua vài trang để đọc tiếp thì dùng ページを飛ばして読む; không “tiễn” các trang.\n3. 見送る thường dùng khi tiễn hoặc nhìn người/phương tiện rời đi. 景色を見送る có thể hiểu là nhìn cảnh vật khuất dần, nhưng cách nói thông thường là 景色を眺める; câu 4 là kết hợp rõ và tự nhiên hơn.\n4. Tiễn bạn về nước tới sân bay: 見送った dùng đúng.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 34,
+      "answer": 1,
+      "options": [
+        "近所の公園にはいろいろな花が植えてある",
+        "ケーキにいちごやクリームをたくさん植えた",
+        "この空港は海に土を植えて作られた",
+        "道に電灯を植えたので明るくなった"
+      ],
+      "explanation": "Đáp án 1 — 植える（うえる）là trồng cây/hạt vào đất; công viên có nhiều loại hoa đã được trồng.\nDịch câu đúng: “Trong công viên gần nhà có trồng nhiều loại hoa.”\n1. Hoa được trồng sẵn trong công viên: 花を植える là cách dùng đúng.\n2. Đặt dâu và kem lên bánh thì dùng のせる・飾る, không dùng 植える.\n3. Tạo đất bằng cách lấn biển thì nói 海を埋め立てて作る; không “trồng đất” xuống biển.\n4. Lắp đèn đường thì dùng 電灯を設置する; không “trồng” đèn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 35,
+      "answer": 1,
+      "options": [
+        "小川さんは正直な人で、決してうそは言いません",
+        "この商品の正直な使い方をこれから説明します",
+        "これは正直な話なのに、だれも信じてくれません",
+        "正直な距離は分かりませんが、１０キロぐらいだと思います"
+      ],
+      "explanation": "Đáp án 1 — 正直（しょうじき）là trung thực, không nói dối; đây là cách dùng tự nhiên để mô tả tính cách một người.\nDịch câu đúng: “Anh Ogawa là người trung thực, tuyệt đối không nói dối.”\n1. 正直な人: người trung thực; câu giải thích ngay là người ấy không nói dối nên cách dùng đúng.\n2. Cách dùng đúng/quy chuẩn là 正しい使い方; 正直 không có nghĩa “đúng”.\n3. 正直な話 là cụm có thật, thường dùng với nghĩa “nói thật lòng”. Nếu ý là “đây là chuyện có thật nhưng chẳng ai tin”, 本当の話 tự nhiên và rõ nghĩa hơn; vì vậy câu này kém phù hợp với cách dùng đang kiểm tra, chứ không phải sai ngữ pháp tuyệt đối.\n4. Khoảng cách chính xác là 正確な距離; 正直 không mô tả độ chính xác.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    }
+  ]
+}

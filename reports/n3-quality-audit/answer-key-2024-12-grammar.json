@@ -1,0 +1,21 @@
+{
+  "exam": "JLPT N3 2024-12",
+  "section": "Grammar Mondai 1",
+  "questionNumbers": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48],
+  "referenceAnswers": [2, 3, 4, 3, 1, 2, 3, 3, 4, 1, 4, 2, 2],
+  "sources": [
+    {
+      "title": "TryNihongo, JLPT N3 December 2024 reference answers",
+      "url": "https://trynihongo.com/it/dap-an-ky-thi-jlpt-n3-thang-12-nam-2024-p1164"
+    },
+    {
+      "title": "Scribd, 2024年12月N3答案",
+      "url": "https://www.scribd.com/document/1054669787/2024%E5%B9%B412%E6%9C%88N3%E7%AD%94%E6%A1%88"
+    }
+  ],
+  "limitations": [
+    "These are independent reference keys, not an official JLPT answer sheet.",
+    "Question 47 option 4 also sounds plausible in ordinary conversation; the two references select option 2, but the item context does not fully disambiguate the alternatives.",
+    "Question 48 option 1 is grammatically possible as a reason; the references select option 2. The explanation records this limitation instead of claiming option 1 is structurally impossible."
+  ]
+}

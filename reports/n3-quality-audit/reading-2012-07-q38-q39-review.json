@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-09-27T13:13:33.198Z",
+  "exam": "JLPT N3 July 2012",
+  "scope": "Reading Mondai 7 instruction and printed questions 38–39 (internal questions 73–74).",
+  "sourcePdf": {
+    "title": "3. N3 7-2012.pdf",
+    "url": "https://drive.google.com/file/d/11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR/view#page=12",
+    "driveFileId": "11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR",
+    "renderedPages": [12, 13],
+    "visualReview": "Chrome/PDF viewer page 12 identifies the task as a guide to party venues in Yasumi City; page 13 shows the venue table. The prior section instruction incorrectly named a second-hand shop advert."
+  },
+  "correction": {
+    "partId": "toan_part_2012_07_m3_g4",
+    "previousInstruction": "問題7　下のページは、リサイクルショップの広告である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+    "correctedInstruction": "問題7　下のページは、「安見市内のパーティー会場」の案内である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+    "questionIds": ["toan_q_2012_07_73", "toan_q_2012_07_74"],
+    "printedQuestions": [38, 39],
+    "answersPreserved": [1, 2],
+    "answerKeysChanged": 0
+  },
+  "answerReference": {
+    "officialKeyEstablished": false,
+    "note": "This review corrected the task instruction and checked the existing answers against the visible venue table; it does not establish an official JLPT answer key."
+  }
+}

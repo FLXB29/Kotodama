@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-09-27",
+  "status": "reviewed_against_local_transcript_pdf",
+  "sourceQuality": "The local transcript PDFs identify themselves as JLPT N3 scripts but are not an official JLPT answer-key publication.",
+  "sources": [
+    {
+      "file": "data/n3_scripts/5. N3 7-2014/5. N3 7-2014 (script).pdf",
+      "questions": "75-86",
+      "pages": "1-6"
+    },
+    {
+      "file": "data/n3_scripts/5. N3 12-2014/5. N3 12-2014 (script).pdf",
+      "questions": "75-86",
+      "pages": "1-7"
+    }
+  ],
+  "reviewedCount": 24,
+  "reviewed": {
+    "toan_q_2014_07_75": {
+      "answer": 2,
+      "sourcePage": 1,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_76": {
+      "answer": 3,
+      "sourcePage": 1,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_77": {
+      "answer": 4,
+      "sourcePage": 1,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_78": {
+      "answer": 2,
+      "sourcePage": 2,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_79": {
+      "answer": 2,
+      "sourcePage": 3,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_80": {
+      "answer": 1,
+      "sourcePage": 3,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_81": {
+      "answer": 4,
+      "sourcePage": 4,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_82": {
+      "answer": 2,
+      "sourcePage": 4,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_83": {
+      "answer": 3,
+      "sourcePage": 5,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_84": {
+      "answer": 4,
+      "sourcePage": 5,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_85": {
+      "answer": 3,
+      "sourcePage": 6,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_07_86": {
+      "answer": 2,
+      "sourcePage": 6,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_75": {
+      "answer": 2,
+      "sourcePage": 1,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_76": {
+      "answer": 3,
+      "sourcePage": 2,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_77": {
+      "answer": 1,
+      "sourcePage": 2,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_78": {
+      "answer": 3,
+      "sourcePage": 3,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_79": {
+      "answer": 2,
+      "sourcePage": 3,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_80": {
+      "answer": 4,
+      "sourcePage": 4,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_81": {
+      "answer": 3,
+      "sourcePage": 5,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_82": {
+      "answer": 4,
+      "sourcePage": 5,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_83": {
+      "answer": 1,
+      "sourcePage": 6,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_84": {
+      "answer": 2,
+      "sourcePage": 6,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_85": {
+      "answer": 3,
+      "sourcePage": 6,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    },
+    "toan_q_2014_12_86": {
+      "answer": 1,
+      "sourcePage": 7,
+      "matchesStoredAnswer": true,
+      "explanationUpdated": true
+    }
+  },
+  "limits": [
+    "No full transcript was restored; the reviewed material is a Vietnamese explanation based on the matching local script page.",
+    "This report documents the first review batch (questions 75-86); the follow-up batch for questions 87-102 is documented in listening-2014-m3-m5-source-review.json.",
+    "The transcript PDFs are secondary sources, so this does not certify the answer key as an official JLPT key."
+  ]
+}

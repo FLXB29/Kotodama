@@ -1,0 +1,248 @@
+{
+  "generatedAt": "2026-09-26T10:24:04.285Z",
+  "examId": "toan-n3-202312-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Compares the manually reviewed key with two published reference keys. Neither reference is an official JLPT answer sheet. Disagreements are recorded and never auto-corrected.",
+  "sources": [
+    {
+      "name": "TryNihongo",
+      "url": "https://trynihongo.com/ja/dap-an-ky-thi-jlpt-n3-thang-12-nam-2023-p1139",
+      "qualification": "Published reference answer sequence; not an official answer sheet."
+    },
+    {
+      "name": "Xgxedu / 新干线日语",
+      "url": "https://www.xgxedu.com/html/kszx/5729.html",
+      "qualification": "The page describes answers as reference only."
+    },
+    {
+      "name": "TryNihongo question text",
+      "url": "https://trynihongo.com/ja/ri-ben-yu-neng-li-shi-yan-jlptwen-fa-du-jie-n3-2023nian-12yue-shi-yan-q1346",
+      "qualification": "Cross-checks the Japanese sentence context and printed choice order; not an answer key."
+    },
+    {
+      "name": "Nihongoph",
+      "url": "https://www.nihongoph.com/2023/12/jlpt-n3-12-2023-jlpt-n3-actual-previous.html",
+      "qualification": "Additional paper and answer-link reference; original answer sheet not independently authenticated."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "editorialAnswer": 4,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 4,
+      "choices": [
+        "1　で",
+        "2　での　",
+        "3　から",
+        "4　からの"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "editorialAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "choices": [
+        "1 までが",
+        "2 までで　",
+        "3 にまで",
+        "4 のまで"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "editorialAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 2,
+      "choices": [
+        "1 について",
+        "2 によって",
+        "3 において",
+        "4 に比べて"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "editorialAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "choices": [
+        " 1 どうか",
+        "2 決して",
+        "3 ついに",
+        "4 今にも"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 1,
+      "editorialAnswer": 1,
+      "tryNihongoReference": 1,
+      "xgxeduReference": 1,
+      "choices": [
+        " 1 うちに",
+        "2 ときに",
+        "3 までに",
+        "4 たびに"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "editorialAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 2,
+      "choices": [
+        "1 考えるように",
+        "2 考えて",
+        "3 考えたのに",
+        "4 考えるのか"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "editorialAnswer": 1,
+      "tryNihongoReference": 1,
+      "xgxeduReference": 1,
+      "choices": [
+        "1 食べられそうにない",
+        "2 食べられなくなる",
+        "3 食べられるだろう　",
+        "4 食べられたほうがいい"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "editorialAnswer": 4,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 4,
+      "choices": [
+        "1 喜んだら",
+        "2 喜びたくて",
+        "3 喜ばせたら",
+        "4 喜ばせたくて"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "editorialAnswer": 4,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "choices": [
+        "1 踊れるようにすると",
+        "2 踊れるようになっても",
+        "3 踊れるようにして",
+        "4 踊れるようになるのに"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": false,
+      "answerMatchesXgxedu": false,
+      "decision": "Keep option 4 based on the full sentence: 上手に踊れるようになるのに何年かかる asks how long it takes to become able to dance well. Both reference keys list option 3, which does not complete the duration construction as naturally. Original answer sheet needed."
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 2,
+      "editorialAnswer": 2,
+      "tryNihongoReference": 2,
+      "xgxeduReference": 2,
+      "choices": [
+        "1 行かなくてはいけない",
+        "2 行きたがらない",
+        "3 行ってもかまわない",
+        "4 行くに違いない"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "editorialAnswer": 3,
+      "tryNihongoReference": 4,
+      "xgxeduReference": 4,
+      "choices": [
+        "1 がございます",
+        "2 がいらっしゃいます",
+        "3 でございます",
+        "4 でいらっしゃいます"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": false,
+      "answerMatchesXgxedu": false,
+      "decision": "Keep option 3 based on the question asking which floor the counter is on: 5階でございます is the polite location answer. Both references list option 4, でいらっしゃいます, which honors a person rather than a floor. Original answer sheet needed."
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "editorialAnswer": 3,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "choices": [
+        " 1 買ってきておく",
+        "　2 買いにきている",
+        "3 買いにいってくる",
+        "4 買っていってしまう"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": true,
+      "answerMatchesXgxedu": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "editorialAnswer": 1,
+      "tryNihongoReference": 3,
+      "xgxeduReference": 3,
+      "choices": [
+        " 1 思っていたところでした",
+        "2 思っているところです",
+        "3 思っていたからでした　",
+        "4 思っているからです"
+      ],
+      "answerMatchesEditorial": true,
+      "answerMatchesTryNihongo": false,
+      "answerMatchesXgxedu": false,
+      "decision": "Keep option 1 based on the phone-call context: 電話をしようと思っていたところでした means the speaker was just about to call too. Both references list option 3, which ends in からでした and does not form the natural response. Original answer sheet needed."
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesEditorial": 13,
+    "storedMatchesTryNihongo": 10,
+    "storedMatchesXgxedu": 10,
+    "sourceDisagreements": 3
+  }
+}

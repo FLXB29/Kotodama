@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:03:08.074Z",
+  "examId": "toan-n3-201807-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.saromalang.com/2018/06/jlpt.html",
+  "method": "Answer sequence compared with the Saromalang reference key; questions additionally transcribed by TryNihongo. Neither publication is the official JLPT marking sheet.",
+  "answerSequence": [
+    4,
+    1,
+    2,
+    4,
+    2,
+    3,
+    3,
+    2,
+    3,
+    1,
+    4,
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "choices": [
+        "1 と",
+        "2 が ",
+        "3 へ",
+        "4 を"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 1,
+      "choices": [
+        "1 に対して",
+        " 2 に比べて",
+        " 3 のことで",
+        "4 のほかに"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "choices": [
+        "1 ぜったい",
+        "2 せっかく",
+        "3 けっして",
+        "4 まったく"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 4,
+      "choices": [
+        " 1 気をつけることで",
+        "2 気をつけるかどうか ",
+        "3 気をつけるのだから",
+        "4 気をつけるだけではなく"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        " 1 習わせるだろうか",
+        "2 習わせようか",
+        "3 習わせているのだ",
+        "4 習わせるつもりだ"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 3,
+      "choices": [
+        "1 難しいに違いない",
+        "2 難しいはずがない ",
+        " 3 難しいことではない",
+        " 4 難しいかもしれない"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "choices": [
+        "1 食べられます ",
+        "2 差し上げます ",
+        "3 なさいます",
+        " 4 ございます"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 2,
+      "choices": [
+        "1 コピーさせるでしょうか ",
+        "2 コピーさせていただけませんか ",
+        "3 コピーしたらいいがですか",
+        "4 コピーするのではないでしょうか"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "choices": [
+        "1 ぐらいでも",
+        "2 ずつなら",
+        "3 までなら",
+        "4 からでも"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "choices": [
+        "1 行ってみないか",
+        "2 行ったらいい ",
+        " 3 行っただろう ",
+        "4 行ってみて"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "choices": [
+        " 1 帰っていく前に",
+        " 2 帰っている間は",
+        "3 帰ってきたまま",
+        "4 帰ってしまっていて"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "choices": [
+        "1 大きくなるのに",
+        "2 大きいようだし",
+        " 3 大きくできて",
+        "4 大きいほうがよければ"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "choices": [
+        "1 飲まないほうがよさそうですね ",
+        "2 飲まないといけないでしょうか",
+        " 3 飲まなくてもしかたないですね",
+        "4 飲まなければいいんでしょうか"
+      ]
+    }
+  ]
+}

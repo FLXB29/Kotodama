@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-09-25T10:29:43.661Z",
+  "examId": "toan-n3-201107-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.scribd.com/document/1058014920/2011%E5%B9%B47%E6%9C%88%E6%96%B0%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%95N3",
+  "method": "All 13 answers match the linked nonofficial Chinese worked-solution sequence for Grammar Mondai 1. Explanations also check the Japanese forms against the complete sentences; this does not certify other test sections.",
+  "answerSequence": [
+    2,
+    2,
+    4,
+    3,
+    4,
+    1,
+    2,
+    3,
+    4,
+    4,
+    2,
+    3,
+    1
+  ],
+  "optionCorrections": {},
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 2,
+      "choices": [
+        "1.ために ",
+        "2.ように",
+        " 3.ことに ",
+        "4.みたいに"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 2,
+      "choices": [
+        "1.買い",
+        "2.買え ",
+        " 3.買う",
+        " 4.買える"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ほうに",
+        "2.場合に",
+        "3.ほかで",
+        "4.ことで"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 3,
+      "choices": [
+        "1.田中さんが",
+        "2.田中さんで",
+        "3.田中さんって",
+        " 4.田中さんでも"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 4,
+      "choices": [
+        "1.いつのまにか",
+        " 2.いつ",
+        "3.いつでも",
+        "4.いつか"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "choices": [
+        "1.なんか",
+        "2.ばかり",
+        " 3.へ",
+        " 4.に"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.欲しい",
+        "2.欲しがっている",
+        "3.欲しそうな ",
+        "4.欲しがってみる"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 3,
+      "choices": [
+        "1.来られても",
+        "2.いらっしゃっても ",
+        "3.うかがっても ",
+        "4.行かれても"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 4,
+      "choices": [
+        "1.みさせてください",
+        "2.みてもいいでしょうか",
+        "3.みさせてほしいのですか",
+        "4.みたらどうでしょう"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ほどが",
+        "2.ほどで",
+        "3.だけが ",
+        " 4.だけで"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 2,
+      "choices": [
+        "1.までは",
+        "2.までには",
+        "3.までも ",
+        "4.までにも"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 3,
+      "choices": [
+        "1.らしいなら",
+        "2.らしいのに",
+        " 3.ようなら",
+        "4.ようなのに"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 1,
+      "choices": [
+        "1.話しかけないほうがよさそうだな ",
+        " 2.話しかけなくてもよさそうだな",
+        "3.話しかけないほうがいいそうだな ",
+        "4.話しかけなくてもいいそうだな"
+      ]
+    }
+  ]
+}

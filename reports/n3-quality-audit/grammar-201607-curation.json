@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-09-25T10:14:58.161Z",
+  "examId": "toan-n3-201607-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "source": "https://www.scribd.com/document/817563748/n3-2016%E5%B9%B47%E6%9C%88%E7%9C%9F%E9%A2%98-%E7%AD%94%E6%A1%88-%E8%AF%A6%E8%A7%A3-%E5%90%AC%E5%8A%9B%E5%8E%9F%E6%96%87",
+  "method": "Answers were manually checked against the Japanese sentence context. The linked scanned answer compilation has an incomplete text extraction for this 13-item sequence, so no full external-key match is claimed.",
+  "answerSequence": [
+    3,
+    3,
+    1,
+    2,
+    2,
+    4,
+    2,
+    4,
+    1,
+    4,
+    3,
+    1,
+    4
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 3,
+      "choices": [
+        "1.へ",
+        "2.を",
+        "3.に",
+        "4.も"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 3,
+      "choices": [
+        "1.にとって",
+        "2.にしたがって",
+        "3.に対して",
+        "4.に比べて"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "choices": [
+        "1.少しも ",
+        "2.絶対に ",
+        "3.なかなか ",
+        " 4.せっかく"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "choices": [
+        "1.こう",
+        "2.そう ",
+        " 3.こういう",
+        " 4.そういう"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "choices": [
+        " 1.かけ出した",
+        "2.かけ直した",
+        "3.かけたところだ",
+        " 4.かけたばかりだ"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.勝つはずだ",
+        "2.勝ったらいい",
+        " 3.勝つのではないだろうか",
+        " 4.勝っても不思議ではない"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 2,
+      "choices": [
+        "1.なさって",
+        " 2.おっしゃって",
+        "3.お聞きして",
+        "4.申(もう)し上げて"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.使われております",
+        " 2.使っていらっしゃいます ",
+        "3.使ってくださいます ",
+        "4.使わせていただきます"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "choices": [
+        "1.からしか",
+        " 2.からでも",
+        "3.でしか",
+        "4.ででも"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 4,
+      "choices": [
+        "1.ことにするのは",
+        "2.ができるのは",
+        "3.ことにするまで",
+        " 4.ができるまで"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "choices": [
+        " 1.近いほうがいいかどうか",
+        " 2.近すぎないかどうか ",
+        "3.近いほうがよければ ",
+        "4.近すぎなければ"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 1,
+      "choices": [
+        "1.出しやすくなる",
+        "2.出すことになった ",
+        "3.出しつづけてみる",
+        "4.出してみようとした"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 4,
+      "choices": [
+        " 1.いればいい ",
+        "2.おいたでしょう ",
+        "3.いるんじゃない ",
+        "4.おいてくれない"
+      ]
+    }
+  ]
+}

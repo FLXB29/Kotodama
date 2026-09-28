@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-09-26T10:24:00.062Z",
+  "examId": "toan-n3-201707-full",
+  "scope": "Grammar Mondai 1, questions 36–48.",
+  "method": "The stored and manually reviewed answer sequences agree with the linked published answer reference. These publications are not official JLPT marking sheets; the audit is scoped to this subtest.",
+  "sources": [
+    {
+      "name": "ChuyenNgoaiNgu reference key",
+      "url": "https://chuyenngoaingu.com/news/dap-an-ky-thi-nang-luc-nhat-ngu-jlpt-thang-7-2017-1211.aspx"
+    },
+    {
+      "name": "LuyenThiTiengNhat question text and Vietnamese translations",
+      "url": "https://www.luyenthitiengnhat.edu.vn/mod/page/view.php?id=3405"
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": [
+        "1.ばかり",
+        "2.なんか",
+        "3.しか",
+        "4.でも"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": [
+        "1.までに",
+        " 2.たびに",
+        " 3.に対して",
+        " 4.にしたがって"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        "1.今にも",
+        "2.ようやく",
+        "3.絶対 ",
+        " 4.あまりに"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": [
+        "1.便利である一方で ",
+        " 2.便利なのだから ",
+        "3.利だとすると",
+        "4.便利であるように"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": [
+        "1.入れる",
+        " 2.入る",
+        "3.入れ ",
+        "4.入り"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        "1.間に合うに違いなくて",
+        " 2.間に合いそうになくて",
+        " 3.間に合わないはずがなくて",
+        " 4.間に合わせないといけなくて"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": [
+        "1.入ろう",
+        "2.入って ",
+        "3.入るな ",
+        "4.入りなさい"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": [
+        "1.買うところだ ",
+        "2.買うことにする ",
+        "3.買ってほしい ",
+        "4.買ってしまう"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 1,
+      "reviewedAnswer": 1,
+      "choices": [
+        "1.だけでも ",
+        " 2.までには",
+        " 3.だけに",
+        "4.までで"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 3,
+      "reviewedAnswer": 3,
+      "choices": [
+        "1.持たなくて",
+        "2.持てなくて",
+        "3.持たないで",
+        " 4.持てないで"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 4,
+      "reviewedAnswer": 4,
+      "choices": [
+        " 1.入りたいのも ",
+        "2.入れたのは ",
+        "3.入るまでより",
+        "4.入ってからのほうが"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        " 1.をしてい ",
+        "2.がしてくる",
+        "3.をしている ",
+        "4.がしてある"
+      ],
+      "matches": true
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 2,
+      "reviewedAnswer": 2,
+      "choices": [
+        "1.やっておきそうなので ",
+        "2.やってしまいたいので ",
+        "3.やってみてもいいんですが ",
+        "4.やっているところなんですが"
+      ],
+      "matches": true
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesReviewed": 13
+  }
+}

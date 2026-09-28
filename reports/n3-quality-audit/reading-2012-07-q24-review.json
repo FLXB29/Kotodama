@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-09-27T13:10:11.886Z",
+  "exam": "JLPT N3 July 2012",
+  "scope": "Reading Mondai 4, printed question 24 (internal question 59).",
+  "sourcePdf": {
+    "title": "3. N3 7-2012.pdf",
+    "url": "https://drive.google.com/file/d/11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR/view#page=7",
+    "driveFileId": "11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR",
+    "renderedPage": 7,
+    "visualReview": "Chrome/PDF viewer page 7 displays the passage about sushi chef Hayashi and all four options. The passage describes the “three days, three months, three years” proverb and his view after passing three years."
+  },
+  "answerReference": {
+    "officialKeyEstablished": false,
+    "basis": "The source passage and the four printed options support option 3; no official JLPT answer key was established in this review."
+  },
+  "answerKeysChanged": 0,
+  "correction": {
+    "questionId": "toan_q_2012_07_59",
+    "previousExplanation": "Đáp án 3: Người viết coi việc sửa chữa đồ chơi là công việc sẽ gắn bó cả đời. Chỗ trống cần một câu thể hiện cam kết lâu dài, phù hợp với mạch văn hơn những mốc ba hay hai mươi năm.",
+    "answer": 3,
+    "selectedOption": "一生の仕事だな",
+    "explanation": "Đáp án 3 — 「一生の仕事だな」 (“Đây đúng là công việc cả đời mình”) nối hợp lý với ý: nếu kiên trì qua ba năm thì có thể tiếp tục làm nghề lâu dài. Đoạn văn nói về Hayashi, người đã làm sushi hơn 20 năm; đây không phải câu chuyện sửa đồ chơi.\nDịch: “Khoảng sau khi đã qua ba năm, ông Hayashi bắt đầu nghĩ: ‘Đây đúng là công việc cả đời mình.’”",
+    "issue": "The previous explanation referred to toy repair, which belongs to a different reading passage.",
+    "explanationScope": "Concise reading explanation and translation; no extended distractor analysis, consistent with the requested reading-section scope."
+  }
+}

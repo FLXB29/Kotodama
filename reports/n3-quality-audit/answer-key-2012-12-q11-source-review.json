@@ -1,0 +1,19 @@
+{
+  "questionId": "toan_q_2012_12_11",
+  "exam": "JLPT N3 12/2012, vocabulary Mondai 2, question 11",
+  "source": "3. N3 12-2012.pdf (Google Drive), page 1",
+  "sourceStem": "会議で決まったことをきちんときろくしておいてください。",
+  "sourceOptions": ["1 記録", "2 紀録", "3 記緑", "4 紀線"],
+  "before": {
+    "answer": 3,
+    "options": ["1 記緑", "2 紀録", "3 記録", "4 紀緑"]
+  },
+  "after": {
+    "answer": 1,
+    "options": ["1 記録", "2 紀録", "3 記緑", "4 紀線"]
+  },
+  "answerRationale": "The PDF prints 記録 as option 1; きろく is written 記録 and means to record what was decided. The answer is supported by the printed source and Japanese word form; a separate official answer sheet was not consulted.",
+  "changedAnswer": true,
+  "mirroredInto": ["data/jlpt_n3_toan_master.json", "data/jlpt_n3_explanations_curated.json"],
+  "reviewedDate": "2026-09-25"
+}

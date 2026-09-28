@@ -1,0 +1,77 @@
+{
+  "reviewedOn": "2026-09-27",
+  "fullExamId": "toan-n3-202012-full",
+  "sectionExamId": "cm2u2xg4300wm134izpbjrysi-grammar-reading",
+  "questionNumbers": [
+    44,
+    45,
+    48
+  ],
+  "answerKeysChanged": 0,
+  "rows": [
+    {
+      "number": 44,
+      "answer": 4,
+      "sourceQuestionId": "toan_q_2020_12_44",
+      "sectionQuestionId": "cm2u2xhgb00y0134i3bsz57ev",
+      "sourceTranscriptionCorrection": {
+        "from": "フライバン",
+        "to": "フライパン"
+      },
+      "options": [
+        "変わっていって",
+        "変わってくるのに",
+        "変わっていくと",
+        "変わってきたら"
+      ],
+      "explanation": "Đáp án 4 — 「肉の色が変わってきたら野菜を入れる」: khi màu thịt bắt đầu đổi, hãy cho rau vào. 「〜てくる」 nhìn sự thay đổi dần tiến đến thời điểm hiện tại; 「たら」 nêu mốc thực hiện bước tiếp theo.\n1. 変わっていって: 「〜ていく」 nói thay đổi tiếp tục từ hiện tại về sau; thiếu mốc điều kiện hoàn tất trước khi cho rau.\n2. 変わってくるのに: 「のに」 nêu tương phản “mặc dù”, không phù hợp với hướng dẫn nấu theo trình tự.\n3. 変わっていくと: “khi màu cứ thay đổi thì…” có thể tạo quan hệ điều kiện rộng, nhưng không nhấn mạnh thời điểm thịt đã bắt đầu chuyển màu để chuyển sang bước tiếp theo.\n4. 変わってきたら: “khi đã bắt đầu đổi màu”; phù hợp hướng dẫn canh thời điểm cho rau vào.\nDịch: “(Trong chương trình nấu ăn) Trước hết xào thịt trên chảo. Khi màu thịt bắt đầu đổi, hãy cho rau vào.”\nGhi nhớ: 「〜てくる」 nhìn sự thay đổi tiến đến hiện tại; 「〜ていく」 nhìn sự thay đổi tiếp tục về sau; 「〜たら」 = khi/sau khi.",
+      "includesTranslation": true,
+      "explainsAllChoices": true
+    },
+    {
+      "number": 45,
+      "answer": 1,
+      "sourceQuestionId": "toan_q_2020_12_45",
+      "sectionQuestionId": "cm2u2xhgb00y1134iyhmzy6r8",
+      "options": [
+        "聞かせる",
+        "聞かれる",
+        "聞かされる",
+        "聞いている"
+      ],
+      "explanation": "Đáp án 1 — 「赤ちゃんにクラシック音楽を聞かせる」: cho em bé nghe nhạc cổ điển. 「聞かせる」 là thể sai khiến của 「聞く」, khiến/cho ai nghe.\n1. 聞かせる: “cho nghe”; phù hợp với lời khuyên mở nhạc cho em bé khi khó ngủ.\n2. 聞かれる: bị động/tôn kính “được nghe”; không diễn tả người lớn chủ động mở nhạc cho bé.\n3. 聞かされる: bị ép phải nghe; mang sắc thái bị động ngoài ý muốn, không phù hợp lời khuyên chăm em bé.\n4. 聞いている: “đang nghe”; chủ thể nghe là em bé, nhưng câu cần người chăm sóc cho bé nghe nhạc.\nDịch: “Tôi nghe nói khi em bé mãi không ngủ, nếu cho bé nghe nhạc cổ điển thì bé sẽ ngủ ngon.”\nGhi nhớ: 「人に音楽を聞かせる」 = cho ai nghe nhạc; 「聞かされる」 = bị bắt phải nghe.",
+      "includesTranslation": true,
+      "explainsAllChoices": true
+    },
+    {
+      "number": 48,
+      "answer": 1,
+      "sourceQuestionId": "toan_q_2020_12_48",
+      "sectionQuestionId": "cm2u2xhgb00y4134i0xsgg85e",
+      "options": [
+        "しなきゃならなくなった",
+        "しちゃいけなくなった",
+        "するつもりでいる",
+        "しないようにしている"
+      ],
+      "explanation": "Đáp án 1 — 「急に出勤しなきゃならなくなった」: đột nhiên thành ra phải đi làm. 「しなきゃならない」 là khẩu ngữ của 「しなければならない」; 「〜なくなる」 diễn tả tình trạng mới phát sinh.\n1. しなきゃならなくなった: “đã trở nên phải làm”; hợp với cuộc gọi bất ngờ từ công ty vào ngày nghỉ.\n2. しちゃいけなくなった: “đã trở nên không được làm”; trái với việc người chồng phải đi làm.\n3. するつもりでいる: “đang định làm”; không nêu việc bất ngờ thành nghĩa vụ.\n4. しないようにしている: “đang cố không làm”; ngược nghĩa với việc phải đi làm.\nDịch: “Chồng: Anh đi công ty đây. — Vợ: Ủa, hôm nay anh được nghỉ mà? — Chồng: Công ty vừa gọi, đột nhiên anh lại phải đi làm.”\nGhi nhớ: 「Vなきゃならない」 = phải V (khẩu ngữ); 「Vなくなる」 = trở nên không/không còn; 「Vなきゃならなくなる」 = phát sinh việc phải V.",
+      "includesTranslation": true,
+      "explainsAllChoices": true
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://learnjapaneseaz.com/jlpt-n3-grammar-practice-test-8.html",
+      "notes": "Third-party transcription lists the N3 12/2020 grammar items and answers 9 (4) and 10 (1); not an official JLPT key."
+    },
+    {
+      "url": "https://ahovn.net/jlpt-n3-12-2020/6/",
+      "notes": "Third-party Vietnamese walkthrough identifies question 13 option 1; the page is not an official JLPT key."
+    },
+    {
+      "url": "https://trynihongo.com/pt/de-thi-jlpt-ngu-phap-doc-hieu-n3-thang-12-2020-q1217",
+      "notes": "Independent transcription includes question 13 wording and options; it is not an official JLPT key."
+    }
+  ],
+  "scope": "Mirror the already-curated full-mock explanations for questions 9, 10, and 13 (internal questions 44, 45, and 48) into the standalone grammar-reading exam; correct the standalone OCR typo フライバン to フライパン against the full-mock transcription."
+}

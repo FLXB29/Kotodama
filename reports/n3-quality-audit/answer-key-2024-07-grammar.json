@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-09-26T15:13:53.971Z",
+  "examId": "toan-n3-202407-full",
+  "scope": "Grammar Mondai 1, question numbers 36–48.",
+  "method": "Stored and checked answer keys were compared with two published reference sources; these are not official JLPT answer sheets.",
+  "sources": [
+    {
+      "name": "Xgxedu / 新干线日语",
+      "url": "https://www.xgxedu.com/html/kszx/6045.html",
+      "qualification": "Published a reference answer sequence for July 2024."
+    },
+    {
+      "name": "Jokka Jo",
+      "url": "https://www.jokkajo.com/2024/07/kunci-jawaban-jlpt-juli-2024-lengkap.html",
+      "qualification": "Lists the completed Japanese sentence for each grammar item."
+    },
+    {
+      "name": "Exam booklet",
+      "url": "https://www.tiengnhatdongian.com/wp-content/uploads/2024/07/De-thi-JLPT-chinh-thuc-N3-thang-7_2024.pdf",
+      "qualification": "Cross-checks the original question wording and printed choice order; not an answer key."
+    }
+  ],
+  "rows": [
+    {
+      "questionNumber": 36,
+      "storedAnswer": 4,
+      "checkedAnswer": 4,
+      "xgxeduReference": 4,
+      "jokkaJoCompletedSentence": "時間を過ごす",
+      "choices": [
+        "1　で",
+        "2　に",
+        "3　が",
+        "4　を"
+      ]
+    },
+    {
+      "questionNumber": 37,
+      "storedAnswer": 2,
+      "checkedAnswer": 2,
+      "xgxeduReference": 2,
+      "jokkaJoCompletedSentence": "どちらへも歩いていける",
+      "choices": [
+        "1.どちらから ",
+        " 2.どちらへも",
+        "3.どちらかでも",
+        "4.どちらかまで"
+      ]
+    },
+    {
+      "questionNumber": 38,
+      "storedAnswer": 1,
+      "checkedAnswer": 1,
+      "xgxeduReference": 1,
+      "jokkaJoCompletedSentence": "バスの運転手として",
+      "choices": [
+        "1.として",
+        " 2.のほうが ",
+        "3.にとって",
+        " 4.のほかに"
+      ]
+    },
+    {
+      "questionNumber": 39,
+      "storedAnswer": 2,
+      "checkedAnswer": 2,
+      "xgxeduReference": 2,
+      "jokkaJoCompletedSentence": "結局、遅刻してしまった",
+      "choices": [
+        " 1.つい",
+        "2.結局",
+        " 3.次第に",
+        "4.ほとんど"
+      ]
+    },
+    {
+      "questionNumber": 40,
+      "storedAnswer": 2,
+      "checkedAnswer": 2,
+      "xgxeduReference": 2,
+      "jokkaJoCompletedSentence": "聞くたび",
+      "choices": [
+        "1.聞き ",
+        "2.聞く",
+        "3.聞いた",
+        "4.聞いている"
+      ]
+    },
+    {
+      "questionNumber": 41,
+      "storedAnswer": 1,
+      "checkedAnswer": 1,
+      "xgxeduReference": 1,
+      "jokkaJoCompletedSentence": "帰ったらどうするか",
+      "choices": [
+        "1.するかは",
+        "2.するかが",
+        "3.することは",
+        "4.することが"
+      ]
+    },
+    {
+      "questionNumber": 42,
+      "storedAnswer": 1,
+      "checkedAnswer": 1,
+      "xgxeduReference": 1,
+      "jokkaJoCompletedSentence": "着てみると",
+      "choices": [
+        " 1.着てみると",
+        " 2.着たのだから",
+        "3.着るとしたら ",
+        "4.着ていることで"
+      ]
+    },
+    {
+      "questionNumber": 43,
+      "storedAnswer": 4,
+      "checkedAnswer": 4,
+      "xgxeduReference": 4,
+      "jokkaJoCompletedSentence": "明日出さないといけないのに",
+      "choices": [
+        "1.出したほうがよくても ",
+        "2.出さなくてもいいのに ",
+        " 3.出してはいけなくても",
+        "4.出さないといけないのに"
+      ]
+    },
+    {
+      "questionNumber": 44,
+      "storedAnswer": 3,
+      "checkedAnswer": 3,
+      "xgxeduReference": 3,
+      "jokkaJoCompletedSentence": "によって、続けられている",
+      "choices": [
+        "1.続けてもらえる",
+        "2.続けさせられる",
+        "3.続けられている",
+        " 4.続けてくれている"
+      ]
+    },
+    {
+      "questionNumber": 45,
+      "storedAnswer": 1,
+      "checkedAnswer": 1,
+      "xgxeduReference": 1,
+      "jokkaJoCompletedSentence": "どこで買ったの",
+      "choices": [
+        "1.買ったの",
+        "2.買ったよね ",
+        " 3.買ったことある",
+        "4.買ったんじゃない"
+      ]
+    },
+    {
+      "questionNumber": 46,
+      "storedAnswer": 3,
+      "checkedAnswer": 3,
+      "xgxeduReference": 3,
+      "jokkaJoCompletedSentence": "後で使うから、そのままにしておいてください",
+      "choices": [
+        "1.していませんか",
+        "2.なっていませんか",
+        "3.しておいてください",
+        "4.なっておいてください"
+      ]
+    },
+    {
+      "questionNumber": 47,
+      "storedAnswer": 2,
+      "checkedAnswer": 2,
+      "xgxeduReference": 2,
+      "jokkaJoCompletedSentence": "忘れることは、必ずしも悪いことではない",
+      "choices": [
+        " 1.悪いことなのだ",
+        "2.悪いことではない",
+        "3.悪いことのはずだ",
+        "4.悪いことかもしれない"
+      ]
+    },
+    {
+      "questionNumber": 48,
+      "storedAnswer": 3,
+      "checkedAnswer": 3,
+      "xgxeduReference": 3,
+      "jokkaJoCompletedSentence": "何かスポーツをなさいますか",
+      "choices": [
+        "1.いたしますか",
+        "2.まいりますか",
+        "3.なさいますか",
+        "4.いらっしゃいますか"
+      ]
+    }
+  ],
+  "totals": {
+    "questions": 13,
+    "storedMatchesChecked": 13,
+    "referencesAgree": true
+  },
+  "sourceDataCorrection": "Question 46 choice 3 had a duplicate printed label 2 in the imported JSON. It is corrected to 3. The original PDF numbers it as choice 3, and the stored answer remains 3."
+}

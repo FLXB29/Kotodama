@@ -1,0 +1,148 @@
+{
+  "generatedAt": "2026-09-27T03:10:22.295Z",
+  "examId": "toan-n3-201307-full",
+  "section": "Từ vựng",
+  "questionRange": "15–30",
+  "reviewedQuestionCount": 16,
+  "reviewedChoiceCount": 64,
+  "answerKeysChanged": 0,
+  "unresolvedSourceText": [
+    "Question 17 option 1 is stored as まずいい; its intended original form has not been confirmed, so the choice was preserved and not silently corrected.",
+    "Question 23 option 3 is stored as きっとり, which is not a standard form; the choice was preserved and not silently corrected."
+  ],
+  "sourceLimits": {
+    "originalQuestionPdfVisuallyInspectedThisPass": false,
+    "officialAnswerKeyConfirmed": false,
+    "method": "Reviewed the stored Japanese prompt and all four choices for questions 15–30, translated the prompt, and replaced automatic dictionary glosses with contextual meanings and concise distractor explanations. Answer keys and printed choice text were preserved; the original question paper and official key were not independently confirmed in this pass."
+  },
+  "rows": [
+    {
+      "number": 15,
+      "answer": 4,
+      "options": ["ふらふらなので", "ぺこぺこなので", "すいたので", "かわいたので"],
+      "explanation": "Đáp án 4 — 「のどがかわく」là khát nước; cổ họng bị khô nên muốn uống gì đó.\nDịch: “Tôi khát nên muốn uống thứ gì đó.”\n1. ふらふらなので: vì choáng/váng, đi đứng loạng choạng; không diễn tả khát.\n2. ぺこぺこなので: vì đói cồn cào; thường nói おなかがぺこぺこ, không phải のどがぺこぺこ.\n3. すいたので: vì đói/rỗng (おなかがすく); không phải cách nói tự nhiên cho cổ họng khát.\n4. かわいたので: vì bị khô; のどがかわく là cách nói cố định “khát nước”.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 16,
+      "answer": 3,
+      "options": ["連休", "故障", "渋滞", "集中"],
+      "explanation": "Đáp án 3 — 「道が渋滞している」là đường đang tắc nghẽn; vì thế xe không thể tiến lên.\nDịch: “Do đang thi công nên đường bị tắc, xe hoàn toàn không tiến lên được.”\n1. 連休（れんきゅう）: kỳ nghỉ liên tiếp; không kết hợp với 道が〜している để nói giao thông tắc.\n2. 故障（こしょう）: sự cố/hỏng hóc của máy móc hoặc thiết bị; không phải tình trạng ùn xe trên đường.\n3. 渋滞（じゅうたい）: ùn tắc giao thông; cụm 道が渋滞する dùng đúng.\n4. 集中（しゅうちゅう）: tập trung/dồn vào một chỗ; không diễn tả xe đứng im vì kẹt đường.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 17,
+      "answer": 2,
+      "options": ["まずいい", "おかしい", "きびしいの", "しつこい"],
+      "explanation": "Đáp án 2 — 「音がおかしい」nghĩa là âm thanh nghe bất thường/lạ; vì vậy người nói nhờ sửa động cơ.\nDịch: “Động cơ xe phát ra tiếng lạ nên tôi đã nhờ sửa.”\n1. まずいい: dạng được in trong lựa chọn không phải từ chuẩn theo nghĩa cần tìm; không tự sửa thành まずい để đoán đáp án.\n2. おかしい: kỳ lạ/bất thường hoặc có vấn đề; dùng tự nhiên để tả tiếng động cơ.\n3. きびしいの: きびしい là nghiêm khắc/khắc nghiệt; thêm の làm lựa chọn không khớp ngữ pháp của chỗ trống.\n4. しつこい: dai dẳng/quá nồng; không phải cách nói thông thường để mô tả động cơ có tiếng bất thường.\nGhi chú nguồn: lựa chọn 1 được giữ nguyên như dữ liệu in/chép; cần đối chiếu bản đề gốc trước khi kết luận đó là lỗi của đề hay lỗi chép.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 18,
+      "answer": 3,
+      "options": ["移動", "変化", "交換", "入力"],
+      "explanation": "Đáp án 3 — 「電池を交換する」là thay pin; đồng hồ dừng nên lắp pin mới.\nDịch: “Đồng hồ đã ngừng chạy nên tôi thay pin mới.”\n1. 移動（いどう）: di chuyển một vật/người từ nơi này sang nơi khác; không dùng cho thay pin.\n2. 変化（へんか）: sự biến đổi trạng thái/tính chất, không phải thao tác thay một viên pin.\n3. 交換（こうかん）: đổi/thay vật này bằng vật khác; 電池を交換する là thay pin.\n4. 入力（にゅうりょく）: nhập dữ liệu/chữ vào thiết bị; không liên quan đến pin.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 19,
+      "answer": 1,
+      "options": ["リサイクル", "キャンセル", "カット", "チェンジ"],
+      "explanation": "Đáp án 1 — Tái chế lon và chai nhựa thay vì vứt chúng giúp giảm lượng rác.\nDịch: “Nếu tái chế cả lon và chai nhựa thay vì vứt đi thì lượng rác sẽ giảm.”\n1. リサイクル: tái chế; kết hợp tự nhiên với すれば và đúng mục tiêu giảm rác.\n2. キャンセル: hủy (đơn, lịch hẹn, đặt chỗ); không phải xử lý rác để dùng lại.\n3. カット: cắt/giảm; câu cần một hành động xử lý lon và chai, không phải “cắt chúng”.\n4. チェンジ: thay đổi/đổi; không diễn tả việc tái sử dụng vật liệu.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 20,
+      "answer": 4,
+      "options": ["文句", "宣伝", "うその", "うわさ"],
+      "explanation": "Đáp án 4 — 「結婚するといううわさ」là tin đồn rằng anh Hayashi sẽ kết hôn; người nói nghe được nhưng chưa biết có thật không.\nDịch: “Tôi nghe tin đồn rằng anh Hayashi sắp kết hôn, nhưng không biết có thật hay không.”\n1. 文句（もんく）: lời phàn nàn/than phiền; không phải thông tin về chuyện kết hôn.\n2. 宣伝（せんでん）: quảng bá/tuyên truyền; không hợp với tin riêng tư đang cần xác minh.\n3. うその: “giả/dối” ở dạng bổ nghĩa danh từ; câu đã có 「という」và cần danh từ chỉ thông tin chưa xác thực, nên うわさ tự nhiên hơn.\n4. うわさ: lời đồn/chuyện truyền miệng chưa được xác nhận; khớp với 本当かどうかわからない.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 21,
+      "answer": 4,
+      "options": ["かならず", "すべて", "じゅうぶんの", "おもに"],
+      "explanation": "Đáp án 4 — 「おもに学生だったが、ほかに主婦や会社員も少しいた」nghĩa là người tham dự chủ yếu là sinh viên, ngoài ra còn có một số nội trợ và nhân viên công ty.\nDịch: “Người tham dự buổi diễn thuyết chủ yếu là sinh viên, ngoài ra còn có một số nội trợ và nhân viên công ty.”\n1. かならず: nhất định/luôn luôn; không diễn tả nhóm chiếm phần lớn.\n2. すべて: tất cả; mâu thuẫn với vế sau nói còn có người nội trợ và nhân viên công ty.\n3. じゅうぶんの: “đủ/đầy đủ”; dạng này không bổ nghĩa tự nhiên cho 学生 trong câu.\n4. おもに: chủ yếu; hợp với thông tin rằng phần lớn người tham dự là sinh viên.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 22,
+      "answer": 1,
+      "options": ["不安", "無理", "退屈", "苦手"],
+      "explanation": "Đáp án 1 — 「不安だった」là đã lo lắng/bất an về việc liệu mình có thể làm công việc quan trọng ấy không.\nDịch: “Ban đầu tôi lo không biết mình có làm nổi công việc quan trọng như thế này hay không.”\n1. 不安（ふあん）: lo lắng/bất an; hợp với sự không chắc chắn 初めは.\n2. 無理（むり）: bất khả thi/quá sức; nói thẳng việc không thể làm, không phải cảm xúc phân vân ban đầu.\n3. 退屈（たいくつ）: buồn chán; không liên quan đến nghi ngờ năng lực của mình.\n4. 苦手（にがて）: không giỏi/không thích làm một việc; khác với cảm giác lo lắng được nêu trong câu.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 23,
+      "answer": 2,
+      "options": ["ずいぶん", "なるべく", "きっとり", "さっそく"],
+      "explanation": "Đáp án 2 — 「なるべく早く連絡する」là liên lạc sớm nhất/càng sớm càng tốt trong khả năng.\nDịch: “Khi có việc khiến anh/chị không thuận tiện, xin hãy liên lạc sớm nhất có thể.”\n1. ずいぶん: khá/rất nhiều hoặc vượt dự kiến; không kết hợp với 早く để tạo lời nhờ “càng sớm càng tốt”.\n2. なるべく: hết mức có thể; 「なるべく早く」là cụm tự nhiên trong yêu cầu này.\n3. きっとり: không phải dạng từ chuẩn trong tiếng Nhật hiện đại; không tự sửa thành từ khác.\n4. さっそく: ngay lập tức; có thể diễn tả bắt đầu làm ngay, nhưng ở đây yêu cầu báo sớm nhất có thể khi lịch trở nên bất tiện nên なるべく早く phù hợp hơn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 24,
+      "answer": 4,
+      "options": ["とめての", "やめて", "さげて", "とじて"],
+      "explanation": "Đáp án 4 — 「目を閉じていた」là nhắm mắt suốt; vì thế người khác tưởng anh Yamada đang ngủ.\nDịch: “Trong suốt cuộc họp, anh Yamada nhắm mắt nên tôi tưởng anh ấy đang ngủ.”\n1. とめての: lựa chọn này không tạo được cụm ngữ pháp với いた; 目を止める có nghĩa dừng mắt/để ý, không phải nhắm mắt.\n2. やめて: dạng て của やめる (dừng/bỏ); 「目をやめる」không phải kết hợp tự nhiên.\n3. さげて: hạ xuống; 「目を下げる」là hạ mắt, không diễn tả nhắm mắt.\n4. とじて: thể て của 閉じる; 「目を閉じる」là nhắm mắt, đúng với suy đoán đang ngủ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 25,
+      "answer": 3,
+      "options": ["締めて", "曲げて", "たたんで", "むすんで"],
+      "explanation": "Đáp án 3 — Áo len được gấp gọn rồi cất vào ngăn kéo; たたむ là gấp quần áo.\nDịch: “Tôi gấp áo len ngay ngắn rồi cất vào ngăn kéo tủ.”\n1. 締めて（しめて）: siết/chốt/đeo cho chặt (ví dụ dây lưng); không phải gấp áo.\n2. 曲げて（まげて）: bẻ/uốn cong; không phải cách cất áo len ngay ngắn.\n3. たたんで: gấp lại; cách dùng đúng với quần áo trước khi cất.\n4. むすんで（結んで）: buộc/thắt nút; không dùng để gấp áo len.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 26,
+      "answer": 1,
+      "options": ["大きさ", "値段", "色", "形"],
+      "explanation": "Đáp án 1 — サイズ là kích cỡ/độ lớn; người nói hỏi có chiếc đĩa cùng kích cỡ hay không.\nDịch: “Có chiếc đĩa nào cùng kích cỡ với chiếc này không?”\n1. 大きさ（おおきさ）: độ lớn/kích thước; gần nghĩa nhất với サイズ.\n2. 値段（ねだん）: giá tiền; là giá trị mua bán, không phải kích cỡ.\n3. 色（いろ）: màu sắc; khác thuộc tính được hỏi.\n4. 形（かたち）: hình dáng; nói về dạng bên ngoài chứ không phải độ lớn.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 27,
+      "answer": 2,
+      "options": ["作りましたか", "たのみましたか", "食べましたか", "はこびましたか"],
+      "explanation": "Đáp án 2 — 注文する là gọi/đặt món; trong hội thoại thông thường, たのむ có nghĩa gọi món hoặc nhờ đặt.\nDịch: “Món salad thì anh/chị đã gọi chưa?”\n1. 作りましたか: đã làm/chế biến chưa; hỏi salad đã được chuẩn bị chưa, khác với đã gọi món.\n2. たのみましたか: đã nhờ/đặt/gọi chưa; gần nghĩa với 注文しましたか trong ngữ cảnh nhà hàng.\n3. 食べましたか: đã ăn chưa; hỏi việc ăn, không phải đặt món.\n4. はこびましたか（運びましたか）: đã mang/vận chuyển chưa; không phải gọi món.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 28,
+      "answer": 4,
+      "options": ["コピーして", "メモして", "メールして", "チェックして"],
+      "explanation": "Đáp án 4 — たしかめる là xác nhận/kiểm tra lại; チェックする có nghĩa gần nhất.\nDịch: “Xin lỗi, anh/chị có thể kiểm tra lại một lần nữa không?”\n1. コピーして: sao chép tài liệu; không phải xác minh xem nội dung có đúng không.\n2. メモして: ghi chú lại; không đồng nghĩa với kiểm tra.\n3. メールして: gửi email; là cách liên lạc, không phải thao tác xác nhận.\n4. チェックして: kiểm tra/xem lại; tương đương với たしかめて trong câu.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 29,
+      "answer": 4,
+      "options": ["ずっと", "いつも", "まだ", "さいきん"],
+      "explanation": "Đáp án 4 — このごろ và 最近（さいきん）đều có nghĩa là gần đây/dạo này.\nDịch: “Dạo này anh Yamada có vẻ bận nhỉ.”\n1. ずっと: suốt/từ trước đến nay; nói về khoảng thời gian liên tục, không chỉ “gần đây”.\n2. いつも: lúc nào cũng/luôn luôn; chỉ thói quen thường xuyên.\n3. まだ: vẫn/còn/chưa; diễn tả trạng thái chưa kết thúc.\n4. さいきん（最近）: gần đây; đồng nghĩa với このごろ.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    },
+    {
+      "number": 30,
+      "answer": 2,
+      "options": ["騒いで", "話して", "答えて", "遊んで"],
+      "explanation": "Đáp án 2 — しゃべる nghĩa là nói chuyện/tán gẫu; 話す（はなす）gần nghĩa nhất trong các lựa chọn.\nDịch: “Từ nãy đến giờ chỉ có cậu bé kia nói mãi.”\n1. 騒いで（さわいで）: làm ồn/quậy phá; mạnh hơn và không đơn thuần là nói chuyện.\n2. 話して（はなして）: nói chuyện; thay vào câu vẫn giữ nghĩa phù hợp.\n3. 答えて（こたえて）: trả lời một câu hỏi; không phải cứ liên tục tán gẫu.\n4. 遊んで（あそんで）: chơi/đùa; không mang nghĩa nói chuyện.",
+      "allFourChoicesExplained": true,
+      "promptTranslated": true
+    }
+  ]
+}

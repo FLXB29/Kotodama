@@ -1,0 +1,84 @@
+{
+  "exam": "JLPT N3 December 2013, Grammar Mondai 2",
+  "source": {
+    "file": "4. N3 12-2013.pdf",
+    "provider": "Google Drive, reviewed in the user's connected Chrome session",
+    "pages": {
+      "printedQuestions14-18": 6
+    },
+    "method": "Visually inspected the original PDF page at 75–100% zoom, compared the printed prompts/options and star-slot placement with the question records, reconstructed each sentence, and checked the selected pieces against the separately reviewed 102-answer reference file at answer-key-2013-12.json."
+  },
+  "questions": [
+    {
+      "questionId": "toan_q_2013_12_49",
+      "printedNumber": 14,
+      "promptBefore": "私は、息子が",
+      "promptAfter": "見て、「どうしたの?」と声をかけた。",
+      "sourceOptions": ["1 顔を", "2 何か", "3 言いたそうな", "4 しているのを"],
+      "order": [2, 3, 1, 4],
+      "starSlotIndex": 2,
+      "answer": 1,
+      "completedSentence": "私は、息子が何か言いたそうな顔をしているのを見て、「どうしたの?」と声をかけた。",
+      "translation": "Tôi thấy con trai có vẻ muốn nói điều gì đó nên đã hỏi: “Có chuyện gì vậy?”",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_12_50",
+      "printedNumber": 15,
+      "promptBefore": "この公園は、いろいろな花が咲きはじめる",
+      "promptAfter": "と聞いた。",
+      "sourceOptions": ["1 最も", "2 時期が", "3 美しい", "4 この"],
+      "order": [4, 2, 1, 3],
+      "starSlotIndex": 2,
+      "answer": 1,
+      "completedSentence": "この公園は、いろいろな花が咲きはじめるこの時期が最も美しいと聞いた。",
+      "translation": "Tôi nghe nói công viên này đẹp nhất vào thời điểm nhiều loài hoa bắt đầu nở.",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_12_51",
+      "printedNumber": 16,
+      "promptBefore": "友達がけがで入院したと聞き、あわてて",
+      "promptAfter": "元気で安心した。",
+      "sourceOptions": ["1 病院に行って", "2 思って", "3 みると", "4 いたよりも"],
+      "order": [1, 3, 2, 4],
+      "starSlotIndex": 2,
+      "answer": 2,
+      "completedSentence": "友達がけがで入院したと聞き、あわてて病院に行ってみると、思っていたよりも元気で安心した。",
+      "translation": "Nghe tin bạn bị thương phải nhập viện, tôi vội đến bệnh viện xem thử thì thấy bạn khỏe hơn mình tưởng nên yên tâm.",
+      "sourcePage": 6,
+      "sourceTextNote": null
+    },
+    {
+      "questionId": "toan_q_2013_12_52",
+      "printedNumber": 17,
+      "promptBefore": "庭に植えたスイカは、これまでなかなか",
+      "promptAfter": "今年になっておいしいのができた。",
+      "sourceOptions": ["1 あきらめないで", "2 ようやく", "3 うまく育たなかったが", "4 毎年チャンジしていたら"],
+      "displayOptions": ["1 あきらめないで", "2 ようやく", "3 うまく育たなかったが", "4 毎年チャレンジしていたら"],
+      "order": [3, 1, 4, 2],
+      "starSlotIndex": 2,
+      "answer": 4,
+      "completedSentence": "庭に植えたスイカは、これまでなかなかうまく育たなかったが、あきらめないで毎年チャレンジしていたら、ようやく今年になっておいしいのができた。",
+      "translation": "Những quả dưa hấu trồng trong vườn trước đây mãi không phát triển tốt, nhưng tôi không bỏ cuộc và thử thách bản thân mỗi năm; cuối cùng năm nay đã thu được quả ngon.",
+      "sourcePage": 6,
+      "sourceTextNote": "The original PDF visibly prints チャンジ in option 4, apparently omitting レ from the standard word チャレンジ. The app keeps the corrected spelling チャレンジ; the answer/order is unaffected."
+    },
+    {
+      "questionId": "toan_q_2013_12_53",
+      "printedNumber": 18,
+      "promptBefore": "子供のころに祖母が作ってくれたワンピースを、",
+      "promptAfter": "いる。",
+      "sourceOptions": ["1 着られなくなった", "2 大切に持って", "3 今でも", "4 体が大きくなって"],
+      "order": [4, 1, 3, 2],
+      "starSlotIndex": 2,
+      "answer": 3,
+      "completedSentence": "子供のころに祖母が作ってくれたワンピースを、体が大きくなって着られなくなった今でも大切に持っている。",
+      "translation": "Tôi vẫn nâng niu giữ chiếc váy liền bà may cho hồi nhỏ, dù lớn lên tôi đã không mặc vừa nữa.",
+      "sourcePage": 6,
+      "sourceTextNote": "The PDF text-layer audit appends a trailing page marker to option 4; visual inspection shows the printed option ends at 体が大きくなって."
+    }
+  ]
+}

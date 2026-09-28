@@ -1,0 +1,32 @@
+{
+  "examId": "toan-n3-201412-full",
+  "scope": "Grammar Mondai 1 questions 1–13 and Mondai 2 star questions 14–18.",
+  "source": {
+    "file": "ĐÁP ÁN JLPT N3 (update 26.6.2026).pdf",
+    "driveFileId": "1Lmr3LwhnS3lEv4FYemiM0f93Qg5DLNZL",
+    "viewerPage": 10,
+    "statusNote": "The stored answers match this separate answer PDF; its publisher is not represented here as JLPT official."
+  },
+  "grammarM1Answers": [
+    { "questionId": "toan_q_2014_12_36", "printedQuestion": 1, "answer": 2 },
+    { "questionId": "toan_q_2014_12_37", "printedQuestion": 2, "answer": 3 },
+    { "questionId": "toan_q_2014_12_38", "printedQuestion": 3, "answer": 2 },
+    { "questionId": "toan_q_2014_12_39", "printedQuestion": 4, "answer": 1 },
+    { "questionId": "toan_q_2014_12_40", "printedQuestion": 5, "answer": 1 },
+    { "questionId": "toan_q_2014_12_41", "printedQuestion": 6, "answer": 4 },
+    { "questionId": "toan_q_2014_12_42", "printedQuestion": 7, "answer": 2 },
+    { "questionId": "toan_q_2014_12_43", "printedQuestion": 8, "answer": 3 },
+    { "questionId": "toan_q_2014_12_44", "printedQuestion": 9, "answer": 4 },
+    { "questionId": "toan_q_2014_12_45", "printedQuestion": 10, "answer": 3 },
+    { "questionId": "toan_q_2014_12_46", "printedQuestion": 11, "answer": 4 },
+    { "questionId": "toan_q_2014_12_47", "printedQuestion": 12, "answer": 2 },
+    { "questionId": "toan_q_2014_12_48", "printedQuestion": 13, "answer": 1 }
+  ],
+  "starAnswers": [
+    { "questionId": "toan_q_2014_12_49", "printedQuestion": 14, "answer": 1 },
+    { "questionId": "toan_q_2014_12_50", "printedQuestion": 15, "answer": 2 },
+    { "questionId": "toan_q_2014_12_51", "printedQuestion": 16, "answer": 4 },
+    { "questionId": "toan_q_2014_12_52", "printedQuestion": 17, "answer": 3 },
+    { "questionId": "toan_q_2014_12_53", "printedQuestion": 18, "answer": 4 }
+  ]
+}

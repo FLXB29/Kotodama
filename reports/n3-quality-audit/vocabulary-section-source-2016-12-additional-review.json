@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-09-26T10:02:12.841Z",
+  "examId": "toan-n3-201612-full",
+  "sectionExamId": "cm2u2wlnt0097134ira8pl9rk-vocab",
+  "sourcePdf": {
+    "file": "7. N3 12-2016.pdf",
+    "driveUrl": "https://drive.google.com/file/d/1ZPZIPaDo5BrgR-n0h5XUcpCOXR73Riz7/view",
+    "printedPages": [
+      1,
+      2,
+      3
+    ],
+    "promptAndOptionDifferencesVisuallyChecked": true
+  },
+  "corrections": [
+    {
+      "questionNumber": 14,
+      "field": "section prompt and sentence",
+      "before": "ちゃんが母親に抱かれて<u>ねむって</u>います。",
+      "after": "赤ちゃんが母親に抱かれて<u>ねむって</u>います。"
+    },
+    {
+      "questionNumber": 17,
+      "field": "section prompt and sentence punctuation",
+      "before": "正月には親戚が集まって、みんなでテーブルを( ), 楽しく食事をした。",
+      "after": "正月には親戚が集まって、みんなでテーブルを（ ）、楽しく食事をした。"
+    },
+    {
+      "questionNumber": 18,
+      "field": "section prompt and sentence",
+      "before": "このレストランの料理はおいしくないので、店内はいつも(  )た。",
+      "after": "このレストランの料理はおいしくないので、店内はいつも（ ）だ。"
+    },
+    {
+      "questionNumber": 23,
+      "field": "section prompt and sentence",
+      "before": "わたしのふるさとは(  )が盛んで、米や野業をたくさん作っています。",
+      "after": "わたしのふるさとは（ ）が盛んで、米や野菜をたくさん作っています。"
+    },
+    {
+      "questionNumber": 25,
+      "field": "full mock prompt and section prompt/sentence",
+      "before": [
+        "ずっと（ ）していた。",
+        ".この話は誰にも言わずに、ずっと(  )にしていた。"
+      ],
+      "after": [
+        "ずっと（ ）にしていた。",
+        "この話は誰にも言わずに、ずっと（ ）にしていた。"
+      ]
+    },
+    {
+      "questionNumber": 29,
+      "field": "section option 1 punctuation",
+      "before": "多すぎて残りました。",
+      "after": "多すぎて残りました"
+    }
+  ],
+  "explanationDelivery": "After correction, all 30 section questions match their full-mock source text/options/keys closely enough for the service to attach their curated explanations.",
+  "limitation": "The question source was checked in the supplied Drive PDF. These corrections align transcribed content and do not independently certify the answer key."
+}

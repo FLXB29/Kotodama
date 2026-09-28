@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-09-27T13:05:15.253Z",
+  "exam": "JLPT N3 July 2012",
+  "scope": "Grammar Mondai 2, printed questions 14–18.",
+  "sourcePdf": {
+    "title": "3. N3 7-2012.pdf",
+    "url": "https://drive.google.com/file/d/11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR/view",
+    "driveFileId": "11YNc2TftE52Ow9f1q3HCrVz5rkbGt9gR",
+    "renderedPage": 5,
+    "printedQuestions": [14, 15, 16, 17, 18],
+    "visualReview": "PDF trang 5 được mở trong Chrome ở mức thu phóng 75%; ảnh trang xác nhận nội dung và vị trí ★ của năm câu. Lớp chữ gắn số trang in 6 vào lựa chọn 4 của câu 18; ảnh trực quan xác nhận đó là số trang, không thuộc phương án."
+  },
+  "answerReference": {
+    "name": "Scribd — Đáp Án JLPT N3 (Update 290724)",
+    "url": "https://www.scribd.com/document/885818943/%C4%90ap-An-Jlpt-n3-Update-290724",
+    "answers": [2, 1, 4, 2, 3],
+    "status": "Nguồn tổng hợp thứ cấp, không phải khóa chính thức JLPT. Dãy đáp án khớp với thứ tự mảnh khi hoàn chỉnh câu và vị trí sao trên PDF gốc."
+  },
+  "officialKeyEstablished": false,
+  "corrections": [
+    {
+      "printedQuestion": 14,
+      "previousAnswer": 4,
+      "answer": 2,
+      "previousStarPosition": 2,
+      "starPosition": 1,
+      "order": [3, 2, 4, 1]
+    },
+    {
+      "printedQuestion": 18,
+      "previousAnswer": 1,
+      "answer": 3,
+      "previousStarPosition": 3,
+      "starPosition": 2,
+      "order": [2, 4, 3, 1]
+    }
+  ],
+  "explanationsAppliedTo": ["full mock exam", "curated explanation map"],
+  "questions": [
+    {
+      "printedQuestion": 14,
+      "internalQuestionNumber": 49,
+      "sourceOptions": ["と思う", "たぶん", "時間は", "家にいる"],
+      "answer": 2,
+      "order": [3, 2, 4, 1],
+      "starPosition": 1,
+      "completedSentence": "配達員「お荷物の配達時間ですが、明日の夜8時ごろでいかがですか。」客「その時間は多分家にいると思うので大丈夫です。お願いします。」",
+      "vietnameseTranslation": "Nhân viên giao hàng hỏi giao vào khoảng 8 giờ tối mai có được không. Khách trả lời: ‘Giờ đó tôi nghĩ có lẽ mình sẽ ở nhà, nên được ạ. Nhờ anh/chị.’",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      }
+    },
+    {
+      "printedQuestion": 15,
+      "internalQuestionNumber": 50,
+      "sourceOptions": ["ありますが", "会ったことは", "聞いたことが", "お名前は"],
+      "answer": 1,
+      "order": [4, 3, 1, 2],
+      "starPosition": 2,
+      "completedSentence": "山下「田中さん、ABC大学のリュウ先生を知っていますか。」田中「お名前は聞いたことがありますが、会ったことはありません。」",
+      "vietnameseTranslation": "Yamashita hỏi Tanaka có biết thầy Liu ở Đại học ABC không. Tanaka đáp: ‘Tôi từng nghe tên thầy, nhưng chưa gặp thầy.’",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      }
+    },
+    {
+      "printedQuestion": 16,
+      "internalQuestionNumber": 51,
+      "sourceOptions": ["行ってみたい", "ひとつに", "もっとも", "寺の"],
+      "answer": 4,
+      "order": [3, 1, 4, 2],
+      "starPosition": 2,
+      "completedSentence": "わたしがもっとも行ってみたい寺のひとつに京都の高山寺がある。",
+      "vietnameseTranslation": "Một trong những ngôi chùa tôi muốn đến thăm nhất là chùa Kōsanji ở Kyoto.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      }
+    },
+    {
+      "printedQuestion": 17,
+      "internalQuestionNumber": 52,
+      "sourceOptions": ["ほど", "について", "人生", "考えさせられる"],
+      "answer": 2,
+      "order": [1, 3, 2, 4],
+      "starPosition": 2,
+      "completedSentence": "「プレゼント」という映画を見て、この映画ほど人生について考えさせられる映画はないと思った。",
+      "vietnameseTranslation": "Sau khi xem bộ phim “Present”, tôi nghĩ không có bộ phim nào khiến mình suy ngẫm về cuộc đời nhiều như bộ phim này.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      }
+    },
+    {
+      "printedQuestion": 18,
+      "internalQuestionNumber": 53,
+      "sourceOptions": ["すっかり忘れていた", "メールが来るまで", "ということを", "今日がレポートのしめ切り日だった"],
+      "answer": 3,
+      "order": [2, 4, 3, 1],
+      "starPosition": 2,
+      "completedSentence": "友だちからのメールが来るまで、今日がレポートのしめ切り日だったということをすっかり忘れていた。",
+      "vietnameseTranslation": "Tôi đã hoàn toàn quên hôm nay là hạn nộp báo cáo cho đến khi nhận được email của bạn.",
+      "explanationCoverage": {
+        "answerIdentified": true,
+        "allFourOptionsAddressed": true,
+        "fullSentenceAndTranslation": true,
+        "fragmentPlacementExplained": true
+      }
+    }
+  ]
+}
