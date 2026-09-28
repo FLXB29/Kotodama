@@ -229,6 +229,19 @@ test('admin API enforces role, CSRF, audit actions and last-admin protection', a
     assert.equal(jlptRes.status, 200)
     const jlptData = (await jlptRes.json()).data
     assert.ok(Array.isArray(jlptData.exams))
+
+    // Health check tests (GET, HEAD, 405 on other methods)
+    const healthGet = await fetch(`${baseUrl}/health`)
+    assert.equal(healthGet.status, 200)
+    assert.deepEqual(await healthGet.json(), { status: 'ok' })
+
+    const healthHead = await fetch(`${baseUrl}/health`, { method: 'HEAD' })
+    assert.equal(healthHead.status, 200)
+    assert.equal(await healthHead.text(), '')
+
+    const healthPost = await fetch(`${baseUrl}/health`, { method: 'POST', body: 'ping' })
+    assert.equal(healthPost.status, 405)
+    assert.equal(await healthPost.text(), 'Method Not Allowed')
   } finally {
     server.kill('SIGTERM')
     await rm(storageRoot, { recursive: true, force: true })

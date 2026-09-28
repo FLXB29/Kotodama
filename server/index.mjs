@@ -35,10 +35,14 @@ import { AnimeCatalogService, AnimeApiError, generateETag, isRequestLocalLoopbac
 import { SrsService } from './srs-service.mjs'
 import { SrsStore } from './srs-store.mjs'
 import { evaluateShadowingAttempt } from './shadowing-scorer.mjs'
+import { assessAzurePronunciation } from './pronunciation-provider.mjs'
+import { analyzeWavAudioQuality } from './audio-quality.mjs'
+import { buildVideoLearningContent } from './video-learning-content.mjs'
 import {
   comparePitchAudioWithLocalDsp,
   convertAudioToPcmWav,
   extractAudioSnippet,
+  readWavDurationMs,
   transcribeJapaneseAudioChunk,
 } from './transcription-provider.mjs'
 import { tmpdir } from 'node:os'
@@ -546,8 +550,27 @@ async function route(request, response) {
   const url = new URL(request.url, `http://${host}`)
   const path = url.pathname
 
+  // Health check endpoint for keep-alive bots (e.g. UptimeRobot, Cron-job, Render waking)
+  if (path === '/health') {
+    if (request.method === 'GET' || request.method === 'HEAD') {
+      response.writeHead(200, {
+        'content-type': 'application/json; charset=utf-8',
+        'cache-control': 'no-store',
+        'access-control-allow-origin': '*',
+      })
+      if (request.method === 'HEAD') return response.end()
+      return response.end(JSON.stringify({ status: 'ok' }))
+    }
+    response.writeHead(405, {
+      'content-type': 'text/plain; charset=utf-8',
+      allow: 'GET, HEAD',
+      'access-control-allow-origin': '*',
+    })
+    return response.end('Method Not Allowed')
+  }
+
   // Serve static assets and SPA routes without CORS restrictions
-  if (!path.startsWith('/api/') && path !== '/health' && path !== '/ready') {
+  if (!path.startsWith('/api/') && path !== '/ready') {
     const served = await tryServeStatic(request, response, path)
     if (served) return
     return fail(response, 404, 'Không tìm thấy endpoint.', 'NOT_FOUND')
@@ -573,19 +596,6 @@ async function route(request, response) {
     return response.end()
   }
 
-  if (request.method === 'GET' && path === '/health') {
-    try {
-      const persistence = await databaseHealth(database)
-      return json(response, 200, { data: { status: 'ok', persistence } }, cors)
-    } catch {
-      return json(
-        response,
-        503,
-        { data: { status: 'degraded', persistence: { mode: 'postgresql', connected: false } } },
-        cors
-      )
-    }
-  }
   if (request.method === 'GET' && path === '/ready') {
     try {
       const persistence = await databaseHealth(database)
@@ -1649,6 +1659,16 @@ async function route(request, response) {
     if (!transcript) return fail(response, 404, 'Transcript chưa sẵn sàng.', 'TRANSCRIPT_NOT_READY')
     return respond(transcript)
   }
+  const videoLearningContentMatch = path.match(/^\/api\/v1\/video\/assets\/([0-9a-f-]{36})\/learning-content$/i)
+  if (request.method === 'GET' && videoLearningContentMatch) {
+    const user = await requireUser(request, response)
+    if (!user) return
+    if (!(await rateLimit(request, response, 'video-learning-content', 30, 60 * 1000))) return
+    const transcript = await authStore.findCurrentTranscript(videoLearningContentMatch[1], user.id)
+    if (!transcript) return fail(response, 404, 'Transcript chưa sẵn sàng.', 'TRANSCRIPT_NOT_READY')
+    const content = await buildVideoLearningContent({ transcript, dictionary: dictionaryService })
+    return respond(content)
+  }
   const videoAssetMatch = path.match(/^\/api\/v1\/video\/assets\/([0-9a-f-]{36})$/i)
   if (request.method === 'GET' && videoAssetMatch) {
     const user = await requireUser(request, response)
@@ -1676,7 +1696,7 @@ async function route(request, response) {
       selectedSpeakerLabel: typeof body.selectedSpeakerLabel === 'string' ? body.selectedSpeakerLabel.trim() : null,
     })
     if (!shadowingSession)
-      return fail(response, 409, 'Không thể tạo phiên luyện tập shadowing.', 'SESSION_CREATE_FAILED')
+      return fail(response, 409, 'Video chưa có transcript sẵn sàng để luyện shadowing.', 'TRANSCRIPT_NOT_READY')
     return respond({ session: shadowingSession }, 201)
   }
 
@@ -1718,50 +1738,101 @@ async function route(request, response) {
     if (!shadowingSession) return fail(response, 404, 'Không tìm thấy phiên shadowing.', 'SESSION_NOT_FOUND')
 
     const transcriptSegmentId = typeof body.transcriptSegmentId === 'string' ? body.transcriptSegmentId.trim() : ''
-    const referenceText = typeof body.referenceText === 'string' ? body.referenceText.trim() : ''
     const audioBase64 = typeof body.audioBase64 === 'string' ? body.audioBase64 : ''
-    const durationMs = Math.max(0, Number(body.durationMs) || 0)
-    const attemptNo = Math.max(1, Number(body.attemptNo) || 1)
 
     if (!transcriptSegmentId || !audioBase64) {
       return fail(response, 422, 'Thiếu thông tin đoạn thoại hoặc âm thanh ghi âm.', 'VALIDATION_ERROR')
     }
+    if (!(await rateLimit(request, response, 'shadowing-attempt', 20, 15 * 60 * 1000))) return
+    const target = await authStore.resolveShadowingAttemptTarget(shadowingSession.id, user.id, transcriptSegmentId)
+    if (!target)
+      return fail(
+        response,
+        409,
+        'Đoạn thoại không thuộc phiên luyện tập hoặc transcript hiện tại.',
+        'SEGMENT_SESSION_MISMATCH'
+      )
+    const referenceText = target.segment.textJa
+    const referenceDurationMs = Math.max(0, target.segment.endMs - target.segment.startMs)
+    let durationMs = 0
 
     let recognizedText = ''
     let dspComparison = null
+    let providerAssessment = null
+    let audioQuality = null
 
-    if (audioBase64.length > 50) {
-      const tempDir = await mkdtemp(join(tmpdir(), 'kotodama-shadowing-'))
-      const rawAudioPath = join(tempDir, 'raw_attempt.webm')
-      const tempAudioPath = join(tempDir, 'attempt.wav')
-      const refAudioPath = join(tempDir, 'reference.wav')
+    const rawBase64 = audioBase64.includes(',') ? audioBase64.slice(audioBase64.indexOf(',') + 1) : audioBase64
+    if (!/^[A-Za-z0-9+/]*={0,2}$/.test(rawBase64) || rawBase64.length % 4 === 1) {
+      return fail(response, 422, 'Dữ liệu âm thanh không hợp lệ.', 'AUDIO_PAYLOAD_INVALID')
+    }
+    const audioBuffer = Buffer.from(rawBase64, 'base64')
+    if (audioBuffer.length < 256 || audioBuffer.length > 8 * 1024 * 1024) {
+      return fail(response, 422, 'Bài thu âm phải có dung lượng hợp lệ và không vượt quá 8 MiB.', 'AUDIO_SIZE_INVALID')
+    }
+
+    const tempDir = await mkdtemp(join(tmpdir(), 'kotodama-shadowing-'))
+    const rawAudioPath = join(tempDir, 'raw_attempt.webm')
+    const tempAudioPath = join(tempDir, 'attempt.wav')
+    const refAudioPath = join(tempDir, 'reference.wav')
+    try {
+      await writeFile(rawAudioPath, audioBuffer)
+
+      // Convert incoming web audio format to standard 16kHz mono WAV PCM
+      const ffmpegPath = config.transcription?.ffmpegPath || 'ffmpeg'
+      log('shadowing.audio-received', { rawSize: audioBuffer.length, ffmpegPath })
       try {
-        const rawBase64 = audioBase64.includes(',') ? audioBase64.split(',')[1] : audioBase64
-        const audioBuffer = Buffer.from(rawBase64, 'base64')
-        await writeFile(rawAudioPath, audioBuffer)
-
-        // Convert incoming web audio format to standard 16kHz mono WAV PCM
-        const ffmpegPath = config.transcription?.ffmpegPath || 'ffmpeg'
-        log('shadowing.audio-received', { rawSize: audioBuffer.length, ffmpegPath })
-        try {
-          await convertAudioToPcmWav({
-            inputPath: rawAudioPath,
-            outputPath: tempAudioPath,
-            ffmpegPath,
-          })
-          const { stat } = await import('node:fs/promises')
-          const wavStat = await stat(tempAudioPath).catch(() => null)
-          log('shadowing.audio-converted', { wavSize: wavStat?.size ?? 0 })
-        } catch (convertError) {
-          logError('shadowing.audio-convert-failed', convertError)
-          // Do NOT fallback to raw WebM — it will break Whisper and DSP
-          // Instead, just copy as-is and let downstream handle gracefully
-          await writeFile(tempAudioPath, audioBuffer)
+        await convertAudioToPcmWav({
+          inputPath: rawAudioPath,
+          outputPath: tempAudioPath,
+          ffmpegPath,
+        })
+        durationMs = await readWavDurationMs(tempAudioPath)
+        if (durationMs < 500 || durationMs > 15_000) {
+          return fail(response, 422, 'Bài thu âm phải dài từ 0,5 đến 15 giây.', 'AUDIO_DURATION_INVALID')
         }
+        audioQuality = await analyzeWavAudioQuality(tempAudioPath)
+        if (audioQuality.status === 'unscorable') {
+          const message =
+            audioQuality.reason === 'excessive_clipping'
+              ? 'Bài thu bị vỡ tiếng. Hãy hạ âm lượng micro hoặc lùi micro xa miệng hơn rồi thử lại.'
+              : 'Bài thu quá nhỏ hoặc gần như im lặng. Hãy kiểm tra micro và nói to, rõ hơn rồi thử lại.'
+          return fail(response, 422, message, 'AUDIO_QUALITY_UNSCORABLE')
+        }
+        const { stat } = await import('node:fs/promises')
+        const wavStat = await stat(tempAudioPath).catch(() => null)
+        log('shadowing.audio-converted', { wavSize: wavStat?.size ?? 0 })
+      } catch (convertError) {
+        logError('shadowing.audio-convert-failed', convertError)
+        return fail(
+          response,
+          422,
+          'Không thể chuẩn hóa bài thu âm. Hãy thử ghi âm lại bằng trình duyệt khác.',
+          'AUDIO_CONVERSION_FAILED'
+        )
+      }
 
-        // 1. Japanese Speech Recognition (Try fast local Whisper first, fallback to Gemini Cloud ASR)
-        const localAsrUrl = config.transcription?.localAsrUrl || 'http://127.0.0.1:8788'
-        let localSuccess = false
+      // 1. Managed pronunciation baseline when Azure is configured. Its text is
+      // also a valid ASR result, so local ASR is only used as a fallback.
+      if (config.pronunciation?.azure?.enabled) {
+        try {
+          providerAssessment = await assessAzurePronunciation({
+            audioPath: tempAudioPath,
+            referenceText,
+            config: config.pronunciation.azure,
+          })
+          recognizedText = providerAssessment.recognizedText || ''
+        } catch (providerError) {
+          logError('shadowing.azure-pronunciation-failed', providerError)
+        }
+      }
+
+      // 2. Japanese Speech Recognition. Azure's recognized text belongs to the
+      // managed assessment above, so preserve it when it is available. The local
+      // and cloud ASR paths are fallbacks only; otherwise score evidence and the
+      // displayed Azure baseline could refer to two different transcripts.
+      const localAsrUrl = config.transcription?.localAsrUrl || 'http://127.0.0.1:8788'
+      let localSuccess = Boolean(recognizedText)
+      if (!localSuccess) {
         try {
           const localAsrResult = await transcribeJapaneseAudioChunk({
             filePath: tempAudioPath,
@@ -1778,84 +1849,81 @@ async function route(request, response) {
         } catch (localAsrError) {
           log('info', 'shadowing.local-asr-unavailable-fallback-to-gemini', { error: localAsrError.message })
         }
-
-        if (!localSuccess && (config.transcription?.apiKey || process.env.GEMINI_API_KEY)) {
-          try {
-            const fallbackKey = config.transcription?.apiKey || process.env.GEMINI_API_KEY
-            const cloudResult = await transcribeJapaneseAudioChunk({
-              filePath: tempAudioPath,
-              fileName: 'attempt.wav',
-              config: {
-                ...config.transcription,
-                provider: 'gemini',
-                apiKey: fallbackKey,
-                model: process.env.GEMINI_TRANSCRIPTION_MODEL || 'gemini-3.5-flash-lite',
-                timeoutMs: 15000,
-              },
-              prompt: referenceText,
-            })
-            const segments = Array.isArray(cloudResult?.segments) ? cloudResult.segments : []
-            recognizedText = segments
-              .map((s) => s.text)
-              .join(' ')
-              .trim()
-          } catch (cloudError) {
-            logError('shadowing.cloud-transcribe-failed', cloudError)
-          }
-        }
-
-        // 2. DSP Pitch & Rhythm Comparison with Native Reference Audio
-        try {
-          const mediaAsset = await authStore.findMediaAssetForProcessing(shadowingSession.mediaAssetId)
-          if (mediaAsset?.storageKey) {
-            const transcript = await authStore.findCurrentTranscript(shadowingSession.mediaAssetId, user.id)
-            const targetSegment = transcript?.segments?.find(
-              (s) => s.id === transcriptSegmentId || transcriptSegmentId.startsWith(s.id)
-            )
-            if (targetSegment && targetSegment.endMs > targetSegment.startMs) {
-              const sourceFilePath = mediaStorage.absolutePath(mediaAsset.storageKey)
-              await extractAudioSnippet({
-                sourcePath: sourceFilePath,
-                startMs: targetSegment.startMs,
-                endMs: targetSegment.endMs,
-                outputPath: refAudioPath,
-                ffmpegPath: config.transcription?.ffmpegPath,
-              })
-              dspComparison = await comparePitchAudioWithLocalDsp({
-                referenceAudioPath: refAudioPath,
-                userAudioPath: tempAudioPath,
-                localAsrUrl: localAsrUrl,
-                timeoutMs: 30000,
-              })
-            }
-          }
-        } catch (dspError) {
-          logError('shadowing.dsp-compare-failed', dspError)
-          dspComparison = null
-        }
-      } finally {
-        await rm(tempDir, { recursive: true, force: true }).catch(() => undefined)
       }
+
+      if (!localSuccess && (config.transcription?.apiKey || process.env.GEMINI_API_KEY)) {
+        try {
+          const fallbackKey = config.transcription?.apiKey || process.env.GEMINI_API_KEY
+          const cloudResult = await transcribeJapaneseAudioChunk({
+            filePath: tempAudioPath,
+            fileName: 'attempt.wav',
+            config: {
+              ...config.transcription,
+              provider: 'gemini',
+              apiKey: fallbackKey,
+              model: process.env.GEMINI_TRANSCRIPTION_MODEL || 'gemini-3.5-flash-lite',
+              timeoutMs: 15000,
+            },
+            prompt: referenceText,
+          })
+          const segments = Array.isArray(cloudResult?.segments) ? cloudResult.segments : []
+          recognizedText = segments
+            .map((s) => s.text)
+            .join(' ')
+            .trim()
+        } catch (cloudError) {
+          logError('shadowing.cloud-transcribe-failed', cloudError)
+        }
+      }
+
+      // 3. DSP Pitch & Rhythm Comparison with Native Reference Audio
+      try {
+        if (target.storageKey && target.segment.endMs > target.segment.startMs) {
+          const sourceFilePath = mediaStorage.absolutePath(target.storageKey)
+          await extractAudioSnippet({
+            sourcePath: sourceFilePath,
+            startMs: target.segment.startMs,
+            endMs: target.segment.endMs,
+            outputPath: refAudioPath,
+            ffmpegPath: config.transcription?.ffmpegPath,
+          })
+          dspComparison = await comparePitchAudioWithLocalDsp({
+            referenceAudioPath: refAudioPath,
+            userAudioPath: tempAudioPath,
+            localAsrUrl: localAsrUrl,
+            timeoutMs: 30000,
+          })
+          if (Number.isInteger(dspComparison?.userDurationMs) && dspComparison.userDurationMs > 0) {
+            durationMs = dspComparison.userDurationMs
+          }
+        }
+      } catch (dspError) {
+        logError('shadowing.dsp-compare-failed', dspError)
+        dspComparison = null
+      }
+    } finally {
+      await rm(tempDir, { recursive: true, force: true }).catch(() => undefined)
     }
 
     const evaluation = evaluateShadowingAttempt({
       referenceText,
       recognizedText,
-      referenceDurationMs: Math.max(0, Number(body.referenceDurationMs) || durationMs),
+      referenceDurationMs,
       userDurationMs: durationMs,
       dspComparison,
+      providerAssessment,
+      audioQuality,
     })
 
     try {
       const attempt = await authStore.saveShadowingAttempt({
         sessionId: shadowingSession.id,
         transcriptSegmentId,
-        attemptNo,
         audioStorageKey: null,
         durationMs,
         recognizedText,
         alignment: evaluation.alignment,
-        evaluatorProvider: `${config.transcription?.provider || 'local'}:dsp_pitch_dtw`,
+        evaluatorProvider: `${providerAssessment?.provider ? `${providerAssessment.provider}+` : ''}${config.transcription?.provider || 'local'}:dsp_pitch_dtw`,
         evaluationStatus: 'scored',
         score: {
           overallScore: evaluation.overallScore,
@@ -1872,35 +1940,7 @@ async function route(request, response) {
       return respond({ attempt, evaluation }, 201)
     } catch (saveError) {
       logError('shadowing.save-attempt-failed', saveError)
-      // Still return the evaluation result even if DB save failed
-      return respond(
-        {
-          attempt: {
-            id: null,
-            sessionId: shadowingSession.id,
-            transcriptSegmentId,
-            attemptNo,
-            durationMs,
-            recognizedText,
-            alignment: evaluation.alignment,
-            evaluatorProvider: 'local:dsp_pitch_dtw',
-            evaluationStatus: 'scored',
-            createdAt: new Date().toISOString(),
-            score: {
-              overallScore: evaluation.overallScore,
-              contentScore: evaluation.contentScore,
-              pronunciationScore: evaluation.pronunciationScore,
-              timingScore: evaluation.timingScore,
-              prosodyScore: evaluation.pitchScore,
-              confidence: evaluation.confidence,
-              feedback: evaluation.feedback,
-              scoringVersion: evaluation.scoringVersion,
-            },
-          },
-          evaluation,
-        },
-        201
-      )
+      return fail(response, 503, 'Không thể lưu kết quả luyện tập. Hãy thử lại sau.', 'SHADOWING_SAVE_FAILED')
     }
   }
 
