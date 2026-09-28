@@ -6,6 +6,7 @@ import type {
   JlptExamSummary,
   JlptExamDetail,
   JlptSubmissionResult,
+  JlptAttempt,
 } from './nhaikanjiTypes'
 
 export type KanjiListResponse = {
@@ -92,5 +93,28 @@ export const nhaikanjiApi = {
       url: apiPaths.nhaikanji.jlptSubmit,
       data: payload,
     })
+  },
+
+  async listJlptAttempts(level = 'N3'): Promise<{ attempts: JlptAttempt[] }> {
+    return requestApi<{ attempts: JlptAttempt[] }>({ method: 'GET', url: apiPaths.nhaikanji.jlptAttempts(level) })
+  },
+
+  async createJlptAttempt(payload: { examId: string; level: string; mode?: 'exam' | 'review' }): Promise<JlptAttempt> {
+    return requestApi<JlptAttempt>({ method: 'POST', url: apiPaths.nhaikanji.jlptAttempts(payload.level), data: payload })
+  },
+
+  async fetchJlptAttempt(attemptId: string): Promise<JlptAttempt> {
+    return requestApi<JlptAttempt>({ method: 'GET', url: apiPaths.nhaikanji.jlptAttempt(attemptId) })
+  },
+
+  async saveJlptAttempt(
+    attemptId: string,
+    payload: Pick<JlptAttempt, 'answers' | 'currentQuestion' | 'remainingSeconds'>
+  ): Promise<{ saved: boolean }> {
+    return requestApi<{ saved: boolean }>({ method: 'PUT', url: apiPaths.nhaikanji.jlptAttempt(attemptId), data: payload })
+  },
+
+  async submitJlptAttempt(attemptId: string, answers: Record<string, number | string>): Promise<JlptSubmissionResult> {
+    return requestApi<JlptSubmissionResult>({ method: 'POST', url: apiPaths.nhaikanji.jlptAttemptSubmit(attemptId), data: { answers } })
   },
 }

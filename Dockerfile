@@ -21,4 +21,4 @@ ENV NODE_ENV=production \
     MEDIA_STORAGE_PATH=/var/data/media \
     MEDIA_WORKER_ENABLED=true
 EXPOSE 10000
-CMD ["node", "--experimental-sqlite", "server/index.mjs"]
+CMD ["sh", "-c", "node --env-file-if-exists=.env server/db/migrate.mjs && exec node --experimental-sqlite server/index.mjs"]

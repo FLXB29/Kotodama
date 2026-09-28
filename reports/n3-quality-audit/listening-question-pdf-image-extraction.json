@@ -1,0 +1,652 @@
+{
+  "scope": "N3 full mocks from 2015 through 2025; PDF-sourced listening illustrations absent from the standalone source.",
+  "sourcePdfCount": 11,
+  "extractedAssetCount": 37,
+  "assets": [
+    {
+      "examId": "toan-n3-201507-full",
+      "questionId": "toan_q_2015_07_76",
+      "questionNumber": 76,
+      "publicPath": "/assets/jlpt/listening/n3-2015-07/m1-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+      "sourcePdf": "n3-2015-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 15,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image71.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 637,
+      "height": 103
+    },
+    {
+      "examId": "toan-n3-201507-full",
+      "questionId": "toan_q_2015_07_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2015-07/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+      "sourcePdf": "n3-2015-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 17,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image76.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 237,
+      "height": 183
+    },
+    {
+      "examId": "toan-n3-201507-full",
+      "questionId": "toan_q_2015_07_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2015-07/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+      "sourcePdf": "n3-2015-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 17,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image77.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 237,
+      "height": 185
+    },
+    {
+      "examId": "toan-n3-201507-full",
+      "questionId": "toan_q_2015_07_92",
+      "questionNumber": 92,
+      "publicPath": "/assets/jlpt/listening/n3-2015-07/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+      "sourcePdf": "n3-2015-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 17,
+        "pageImageIndex": 2,
+        "pdfObjectName": "Image78.jpg",
+        "sessionImageIndex": 3
+      },
+      "width": 231,
+      "height": 175
+    },
+    {
+      "examId": "toan-n3-201507-full",
+      "questionId": "toan_q_2015_07_93",
+      "questionNumber": 93,
+      "publicPath": "/assets/jlpt/listening/n3-2015-07/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1JLn00FB2uQgPS44-FqqoNtPWXVquNeEe/view",
+      "sourcePdf": "n3-2015-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 17,
+        "pageImageIndex": 3,
+        "pdfObjectName": "Image79.jpg",
+        "sessionImageIndex": 4
+      },
+      "width": 233,
+      "height": 177
+    },
+    {
+      "examId": "toan-n3-201512-full",
+      "questionId": "toan_q_2015_12_80",
+      "questionNumber": 80,
+      "publicPath": "/assets/jlpt/listening/n3-2015-12/m1-q6.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1vWtX1zFJn129Jr2maGRTq5TcuKxu3PD4/view",
+      "sourcePdf": "n3-2015-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 17,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image79.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 712,
+      "height": 138
+    },
+    {
+      "examId": "toan-n3-201812-full",
+      "questionId": "toan_q_2018_12_77",
+      "questionNumber": 77,
+      "publicPath": "/assets/jlpt/listening/n3-2018-12/m1-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "sourcePdf": "n3-2018-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 14,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image71.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 694,
+      "height": 138
+    },
+    {
+      "examId": "toan-n3-201812-full",
+      "questionId": "toan_q_2018_12_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2018-12/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "sourcePdf": "n3-2018-12-question.pdf",
+      "provenance": {
+        "kind": "vector-crop",
+        "page": 16,
+        "rect": [
+          155,
+          312,
+          292,
+          445
+        ],
+        "renderScale": 2
+      },
+      "width": 274,
+      "height": 266
+    },
+    {
+      "examId": "toan-n3-201812-full",
+      "questionId": "toan_q_2018_12_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2018-12/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "sourcePdf": "n3-2018-12-question.pdf",
+      "provenance": {
+        "kind": "vector-crop",
+        "page": 16,
+        "rect": [
+          293,
+          312,
+          438,
+          445
+        ],
+        "renderScale": 2
+      },
+      "width": 290,
+      "height": 266
+    },
+    {
+      "examId": "toan-n3-201812-full",
+      "questionId": "toan_q_2018_12_92",
+      "questionNumber": 92,
+      "publicPath": "/assets/jlpt/listening/n3-2018-12/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "sourcePdf": "n3-2018-12-question.pdf",
+      "provenance": {
+        "kind": "vector-crop",
+        "page": 16,
+        "rect": [
+          155,
+          445,
+          292,
+          572
+        ],
+        "renderScale": 2
+      },
+      "width": 274,
+      "height": 254
+    },
+    {
+      "examId": "toan-n3-201812-full",
+      "questionId": "toan_q_2018_12_93",
+      "questionNumber": 93,
+      "publicPath": "/assets/jlpt/listening/n3-2018-12/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1IIZSnchqU4xzRTWbwO18l99FzgOaQfn5/view",
+      "sourcePdf": "n3-2018-12-question.pdf",
+      "provenance": {
+        "kind": "vector-crop",
+        "page": 16,
+        "rect": [
+          293,
+          445,
+          445,
+          572
+        ],
+        "renderScale": 2
+      },
+      "width": 304,
+      "height": 254
+    },
+    {
+      "examId": "toan-n3-201912-full",
+      "questionId": "toan_q_2019_12_75",
+      "questionNumber": 75,
+      "publicPath": "/assets/jlpt/listening/n3-2019-12/m1-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1UNA2Sm0KwwFWSZ8JI226j4HV4PQEzAOb/view",
+      "sourcePdf": "n3-2019-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 15,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image67.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 757,
+      "height": 187
+    },
+    {
+      "examId": "toan-n3-201912-full",
+      "questionId": "toan_q_2019_12_77",
+      "questionNumber": 77,
+      "publicPath": "/assets/jlpt/listening/n3-2019-12/m1-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1UNA2Sm0KwwFWSZ8JI226j4HV4PQEzAOb/view",
+      "sourcePdf": "n3-2019-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 15,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image68.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 742,
+      "height": 182
+    },
+    {
+      "examId": "toan-n3-202012-full",
+      "questionId": "toan_q_2020_12_76",
+      "questionNumber": 76,
+      "publicPath": "/assets/jlpt/listening/n3-2020-12/m1-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1KkIqo10qWkUMyKJBIRrwcO2vbRd65c05/view",
+      "sourcePdf": "n3-2020-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 14,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image67.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 784,
+      "height": 142
+    },
+    {
+      "examId": "toan-n3-202012-full",
+      "questionId": "toan_q_2020_12_79",
+      "questionNumber": 79,
+      "publicPath": "/assets/jlpt/listening/n3-2020-12/m1-q6.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1KkIqo10qWkUMyKJBIRrwcO2vbRd65c05/view",
+      "sourcePdf": "n3-2020-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 14,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image68.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 777,
+      "height": 141
+    },
+    {
+      "examId": "toan-n3-202107-full",
+      "questionId": "toan_q_2021_07_77",
+      "questionNumber": 77,
+      "publicPath": "/assets/jlpt/listening/n3-2021-07/m1-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1X0FHPocIsW2BxwmhRuBjKr3Cr8CWu98V/view",
+      "sourcePdf": "n3-2021-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 14,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image89.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 565,
+      "height": 437
+    },
+    {
+      "examId": "toan-n3-202112-full",
+      "questionId": "toan_q_2021_12_74",
+      "questionNumber": 74,
+      "publicPath": "/assets/jlpt/listening/n3-2021-12/m1-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1J-ZCgDqadzo6_E7zYqYBY0mu4YEtqgpo/view",
+      "sourcePdf": "n3-2021-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 24,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image85.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 630,
+      "height": 463
+    },
+    {
+      "examId": "toan-n3-202112-full",
+      "questionId": "toan_q_2021_12_77",
+      "questionNumber": 77,
+      "publicPath": "/assets/jlpt/listening/n3-2021-12/m1-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1J-ZCgDqadzo6_E7zYqYBY0mu4YEtqgpo/view",
+      "sourcePdf": "n3-2021-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 25,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image89.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 575,
+      "height": 438
+    },
+    {
+      "examId": "toan-n3-202207-full",
+      "questionId": "toan_q_2022_07_88",
+      "questionNumber": 88,
+      "publicPath": "/assets/jlpt/listening/n3-2022-07/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1_uKerTh0TUpMKN8gF_fsgwA5SkQs5ABu/view",
+      "sourcePdf": "n3-2022-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 18,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image85.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 455,
+      "height": 354
+    },
+    {
+      "examId": "toan-n3-202207-full",
+      "questionId": "toan_q_2022_07_89",
+      "questionNumber": 89,
+      "publicPath": "/assets/jlpt/listening/n3-2022-07/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1_uKerTh0TUpMKN8gF_fsgwA5SkQs5ABu/view",
+      "sourcePdf": "n3-2022-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 18,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image86.jpg",
+        "sessionImageIndex": 3
+      },
+      "width": 474,
+      "height": 369
+    },
+    {
+      "examId": "toan-n3-202207-full",
+      "questionId": "toan_q_2022_07_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2022-07/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1_uKerTh0TUpMKN8gF_fsgwA5SkQs5ABu/view",
+      "sourcePdf": "n3-2022-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 19,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image89.jpg",
+        "sessionImageIndex": 4
+      },
+      "width": 487,
+      "height": 379
+    },
+    {
+      "examId": "toan-n3-202207-full",
+      "questionId": "toan_q_2022_07_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2022-07/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1_uKerTh0TUpMKN8gF_fsgwA5SkQs5ABu/view",
+      "sourcePdf": "n3-2022-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 19,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image90.jpg",
+        "sessionImageIndex": 5
+      },
+      "width": 472,
+      "height": 395
+    },
+    {
+      "examId": "toan-n3-202412-full",
+      "questionId": "toan_q_2024_12_76",
+      "questionNumber": 76,
+      "publicPath": "/assets/jlpt/listening/n3-2024-12/m1-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1nmgQswbqLpeJWtKJXop5tTOHZ46Ufu8K/view",
+      "sourcePdf": "n3-2024-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 24,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image95.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 376,
+      "height": 540
+    },
+    {
+      "examId": "toan-n3-202412-full",
+      "questionId": "toan_q_2024_12_89",
+      "questionNumber": 89,
+      "publicPath": "/assets/jlpt/listening/n3-2024-12/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1nmgQswbqLpeJWtKJXop5tTOHZ46Ufu8K/view",
+      "sourcePdf": "n3-2024-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 29,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image111.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 662,
+      "height": 524
+    },
+    {
+      "examId": "toan-n3-202412-full",
+      "questionId": "toan_q_2024_12_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2024-12/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1nmgQswbqLpeJWtKJXop5tTOHZ46Ufu8K/view",
+      "sourcePdf": "n3-2024-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 29,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image112.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 682,
+      "height": 542
+    },
+    {
+      "examId": "toan-n3-202412-full",
+      "questionId": "toan_q_2024_12_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2024-12/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1nmgQswbqLpeJWtKJXop5tTOHZ46Ufu8K/view",
+      "sourcePdf": "n3-2024-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 30,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image115.jpg",
+        "sessionImageIndex": 3
+      },
+      "width": 683,
+      "height": 545
+    },
+    {
+      "examId": "toan-n3-202412-full",
+      "questionId": "toan_q_2024_12_92",
+      "questionNumber": 92,
+      "publicPath": "/assets/jlpt/listening/n3-2024-12/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1nmgQswbqLpeJWtKJXop5tTOHZ46Ufu8K/view",
+      "sourcePdf": "n3-2024-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 30,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image116.jpg",
+        "sessionImageIndex": 4
+      },
+      "width": 669,
+      "height": 527
+    },
+    {
+      "examId": "toan-n3-202507-full",
+      "questionId": "toan_q_2025_07_78",
+      "questionNumber": 78,
+      "publicPath": "/assets/jlpt/listening/n3-2025-07/m1-q5.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1da4jaykKDTW282qIbi9JQ_B1po9x5a15/view",
+      "sourcePdf": "n3-2025-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 21,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image82.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 678,
+      "height": 527
+    },
+    {
+      "examId": "toan-n3-202507-full",
+      "questionId": "toan_q_2025_07_89",
+      "questionNumber": 89,
+      "publicPath": "/assets/jlpt/listening/n3-2025-07/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1da4jaykKDTW282qIbi9JQ_B1po9x5a15/view",
+      "sourcePdf": "n3-2025-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 24,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image94.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 677,
+      "height": 539
+    },
+    {
+      "examId": "toan-n3-202507-full",
+      "questionId": "toan_q_2025_07_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2025-07/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1da4jaykKDTW282qIbi9JQ_B1po9x5a15/view",
+      "sourcePdf": "n3-2025-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 24,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image95.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 678,
+      "height": 541
+    },
+    {
+      "examId": "toan-n3-202507-full",
+      "questionId": "toan_q_2025_07_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2025-07/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1da4jaykKDTW282qIbi9JQ_B1po9x5a15/view",
+      "sourcePdf": "n3-2025-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 25,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image98.jpg",
+        "sessionImageIndex": 3
+      },
+      "width": 682,
+      "height": 523
+    },
+    {
+      "examId": "toan-n3-202507-full",
+      "questionId": "toan_q_2025_07_92",
+      "questionNumber": 92,
+      "publicPath": "/assets/jlpt/listening/n3-2025-07/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1da4jaykKDTW282qIbi9JQ_B1po9x5a15/view",
+      "sourcePdf": "n3-2025-07-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 25,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image99.jpg",
+        "sessionImageIndex": 4
+      },
+      "width": 684,
+      "height": 531
+    },
+    {
+      "examId": "toan-n3-202512-full",
+      "questionId": "toan_q_2025_12_76",
+      "questionNumber": 76,
+      "publicPath": "/assets/jlpt/listening/n3-2025-12/m1-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX/view",
+      "sourcePdf": "n3-2025-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 23,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image85.jpg",
+        "sessionImageIndex": 0
+      },
+      "width": 425,
+      "height": 292
+    },
+    {
+      "examId": "toan-n3-202512-full",
+      "questionId": "toan_q_2025_12_89",
+      "questionNumber": 89,
+      "publicPath": "/assets/jlpt/listening/n3-2025-12/m4-q1.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX/view",
+      "sourcePdf": "n3-2025-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 27,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image99.jpg",
+        "sessionImageIndex": 1
+      },
+      "width": 587,
+      "height": 405
+    },
+    {
+      "examId": "toan-n3-202512-full",
+      "questionId": "toan_q_2025_12_90",
+      "questionNumber": 90,
+      "publicPath": "/assets/jlpt/listening/n3-2025-12/m4-q2.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX/view",
+      "sourcePdf": "n3-2025-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 27,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image100.jpg",
+        "sessionImageIndex": 2
+      },
+      "width": 587,
+      "height": 400
+    },
+    {
+      "examId": "toan-n3-202512-full",
+      "questionId": "toan_q_2025_12_91",
+      "questionNumber": 91,
+      "publicPath": "/assets/jlpt/listening/n3-2025-12/m4-q3.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX/view",
+      "sourcePdf": "n3-2025-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 28,
+        "pageImageIndex": 0,
+        "pdfObjectName": "Image103.jpg",
+        "sessionImageIndex": 3
+      },
+      "width": 592,
+      "height": 407
+    },
+    {
+      "examId": "toan-n3-202512-full",
+      "questionId": "toan_q_2025_12_92",
+      "questionNumber": 92,
+      "publicPath": "/assets/jlpt/listening/n3-2025-12/m4-q4.png",
+      "sourcePdfUrl": "https://drive.google.com/file/d/1OtMcYHQ5ZBqJzsJY4jpUEyPX-HCJforX/view",
+      "sourcePdf": "n3-2025-12-question.pdf",
+      "provenance": {
+        "kind": "native-image",
+        "page": 28,
+        "pageImageIndex": 1,
+        "pdfObjectName": "Image104.jpg",
+        "sessionImageIndex": 4
+      },
+      "width": 592,
+      "height": 402
+    }
+  ]
+}

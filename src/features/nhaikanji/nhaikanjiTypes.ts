@@ -102,6 +102,16 @@ export type JlptQuestion = {
   text?: string
   question?: string
   sentence?: string
+  starPrompt?: { before: string; after: string }
+  starCorrectOrder?: number[]
+  starPosition?: number | null
+  starPositionVerified?: boolean
+  starOrderVerified?: boolean
+  starVerificationSources?: string[]
+  starSourceExtracted?: boolean
+  sourceTextExtracted?: boolean
+  readingSourcePassage?: boolean
+  readingSourceMissing?: boolean
   underlined?: string
   options?: Array<JlptOption | string> | string[]
   audio?: string | null
@@ -211,4 +221,21 @@ export type JlptSubmissionResult = {
     isCorrect: boolean
     explanation?: string
   }>
+}
+
+export type JlptAttempt = {
+  id: string
+  examId: string
+  level: string
+  mode: 'exam' | 'review'
+  status: 'in_progress' | 'completed'
+  answers: Record<string, number | string>
+  currentQuestion: number
+  remainingSeconds: number
+  scorePercentage?: number
+  examSnapshot?: JlptExamDetail
+  startedAt: string
+  updatedAt: string
+  finishedAt?: string | null
+  result?: JlptSubmissionResult | null
 }

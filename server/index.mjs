@@ -668,6 +668,191 @@ async function route(request, response) {
     return respond(result)
   }
 
+  if (request.method === 'GET' && path === '/api/v1/nhaikanji/jlpt/attempts') {
+    const user = await requireUser(request, response)
+    if (!user) return
+    if (!database) return fail(response, 503, 'Lịch sử đồng bộ hiện không khả dụng.', 'JLPT_STORAGE_UNAVAILABLE')
+    const level = (url.searchParams.get('level') || 'N3').toUpperCase()
+    if (!/^N[1-5]$/.test(level)) return fail(response, 400, 'Cấp độ JLPT không hợp lệ.', 'INVALID_LEVEL')
+    const rows = await database.query(
+      `SELECT id, exam_id, level, mode, status, current_question, remaining_seconds,
+              result ->> 'scorePercentage' AS score_percentage, started_at, updated_at, finished_at
+         FROM jlpt_attempts
+        WHERE user_id = $1 AND level = $2
+        ORDER BY updated_at DESC
+        LIMIT 200`,
+      [user.id, level]
+    )
+    return respond({
+      attempts: rows.rows.map((row) => ({
+        id: row.id,
+        examId: row.exam_id,
+        level: row.level,
+        mode: row.mode,
+        status: row.status,
+        answers: {},
+        currentQuestion: Number(row.current_question || 0),
+        remainingSeconds: Number(row.remaining_seconds || 0),
+        scorePercentage:
+          row.score_percentage === null || row.score_percentage === undefined
+            ? undefined
+            : Number(row.score_percentage),
+        result: null,
+        startedAt: row.started_at,
+        updatedAt: row.updated_at,
+        finishedAt: row.finished_at,
+      })),
+    })
+  }
+
+  if (request.method === 'POST' && path === '/api/v1/nhaikanji/jlpt/attempts') {
+    const user = await requireUser(request, response)
+    if (!user) return
+    if (!database) return fail(response, 503, 'Lịch sử đồng bộ hiện không khả dụng.', 'JLPT_STORAGE_UNAVAILABLE')
+    const examId = typeof body.examId === 'string' ? body.examId.trim() : ''
+    const mode = body.mode === 'review' ? 'review' : 'exam'
+    const exam = examId && nhaiKanjiService.getJlptExamDetail(examId)
+    if (!exam) return fail(response, 404, 'Không tìm thấy đề thi này.', 'EXAM_NOT_FOUND')
+    if (mode === 'review')
+      return fail(response, 422, 'Chế độ học đáp án không được lưu vào lịch sử thi.', 'INVALID_ATTEMPT_MODE')
+    const id = randomUUID()
+    const result = await database.query(
+      `INSERT INTO jlpt_attempts (id, user_id, exam_id, level, remaining_seconds, exam_snapshot)
+       VALUES ($1, $2, $3, $4, $5, $6::jsonb)
+       RETURNING id, exam_id, level, mode, status, answers, current_question, remaining_seconds,
+                 exam_snapshot, result, started_at, updated_at, finished_at`,
+      [
+        id,
+        user.id,
+        examId,
+        String(exam.level || body.level || 'N3').toUpperCase(),
+        Math.max(0, Number(exam.timeLimit || 0) * 60),
+        JSON.stringify(exam),
+      ]
+    )
+    const row = result.rows[0]
+    return respond(
+      {
+        id: row.id,
+        examId: row.exam_id,
+        level: row.level,
+        mode: row.mode,
+        status: row.status,
+        answers: row.answers || {},
+        currentQuestion: Number(row.current_question || 0),
+        remainingSeconds: Number(row.remaining_seconds || 0),
+        examSnapshot: row.exam_snapshot,
+        result: row.result || null,
+        startedAt: row.started_at,
+        updatedAt: row.updated_at,
+        finishedAt: row.finished_at,
+      },
+      201
+    )
+  }
+
+  const jlptAttemptMatch = path.match(/^\/api\/v1\/nhaikanji\/jlpt\/attempts\/([0-9a-f-]+)(?:\/(submit))?$/i)
+  if (jlptAttemptMatch) {
+    const user = await requireUser(request, response)
+    if (!user) return
+    if (!database) return fail(response, 503, 'Lịch sử đồng bộ hiện không khả dụng.', 'JLPT_STORAGE_UNAVAILABLE')
+    const attemptId = jlptAttemptMatch[1]
+    const isAttemptSubmit = jlptAttemptMatch[2] === 'submit'
+
+    if (request.method === 'GET' && !isAttemptSubmit) {
+      const { rows } = await database.query(
+        `SELECT id, exam_id, level, mode, status, answers, current_question, remaining_seconds,
+                exam_snapshot, result, started_at, updated_at, finished_at
+           FROM jlpt_attempts WHERE id = $1 AND user_id = $2`,
+        [attemptId, user.id]
+      )
+      const row = rows[0]
+      if (!row) return fail(response, 404, 'Không tìm thấy lần làm bài.', 'ATTEMPT_NOT_FOUND')
+      return respond({
+        id: row.id,
+        examId: row.exam_id,
+        level: row.level,
+        mode: row.mode,
+        status: row.status,
+        answers: row.answers || {},
+        currentQuestion: Number(row.current_question || 0),
+        remainingSeconds:
+          row.status === 'in_progress'
+            ? Math.max(
+                0,
+                Number(row.remaining_seconds || 0) -
+                  Math.floor((Date.now() - new Date(row.updated_at).getTime()) / 1000)
+              )
+            : Number(row.remaining_seconds || 0),
+        examSnapshot: row.exam_snapshot,
+        result: row.result || null,
+        startedAt: row.started_at,
+        updatedAt: row.updated_at,
+        finishedAt: row.finished_at,
+      })
+    }
+
+    if (request.method === 'PUT' && !isAttemptSubmit) {
+      const answers = body.answers
+      const currentQuestion = body.currentQuestion
+      const remainingSeconds = body.remainingSeconds
+      if (
+        !answers ||
+        typeof answers !== 'object' ||
+        Array.isArray(answers) ||
+        Object.keys(answers).length > 1000 ||
+        !Number.isInteger(currentQuestion) ||
+        currentQuestion < 0 ||
+        !Number.isInteger(remainingSeconds) ||
+        remainingSeconds < 0
+      ) {
+        return fail(response, 422, 'Tiến độ làm bài không hợp lệ.', 'INVALID_ATTEMPT_PROGRESS')
+      }
+      const saved = await database.query(
+        `UPDATE jlpt_attempts
+            SET answers = $3::jsonb, current_question = $4, remaining_seconds = $5, updated_at = now()
+          WHERE id = $1 AND user_id = $2 AND status = 'in_progress'
+          RETURNING id`,
+        [attemptId, user.id, JSON.stringify(answers), currentQuestion, remainingSeconds]
+      )
+      if (!saved.rowCount) return fail(response, 404, 'Bài làm không còn mở hoặc không tồn tại.', 'ATTEMPT_NOT_FOUND')
+      return respond({ saved: true })
+    }
+
+    if (request.method === 'POST' && isAttemptSubmit) {
+      const found = await database.query(
+        `SELECT exam_id, exam_snapshot, status, answers, result FROM jlpt_attempts WHERE id = $1 AND user_id = $2`,
+        [attemptId, user.id]
+      )
+      const attempt = found.rows[0]
+      if (!attempt) return fail(response, 404, 'Không tìm thấy lần làm bài.', 'ATTEMPT_NOT_FOUND')
+      if (attempt.status === 'completed' && attempt.result) return respond(attempt.result)
+      const answers =
+        body.answers && typeof body.answers === 'object' && !Array.isArray(body.answers)
+          ? body.answers
+          : attempt.answers || {}
+      const result = nhaiKanjiService.submitJlptExam(attempt.exam_id, answers, attempt.exam_snapshot)
+      if (!result) return fail(response, 404, 'Không tìm thấy đề thi để chấm.', 'EXAM_NOT_FOUND')
+      const saved = await database.query(
+        `UPDATE jlpt_attempts
+            SET answers = $3::jsonb, result = $4::jsonb, status = 'completed',
+                finished_at = COALESCE(finished_at, now()), updated_at = now()
+          WHERE id = $1 AND user_id = $2 AND status = 'in_progress'
+          RETURNING result`,
+        [attemptId, user.id, JSON.stringify(answers), JSON.stringify(result)]
+      )
+      if (saved.rows[0]?.result) return respond(saved.rows[0].result)
+      const existing = await database.query('SELECT result FROM jlpt_attempts WHERE id = $1 AND user_id = $2', [
+        attemptId,
+        user.id,
+      ])
+      return existing.rows[0]?.result
+        ? respond(existing.rows[0].result)
+        : fail(response, 409, 'Không thể hoàn tất lần làm bài này.', 'ATTEMPT_SUBMIT_CONFLICT')
+    }
+    return fail(response, 405, 'Phương thức không được hỗ trợ.', 'METHOD_NOT_ALLOWED')
+  }
+
   const jlptDetailMatch = path.match(/^\/api\/v1\/nhaikanji\/jlpt\/exams\/(.+)$/)
   if (request.method === 'GET' && jlptDetailMatch) {
     const examId = decodeURIComponent(jlptDetailMatch[1])
