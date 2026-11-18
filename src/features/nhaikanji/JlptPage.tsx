@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import {
   ArrowLeft,
@@ -11,14 +11,22 @@ import {
   FileText,
   GraduationCap,
   Headphones,
+  KeyRound,
   Search,
+  Upload,
 } from 'lucide-react'
 import { Button, Badge, Input } from '../../components/ui'
 import { nhaikanjiApi } from './nhaikanjiApi'
 import type { JlptAttempt, JlptExamSummary } from './nhaikanjiTypes'
 import JlptExamTakingPage from './JlptExamTakingPage'
 import { useAuth } from '../auth/authContext'
-import { listJlptAttempts, startJlptAttempt } from './jlptAttempts'
+import {
+  importJlptAttempt,
+  listJlptAttempts,
+  lookupJlptAttempt,
+  startJlptAttempt,
+  syncGuestAttemptsToUser,
+} from './jlptAttempts'
 
 type LevelMeta = {
   id: string
@@ -161,6 +169,73 @@ export function JlptPage() {
   const [yearFilter, setYearFilter] = useState('all')
   const [statusFilter, setStatusFilter] = useState<'all' | 'not-started' | 'in-progress' | 'completed'>('all')
   const [answerMode, setAnswerMode] = useState(false)
+  const [isLookupOpen, setIsLookupOpen] = useState(false)
+  const [lookupInput, setLookupInput] = useState('')
+  const [lookupError, setLookupError] = useState<string | null>(null)
+  const [isLookingUp, setIsLookingUp] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
+
+  const handleLookup = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault()
+    const code = lookupInput.trim()
+    if (!code) {
+      setLookupError('Vui lòng nhập mã tra cứu kết quả bài thi.')
+      return
+    }
+    setIsLookingUp(true)
+    setLookupError(null)
+    try {
+      const found = await lookupJlptAttempt(code, user?.id)
+      if (!found) {
+        setLookupError('Không tìm thấy bài thi với mã tra cứu này.')
+        return
+      }
+      setIsLookupOpen(false)
+      setLookupInput('')
+      setLaunch({
+        examId: found.examId,
+        mode: found.status === 'completed' ? 'result' : 'exam',
+        attemptId: found.id,
+      })
+    } catch {
+      setLookupError('Lỗi kết nối khi tra cứu. Vui lòng thử lại.')
+    } finally {
+      setIsLookingUp(false)
+    }
+  }
+
+  const handleImportJson = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = (evt) => {
+      try {
+        const raw = evt.target?.result as string
+        const parsed = JSON.parse(raw)
+        const item = Array.isArray(parsed)
+          ? parsed[0]
+          : parsed.result && parsed.examId
+            ? parsed
+            : parsed.result
+              ? { ...parsed, ...parsed.result }
+              : parsed
+        if (item && item.examId) {
+          importJlptAttempt(item, user?.id)
+          setIsLookupOpen(false)
+          setLaunch({
+            examId: item.examId,
+            mode: 'result',
+            attemptId: item.id,
+          })
+        } else {
+          setLookupError('File JSON không hợp lệ hoặc thiếu thông tin bài thi.')
+        }
+      } catch {
+        setLookupError('Không thể đọc file JSON.')
+      }
+    }
+    reader.readAsText(file)
+  }
 
   const examQuery = useQuery({
     queryKey: ['jlpt-exams', selectedLevel],
@@ -173,6 +248,14 @@ export function JlptPage() {
     queryFn: () => listJlptAttempts(selectedLevel || 'N3', user?.id),
     enabled: Boolean(selectedLevel),
   })
+
+  useEffect(() => {
+    if (user?.id) {
+      void syncGuestAttemptsToUser(user.id).then((count) => {
+        if (count > 0) void attemptsQuery.refetch()
+      })
+    }
+  }, [user?.id, attemptsQuery])
 
   const attemptsByExam = useMemo(() => {
     const grouped = new Map<string, JlptAttempt[]>()
@@ -302,6 +385,132 @@ export function JlptPage() {
     [examQuery.data?.exams, selectedPaper]
   )
 
+  const lookupModalNode = isLookupOpen ? (
+    <div
+      className="nhaikanji-modal-backdrop"
+      onClick={() => {
+        setIsLookupOpen(false)
+        setLookupError(null)
+      }}
+      style={{ zIndex: 1000 }}
+    >
+      <div
+        className="nhaikanji-modal"
+        onClick={(e) => e.stopPropagation()}
+        style={{ maxWidth: '480px', width: '92%' }}
+      >
+        <div className="nhaikanji-modal__header">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem' }}>
+            <div
+              style={{
+                width: '2rem',
+                height: '2rem',
+                borderRadius: '0.5rem',
+                background: '#e0e7ff',
+                color: '#4338ca',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <KeyRound size={17} />
+            </div>
+            <div>
+              <h3 style={{ margin: 0, fontSize: '1.0625rem', fontWeight: 800 }}>Tra cứu kết quả bài thi</h3>
+              <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Dành cho thí sinh ẩn danh & ôn tập</span>
+            </div>
+          </div>
+          <button
+            type="button"
+            className="nhaikanji-modal__close"
+            onClick={() => {
+              setIsLookupOpen(false)
+              setLookupError(null)
+            }}
+          >
+            ✕
+          </button>
+        </div>
+        <div className="nhaikanji-modal__body" style={{ padding: '1.25rem' }}>
+          <p style={{ fontSize: '0.8125rem', color: '#64748b', marginTop: 0, lineHeight: 1.5 }}>
+            Nhập <strong>Mã tra cứu</strong> (ví dụ: <code style={{ color: '#4338ca', fontWeight: 700 }}>KT-N3-230784</code>) hoặc ID bài làm để mở lại chứng chỉ điểm số và toàn bộ đáp án chi tiết.
+          </p>
+          <form onSubmit={handleLookup} style={{ display: 'flex', flexDirection: 'column', gap: '0.875rem' }}>
+            <Input
+              value={lookupInput}
+              onChange={(e) => {
+                setLookupInput(e.target.value)
+                setLookupError(null)
+              }}
+              placeholder="Nhập mã (VD: KT-N3-230784)..."
+              autoFocus
+            />
+            {lookupError && (
+              <div
+                style={{
+                  fontSize: '0.8125rem',
+                  color: '#dc2626',
+                  fontWeight: 600,
+                  background: '#fef2f2',
+                  padding: '0.5rem 0.75rem',
+                  borderRadius: '0.5rem',
+                  border: '1px solid #fecdd3',
+                }}
+              >
+                {lookupError}
+              </div>
+            )}
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem', marginTop: '0.25rem' }}>
+              <Button
+                type="button"
+                variant="ghost"
+                onClick={() => {
+                  setIsLookupOpen(false)
+                  setLookupError(null)
+                }}
+              >
+                Đóng
+              </Button>
+              <Button type="submit" variant="primary" disabled={isLookingUp}>
+                {isLookingUp ? 'Đang tìm...' : 'Xem kết quả'}
+              </Button>
+            </div>
+          </form>
+
+          <div
+            style={{
+              marginTop: '1.25rem',
+              paddingTop: '1rem',
+              borderTop: '1px dashed #e2e8f0',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '0.5rem',
+              flexWrap: 'wrap',
+            }}
+          >
+            <span style={{ fontSize: '0.8125rem', color: '#64748b' }}>Hoặc khôi phục từ file đã tải (.json):</span>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json,.txt"
+              style={{ display: 'none' }}
+              onChange={handleImportJson}
+            />
+            <Button
+              type="button"
+              variant="secondary"
+              size="sm"
+              onClick={() => fileInputRef.current?.click()}
+            >
+              <Upload size={14} /> Nhập file JSON
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : null
+
   if (launch) {
     return (
       <JlptExamTakingPage
@@ -321,11 +530,18 @@ export function JlptPage() {
     return (
       <main className="jlpt-page jlpt-level-page">
         <header className="jlpt-level-page__heading">
-          <span>
-            <GraduationCap size={22} aria-hidden="true" /> Luyện thi JLPT
-          </span>
-          <h1>Đề mô phỏng JLPT</h1>
-          <p>Chọn cấp độ để xem các kỳ đề, làm từng phần hoặc học lại đáp án.</p>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem', width: '100%' }}>
+            <div>
+              <span>
+                <GraduationCap size={22} aria-hidden="true" /> Luyện thi JLPT
+              </span>
+              <h1>Đề mô phỏng JLPT</h1>
+              <p>Chọn cấp độ để xem các kỳ đề, làm từng phần hoặc học lại đáp án.</p>
+            </div>
+            <Button variant="secondary" onClick={() => setIsLookupOpen(true)}>
+              <KeyRound size={16} /> Tra cứu bài thi qua mã
+            </Button>
+          </div>
         </header>
 
         <div className="jlpt-level-list" aria-label="Chọn cấp độ JLPT">
@@ -355,6 +571,7 @@ export function JlptPage() {
           </div>
           <Badge variant="secondary">Sắp mở</Badge>
         </article>
+        {lookupModalNode}
       </main>
     )
   }
@@ -675,9 +892,14 @@ export function JlptPage() {
           <h1>{selectedLevel}</h1>
           <p>Mỗi năm gồm 2 kỳ thi (Tháng 7 & Tháng 12). Chọn kỳ thi để làm trọn gói 180 điểm hoặc làm riêng từng phần.</p>
         </div>
-        <Button variant={answerMode ? 'secondary' : 'primary'} onClick={() => setAnswerMode((value) => !value)}>
-          <BookOpenCheck size={17} /> {answerMode ? 'Quay lại làm đề' : 'Học đáp án các kỳ đề'}
-        </Button>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <Button variant="secondary" onClick={() => setIsLookupOpen(true)}>
+            <KeyRound size={16} /> Tra cứu bằng mã
+          </Button>
+          <Button variant={answerMode ? 'secondary' : 'primary'} onClick={() => setAnswerMode((value) => !value)}>
+            <BookOpenCheck size={17} /> {answerMode ? 'Quay lại làm đề' : 'Học đáp án các kỳ đề'}
+          </Button>
+        </div>
       </header>
 
       <section className="jlpt-paper-filters" aria-label="Lọc kỳ đề">
@@ -794,6 +1016,7 @@ export function JlptPage() {
           </p>
         </section>
       )}
+      {lookupModalNode}
     </main>
   )
 }

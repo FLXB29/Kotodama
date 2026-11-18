@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react
 import { useQueryClient } from '@tanstack/react-query'
 import { apiPaths, getApiErrorMessage, isUnauthorizedError, requestApi } from '../../lib/apiClient'
 import { AuthContext, type AuthStatus, type AuthUser } from './authContext'
+import { syncGuestAttemptsToUser } from '../nhaikanji/jlptAttempts'
 
 type Credentials = { email: string; password: string }
 type Registration = Credentials & { name: string }
@@ -169,6 +170,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setStatus('authenticated')
       setSessionExpired(false)
       void queryClient.invalidateQueries({ queryKey: ['srs'] })
+      if (authenticatedUser?.id) {
+        void syncGuestAttemptsToUser(authenticatedUser.id).then((count) => {
+          if (count > 0) void queryClient.invalidateQueries({ queryKey: ['jlpt-attempts'] })
+        })
+      }
     } catch (error) {
       throw new Error(getApiErrorMessage(error, error instanceof Error ? error.message : 'Không thể đăng nhập.'))
     }
@@ -182,10 +188,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         )
         if (session.accessToken) {
           saveToken(session.accessToken)
-          setUser(session.user ?? (await fetchCurrentUser()))
+          const authUser = session.user ?? (await fetchCurrentUser())
+          setUser(authUser)
           setStatus('authenticated')
           setSessionExpired(false)
           void queryClient.invalidateQueries({ queryKey: ['srs'] })
+          if (authUser?.id) {
+            void syncGuestAttemptsToUser(authUser.id).then((count) => {
+              if (count > 0) void queryClient.invalidateQueries({ queryKey: ['jlpt-attempts'] })
+            })
+          }
           return
         }
         await signIn({ email: values.email, password: values.password })
@@ -210,7 +222,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const session = normalizeSession(payload)
     if (!session.accessToken) throw new Error('Máy chủ không trả về phiên đăng nhập.')
     saveToken(session.accessToken)
-    if (session.user) setUser(session.user)
+    if (session.user) {
+      setUser(session.user)
+      if (session.user.id) {
+        void syncGuestAttemptsToUser(session.user.id).then((count) => {
+          if (count > 0) void queryClient.invalidateQueries({ queryKey: ['jlpt-attempts'] })
+        })
+      }
+    }
     setStatus('authenticated')
     setSessionExpired(false)
     void queryClient.invalidateQueries({ queryKey: ['srs'] })

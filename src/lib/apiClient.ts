@@ -73,6 +73,8 @@ export const apiPaths = {
     jlptAttempts: (level = 'N3') => `/api/v1/nhaikanji/jlpt/attempts?level=${encodeURIComponent(level)}`,
     jlptAttempt: (attemptId: string) => `/api/v1/nhaikanji/jlpt/attempts/${encodeURIComponent(attemptId)}`,
     jlptAttemptSubmit: (attemptId: string) => `/api/v1/nhaikanji/jlpt/attempts/${encodeURIComponent(attemptId)}/submit`,
+    jlptLookup: (code: string) => `/api/v1/nhaikanji/jlpt/lookup/${encodeURIComponent(code)}`,
+    jlptSync: '/api/v1/nhaikanji/jlpt/attempts/sync',
   },
   pronunciation: {
     research: {

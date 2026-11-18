@@ -26,6 +26,15 @@ function writeLocal(userId: string | null | undefined, attempt: StoredAttempt) {
   }
 }
 
+export function generateLookupCode(level = 'N3'): string {
+  const chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ'
+  let randomPart = ''
+  for (let i = 0; i < 5; i++) {
+    randomPart += chars.charAt(Math.floor(Math.random() * chars.length))
+  }
+  return `KT-${String(level || 'N3').toUpperCase()}-${randomPart}`
+}
+
 export function backupJlptAttemptProgress(
   attempt: JlptAttempt,
   userId: string | null | undefined,
@@ -80,10 +89,11 @@ export async function startJlptAttempt(
   userId?: string | null,
   timeLimitMinutes = 0
 ): Promise<JlptAttempt> {
+  const lookupCode = generateLookupCode(level)
   if (userId) {
     try {
       const attempt = await nhaikanjiApi.createJlptAttempt({ examId, level })
-      const stored = { ...attempt, persistence: 'server' as const }
+      const stored = { ...attempt, lookupCode: attempt.lookupCode || lookupCode, persistence: 'server' as const }
       writeLocal(userId, stored)
       return stored
     } catch {
@@ -100,6 +110,7 @@ export async function startJlptAttempt(
     answers: {},
     currentQuestion: 0,
     remainingSeconds: Math.max(0, Math.floor(timeLimitMinutes * 60)),
+    lookupCode,
     startedAt: now,
     updatedAt: now,
     persistence: 'local',
@@ -208,8 +219,12 @@ export async function finishJlptAttempt(
   } else {
     result = await nhaikanjiApi.submitJlptExam({ examId: attempt.examId, answers })
   }
+  const lookupCode = attempt.lookupCode || result.lookupCode || generateLookupCode(attempt.level)
+  if (!result.lookupCode) result.lookupCode = lookupCode
+
   writeLocal(userId, {
     ...(attempt as StoredAttempt),
+    lookupCode,
     status: 'completed',
     answers,
     result,
@@ -217,4 +232,67 @@ export async function finishJlptAttempt(
     finishedAt: new Date().toISOString(),
   })
   return { result, synced }
+}
+
+export async function syncGuestAttemptsToUser(userId: string): Promise<number> {
+  if (!userId || userId === 'guest') return 0
+  const guestAttempts = readLocal('guest')
+  if (!guestAttempts.length) return 0
+
+  const userAttempts = readLocal(userId)
+  const byId = new Map(userAttempts.map((item) => [item.id, item]))
+  for (const g of guestAttempts) {
+    if (!byId.has(g.id)) {
+      byId.set(g.id, { ...g, persistence: 'local' })
+    }
+  }
+  const merged = Array.from(byId.values())
+  try {
+    window.localStorage.setItem(storageKey(userId), JSON.stringify(merged.slice(0, 100)))
+  } catch {}
+
+  try {
+    await nhaikanjiApi.syncJlptAttempts(guestAttempts)
+  } catch {
+    // If backend sync fails (e.g. offline), local merge is already preserved
+  }
+
+  // Clear guest attempts after migrating
+  try {
+    window.localStorage.removeItem(storageKey('guest'))
+  } catch {}
+
+  return guestAttempts.length
+}
+
+export async function lookupJlptAttempt(code: string, currentUserId?: string | null): Promise<JlptAttempt | null> {
+  const normalized = code.trim().toUpperCase()
+  if (!normalized) return null
+
+  // 1. Search locally in user storage & guest storage
+  const localList = [...readLocal(currentUserId), ...readLocal('guest')]
+  const localMatch = localList.find(
+    (item) => item.lookupCode?.toUpperCase() === normalized || item.id.toUpperCase() === normalized
+  )
+  if (localMatch && localMatch.result) {
+    return localMatch
+  }
+
+  // 2. Fetch from backend API
+  try {
+    const remote = await nhaikanjiApi.lookupJlptAttempt(normalized)
+    if (remote) {
+      writeLocal(currentUserId, { ...remote, persistence: 'server' })
+      return remote
+    }
+  } catch {}
+
+  return localMatch || null
+}
+
+export function importJlptAttempt(attempt: JlptAttempt, userId?: string | null): void {
+  writeLocal(userId, {
+    ...(attempt as StoredAttempt),
+    persistence: (attempt as StoredAttempt).persistence || 'local',
+  })
 }

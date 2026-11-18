@@ -2,7 +2,7 @@ import http from 'node:http'
 import { fileURLToPath } from 'node:url'
 import { randomUUID } from 'node:crypto'
 import { createReadStream } from 'node:fs'
-import { mkdtemp, rm, stat, writeFile } from 'node:fs/promises'
+import { mkdtemp, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import {
   hashPassword,
   randomToken,
@@ -678,6 +678,15 @@ async function route(request, response) {
     return respond(result)
   }
 
+function generateLookupCode(level = 'N3') {
+  const chars = '23456789ABCDEFGHJKLMNPQRSTUVWXYZ'
+  let randomPart = ''
+  for (let i = 0; i < 5; i++) {
+    randomPart += chars.charAt(Math.floor(Math.random() * chars.length))
+  }
+  return `KT-${String(level || 'N3').toUpperCase()}-${randomPart}`
+}
+
   if (request.method === 'GET' && path === '/api/v1/nhaikanji/jlpt/attempts') {
     const user = await requireUser(request, response)
     if (!user) return
@@ -686,7 +695,7 @@ async function route(request, response) {
     if (!/^N[1-5]$/.test(level)) return fail(response, 400, 'Cấp độ JLPT không hợp lệ.', 'INVALID_LEVEL')
     const rows = await database.query(
       `SELECT id, exam_id, level, mode, status, current_question, remaining_seconds,
-              result ->> 'scorePercentage' AS score_percentage, started_at, updated_at, finished_at
+              result ->> 'scorePercentage' AS score_percentage, lookup_code, started_at, updated_at, finished_at
          FROM jlpt_attempts
         WHERE user_id = $1 AND level = $2
         ORDER BY updated_at DESC
@@ -708,6 +717,7 @@ async function route(request, response) {
             ? undefined
             : Number(row.score_percentage),
         result: null,
+        lookupCode: row.lookup_code,
         startedAt: row.started_at,
         updatedAt: row.updated_at,
         finishedAt: row.finished_at,
@@ -726,11 +736,12 @@ async function route(request, response) {
     if (mode === 'review')
       return fail(response, 422, 'Chế độ học đáp án không được lưu vào lịch sử thi.', 'INVALID_ATTEMPT_MODE')
     const id = randomUUID()
+    const lookupCode = generateLookupCode(exam.level || body.level || 'N3')
     const result = await database.query(
-      `INSERT INTO jlpt_attempts (id, user_id, exam_id, level, remaining_seconds, exam_snapshot)
-       VALUES ($1, $2, $3, $4, $5, $6::jsonb)
+      `INSERT INTO jlpt_attempts (id, user_id, exam_id, level, remaining_seconds, exam_snapshot, lookup_code)
+       VALUES ($1, $2, $3, $4, $5, $6::jsonb, $7)
        RETURNING id, exam_id, level, mode, status, answers, current_question, remaining_seconds,
-                 exam_snapshot, result, started_at, updated_at, finished_at`,
+                 exam_snapshot, result, lookup_code, started_at, updated_at, finished_at`,
       [
         id,
         user.id,
@@ -738,6 +749,7 @@ async function route(request, response) {
         String(exam.level || body.level || 'N3').toUpperCase(),
         Math.max(0, Number(exam.timeLimit || 0) * 60),
         JSON.stringify(exam),
+        lookupCode,
       ]
     )
     const row = result.rows[0]
@@ -753,12 +765,144 @@ async function route(request, response) {
         remainingSeconds: Number(row.remaining_seconds || 0),
         examSnapshot: row.exam_snapshot,
         result: row.result || null,
+        lookupCode: row.lookup_code,
         startedAt: row.started_at,
         updatedAt: row.updated_at,
         finishedAt: row.finished_at,
       },
       201
     )
+  }
+
+  if (request.method === 'POST' && path === '/api/v1/nhaikanji/jlpt/attempts/sync') {
+    const user = await requireUser(request, response)
+    if (!user) return
+    if (!database) return fail(response, 503, 'Lịch sử đồng bộ hiện không khả dụng.', 'JLPT_STORAGE_UNAVAILABLE')
+    const attempts = Array.isArray(body.attempts) ? body.attempts : []
+    let syncedCount = 0
+    const syncedAttempts = []
+    for (const item of attempts.slice(0, 50)) {
+      if (!item || !item.examId) continue
+      const id = item.id && /^[0-9a-f-]{36}$/i.test(item.id) ? item.id : randomUUID()
+      const exam = item.examSnapshot || nhaiKanjiService.getJlptExamDetail(item.examId)
+      const lookupCode = item.lookupCode || generateLookupCode(item.level || exam?.level || 'N3')
+      const result = item.result || null
+      const answers = item.answers || {}
+      const status = item.status || 'completed'
+      const level = String(item.level || exam?.level || 'N3').toUpperCase()
+
+      try {
+        const res = await database.query(
+          `INSERT INTO jlpt_attempts (id, user_id, exam_id, level, mode, status, answers, current_question, remaining_seconds, exam_snapshot, result, lookup_code, started_at, updated_at, finished_at)
+           VALUES ($1, $2, $3, $4, 'exam', $5, $6::jsonb, $7, $8, $9::jsonb, $10::jsonb, $11, COALESCE($12::timestamptz, now()), now(), COALESCE($13::timestamptz, now()))
+           ON CONFLICT (id) DO UPDATE SET
+             user_id = EXCLUDED.user_id,
+             answers = CASE WHEN jlpt_attempts.status = 'completed' THEN jlpt_attempts.answers ELSE EXCLUDED.answers END,
+             result = COALESCE(jlpt_attempts.result, EXCLUDED.result),
+             status = CASE WHEN jlpt_attempts.status = 'completed' THEN 'completed' ELSE EXCLUDED.status END,
+             lookup_code = COALESCE(jlpt_attempts.lookup_code, EXCLUDED.lookup_code),
+             updated_at = now()
+           RETURNING id, exam_id, level, mode, status, answers, current_question, remaining_seconds, exam_snapshot, result, lookup_code, started_at, updated_at, finished_at`,
+          [
+            id,
+            user.id,
+            item.examId,
+            level,
+            status,
+            JSON.stringify(answers),
+            Number(item.currentQuestion || 0),
+            Number(item.remainingSeconds || 0),
+            JSON.stringify(exam || { id: item.examId }),
+            result ? JSON.stringify(result) : null,
+            lookupCode,
+            item.startedAt || new Date().toISOString(),
+            item.finishedAt || new Date().toISOString(),
+          ]
+        )
+        if (res.rows[0]) {
+          syncedCount++
+          syncedAttempts.push(res.rows[0])
+        }
+      } catch (err) {
+        logError('jlpt.sync_attempt.failed', err)
+      }
+    }
+    return respond({ syncedCount, attempts: syncedAttempts })
+  }
+
+  const jlptLookupMatch = path.match(/^\/api\/v1\/nhaikanji\/jlpt\/lookup\/(.+)$/)
+  if (request.method === 'GET' && jlptLookupMatch) {
+    const code = decodeURIComponent(jlptLookupMatch[1]).trim().toUpperCase()
+    if (!code) return fail(response, 400, 'Thiếu mã tra cứu.', 'MISSING_LOOKUP_CODE')
+
+    if (database) {
+      try {
+        const { rows } = await database.query(
+          `SELECT id, user_id, exam_id, level, mode, status, answers, current_question, remaining_seconds,
+                  exam_snapshot, result, lookup_code, started_at, updated_at, finished_at
+             FROM jlpt_attempts
+            WHERE UPPER(lookup_code) = $1 OR id::text = $2
+            LIMIT 1`,
+          [code, code.toLowerCase()]
+        )
+        if (rows[0]) {
+          const row = rows[0]
+          return respond({
+            id: row.id,
+            examId: row.exam_id,
+            level: row.level,
+            mode: row.mode,
+            status: row.status,
+            answers: row.answers || {},
+            currentQuestion: Number(row.current_question || 0),
+            remainingSeconds: Number(row.remaining_seconds || 0),
+            examSnapshot: row.exam_snapshot,
+            result: row.result || null,
+            lookupCode: row.lookup_code,
+            startedAt: row.started_at,
+            updatedAt: row.updated_at,
+            finishedAt: row.finished_at,
+          })
+        }
+      } catch (err) {
+        logError('jlpt.lookup.db_query_failed', err)
+      }
+    }
+
+    // Fallback to saved_attempts disk directory
+    try {
+      const savedDir = join(projectRoot, 'data/saved_attempts')
+      const files = await readdir(savedDir)
+      for (const file of files) {
+        if (!file.endsWith('.json')) continue
+        const content = await readFile(join(savedDir, file), 'utf8')
+        const parsed = JSON.parse(content)
+        const items = Array.isArray(parsed) ? parsed : [parsed]
+        const matched = items.find(
+          (it) => it && (String(it.lookupCode || '').toUpperCase() === code || String(it.id || '').toUpperCase() === code)
+        )
+        if (matched) {
+          return respond({
+            id: matched.id,
+            examId: matched.examId,
+            level: matched.level,
+            mode: matched.mode || 'exam',
+            status: matched.status || 'completed',
+            answers: matched.answers || {},
+            currentQuestion: Number(matched.currentQuestion || 0),
+            remainingSeconds: Number(matched.remainingSeconds || 0),
+            examSnapshot: matched.examSnapshot,
+            result: matched.result || null,
+            lookupCode: matched.lookupCode || code,
+            startedAt: matched.startedAt,
+            updatedAt: matched.updatedAt,
+            finishedAt: matched.finishedAt,
+          })
+        }
+      }
+    } catch {}
+
+    return fail(response, 404, 'Không tìm thấy bài thi với mã tra cứu này.', 'ATTEMPT_NOT_FOUND')
   }
 
   const jlptAttemptMatch = path.match(/^\/api\/v1\/nhaikanji\/jlpt\/attempts\/([0-9a-f-]+)(?:\/(submit))?$/i)
@@ -872,11 +1016,43 @@ async function route(request, response) {
   }
 
   if (request.method === 'POST' && path === '/api/v1/nhaikanji/jlpt/submit') {
-    const { examId, answers } = body
+    const { examId, answers, lookupCode: providedLookupCode, attemptId: providedAttemptId } = body
     if (!examId) return fail(response, 400, 'Thiếu thông tin examId.', 'MISSING_EXAM_ID')
     const result = nhaiKanjiService.submitJlptExam(examId, answers || {})
     if (!result) return fail(response, 404, 'Không tìm thấy đề thi này để chấm.', 'EXAM_NOT_FOUND')
-    return respond(result)
+    const lookupCode =
+      typeof providedLookupCode === 'string' && providedLookupCode.trim()
+        ? providedLookupCode.trim().toUpperCase()
+        : generateLookupCode(result.level || 'N3')
+    if (database) {
+      try {
+        const exam = nhaiKanjiService.getJlptExamDetail(examId)
+        const id = providedAttemptId && /^[0-9a-f-]{36}$/i.test(providedAttemptId) ? providedAttemptId : randomUUID()
+        await database.query(
+          `INSERT INTO jlpt_attempts (id, user_id, exam_id, level, mode, status, exam_snapshot, answers, result, lookup_code, finished_at)
+           VALUES ($1, NULL, $2, $3, 'exam', 'completed', $4::jsonb, $5::jsonb, $6::jsonb, $7, now())
+           ON CONFLICT (id) DO UPDATE SET
+             answers = EXCLUDED.answers,
+             result = EXCLUDED.result,
+             status = 'completed',
+             lookup_code = COALESCE(jlpt_attempts.lookup_code, EXCLUDED.lookup_code),
+             finished_at = now(),
+             updated_at = now()`,
+          [
+            id,
+            examId,
+            String(result.level || 'N3').toUpperCase(),
+            JSON.stringify(exam || { id: examId, title: result.title }),
+            JSON.stringify(answers || {}),
+            JSON.stringify(result),
+            lookupCode,
+          ]
+        )
+      } catch (err) {
+        logError('jlpt.guest_submit.persist_failed', err)
+      }
+    }
+    return respond({ ...result, lookupCode })
   }
 
   // --- Curriculum Catalog Library Endpoints (Task T04) ---

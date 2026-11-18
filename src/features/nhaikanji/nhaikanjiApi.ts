@@ -117,4 +117,19 @@ export const nhaikanjiApi = {
   async submitJlptAttempt(attemptId: string, answers: Record<string, number | string>): Promise<JlptSubmissionResult> {
     return requestApi<JlptSubmissionResult>({ method: 'POST', url: apiPaths.nhaikanji.jlptAttemptSubmit(attemptId), data: { answers } })
   },
+
+  async lookupJlptAttempt(code: string): Promise<JlptAttempt> {
+    return requestApi<JlptAttempt>({
+      method: 'GET',
+      url: apiPaths.nhaikanji.jlptLookup(code),
+    })
+  },
+
+  async syncJlptAttempts(attempts: JlptAttempt[]): Promise<{ syncedCount: number; attempts: JlptAttempt[] }> {
+    return requestApi<{ syncedCount: number; attempts: JlptAttempt[] }>({
+      method: 'POST',
+      url: apiPaths.nhaikanji.jlptSync,
+      data: { attempts },
+    })
+  },
 }

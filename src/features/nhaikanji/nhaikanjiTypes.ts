@@ -191,6 +191,7 @@ export type JlptSubmissionResult = {
   maxScore180?: number
   passScore180?: number
   cefrLevel?: string
+  lookupCode?: string
   passed: boolean
   resultStatus?: 'PASSED' | 'FAILED_SCORE' | 'FAILED_SECTIONAL' | string
   resultMessage?: string
@@ -232,6 +233,7 @@ export type JlptAttempt = {
   answers: Record<string, number | string>
   currentQuestion: number
   remainingSeconds: number
+  lookupCode?: string
   scorePercentage?: number
   examSnapshot?: JlptExamDetail
   startedAt: string

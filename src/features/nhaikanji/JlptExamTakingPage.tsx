@@ -16,6 +16,11 @@ import {
   ChevronUp,
   Lightbulb,
   Volume2,
+  KeyRound,
+  Copy,
+  Check,
+  Printer,
+  Download,
 } from 'lucide-react'
 import { nhaikanjiApi } from './nhaikanjiApi'
 import { StarOrderQuestion } from './StarOrderQuestion'
@@ -201,15 +206,18 @@ function JlptCertificate({
   result,
   examTitle,
   userName = 'THÍ SINH ẨN DANH',
+  lookupCode,
   onRetake,
   onBack,
 }: {
   result: JlptSubmissionResult
   examTitle?: string | undefined
   userName?: string | undefined
+  lookupCode?: string | undefined
   onRetake: () => void
   onBack: () => void
 }) {
+  const [copiedCode, setCopiedCode] = useState(false)
   const isPassed = result.passed
   const level = result.level || 'N3'
   const today = new Date().toLocaleDateString('vi-VN', {
@@ -217,6 +225,32 @@ function JlptCertificate({
     month: '2-digit',
     year: 'numeric',
   })
+
+  const handleCopyCode = () => {
+    if (!lookupCode) return
+    navigator.clipboard.writeText(lookupCode).then(() => {
+      setCopiedCode(true)
+      setTimeout(() => setCopiedCode(false), 2000)
+    })
+  }
+
+  const handleDownloadJson = () => {
+    const exportData = {
+      examTitle: examTitle || 'JLPT Mock Test Result',
+      level,
+      date: today,
+      userName,
+      lookupCode: lookupCode || undefined,
+      result,
+    }
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `JLPT_${level}_${lookupCode || 'Result'}_${today.replace(/\//g, '-')}.json`
+    a.click()
+    URL.revokeObjectURL(url)
+  }
 
   const sec1 = result.sectionBreakdown?.section1 || {
     name: '言語知識(文字・語彙・文法)',
@@ -254,6 +288,7 @@ function JlptCertificate({
 
   return (
     <div
+      className="jlpt-certificate-container"
       style={{
         display: 'flex',
         flexDirection: 'column',
@@ -263,6 +298,70 @@ function JlptCertificate({
         margin: '0 auto',
       }}
     >
+      {lookupCode && (
+        <div
+          className="jlpt-lookup-banner jlpt-no-print"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '0.75rem',
+            padding: '1rem 1.25rem',
+            borderRadius: '1rem',
+            background: 'linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)',
+            border: '1.5px dashed #6366f1',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div
+              style={{
+                width: '2.25rem',
+                height: '2.25rem',
+                borderRadius: '50%',
+                background: '#4f46e5',
+                color: '#ffffff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+              }}
+            >
+              <KeyRound size={18} />
+            </div>
+            <div>
+              <div style={{ fontSize: '0.8125rem', fontWeight: 800, color: '#3730a3' }}>
+                MÃ TRA CỨU KẾT QUẢ BÀI THI (DÀNH CHO THÍ SINH ẨN DANH)
+              </div>
+              <div style={{ fontSize: '0.75rem', color: '#4b5563', marginTop: '0.125rem' }}>
+                Lưu mã này để xem lại kết quả và lời giải bất cứ lúc nào mà không cần đăng nhập:
+              </div>
+            </div>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-mono, monospace)',
+                fontSize: '1.125rem',
+                fontWeight: 900,
+                color: '#1e1b4b',
+                background: '#ffffff',
+                padding: '0.375rem 0.875rem',
+                borderRadius: '0.5rem',
+                border: '1px solid #c7d2fe',
+                letterSpacing: '0.06em',
+              }}
+            >
+              {lookupCode}
+            </span>
+            <Button variant="ghost" size="sm" onClick={handleCopyCode}>
+              {copiedCode ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
+              {copiedCode ? 'Đã sao chép' : 'Sao chép mã'}
+            </Button>
+          </div>
+        </div>
+      )}
+
       <div
         style={{
           background: '#ffffff',
@@ -639,8 +738,22 @@ function JlptCertificate({
       </div>
 
       <div
-        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '0.5rem' }}
+        className="jlpt-actions-row jlpt-no-print"
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '0.75rem',
+          marginTop: '0.5rem',
+        }}
       >
+        <Button variant="secondary" onClick={() => window.print()}>
+          <Printer size={16} /> Xuất PDF / In kết quả
+        </Button>
+        <Button variant="secondary" onClick={handleDownloadJson}>
+          <Download size={16} /> Tải dữ liệu JSON
+        </Button>
         <Button variant="secondary" onClick={onRetake}>
           <RotateCcw size={16} /> Làm lại bài thi
         </Button>
@@ -1266,7 +1379,14 @@ export function JlptExamTakingPage({ examId, onBack, mode = 'exam', attemptId }:
       {/* Official Certificate Result View on Submission */}
       {isSubmitted && result && (
         <div style={{ marginTop: '1.5rem' }}>
-          <JlptCertificate result={result} examTitle={formatExamTitle(exam)} onRetake={handleRetake} onBack={onBack} />
+          <JlptCertificate
+            result={result}
+            examTitle={formatExamTitle(exam)}
+            lookupCode={activeAttempt?.lookupCode || result.lookupCode}
+            userName={user?.name || (user?.email ? user.email.split('@')[0] : 'THÍ SINH ẨN DANH')}
+            onRetake={handleRetake}
+            onBack={onBack}
+          />
         </div>
       )}
 

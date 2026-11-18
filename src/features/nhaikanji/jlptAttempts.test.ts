@@ -4,9 +4,13 @@ import type { JlptAttempt, JlptSubmissionResult } from './nhaikanjiTypes'
 import {
   backupJlptAttemptProgress,
   finishJlptAttempt,
+  generateLookupCode,
   getJlptAttempt,
+  importJlptAttempt,
   listJlptAttempts,
+  lookupJlptAttempt,
   saveJlptAttemptProgress,
+  syncGuestAttemptsToUser,
 } from './jlptAttempts'
 import { nhaikanjiApi } from './nhaikanjiApi'
 
@@ -17,6 +21,8 @@ vi.mock('./nhaikanjiApi', () => ({
     submitJlptAttempt: vi.fn(),
     saveJlptAttempt: vi.fn(),
     submitJlptExam: vi.fn(),
+    lookupJlptAttempt: vi.fn(),
+    syncJlptAttempts: vi.fn(),
   },
 }))
 
@@ -84,5 +90,37 @@ describe('JLPT attempt persistence', () => {
     expect(found?.status).toBe('completed')
     expect(found?.result?.scorePercentage).toBe(1)
     expect(nhaikanjiApi.saveJlptAttempt).not.toHaveBeenCalled()
+  })
+
+  it('generates a clean and formatted lookup code', () => {
+    const code = generateLookupCode('N3')
+    expect(code).toMatch(/^KT-N3-[2-9A-HJ-NP-Z]{5}$/)
+  })
+
+  it('syncs guest attempts to user account and calls API sync', async () => {
+    vi.mocked(nhaikanjiApi.syncJlptAttempts).mockResolvedValueOnce({
+      syncedCount: 1,
+      attempts: [],
+    })
+
+    const guestAttempt = { ...attempt('completed'), lookupCode: 'KT-N3-TEST1', result }
+    importJlptAttempt(guestAttempt, null)
+
+    const syncedCount = await syncGuestAttemptsToUser('user-uuid-123')
+    expect(syncedCount).toBe(1)
+    expect(nhaikanjiApi.syncJlptAttempts).toHaveBeenCalled()
+
+    const userAttempts = await listJlptAttempts('N3', 'user-uuid-123')
+    expect(userAttempts.some((a) => a.id === guestAttempt.id)).toBe(true)
+  })
+
+  it('looks up an attempt locally or falls back to backend API', async () => {
+    const remoteAttempt = { ...attempt('completed'), lookupCode: 'KT-N3-230784', result }
+    vi.mocked(nhaikanjiApi.lookupJlptAttempt).mockResolvedValueOnce(remoteAttempt)
+
+    const found = await lookupJlptAttempt('KT-N3-230784', null)
+    expect(found).not.toBeNull()
+    expect(found?.lookupCode).toBe('KT-N3-230784')
+    expect(found?.result?.scorePercentage).toBe(1)
   })
 })
